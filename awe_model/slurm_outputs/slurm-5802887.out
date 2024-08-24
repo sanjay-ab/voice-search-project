@@ -1,0 +1,348 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+START TIME: 2024-07-11_16:41:30
+Training model for tamil with inputs from mHuBERT layer 8
+Number of epochs: 10, patience: 2, learning rate: 1e-05
+clip norm: 20, temperature: 0.15, num pairs per batch: 800
+time limit to create dataset: 240
+Loaded embedded data from data/tamil/embeddings/training_data/8/raw_full_utterances/all_embeddings_phonetized.pkl
+Time taken: 64.64 s
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 259.
+Created paired data
+Loaded embedded data from data/tamil/embeddings/validation_data/8/raw_full_utterances/all_embeddings_phonetized.pkl
+Time taken: 11.14 s
+Created paired data
+Time taken to create datasets: 443.99 s
+
+Loading model from data/tamil/models/8/phones_split_after_embedding_2024-07-11_11:18:13_checkpoint_epoch_3.pt
+
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.01% done
+Loss: 0.7469853162765503
+Time: 6.12 s
+Epoch 0: 10.01% done
+Loss: 0.7985381382054838
+Time: 264.11 s
+Epoch 0: 20.00% done
+Loss: 0.802729598012193
+Time: 523.68 s
+Epoch 0: 30.00% done
+Loss: 0.7896285451341962
+Time: 766.72 s
+Epoch 0: 40.01% done
+Loss: 0.8119881262073133
+Time: 1029.67 s
+Epoch 0: 50.00% done
+Loss: 0.7953958342845355
+Time: 1277.70 s
+Epoch 0: 60.00% done
+Loss: 0.8106810722128579
+Time: 1542.44 s
+Epoch 0: 70.01% done
+Loss: 0.7931856431298544
+Time: 1802.84 s
+Epoch 0: 80.01% done
+Loss: 0.8152749880889306
+Time: 2068.55 s
+Epoch 0: 90.00% done
+Loss: 0.7944621967811271
+Time: 2329.44 s
+
+Epoch 0 done
+Epoch loss: 0.801501957422466
+
+Time taken for epoch: 2588.20 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.81 s
+Calculating validation loss: 20.00% done
+Time: 161.55 s
+Calculating validation loss: 40.00% done
+Time: 319.90 s
+Calculating validation loss: 60.00% done
+Time: 477.18 s
+Calculating validation loss: 80.00% done
+Time: 626.37 s
+
+Validation loss: 0.7838653314871633
+
+Time taken: 777.28 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_16:41:30_checkpoint_epoch_0.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 265.
+Epoch 1: 0.01% done
+Loss: 0.9044827222824097
+Time: 0.43 s
+Epoch 1: 10.01% done
+Loss: 0.8286395116373595
+Time: 241.45 s
+Epoch 1: 20.01% done
+Loss: 0.8304534968519838
+Time: 487.24 s
+Epoch 1: 30.01% done
+Loss: 0.8227794185461785
+Time: 728.17 s
+Epoch 1: 40.01% done
+Loss: 0.8446709065876065
+Time: 984.13 s
+Epoch 1: 50.01% done
+Loss: 0.8121216924566972
+Time: 1226.96 s
+Epoch 1: 60.01% done
+Loss: 0.8174381062644558
+Time: 1470.79 s
+Epoch 1: 70.01% done
+Loss: 0.8277094013657165
+Time: 1717.60 s
+Epoch 1: 80.01% done
+Loss: 0.81130431497543
+Time: 1958.74 s
+Epoch 1: 90.01% done
+Loss: 0.8349315088528854
+Time: 2205.99 s
+
+Epoch 1 done
+Epoch loss: 0.8238881411972104
+
+Time taken for epoch: 2444.96 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.24 s
+Calculating validation loss: 20.00% done
+Time: 156.27 s
+Calculating validation loss: 40.00% done
+Time: 311.86 s
+Calculating validation loss: 60.00% done
+Time: 468.99 s
+Calculating validation loss: 80.00% done
+Time: 624.54 s
+
+Validation loss: 0.7329537442053262
+
+Time taken: 776.48 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_16:41:30_checkpoint_epoch_1.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 255.
+Epoch 2: 0.01% done
+Loss: 0.6016602516174316
+Time: 0.20 s
+Epoch 2: 10.00% done
+Loss: 0.7920157488215588
+Time: 263.34 s
+Epoch 2: 20.01% done
+Loss: 0.7924913002828917
+Time: 539.98 s
+Epoch 2: 30.00% done
+Loss: 0.778156482682885
+Time: 785.71 s
+Epoch 2: 40.01% done
+Loss: 0.7990835735689219
+Time: 1042.38 s
+Epoch 2: 50.00% done
+Loss: 0.7927335286929483
+Time: 1310.74 s
+Epoch 2: 60.01% done
+Loss: 0.7890971056364603
+Time: 1575.34 s
+Epoch 2: 70.00% done
+Loss: 0.7772921941148148
+Time: 1837.62 s
+Epoch 2: 80.01% done
+Loss: 0.7745262490946656
+Time: 2091.51 s
+Epoch 2: 90.00% done
+Loss: 0.786965448282699
+Time: 2353.73 s
+
+Epoch 2 done
+Epoch loss: 0.7852572108093094
+
+Time taken for epoch: 2599.47 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.21 s
+Calculating validation loss: 20.00% done
+Time: 146.26 s
+Calculating validation loss: 40.00% done
+Time: 290.22 s
+Calculating validation loss: 60.00% done
+Time: 434.01 s
+Calculating validation loss: 80.00% done
+Time: 576.83 s
+
+Validation loss: 0.7089213545534986
+
+Time taken: 724.20 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_16:41:30_checkpoint_epoch_2.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 259.
+Epoch 3: 0.01% done
+Loss: 0.7411690950393677
+Time: 1.15 s
+Epoch 3: 10.00% done
+Loss: 0.790753199792888
+Time: 259.78 s
+Epoch 3: 20.01% done
+Loss: 0.7937240925801061
+Time: 522.87 s
+Epoch 3: 30.01% done
+Loss: 0.7873369534194035
+Time: 769.96 s
+Epoch 3: 40.00% done
+Loss: 0.7853568900665736
+Time: 1017.89 s
+Epoch 3: 50.00% done
+Loss: 0.7825895424959434
+Time: 1264.76 s
+Epoch 3: 60.01% done
+Loss: 0.7841305623415613
+Time: 1523.20 s
+Epoch 3: 70.00% done
+Loss: 0.7784103252027678
+Time: 1778.38 s
+Epoch 3: 80.00% done
+Loss: 0.8020182323716852
+Time: 2043.33 s
+Epoch 3: 90.01% done
+Loss: 0.7889526927449407
+Time: 2311.84 s
+
+Epoch 3 done
+Epoch loss: 0.7864889972475614
+
+Time taken for epoch: 2564.46 s
+Number of gradients clipped: 1
+
+Calculating validation loss: 0.00% done
+Time: 0.21 s
+Calculating validation loss: 20.00% done
+Time: 155.81 s
+Calculating validation loss: 40.00% done
+Time: 301.37 s
+Calculating validation loss: 60.00% done
+Time: 448.88 s
+Calculating validation loss: 80.00% done
+Time: 597.92 s
+
+Validation loss: 0.680137905332617
+
+Time taken: 744.23 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_16:41:30_checkpoint_epoch_3.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 260.
+Epoch 4: 0.01% done
+Loss: 1.4828224182128906
+Time: 5.06 s
+Epoch 4: 10.01% done
+Loss: 0.8034127694268466
+Time: 266.00 s
+Epoch 4: 20.01% done
+Loss: 0.795575165271315
+Time: 525.49 s
+Epoch 4: 30.00% done
+Loss: 0.788356620339708
+Time: 780.76 s
+Epoch 4: 40.00% done
+Loss: 0.7769004140375269
+Time: 1032.51 s
+Epoch 4: 50.01% done
+Loss: 0.7876387926035149
+Time: 1286.51 s
+Epoch 4: 60.01% done
+Loss: 0.7837875560897245
+Time: 1530.70 s
+Epoch 4: 70.01% done
+Loss: 0.7914636216683095
+Time: 1777.57 s
+Epoch 4: 80.00% done
+Loss: 0.7830844158011886
+Time: 2019.06 s
+Epoch 4: 90.00% done
+Loss: 0.7774653828787847
+Time: 2262.26 s
+
+Epoch 4 done
+Epoch loss: 0.7881205501813414
+
+Time taken for epoch: 2511.97 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.02 s
+Calculating validation loss: 20.00% done
+Time: 152.17 s
+Calculating validation loss: 40.00% done
+Time: 299.27 s
+Calculating validation loss: 60.00% done
+Time: 451.96 s
+Calculating validation loss: 80.00% done
+Time: 599.14 s
+
+Validation loss: 0.6663323162011745
+
+Time taken: 745.32 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_16:41:30_checkpoint_epoch_4.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 260.
+Epoch 5: 0.01% done
+Loss: 1.1454607248306274
+Time: 1.79 s
+Epoch 5: 10.00% done
+Loss: 0.7944387897876832
+Time: 261.80 s
+Epoch 5: 20.00% done
+Loss: 0.7770289950592574
+Time: 512.54 s
+Epoch 5: 30.01% done
+Loss: 0.7795232934729998
+Time: 764.03 s
+Epoch 5: 40.01% done
+Loss: 0.7838299529497014
+Time: 1016.58 s
+Epoch 5: 50.01% done
+Loss: 0.7950042785600174
+Time: 1277.04 s
+Epoch 5: 60.00% done
+Loss: 0.7745072245042861
+Time: 1531.13 s
+Epoch 5: 70.00% done
+Loss: 0.794744759825773
+Time: 1787.89 s
+Epoch 5: 80.01% done
+Loss: 0.7913194838235544
+Time: 2037.43 s
+Epoch 5: 90.01% done
+Loss: 0.7817118822696597
+Time: 2282.17 s
+
+Epoch 5 done
+Epoch loss: 0.7851634876720072
+
+Time taken for epoch: 2524.91 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.21 s
+Calculating validation loss: 20.00% done
+Time: 144.02 s
+Calculating validation loss: 40.00% done
+Time: 289.21 s
+Calculating validation loss: 60.00% done
+Time: 433.22 s
+slurmstepd: error: *** JOB 5802887 ON r2i7n4 CANCELLED AT 2024-07-11T22:41:26 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 5802887.0 ON r2i7n4 CANCELLED AT 2024-07-11T22:41:26 DUE TO TIME LIMIT ***

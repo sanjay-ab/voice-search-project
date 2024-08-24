@@ -1,0 +1,306 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+START TIME: 2024-07-11_11:18:13
+Training model for tamil with inputs from mHuBERT layer 8
+Number of epochs: 10, patience: 2, learning rate: 0.0001
+clip norm: 20, temperature: 0.15, num pairs per batch: 800
+time limit to create dataset: 240
+Loaded embedded data from data/tamil/embeddings/training_data/8/raw_full_utterances/all_embeddings_phonetized.pkl
+Time taken: 63.84 s
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 239.
+Created paired data
+Loaded embedded data from data/tamil/embeddings/validation_data/8/raw_full_utterances/all_embeddings_phonetized.pkl
+Time taken: 10.94 s
+Created paired data
+Time taken to create datasets: 439.62 s
+
+Loading model from data/tamil/models/8/phones_split_after_embedding2024-07-10_22:09:02_checkpoint_epoch_2.pt
+
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.01% done
+Loss: 0.6007769107818604
+Time: 24.58 s
+Epoch 0: 10.01% done
+Loss: 0.8312292347863778
+Time: 290.08 s
+Epoch 0: 20.01% done
+Loss: 0.8459765773356166
+Time: 563.15 s
+Epoch 0: 30.01% done
+Loss: 0.811800220424367
+Time: 822.61 s
+Epoch 0: 40.01% done
+Loss: 0.8197906068510207
+Time: 1084.52 s
+Epoch 0: 50.01% done
+Loss: 0.8386487706830001
+Time: 1362.67 s
+Epoch 0: 60.01% done
+Loss: 0.838836220377909
+Time: 1633.75 s
+Epoch 0: 70.01% done
+Loss: 0.811875081093041
+Time: 1898.15 s
+Epoch 0: 80.01% done
+Loss: 0.823863313011697
+Time: 2160.29 s
+Epoch 0: 90.01% done
+Loss: 0.8244183270382308
+Time: 2431.24 s
+
+Epoch 0 done
+Epoch loss: 0.826474533949521
+
+Time taken for epoch: 2697.86 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.80 s
+Calculating validation loss: 20.00% done
+Time: 154.41 s
+Calculating validation loss: 40.00% done
+Time: 317.58 s
+Calculating validation loss: 60.00% done
+Time: 470.11 s
+Calculating validation loss: 80.00% done
+Time: 628.94 s
+
+Validation loss: 0.9544856912838231
+
+Time taken: 790.08 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_11:18:13_checkpoint_epoch_0.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 262.
+Epoch 1: 0.01% done
+Loss: 0.5838640332221985
+Time: 0.12 s
+Epoch 1: 10.00% done
+Loss: 0.8570367483667625
+Time: 254.08 s
+Epoch 1: 20.01% done
+Loss: 0.8314340347703636
+Time: 496.54 s
+Epoch 1: 30.01% done
+Loss: 0.8495957152079521
+Time: 746.69 s
+Epoch 1: 40.00% done
+Loss: 0.8291674930919972
+Time: 993.45 s
+Epoch 1: 50.00% done
+Loss: 0.8547550118442657
+Time: 1248.84 s
+Epoch 1: 60.01% done
+Loss: 0.8451084707505705
+Time: 1500.51 s
+Epoch 1: 70.00% done
+Loss: 0.8442068315984667
+Time: 1751.24 s
+Epoch 1: 80.00% done
+Loss: 0.8384510317938141
+Time: 2000.42 s
+Epoch 1: 90.01% done
+Loss: 0.83535635580975
+Time: 2253.22 s
+
+Epoch 1 done
+Epoch loss: 0.8427702998900282
+
+Time taken for epoch: 2508.73 s
+Number of gradients clipped: 1
+
+Calculating validation loss: 0.00% done
+Time: 0.02 s
+Calculating validation loss: 20.00% done
+Time: 156.98 s
+Calculating validation loss: 40.00% done
+Time: 322.56 s
+Calculating validation loss: 60.00% done
+Time: 476.70 s
+Calculating validation loss: 80.00% done
+Time: 635.89 s
+
+Validation loss: 0.8954540879348977
+
+Time taken: 800.54 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_11:18:13_checkpoint_epoch_1.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 250.
+Epoch 2: 0.01% done
+Loss: 0.6210454106330872
+Time: 3.04 s
+Epoch 2: 10.00% done
+Loss: 0.8240734075736321
+Time: 268.87 s
+Epoch 2: 20.01% done
+Loss: 0.8092164163589477
+Time: 532.63 s
+Epoch 2: 30.00% done
+Loss: 0.8046793338985205
+Time: 789.63 s
+Epoch 2: 40.01% done
+Loss: 0.8072534920374552
+Time: 1049.77 s
+Epoch 2: 50.01% done
+Loss: 0.8014089526070489
+Time: 1311.02 s
+Epoch 2: 60.00% done
+Loss: 0.8103019973773549
+Time: 1572.04 s
+Epoch 2: 70.01% done
+Loss: 0.8018175108697679
+Time: 1828.99 s
+Epoch 2: 80.00% done
+Loss: 0.8151139929307313
+Time: 2096.54 s
+Epoch 2: 90.01% done
+Loss: 0.8045160224702623
+Time: 2351.04 s
+
+Epoch 2 done
+Epoch loss: 0.80966206667433
+
+Time taken for epoch: 2609.99 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.04 s
+Calculating validation loss: 20.00% done
+Time: 163.66 s
+Calculating validation loss: 40.00% done
+Time: 319.80 s
+Calculating validation loss: 60.00% done
+Time: 464.69 s
+Calculating validation loss: 80.00% done
+Time: 612.63 s
+
+Validation loss: 0.8379541913873509
+
+Time taken: 757.55 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_11:18:13_checkpoint_epoch_2.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 248.
+Epoch 3: 0.01% done
+Loss: 1.2663830518722534
+Time: 0.46 s
+Epoch 3: 10.01% done
+Loss: 0.7981658047525549
+Time: 268.74 s
+Epoch 3: 20.01% done
+Loss: 0.7998009159165884
+Time: 530.50 s
+Epoch 3: 30.00% done
+Loss: 0.7835956206036359
+Time: 792.68 s
+Epoch 3: 40.00% done
+Loss: 0.7946397216549564
+Time: 1045.27 s
+Epoch 3: 50.01% done
+Loss: 0.8038011420537529
+Time: 1309.58 s
+Epoch 3: 60.01% done
+Loss: 0.7811439203781764
+Time: 1561.75 s
+Epoch 3: 70.01% done
+Loss: 0.7973472159113557
+Time: 1825.54 s
+Epoch 3: 80.00% done
+Loss: 0.8047418931413504
+Time: 2100.79 s
+Epoch 3: 90.00% done
+Loss: 0.786897018797379
+Time: 2366.81 s
+
+Epoch 3 done
+Epoch loss: 0.7933851684412317
+
+Time taken for epoch: 2627.08 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.22 s
+Calculating validation loss: 20.00% done
+Time: 153.59 s
+Calculating validation loss: 40.00% done
+Time: 298.82 s
+Calculating validation loss: 60.00% done
+Time: 442.37 s
+Calculating validation loss: 80.00% done
+Time: 601.25 s
+
+Validation loss: 0.7998772750912434
+
+Time taken: 761.23 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_11:18:13_checkpoint_epoch_3.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 262.
+Epoch 4: 0.01% done
+Loss: 0.5380911827087402
+Time: 0.23 s
+Epoch 4: 10.01% done
+Loss: 0.8145720471880357
+Time: 240.32 s
+Epoch 4: 20.00% done
+Loss: 0.8252295393344254
+Time: 493.54 s
+Epoch 4: 30.01% done
+Loss: 0.8367819342664293
+Time: 748.33 s
+Epoch 4: 40.00% done
+Loss: 0.8276803473747729
+Time: 998.74 s
+Epoch 4: 50.01% done
+Loss: 0.8221570201138326
+Time: 1243.66 s
+Epoch 4: 60.01% done
+Loss: 0.8134636923118874
+Time: 1491.34 s
+Epoch 4: 70.00% done
+Loss: 0.7990550298323641
+Time: 1725.42 s
+Epoch 4: 80.01% done
+Loss: 0.8113828721041805
+Time: 1968.33 s
+Epoch 4: 90.00% done
+Loss: 0.8131608943841611
+Time: 2219.78 s
+
+Epoch 4 done
+Epoch loss: 0.818836079412434
+
+Time taken for epoch: 2469.77 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.02 s
+Calculating validation loss: 20.00% done
+Time: 147.09 s
+Calculating validation loss: 40.00% done
+Time: 293.85 s
+Calculating validation loss: 60.00% done
+Time: 438.24 s
+Calculating validation loss: 80.00% done
+Time: 594.14 s
+
+Validation loss: 0.8005890848732109
+
+Time taken: 743.65 s
+Saving model to data/tamil/models/8/phones_split_after_embedding_2024-07-11_11:18:13_checkpoint_epoch_4.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 242.
+Epoch 5: 0.01% done
+Loss: 0.5600596070289612
+Time: 0.84 s
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 5800867.0 ON r2i5n2 CANCELLED AT 2024-07-11T16:32:23 ***
+slurmstepd: error: *** JOB 5800867 ON r2i5n2 CANCELLED AT 2024-07-11T16:32:23 ***

@@ -1,0 +1,24 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Ranking documents for layer 9
+Query limit: None
+Document embedded states dir: data/tamil/embeddings/documents/9/raw
+Query embedded states dir: data/tamil/embeddings/queries/9/raw
+Results file: tamil_results/9/raw_multiple_q_vecs/results_all.txt
+Time taken to load queries: 0.31 seconds
+Time taken to load documents: 18.19 seconds
+Number of batches for documents: 351
+CPU Memory used: 23.06 GB
+GPU Memory used: 0.38 GB
+Traceback (most recent call last):
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/mhubert_model/query_document_search_vectorised.py", line 118, in <module>
+    compute_ranking(queries_embedded_states, query_names, document_embedded_states_batched,
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/mhubert_model/query_document_search_vectorised.py", line 30, in compute_ranking
+    product = torch.matmul(query_embeddings, document_embeddings.transpose(1, 2))
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 111.55 GiB (GPU 0; 15.77 GiB total capacity; 448.00 MiB already allocated; 14.53 GiB free; 448.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: r2i6n1: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=5776337.0

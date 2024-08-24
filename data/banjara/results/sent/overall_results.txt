@@ -1,0 +1,84 @@
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/sent/9/awe2_512_proj_lr_0.001_linear_weight_decay_0.01/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 49; 49.0 %
+Number of queries with at least one correct result in the top 10 matches: 69; 70.0 %
+Mean Average Precision at 5: 0.245
+Mean Average Precision Overall: 0.113
+
+MODEL TYPE:
+- linear layer 1
+- relu
+- mean pooling
+- linear layer 2
+- projection head
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+middle size: 1024
+Results for: data/banjara/results/sent/9/awe_init_512_proj_lr_0.001_linear_weight_decay_0.01/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 46; 46.0 %
+Number of queries with at least one correct result in the top 10 matches: 59; 60.0 %
+Mean Average Precision at 5: 0.280
+Mean Average Precision Overall: 0.135
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+middle size: 4096
+Results for: data/banjara/results/sent/9/4096_awe_init_512_proj_lr_0.0005_linear_weight_decay_0.05/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 51; 52.0 %
+Number of queries with at least one correct result in the top 10 matches: 65; 66.0 %
+Mean Average Precision at 5: 0.300
+Mean Average Precision Overall: 0.122
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+middle size: 2024
+Results for: data/banjara/results/sent/9/2024_awe_init_512_proj_lr_0.0005_linear_weight_decay_0.05/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 56; 57.0 %
+Number of queries with at least one correct result in the top 10 matches: 72; 73.0 %
+Mean Average Precision at 5: 0.333
+Mean Average Precision Overall: 0.161
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/sent/9/hubert_lr_0.001_linear_weight_decay_0.1/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 35; 35.0 %
+Number of queries with at least one correct result in the top 10 matches: 53; 54.0 %
+Mean Average Precision at 5: 0.207
+Mean Average Precision Overall: 0.100

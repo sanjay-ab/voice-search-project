@@ -1,0 +1,12 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+JOINT DOCUMENT LOAD
+Ranking documents for layer 9
+Document embedded states dir: data/tamil/embeddings/documents/9/raw
+Query embedded states dir: data/tamil/embeddings/queries/9/raw
+Loading all document embeddings from all_document_embeddings.pkl
+CPU Memory used: 42.51 GB
+GPU Memory used: 0.00 GB
+Time taken to load documents: 44.38 seconds

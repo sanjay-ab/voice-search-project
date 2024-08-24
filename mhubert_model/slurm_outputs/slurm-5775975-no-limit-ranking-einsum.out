@@ -1,0 +1,1070 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Ranking documents for layer 9
+Query limit: None
+Document embedded states dir: data/tamil/embeddings/documents/9/raw
+Query embedded states dir: data/tamil/embeddings/queries/9/raw
+Results file: tamil_results/9/raw_multiple_q_vecs/results_all.txt
+Time taken to load queries: 0.70 seconds
+Time taken to load documents: 24.37 seconds
+Number of batches for documents: 351
+CPU Memory used: 23.06 GB
+GPU Memory used: 0.38 GB
+Time taken to compute product for batch 0: 0.522241170052439 s
+CPU Memory used: 23.53 GB
+GPU Memory used: 10.75 GB
+Time taken to compute product for batch 1: 0.30865560518577695 s
+CPU Memory used: 23.53 GB
+GPU Memory used: 11.19 GB
+Time taken to compute product for batch 2: 0.00027730315923690796 s
+CPU Memory used: 23.54 GB
+GPU Memory used: 11.16 GB
+Time taken to compute product for batch 3: 0.30485758697614074 s
+CPU Memory used: 23.54 GB
+GPU Memory used: 11.15 GB
+Time taken to compute product for batch 4: 0.0003009219653904438 s
+CPU Memory used: 23.54 GB
+GPU Memory used: 11.13 GB
+Time taken to compute product for batch 5: 0.2831479390151799 s
+CPU Memory used: 23.55 GB
+GPU Memory used: 11.08 GB
+Time taken to compute product for batch 6: 0.0003123302012681961 s
+CPU Memory used: 23.55 GB
+GPU Memory used: 11.07 GB
+Time taken to compute product for batch 7: 0.30001881159842014 s
+CPU Memory used: 23.55 GB
+GPU Memory used: 11.06 GB
+Time taken to compute product for batch 8: 0.0002805492840707302 s
+CPU Memory used: 23.56 GB
+GPU Memory used: 11.05 GB
+Time taken to compute product for batch 9: 0.31856127036735415 s
+CPU Memory used: 23.56 GB
+GPU Memory used: 11.07 GB
+Time taken to compute product for batch 10: 0.00027928687632083893 s
+CPU Memory used: 23.56 GB
+GPU Memory used: 11.06 GB
+Time taken to compute product for batch 11: 0.0003137686289846897 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 11.05 GB
+Time taken to compute product for batch 12: 0.0002787751145660877 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 11.04 GB
+Time taken to compute product for batch 13: 0.283774059265852 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 11.00 GB
+Time taken to compute product for batch 14: 0.31156454468145967 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 11.02 GB
+Time taken to compute product for batch 15: 0.00027912575751543045 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 11.01 GB
+Time taken to compute product for batch 16: 0.00029550399631261826 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 11.00 GB
+Time taken to compute product for batch 17: 0.3119976753368974 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 11.02 GB
+Time taken to compute product for batch 18: 0.2841477529145777 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 19: 0.30821277666836977 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 20: 0.00031182030215859413 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 21: 0.2857790398411453 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 22: 0.3035444333218038 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.99 GB
+Time taken to compute product for batch 23: 0.3025673348456621 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 11.02 GB
+Time taken to compute product for batch 24: 0.301575668156147 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 11.05 GB
+Time taken to compute product for batch 25: 0.28643587697297335 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 26: 0.2869687988422811 s
+CPU Memory used: 23.66 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 27: 0.28854052210226655 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.99 GB
+Time taken to compute product for batch 28: 0.286780992988497 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 29: 0.2855490236543119 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 30: 0.2876582429744303 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 31: 0.28917960822582245 s
+CPU Memory used: 23.70 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 32: 0.2878804411739111 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 33: 0.288218648172915 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 34: 0.288760794326663 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 35: 0.28926620399579406 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 36: 0.2867886768653989 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 37: 0.28736791480332613 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 38: 0.287455010227859 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 39: 0.3020839993841946 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 40: 0.2927368110977113 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 41: 0.28374258102849126 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 42: 0.28750423807650805 s
+CPU Memory used: 23.70 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 43: 0.3012460791505873 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 44: 0.2913640597835183 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 45: 0.2993170008994639 s
+CPU Memory used: 23.68 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 46: 0.2922433507628739 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 47: 0.2841656059026718 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 48: 0.2869049240835011 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 49: 0.28738913498818874 s
+CPU Memory used: 23.56 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 50: 0.2882531890645623 s
+CPU Memory used: 23.56 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 51: 0.28682314325124025 s
+CPU Memory used: 23.56 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 52: 0.2872737981379032 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 53: 0.2872865507379174 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 54: 0.28675868827849627 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 55: 0.2880159458145499 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 56: 0.28856314020231366 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 57: 0.286834797821939 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 58: 0.0002933149226009846 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 59: 0.2884096330963075 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 60: 0.288387643173337 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 61: 0.2872592071071267 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 62: 0.2870794259943068 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 63: 0.28828727127984166 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 64: 0.28679789416491985 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 65: 0.0002686777152121067 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 66: 0.28697033878415823 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 67: 0.28749704034999013 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 68: 0.28796044597402215 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 69: 0.301527860108763 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 70: 0.28621380031108856 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 71: 0.00031833816319704056 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 72: 0.30032023089006543 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 73: 0.285121968947351 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 74: 0.2885466367006302 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 75: 0.28701983485370874 s
+CPU Memory used: 23.57 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 76: 0.00033983075991272926 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 77: 0.28740584198385477 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 78: 0.30099177407100797 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 79: 0.2861758442595601 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 80: 0.00027981167659163475 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 81: 0.3010830949060619 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 82: 0.2847359851002693 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 83: 0.00030325213447213173 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 84: 0.28876215498894453 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 85: 0.2883200952783227 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 86: 0.2861391231417656 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 87: 0.0002826610580086708 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 88: 0.3008104916661978 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 89: 0.28565097879618406 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 90: 0.0002892371267080307 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 91: 0.28668846003711224 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 92: 0.2998406467959285 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 93: 0.28538627782836556 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 94: 0.0002934657968580723 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 95: 0.3003335129469633 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 96: 0.2855042489245534 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 97: 0.0003489912487566471 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 98: 0.28659314988180995 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 99: 0.29919314105063677 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 100: 0.2857314860448241 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 101: 0.0002961009740829468 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 102: 0.2880654991604388 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 103: 0.00030399905517697334 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 104: 0.30012181820347905 s
+CPU Memory used: 23.58 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 105: 0.28598137898370624 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 106: 0.0002749180421233177 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 107: 0.2876912457868457 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 108: 0.2889234176836908 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 109: 0.0002855369821190834 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 110: 0.2865023300983012 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 111: 0.00028703780844807625 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 112: 0.29892962938174605 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 113: 0.2854600138962269 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 114: 0.00027539394795894623 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 115: 0.29002977488562465 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 116: 0.2995143933221698 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 117: 0.000295872800052166 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 118: 0.2848389446735382 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 119: 0.28746721195057034 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 120: 0.00029088836163282394 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 121: 0.29975580098107457 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 122: 0.28551402408629656 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 123: 0.0002950979396700859 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 124: 0.28780394000932574 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 125: 0.0003115232102572918 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 126: 0.2989736879244447 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 127: 0.2859774730168283 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 128: 0.00027998629957437515 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 129: 0.2866466208361089 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 130: 0.2998185711912811 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 131: 0.0003139479085803032 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 132: 0.28660565381869674 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 133: 0.0002922140993177891 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 134: 0.2886154851876199 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 135: 0.2890564030967653 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 136: 0.0002920120023190975 s
+CPU Memory used: 23.59 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 137: 0.30042860889807343 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 138: 0.28509593196213245 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 139: 0.0002883477136492729 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 140: 0.2878798539750278 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 141: 0.2986495979130268 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 142: 0.0002816426567733288 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 143: 0.2860887493006885 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 144: 0.28746231039986014 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 145: 0.00027345074340701103 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 146: 0.29805087484419346 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 147: 0.28547287778928876 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 148: 0.0002988339401781559 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 149: 0.28770286217331886 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 150: 0.29856013413518667 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 151: 0.00030158134177327156 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 152: 0.29889319417998195 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 153: 0.2851462378166616 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 154: 0.0003093047998845577 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 155: 0.28782065911218524 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 156: 0.30004766397178173 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 157: 0.00029789935797452927 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 158: 0.2862141798250377 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 159: 0.2874246300198138 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 160: 0.00029346486553549767 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 161: 0.2877672528848052 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 162: 0.2998150596395135 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 163: 0.28666282910853624 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 164: 0.0003113667480647564 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 165: 0.2879282138310373 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 166: 0.29810223914682865 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 167: 0.00029469095170497894 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 168: 0.29758508689701557 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 169: 0.28498908085748553 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 170: 0.286739410366863 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 171: 0.00030134059488773346 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 172: 0.2979631829075515 s
+CPU Memory used: 23.60 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 173: 0.29828720167279243 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 174: 0.28563219541683793 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 175: 0.0002883337438106537 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 176: 0.28654888086020947 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 177: 0.2996376878581941 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 178: 0.000277890358120203 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 179: 0.29699895065277815 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 180: 0.2857817318290472 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 181: 0.2871604571118951 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 182: 0.00027964310720562935 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 183: 0.298277631867677 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 184: 0.2983434568159282 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 185: 0.0002939412370324135 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 186: 0.2872369969263673 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 187: 0.28637909470126033 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 188: 0.29896114906296134 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 189: 0.29716173792257905 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 190: 0.28618617868050933 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 191: 0.0003009089268743992 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 192: 0.28798842802643776 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 193: 0.29826050996780396 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 194: 0.2980695250444114 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 195: 0.0003089411184191704 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 196: 0.2864101938903332 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 197: 0.2872495991177857 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 198: 0.29907991690561175 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 199: 0.00029463600367307663 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 200: 0.2971616666764021 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 201: 0.2981656030751765 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 202: 0.2863884740509093 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 203: 0.2877190401777625 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 204: 0.0003012102097272873 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 205: 0.2976721879094839 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 206: 0.2967967330478132 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 207: 0.29716653330251575 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 208: 0.2860085810534656 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 209: 0.0002901153638958931 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 210: 0.28835449600592256 s
+CPU Memory used: 23.61 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 211: 0.2993504968471825 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 212: 0.0002699708566069603 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 213: 0.2953787879087031 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 214: 0.28488027630373836 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 215: 0.2863244549371302 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 216: 0.2967739226296544 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 217: 0.0003147050738334656 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 218: 0.2953589269891381 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 219: 0.2978794979862869 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 220: 0.28558235289528966 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 221: 0.28900121385231614 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 222: 0.2975577497854829 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 223: 0.2960024396888912 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 224: 0.29615323385223746 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 225: 0.00032376591116189957 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 226: 0.28678380185738206 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 227: 0.28653514571487904 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 228: 0.29715774673968554 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 229: 0.29518967494368553 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 230: 0.2960502100177109 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 231: 0.2854306590743363 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 232: 0.2866132711060345 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 233: 0.2963152420707047 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 234: 0.29617764987051487 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 235: 0.2970975236967206 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 236: 0.29651373578235507 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 237: 0.2853608466684818 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 238: 0.28815852105617523 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 239: 0.288315930403769 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 240: 0.2976969862356782 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 241: 0.2960886671207845 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 242: 0.2847919501364231 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 243: 0.28622968727722764 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 244: 0.2974941642023623 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 245: 0.29500011214986444 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 246: 0.29526053043082356 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 247: 0.2977943392470479 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 248: 0.28613873291760683 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 249: 0.286600552033633 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 250: 0.29722555400803685 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 251: 0.2932241759262979 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 252: 0.2934124576859176 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 253: 0.29509532637894154 s
+CPU Memory used: 23.62 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 254: 0.2849116250872612 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 255: 0.28986264392733574 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 256: 0.29042045678943396 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 257: 0.2987918299622834 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 258: 0.29735366627573967 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 259: 0.285403436049819 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 260: 0.2860475410707295 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 261: 0.28733741911128163 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 262: 0.29777821199968457 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 263: 0.29479846032336354 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 264: 0.28596118511632085 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.82 GB
+Time taken to compute product for batch 265: 0.28781491704285145 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 266: 0.288475604262203 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 267: 0.2972780289128423 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 268: 0.2958162808790803 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 269: 0.2964174789376557 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 270: 0.2854514210484922 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 271: 0.2868909230455756 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 272: 0.28681570990011096 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 273: 0.29531087819486856 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 274: 0.29542665695771575 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 275: 0.28521258058026433 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 276: 0.2884678370319307 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 277: 0.2893539951182902 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.88 GB
+Time taken to compute product for batch 278: 0.29773314110934734 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 279: 0.2952570621855557 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 280: 0.28589347610250115 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 281: 0.2872102241963148 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 282: 0.29562113573774695 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 283: 0.2949460130184889 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 284: 0.2972744829021394 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.96 GB
+Time taken to compute product for batch 285: 0.2855784581042826 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.82 GB
+Time taken to compute product for batch 286: 0.28835773607715964 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 287: 0.295445941388607 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 288: 0.2941391123458743 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 289: 0.2956807557493448 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 290: 0.2853946490213275 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 291: 0.2871606959961355 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.85 GB
+Time taken to compute product for batch 292: 0.2950451881624758 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 293: 0.29410442523658276 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 294: 0.29635966988280416 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 295: 0.2866212399676442 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 296: 0.28954145684838295 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 297: 0.29585402086377144 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 298: 0.29576642625033855 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 299: 0.29575500078499317 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 300: 0.2849681591615081 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 301: 0.29508031625300646 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.89 GB
+Time taken to compute product for batch 302: 0.29443582706153393 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 303: 0.2966132489964366 s
+CPU Memory used: 23.63 GB
+GPU Memory used: 10.99 GB
+Time taken to compute product for batch 304: 0.28621373465284705 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 305: 0.29781045112758875 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 306: 0.29515125788748264 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 307: 0.2968515600077808 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 308: 0.285888294223696 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.81 GB
+Time taken to compute product for batch 309: 0.28974104998633265 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 310: 0.2966557163745165 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 311: 0.2938807341270149 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 312: 0.28537027491256595 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.82 GB
+Time taken to compute product for batch 313: 0.2889824160374701 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 314: 0.2954814899712801 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 315: 0.2955732448026538 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 316: 0.28525604074820876 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.82 GB
+Time taken to compute product for batch 317: 0.2881188662722707 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 318: 0.2961512408219278 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.94 GB
+Time taken to compute product for batch 319: 0.2991611850447953 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 11.00 GB
+Time taken to compute product for batch 320: 0.28499059518799186 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.82 GB
+Time taken to compute product for batch 321: 0.2965563596226275 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 322: 0.2942275693640113 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 323: 0.284916406031698 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.83 GB
+Time taken to compute product for batch 324: 0.28845673520118 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 325: 0.29601087234914303 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.95 GB
+Time taken to compute product for batch 326: 0.2963820309378207 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 11.02 GB
+Time taken to compute product for batch 327: 0.28637475799769163 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.84 GB
+Time taken to compute product for batch 328: 0.29649262921884656 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.93 GB
+Time taken to compute product for batch 329: 0.2954783299937844 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 11.01 GB
+Time taken to compute product for batch 330: 0.28513986989855766 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 331: 0.29712160769850016 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.97 GB
+Time taken to compute product for batch 332: 0.28640424786135554 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.80 GB
+Time taken to compute product for batch 333: 0.29447459569200873 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 334: 0.2961628292687237 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 11.02 GB
+Time taken to compute product for batch 335: 0.28509345510974526 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.86 GB
+Time taken to compute product for batch 336: 0.2971332548186183 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 11.00 GB
+Time taken to compute product for batch 337: 0.29362035915255547 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.91 GB
+Time taken to compute product for batch 338: 0.29489124193787575 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 11.04 GB
+Time taken to compute product for batch 339: 0.29688080307096243 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 340: 0.2971016773954034 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 11.01 GB
+Time taken to compute product for batch 341: 0.2958291359245777 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.92 GB
+Time taken to compute product for batch 342: 0.28470952110365033 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.81 GB
+Time taken to compute product for batch 343: 0.2945538223721087 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.99 GB
+Time taken to compute product for batch 344: 0.0002814619801938534 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.99 GB
+Time taken to compute product for batch 345: 0.2959166280925274 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.87 GB
+Time taken to compute product for batch 346: 0.29353939928114414 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.90 GB
+Time taken to compute product for batch 347: 0.2945268708281219 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 348: 0.2966860202141106 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 10.98 GB
+Time taken to compute product for batch 349: 0.29873853037133813 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 12.00 GB
+Time taken to compute product for batch 350: 0.0006323503330349922 s
+CPU Memory used: 23.64 GB
+GPU Memory used: 0.87 GB
+Total time taken to compute result: 197.73754851100966 s

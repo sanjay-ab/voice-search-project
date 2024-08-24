@@ -1,0 +1,18 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe//9/tamil_train_3_9/half_lr_1e-5_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 79; 80.0 %
+Number of queries with at least one correct result in the top 10 matches: 90; 91.0 %
+Mean Average Precision at 5: 0.630
+Mean Average Precision Overall: 0.315

@@ -1,0 +1,323 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings file: data/tamil/embeddings/training_data/7/phonetized_3_9/all_embeddings_phonetized.pkl
+Validation embeddings file: data/tamil/embeddings/validation_data/7/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-15_15:15:22
+Training model for tamil with inputs from mHuBERT layer 7
+Number of epochs: 10, patience: 2, learning rate: 0.0001
+clip norm: 20, temperature: 0.15, num pairs per batch: 800
+time limit to create dataset: 240
+Loaded embedded data from data/tamil/embeddings/training_data/7/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 79.22 s
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 36.
+Created paired data
+Loaded embedded data from data/tamil/embeddings/validation_data/7/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 13.08 s
+Created paired data
+Time taken to create datasets: 366.10 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 5.6842522621154785
+Time: 9.16 s
+Epoch 0: 10.00% done
+Loss: 0.8195603017757955
+Time: 427.71 s
+Epoch 0: 20.00% done
+Loss: 0.40806481260229016
+Time: 842.43 s
+Epoch 0: 30.00% done
+Loss: 0.35779667040623414
+Time: 1257.27 s
+Epoch 0: 40.00% done
+Loss: 0.3324059216185507
+Time: 1671.89 s
+Epoch 0: 50.00% done
+Loss: 0.3158313458292801
+Time: 2085.77 s
+Epoch 0: 60.00% done
+Loss: 0.3072768129822428
+Time: 2496.69 s
+Epoch 0: 70.00% done
+Loss: 0.3077825593898464
+Time: 2917.65 s
+Epoch 0: 80.00% done
+Loss: 0.30168525098905113
+Time: 3343.11 s
+Epoch 0: 90.00% done
+Loss: 0.29181798721760205
+Time: 3754.14 s
+
+Epoch 0 done
+Epoch loss: 0.37328394126700676
+
+Time taken for epoch: 4161.69 s
+Number of gradients clipped: 3
+
+Calculating validation loss: 0.00% done
+Time: 0.02 s
+Calculating validation loss: 20.00% done
+Time: 51.16 s
+Calculating validation loss: 40.00% done
+Time: 96.98 s
+Calculating validation loss: 60.00% done
+Time: 145.65 s
+Calculating validation loss: 80.00% done
+Time: 194.28 s
+
+Validation loss: 0.32152377642728147
+
+Time taken: 240.54 s
+Saving model to data/tamil/models/7/3_9/2024-07-15_15:15:22_checkpoint_epoch_0.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 72.
+Epoch 1: 0.00% done
+Loss: 0.17766916751861572
+Time: 0.08 s
+Epoch 1: 10.00% done
+Loss: 0.37832037348291386
+Time: 372.73 s
+Epoch 1: 20.00% done
+Loss: 0.37209907137230236
+Time: 747.33 s
+Epoch 1: 30.00% done
+Loss: 0.36640801797391614
+Time: 1112.79 s
+Epoch 1: 40.00% done
+Loss: 0.3628209321011739
+Time: 1479.33 s
+Epoch 1: 50.00% done
+Loss: 0.3627901125619811
+Time: 1845.14 s
+Epoch 1: 60.00% done
+Loss: 0.3611252231228157
+Time: 2215.24 s
+Epoch 1: 70.00% done
+Loss: 0.3567360578939291
+Time: 2577.71 s
+Epoch 1: 80.00% done
+Loss: 0.34957684065289346
+Time: 2931.23 s
+Epoch 1: 90.00% done
+Loss: 0.36161155997137034
+Time: 3301.33 s
+
+Epoch 1 done
+Epoch loss: 0.3631832514298127
+
+Time taken for epoch: 3677.39 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.04 s
+Calculating validation loss: 20.00% done
+Time: 46.90 s
+Calculating validation loss: 40.00% done
+Time: 94.30 s
+Calculating validation loss: 60.00% done
+Time: 145.87 s
+Calculating validation loss: 80.00% done
+Time: 196.57 s
+
+Validation loss: 0.26475493820398743
+
+Time taken: 244.54 s
+Saving model to data/tamil/models/7/3_9/2024-07-15_15:15:22_checkpoint_epoch_1.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 41.
+Epoch 2: 0.00% done
+Loss: 0.24599096179008484
+Time: 0.03 s
+Epoch 2: 10.00% done
+Loss: 0.3083440553980839
+Time: 410.45 s
+Epoch 2: 20.00% done
+Loss: 0.2914665666931286
+Time: 793.80 s
+Epoch 2: 30.00% done
+Loss: 0.30513785180703895
+Time: 1200.80 s
+Epoch 2: 40.00% done
+Loss: 0.292319065842548
+Time: 1593.60 s
+Epoch 2: 50.00% done
+Loss: 0.30325577012376814
+Time: 2007.32 s
+Epoch 2: 60.00% done
+Loss: 0.3003011818112033
+Time: 2408.75 s
+Epoch 2: 70.00% done
+Loss: 0.29948525272065923
+Time: 2812.38 s
+Epoch 2: 80.00% done
+Loss: 0.3017042059057612
+Time: 3216.01 s
+Epoch 2: 90.00% done
+Loss: 0.29101214511850015
+Time: 3607.54 s
+
+Epoch 2 done
+Epoch loss: 0.2986304846035673
+
+Time taken for epoch: 3997.39 s
+Number of gradients clipped: 2
+
+Calculating validation loss: 0.00% done
+Time: 0.06 s
+Calculating validation loss: 20.00% done
+Time: 50.22 s
+Calculating validation loss: 40.00% done
+Time: 97.12 s
+Calculating validation loss: 60.00% done
+Time: 144.22 s
+Calculating validation loss: 80.00% done
+Time: 194.52 s
+
+Validation loss: 0.23743553346587726
+
+Time taken: 242.76 s
+Saving model to data/tamil/models/7/3_9/2024-07-15_15:15:22_checkpoint_epoch_2.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 46.
+Epoch 3: 0.00% done
+Loss: 0.2520856559276581
+Time: 0.07 s
+Epoch 3: 10.00% done
+Loss: 0.31517137662813577
+Time: 382.21 s
+Epoch 3: 20.00% done
+Loss: 0.3106961053099658
+Time: 762.79 s
+Epoch 3: 30.00% done
+Loss: 0.3170850892518437
+Time: 1150.10 s
+Epoch 3: 40.00% done
+Loss: 0.30391535788433394
+Time: 1522.94 s
+Epoch 3: 50.00% done
+Loss: 0.315389859497828
+Time: 1911.34 s
+Epoch 3: 60.00% done
+Loss: 0.32111398399959423
+Time: 2310.11 s
+Epoch 3: 70.00% done
+Loss: 0.31266278029324174
+Time: 2699.00 s
+Epoch 3: 80.00% done
+Loss: 0.31626536734761584
+Time: 3088.90 s
+Epoch 3: 90.00% done
+Loss: 0.31641257306385767
+Time: 3479.13 s
+
+Epoch 3 done
+Epoch loss: 0.31425388647948826
+
+Time taken for epoch: 3867.27 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.15 s
+Calculating validation loss: 20.00% done
+Time: 47.09 s
+Calculating validation loss: 40.00% done
+Time: 96.66 s
+Calculating validation loss: 60.00% done
+Time: 145.13 s
+Calculating validation loss: 80.00% done
+Time: 191.45 s
+
+Validation loss: 0.21351879519577913
+
+Time taken: 237.72 s
+Saving model to data/tamil/models/7/3_9/2024-07-15_15:15:22_checkpoint_epoch_3.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 40.
+Epoch 4: 0.00% done
+Loss: 1.1175657510757446
+Time: 0.52 s
+Epoch 4: 10.00% done
+Loss: 0.2816362290358413
+Time: 402.85 s
+Epoch 4: 20.00% done
+Loss: 0.28543197832585593
+Time: 817.80 s
+Epoch 4: 30.00% done
+Loss: 0.2797129726352309
+Time: 1214.38 s
+Epoch 4: 40.00% done
+Loss: 0.28472905666252823
+Time: 1619.84 s
+Epoch 4: 50.00% done
+Loss: 0.28771103456418573
+Time: 2034.43 s
+Epoch 4: 60.00% done
+Loss: 0.2801962779679949
+Time: 2435.27 s
+Epoch 4: 70.00% done
+Loss: 0.27853172222259265
+Time: 2833.92 s
+Epoch 4: 80.00% done
+Loss: 0.2883544374578798
+Time: 3246.97 s
+Epoch 4: 90.00% done
+Loss: 0.2799494582905126
+Time: 3644.74 s
+
+Epoch 4 done
+Epoch loss: 0.2828824121772673
+
+Time taken for epoch: 4045.48 s
+Number of gradients clipped: 1
+
+Calculating validation loss: 0.00% done
+Time: 0.05 s
+Calculating validation loss: 20.00% done
+Time: 48.50 s
+Calculating validation loss: 40.00% done
+Time: 94.18 s
+Calculating validation loss: 60.00% done
+Time: 141.14 s
+Calculating validation loss: 80.00% done
+Time: 189.71 s
+
+Validation loss: 0.20973599379179816
+
+Time taken: 239.67 s
+Saving model to data/tamil/models/7/3_9/2024-07-15_15:15:22_checkpoint_epoch_4.pt
+
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 38.
+Epoch 5: 0.00% done
+Loss: 0.19291646778583527
+Time: 0.06 s
+Epoch 5: 10.00% done
+Loss: 0.2678568579418956
+Time: 403.78 s
+Epoch 5: 20.00% done
+Loss: 0.2748101829383217
+Time: 828.67 s
+Epoch 5: 30.00% done
+Loss: 0.2734690493447415
+Time: 1249.72 s
+Epoch 5: 40.00% done
+Loss: 0.2674826648865795
+Time: 1657.07 s
+Epoch 5: 50.00% done
+Loss: 0.2760665029365064
+Time: 2081.62 s
+Epoch 5: 60.00% done
+Loss: 0.28050322270911915
+Time: 2516.62 s
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 5809522 ON r2i7n0 CANCELLED AT 2024-07-15T22:15:24 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 5809522.0 ON r2i7n0 CANCELLED AT 2024-07-15T22:15:24 DUE TO TIME LIMIT ***

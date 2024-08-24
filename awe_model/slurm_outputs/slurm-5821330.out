@@ -1,0 +1,135 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-20_19:13:27
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 0.0001
+clip norm: 40, temperature: 0.07, num pairs per batch: 700
+num batch pairs to accumulate gradients over: 1000
+time limit to create dataset: 600
+temperature: 0.07
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/tamil/embeddings/training_data/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data/9/raw
+Time taken: 104.77 s
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 3.
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 18.79 s
+Created paired data
+Time taken to create datasets: 761.54 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 305.82577387491864
+Time: 13.91 s
+Epoch 0: 10.00% done
+Loss: 9.051479812579176
+Time: 571.65 s
+Epoch 0: 20.00% done
+Loss: 0.3950359250210733
+Time: 1128.97 s
+Epoch 0: 30.00% done
+Loss: 0.15119669461970614
+Time: 1676.92 s
+Epoch 0: 40.00% done
+Loss: 0.09814205223632412
+Time: 2208.40 s
+Epoch 0: 50.00% done
+Loss: 0.05602048358368047
+Time: 2770.75 s
+Epoch 0: 60.00% done
+Loss: 0.05887598921106627
+Time: 3319.25 s
+Epoch 0: 70.00% done
+Loss: 0.1184757550394737
+Time: 3880.56 s
+Epoch 0: 80.00% done
+Loss: 0.01974039717321495
+Time: 4441.89 s
+Epoch 0: 90.00% done
+Loss: 0.017070957878624973
+Time: 5030.32 s
+
+Epoch 0 done
+Epoch loss: 0.9996136502894086
+
+Time taken for epoch: 5616.37 s
+Number of gradients clipped: 184
+
+Calculating validation loss: 0.00% done
+Time: 0.10 s
+Calculating validation loss: 20.00% done
+Time: 48.31 s
+Calculating validation loss: 40.00% done
+Time: 97.48 s
+Calculating validation loss: 60.00% done
+Time: 145.26 s
+Calculating validation loss: 80.00% done
+Time: 195.19 s
+
+Validation loss: 46.53690520585504
+
+Time taken: 246.31 s
+Saving model to data/tamil/models/awe/9/lr_1e-4_tmp_0.07_acc_1000_3_9/2024-07-20_19:13:27_checkpoint_epoch_0.pt
+
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 4.
+Regenerated paired data
+Epoch 1: 0.00% done
+Loss: 0.001235792175672638
+Time: 0.02 s
+Epoch 1: 10.00% done
+Loss: 0.08430786210960235
+Time: 581.44 s
+Epoch 1: 20.00% done
+Loss: 0.02442092412458342
+Time: 1143.67 s
+Epoch 1: 30.00% done
+Loss: 0.012062099509910806
+Time: 1704.52 s
+Epoch 1: 40.00% done
+Loss: 0.029387875135495223
+Time: 2272.51 s
+Epoch 1: 50.00% done
+Loss: 0.06811860276471167
+Time: 2829.08 s
+Epoch 1: 60.00% done
+Loss: 0.008714969375577968
+Time: 3398.47 s
+Epoch 1: 70.00% done
+Loss: 0.008697845766624157
+Time: 3971.74 s
+Traceback (most recent call last):
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/awe_model/train_model.py", line 291, in <module>
+    train_one_epoch(model, train_dataloader, loss_function, optimizer,  
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/awe_model/train_model.py", line 120, in train_one_epoch
+    loss = get_loss_for_one_batch(model, hubert_embeddings, loss_function, device, model_output_size, batch_as_list)
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/awe_model/train_model.py", line 65, in get_loss_for_one_batch
+    model_outputs = model(model_inputs)
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/tc062/tc062/sanjayb/dissertation/awe_model/model.py", line 129, in forward
+    x = layer(x)
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 539, in forward
+    x = self.norm2(x + self._ff_block(x))
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 554, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 384.00 MiB (GPU 0; 15.77 GiB total capacity; 13.72 GiB already allocated; 26.69 MiB free; 14.75 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: r2i4n4: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=5821330.0

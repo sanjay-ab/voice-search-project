@@ -1,0 +1,213 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+
+Loading model from data/tamil/models/awe/9/half_lr_1e-5_tmp_0.07_3_9/2024-07-20_01:21:37_checkpoint_epoch_0.pt
+
+Extracting AWE embeddings for queries in data/banjara/embeddings/queries/9/raw
+Saving embeddings to data/banjara/embeddings/queries/9/half_lr_1e-5_tmp_0.07_epoch_0_3_9
+For layer 9 using model data/tamil/models/awe/9/half_lr_1e-5_tmp_0.07_3_9/2024-07-20_01:21:37_checkpoint_epoch_0.pt, batched_inference: True
+use window splitter: True
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+1.00% done
+Time: 0.74 s
+2.00% done
+Time: 0.81 s
+3.00% done
+Time: 0.92 s
+4.00% done
+Time: 1.10 s
+5.00% done
+Time: 1.21 s
+7.00% done
+Time: 1.52 s
+8.00% done
+Time: 1.69 s
+9.00% done
+Time: 1.79 s
+10.00% done
+Time: 2.02 s
+11.00% done
+Time: 2.29 s
+12.00% done
+Time: 2.37 s
+13.00% done
+Time: 2.50 s
+14.00% done
+Time: 2.56 s
+15.00% done
+Time: 2.65 s
+16.00% done
+Time: 2.89 s
+17.00% done
+Time: 3.40 s
+18.00% done
+Time: 3.57 s
+19.00% done
+Time: 3.69 s
+20.00% done
+Time: 3.97 s
+21.00% done
+Time: 4.04 s
+22.00% done
+Time: 4.13 s
+23.00% done
+Time: 4.21 s
+24.00% done
+Time: 4.91 s
+25.00% done
+Time: 5.01 s
+26.00% done
+Time: 5.09 s
+27.00% done
+Time: 5.18 s
+28.00% done
+Time: 5.26 s
+29.00% done
+Time: 5.32 s
+30.00% done
+Time: 5.66 s
+31.00% done
+Time: 6.14 s
+32.00% done
+Time: 6.25 s
+33.00% done
+Time: 6.34 s
+34.00% done
+Time: 6.38 s
+35.00% done
+Time: 6.46 s
+36.00% done
+Time: 6.76 s
+37.00% done
+Time: 7.10 s
+38.00% done
+Time: 7.18 s
+39.00% done
+Time: 7.26 s
+40.00% done
+Time: 7.42 s
+41.00% done
+Time: 7.50 s
+42.00% done
+Time: 7.58 s
+43.00% done
+Time: 7.67 s
+44.00% done
+Time: 7.73 s
+45.00% done
+Time: 7.80 s
+46.00% done
+Time: 8.18 s
+47.00% done
+Time: 8.46 s
+48.00% done
+Time: 8.56 s
+49.00% done
+Time: 8.71 s
+50.00% done
+Time: 8.80 s
+51.00% done
+Time: 8.90 s
+52.00% done
+Time: 8.96 s
+53.00% done
+Time: 9.04 s
+54.00% done
+Time: 9.10 s
+55.00% done
+Time: 9.23 s
+56.00% done
+Time: 9.30 s
+57.00% done
+Time: 9.56 s
+58.00% done
+Time: 9.66 s
+59.00% done
+Time: 9.75 s
+60.00% done
+Time: 9.82 s
+61.00% done
+Time: 9.94 s
+62.00% done
+Time: 10.17 s
+63.00% done
+Time: 10.31 s
+64.00% done
+Time: 10.63 s
+65.00% done
+Time: 10.78 s
+66.00% done
+Time: 10.87 s
+67.00% done
+Time: 10.94 s
+68.00% done
+Time: 11.07 s
+69.00% done
+Time: 11.16 s
+70.00% done
+Time: 11.31 s
+71.00% done
+Time: 11.38 s
+72.00% done
+Time: 11.49 s
+73.00% done
+Time: 11.58 s
+74.00% done
+Time: 11.69 s
+75.00% done
+Time: 12.19 s
+76.00% done
+Time: 12.33 s
+77.00% done
+Time: 12.45 s
+78.00% done
+Time: 12.55 s
+79.00% done
+Time: 12.66 s
+80.00% done
+Time: 12.80 s
+81.00% done
+Time: 12.90 s
+82.00% done
+Time: 13.15 s
+83.00% done
+Time: 13.21 s
+84.00% done
+Time: 13.45 s
+85.00% done
+Time: 13.54 s
+86.00% done
+Time: 13.66 s
+87.00% done
+Time: 14.01 s
+88.00% done
+Time: 14.09 s
+89.00% done
+Time: 14.19 s
+90.00% done
+Time: 14.66 s
+91.00% done
+Time: 14.75 s
+92.00% done
+Time: 14.97 s
+93.00% done
+Time: 15.06 s
+94.00% done
+Time: 15.50 s
+95.00% done
+Time: 15.96 s
+96.00% done
+Time: 16.14 s
+97.00% done
+Time: 16.31 s
+98.00% done
+Time: 16.40 s
+99.00% done
+Time: 16.47 s
+100.00% done
+Time: 16.57 s

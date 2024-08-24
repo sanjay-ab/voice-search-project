@@ -1,0 +1,7762 @@
+4
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+TIME TO EXTRACT PHONE SEGMENTS: 5.60 s
+DEVICE: cuda
+TIME TO LOAD HUBERT: 56.94 s
+NUMBER OF CPU CORES: 80
+Generating embeddings for training_data
+u tx tx ai
+0.00% done
+Time: 0.59 s
+tx tx ai k
+0.01% done
+Time: 0.61 s
+tx ai k k
+0.01% done
+Time: 0.62 s
+ai k k i
+0.02% done
+Time: 0.66 s
+k k i dx
+0.02% done
+Time: 0.67 s
+k i dx aa
+0.02% done
+Time: 0.68 s
+a d u m u
+0.03% done
+Time: 0.72 s
+d u m u tx
+0.03% done
+Time: 0.73 s
+u m u tx tx
+0.03% done
+Time: 0.76 s
+m u tx tx ai
+0.04% done
+Time: 0.79 s
+u tx tx ai k
+0.04% done
+Time: 0.80 s
+tx tx ai k k
+0.05% done
+Time: 0.82 s
+tx ai k k i
+0.05% done
+Time: 0.83 s
+ai k k i dx
+0.05% done
+Time: 0.84 s
+k k i dx aa
+0.06% done
+Time: 0.85 s
+nz aa e nz
+0.06% done
+Time: 0.91 s
+nz nz aa e
+0.07% done
+Time: 0.93 s
+aa e nz a
+0.07% done
+Time: 0.98 s
+aa nz aa e nz
+0.07% done
+Time: 1.03 s
+nz aa e nz nz
+0.08% done
+Time: 1.05 s
+a nz nz aa e
+0.08% done
+Time: 1.06 s
+nz nz aa e nz
+0.09% done
+Time: 1.08 s
+nz aa e nz a
+0.09% done
+Time: 1.12 s
+aa e nz a k
+0.09% done
+Time: 1.17 s
+e m
+0.10% done
+Time: 1.27 s
+c e m
+0.10% done
+Time: 1.34 s
+e m m
+0.10% done
+Time: 1.42 s
+c e m m
+0.11% done
+Time: 1.48 s
+e m m a
+0.11% done
+Time: 1.53 s
+c e m m a
+0.12% done
+Time: 1.59 s
+e m m a p
+0.12% done
+Time: 1.60 s
+m a p a dx
+0.12% done
+Time: 1.62 s
+a m aa rx
+0.13% done
+Time: 1.70 s
+d a m aa rx
+0.13% done
+Time: 1.77 s
+a m aa rx i
+0.14% done
+Time: 1.85 s
+nz aa a d
+0.14% done
+Time: 1.90 s
+aa nz aa a d
+0.14% done
+Time: 1.95 s
+nz aa a d u
+0.15% done
+Time: 1.99 s
+aa a d u l
+0.15% done
+Time: 2.01 s
+d u l a w
+0.15% done
+Time: 2.03 s
+oo w a n
+0.16% done
+Time: 2.12 s
+p oo w a n
+0.16% done
+Time: 2.21 s
+oo w a n d
+0.17% done
+Time: 2.31 s
+n aa m
+0.17% done
+Time: 2.34 s
+n aa m a
+0.17% done
+Time: 2.36 s
+aa m a p
+0.18% done
+Time: 2.37 s
+n aa m a p
+0.18% done
+Time: 2.38 s
+aa m a p a
+0.19% done
+Time: 2.39 s
+n oo
+0.19% done
+Time: 2.40 s
+a n oo
+0.19% done
+Time: 2.41 s
+n oo y
+0.20% done
+Time: 2.42 s
+nz a n oo
+0.20% done
+Time: 2.44 s
+a n oo y
+0.21% done
+Time: 2.45 s
+nz nz a n oo
+0.21% done
+Time: 2.46 s
+nz a n oo y
+0.21% done
+Time: 2.47 s
+i k a
+0.22% done
+Time: 2.52 s
+dx ai s
+0.22% done
+Time: 2.54 s
+ai s i
+0.22% done
+Time: 2.56 s
+a r i k
+0.23% done
+Time: 2.58 s
+r i k a
+0.23% done
+Time: 2.59 s
+i k a dx
+0.24% done
+Time: 2.60 s
+k a dx ai
+0.24% done
+Time: 2.64 s
+a dx ai s
+0.24% done
+Time: 2.66 s
+dx ai s i
+0.25% done
+Time: 2.68 s
+ai s i y
+0.25% done
+Time: 2.69 s
+s i y aa
+0.26% done
+Time: 2.70 s
+c a r i k
+0.26% done
+Time: 2.73 s
+a r i k a
+0.26% done
+Time: 2.74 s
+r i k a dx
+0.27% done
+Time: 2.75 s
+i k a dx ai
+0.27% done
+Time: 2.76 s
+k a dx ai s
+0.27% done
+Time: 2.78 s
+a dx ai s i
+0.28% done
+Time: 2.80 s
+dx ai s i y
+0.28% done
+Time: 2.81 s
+ai s i y aa
+0.29% done
+Time: 2.82 s
+ee r u p
+0.29% done
+Time: 2.84 s
+r u p oo
+0.29% done
+Time: 2.87 s
+oo y i r
+0.30% done
+Time: 2.91 s
+p ee r u p
+0.30% done
+Time: 2.92 s
+ee r u p oo
+0.31% done
+Time: 2.94 s
+r u p oo y
+0.31% done
+Time: 2.95 s
+p oo y i r
+0.31% done
+Time: 2.99 s
+oo y i r u
+0.32% done
+Time: 3.03 s
+d u r o
+0.32% done
+Time: 3.05 s
+a nz nz aa w
+0.33% done
+Time: 3.07 s
+n d u r o
+0.33% done
+Time: 3.08 s
+d u r o m
+0.33% done
+Time: 3.10 s
+aa ng g a p
+0.34% done
+Time: 3.13 s
+c i r
+0.34% done
+Time: 3.22 s
+i r c
+0.34% done
+Time: 3.25 s
+c a d
+0.35% done
+Time: 3.28 s
+c i r c
+0.35% done
+Time: 3.29 s
+i r c c
+0.36% done
+Time: 3.31 s
+r c c a
+0.36% done
+Time: 3.32 s
+c c a d
+0.36% done
+Time: 3.34 s
+c a d u
+0.37% done
+Time: 3.35 s
+d u p oo
+0.37% done
+Time: 3.37 s
+u p oo d
+0.38% done
+Time: 3.38 s
+c i r c c
+0.38% done
+Time: 3.40 s
+i r c c a
+0.38% done
+Time: 3.41 s
+r c c a d
+0.39% done
+Time: 3.42 s
+c c a d u
+0.39% done
+Time: 3.43 s
+c a d u p
+0.39% done
+Time: 3.44 s
+a d u p oo
+0.40% done
+Time: 3.46 s
+d u p oo d
+0.40% done
+Time: 3.48 s
+u p oo d u
+0.41% done
+Time: 3.50 s
+zh u
+0.41% done
+Time: 3.54 s
+k i w
+0.41% done
+Time: 3.56 s
+w i zh
+0.42% done
+Time: 3.58 s
+i zh u
+0.42% done
+Time: 3.61 s
+zh u n
+0.43% done
+Time: 3.62 s
+k k i w
+0.43% done
+Time: 3.63 s
+k i w i
+0.43% done
+Time: 3.64 s
+i w i zh
+0.44% done
+Time: 3.65 s
+w i zh u
+0.44% done
+Time: 3.66 s
+i zh u n
+0.45% done
+Time: 3.68 s
+zh u n d
+0.45% done
+Time: 3.69 s
+a r i k k
+0.45% done
+Time: 3.70 s
+r i k k i
+0.46% done
+Time: 3.71 s
+i k k i w
+0.46% done
+Time: 3.72 s
+k k i w i
+0.46% done
+Time: 3.73 s
+k i w i zh
+0.47% done
+Time: 3.74 s
+i w i zh u
+0.47% done
+Time: 3.75 s
+w i zh u n
+0.48% done
+Time: 3.77 s
+i zh u n d
+0.48% done
+Time: 3.78 s
+zh u n d u
+0.48% done
+Time: 3.79 s
+nz ee w
+0.49% done
+Time: 3.81 s
+a nz ee w
+0.49% done
+Time: 3.83 s
+nz ee w a
+0.50% done
+Time: 3.85 s
+dx a nz ee w
+0.50% done
+Time: 3.86 s
+a nz ee w a
+0.50% done
+Time: 3.88 s
+nz ee w a n
+0.51% done
+Time: 3.90 s
+i r u d
+0.51% done
+Time: 3.91 s
+u d aa ng
+0.51% done
+Time: 3.93 s
+aa m p a nz
+0.52% done
+Time: 3.95 s
+nz i r u d
+0.52% done
+Time: 3.96 s
+i r u d aa
+0.53% done
+Time: 3.97 s
+r u d aa ng
+0.53% done
+Time: 3.98 s
+u d aa ng g
+0.53% done
+Time: 4.00 s
+ai r
+0.54% done
+Time: 4.03 s
+k tx
+0.54% done
+Time: 4.10 s
+u tx ai
+0.55% done
+Time: 4.12 s
+tx ai r
+0.55% done
+Time: 4.15 s
+ai r a
+0.55% done
+Time: 4.17 s
+r a k
+0.56% done
+Time: 4.20 s
+a k tx
+0.56% done
+Time: 4.22 s
+k tx a
+0.57% done
+Time: 4.24 s
+r aa w
+0.57% done
+Time: 4.26 s
+aa w oo
+0.57% done
+Time: 4.27 s
+o r u tx
+0.58% done
+Time: 4.32 s
+r u tx ai
+0.58% done
+Time: 4.33 s
+u tx ai r
+0.58% done
+Time: 4.34 s
+tx ai r a
+0.59% done
+Time: 4.36 s
+ai r a k
+0.59% done
+Time: 4.38 s
+r a k tx
+0.60% done
+Time: 4.40 s
+a k tx a
+0.60% done
+Time: 4.42 s
+k tx a r
+0.60% done
+Time: 4.43 s
+tx a r aa
+0.61% done
+Time: 4.45 s
+a r aa w
+0.61% done
+Time: 4.46 s
+r aa w oo
+0.62% done
+Time: 4.47 s
+o r u tx ai
+0.62% done
+Time: 4.48 s
+r u tx ai r
+0.62% done
+Time: 4.49 s
+u tx ai r a
+0.63% done
+Time: 4.50 s
+tx ai r a k
+0.63% done
+Time: 4.52 s
+ai r a k tx
+0.64% done
+Time: 4.54 s
+r a k tx a
+0.64% done
+Time: 4.56 s
+a k tx a r
+0.64% done
+Time: 4.58 s
+k tx a r aa
+0.65% done
+Time: 4.59 s
+tx a r aa w
+0.65% done
+Time: 4.60 s
+a r aa w oo
+0.65% done
+Time: 4.61 s
+a m oo
+0.66% done
+Time: 4.68 s
+nz a m oo
+0.66% done
+Time: 4.74 s
+e nz nz a m
+0.67% done
+Time: 4.81 s
+nz nz a m oo
+0.67% done
+Time: 4.87 s
+c a c
+0.67% done
+Time: 4.89 s
+i d u c
+0.68% done
+Time: 4.91 s
+u c a c
+0.68% done
+Time: 4.92 s
+c a c c
+0.69% done
+Time: 4.93 s
+c c i nz
+0.69% done
+Time: 4.94 s
+i d u c a
+0.69% done
+Time: 4.95 s
+d u c a c
+0.70% done
+Time: 4.96 s
+u c a c c
+0.70% done
+Time: 4.97 s
+c a c c i
+0.70% done
+Time: 4.99 s
+a c c i nz
+0.71% done
+Time: 5.00 s
+e l l aa r
+0.71% done
+Time: 5.31 s
+l aa r u m
+0.72% done
+Time: 5.52 s
+aa r u m ee
+0.72% done
+Time: 5.71 s
+l a e
+0.72% done
+Time: 5.77 s
+tx l a e
+0.73% done
+Time: 5.78 s
+l a e nz
+0.73% done
+Time: 5.81 s
+ii tx l a e
+0.74% done
+Time: 5.82 s
+tx l a e nz
+0.74% done
+Time: 5.83 s
+l a e nz nz
+0.74% done
+Time: 5.86 s
+p j
+0.75% done
+Time: 5.87 s
+c u p
+0.75% done
+Time: 5.90 s
+u p j
+0.76% done
+Time: 5.91 s
+p j e
+0.76% done
+Time: 5.93 s
+j e k
+0.76% done
+Time: 5.95 s
+e k tx
+0.77% done
+Time: 6.00 s
+k tx aa
+0.77% done
+Time: 6.02 s
+tx aa i
+0.77% done
+Time: 6.04 s
+u p i
+0.78% done
+Time: 6.10 s
+c u p j
+0.78% done
+Time: 6.11 s
+u p j e
+0.79% done
+Time: 6.12 s
+p j e k
+0.79% done
+Time: 6.14 s
+j e k tx
+0.79% done
+Time: 6.16 s
+e k tx aa
+0.80% done
+Time: 6.18 s
+k tx aa i
+0.80% done
+Time: 6.19 s
+tx aa i d
+0.81% done
+Time: 6.20 s
+d u p i
+0.81% done
+Time: 6.22 s
+u p i dx
+0.81% done
+Time: 6.25 s
+c u p j e
+0.82% done
+Time: 6.26 s
+u p j e k
+0.82% done
+Time: 6.27 s
+p j e k tx
+0.82% done
+Time: 6.29 s
+j e k tx aa
+0.83% done
+Time: 6.31 s
+e k tx aa i
+0.83% done
+Time: 6.32 s
+k tx aa i d
+0.84% done
+Time: 6.33 s
+tx aa i d u
+0.84% done
+Time: 6.34 s
+aa i d u p
+0.84% done
+Time: 6.36 s
+i d u p i
+0.85% done
+Time: 6.37 s
+d u p i dx
+0.85% done
+Time: 6.38 s
+u p i dx i
+0.86% done
+Time: 6.41 s
+i k k aa d
+0.86% done
+Time: 6.53 s
+l a dx
+0.86% done
+Time: 6.59 s
+dx aa p
+0.87% done
+Time: 6.62 s
+aa p aa
+0.87% done
+Time: 6.72 s
+l l a dx
+0.88% done
+Time: 6.77 s
+l a dx aa
+0.88% done
+Time: 6.82 s
+a dx aa p
+0.88% done
+Time: 6.83 s
+dx aa p aa
+0.89% done
+Time: 6.85 s
+aa p aa k
+0.89% done
+Time: 6.87 s
+a l a dx
+0.89% done
+Time: 6.89 s
+i l l a dx
+0.90% done
+Time: 6.93 s
+l l a dx aa
+0.90% done
+Time: 6.98 s
+l a dx aa p
+0.91% done
+Time: 6.99 s
+a dx aa p aa
+0.91% done
+Time: 7.00 s
+dx aa p aa k
+0.91% done
+Time: 7.01 s
+aa p aa k k
+0.92% done
+Time: 7.04 s
+aa k k a l
+0.92% done
+Time: 7.06 s
+k k a l a
+0.93% done
+Time: 7.12 s
+k a l a dx
+0.93% done
+Time: 7.13 s
+a l a dx aa
+0.93% done
+Time: 7.15 s
+m u g
+0.94% done
+Time: 7.16 s
+r u m u
+0.94% done
+Time: 7.20 s
+u m u g
+0.94% done
+Time: 7.22 s
+m u g a
+0.95% done
+Time: 7.24 s
+i r u m u
+0.95% done
+Time: 7.26 s
+r u m u g
+0.96% done
+Time: 7.28 s
+u m u g a
+0.96% done
+Time: 7.30 s
+m u g a nz
+0.96% done
+Time: 7.32 s
+d a k aa
+0.97% done
+Time: 7.37 s
+a k aa r
+0.97% done
+Time: 7.39 s
+t i k k
+0.98% done
+Time: 7.42 s
+n d a k aa
+0.98% done
+Time: 7.47 s
+d a k aa r
+0.98% done
+Time: 7.48 s
+a k aa r t
+0.99% done
+Time: 7.50 s
+t t i k k
+0.99% done
+Time: 7.53 s
+t i k k u
+1.00% done
+Time: 7.55 s
+d c
+1.00% done
+Time: 7.56 s
+ii t
+1.00% done
+Time: 7.57 s
+w i n
+1.01% done
+Time: 7.59 s
+n d c
+1.01% done
+Time: 7.60 s
+d c aa
+1.01% done
+Time: 7.61 s
+m ii t
+1.02% done
+Time: 7.63 s
+ii t e
+1.02% done
+Time: 7.64 s
+r a w i
+1.03% done
+Time: 7.66 s
+a w i n
+1.03% done
+Time: 7.68 s
+w i n d
+1.03% done
+Time: 7.70 s
+i n d c
+1.04% done
+Time: 7.71 s
+n d c aa
+1.04% done
+Time: 7.72 s
+d c aa m
+1.05% done
+Time: 7.73 s
+c aa m ii
+1.05% done
+Time: 7.74 s
+aa m ii t
+1.05% done
+Time: 7.75 s
+m ii t e
+1.06% done
+Time: 7.77 s
+ii t e r
+1.06% done
+Time: 7.78 s
+a r a w i
+1.06% done
+Time: 7.80 s
+r a w i n
+1.07% done
+Time: 7.81 s
+a w i n d
+1.07% done
+Time: 7.83 s
+w i n d c
+1.08% done
+Time: 7.85 s
+i n d c aa
+1.08% done
+Time: 7.86 s
+n d c aa m
+1.08% done
+Time: 7.87 s
+d c aa m ii
+1.09% done
+Time: 7.88 s
+c aa m ii t
+1.09% done
+Time: 7.89 s
+aa m ii t e
+1.10% done
+Time: 7.90 s
+m ii t e r
+1.10% done
+Time: 7.91 s
+ii t e r i
+1.10% done
+Time: 7.92 s
+y aa a
+1.11% done
+Time: 7.94 s
+i y aa a
+1.11% done
+Time: 7.95 s
+y aa a d
+1.12% done
+Time: 7.96 s
+t i y aa a
+1.12% done
+Time: 7.97 s
+i y aa a d
+1.12% done
+Time: 7.99 s
+y aa a d u
+1.13% done
+Time: 8.00 s
+sx a nz
+1.13% done
+Time: 8.05 s
+ee w a y
+1.13% done
+Time: 8.06 s
+w a y aa
+1.14% done
+Time: 8.08 s
+a y aa nx
+1.14% done
+Time: 8.09 s
+i p u r
+1.15% done
+Time: 8.12 s
+p u r u
+1.15% done
+Time: 8.13 s
+u r u sx
+1.15% done
+Time: 8.14 s
+u sx a nz
+1.16% done
+Time: 8.18 s
+t ee w a y
+1.16% done
+Time: 8.20 s
+ee w a y aa
+1.17% done
+Time: 8.21 s
+w a y aa nx
+1.17% done
+Time: 8.22 s
+a y aa nx i
+1.17% done
+Time: 8.23 s
+nx i p u r
+1.18% done
+Time: 8.24 s
+i p u r u
+1.18% done
+Time: 8.26 s
+p u r u sx
+1.18% done
+Time: 8.29 s
+u r u sx a
+1.19% done
+Time: 8.31 s
+r u sx a nz
+1.19% done
+Time: 8.33 s
+t i c a
+1.20% done
+Time: 8.36 s
+a nx tx a
+1.20% done
+Time: 8.40 s
+k a t t i
+1.20% done
+Time: 8.42 s
+t t i c a
+1.21% done
+Time: 8.43 s
+t i c a nx
+1.21% done
+Time: 8.44 s
+i c a nx tx
+1.22% done
+Time: 8.45 s
+c a nx tx a
+1.22% done
+Time: 8.47 s
+a m e
+1.22% done
+Time: 8.51 s
+m a dx
+1.23% done
+Time: 8.53 s
+a c c a
+1.23% done
+Time: 8.58 s
+c c a m
+1.24% done
+Time: 8.60 s
+c a m e
+1.24% done
+Time: 8.61 s
+a m e nz
+1.24% done
+Time: 8.64 s
+m e nz b
+1.25% done
+Time: 8.65 s
+u m a dx
+1.25% done
+Time: 8.66 s
+m a dx a
+1.25% done
+Time: 8.67 s
+dx a m ai
+1.26% done
+Time: 8.69 s
+y a dx aa
+1.26% done
+Time: 8.70 s
+a c c a m
+1.27% done
+Time: 8.71 s
+c c a m e
+1.27% done
+Time: 8.72 s
+c a m e nz
+1.27% done
+Time: 8.73 s
+a m e nz b
+1.28% done
+Time: 8.75 s
+m e nz b a
+1.28% done
+Time: 8.76 s
+b a d u m
+1.29% done
+Time: 8.78 s
+d u m a dx
+1.29% done
+Time: 8.81 s
+u m a dx a
+1.29% done
+Time: 8.83 s
+m a dx a m
+1.30% done
+Time: 8.85 s
+a dx a m ai
+1.30% done
+Time: 8.89 s
+dx a m ai y
+1.30% done
+Time: 8.90 s
+m ai y a dx
+1.31% done
+Time: 8.91 s
+ai y a dx aa
+1.31% done
+Time: 8.92 s
+aa nz o
+1.32% done
+Time: 8.94 s
+d aa nz o
+1.32% done
+Time: 8.95 s
+aa nz o r
+1.32% done
+Time: 8.97 s
+a d aa nz o
+1.33% done
+Time: 8.98 s
+d aa nz o r
+1.33% done
+Time: 8.99 s
+aa nz o r u
+1.34% done
+Time: 9.01 s
+nz o r u w
+1.34% done
+Time: 9.03 s
+d a c
+1.34% done
+Time: 9.05 s
+a c i
+1.35% done
+Time: 9.09 s
+i w aa
+1.35% done
+Time: 9.14 s
+n d a c
+1.36% done
+Time: 9.16 s
+d a c i
+1.36% done
+Time: 9.17 s
+a c i w
+1.36% done
+Time: 9.18 s
+c i w aa
+1.37% done
+Time: 9.19 s
+a n d a c
+1.37% done
+Time: 9.21 s
+n d a c i
+1.37% done
+Time: 9.22 s
+d a c i w
+1.38% done
+Time: 9.23 s
+a c i w aa
+1.38% done
+Time: 9.24 s
+k aa m
+1.39% done
+Time: 9.31 s
+aa m e
+1.39% done
+Time: 9.37 s
+m e dx
+1.39% done
+Time: 9.42 s
+e dx i
+1.40% done
+Time: 9.46 s
+k aa m e
+1.40% done
+Time: 9.50 s
+aa m e dx
+1.41% done
+Time: 9.54 s
+m e dx i
+1.41% done
+Time: 9.58 s
+e dx i l
+1.41% done
+Time: 9.59 s
+dx i l a
+1.42% done
+Time: 9.62 s
+k aa m e dx
+1.42% done
+Time: 9.65 s
+aa m e dx i
+1.42% done
+Time: 9.69 s
+m e dx i l
+1.43% done
+Time: 9.70 s
+e dx i l a
+1.43% done
+Time: 9.71 s
+n o
+1.44% done
+Time: 9.72 s
+n o nx
+1.44% done
+Time: 9.74 s
+n o nx tx
+1.44% done
+Time: 9.75 s
+o nx tx i
+1.45% done
+Time: 9.77 s
+n o nx tx i
+1.45% done
+Time: 9.78 s
+tx oo r
+1.46% done
+Time: 9.79 s
+r aa e
+1.46% done
+Time: 9.81 s
+p p ai
+1.46% done
+Time: 9.84 s
+p ai y
+1.47% done
+Time: 9.94 s
+tx oo r aa
+1.47% done
+Time: 9.95 s
+oo r aa e
+1.48% done
+Time: 9.97 s
+r aa e p
+1.48% done
+Time: 9.98 s
+e p p ai
+1.48% done
+Time: 9.99 s
+p p ai y
+1.49% done
+Time: 10.00 s
+p ai y aa
+1.49% done
+Time: 10.02 s
+c u m p
+1.49% done
+Time: 10.03 s
+u m p aa
+1.50% done
+Time: 10.05 s
+m p aa p
+1.50% done
+Time: 10.07 s
+aa p p ee
+1.51% done
+Time: 10.09 s
+tx oo r aa e
+1.51% done
+Time: 10.10 s
+oo r aa e p
+1.51% done
+Time: 10.11 s
+r aa e p p
+1.52% done
+Time: 10.12 s
+aa e p p ai
+1.52% done
+Time: 10.13 s
+e p p ai y
+1.53% done
+Time: 10.14 s
+p p ai y aa
+1.53% done
+Time: 10.16 s
+p ai y aa c
+1.53% done
+Time: 10.17 s
+ai y aa c c
+1.54% done
+Time: 10.18 s
+c c u m p
+1.54% done
+Time: 10.19 s
+c u m p aa
+1.54% done
+Time: 10.20 s
+u m p aa p
+1.55% done
+Time: 10.21 s
+m p aa p p
+1.55% done
+Time: 10.23 s
+p aa p p ee
+1.56% done
+Time: 10.24 s
+aa p p ee nz
+1.56% done
+Time: 10.26 s
+rx a y
+1.56% done
+Time: 10.30 s
+ee p i
+1.57% done
+Time: 10.34 s
+ee rx a y
+1.57% done
+Time: 10.39 s
+rx a y aa
+1.58% done
+Time: 10.43 s
+u m ee p
+1.58% done
+Time: 10.47 s
+m ee p i
+1.58% done
+Time: 10.52 s
+ee p i dx
+1.59% done
+Time: 10.56 s
+w ee rx a y
+1.59% done
+Time: 10.60 s
+ee rx a y aa
+1.60% done
+Time: 10.65 s
+rx a y aa r
+1.60% done
+Time: 10.69 s
+r u m ee p
+1.60% done
+Time: 10.71 s
+u m ee p i
+1.61% done
+Time: 10.74 s
+m ee p i dx
+1.61% done
+Time: 10.78 s
+ee p i dx i
+1.61% done
+Time: 10.82 s
+i l a i
+1.62% done
+Time: 10.85 s
+l a i d
+1.62% done
+Time: 10.88 s
+c i l a i
+1.63% done
+Time: 10.90 s
+i l a i d
+1.63% done
+Time: 10.92 s
+l a i d u
+1.63% done
+Time: 10.94 s
+o nz nz a
+1.64% done
+Time: 10.96 s
+c o nz nz a
+1.64% done
+Time: 10.98 s
+ee t a
+1.65% done
+Time: 11.00 s
+ee t a m
+1.65% done
+Time: 11.02 s
+ee t a m p
+1.65% done
+Time: 11.03 s
+l aa y
+1.66% done
+Time: 11.05 s
+y p p
+1.66% done
+Time: 11.08 s
+a l aa y
+1.66% done
+Time: 11.09 s
+l aa y p
+1.67% done
+Time: 11.10 s
+aa y p p
+1.67% done
+Time: 11.13 s
+y p p aa
+1.68% done
+Time: 11.14 s
+k a l aa y
+1.68% done
+Time: 11.15 s
+a l aa y p
+1.68% done
+Time: 11.16 s
+l aa y p p
+1.69% done
+Time: 11.17 s
+aa y p p aa
+1.69% done
+Time: 11.18 s
+y p p aa ng
+1.70% done
+Time: 11.20 s
+d a p ai
+1.70% done
+Time: 11.21 s
+a p ai y
+1.70% done
+Time: 11.23 s
+p ai y a
+1.71% done
+Time: 11.32 s
+ai y a nz
+1.71% done
+Time: 11.42 s
+n d a p ai
+1.72% done
+Time: 11.43 s
+d a p ai y
+1.72% done
+Time: 11.45 s
+a p ai y a
+1.72% done
+Time: 11.47 s
+p ai y a nz
+1.73% done
+Time: 11.55 s
+dx i k k a
+1.73% done
+Time: 11.66 s
+i k k a l
+1.73% done
+Time: 11.71 s
+m u dx i k
+1.74% done
+Time: 11.72 s
+nz aa nz
+1.74% done
+Time: 11.75 s
+nz nz aa nz
+1.75% done
+Time: 11.76 s
+o nz nz aa nz
+1.75% done
+Time: 11.77 s
+nz c oo
+1.75% done
+Time: 11.78 s
+c oo nz
+1.76% done
+Time: 11.79 s
+aa nz c oo
+1.76% done
+Time: 11.81 s
+nz c oo nz
+1.77% done
+Time: 11.82 s
+n aa nz c oo
+1.77% done
+Time: 11.83 s
+aa nz c oo nz
+1.77% done
+Time: 11.84 s
+k aa d aa
+1.78% done
+Time: 11.87 s
+k k aa d aa
+1.78% done
+Time: 11.90 s
+dx i t
+1.79% done
+Time: 11.91 s
+i t e
+1.79% done
+Time: 11.94 s
+a dx i t
+1.79% done
+Time: 11.95 s
+dx i t e
+1.80% done
+Time: 11.96 s
+i t e r
+1.80% done
+Time: 11.99 s
+p a dx i t
+1.80% done
+Time: 12.00 s
+a dx i t e
+1.81% done
+Time: 12.01 s
+dx i t e r
+1.81% done
+Time: 12.02 s
+i t e r i
+1.82% done
+Time: 12.05 s
+a e l
+1.82% done
+Time: 12.08 s
+m ee c
+1.82% done
+Time: 12.12 s
+ee c aa
+1.83% done
+Time: 12.14 s
+g a e l
+1.83% done
+Time: 12.15 s
+a e l l
+1.84% done
+Time: 12.19 s
+u m ee c
+1.84% done
+Time: 12.21 s
+m ee c aa
+1.84% done
+Time: 12.23 s
+ee c aa p
+1.85% done
+Time: 12.24 s
+u ng g a e
+1.85% done
+Time: 12.25 s
+ng g a e l
+1.85% done
+Time: 12.27 s
+g a e l l
+1.86% done
+Time: 12.32 s
+a e l l aa
+1.86% done
+Time: 12.36 s
+r u m ee c
+1.87% done
+Time: 12.37 s
+u m ee c aa
+1.87% done
+Time: 12.38 s
+m ee c aa p
+1.87% done
+Time: 12.39 s
+ee c aa p p
+1.88% done
+Time: 12.41 s
+i w a l
+1.88% done
+Time: 12.42 s
+w a l i
+1.89% done
+Time: 12.45 s
+a l i ng
+1.89% done
+Time: 12.46 s
+i ng g aa
+1.89% done
+Time: 12.48 s
+c i w a l
+1.90% done
+Time: 12.49 s
+i w a l i
+1.90% done
+Time: 12.51 s
+w a l i ng
+1.91% done
+Time: 12.52 s
+a l i ng g
+1.91% done
+Time: 12.53 s
+l i ng g aa
+1.91% done
+Time: 12.54 s
+m k uu
+1.92% done
+Time: 12.56 s
+k uu tx
+1.92% done
+Time: 12.64 s
+uu tx a
+1.92% done
+Time: 12.73 s
+dx a m k
+1.93% done
+Time: 12.75 s
+a m k uu
+1.93% done
+Time: 12.77 s
+m k uu tx
+1.94% done
+Time: 12.78 s
+k uu tx a
+1.94% done
+Time: 12.86 s
+i nz nz a p
+1.94% done
+Time: 12.89 s
+a dx a m k
+1.95% done
+Time: 12.90 s
+dx a m k uu
+1.95% done
+Time: 12.91 s
+a m k uu tx
+1.96% done
+Time: 12.93 s
+m k uu tx a
+1.96% done
+Time: 12.95 s
+w u nx
+1.96% done
+Time: 12.97 s
+u nx tx
+1.97% done
+Time: 13.01 s
+nx i t
+1.97% done
+Time: 13.04 s
+k a w u
+1.97% done
+Time: 13.06 s
+a w u nx
+1.98% done
+Time: 13.08 s
+w u nx tx
+1.98% done
+Time: 13.09 s
+u nx tx a
+1.99% done
+Time: 13.12 s
+nx tx a m
+1.99% done
+Time: 13.15 s
+tx a m a
+1.99% done
+Time: 13.18 s
+a m a nx
+2.00% done
+Time: 13.21 s
+m a nx i
+2.00% done
+Time: 13.27 s
+a nx i t
+2.01% done
+Time: 13.28 s
+nx i t e
+2.01% done
+Time: 13.30 s
+k a w u nx
+2.01% done
+Time: 13.31 s
+a w u nx tx
+2.02% done
+Time: 13.33 s
+w u nx tx a
+2.02% done
+Time: 13.35 s
+u nx tx a m
+2.03% done
+Time: 13.37 s
+nx tx a m a
+2.03% done
+Time: 13.39 s
+tx a m a nx
+2.03% done
+Time: 13.41 s
+a m a nx i
+2.04% done
+Time: 13.44 s
+m a nx i t
+2.04% done
+Time: 13.45 s
+a nx i t e
+2.04% done
+Time: 13.47 s
+nx i t e r
+2.05% done
+Time: 13.48 s
+i l t
+2.05% done
+Time: 13.49 s
+l t e
+2.06% done
+Time: 13.50 s
+e n d i
+2.06% done
+Time: 13.51 s
+n d i l
+2.06% done
+Time: 13.53 s
+d i l t
+2.07% done
+Time: 13.54 s
+i l t e
+2.07% done
+Time: 13.55 s
+l t e r
+2.08% done
+Time: 13.56 s
+c e n d i
+2.08% done
+Time: 13.57 s
+e n d i l
+2.08% done
+Time: 13.58 s
+n d i l t
+2.09% done
+Time: 13.60 s
+d i l t e
+2.09% done
+Time: 13.61 s
+i l t e r
+2.09% done
+Time: 13.62 s
+l t e r i
+2.10% done
+Time: 13.63 s
+a l aa m w
+2.10% done
+Time: 13.65 s
+aa m w a r
+2.11% done
+Time: 13.68 s
+m w a r a
+2.11% done
+Time: 13.69 s
+o l u ng
+2.11% done
+Time: 13.70 s
+g a n ii
+2.12% done
+Time: 13.74 s
+c o l u ng
+2.12% done
+Time: 13.76 s
+o l u ng g
+2.13% done
+Time: 13.77 s
+u ng g a n
+2.13% done
+Time: 13.79 s
+ng g a n ii
+2.13% done
+Time: 13.84 s
+g a n ii ng
+2.14% done
+Time: 13.88 s
+nz p aa
+2.14% done
+Time: 13.91 s
+t a d
+2.15% done
+Time: 13.96 s
+d ee k
+2.15% done
+Time: 13.98 s
+ee k i
+2.15% done
+Time: 14.03 s
+n aa nz p
+2.16% done
+Time: 14.10 s
+aa nz p aa
+2.16% done
+Time: 14.13 s
+nz p aa r
+2.16% done
+Time: 14.15 s
+t t a d
+2.17% done
+Time: 14.20 s
+t a d ee
+2.17% done
+Time: 14.21 s
+a d ee k
+2.18% done
+Time: 14.22 s
+d ee k i
+2.18% done
+Time: 14.23 s
+ee k i dx
+2.18% done
+Time: 14.28 s
+n aa nz p aa
+2.19% done
+Time: 14.32 s
+aa nz p aa r
+2.19% done
+Time: 14.34 s
+nz p aa r t
+2.20% done
+Time: 14.36 s
+aa r t t a
+2.20% done
+Time: 14.38 s
+r t t a d
+2.20% done
+Time: 14.40 s
+t t a d ee
+2.21% done
+Time: 14.41 s
+t a d ee k
+2.21% done
+Time: 14.42 s
+a d ee k i
+2.21% done
+Time: 14.44 s
+d ee k i dx
+2.22% done
+Time: 14.45 s
+ee k i dx ai
+2.22% done
+Time: 14.50 s
+ai y aa d ee
+2.23% done
+Time: 14.52 s
+u nz ee
+2.23% done
+Time: 14.53 s
+nz ee t
+2.23% done
+Time: 14.55 s
+r u nz ee
+2.24% done
+Time: 14.56 s
+u nz ee t
+2.24% done
+Time: 14.57 s
+nz ee t e
+2.25% done
+Time: 14.58 s
+y aa r u nz
+2.25% done
+Time: 14.60 s
+aa r u nz ee
+2.25% done
+Time: 14.61 s
+r u nz ee t
+2.26% done
+Time: 14.62 s
+u nz ee t e
+2.26% done
+Time: 14.63 s
+nz ee t e r
+2.27% done
+Time: 14.64 s
+g i y
+2.27% done
+Time: 14.66 s
+aa e l
+2.27% done
+Time: 14.70 s
+aa r t u
+2.28% done
+Time: 14.71 s
+r t u r
+2.28% done
+Time: 14.72 s
+u g i y
+2.28% done
+Time: 14.73 s
+g i y aa
+2.29% done
+Time: 14.75 s
+i y aa e
+2.29% done
+Time: 14.77 s
+y aa e l
+2.30% done
+Time: 14.79 s
+aa e l l
+2.30% done
+Time: 14.84 s
+p aa r t u
+2.30% done
+Time: 14.85 s
+aa r t u r
+2.31% done
+Time: 14.86 s
+r t u r u
+2.31% done
+Time: 14.87 s
+t u r u g
+2.32% done
+Time: 14.88 s
+u r u g i
+2.32% done
+Time: 14.90 s
+r u g i y
+2.32% done
+Time: 14.91 s
+u g i y aa
+2.33% done
+Time: 14.92 s
+g i y aa e
+2.33% done
+Time: 14.94 s
+i y aa e l
+2.33% done
+Time: 14.95 s
+y aa e l l
+2.34% done
+Time: 14.97 s
+aa e l l aa
+2.34% done
+Time: 15.02 s
+w ee g
+2.35% done
+Time: 15.04 s
+aa w ee g
+2.35% done
+Time: 15.05 s
+w ee g a
+2.35% done
+Time: 15.07 s
+ee g a m
+2.36% done
+Time: 15.09 s
+g a m aa
+2.36% done
+Time: 15.17 s
+l aa w ee g
+2.37% done
+Time: 15.19 s
+aa w ee g a
+2.37% done
+Time: 15.20 s
+w ee g a m
+2.37% done
+Time: 15.22 s
+ee g a m aa
+2.38% done
+Time: 15.23 s
+rx e
+2.38% done
+Time: 15.24 s
+ee rx e
+2.39% done
+Time: 15.25 s
+rx e nz
+2.39% done
+Time: 15.27 s
+w ee rx e
+2.39% done
+Time: 15.28 s
+ee rx e nz
+2.40% done
+Time: 15.29 s
+rx e nz nz
+2.40% done
+Time: 15.30 s
+p rx a m w
+2.40% done
+Time: 15.35 s
+m w ee rx e
+2.41% done
+Time: 15.36 s
+w ee rx e nz
+2.41% done
+Time: 15.38 s
+ee rx e nz nz
+2.42% done
+Time: 15.39 s
+rx e nz nz a
+2.42% done
+Time: 15.40 s
+k k e
+2.42% done
+Time: 15.43 s
+k e tx
+2.43% done
+Time: 15.47 s
+k i r i
+2.43% done
+Time: 15.49 s
+i r i k
+2.44% done
+Time: 15.52 s
+i k k e
+2.44% done
+Time: 15.53 s
+k k e tx
+2.44% done
+Time: 15.54 s
+k i r i k
+2.45% done
+Time: 15.55 s
+i r i k k
+2.45% done
+Time: 15.57 s
+r i k k e
+2.45% done
+Time: 15.58 s
+i k k e tx
+2.46% done
+Time: 15.60 s
+tx k
+2.46% done
+Time: 15.65 s
+r aa tx
+2.47% done
+Time: 15.67 s
+aa tx k
+2.47% done
+Time: 15.69 s
+tx k oo
+2.47% done
+Time: 15.70 s
+k oo l
+2.48% done
+Time: 15.73 s
+oo l i
+2.48% done
+Time: 15.77 s
+w i r aa
+2.49% done
+Time: 15.78 s
+i r aa tx
+2.49% done
+Time: 15.79 s
+r aa tx k
+2.49% done
+Time: 15.81 s
+aa tx k oo
+2.50% done
+Time: 15.82 s
+tx k oo l
+2.50% done
+Time: 15.83 s
+k oo l i
+2.51% done
+Time: 15.86 s
+w i r aa tx
+2.51% done
+Time: 15.87 s
+i r aa tx k
+2.51% done
+Time: 15.88 s
+r aa tx k oo
+2.52% done
+Time: 15.89 s
+aa tx k oo l
+2.52% done
+Time: 15.90 s
+tx k oo l i
+2.52% done
+Time: 15.92 s
+r e k
+2.53% done
+Time: 15.96 s
+k a r e
+2.53% done
+Time: 16.00 s
+a r e k
+2.54% done
+Time: 16.04 s
+r e k tx
+2.54% done
+Time: 16.08 s
+k a r e k
+2.54% done
+Time: 16.13 s
+a r e k tx
+2.55% done
+Time: 16.17 s
+ii d
+2.55% done
+Time: 16.21 s
+n ii d
+2.56% done
+Time: 16.23 s
+ii d aa
+2.56% done
+Time: 16.24 s
+n ii d aa
+2.56% done
+Time: 16.25 s
+ii d aa nz
+2.57% done
+Time: 16.26 s
+d aa nz c
+2.57% done
+Time: 16.31 s
+n ii d aa nz
+2.57% done
+Time: 16.33 s
+ii d aa nz c
+2.58% done
+Time: 16.34 s
+d aa nz c o
+2.58% done
+Time: 16.39 s
+aa p ee s a
+2.59% done
+Time: 16.40 s
+p rx oo m w
+2.59% done
+Time: 16.42 s
+aa r i p
+2.59% done
+Time: 16.43 s
+nx nx u m
+2.60% done
+Time: 16.49 s
+d a m aa r
+2.60% done
+Time: 16.51 s
+a m aa r i
+2.61% done
+Time: 16.53 s
+m aa r i p
+2.61% done
+Time: 16.54 s
+aa r i p a
+2.61% done
+Time: 16.55 s
+a nx nx u m
+2.62% done
+Time: 16.57 s
+t a r
+2.62% done
+Time: 16.67 s
+t a r aa
+2.63% done
+Time: 16.72 s
+r aa d u
+2.63% done
+Time: 16.81 s
+t a r aa d
+2.63% done
+Time: 16.84 s
+a r aa d u
+2.64% done
+Time: 16.89 s
+nz i k
+2.64% done
+Time: 16.92 s
+i nz nz i
+2.64% done
+Time: 16.93 s
+nz nz i k
+2.65% done
+Time: 16.95 s
+nz i k k
+2.65% done
+Time: 16.97 s
+k k aa p
+2.66% done
+Time: 16.99 s
+k aa p i
+2.66% done
+Time: 17.00 s
+aa p i r
+2.66% done
+Time: 17.01 s
+i nz nz i k
+2.67% done
+Time: 17.02 s
+nz nz i k k
+2.67% done
+Time: 17.04 s
+nz i k k aa
+2.68% done
+Time: 17.05 s
+i k k aa p
+2.68% done
+Time: 17.06 s
+k k aa p i
+2.68% done
+Time: 17.07 s
+k aa p i r
+2.69% done
+Time: 17.09 s
+aa p i r i
+2.69% done
+Time: 17.10 s
+dx ii
+2.69% done
+Time: 17.11 s
+u dx ii
+2.70% done
+Time: 17.12 s
+dx ii ng
+2.70% done
+Time: 17.13 s
+a c aa p
+2.71% done
+Time: 17.19 s
+p u dx ii
+2.71% done
+Time: 17.20 s
+u dx ii ng
+2.71% done
+Time: 17.21 s
+dx ii ng g
+2.72% done
+Time: 17.22 s
+ii ng g aa
+2.72% done
+Time: 17.24 s
+nz a c aa p
+2.73% done
+Time: 17.25 s
+a c aa p p
+2.73% done
+Time: 17.32 s
+c aa p p u
+2.73% done
+Time: 17.39 s
+aa p p u dx
+2.74% done
+Time: 17.42 s
+p p u dx ii
+2.74% done
+Time: 17.43 s
+p u dx ii ng
+2.75% done
+Time: 17.45 s
+u dx ii ng g
+2.75% done
+Time: 17.46 s
+dx ii ng g aa
+2.75% done
+Time: 17.47 s
+w aa i
+2.76% done
+Time: 17.49 s
+d u w aa
+2.76% done
+Time: 17.51 s
+u w aa i
+2.76% done
+Time: 17.52 s
+w aa i r
+2.77% done
+Time: 17.54 s
+i d u w aa
+2.77% done
+Time: 17.56 s
+d u w aa i
+2.78% done
+Time: 17.57 s
+u w aa i r
+2.78% done
+Time: 17.59 s
+w aa i r u
+2.78% done
+Time: 17.61 s
+p p aa p
+2.79% done
+Time: 17.65 s
+p aa p ee
+2.79% done
+Time: 17.66 s
+u nz aa r
+2.80% done
+Time: 17.67 s
+a p p aa p
+2.80% done
+Time: 17.68 s
+p p aa p ee
+2.80% done
+Time: 17.69 s
+p aa p ee s
+2.81% done
+Time: 17.71 s
+s u nz aa r
+2.81% done
+Time: 17.72 s
+u nz aa r u
+2.81% done
+Time: 17.73 s
+tx a m i
+2.82% done
+Time: 17.74 s
+sx tx a m i
+2.82% done
+Time: 17.75 s
+tx a m i r
+2.83% done
+Time: 17.77 s
+sx a w
+2.83% done
+Time: 17.78 s
+i sx a w
+2.83% done
+Time: 17.79 s
+sx a w a
+2.84% done
+Time: 17.80 s
+w a n aa
+2.84% done
+Time: 17.81 s
+aa d a nz
+2.85% done
+Time: 17.82 s
+a nz aa nz
+2.85% done
+Time: 17.83 s
+nz aa nz a
+2.85% done
+Time: 17.85 s
+aa nz a n
+2.86% done
+Time: 17.88 s
+nz a n d
+2.86% done
+Time: 17.91 s
+w i sx a w
+2.87% done
+Time: 17.93 s
+i sx a w a
+2.87% done
+Time: 17.94 s
+sx a w a n
+2.87% done
+Time: 17.95 s
+a w a n aa
+2.88% done
+Time: 17.96 s
+w a n aa d
+2.88% done
+Time: 17.97 s
+n aa d a nz
+2.88% done
+Time: 17.98 s
+aa d a nz aa
+2.89% done
+Time: 17.99 s
+d a nz aa nz
+2.89% done
+Time: 18.01 s
+a nz aa nz a
+2.90% done
+Time: 18.02 s
+nz aa nz a n
+2.90% done
+Time: 18.03 s
+aa nz a n d
+2.90% done
+Time: 18.06 s
+aa nx aa
+2.91% done
+Time: 18.08 s
+nx aa r
+2.91% done
+Time: 18.09 s
+aa r e
+2.92% done
+Time: 18.10 s
+aa nx aa r
+2.92% done
+Time: 18.11 s
+nx aa r e
+2.92% done
+Time: 18.13 s
+aa r e nx
+2.93% done
+Time: 18.14 s
+aa nx aa r e
+2.93% done
+Time: 18.15 s
+nx aa r e nx
+2.94% done
+Time: 18.16 s
+aa r e nx tx
+2.94% done
+Time: 18.18 s
+aa n aa
+2.94% done
+Time: 18.21 s
+nz aa n aa
+2.95% done
+Time: 18.23 s
+aa n aa m
+2.95% done
+Time: 18.24 s
+n aa m p
+2.95% done
+Time: 18.25 s
+aa nz aa n aa
+2.96% done
+Time: 18.27 s
+nz aa n aa m
+2.96% done
+Time: 18.28 s
+aa n aa m p
+2.97% done
+Time: 18.29 s
+n aa m p a
+2.97% done
+Time: 18.30 s
+l aa m k
+2.97% done
+Time: 18.33 s
+aa m k o
+2.98% done
+Time: 18.36 s
+m k o nj
+2.98% done
+Time: 18.41 s
+l l aa m k
+2.99% done
+Time: 18.43 s
+l aa m k o
+2.99% done
+Time: 18.44 s
+aa m k o nj
+2.99% done
+Time: 18.46 s
+m k o nj j
+3.00% done
+Time: 18.48 s
+g a y
+3.00% done
+Time: 18.53 s
+a y oo
+3.00% done
+Time: 18.54 s
+y oo o
+3.01% done
+Time: 18.55 s
+ng g a y
+3.01% done
+Time: 18.59 s
+g a y oo
+3.02% done
+Time: 18.61 s
+a y oo o
+3.02% done
+Time: 18.62 s
+y oo o r
+3.02% done
+Time: 18.63 s
+e ng g a y
+3.03% done
+Time: 18.64 s
+ng g a y oo
+3.03% done
+Time: 18.65 s
+g a y oo o
+3.04% done
+Time: 18.67 s
+a y oo o r
+3.04% done
+Time: 18.68 s
+y oo o r u
+3.04% done
+Time: 18.69 s
+oo o r u i
+3.05% done
+Time: 18.70 s
+e nz t
+3.05% done
+Time: 18.71 s
+e nz t e
+3.06% done
+Time: 18.73 s
+e nz t e r
+3.06% done
+Time: 18.74 s
+w i w ee
+3.06% done
+Time: 18.75 s
+i w ee g
+3.07% done
+Time: 18.76 s
+w i w ee g
+3.07% done
+Time: 18.77 s
+i w ee g a
+3.07% done
+Time: 18.78 s
+r k uu
+3.08% done
+Time: 18.79 s
+aa r k uu
+3.08% done
+Time: 18.81 s
+r k uu tx
+3.09% done
+Time: 18.82 s
+y aa r k uu
+3.09% done
+Time: 18.83 s
+aa r k uu tx
+3.09% done
+Time: 18.84 s
+r k uu tx a
+3.10% done
+Time: 18.85 s
+r e m
+3.10% done
+Time: 18.87 s
+e m oo
+3.11% done
+Time: 18.89 s
+r e m oo
+3.11% done
+Time: 18.91 s
+c m
+3.11% done
+Time: 18.92 s
+p aa c
+3.12% done
+Time: 18.95 s
+aa c m
+3.12% done
+Time: 18.96 s
+c m e
+3.12% done
+Time: 18.97 s
+a nz a p
+3.13% done
+Time: 18.98 s
+nz a p p
+3.13% done
+Time: 19.02 s
+p p aa c
+3.14% done
+Time: 19.04 s
+p aa c m
+3.14% done
+Time: 19.06 s
+aa c m e
+3.14% done
+Time: 19.07 s
+c m e nz
+3.15% done
+Time: 19.08 s
+m e nz tx
+3.15% done
+Time: 19.09 s
+i w a nz a
+3.16% done
+Time: 19.10 s
+w a nz a p
+3.16% done
+Time: 19.12 s
+a nz a p p
+3.16% done
+Time: 19.13 s
+nz a p p aa
+3.17% done
+Time: 19.15 s
+a p p aa c
+3.17% done
+Time: 19.17 s
+p p aa c m
+3.18% done
+Time: 19.18 s
+p aa c m e
+3.18% done
+Time: 19.19 s
+aa c m e nz
+3.18% done
+Time: 19.20 s
+c m e nz tx
+3.19% done
+Time: 19.21 s
+k a d
+3.19% done
+Time: 19.23 s
+k a d ai
+3.19% done
+Time: 19.24 s
+oo m ee
+3.20% done
+Time: 19.27 s
+e dx u p
+3.20% done
+Time: 19.30 s
+dx u p p
+3.21% done
+Time: 19.34 s
+u p p oo
+3.21% done
+Time: 19.37 s
+p oo m ee
+3.21% done
+Time: 19.39 s
+e dx u p p
+3.22% done
+Time: 19.40 s
+dx u p p oo
+3.22% done
+Time: 19.41 s
+u p p oo m
+3.23% done
+Time: 19.44 s
+p p oo m ee
+3.23% done
+Time: 19.46 s
+a p oo y
+3.23% done
+Time: 19.54 s
+g a p oo y
+3.24% done
+Time: 19.59 s
+a p oo y i
+3.24% done
+Time: 19.66 s
+w a c
+3.24% done
+Time: 19.69 s
+k k oo
+3.25% done
+Time: 19.74 s
+ee w a c
+3.25% done
+Time: 19.75 s
+w a c c
+3.26% done
+Time: 19.77 s
+c c i k
+3.26% done
+Time: 19.81 s
+c i k k
+3.26% done
+Time: 19.84 s
+i k k oo
+3.27% done
+Time: 19.87 s
+y ee w a c
+3.27% done
+Time: 19.88 s
+ee w a c c
+3.28% done
+Time: 19.89 s
+w a c c i
+3.28% done
+Time: 19.92 s
+a c c i k
+3.28% done
+Time: 19.94 s
+c c i k k
+3.29% done
+Time: 19.95 s
+c i k k oo
+3.29% done
+Time: 19.96 s
+i r ee
+3.30% done
+Time: 19.99 s
+r ee c
+3.30% done
+Time: 20.01 s
+ee c c
+3.30% done
+Time: 20.03 s
+c a nz
+3.31% done
+Time: 20.07 s
+r i l
+3.31% done
+Time: 20.15 s
+a p i r
+3.31% done
+Time: 20.18 s
+p i r ee
+3.32% done
+Time: 20.19 s
+i r ee c
+3.32% done
+Time: 20.20 s
+r ee c c
+3.33% done
+Time: 20.21 s
+ee c c a
+3.33% done
+Time: 20.22 s
+c c a nz
+3.33% done
+Time: 20.26 s
+c a nz a
+3.34% done
+Time: 20.27 s
+a nz a t
+3.34% done
+Time: 20.29 s
+e r i l
+3.35% done
+Time: 20.35 s
+r i l a
+3.35% done
+Time: 20.42 s
+nz a p i r
+3.35% done
+Time: 20.43 s
+a p i r ee
+3.36% done
+Time: 20.44 s
+p i r ee c
+3.36% done
+Time: 20.46 s
+i r ee c c
+3.36% done
+Time: 20.47 s
+r ee c c a
+3.37% done
+Time: 20.48 s
+ee c c a nz
+3.37% done
+Time: 20.49 s
+c c a nz a
+3.38% done
+Time: 20.50 s
+c a nz a t
+3.38% done
+Time: 20.51 s
+a nz a t e
+3.38% done
+Time: 20.53 s
+t e r i l
+3.39% done
+Time: 20.59 s
+e r i l a
+3.39% done
+Time: 20.65 s
+l l aa y
+3.40% done
+Time: 20.67 s
+l aa y i
+3.40% done
+Time: 20.68 s
+a l l aa y
+3.40% done
+Time: 20.69 s
+l l aa y i
+3.41% done
+Time: 20.70 s
+l aa y i r
+3.41% done
+Time: 20.72 s
+r uu
+3.42% done
+Time: 20.76 s
+ii tx r
+3.42% done
+Time: 20.78 s
+tx r uu
+3.42% done
+Time: 20.80 s
+r uu tx
+3.43% done
+Time: 20.82 s
+tx a l
+3.43% done
+Time: 20.86 s
+p ii tx r
+3.43% done
+Time: 20.88 s
+ii tx r uu
+3.44% done
+Time: 20.90 s
+tx r uu tx
+3.44% done
+Time: 20.92 s
+r uu tx a
+3.45% done
+Time: 20.93 s
+uu tx a l
+3.45% done
+Time: 20.94 s
+tx a l w
+3.45% done
+Time: 20.95 s
+a l w aa
+3.46% done
+Time: 20.99 s
+p ii tx r uu
+3.46% done
+Time: 21.01 s
+ii tx r uu tx
+3.47% done
+Time: 21.03 s
+tx r uu tx a
+3.47% done
+Time: 21.04 s
+r uu tx a l
+3.47% done
+Time: 21.05 s
+uu tx a l w
+3.48% done
+Time: 21.07 s
+tx a l w aa
+3.48% done
+Time: 21.08 s
+n aa p
+3.48% done
+Time: 21.10 s
+n aa p a
+3.49% done
+Time: 21.11 s
+nx a l ai
+3.49% done
+Time: 21.13 s
+n aa p a nx
+3.50% done
+Time: 21.14 s
+nx nx a l ai
+3.50% done
+Time: 21.15 s
+nx a l ai y
+3.50% done
+Time: 21.17 s
+a l ai y aa
+3.51% done
+Time: 21.20 s
+r t t ee
+3.51% done
+Time: 21.22 s
+a d u p aa
+3.52% done
+Time: 21.24 s
+u p aa r t
+3.52% done
+Time: 21.27 s
+aa r t t ee
+3.52% done
+Time: 21.29 s
+r t t ee nz
+3.53% done
+Time: 21.31 s
+ee w i
+3.53% done
+Time: 21.35 s
+t ee w i
+3.54% done
+Time: 21.37 s
+ee w i p
+3.54% done
+Time: 21.39 s
+w i p a
+3.54% done
+Time: 21.40 s
+t ee w i p
+3.55% done
+Time: 21.41 s
+ee w i p a
+3.55% done
+Time: 21.42 s
+w i p a dx
+3.55% done
+Time: 21.43 s
+a dx a m p
+3.56% done
+Time: 21.46 s
+dx a m p aa
+3.56% done
+Time: 21.48 s
+m p aa r t
+3.57% done
+Time: 21.49 s
+r t t i y
+3.57% done
+Time: 21.50 s
+t aa i
+3.57% done
+Time: 21.51 s
+t t aa i
+3.58% done
+Time: 21.53 s
+t aa i r
+3.58% done
+Time: 21.54 s
+k a m aa
+3.59% done
+Time: 21.61 s
+aa tx tx aa
+3.59% done
+Time: 21.69 s
+aa t t aa i
+3.59% done
+Time: 21.70 s
+t t aa i r
+3.60% done
+Time: 21.72 s
+t aa i r u
+3.60% done
+Time: 21.73 s
+u k k a m
+3.60% done
+Time: 21.81 s
+k k a m aa
+3.61% done
+Time: 21.88 s
+k a m aa tx
+3.61% done
+Time: 21.95 s
+m aa tx tx aa
+3.62% done
+Time: 22.02 s
+aa tx tx aa ng
+3.62% done
+Time: 22.07 s
+l a b
+3.62% done
+Time: 22.08 s
+l l a b
+3.63% done
+Time: 22.09 s
+l a b u
+3.63% done
+Time: 22.10 s
+a b u r
+3.64% done
+Time: 22.13 s
+m aa m a l
+3.64% done
+Time: 22.14 s
+aa m a l l
+3.64% done
+Time: 22.15 s
+m a l l a
+3.65% done
+Time: 22.17 s
+a l l a b
+3.65% done
+Time: 22.18 s
+l l a b u
+3.66% done
+Time: 22.19 s
+l a b u r
+3.66% done
+Time: 22.20 s
+a b u r a
+3.66% done
+Time: 22.23 s
+uu t
+3.67% done
+Time: 22.25 s
+m t uu
+3.67% done
+Time: 22.27 s
+t uu t
+3.67% done
+Time: 22.28 s
+uu t t
+3.68% done
+Time: 22.30 s
+rx a m t
+3.68% done
+Time: 22.33 s
+a m t uu
+3.69% done
+Time: 22.34 s
+m t uu t
+3.69% done
+Time: 22.36 s
+t uu t t
+3.69% done
+Time: 22.37 s
+uu t t u
+3.70% done
+Time: 22.38 s
+k k u dx
+3.70% done
+Time: 22.40 s
+a rx a m t
+3.71% done
+Time: 22.41 s
+rx a m t uu
+3.71% done
+Time: 22.42 s
+a m t uu t
+3.71% done
+Time: 22.43 s
+m t uu t t
+3.72% done
+Time: 22.44 s
+t uu t t u
+3.72% done
+Time: 22.46 s
+uu t t u k
+3.72% done
+Time: 22.47 s
+u k k u dx
+3.73% done
+Time: 22.48 s
+k k u dx i
+3.73% done
+Time: 22.49 s
+e dx oo
+3.74% done
+Time: 22.50 s
+a e dx oo
+3.74% done
+Time: 22.51 s
+d a e dx oo
+3.74% done
+Time: 22.53 s
+a a p p a
+3.75% done
+Time: 22.55 s
+k e dx u
+3.75% done
+Time: 22.56 s
+k e dx u k
+3.76% done
+Time: 22.57 s
+dx u k k aa
+3.76% done
+Time: 22.59 s
+aa h
+3.76% done
+Time: 22.65 s
+k a ng
+3.77% done
+Time: 22.67 s
+g aa h
+3.77% done
+Time: 22.68 s
+aa h oo
+3.78% done
+Time: 22.69 s
+h oo tx
+3.78% done
+Time: 22.70 s
+nz u tx
+3.78% done
+Time: 22.72 s
+k a ng g
+3.79% done
+Time: 22.74 s
+ng g aa h
+3.79% done
+Time: 22.75 s
+g aa h oo
+3.79% done
+Time: 22.76 s
+aa h oo tx
+3.80% done
+Time: 22.77 s
+h oo tx tx
+3.80% done
+Time: 22.78 s
+tx tx a l
+3.81% done
+Time: 22.79 s
+tx a l i
+3.81% done
+Time: 22.80 s
+a l i nz
+3.81% done
+Time: 22.82 s
+l i nz nz
+3.82% done
+Time: 22.83 s
+nz nz u tx
+3.82% done
+Time: 22.84 s
+nz u tx tx
+3.83% done
+Time: 22.85 s
+k a ng g aa
+3.83% done
+Time: 22.87 s
+a ng g aa h
+3.83% done
+Time: 22.88 s
+ng g aa h oo
+3.84% done
+Time: 22.89 s
+g aa h oo tx
+3.84% done
+Time: 22.90 s
+aa h oo tx tx
+3.84% done
+Time: 22.91 s
+h oo tx tx a
+3.85% done
+Time: 22.92 s
+oo tx tx a l
+3.85% done
+Time: 22.93 s
+tx tx a l i
+3.86% done
+Time: 22.94 s
+tx a l i nz
+3.86% done
+Time: 22.96 s
+a l i nz nz
+3.86% done
+Time: 22.97 s
+l i nz nz u
+3.87% done
+Time: 22.98 s
+i nz nz u tx
+3.87% done
+Time: 22.99 s
+nz nz u tx tx
+3.88% done
+Time: 23.01 s
+nz u tx tx u
+3.88% done
+Time: 23.02 s
+k u e nz nz
+3.88% done
+Time: 23.06 s
+l e
+3.89% done
+Time: 23.09 s
+l e m
+3.89% done
+Time: 23.10 s
+e m a
+3.90% done
+Time: 23.14 s
+a nz c
+3.90% done
+Time: 23.15 s
+nz c aa
+3.90% done
+Time: 23.16 s
+l e m a
+3.91% done
+Time: 23.17 s
+e m a nz
+3.91% done
+Time: 23.18 s
+m a nz c
+3.91% done
+Time: 23.20 s
+a nz c aa
+3.92% done
+Time: 23.21 s
+nz c aa d
+3.92% done
+Time: 23.22 s
+l e m a nz
+3.93% done
+Time: 23.23 s
+e m a nz c
+3.93% done
+Time: 23.24 s
+m a nz c aa
+3.93% done
+Time: 23.25 s
+a nz c aa d
+3.94% done
+Time: 23.26 s
+nz c aa d a
+3.94% done
+Time: 23.28 s
+c i y
+3.95% done
+Time: 23.29 s
+k u c c
+3.95% done
+Time: 23.30 s
+c c i y
+3.95% done
+Time: 23.31 s
+c i y aa
+3.96% done
+Time: 23.32 s
+k u c c i
+3.96% done
+Time: 23.33 s
+u c c i y
+3.96% done
+Time: 23.34 s
+c c i y aa
+3.97% done
+Time: 23.36 s
+m p a i
+3.97% done
+Time: 23.38 s
+p a i d
+3.98% done
+Time: 23.41 s
+a i d aa
+3.98% done
+Time: 23.43 s
+i d aa i
+3.98% done
+Time: 23.44 s
+o m p a i
+3.99% done
+Time: 23.47 s
+m p a i d
+3.99% done
+Time: 23.49 s
+p a i d aa
+4.00% done
+Time: 23.51 s
+a i d aa i
+4.00% done
+Time: 23.52 s
+i d aa i r
+4.00% done
+Time: 23.53 s
+nz u nx
+4.01% done
+Time: 23.55 s
+d aa nz u
+4.01% done
+Time: 23.57 s
+aa nz u nx
+4.02% done
+Time: 23.59 s
+nz u nx m
+4.02% done
+Time: 23.61 s
+a d aa nz u
+4.02% done
+Time: 23.63 s
+d aa nz u nx
+4.03% done
+Time: 23.65 s
+aa nz u nx m
+4.03% done
+Time: 23.67 s
+nz u nx m ai
+4.03% done
+Time: 23.69 s
+aa m aa t
+4.04% done
+Time: 23.71 s
+aa m aa t e
+4.04% done
+Time: 23.73 s
+aa w ai y aa
+4.05% done
+Time: 23.74 s
+ee o
+4.05% done
+Time: 23.77 s
+r ee o
+4.05% done
+Time: 23.79 s
+ee o r
+4.06% done
+Time: 23.82 s
+o r ee o
+4.06% done
+Time: 23.84 s
+r ee o r
+4.07% done
+Time: 23.86 s
+ee o r u
+4.07% done
+Time: 23.88 s
+o r ee o r
+4.07% done
+Time: 23.91 s
+r ee o r u
+4.08% done
+Time: 23.93 s
+ee o r u t
+4.08% done
+Time: 23.94 s
+ii e
+4.09% done
+Time: 23.96 s
+n ii e
+4.09% done
+Time: 23.99 s
+ii e nz
+4.09% done
+Time: 24.01 s
+n ii e nz
+4.10% done
+Time: 24.03 s
+ii e nz nz
+4.10% done
+Time: 24.05 s
+n ii e nz nz
+4.10% done
+Time: 24.07 s
+ii e nz nz a
+4.11% done
+Time: 24.09 s
+j u k
+4.11% done
+Time: 24.10 s
+u r i nj
+4.12% done
+Time: 24.12 s
+nj j u k
+4.12% done
+Time: 24.14 s
+j u k k
+4.12% done
+Time: 24.16 s
+p u r i nj
+4.13% done
+Time: 24.18 s
+u r i nj j
+4.13% done
+Time: 24.20 s
+i nj j u k
+4.14% done
+Time: 24.22 s
+nj j u k k
+4.14% done
+Time: 24.24 s
+j u k k a
+4.14% done
+Time: 24.26 s
+m oo u
+4.15% done
+Time: 24.27 s
+oo u nx
+4.15% done
+Time: 24.31 s
+d u e nz
+4.15% done
+Time: 24.36 s
+a m oo u
+4.16% done
+Time: 24.37 s
+m oo u nx
+4.16% done
+Time: 24.38 s
+oo u nx m
+4.17% done
+Time: 24.40 s
+a d u e nz
+4.17% done
+Time: 24.45 s
+d u e nz nz
+4.17% done
+Time: 24.48 s
+nz a m oo u
+4.18% done
+Time: 24.50 s
+a m oo u nx
+4.18% done
+Time: 24.51 s
+m oo u nx m
+4.19% done
+Time: 24.52 s
+oo u nx m ai
+4.19% done
+Time: 24.54 s
+b a t
+4.19% done
+Time: 24.55 s
+aa b a t
+4.20% done
+Time: 24.56 s
+b a t t
+4.20% done
+Time: 24.57 s
+aa b a t t
+4.21% done
+Time: 24.58 s
+b a t t u
+4.21% done
+Time: 24.59 s
+d u m i
+4.21% done
+Time: 24.60 s
+a d u m i
+4.22% done
+Time: 24.62 s
+d u m i l
+4.22% done
+Time: 24.63 s
+m i l l aa
+4.22% done
+Time: 24.65 s
+p aa a
+4.23% done
+Time: 24.69 s
+aa a dx
+4.23% done
+Time: 24.70 s
+dx i s
+4.24% done
+Time: 24.72 s
+i s a
+4.24% done
+Time: 24.75 s
+s a nz
+4.24% done
+Time: 24.78 s
+a nz d
+4.25% done
+Time: 24.80 s
+nz d aa
+4.25% done
+Time: 24.82 s
+p p aa a
+4.26% done
+Time: 24.86 s
+p aa a dx
+4.26% done
+Time: 24.87 s
+aa a dx i
+4.26% done
+Time: 24.88 s
+a dx i s
+4.27% done
+Time: 24.89 s
+dx i s a
+4.27% done
+Time: 24.91 s
+i s a nz
+4.27% done
+Time: 24.94 s
+s a nz d
+4.28% done
+Time: 24.95 s
+a nz d aa
+4.28% done
+Time: 24.97 s
+i p p aa a
+4.29% done
+Time: 25.00 s
+p p aa a dx
+4.29% done
+Time: 25.01 s
+p aa a dx i
+4.29% done
+Time: 25.02 s
+aa a dx i s
+4.30% done
+Time: 25.03 s
+a dx i s a
+4.30% done
+Time: 25.04 s
+dx i s a nz
+4.31% done
+Time: 25.06 s
+i s a nz d
+4.31% done
+Time: 25.08 s
+s a nz d aa
+4.31% done
+Time: 25.09 s
+nz aa l t
+4.32% done
+Time: 25.10 s
+a nz aa l t
+4.32% done
+Time: 25.11 s
+nz aa l t aa
+4.33% done
+Time: 25.12 s
+a p j
+4.33% done
+Time: 25.13 s
+k tx p
+4.33% done
+Time: 25.14 s
+tx p a
+4.34% done
+Time: 25.15 s
+c a p j
+4.34% done
+Time: 25.17 s
+a p j e
+4.34% done
+Time: 25.18 s
+e k tx p
+4.35% done
+Time: 25.19 s
+k tx p a
+4.35% done
+Time: 25.20 s
+tx p a t
+4.36% done
+Time: 25.21 s
+c a p j e
+4.36% done
+Time: 25.22 s
+a p j e k
+4.36% done
+Time: 25.24 s
+j e k tx p
+4.37% done
+Time: 25.25 s
+e k tx p a
+4.37% done
+Time: 25.26 s
+k tx p a t
+4.38% done
+Time: 25.28 s
+tx p a t t
+4.38% done
+Time: 25.29 s
+e p tx
+4.38% done
+Time: 25.38 s
+u e p tx
+4.39% done
+Time: 25.39 s
+e p tx i
+4.39% done
+Time: 25.47 s
+k u e p tx
+4.39% done
+Time: 25.49 s
+u e p tx i
+4.40% done
+Time: 25.50 s
+y uu
+4.40% done
+Time: 25.53 s
+uu s
+4.41% done
+Time: 25.54 s
+ee rx ee
+4.41% done
+Time: 25.55 s
+rx ee d
+4.41% done
+Time: 25.56 s
+i y uu
+4.42% done
+Time: 25.58 s
+y uu s
+4.42% done
+Time: 25.60 s
+uu s i
+4.43% done
+Time: 25.61 s
+w ee rx ee
+4.43% done
+Time: 25.62 s
+ee rx ee d
+4.43% done
+Time: 25.63 s
+rx ee d aa
+4.44% done
+Time: 25.64 s
+d u c o
+4.44% done
+Time: 25.67 s
+g a m i
+4.45% done
+Time: 25.69 s
+a m i y
+4.45% done
+Time: 25.70 s
+m i y uu
+4.45% done
+Time: 25.72 s
+i y uu s
+4.46% done
+Time: 25.73 s
+y uu s i
+4.46% done
+Time: 25.74 s
+uu s i k
+4.46% done
+Time: 25.75 s
+w ee rx ee d
+4.47% done
+Time: 25.77 s
+ee rx ee d aa
+4.47% done
+Time: 25.78 s
+rx ee d aa w
+4.48% done
+Time: 25.80 s
+w a d u c
+4.48% done
+Time: 25.84 s
+a d u c o
+4.48% done
+Time: 25.90 s
+d u c o l
+4.49% done
+Time: 25.93 s
+u ng g a m
+4.49% done
+Time: 25.95 s
+ng g a m i
+4.50% done
+Time: 25.96 s
+g a m i y
+4.50% done
+Time: 25.97 s
+a m i y uu
+4.50% done
+Time: 25.99 s
+m i y uu s
+4.51% done
+Time: 26.00 s
+i y uu s i
+4.51% done
+Time: 26.01 s
+y uu s i k
+4.51% done
+Time: 26.02 s
+u ee
+4.52% done
+Time: 26.05 s
+rx p
+4.52% done
+Time: 26.09 s
+p u ee
+4.53% done
+Time: 26.10 s
+u ee rx
+4.53% done
+Time: 26.11 s
+ee rx p
+4.53% done
+Time: 26.13 s
+rx p p
+4.54% done
+Time: 26.15 s
+aa d i p
+4.54% done
+Time: 26.16 s
+d i p p
+4.55% done
+Time: 26.18 s
+i p p u
+4.55% done
+Time: 26.20 s
+p p u ee
+4.55% done
+Time: 26.21 s
+p u ee rx
+4.56% done
+Time: 26.22 s
+u ee rx p
+4.56% done
+Time: 26.23 s
+ee rx p p
+4.57% done
+Time: 26.24 s
+rx p p a
+4.57% done
+Time: 26.26 s
+p aa d i p
+4.57% done
+Time: 26.28 s
+aa d i p p
+4.58% done
+Time: 26.29 s
+d i p p u
+4.58% done
+Time: 26.31 s
+i p p u ee
+4.58% done
+Time: 26.32 s
+p p u ee rx
+4.59% done
+Time: 26.33 s
+p u ee rx p
+4.59% done
+Time: 26.34 s
+u ee rx p p
+4.60% done
+Time: 26.35 s
+ee rx p p a
+4.60% done
+Time: 26.36 s
+rx p p a dx
+4.60% done
+Time: 26.37 s
+w u m i
+4.61% done
+Time: 26.42 s
+u w u m i
+4.61% done
+Time: 26.46 s
+w u m i l
+4.62% done
+Time: 26.49 s
+ng g a lx oo
+4.62% done
+Time: 26.56 s
+aa i p p a
+4.62% done
+Time: 26.59 s
+k u y
+4.63% done
+Time: 26.61 s
+u y aa
+4.63% done
+Time: 26.63 s
+u n e
+4.63% done
+Time: 26.67 s
+k k u y
+4.64% done
+Time: 26.68 s
+k u y aa
+4.64% done
+Time: 26.69 s
+u y aa r
+4.65% done
+Time: 26.72 s
+aa r aa w
+4.65% done
+Time: 26.73 s
+r aa w a
+4.65% done
+Time: 26.74 s
+d u n e
+4.66% done
+Time: 26.76 s
+u n e rx
+4.66% done
+Time: 26.79 s
+u k k u y
+4.67% done
+Time: 26.83 s
+k k u y aa
+4.67% done
+Time: 26.85 s
+k u y aa r
+4.67% done
+Time: 26.87 s
+u y aa r aa
+4.68% done
+Time: 26.89 s
+y aa r aa w
+4.68% done
+Time: 26.90 s
+aa r aa w a
+4.69% done
+Time: 26.91 s
+r aa w a d
+4.69% done
+Time: 26.92 s
+w a d u n
+4.69% done
+Time: 26.95 s
+a d u n e
+4.70% done
+Time: 26.97 s
+d u n e rx
+4.70% done
+Time: 26.99 s
+u n e rx ai
+4.70% done
+Time: 27.01 s
+g a e ng
+4.71% done
+Time: 27.04 s
+g a n a
+4.71% done
+Time: 27.06 s
+e ng g a e
+4.72% done
+Time: 27.08 s
+ng g a e ng
+4.72% done
+Time: 27.11 s
+g a e ng g
+4.72% done
+Time: 27.15 s
+a e ng g a
+4.73% done
+Time: 27.21 s
+e ng g a n
+4.73% done
+Time: 27.22 s
+ng g a n a
+4.74% done
+Time: 27.24 s
+g a n a dx
+4.74% done
+Time: 27.25 s
+dx a n d a
+4.74% done
+Time: 27.28 s
+ai p a
+4.75% done
+Time: 27.31 s
+d ai p a
+4.75% done
+Time: 27.32 s
+ai p a t
+4.75% done
+Time: 27.34 s
+a d ai p a
+4.76% done
+Time: 27.35 s
+d ai p a t
+4.76% done
+Time: 27.36 s
+ai p a t t
+4.77% done
+Time: 27.37 s
+a n a m p
+4.77% done
+Time: 27.38 s
+e r u s
+4.77% done
+Time: 27.40 s
+r u s aa
+4.78% done
+Time: 27.42 s
+u s aa nz
+4.78% done
+Time: 27.43 s
+s aa nz aa
+4.79% done
+Time: 27.45 s
+k u o r
+4.79% done
+Time: 27.47 s
+p e r u s
+4.79% done
+Time: 27.49 s
+e r u s aa
+4.80% done
+Time: 27.51 s
+r u s aa nz
+4.80% done
+Time: 27.52 s
+u s aa nz aa
+4.81% done
+Time: 27.53 s
+s aa nz aa n
+4.81% done
+Time: 27.54 s
+aa nz aa n a
+4.81% done
+Time: 27.57 s
+k k u o r
+4.82% done
+Time: 27.60 s
+k u o r u
+4.82% done
+Time: 27.62 s
+t ai w
+4.82% done
+Time: 27.64 s
+ai w e
+4.83% done
+Time: 27.66 s
+tx a k
+4.83% done
+Time: 27.68 s
+a k uu
+4.84% done
+Time: 27.74 s
+r a t t
+4.84% done
+Time: 27.80 s
+t t ai w
+4.84% done
+Time: 27.82 s
+t ai w e
+4.85% done
+Time: 27.83 s
+ai w e tx
+4.85% done
+Time: 27.84 s
+e tx tx a
+4.86% done
+Time: 27.88 s
+tx tx a k
+4.86% done
+Time: 27.89 s
+tx a k uu
+4.86% done
+Time: 27.90 s
+a k uu dx
+4.87% done
+Time: 27.95 s
+m a r a t
+4.87% done
+Time: 27.96 s
+a r a t t
+4.87% done
+Time: 27.98 s
+r a t t ai
+4.88% done
+Time: 28.00 s
+a t t ai w
+4.88% done
+Time: 28.02 s
+t t ai w e
+4.89% done
+Time: 28.03 s
+t ai w e tx
+4.89% done
+Time: 28.05 s
+ai w e tx tx
+4.89% done
+Time: 28.06 s
+w e tx tx a
+4.90% done
+Time: 28.07 s
+e tx tx a k
+4.90% done
+Time: 28.08 s
+tx tx a k uu
+4.91% done
+Time: 28.09 s
+tx a k uu dx
+4.91% done
+Time: 28.11 s
+a k uu dx aa
+4.91% done
+Time: 28.15 s
+k u a p
+4.92% done
+Time: 28.23 s
+a k k u a
+4.92% done
+Time: 28.28 s
+k k u a p
+4.93% done
+Time: 28.35 s
+k u a p p
+4.93% done
+Time: 28.42 s
+aa nx aa i
+4.93% done
+Time: 28.43 s
+nx aa i p
+4.94% done
+Time: 28.45 s
+aa nx aa i p
+4.94% done
+Time: 28.46 s
+nx aa i p p
+4.94% done
+Time: 28.47 s
+w ee i
+4.95% done
+Time: 28.51 s
+ee i l
+4.95% done
+Time: 28.56 s
+nx nx a w
+4.96% done
+Time: 28.57 s
+nx a w ee
+4.96% done
+Time: 28.58 s
+a w ee i
+4.96% done
+Time: 28.60 s
+w ee i l
+4.97% done
+Time: 28.62 s
+ee i l l
+4.97% done
+Time: 28.67 s
+a nx nx a w
+4.98% done
+Time: 28.68 s
+nx nx a w ee
+4.98% done
+Time: 28.70 s
+nx a w ee i
+4.98% done
+Time: 28.71 s
+a w ee i l
+4.99% done
+Time: 28.72 s
+w ee i l l
+4.99% done
+Time: 28.74 s
+ee i l l ai
+4.99% done
+Time: 28.77 s
+p a n ii
+5.00% done
+Time: 28.81 s
+g a p a
+5.00% done
+Time: 28.85 s
+a p a d
+5.01% done
+Time: 28.86 s
+p a d a
+5.01% done
+Time: 28.88 s
+a d a t
+5.01% done
+Time: 28.89 s
+d a t t
+5.02% done
+Time: 28.90 s
+p p a n ii
+5.02% done
+Time: 28.93 s
+p a n ii ng
+5.03% done
+Time: 28.97 s
+ng g a p a
+5.03% done
+Time: 29.01 s
+g a p a d
+5.03% done
+Time: 29.02 s
+a p a d a
+5.04% done
+Time: 29.03 s
+p a d a t
+5.04% done
+Time: 29.04 s
+a d a t t
+5.05% done
+Time: 29.05 s
+d a t t u
+5.05% done
+Time: 29.07 s
+t i ng
+5.05% done
+Time: 29.11 s
+a d aa w
+5.06% done
+Time: 29.29 s
+t t i ng
+5.06% done
+Time: 29.35 s
+t i ng g
+5.06% done
+Time: 29.41 s
+a d aa w a
+5.07% done
+Time: 29.63 s
+aa t t i ng
+5.07% done
+Time: 29.67 s
+t t i ng g
+5.08% done
+Time: 29.72 s
+t i ng g a
+5.08% done
+Time: 29.77 s
+i ng g a nz
+5.08% done
+Time: 29.81 s
+m p u r
+5.09% done
+Time: 29.82 s
+i l a p a
+5.09% done
+Time: 29.84 s
+l a p a dx
+5.10% done
+Time: 29.87 s
+a m p u r
+5.10% done
+Time: 29.88 s
+m p u r i
+5.10% done
+Time: 29.89 s
+u r i y aa
+5.11% done
+Time: 29.90 s
+o rx
+5.11% done
+Time: 29.94 s
+p o rx
+5.12% done
+Time: 29.96 s
+o rx u
+5.12% done
+Time: 29.97 s
+rx u p
+5.12% done
+Time: 29.98 s
+p u e
+5.13% done
+Time: 30.00 s
+u e d
+5.13% done
+Time: 30.04 s
+p o rx u
+5.13% done
+Time: 30.05 s
+o rx u p
+5.14% done
+Time: 30.07 s
+rx u p p
+5.14% done
+Time: 30.08 s
+p p u e
+5.15% done
+Time: 30.09 s
+p u e d
+5.15% done
+Time: 30.10 s
+u e d u
+5.15% done
+Time: 30.13 s
+p o rx u p
+5.16% done
+Time: 30.15 s
+o rx u p p
+5.16% done
+Time: 30.16 s
+rx u p p u
+5.17% done
+Time: 30.17 s
+u p p u e
+5.17% done
+Time: 30.18 s
+p p u e d
+5.17% done
+Time: 30.20 s
+p u e d u
+5.18% done
+Time: 30.21 s
+u e d u m
+5.18% done
+Time: 30.22 s
+rx ee ng
+5.18% done
+Time: 30.23 s
+l u rx ee
+5.19% done
+Time: 30.26 s
+u rx ee ng
+5.19% done
+Time: 30.27 s
+rx ee ng g
+5.20% done
+Time: 30.28 s
+ee ng g a
+5.20% done
+Time: 30.31 s
+l l u rx ee
+5.20% done
+Time: 30.34 s
+l u rx ee ng
+5.21% done
+Time: 30.35 s
+u rx ee ng g
+5.21% done
+Time: 30.36 s
+rx ee ng g a
+5.22% done
+Time: 30.37 s
+aa r p
+5.22% done
+Time: 30.41 s
+k aa r p
+5.22% done
+Time: 30.42 s
+aa r p aa
+5.23% done
+Time: 30.44 s
+r p aa t
+5.23% done
+Time: 30.46 s
+k aa r p aa
+5.24% done
+Time: 30.47 s
+aa r p aa t
+5.24% done
+Time: 30.48 s
+r p aa t t
+5.24% done
+Time: 30.50 s
+ii sx
+5.25% done
+Time: 30.51 s
+a d ii
+5.25% done
+Time: 30.53 s
+d ii sx
+5.25% done
+Time: 30.55 s
+c a d ii
+5.26% done
+Time: 30.56 s
+a d ii sx
+5.26% done
+Time: 30.57 s
+c a d ii sx
+5.27% done
+Time: 30.58 s
+i r i e
+5.27% done
+Time: 30.59 s
+d i r i e
+5.27% done
+Time: 30.61 s
+i r i e dx
+5.28% done
+Time: 30.62 s
+i e dx u k
+5.28% done
+Time: 30.63 s
+dx u k k a
+5.29% done
+Time: 30.72 s
+p u rx aa
+5.29% done
+Time: 30.74 s
+nz aa l ee
+5.29% done
+Time: 30.76 s
+i d a nz aa
+5.30% done
+Time: 30.77 s
+a nz aa l ee
+5.30% done
+Time: 30.78 s
+aa m i l
+5.30% done
+Time: 30.83 s
+l aa m i l
+5.31% done
+Time: 30.87 s
+aa m i l l
+5.31% done
+Time: 30.92 s
+m i l l a
+5.32% done
+Time: 30.98 s
+nz aa b
+5.32% done
+Time: 31.00 s
+aa b oo
+5.32% done
+Time: 31.01 s
+b oo y
+5.33% done
+Time: 31.02 s
+y tx u
+5.33% done
+Time: 31.06 s
+w ii ng
+5.34% done
+Time: 31.09 s
+l aa k aa
+5.34% done
+Time: 31.10 s
+aa k aa nz
+5.34% done
+Time: 31.11 s
+k aa nz aa
+5.35% done
+Time: 31.12 s
+aa nz aa b
+5.35% done
+Time: 31.13 s
+nz aa b oo
+5.36% done
+Time: 31.14 s
+aa b oo y
+5.36% done
+Time: 31.16 s
+b oo y tx
+5.36% done
+Time: 31.17 s
+oo y tx u
+5.37% done
+Time: 31.21 s
+y tx u w
+5.37% done
+Time: 31.23 s
+tx u w ii
+5.37% done
+Time: 31.24 s
+u w ii ng
+5.38% done
+Time: 31.25 s
+w ii ng g
+5.38% done
+Time: 31.28 s
+l l aa k aa
+5.39% done
+Time: 31.29 s
+l aa k aa nz
+5.39% done
+Time: 31.30 s
+aa k aa nz aa
+5.39% done
+Time: 31.31 s
+k aa nz aa b
+5.40% done
+Time: 31.33 s
+aa nz aa b oo
+5.40% done
+Time: 31.34 s
+nz aa b oo y
+5.41% done
+Time: 31.35 s
+aa b oo y tx
+5.41% done
+Time: 31.36 s
+b oo y tx u
+5.41% done
+Time: 31.37 s
+oo y tx u w
+5.42% done
+Time: 31.39 s
+y tx u w ii
+5.42% done
+Time: 31.40 s
+tx u w ii ng
+5.42% done
+Time: 31.42 s
+u w ii ng g
+5.43% done
+Time: 31.43 s
+w ii ng g a
+5.43% done
+Time: 31.45 s
+tx aa s
+5.44% done
+Time: 31.47 s
+aa s u
+5.44% done
+Time: 31.52 s
+p p a t
+5.44% done
+Time: 31.53 s
+t t aa nz
+5.45% done
+Time: 31.56 s
+a tx tx aa
+5.45% done
+Time: 31.58 s
+tx tx aa s
+5.46% done
+Time: 31.60 s
+tx aa s u
+5.46% done
+Time: 31.62 s
+a p p a t
+5.46% done
+Time: 31.63 s
+p p a t t
+5.47% done
+Time: 31.65 s
+a t t aa nz
+5.47% done
+Time: 31.66 s
+p a tx tx aa
+5.48% done
+Time: 31.68 s
+a tx tx aa s
+5.48% done
+Time: 31.70 s
+tx tx aa s u
+5.48% done
+Time: 31.72 s
+ee p p ee
+5.49% done
+Time: 31.74 s
+k ee p p ee
+5.49% done
+Time: 31.76 s
+ee p p ee nz
+5.49% done
+Time: 31.78 s
+l aa j
+5.50% done
+Time: 31.80 s
+l l aa j
+5.50% done
+Time: 31.82 s
+l aa j aa
+5.51% done
+Time: 31.83 s
+aa j aa l
+5.51% done
+Time: 31.86 s
+a l l aa j
+5.51% done
+Time: 31.88 s
+l l aa j aa
+5.52% done
+Time: 31.90 s
+l aa j aa l
+5.52% done
+Time: 31.92 s
+aa j aa l i
+5.53% done
+Time: 31.95 s
+l a p e
+5.53% done
+Time: 31.96 s
+l a n a l
+5.53% done
+Time: 31.97 s
+l l a p e
+5.54% done
+Time: 31.98 s
+l a p e r
+5.54% done
+Time: 32.00 s
+a p e r u
+5.54% done
+Time: 32.01 s
+e d aa
+5.55% done
+Time: 32.06 s
+rx a e d
+5.55% done
+Time: 32.11 s
+a e d aa
+5.56% done
+Time: 32.14 s
+e d aa w
+5.56% done
+Time: 32.18 s
+ee rx a e d
+5.56% done
+Time: 32.23 s
+rx a e d aa
+5.57% done
+Time: 32.26 s
+a e d aa w
+5.57% done
+Time: 32.27 s
+e d aa w a
+5.58% done
+Time: 32.31 s
+a e p tx
+5.58% done
+Time: 32.34 s
+g a e p tx
+5.58% done
+Time: 32.37 s
+a e p tx i
+5.59% done
+Time: 32.40 s
+i dx u w ee
+5.59% done
+Time: 32.41 s
+g a t a
+5.60% done
+Time: 32.44 s
+a t a ng
+5.60% done
+Time: 32.45 s
+c i e p
+5.60% done
+Time: 32.46 s
+u ng g a t
+5.61% done
+Time: 32.49 s
+ng g a t a
+5.61% done
+Time: 32.52 s
+g a t a ng
+5.61% done
+Time: 32.53 s
+a t a ng g
+5.62% done
+Time: 32.55 s
+a c c i e
+5.62% done
+Time: 32.56 s
+c c i e p
+5.63% done
+Time: 32.57 s
+c i e p p
+5.63% done
+Time: 32.58 s
+y w ii
+5.63% done
+Time: 32.60 s
+p tx i c
+5.64% done
+Time: 32.63 s
+tx i c e
+5.64% done
+Time: 32.64 s
+c e y w
+5.65% done
+Time: 32.69 s
+e y w ii
+5.65% done
+Time: 32.71 s
+y w ii ng
+5.65% done
+Time: 32.73 s
+e p tx i c
+5.66% done
+Time: 32.75 s
+p tx i c e
+5.66% done
+Time: 32.76 s
+tx i c e y
+5.66% done
+Time: 32.77 s
+i c e y w
+5.67% done
+Time: 32.78 s
+c e y w ii
+5.67% done
+Time: 32.80 s
+e y w ii ng
+5.68% done
+Time: 32.82 s
+y w ii ng g
+5.68% done
+Time: 32.84 s
+a e p p u
+5.68% done
+Time: 32.85 s
+tx u w oo
+5.69% done
+Time: 32.88 s
+w oo m ee
+5.69% done
+Time: 32.89 s
+oo m ee t
+5.70% done
+Time: 32.90 s
+m ee t a
+5.70% done
+Time: 32.92 s
+ee t a w
+5.70% done
+Time: 32.93 s
+t i tx tx u
+5.71% done
+Time: 32.95 s
+tx tx u w oo
+5.71% done
+Time: 32.96 s
+tx u w oo m
+5.72% done
+Time: 32.99 s
+u w oo m ee
+5.72% done
+Time: 33.00 s
+w oo m ee t
+5.72% done
+Time: 33.01 s
+oo m ee t a
+5.73% done
+Time: 33.02 s
+m ee t a w
+5.73% done
+Time: 33.04 s
+ee t a w i
+5.73% done
+Time: 33.05 s
+e d oo
+5.74% done
+Time: 33.08 s
+d oo u
+5.74% done
+Time: 33.09 s
+d u e d
+5.75% done
+Time: 33.12 s
+u e d oo
+5.75% done
+Time: 33.14 s
+e d oo u
+5.75% done
+Time: 33.15 s
+d oo u nx
+5.76% done
+Time: 33.16 s
+a d u e d
+5.76% done
+Time: 33.20 s
+d u e d oo
+5.77% done
+Time: 33.22 s
+u e d oo u
+5.77% done
+Time: 33.23 s
+e d oo u nx
+5.77% done
+Time: 33.24 s
+d oo u nx m
+5.78% done
+Time: 33.25 s
+d u aa
+5.78% done
+Time: 33.28 s
+u aa m
+5.78% done
+Time: 33.30 s
+aa d u aa
+5.79% done
+Time: 33.32 s
+d u aa m
+5.79% done
+Time: 33.33 s
+u aa m aa
+5.80% done
+Time: 33.35 s
+y aa d u aa
+5.80% done
+Time: 33.37 s
+aa d u aa m
+5.80% done
+Time: 33.38 s
+d u aa m aa
+5.81% done
+Time: 33.39 s
+oo h
+5.81% done
+Time: 33.42 s
+h a l
+5.82% done
+Time: 33.46 s
+a l oo
+5.82% done
+Time: 33.51 s
+l oo h
+5.82% done
+Time: 33.54 s
+oo h a
+5.83% done
+Time: 33.56 s
+h a l oo
+5.83% done
+Time: 33.60 s
+a l oo h
+5.84% done
+Time: 33.63 s
+l oo h a
+5.84% done
+Time: 33.66 s
+oo h a l
+5.84% done
+Time: 33.69 s
+h a l oo h
+5.85% done
+Time: 33.71 s
+a l oo h a
+5.85% done
+Time: 33.74 s
+l oo h a l
+5.85% done
+Time: 33.79 s
+oo h a l oo
+5.86% done
+Time: 33.84 s
+u a n
+5.86% done
+Time: 33.87 s
+n d u a
+5.87% done
+Time: 33.89 s
+d u a n
+5.87% done
+Time: 33.92 s
+u a n d
+5.87% done
+Time: 33.95 s
+a n d u a
+5.88% done
+Time: 33.97 s
+n d u a n
+5.88% done
+Time: 33.98 s
+d u a n d
+5.89% done
+Time: 34.00 s
+u a n d a
+5.89% done
+Time: 34.04 s
+o b
+5.89% done
+Time: 34.05 s
+o b aa
+5.90% done
+Time: 34.06 s
+b aa m
+5.90% done
+Time: 34.07 s
+o b aa m
+5.90% done
+Time: 34.08 s
+b aa m aa
+5.91% done
+Time: 34.10 s
+o b aa m aa
+5.91% done
+Time: 34.11 s
+tx rx
+5.92% done
+Time: 34.12 s
+w ee m
+5.92% done
+Time: 34.17 s
+aa tx rx
+5.92% done
+Time: 34.18 s
+tx rx aa
+5.93% done
+Time: 34.20 s
+nx a r a
+5.93% done
+Time: 34.21 s
+r a w ee
+5.94% done
+Time: 34.22 s
+a w ee m
+5.94% done
+Time: 34.28 s
+w ee m aa
+5.94% done
+Time: 34.30 s
+ee m aa tx
+5.95% done
+Time: 34.35 s
+m aa tx rx
+5.95% done
+Time: 34.37 s
+aa tx rx aa
+5.96% done
+Time: 34.39 s
+tx rx aa ng
+5.96% done
+Time: 34.40 s
+u nx a r a
+5.96% done
+Time: 34.41 s
+nx a r a w
+5.97% done
+Time: 34.42 s
+a r a w ee
+5.97% done
+Time: 34.44 s
+r a w ee m
+5.97% done
+Time: 34.45 s
+a w ee m aa
+5.98% done
+Time: 34.46 s
+w ee m aa tx
+5.98% done
+Time: 34.47 s
+ee m aa tx rx
+5.99% done
+Time: 34.48 s
+m aa tx rx aa
+5.99% done
+Time: 34.49 s
+aa tx rx aa ng
+5.99% done
+Time: 34.50 s
+tx rx aa ng g
+6.00% done
+Time: 34.51 s
+aa y a t
+6.00% done
+Time: 34.58 s
+y a t t
+6.01% done
+Time: 34.64 s
+s aa y a t
+6.01% done
+Time: 34.65 s
+aa y a t t
+6.01% done
+Time: 34.69 s
+y a t t a
+6.02% done
+Time: 34.70 s
+r a s
+6.02% done
+Time: 34.81 s
+w aa d
+6.02% done
+Time: 34.84 s
+d i ng
+6.03% done
+Time: 34.86 s
+a r a s
+6.03% done
+Time: 34.93 s
+r a s i
+6.04% done
+Time: 35.00 s
+y a l w
+6.04% done
+Time: 35.01 s
+l w aa d
+6.04% done
+Time: 35.02 s
+w aa d i
+6.05% done
+Time: 35.04 s
+aa d i ng
+6.05% done
+Time: 35.06 s
+d i ng g
+6.06% done
+Time: 35.08 s
+a r a s i
+6.06% done
+Time: 35.14 s
+r a s i y
+6.06% done
+Time: 35.19 s
+s i y a l
+6.07% done
+Time: 35.24 s
+i y a l w
+6.07% done
+Time: 35.25 s
+y a l w aa
+6.08% done
+Time: 35.26 s
+a l w aa d
+6.08% done
+Time: 35.28 s
+l w aa d i
+6.08% done
+Time: 35.30 s
+w aa d i ng
+6.09% done
+Time: 35.33 s
+aa d i ng g
+6.09% done
+Time: 35.38 s
+d i ng g a
+6.09% done
+Time: 35.40 s
+y ee j
+6.10% done
+Time: 35.42 s
+ee j aa
+6.10% done
+Time: 35.43 s
+tx i y ee
+6.11% done
+Time: 35.45 s
+i y ee j
+6.11% done
+Time: 35.46 s
+y ee j aa
+6.11% done
+Time: 35.47 s
+ee j aa l
+6.12% done
+Time: 35.48 s
+p tx i y ee
+6.12% done
+Time: 35.50 s
+tx i y ee j
+6.13% done
+Time: 35.51 s
+i y ee j aa
+6.13% done
+Time: 35.52 s
+y ee j aa l
+6.13% done
+Time: 35.53 s
+ee j aa l i
+6.14% done
+Time: 35.54 s
+p a c
+6.14% done
+Time: 35.59 s
+ee r i i
+6.14% done
+Time: 35.61 s
+p p a c
+6.15% done
+Time: 35.62 s
+p a c o
+6.15% done
+Time: 35.63 s
+c ee r i i
+6.16% done
+Time: 35.65 s
+ee r i i p
+6.16% done
+Time: 35.66 s
+i p p a c
+6.16% done
+Time: 35.67 s
+p p a c o
+6.17% done
+Time: 35.68 s
+p a c o l
+6.17% done
+Time: 35.69 s
+m w i
+6.18% done
+Time: 35.72 s
+aa m w i
+6.18% done
+Time: 35.73 s
+m w i tx
+6.18% done
+Time: 35.75 s
+u r u ng
+6.19% done
+Time: 35.79 s
+l aa m w i
+6.19% done
+Time: 35.80 s
+aa m w i tx
+6.20% done
+Time: 35.81 s
+m w i tx tx
+6.20% done
+Time: 35.84 s
+w i tx tx u
+6.20% done
+Time: 35.88 s
+i tx tx u r
+6.21% done
+Time: 35.90 s
+tx u r u ng
+6.21% done
+Time: 35.92 s
+u r u ng g
+6.21% done
+Time: 35.96 s
+e nz j
+6.22% done
+Time: 35.98 s
+nz j aa
+6.22% done
+Time: 36.00 s
+j aa d
+6.23% done
+Time: 36.01 s
+d i dx
+6.23% done
+Time: 36.02 s
+e nz j aa
+6.23% done
+Time: 36.03 s
+nz j aa d
+6.24% done
+Time: 36.04 s
+j aa d i
+6.24% done
+Time: 36.06 s
+aa d i dx
+6.25% done
+Time: 36.07 s
+d i dx aa
+6.25% done
+Time: 36.08 s
+e nz j aa d
+6.25% done
+Time: 36.09 s
+nz j aa d i
+6.26% done
+Time: 36.10 s
+j aa d i dx
+6.26% done
+Time: 36.11 s
+aa d i dx aa
+6.27% done
+Time: 36.12 s
+g i l
+6.27% done
+Time: 36.14 s
+ng g i l
+6.27% done
+Time: 36.15 s
+g i l a
+6.28% done
+Time: 36.16 s
+i l a m
+6.28% done
+Time: 36.17 s
+aa ng g i l
+6.28% done
+Time: 36.18 s
+ng g i l a
+6.29% done
+Time: 36.19 s
+g i l a m
+6.29% done
+Time: 36.20 s
+p aa g
+6.30% done
+Time: 36.24 s
+aa g i
+6.30% done
+Time: 36.27 s
+g i s
+6.30% done
+Time: 36.28 s
+i s t
+6.31% done
+Time: 36.29 s
+s t aa
+6.31% done
+Time: 36.31 s
+p aa g i
+6.32% done
+Time: 36.32 s
+aa g i s
+6.32% done
+Time: 36.33 s
+g i s t
+6.32% done
+Time: 36.34 s
+i s t aa
+6.33% done
+Time: 36.35 s
+s t aa nz
+6.33% done
+Time: 36.37 s
+p aa g i s
+6.33% done
+Time: 36.38 s
+aa g i s t
+6.34% done
+Time: 36.39 s
+g i s t aa
+6.34% done
+Time: 36.40 s
+i s t aa nz
+6.35% done
+Time: 36.42 s
+nz s
+6.35% done
+Time: 36.44 s
+t r
+6.35% done
+Time: 36.49 s
+oo b
+6.36% done
+Time: 36.51 s
+p i y
+6.36% done
+Time: 36.54 s
+a nz s
+6.37% done
+Time: 36.55 s
+nz s t
+6.37% done
+Time: 36.56 s
+s t r
+6.37% done
+Time: 36.58 s
+t r oo
+6.38% done
+Time: 36.59 s
+r oo b
+6.38% done
+Time: 36.60 s
+oo b i
+6.39% done
+Time: 36.61 s
+c aa m p
+6.39% done
+Time: 36.64 s
+m p i y
+6.39% done
+Time: 36.65 s
+p i y a
+6.40% done
+Time: 36.66 s
+y a nz s
+6.40% done
+Time: 36.67 s
+a nz s t
+6.40% done
+Time: 36.68 s
+nz s t r
+6.41% done
+Time: 36.69 s
+s t r oo
+6.41% done
+Time: 36.70 s
+t r oo b
+6.42% done
+Time: 36.71 s
+r oo b i
+6.42% done
+Time: 36.73 s
+c aa m p i
+6.42% done
+Time: 36.74 s
+aa m p i y
+6.43% done
+Time: 36.75 s
+m p i y a
+6.43% done
+Time: 36.76 s
+p i y a nz
+6.44% done
+Time: 36.77 s
+i y a nz s
+6.44% done
+Time: 36.78 s
+y a nz s t
+6.44% done
+Time: 36.79 s
+a nz s t r
+6.45% done
+Time: 36.80 s
+nz s t r oo
+6.45% done
+Time: 36.81 s
+s t r oo b
+6.45% done
+Time: 36.83 s
+t r oo b i
+6.46% done
+Time: 36.84 s
+tx s p
+6.46% done
+Time: 36.85 s
+r tx s p
+6.47% done
+Time: 36.86 s
+tx s p a
+6.47% done
+Time: 36.87 s
+s p a t
+6.47% done
+Time: 36.88 s
+oo r tx s p
+6.48% done
+Time: 36.89 s
+r tx s p a
+6.48% done
+Time: 36.90 s
+tx s p a t
+6.49% done
+Time: 36.91 s
+s p a t t
+6.49% done
+Time: 36.93 s
+p a dx a t
+6.49% done
+Time: 36.94 s
+dx a t t a
+6.50% done
+Time: 36.95 s
+a t t a p
+6.50% done
+Time: 36.97 s
+t t a p a
+6.51% done
+Time: 36.98 s
+m u nz
+6.51% done
+Time: 37.07 s
+nz aa dx
+6.51% done
+Time: 37.16 s
+m u nz nz
+6.52% done
+Time: 37.26 s
+nz nz aa dx
+6.52% done
+Time: 37.34 s
+nz aa dx i
+6.52% done
+Time: 37.43 s
+m u nz nz aa
+6.53% done
+Time: 37.52 s
+u nz nz aa dx
+6.53% done
+Time: 37.61 s
+nz nz aa dx i
+6.54% done
+Time: 37.69 s
+a k aa l
+6.54% done
+Time: 37.73 s
+i n d a k
+6.54% done
+Time: 37.76 s
+d a k aa l
+6.55% done
+Time: 37.79 s
+a k aa l a
+6.55% done
+Time: 37.82 s
+r y aa r u
+6.56% done
+Time: 37.84 s
+b i o
+6.56% done
+Time: 37.85 s
+aa b i o
+6.56% done
+Time: 37.86 s
+b i o r
+6.57% done
+Time: 37.88 s
+t t a r
+6.57% done
+Time: 37.92 s
+j aa b i o
+6.57% done
+Time: 37.93 s
+aa b i o r
+6.58% done
+Time: 37.94 s
+b i o r u
+6.58% done
+Time: 37.95 s
+i o r u t
+6.59% done
+Time: 37.96 s
+u t t a r
+6.59% done
+Time: 38.00 s
+g a j
+6.59% done
+Time: 38.01 s
+j i m
+6.60% done
+Time: 38.03 s
+ng g a j
+6.60% done
+Time: 38.04 s
+g a j i
+6.61% done
+Time: 38.05 s
+a j i m
+6.61% done
+Time: 38.06 s
+p oo w i
+6.61% done
+Time: 38.08 s
+oo w i ng
+6.62% done
+Time: 38.11 s
+ii ng g a j
+6.62% done
+Time: 38.12 s
+ng g a j i
+6.63% done
+Time: 38.13 s
+g a j i m
+6.63% done
+Time: 38.15 s
+p oo w i ng
+6.63% done
+Time: 38.17 s
+oo w i ng g
+6.64% done
+Time: 38.20 s
+i ng g a lx
+6.64% done
+Time: 38.38 s
+r j
+6.64% done
+Time: 38.41 s
+aa c i
+6.65% done
+Time: 38.44 s
+i l w
+6.65% done
+Time: 38.45 s
+l w a
+6.66% done
+Time: 38.47 s
+a r j
+6.66% done
+Time: 38.48 s
+r j e
+6.66% done
+Time: 38.49 s
+j e y
+6.67% done
+Time: 38.51 s
+e y c
+6.67% done
+Time: 38.52 s
+y c c
+6.68% done
+Time: 38.53 s
+c ee nz
+6.68% done
+Time: 38.55 s
+m aa c i
+6.68% done
+Time: 38.57 s
+aa c i l
+6.69% done
+Time: 38.59 s
+c i l w
+6.69% done
+Time: 38.61 s
+i l w a
+6.69% done
+Time: 38.62 s
+l w a r
+6.70% done
+Time: 38.63 s
+w a r j
+6.70% done
+Time: 38.64 s
+a r j e
+6.71% done
+Time: 38.65 s
+r j e y
+6.71% done
+Time: 38.66 s
+j e y c
+6.71% done
+Time: 38.67 s
+e y c c
+6.72% done
+Time: 38.68 s
+y c c ee
+6.72% done
+Time: 38.70 s
+c c ee nz
+6.73% done
+Time: 38.72 s
+aa m aa c i
+6.73% done
+Time: 38.73 s
+m aa c i l
+6.73% done
+Time: 38.75 s
+aa c i l w
+6.74% done
+Time: 38.76 s
+c i l w a
+6.74% done
+Time: 38.77 s
+i l w a r
+6.75% done
+Time: 38.78 s
+l w a r j
+6.75% done
+Time: 38.79 s
+w a r j e
+6.75% done
+Time: 38.80 s
+a r j e y
+6.76% done
+Time: 38.81 s
+r j e y c
+6.76% done
+Time: 38.82 s
+j e y c c
+6.76% done
+Time: 38.83 s
+e y c c ee
+6.77% done
+Time: 38.85 s
+y c c ee nz
+6.77% done
+Time: 38.86 s
+w a r o
+6.78% done
+Time: 38.87 s
+a w a r o
+6.78% done
+Time: 38.88 s
+w a r o m
+6.78% done
+Time: 38.89 s
+ee s k
+6.79% done
+Time: 38.90 s
+p ee s k
+6.79% done
+Time: 38.91 s
+ee s k a
+6.80% done
+Time: 38.92 s
+s k a tx
+6.80% done
+Time: 38.93 s
+k a tx p
+6.80% done
+Time: 38.94 s
+a tx p aa
+6.81% done
+Time: 38.96 s
+p ee s k a
+6.81% done
+Time: 38.97 s
+ee s k a tx
+6.81% done
+Time: 38.98 s
+s k a tx p
+6.82% done
+Time: 38.99 s
+k a tx p aa
+6.82% done
+Time: 39.00 s
+a tx p aa l
+6.83% done
+Time: 39.01 s
+e lx i
+6.83% done
+Time: 39.08 s
+lx i y
+6.83% done
+Time: 39.11 s
+oo g aa
+6.84% done
+Time: 39.14 s
+g aa t
+6.84% done
+Time: 39.18 s
+w e lx i
+6.85% done
+Time: 39.25 s
+e lx i y
+6.85% done
+Time: 39.29 s
+lx i y a
+6.85% done
+Time: 39.31 s
+y a p oo
+6.86% done
+Time: 39.33 s
+a p oo g
+6.86% done
+Time: 39.35 s
+p oo g aa
+6.87% done
+Time: 39.37 s
+oo g aa t
+6.87% done
+Time: 39.39 s
+g aa t a
+6.87% done
+Time: 39.41 s
+w e lx i y
+6.88% done
+Time: 39.45 s
+e lx i y a
+6.88% done
+Time: 39.47 s
+lx i y a p
+6.88% done
+Time: 39.48 s
+i y a p oo
+6.89% done
+Time: 39.49 s
+y a p oo g
+6.89% done
+Time: 39.50 s
+a p oo g aa
+6.90% done
+Time: 39.51 s
+p oo g aa t
+6.90% done
+Time: 39.53 s
+oo g aa t a
+6.90% done
+Time: 39.55 s
+tx i y aa e
+6.91% done
+Time: 39.56 s
+i y aa e nz
+6.91% done
+Time: 39.58 s
+m aa e nz
+6.92% done
+Time: 39.59 s
+aa m aa e nz
+6.92% done
+Time: 39.61 s
+m aa e nz a
+6.92% done
+Time: 39.63 s
+w y
+6.93% done
+Time: 39.64 s
+s r ii
+6.93% done
+Time: 39.66 s
+r ii d
+6.93% done
+Time: 39.67 s
+ii d i
+6.94% done
+Time: 39.70 s
+d i w
+6.94% done
+Time: 39.72 s
+i w y
+6.95% done
+Time: 39.73 s
+w y aa
+6.95% done
+Time: 39.74 s
+s r ii d
+6.95% done
+Time: 39.75 s
+r ii d i
+6.96% done
+Time: 39.77 s
+ii d i w
+6.96% done
+Time: 39.79 s
+d i w y
+6.97% done
+Time: 39.80 s
+i w y aa
+6.97% done
+Time: 39.81 s
+s r ii d i
+6.97% done
+Time: 39.82 s
+r ii d i w
+6.98% done
+Time: 39.84 s
+ii d i w y
+6.98% done
+Time: 39.85 s
+d i w y aa
+6.99% done
+Time: 39.86 s
+m m aa k
+6.99% done
+Time: 39.87 s
+k a nx a
+6.99% done
+Time: 39.90 s
+a m m aa k
+7.00% done
+Time: 39.91 s
+m m aa k a
+7.00% done
+Time: 39.92 s
+aa k a nx a
+7.00% done
+Time: 39.93 s
+k a nx a k
+7.01% done
+Time: 39.94 s
+nx a k k u
+7.01% done
+Time: 39.95 s
+c ee d
+7.02% done
+Time: 39.98 s
+d u b
+7.02% done
+Time: 40.01 s
+c ee d u
+7.02% done
+Time: 40.03 s
+ee d u b
+7.03% done
+Time: 40.06 s
+d u b a
+7.03% done
+Time: 40.08 s
+u b a d
+7.04% done
+Time: 40.12 s
+b a d i
+7.04% done
+Time: 40.20 s
+c ee d u b
+7.04% done
+Time: 40.23 s
+ee d u b a
+7.05% done
+Time: 40.26 s
+d u b a d
+7.05% done
+Time: 40.28 s
+u b a d i
+7.05% done
+Time: 40.31 s
+oo rx ii
+7.06% done
+Time: 40.34 s
+k k a dx
+7.06% done
+Time: 40.36 s
+k a dx i
+7.07% done
+Time: 40.37 s
+dx i p oo
+7.07% done
+Time: 40.38 s
+i p oo rx
+7.07% done
+Time: 40.40 s
+p oo rx ii
+7.08% done
+Time: 40.42 s
+oo rx ii ng
+7.08% done
+Time: 40.44 s
+i k k a dx
+7.09% done
+Time: 40.45 s
+k k a dx i
+7.09% done
+Time: 40.46 s
+k a dx i p
+7.09% done
+Time: 40.47 s
+a dx i p oo
+7.10% done
+Time: 40.49 s
+dx i p oo rx
+7.10% done
+Time: 40.50 s
+i p oo rx ii
+7.11% done
+Time: 40.51 s
+p oo rx ii ng
+7.11% done
+Time: 40.53 s
+oo rx ii ng g
+7.11% done
+Time: 40.56 s
+ii dx i
+7.12% done
+Time: 40.57 s
+i y oo
+7.12% done
+Time: 40.60 s
+w ii dx i
+7.12% done
+Time: 40.61 s
+ii dx i y
+7.13% done
+Time: 40.62 s
+dx i y oo
+7.13% done
+Time: 40.64 s
+w ii dx i y
+7.14% done
+Time: 40.65 s
+ii dx i y oo
+7.14% done
+Time: 40.66 s
+n aa nz e
+7.14% done
+Time: 40.70 s
+n aa nz e nz
+7.15% done
+Time: 40.72 s
+aa r w
+7.15% done
+Time: 40.74 s
+r w ai
+7.16% done
+Time: 40.75 s
+u l i p
+7.16% done
+Time: 40.77 s
+l i p aa
+7.16% done
+Time: 40.80 s
+i p aa r
+7.17% done
+Time: 40.82 s
+p aa r w
+7.17% done
+Time: 40.83 s
+aa r w ai
+7.17% done
+Time: 40.84 s
+p u l i p
+7.18% done
+Time: 40.86 s
+u l i p aa
+7.18% done
+Time: 40.87 s
+l i p aa r
+7.19% done
+Time: 40.89 s
+i p aa r w
+7.19% done
+Time: 40.90 s
+p aa r w ai
+7.19% done
+Time: 40.91 s
+lx a b
+7.20% done
+Time: 40.97 s
+a lx a b
+7.20% done
+Time: 41.03 s
+lx a b a
+7.21% done
+Time: 41.10 s
+a b a d
+7.21% done
+Time: 41.18 s
+t a lx a b
+7.21% done
+Time: 41.24 s
+a lx a b a
+7.22% done
+Time: 41.30 s
+lx a b a d
+7.22% done
+Time: 41.38 s
+a b a d i
+7.23% done
+Time: 41.46 s
+k u p i
+7.23% done
+Time: 41.49 s
+k u m a
+7.23% done
+Time: 41.53 s
+u m a w
+7.24% done
+Time: 41.55 s
+m a w lx
+7.24% done
+Time: 41.56 s
+k k u p i
+7.24% done
+Time: 41.59 s
+k u p i dx
+7.25% done
+Time: 41.62 s
+k k u m a
+7.25% done
+Time: 41.66 s
+k u m a w
+7.26% done
+Time: 41.68 s
+u m a w lx
+7.26% done
+Time: 41.70 s
+m a w lx oo
+7.26% done
+Time: 41.71 s
+oo dx aa
+7.27% done
+Time: 41.75 s
+p oo dx aa
+7.27% done
+Time: 41.76 s
+oo dx aa p
+7.28% done
+Time: 41.78 s
+dx aa p oo
+7.28% done
+Time: 41.80 s
+aa p oo dx
+7.28% done
+Time: 41.81 s
+p oo dx i
+7.29% done
+Time: 41.83 s
+p oo dx aa p
+7.29% done
+Time: 41.84 s
+oo dx aa p oo
+7.29% done
+Time: 41.86 s
+dx aa p oo dx
+7.30% done
+Time: 41.87 s
+aa p oo dx i
+7.30% done
+Time: 41.88 s
+t u p p
+7.31% done
+Time: 41.90 s
+u p p aa
+7.31% done
+Time: 42.07 s
+t u p p aa
+7.31% done
+Time: 42.10 s
+u p p aa k
+7.32% done
+Time: 42.11 s
+p p aa k k
+7.32% done
+Time: 42.12 s
+p aa k k i
+7.33% done
+Time: 42.13 s
+a l aa m aa
+7.33% done
+Time: 42.16 s
+r s
+7.33% done
+Time: 42.18 s
+a r s
+7.34% done
+Time: 42.20 s
+tx aa l a
+7.34% done
+Time: 42.21 s
+l a r s
+7.35% done
+Time: 42.22 s
+tx aa l a r
+7.35% done
+Time: 42.25 s
+aa l a r s
+7.35% done
+Time: 42.27 s
+k m
+7.36% done
+Time: 42.29 s
+aa s tx
+7.36% done
+Time: 42.33 s
+s tx i
+7.36% done
+Time: 42.35 s
+tx i k
+7.37% done
+Time: 42.37 s
+i k m
+7.37% done
+Time: 42.38 s
+k m u
+7.38% done
+Time: 42.40 s
+p i lx aa
+7.38% done
+Time: 42.41 s
+lx aa s tx
+7.38% done
+Time: 42.42 s
+aa s tx i
+7.39% done
+Time: 42.43 s
+s tx i k
+7.39% done
+Time: 42.44 s
+tx i k m
+7.40% done
+Time: 42.45 s
+i k m u
+7.40% done
+Time: 42.46 s
+k m u tx
+7.40% done
+Time: 42.48 s
+p i lx aa s
+7.41% done
+Time: 42.49 s
+i lx aa s tx
+7.41% done
+Time: 42.50 s
+lx aa s tx i
+7.42% done
+Time: 42.51 s
+aa s tx i k
+7.42% done
+Time: 42.52 s
+s tx i k m
+7.42% done
+Time: 42.53 s
+tx i k m u
+7.43% done
+Time: 42.54 s
+i k m u tx
+7.43% done
+Time: 42.55 s
+k m u tx tx
+7.43% done
+Time: 42.56 s
+n ee r
+7.44% done
+Time: 42.63 s
+ee r w
+7.44% done
+Time: 42.64 s
+n ee r i
+7.45% done
+Time: 42.66 s
+ee r i y
+7.45% done
+Time: 42.67 s
+p ee r w
+7.45% done
+Time: 42.69 s
+ee r w a
+7.46% done
+Time: 42.70 s
+n ee r i y
+7.46% done
+Time: 42.72 s
+ee r i y a
+7.47% done
+Time: 42.73 s
+r i y a p
+7.47% done
+Time: 42.75 s
+i y a p ee
+7.47% done
+Time: 42.77 s
+a p ee r w
+7.48% done
+Time: 42.80 s
+p ee r w a
+7.48% done
+Time: 42.83 s
+ee r w a n
+7.48% done
+Time: 42.87 s
+l a p o
+7.49% done
+Time: 42.89 s
+l l a p o
+7.49% done
+Time: 42.90 s
+l a p o nx
+7.50% done
+Time: 42.92 s
+aa k uu
+7.50% done
+Time: 42.94 s
+uu dx a
+7.50% done
+Time: 42.97 s
+dx a w
+7.51% done
+Time: 43.03 s
+m aa k uu
+7.51% done
+Time: 43.04 s
+aa k uu dx
+7.52% done
+Time: 43.05 s
+k uu dx a
+7.52% done
+Time: 43.06 s
+uu dx a w
+7.52% done
+Time: 43.08 s
+dx a w ee
+7.53% done
+Time: 43.09 s
+w ee i r
+7.53% done
+Time: 43.11 s
+aa m aa k uu
+7.54% done
+Time: 43.12 s
+m aa k uu dx
+7.54% done
+Time: 43.13 s
+aa k uu dx a
+7.54% done
+Time: 43.14 s
+k uu dx a w
+7.55% done
+Time: 43.16 s
+uu dx a w ee
+7.55% done
+Time: 43.17 s
+dx a w ee i
+7.55% done
+Time: 43.18 s
+a w ee i r
+7.56% done
+Time: 43.19 s
+w ee i r u
+7.56% done
+Time: 43.21 s
+ee i r u p
+7.57% done
+Time: 43.23 s
+r u p p aa
+7.57% done
+Time: 43.35 s
+u p p aa ng
+7.57% done
+Time: 43.48 s
+oo y c
+7.58% done
+Time: 43.50 s
+l i tx
+7.58% done
+Time: 43.57 s
+p oo y c
+7.59% done
+Time: 43.59 s
+oo y c o
+7.59% done
+Time: 43.60 s
+l l i tx
+7.59% done
+Time: 43.66 s
+l i tx tx
+7.60% done
+Time: 43.71 s
+p oo y c o
+7.60% done
+Time: 43.73 s
+oo y c o l
+7.60% done
+Time: 43.74 s
+o l l i tx
+7.61% done
+Time: 43.79 s
+l l i tx tx
+7.61% done
+Time: 43.86 s
+l i tx tx u
+7.62% done
+Time: 43.90 s
+nz aa p aa
+7.62% done
+Time: 43.93 s
+aa p aa r
+7.62% done
+Time: 43.95 s
+aa r a d
+7.63% done
+Time: 43.97 s
+r a d i
+7.63% done
+Time: 43.99 s
+aa nz aa p aa
+7.64% done
+Time: 44.01 s
+nz aa p aa r
+7.64% done
+Time: 44.02 s
+aa p aa r a
+7.64% done
+Time: 44.04 s
+p aa r a d
+7.65% done
+Time: 44.05 s
+aa r a d i
+7.65% done
+Time: 44.06 s
+d u m ee t
+7.66% done
+Time: 44.08 s
+m n aa
+7.66% done
+Time: 44.10 s
+dx a m n
+7.66% done
+Time: 44.12 s
+a m n aa
+7.67% done
+Time: 44.13 s
+m n aa p
+7.67% done
+Time: 44.14 s
+n aa p aa
+7.67% done
+Time: 44.15 s
+a dx a m n
+7.68% done
+Time: 44.16 s
+dx a m n aa
+7.68% done
+Time: 44.17 s
+a m n aa p
+7.69% done
+Time: 44.18 s
+m n aa p aa
+7.69% done
+Time: 44.19 s
+n aa p aa k
+7.69% done
+Time: 44.20 s
+g u b
+7.70% done
+Time: 44.23 s
+p aa g u
+7.70% done
+Time: 44.26 s
+aa g u b
+7.71% done
+Time: 44.29 s
+g u b a
+7.71% done
+Time: 44.31 s
+u b a l
+7.71% done
+Time: 44.36 s
+p aa g u b
+7.72% done
+Time: 44.38 s
+aa g u b a
+7.72% done
+Time: 44.41 s
+g u b a l
+7.72% done
+Time: 44.44 s
+u b a l i
+7.73% done
+Time: 44.47 s
+y i dx
+7.73% done
+Time: 44.50 s
+oo y i dx
+7.74% done
+Time: 44.52 s
+y i dx u
+7.74% done
+Time: 44.53 s
+i dx u ng
+7.74% done
+Time: 44.57 s
+p oo y i dx
+7.75% done
+Time: 44.59 s
+oo y i dx u
+7.75% done
+Time: 44.61 s
+y i dx u ng
+7.76% done
+Time: 44.62 s
+i dx u ng g
+7.76% done
+Time: 44.65 s
+nz a w i
+7.76% done
+Time: 44.67 s
+e nz nz a w
+7.77% done
+Time: 44.72 s
+nz nz a w i
+7.77% done
+Time: 44.74 s
+nz a w i sx
+7.78% done
+Time: 44.75 s
+ee p aa r
+7.78% done
+Time: 44.76 s
+p aa r aa
+7.78% done
+Time: 44.80 s
+aa r aa tx
+7.79% done
+Time: 44.81 s
+r aa tx tx
+7.79% done
+Time: 44.82 s
+tx i nz aa
+7.79% done
+Time: 44.85 s
+i nz aa ng
+7.80% done
+Time: 44.86 s
+m ee p aa r
+7.80% done
+Time: 44.87 s
+ee p aa r aa
+7.81% done
+Time: 44.88 s
+p aa r aa tx
+7.81% done
+Time: 44.89 s
+aa r aa tx tx
+7.81% done
+Time: 44.91 s
+r aa tx tx i
+7.82% done
+Time: 44.92 s
+tx tx i nz aa
+7.82% done
+Time: 44.93 s
+tx i nz aa ng
+7.83% done
+Time: 44.94 s
+i nz aa ng g
+7.83% done
+Time: 44.95 s
+nx nx i k
+7.83% done
+Time: 44.98 s
+a nx nx i k
+7.84% done
+Time: 45.01 s
+nx nx i k k
+7.84% done
+Time: 45.04 s
+nx i k k a
+7.84% done
+Time: 45.07 s
+sx c
+7.85% done
+Time: 45.08 s
+oo sx c
+7.85% done
+Time: 45.09 s
+sx c u
+7.86% done
+Time: 45.10 s
+nx i y
+7.86% done
+Time: 45.13 s
+d oo sx c
+7.86% done
+Time: 45.14 s
+oo sx c u
+7.87% done
+Time: 45.15 s
+sx c u p
+7.87% done
+Time: 45.16 s
+c u p p
+7.88% done
+Time: 45.18 s
+u p p i
+7.88% done
+Time: 45.22 s
+p p i r
+7.88% done
+Time: 45.25 s
+r a m a
+7.89% done
+Time: 45.27 s
+a nx i y
+7.89% done
+Time: 45.29 s
+nx i y a
+7.90% done
+Time: 45.30 s
+n d oo sx c
+7.90% done
+Time: 45.32 s
+d oo sx c u
+7.90% done
+Time: 45.33 s
+oo sx c u p
+7.91% done
+Time: 45.34 s
+sx c u p p
+7.91% done
+Time: 45.35 s
+c u p p i
+7.91% done
+Time: 45.36 s
+u p p i r
+7.92% done
+Time: 45.38 s
+p p i r a
+7.92% done
+Time: 45.39 s
+i r a m a
+7.93% done
+Time: 45.40 s
+r a m a nx
+7.93% done
+Time: 45.41 s
+m a nx i y
+7.93% done
+Time: 45.42 s
+a nx i y a
+7.94% done
+Time: 45.43 s
+nx i y a m
+7.94% done
+Time: 45.45 s
+uu j
+7.95% done
+Time: 45.47 s
+p uu j
+7.95% done
+Time: 45.49 s
+uu j ai
+7.95% done
+Time: 45.50 s
+j ai p
+7.96% done
+Time: 45.51 s
+p uu j ai
+7.96% done
+Time: 45.52 s
+uu j ai p
+7.96% done
+Time: 45.54 s
+j ai p a
+7.97% done
+Time: 45.55 s
+ai p a nx
+7.97% done
+Time: 45.57 s
+tx tx u a
+7.98% done
+Time: 45.59 s
+tx u a n
+7.98% done
+Time: 45.60 s
+p uu j ai p
+7.98% done
+Time: 45.61 s
+uu j ai p a
+7.99% done
+Time: 45.63 s
+j ai p a nx
+7.99% done
+Time: 45.64 s
+ai p a nx nx
+8.00% done
+Time: 45.67 s
+i tx tx u a
+8.00% done
+Time: 45.68 s
+tx tx u a n
+8.00% done
+Time: 45.69 s
+tx u a n d
+8.01% done
+Time: 45.71 s
+k t
+8.01% done
+Time: 45.75 s
+a k t
+8.02% done
+Time: 45.79 s
+k t u
+8.02% done
+Time: 45.80 s
+u l ai
+8.02% done
+Time: 45.82 s
+y ee p
+8.03% done
+Time: 45.85 s
+ee p ii
+8.03% done
+Time: 45.86 s
+p ii c
+8.03% done
+Time: 45.87 s
+p a k t
+8.04% done
+Time: 45.88 s
+a k t u
+8.04% done
+Time: 45.89 s
+k t u l
+8.05% done
+Time: 45.91 s
+t u l ai
+8.05% done
+Time: 45.92 s
+u l ai y
+8.05% done
+Time: 45.94 s
+ai y ee p
+8.06% done
+Time: 45.95 s
+y ee p ii
+8.06% done
+Time: 45.96 s
+ee p ii c
+8.07% done
+Time: 45.97 s
+p a k t u
+8.07% done
+Time: 45.98 s
+a k t u l
+8.07% done
+Time: 46.00 s
+k t u l ai
+8.08% done
+Time: 46.01 s
+t u l ai y
+8.08% done
+Time: 46.02 s
+u l ai y ee
+8.08% done
+Time: 46.03 s
+l ai y ee p
+8.09% done
+Time: 46.04 s
+ai y ee p ii
+8.09% done
+Time: 46.05 s
+y ee p ii c
+8.10% done
+Time: 46.06 s
+t oo nx
+8.10% done
+Time: 46.09 s
+t oo nx a
+8.10% done
+Time: 46.11 s
+oo nx a l
+8.11% done
+Time: 46.13 s
+nx a l a
+8.11% done
+Time: 46.15 s
+t oo nx a l
+8.12% done
+Time: 46.17 s
+oo nx a l a
+8.12% done
+Time: 46.18 s
+u a w
+8.12% done
+Time: 46.22 s
+k u a w
+8.13% done
+Time: 46.24 s
+u a w u
+8.13% done
+Time: 46.25 s
+k k u a w
+8.14% done
+Time: 46.27 s
+k u a w u
+8.14% done
+Time: 46.29 s
+u a w u ng
+8.14% done
+Time: 46.30 s
+t u ee
+8.15% done
+Time: 46.31 s
+u ee k
+8.15% done
+Time: 46.32 s
+r u p a
+8.15% done
+Time: 46.37 s
+t t u ee
+8.16% done
+Time: 46.38 s
+t u ee k
+8.16% done
+Time: 46.39 s
+u ee k k
+8.17% done
+Time: 46.40 s
+k k a r
+8.17% done
+Time: 46.43 s
+a r u g
+8.17% done
+Time: 46.46 s
+r u g u
+8.18% done
+Time: 46.47 s
+o r u p a
+8.18% done
+Time: 46.52 s
+r u p a t
+8.19% done
+Time: 46.54 s
+p a t t u
+8.19% done
+Time: 46.58 s
+a t t u ee
+8.19% done
+Time: 46.59 s
+t t u ee k
+8.20% done
+Time: 46.60 s
+t u ee k k
+8.20% done
+Time: 46.61 s
+u ee k k a
+8.20% done
+Time: 46.63 s
+ee k k a r
+8.21% done
+Time: 46.64 s
+k k a r u
+8.21% done
+Time: 46.65 s
+k a r u g
+8.22% done
+Time: 46.67 s
+a r u g u
+8.22% done
+Time: 46.68 s
+o g
+8.22% done
+Time: 46.71 s
+o g ee
+8.23% done
+Time: 46.73 s
+y aa w
+8.23% done
+Time: 46.79 s
+ai y aa w
+8.24% done
+Time: 46.80 s
+y aa w a
+8.24% done
+Time: 46.86 s
+rx ai y aa w
+8.24% done
+Time: 46.87 s
+ai y aa w a
+8.25% done
+Time: 46.88 s
+y aa w a n
+8.25% done
+Time: 46.92 s
+lx ee rx
+8.26% done
+Time: 46.94 s
+rx p a
+8.26% done
+Time: 46.95 s
+tx u dx
+8.26% done
+Time: 46.97 s
+a l a w
+8.27% done
+Time: 46.99 s
+a r a ng
+8.27% done
+Time: 47.00 s
+a lx ee rx
+8.27% done
+Time: 47.01 s
+lx ee rx p
+8.28% done
+Time: 47.03 s
+ee rx p a
+8.28% done
+Time: 47.04 s
+rx p a tx
+8.29% done
+Time: 47.05 s
+tx tx u dx
+8.29% done
+Time: 47.06 s
+tx u dx u
+8.29% done
+Time: 47.07 s
+u dx u c
+8.30% done
+Time: 47.08 s
+k a l a w
+8.30% done
+Time: 47.09 s
+a l a w a
+8.31% done
+Time: 47.11 s
+l a w a r
+8.31% done
+Time: 47.14 s
+a w a r a
+8.31% done
+Time: 47.18 s
+w a r a ng
+8.32% done
+Time: 47.20 s
+a r a ng g
+8.32% done
+Time: 47.21 s
+g a lx ee rx
+8.32% done
+Time: 47.22 s
+a lx ee rx p
+8.33% done
+Time: 47.23 s
+lx ee rx p a
+8.33% done
+Time: 47.24 s
+ee rx p a tx
+8.34% done
+Time: 47.25 s
+rx p a tx tx
+8.34% done
+Time: 47.27 s
+a tx tx u dx
+8.34% done
+Time: 47.28 s
+tx tx u dx u
+8.35% done
+Time: 47.29 s
+tx u dx u c
+8.35% done
+Time: 47.30 s
+u dx u c c
+8.36% done
+Time: 47.31 s
+ii dx u l
+8.36% done
+Time: 47.32 s
+dx u l a
+8.36% done
+Time: 47.34 s
+u l a c
+8.37% done
+Time: 47.35 s
+p i dx a
+8.37% done
+Time: 47.38 s
+i dx a nz
+8.38% done
+Time: 47.40 s
+dx a nz u
+8.38% done
+Time: 47.41 s
+w ii dx u l
+8.38% done
+Time: 47.42 s
+ii dx u l a
+8.39% done
+Time: 47.43 s
+dx u l a c
+8.39% done
+Time: 47.44 s
+u l a c aa
+8.39% done
+Time: 47.45 s
+l a c aa p
+8.40% done
+Time: 47.46 s
+p p i dx a
+8.40% done
+Time: 47.49 s
+p i dx a nz
+8.41% done
+Time: 47.50 s
+i dx a nz u
+8.41% done
+Time: 47.51 s
+dx a nz u m
+8.41% done
+Time: 47.52 s
+y a p ai
+8.42% done
+Time: 47.53 s
+y a nz aa
+8.42% done
+Time: 47.55 s
+p e r i y
+8.43% done
+Time: 47.62 s
+i y a p ai
+8.43% done
+Time: 47.64 s
+y a p ai y
+8.43% done
+Time: 47.65 s
+ai y a nz aa
+8.44% done
+Time: 47.66 s
+nz p ai
+8.44% done
+Time: 47.67 s
+c c i r
+8.44% done
+Time: 47.73 s
+c i r u
+8.45% done
+Time: 47.79 s
+k aa nz p
+8.45% done
+Time: 47.80 s
+aa nz p ai
+8.46% done
+Time: 47.81 s
+nz p ai y
+8.46% done
+Time: 47.83 s
+dx i c c i
+8.46% done
+Time: 47.92 s
+i c c i r
+8.47% done
+Time: 47.97 s
+c c i r u
+8.47% done
+Time: 48.03 s
+c i r u k
+8.48% done
+Time: 48.06 s
+k k aa nz p
+8.48% done
+Time: 48.07 s
+k aa nz p ai
+8.48% done
+Time: 48.08 s
+aa nz p ai y
+8.49% done
+Time: 48.09 s
+nz p ai y a
+8.49% done
+Time: 48.11 s
+m p uu
+8.50% done
+Time: 48.12 s
+tx u t
+8.50% done
+Time: 48.14 s
+e r u ng
+8.50% done
+Time: 48.16 s
+u ng g aa
+8.51% done
+Time: 48.17 s
+a m p uu
+8.51% done
+Time: 48.18 s
+m p uu nx
+8.51% done
+Time: 48.19 s
+nx tx u t
+8.52% done
+Time: 48.22 s
+tx u t a
+8.52% done
+Time: 48.25 s
+u t a k
+8.53% done
+Time: 48.27 s
+p e r u ng
+8.53% done
+Time: 48.28 s
+e r u ng g
+8.53% done
+Time: 48.29 s
+r u ng g aa
+8.54% done
+Time: 48.30 s
+u ng g aa y
+8.54% done
+Time: 48.31 s
+y a m p uu
+8.55% done
+Time: 48.33 s
+a m p uu nx
+8.55% done
+Time: 48.34 s
+m p uu nx tx
+8.55% done
+Time: 48.35 s
+uu nx tx u t
+8.56% done
+Time: 48.36 s
+nx tx u t a
+8.56% done
+Time: 48.39 s
+tx u t a k
+8.57% done
+Time: 48.41 s
+u t a k k
+8.57% done
+Time: 48.42 s
+c a lx
+8.57% done
+Time: 48.43 s
+lx i k
+8.58% done
+Time: 48.46 s
+k aa k
+8.58% done
+Time: 48.53 s
+nz aa c a
+8.58% done
+Time: 48.54 s
+aa c a lx
+8.59% done
+Time: 48.55 s
+c a lx i
+8.59% done
+Time: 48.56 s
+a lx i k
+8.60% done
+Time: 48.58 s
+lx i k k
+8.60% done
+Time: 48.62 s
+k k aa k
+8.60% done
+Time: 48.68 s
+k aa k a
+8.61% done
+Time: 48.76 s
+aa k a p
+8.61% done
+Time: 48.78 s
+k a p oo
+8.62% done
+Time: 48.83 s
+a p oo dx
+8.62% done
+Time: 48.85 s
+ee nz nz aa c
+8.62% done
+Time: 48.86 s
+nz nz aa c a
+8.63% done
+Time: 48.87 s
+nz aa c a lx
+8.63% done
+Time: 48.88 s
+aa c a lx i
+8.63% done
+Time: 48.90 s
+c a lx i k
+8.64% done
+Time: 48.91 s
+a lx i k k
+8.64% done
+Time: 48.93 s
+lx i k k aa
+8.65% done
+Time: 48.94 s
+i k k aa k
+8.65% done
+Time: 48.95 s
+k k aa k a
+8.65% done
+Time: 49.02 s
+k aa k a p
+8.66% done
+Time: 49.05 s
+aa k a p oo
+8.66% done
+Time: 49.07 s
+k a p oo dx
+8.67% done
+Time: 49.09 s
+a p oo dx u
+8.67% done
+Time: 49.11 s
+o w
+8.67% done
+Time: 49.15 s
+w o
+8.68% done
+Time: 49.19 s
+i o w
+8.68% done
+Time: 49.20 s
+o w w
+8.69% done
+Time: 49.24 s
+w w o
+8.69% done
+Time: 49.30 s
+w o r
+8.69% done
+Time: 49.34 s
+r i o w
+8.70% done
+Time: 49.35 s
+i o w w
+8.70% done
+Time: 49.37 s
+o w w o
+8.70% done
+Time: 49.41 s
+w w o r
+8.71% done
+Time: 49.45 s
+w o r u
+8.71% done
+Time: 49.49 s
+i r i o w
+8.72% done
+Time: 49.51 s
+r i o w w
+8.72% done
+Time: 49.52 s
+i o w w o
+8.72% done
+Time: 49.53 s
+o w w o r
+8.73% done
+Time: 49.57 s
+w w o r u
+8.73% done
+Time: 49.62 s
+c e r
+8.74% done
+Time: 49.66 s
+c e r i
+8.74% done
+Time: 49.70 s
+e r i c
+8.74% done
+Time: 49.72 s
+c e r i c
+8.75% done
+Time: 49.73 s
+e r i c a
+8.75% done
+Time: 49.74 s
+u n d a
+8.75% done
+Time: 49.77 s
+l l aa m n
+8.76% done
+Time: 49.79 s
+aa m n a l
+8.76% done
+Time: 49.84 s
+r u n d a
+8.77% done
+Time: 49.88 s
+u n d a d
+8.77% done
+Time: 49.91 s
+a w ai
+8.77% done
+Time: 49.93 s
+k a w ai
+8.78% done
+Time: 49.94 s
+a w ai k
+8.78% done
+Time: 49.96 s
+i k k a w
+8.79% done
+Time: 49.99 s
+k k a w ai
+8.79% done
+Time: 50.01 s
+k a w ai k
+8.79% done
+Time: 50.02 s
+a w ai k k
+8.80% done
+Time: 50.04 s
+w ai k k a
+8.80% done
+Time: 50.07 s
+ai k k a nx
+8.81% done
+Time: 50.10 s
+g a d
+8.81% done
+Time: 50.15 s
+m aa k ee
+8.81% done
+Time: 50.16 s
+ng g a d
+8.82% done
+Time: 50.21 s
+g a d aa
+8.82% done
+Time: 50.26 s
+aa m aa k ee
+8.82% done
+Time: 50.27 s
+m aa k ee p
+8.83% done
+Time: 50.28 s
+ee p p aa ng
+8.83% done
+Time: 50.32 s
+aa ng g a d
+8.84% done
+Time: 50.33 s
+ng g a d aa
+8.84% done
+Time: 50.38 s
+g a d aa nz
+8.84% done
+Time: 50.43 s
+o d
+8.85% done
+Time: 50.45 s
+p o d
+8.85% done
+Time: 50.47 s
+o d u
+8.86% done
+Time: 50.50 s
+w aa w
+8.86% done
+Time: 50.52 s
+w ee c
+8.86% done
+Time: 50.54 s
+a rx ee
+8.87% done
+Time: 50.56 s
+p o d u
+8.87% done
+Time: 50.58 s
+o d u w
+8.87% done
+Time: 50.59 s
+u w aa w
+8.88% done
+Time: 50.60 s
+w aa w ee
+8.88% done
+Time: 50.61 s
+aa w ee c
+8.89% done
+Time: 50.62 s
+w ee c o
+8.89% done
+Time: 50.63 s
+l a rx ee
+8.89% done
+Time: 50.64 s
+a rx ee nz
+8.90% done
+Time: 50.66 s
+p o d u w
+8.90% done
+Time: 50.67 s
+o d u w aa
+8.91% done
+Time: 50.69 s
+d u w aa w
+8.91% done
+Time: 50.70 s
+u w aa w ee
+8.91% done
+Time: 50.71 s
+w aa w ee c
+8.92% done
+Time: 50.72 s
+aa w ee c o
+8.92% done
+Time: 50.75 s
+w ee c o l
+8.93% done
+Time: 50.77 s
+l l a rx ee
+8.93% done
+Time: 50.81 s
+l a rx ee nz
+8.93% done
+Time: 50.83 s
+ee tx tx aa ng
+8.94% done
+Time: 50.85 s
+lx u dx
+8.94% done
+Time: 50.86 s
+u dx aa
+8.94% done
+Time: 50.89 s
+lx lx u dx
+8.95% done
+Time: 50.91 s
+lx u dx aa
+8.95% done
+Time: 50.92 s
+t a lx lx u
+8.96% done
+Time: 50.93 s
+a lx lx u dx
+8.96% done
+Time: 50.94 s
+lx lx u dx aa
+8.96% done
+Time: 50.95 s
+r aa k
+8.97% done
+Time: 50.98 s
+a r n
+8.97% done
+Time: 51.01 s
+r n aa
+8.98% done
+Time: 51.03 s
+aa n d a
+8.98% done
+Time: 51.04 s
+n d a r
+8.98% done
+Time: 51.06 s
+d a r aa
+8.99% done
+Time: 51.08 s
+a r aa k
+8.99% done
+Time: 51.09 s
+r aa k a
+8.99% done
+Time: 51.10 s
+aa k a r
+9.00% done
+Time: 51.14 s
+k a r n
+9.00% done
+Time: 51.16 s
+a r n aa
+9.01% done
+Time: 51.18 s
+r n aa dx
+9.01% done
+Time: 51.20 s
+dx a g aa
+9.01% done
+Time: 51.22 s
+aa n d a r
+9.02% done
+Time: 51.23 s
+n d a r aa
+9.02% done
+Time: 51.24 s
+d a r aa k
+9.03% done
+Time: 51.26 s
+a r aa k a
+9.03% done
+Time: 51.30 s
+r aa k a r
+9.03% done
+Time: 51.32 s
+aa k a r n
+9.04% done
+Time: 51.35 s
+k a r n aa
+9.04% done
+Time: 51.37 s
+a r n aa dx
+9.05% done
+Time: 51.39 s
+r n aa dx a
+9.05% done
+Time: 51.41 s
+aa dx a g aa
+9.05% done
+Time: 51.43 s
+aa m m
+9.06% done
+Time: 51.49 s
+m m u
+9.06% done
+Time: 51.54 s
+dx i nj
+9.06% done
+Time: 51.58 s
+p oo c
+9.07% done
+Time: 51.61 s
+oo c c
+9.07% done
+Time: 51.65 s
+l aa m m
+9.08% done
+Time: 51.70 s
+aa m m u
+9.08% done
+Time: 51.72 s
+m m u dx
+9.08% done
+Time: 51.77 s
+u dx i nj
+9.09% done
+Time: 51.81 s
+dx i nj j
+9.09% done
+Time: 51.85 s
+j u p oo
+9.10% done
+Time: 51.87 s
+u p oo c
+9.10% done
+Time: 51.89 s
+p oo c c
+9.10% done
+Time: 51.92 s
+oo c c u
+9.11% done
+Time: 51.94 s
+l l aa m m
+9.11% done
+Time: 51.98 s
+l aa m m u
+9.11% done
+Time: 52.01 s
+aa m m u dx
+9.12% done
+Time: 52.03 s
+m m u dx i
+9.12% done
+Time: 52.08 s
+m u dx i nj
+9.13% done
+Time: 52.12 s
+u dx i nj j
+9.13% done
+Time: 52.16 s
+dx i nj j u
+9.13% done
+Time: 52.19 s
+i nj j u p
+9.14% done
+Time: 52.21 s
+nj j u p oo
+9.14% done
+Time: 52.23 s
+j u p oo c
+9.15% done
+Time: 52.26 s
+u p oo c c
+9.15% done
+Time: 52.30 s
+p oo c c u
+9.15% done
+Time: 52.33 s
+ee p a
+9.16% done
+Time: 52.37 s
+nx u m ee
+9.16% done
+Time: 52.42 s
+m ee p a
+9.17% done
+Time: 52.44 s
+ee p a nx
+9.17% done
+Time: 52.47 s
+o nx nx u m
+9.17% done
+Time: 52.51 s
+nx nx u m ee
+9.18% done
+Time: 52.56 s
+nx u m ee p
+9.18% done
+Time: 52.57 s
+u m ee p a
+9.18% done
+Time: 52.58 s
+m ee p a nx
+9.19% done
+Time: 52.60 s
+ee p a nx nx
+9.19% done
+Time: 52.62 s
+lx uu
+9.20% done
+Time: 52.64 s
+lx lx uu
+9.20% done
+Time: 52.65 s
+lx uu r
+9.20% done
+Time: 52.67 s
+u w a lx
+9.21% done
+Time: 52.68 s
+a lx lx uu
+9.21% done
+Time: 52.70 s
+lx lx uu r
+9.22% done
+Time: 52.71 s
+lx uu r m
+9.22% done
+Time: 52.72 s
+i r u w a
+9.22% done
+Time: 52.75 s
+r u w a lx
+9.23% done
+Time: 52.76 s
+u w a lx lx
+9.23% done
+Time: 52.78 s
+w a lx lx uu
+9.23% done
+Time: 52.79 s
+a lx lx uu r
+9.24% done
+Time: 52.80 s
+lx lx uu r m
+9.24% done
+Time: 52.81 s
+lx uu r m aa
+9.25% done
+Time: 52.82 s
+aa nz a d
+9.25% done
+Time: 52.90 s
+d aa nz a d
+9.25% done
+Time: 52.96 s
+aa nz a d aa
+9.26% done
+Time: 52.99 s
+sx tx tx a m
+9.26% done
+Time: 53.00 s
+oo y a
+9.27% done
+Time: 53.03 s
+dx u r
+9.27% done
+Time: 53.04 s
+p oo y a
+9.27% done
+Time: 53.05 s
+oo y a dx
+9.28% done
+Time: 53.06 s
+a dx u r
+9.28% done
+Time: 53.07 s
+dx u r aa
+9.29% done
+Time: 53.08 s
+u r aa d
+9.29% done
+Time: 53.10 s
+a p oo y a
+9.29% done
+Time: 53.11 s
+p oo y a dx
+9.30% done
+Time: 53.12 s
+oo y a dx u
+9.30% done
+Time: 53.14 s
+y a dx u r
+9.30% done
+Time: 53.15 s
+a dx u r aa
+9.31% done
+Time: 53.16 s
+dx u r aa d
+9.31% done
+Time: 53.17 s
+u r aa d u
+9.32% done
+Time: 53.19 s
+uu r u k
+9.32% done
+Time: 53.20 s
+uu r u k k
+9.32% done
+Time: 53.21 s
+u p e
+9.33% done
+Time: 53.24 s
+k u r u
+9.33% done
+Time: 53.27 s
+u r u p
+9.34% done
+Time: 53.29 s
+r u p e
+9.34% done
+Time: 53.31 s
+u p e y
+9.34% done
+Time: 53.32 s
+y a r c
+9.35% done
+Time: 53.33 s
+k u r u p
+9.35% done
+Time: 53.35 s
+u r u p e
+9.35% done
+Time: 53.36 s
+r u p e y
+9.36% done
+Time: 53.37 s
+u p e y a
+9.36% done
+Time: 53.38 s
+e y a r c
+9.37% done
+Time: 53.39 s
+y a r c c
+9.37% done
+Time: 53.40 s
+w i s
+9.37% done
+Time: 53.47 s
+i s ee
+9.38% done
+Time: 53.49 s
+s ee s
+9.38% done
+Time: 53.51 s
+aa k o
+9.39% done
+Time: 53.55 s
+k o nx
+9.39% done
+Time: 53.60 s
+tx aa dx
+9.39% done
+Time: 53.62 s
+w i s ee
+9.40% done
+Time: 53.63 s
+i s ee s
+9.40% done
+Time: 53.64 s
+s ee s a
+9.41% done
+Time: 53.65 s
+ee s a m
+9.41% done
+Time: 53.67 s
+m aa k o
+9.41% done
+Time: 53.69 s
+aa k o nx
+9.42% done
+Time: 53.71 s
+k o nx tx
+9.42% done
+Time: 53.76 s
+nx tx aa dx
+9.42% done
+Time: 53.78 s
+tx aa dx u
+9.43% done
+Time: 53.80 s
+w i s ee s
+9.43% done
+Time: 53.81 s
+i s ee s a
+9.44% done
+Time: 53.83 s
+s ee s a m
+9.44% done
+Time: 53.84 s
+ee s a m aa
+9.44% done
+Time: 53.86 s
+s a m aa k
+9.45% done
+Time: 53.87 s
+a m aa k o
+9.45% done
+Time: 53.89 s
+m aa k o nx
+9.46% done
+Time: 53.90 s
+aa k o nx tx
+9.46% done
+Time: 53.92 s
+k o nx tx aa
+9.46% done
+Time: 53.94 s
+o nx tx aa dx
+9.47% done
+Time: 53.96 s
+nx tx aa dx u
+9.47% done
+Time: 53.97 s
+tx aa dx u w
+9.47% done
+Time: 53.99 s
+aa dx u w aa
+9.48% done
+Time: 54.01 s
+a m aa w
+9.48% done
+Time: 54.05 s
+a m a d
+9.49% done
+Time: 54.07 s
+e n d a m
+9.49% done
+Time: 54.08 s
+d a m aa w
+9.49% done
+Time: 54.09 s
+a m aa w a
+9.50% done
+Time: 54.11 s
+tx tx a m a
+9.50% done
+Time: 54.12 s
+tx a m a d
+9.51% done
+Time: 54.14 s
+a m a d u
+9.51% done
+Time: 54.16 s
+nz u m p a
+9.51% done
+Time: 54.17 s
+a d oo
+9.52% done
+Time: 54.20 s
+d oo tx
+9.52% done
+Time: 54.23 s
+a d oo tx
+9.53% done
+Time: 54.25 s
+d oo tx a
+9.53% done
+Time: 54.29 s
+oo tx a l
+9.53% done
+Time: 54.30 s
+tx a l aa
+9.54% done
+Time: 54.31 s
+a l aa s
+9.54% done
+Time: 54.32 s
+l aa s tx
+9.54% done
+Time: 54.33 s
+a d oo tx a
+9.55% done
+Time: 54.36 s
+d oo tx a l
+9.55% done
+Time: 54.37 s
+oo tx a l aa
+9.56% done
+Time: 54.38 s
+tx a l aa s
+9.56% done
+Time: 54.40 s
+a l aa s tx
+9.56% done
+Time: 54.41 s
+lx ii
+9.57% done
+Time: 54.42 s
+b aa nx
+9.57% done
+Time: 54.43 s
+tx i m
+9.58% done
+Time: 54.45 s
+aa lx ii
+9.58% done
+Time: 54.46 s
+lx ii s
+9.58% done
+Time: 54.47 s
+w ii r a
+9.59% done
+Time: 54.49 s
+ii r a b
+9.59% done
+Time: 54.50 s
+r a b aa
+9.59% done
+Time: 54.51 s
+a b aa nx
+9.60% done
+Time: 54.52 s
+b aa nx tx
+9.60% done
+Time: 54.53 s
+nx tx i m
+9.61% done
+Time: 54.54 s
+tx i m aa
+9.61% done
+Time: 54.55 s
+i m aa r
+9.61% done
+Time: 54.57 s
+aa r i y
+9.62% done
+Time: 54.58 s
+y a m m
+9.62% done
+Time: 54.59 s
+k aa lx ii
+9.63% done
+Time: 54.60 s
+aa lx ii s
+9.63% done
+Time: 54.61 s
+lx ii s w
+9.63% done
+Time: 54.63 s
+w a r i
+9.64% done
+Time: 54.68 s
+w ii r a b
+9.64% done
+Time: 54.69 s
+ii r a b aa
+9.65% done
+Time: 54.70 s
+r a b aa nx
+9.65% done
+Time: 54.71 s
+a b aa nx tx
+9.65% done
+Time: 54.72 s
+b aa nx tx i
+9.66% done
+Time: 54.73 s
+aa nx tx i m
+9.66% done
+Time: 54.75 s
+nx tx i m aa
+9.66% done
+Time: 54.76 s
+tx i m aa r
+9.67% done
+Time: 54.77 s
+i m aa r i
+9.67% done
+Time: 54.78 s
+m aa r i y
+9.68% done
+Time: 54.79 s
+aa r i y a
+9.68% done
+Time: 54.80 s
+i y a m m
+9.68% done
+Time: 54.81 s
+y a m m a
+9.69% done
+Time: 54.83 s
+k aa lx ii s
+9.69% done
+Time: 54.84 s
+aa lx ii s w
+9.70% done
+Time: 54.85 s
+lx ii s w a
+9.70% done
+Time: 54.86 s
+s w a r i
+9.70% done
+Time: 54.87 s
+rx a p
+9.71% done
+Time: 54.90 s
+i rx a p
+9.71% done
+Time: 54.92 s
+rx a p p
+9.72% done
+Time: 54.94 s
+p aa k o
+9.72% done
+Time: 54.96 s
+c i rx a p
+9.72% done
+Time: 54.97 s
+i rx a p p
+9.73% done
+Time: 54.99 s
+rx a p p aa
+9.73% done
+Time: 55.01 s
+p p aa k o
+9.73% done
+Time: 55.02 s
+p aa k o nx
+9.74% done
+Time: 55.03 s
+aa dx u w oo
+9.74% done
+Time: 55.04 s
+p a ng
+9.75% done
+Time: 55.06 s
+g u nz
+9.75% done
+Time: 55.08 s
+p a ng g
+9.75% done
+Time: 55.10 s
+ng g u nz
+9.76% done
+Time: 55.11 s
+g u nz i
+9.76% done
+Time: 55.12 s
+p a ng g u
+9.77% done
+Time: 55.14 s
+a ng g u nz
+9.77% done
+Time: 55.15 s
+ng g u nz i
+9.77% done
+Time: 55.16 s
+d a k u
+9.78% done
+Time: 55.18 s
+a k u rx
+9.78% done
+Time: 55.19 s
+k u rx ai
+9.78% done
+Time: 55.21 s
+u rx ai y
+9.79% done
+Time: 55.22 s
+rx ai y u
+9.79% done
+Time: 55.23 s
+y u m i
+9.80% done
+Time: 55.25 s
+n d a k u
+9.80% done
+Time: 55.26 s
+d a k u rx
+9.80% done
+Time: 55.28 s
+a k u rx ai
+9.81% done
+Time: 55.29 s
+k u rx ai y
+9.81% done
+Time: 55.30 s
+u rx ai y u
+9.82% done
+Time: 55.31 s
+rx ai y u m
+9.82% done
+Time: 55.32 s
+ai y u m i
+9.82% done
+Time: 55.33 s
+y u m i l
+9.83% done
+Time: 55.34 s
+i d ee
+9.83% done
+Time: 55.38 s
+i d ee m
+9.84% done
+Time: 55.40 s
+i d ee m aa
+9.84% done
+Time: 55.41 s
+ee m aa d a
+9.84% done
+Time: 55.43 s
+u a k
+9.85% done
+Time: 55.46 s
+r u a k
+9.85% done
+Time: 55.47 s
+u a k k
+9.85% done
+Time: 55.51 s
+o r u a k
+9.86% done
+Time: 55.52 s
+r u a k k
+9.86% done
+Time: 55.53 s
+u a k k aa
+9.87% done
+Time: 55.56 s
+p i n
+9.87% done
+Time: 55.58 s
+i n aa
+9.87% done
+Time: 55.59 s
+m p i n
+9.88% done
+Time: 55.61 s
+p i n aa
+9.88% done
+Time: 55.62 s
+i n aa nz
+9.89% done
+Time: 55.63 s
+a m p i n
+9.89% done
+Time: 55.64 s
+m p i n aa
+9.89% done
+Time: 55.65 s
+p i n aa nz
+9.90% done
+Time: 55.67 s
+i n aa nz u
+9.90% done
+Time: 55.68 s
+m i k
+9.90% done
+Time: 55.70 s
+i k u
+9.91% done
+Time: 55.73 s
+dx a nx
+9.91% done
+Time: 55.75 s
+aa m i k
+9.92% done
+Time: 55.76 s
+m i k u
+9.92% done
+Time: 55.77 s
+i k u m
+9.92% done
+Time: 55.78 s
+u m p u
+9.93% done
+Time: 55.82 s
+m p u dx
+9.93% done
+Time: 55.85 s
+p u dx a
+9.94% done
+Time: 55.88 s
+u dx a nx
+9.94% done
+Time: 55.90 s
+dx a nx u
+9.94% done
+Time: 55.91 s
+c aa m i k
+9.95% done
+Time: 55.93 s
+aa m i k u
+9.95% done
+Time: 55.94 s
+m i k u m
+9.96% done
+Time: 55.95 s
+i k u m p
+9.96% done
+Time: 55.97 s
+k u m p u
+9.96% done
+Time: 55.98 s
+u m p u dx
+9.97% done
+Time: 56.00 s
+m p u dx a
+9.97% done
+Time: 56.02 s
+p u dx a nx
+9.97% done
+Time: 56.03 s
+u dx a nx u
+9.98% done
+Time: 56.05 s
+dx a nx u m
+9.98% done
+Time: 56.07 s
+aa tx tx oo
+9.99% done
+Time: 56.11 s
+m aa nz
+9.99% done
+Time: 56.22 s
+u m aa nz
+9.99% done
+Time: 56.25 s
+m aa nz a
+10.00% done
+Time: 56.34 s
+r u m aa nz
+10.00% done
+Time: 56.37 s
+TIME TO EXTRACT EMBEDDINGS: 56.37 s

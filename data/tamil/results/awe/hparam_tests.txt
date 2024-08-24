@@ -1,0 +1,165 @@
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.15_epoch_3/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 665; 68.0 %
+Number of queries whose own document is in the top 10 matches: 812; 83.0 %
+Number of queries with at least one correct result in the top 5 matches: 474; 48.0 %
+Number of queries with at least one correct result in the top 10 matches: 528; 54.0 %
+Mean Average Precision at 5: 0.370
+Mean Average Precision Overall: 0.361
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.15_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 807; 82.0 %
+Number of queries whose own document is in the top 10 matches: 886; 90.0 %
+Number of queries with at least one correct result in the top 5 matches: 543; 55.0 %
+Number of queries with at least one correct result in the top 10 matches: 606; 62.0 %
+Mean Average Precision at 5: 0.413
+Mean Average Precision Overall: 0.403
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-5_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 841; 86.0 %
+Number of queries whose own document is in the top 10 matches: 919; 93.0 %
+Number of queries with at least one correct result in the top 5 matches: 529; 54.0 %
+Number of queries with at least one correct result in the top 10 matches: 611; 62.0 %
+Mean Average Precision at 5: 0.411
+Mean Average Precision Overall: 0.403
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-5_tmp_0.07_epoch_2/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 797; 81.0 %
+Number of queries whose own document is in the top 10 matches: 886; 90.0 %
+Number of queries with at least one correct result in the top 5 matches: 509; 52.0 %
+Number of queries with at least one correct result in the top 10 matches: 583; 59.0 %
+Mean Average Precision at 5: 0.393
+Mean Average Precision Overall: 0.389
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-5_tmp_0.15_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 818; 83.0 %
+Number of queries whose own document is in the top 10 matches: 910; 93.0 %
+Number of queries with at least one correct result in the top 5 matches: 529; 54.0 %
+Number of queries with at least one correct result in the top 10 matches: 594; 60.0 %
+Mean Average Precision at 5: 0.406
+Mean Average Precision Overall: 0.400
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-5_tmp_0.15_epoch_2/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 772; 79.0 %
+Number of queries whose own document is in the top 10 matches: 868; 88.0 %
+Number of queries with at least one correct result in the top 5 matches: 512; 52.0 %
+Number of queries with at least one correct result in the top 10 matches: 583; 59.0 %
+Mean Average Precision at 5: 0.385
+Mean Average Precision Overall: 0.379
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 833; 85.0 %
+Number of queries whose own document is in the top 10 matches: 910; 93.0 %
+Number of queries with at least one correct result in the top 5 matches: 552; 56.0 %
+Number of queries with at least one correct result in the top 10 matches: 615; 63.0 %
+Mean Average Precision at 5: 0.433
+Mean Average Precision Overall: 0.426
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.07_epoch_1/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 769; 78.0 %
+Number of queries whose own document is in the top 10 matches: 859; 87.0 %
+Number of queries with at least one correct result in the top 5 matches: 503; 51.0 %
+Number of queries with at least one correct result in the top 10 matches: 571; 58.0 %
+Mean Average Precision at 5: 0.395
+Mean Average Precision Overall: 0.392
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.07_epoch_2/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 713; 73.0 %
+Number of queries whose own document is in the top 10 matches: 808; 82.0 %
+Number of queries with at least one correct result in the top 5 matches: 483; 49.0 %
+Number of queries with at least one correct result in the top 10 matches: 538; 55.0 %
+Mean Average Precision at 5: 0.370
+Mean Average Precision Overall: 0.367
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.07_epoch_3/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 729; 74.0 %
+Number of queries whose own document is in the top 10 matches: 818; 83.0 %
+Number of queries with at least one correct result in the top 5 matches: 484; 49.0 %
+Number of queries with at least one correct result in the top 10 matches: 542; 55.0 %
+Mean Average Precision at 5: 0.379
+Mean Average Precision Overall: 0.375
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.07_epoch_4/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 683; 69.0 %
+Number of queries whose own document is in the top 10 matches: 772; 79.0 %
+Number of queries with at least one correct result in the top 5 matches: 465; 47.0 %
+Number of queries with at least one correct result in the top 10 matches: 515; 52.0 %
+Mean Average Precision at 5: 0.359
+Mean Average Precision Overall: 0.354

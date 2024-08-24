@@ -1,0 +1,563 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Extracting phone segments
+TIME TO EXTRACT PHONE SEGMENTS: 11.05 s
+DEVICE: cuda
+TIME TO LOAD HUBERT: 60.06 s
+NUMBER OF CPU CORES: 80
+Generating embeddings for training_data
+0.00% done
+Time: 5.74 s
+0.01% done
+Time: 5.75 s
+0.01% done
+Time: 6.15 s
+0.02% done
+Time: 6.71 s
+0.02% done
+Time: 9.52 s
+0.02% done
+Time: 11.34 s
+0.03% done
+Time: 11.35 s
+0.03% done
+Time: 11.35 s
+0.03% done
+Time: 11.36 s
+0.04% done
+Time: 11.43 s
+0.04% done
+Time: 11.46 s
+0.05% done
+Time: 11.47 s
+0.05% done
+Time: 11.48 s
+0.05% done
+Time: 11.48 s
+0.06% done
+Time: 11.49 s
+0.06% done
+Time: 11.50 s
+0.07% done
+Time: 11.51 s
+0.07% done
+Time: 11.52 s
+0.07% done
+Time: 12.05 s
+0.08% done
+Time: 12.46 s
+0.08% done
+Time: 14.47 s
+0.09% done
+Time: 19.62 s
+0.09% done
+Time: 26.28 s
+0.09% done
+Time: 31.81 s
+0.10% done
+Time: 34.07 s
+0.10% done
+Time: 35.19 s
+0.10% done
+Time: 40.23 s
+0.11% done
+Time: 40.36 s
+0.11% done
+Time: 40.39 s
+0.12% done
+Time: 40.62 s
+0.12% done
+Time: 40.76 s
+0.12% done
+Time: 43.11 s
+0.13% done
+Time: 45.51 s
+0.13% done
+Time: 47.42 s
+0.14% done
+Time: 47.63 s
+0.14% done
+Time: 47.79 s
+0.14% done
+Time: 47.80 s
+0.15% done
+Time: 47.84 s
+0.15% done
+Time: 47.85 s
+0.15% done
+Time: 47.86 s
+0.16% done
+Time: 49.01 s
+0.16% done
+Time: 50.13 s
+0.17% done
+Time: 50.17 s
+0.17% done
+Time: 50.20 s
+0.17% done
+Time: 50.21 s
+0.18% done
+Time: 50.22 s
+0.18% done
+Time: 50.23 s
+0.19% done
+Time: 50.24 s
+0.19% done
+Time: 50.83 s
+0.19% done
+Time: 50.86 s
+0.20% done
+Time: 50.89 s
+0.20% done
+Time: 53.12 s
+0.21% done
+Time: 54.35 s
+0.21% done
+Time: 58.88 s
+0.21% done
+Time: 59.74 s
+0.22% done
+Time: 62.25 s
+0.22% done
+Time: 62.40 s
+0.22% done
+Time: 66.33 s
+0.23% done
+Time: 74.09 s
+0.23% done
+Time: 75.34 s
+0.24% done
+Time: 76.91 s
+0.24% done
+Time: 80.57 s
+0.24% done
+Time: 85.11 s
+0.25% done
+Time: 86.30 s
+0.25% done
+Time: 86.31 s
+0.26% done
+Time: 86.87 s
+0.26% done
+Time: 89.78 s
+0.26% done
+Time: 90.16 s
+0.27% done
+Time: 90.80 s
+0.27% done
+Time: 90.95 s
+0.27% done
+Time: 91.02 s
+0.28% done
+Time: 92.19 s
+0.28% done
+Time: 92.72 s
+0.29% done
+Time: 93.49 s
+0.29% done
+Time: 94.72 s
+0.29% done
+Time: 95.86 s
+0.30% done
+Time: 96.82 s
+0.30% done
+Time: 98.04 s
+0.31% done
+Time: 98.05 s
+0.31% done
+Time: 98.32 s
+0.31% done
+Time: 98.43 s
+0.32% done
+Time: 98.79 s
+0.32% done
+Time: 98.86 s
+0.33% done
+Time: 98.93 s
+0.33% done
+Time: 98.94 s
+0.33% done
+Time: 98.97 s
+0.34% done
+Time: 99.38 s
+0.34% done
+Time: 100.15 s
+0.34% done
+Time: 100.82 s
+0.35% done
+Time: 101.00 s
+0.35% done
+Time: 101.93 s
+0.36% done
+Time: 101.93 s
+0.36% done
+Time: 101.94 s
+0.36% done
+Time: 102.03 s
+0.37% done
+Time: 102.04 s
+0.37% done
+Time: 102.08 s
+0.38% done
+Time: 102.09 s
+0.38% done
+Time: 102.10 s
+0.38% done
+Time: 102.11 s
+0.39% done
+Time: 102.52 s
+0.39% done
+Time: 103.18 s
+0.39% done
+Time: 103.33 s
+0.40% done
+Time: 103.51 s
+0.40% done
+Time: 105.93 s
+0.41% done
+Time: 114.57 s
+0.41% done
+Time: 119.67 s
+0.41% done
+Time: 120.30 s
+0.42% done
+Time: 120.87 s
+0.42% done
+Time: 120.93 s
+0.43% done
+Time: 122.28 s
+0.43% done
+Time: 123.92 s
+0.43% done
+Time: 123.96 s
+0.44% done
+Time: 124.55 s
+0.44% done
+Time: 124.56 s
+0.45% done
+Time: 124.81 s
+0.45% done
+Time: 125.35 s
+0.45% done
+Time: 128.90 s
+0.46% done
+Time: 131.11 s
+0.46% done
+Time: 131.21 s
+0.46% done
+Time: 133.83 s
+0.47% done
+Time: 135.46 s
+0.47% done
+Time: 137.08 s
+0.48% done
+Time: 138.59 s
+0.48% done
+Time: 138.65 s
+0.48% done
+Time: 138.67 s
+0.49% done
+Time: 138.67 s
+0.49% done
+Time: 138.68 s
+0.50% done
+Time: 138.70 s
+0.50% done
+Time: 138.73 s
+0.50% done
+Time: 138.74 s
+0.51% done
+Time: 138.75 s
+0.51% done
+Time: 138.77 s
+0.51% done
+Time: 138.90 s
+0.52% done
+Time: 139.02 s
+0.52% done
+Time: 139.20 s
+0.53% done
+Time: 139.26 s
+0.53% done
+Time: 139.36 s
+0.53% done
+Time: 139.69 s
+0.54% done
+Time: 139.94 s
+0.54% done
+Time: 140.15 s
+0.55% done
+Time: 140.20 s
+0.55% done
+Time: 140.21 s
+0.55% done
+Time: 140.22 s
+0.56% done
+Time: 140.22 s
+0.56% done
+Time: 140.23 s
+0.57% done
+Time: 140.25 s
+0.57% done
+Time: 140.27 s
+0.57% done
+Time: 140.28 s
+0.58% done
+Time: 140.29 s
+0.58% done
+Time: 140.30 s
+0.58% done
+Time: 140.31 s
+0.59% done
+Time: 140.32 s
+0.59% done
+Time: 140.33 s
+0.60% done
+Time: 140.39 s
+0.60% done
+Time: 140.41 s
+0.60% done
+Time: 140.48 s
+0.61% done
+Time: 140.50 s
+0.61% done
+Time: 140.50 s
+0.62% done
+Time: 140.51 s
+0.62% done
+Time: 140.52 s
+0.62% done
+Time: 140.53 s
+0.63% done
+Time: 140.54 s
+0.63% done
+Time: 140.56 s
+0.64% done
+Time: 140.57 s
+0.64% done
+Time: 140.58 s
+0.64% done
+Time: 140.59 s
+0.65% done
+Time: 140.60 s
+0.65% done
+Time: 140.61 s
+0.65% done
+Time: 140.61 s
+0.66% done
+Time: 140.62 s
+0.66% done
+Time: 140.64 s
+0.67% done
+Time: 140.66 s
+0.67% done
+Time: 146.80 s
+0.67% done
+Time: 156.76 s
+0.68% done
+Time: 158.88 s
+0.68% done
+Time: 159.43 s
+0.69% done
+Time: 161.90 s
+0.69% done
+Time: 161.93 s
+0.69% done
+Time: 162.12 s
+0.70% done
+Time: 162.47 s
+0.70% done
+Time: 184.97 s
+0.70% done
+Time: 189.14 s
+0.71% done
+Time: 189.46 s
+0.71% done
+Time: 189.72 s
+0.72% done
+Time: 189.83 s
+0.72% done
+Time: 190.20 s
+0.72% done
+Time: 191.44 s
+0.73% done
+Time: 192.12 s
+0.73% done
+Time: 192.13 s
+0.74% done
+Time: 192.14 s
+0.74% done
+Time: 192.21 s
+0.74% done
+Time: 192.29 s
+0.75% done
+Time: 192.81 s
+0.75% done
+Time: 192.95 s
+0.76% done
+Time: 193.01 s
+0.76% done
+Time: 193.06 s
+0.76% done
+Time: 193.17 s
+0.77% done
+Time: 193.36 s
+0.77% done
+Time: 193.51 s
+0.77% done
+Time: 193.56 s
+0.78% done
+Time: 193.57 s
+0.78% done
+Time: 193.58 s
+0.79% done
+Time: 193.59 s
+0.79% done
+Time: 193.62 s
+0.79% done
+Time: 193.64 s
+0.80% done
+Time: 193.69 s
+0.80% done
+Time: 193.73 s
+0.81% done
+Time: 193.78 s
+0.81% done
+Time: 193.88 s
+0.81% done
+Time: 194.00 s
+0.82% done
+Time: 194.00 s
+0.82% done
+Time: 194.01 s
+0.82% done
+Time: 194.02 s
+0.83% done
+Time: 194.03 s
+0.83% done
+Time: 194.04 s
+0.84% done
+Time: 194.05 s
+0.84% done
+Time: 195.02 s
+0.84% done
+Time: 195.50 s
+0.85% done
+Time: 195.90 s
+0.85% done
+Time: 196.48 s
+0.86% done
+Time: 202.06 s
+0.86% done
+Time: 206.42 s
+0.86% done
+Time: 211.47 s
+0.87% done
+Time: 214.19 s
+0.87% done
+Time: 214.27 s
+0.88% done
+Time: 214.57 s
+0.88% done
+Time: 214.76 s
+0.88% done
+Time: 215.20 s
+0.89% done
+Time: 215.29 s
+0.89% done
+Time: 217.74 s
+0.89% done
+Time: 222.36 s
+0.90% done
+Time: 222.81 s
+0.90% done
+Time: 222.88 s
+0.91% done
+Time: 222.89 s
+0.91% done
+Time: 223.24 s
+0.91% done
+Time: 225.57 s
+0.92% done
+Time: 229.38 s
+0.92% done
+Time: 231.31 s
+0.93% done
+Time: 231.32 s
+0.93% done
+Time: 231.34 s
+0.93% done
+Time: 231.53 s
+0.94% done
+Time: 231.70 s
+0.94% done
+Time: 231.78 s
+0.94% done
+Time: 231.86 s
+0.95% done
+Time: 233.29 s
+0.95% done
+Time: 233.34 s
+0.96% done
+Time: 233.35 s
+0.96% done
+Time: 233.36 s
+0.96% done
+Time: 233.48 s
+0.97% done
+Time: 235.81 s
+0.97% done
+Time: 237.03 s
+0.98% done
+Time: 237.04 s
+0.98% done
+Time: 237.05 s
+0.98% done
+Time: 237.07 s
+0.99% done
+Time: 237.25 s
+0.99% done
+Time: 237.32 s
+1.00% done
+Time: 237.40 s
+1.00% done
+Time: 237.47 s
+1.00% done
+Time: 237.48 s
+1.01% done
+Time: 237.49 s
+1.01% done
+Time: 237.50 s
+1.01% done
+Time: 237.62 s
+1.02% done
+Time: 237.69 s
+1.02% done
+Time: 237.70 s
+1.03% done
+Time: 237.70 s
+1.03% done
+Time: 237.71 s
+1.03% done
+Time: 237.73 s
+1.04% done
+Time: 237.80 s
+1.04% done
+Time: 237.86 s
+1.05% done
+Time: 237.93 s
+1.05% done
+Time: 238.99 s
+1.05% done
+Time: 239.73 s
+1.06% done
+Time: 241.17 s
+1.06% done
+Time: 242.69 s
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 5784655 ON r2i3n0 CANCELLED AT 2024-07-03T17:35:51 ***
+slurmstepd: error: *** STEP 5784655.0 ON r2i3n0 CANCELLED AT 2024-07-03T17:35:51 ***

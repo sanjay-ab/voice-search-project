@@ -1,0 +1,66 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data_half/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-20_18:55:35
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 0.0001
+clip norm: 20, temperature: 0.07, num pairs per batch: 700
+time limit to create dataset: 120
+temperature: 0.07
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/tamil/embeddings/training_data_half/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data_half/9/raw
+Time taken: 9.27 s
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 19.50 s
+Created paired data
+Time taken to create datasets: 135.42 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 0.9757732152938843
+Time: 0.56 s
+1508.0
+accumulated loss: 154.41282653808594
+1501.0
+accumulated loss: 154.61502075195312
+1501.0
+accumulated loss: 164.103759765625
+1522.0
+accumulated loss: 97.1429672241211
+1520.0
+accumulated loss: 105.34517669677734
+1583.0
+accumulated loss: 146.7920379638672
+2003.0
+accumulated loss: 101.97312927246094
+1617.0
+accumulated loss: 99.6969223022461
+1530.0
+accumulated loss: 104.27328491210938
+1513.0
+accumulated loss: 133.6287841796875
+1538.0
+accumulated loss: 143.8813934326172
+1619.0
+accumulated loss: 72.97418212890625
+1500.0
+accumulated loss: 95.88764190673828
+1593.0
+accumulated loss: 96.662841796875
+1512.0
+accumulated loss: 63.227169036865234
+1501.0
+accumulated loss: 85.48152923583984
+slurmstepd: error: *** JOB 5821312 ON r2i5n7 CANCELLED AT 2024-07-20T18:58:16 ***
+slurmstepd: error: *** STEP 5821312.0 ON r2i5n7 CANCELLED AT 2024-07-20T18:58:16 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

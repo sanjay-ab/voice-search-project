@@ -1,0 +1,227 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Ranking documents for layer 9
+Document embedded states dir: data/banjara/embeddings/documents/9/half_lr_1e-5_tmp_0.07_epoch_0_3_9
+Query embedded states dir: data/banjara/embeddings/queries/9/half_lr_1e-5_tmp_0.07_epoch_0_3_9
+Results file: data/banjara/results/awe//9/tamil_train_3_9/half_lr_1e-5_tmp_0.07_epoch_0/results_all.txt
+Time taken to load files: 0.44 seconds
+Creating batch of length: 58, size: 0.10 GB
+CPU Memory used: 0.44 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 26, size: 0.11 GB
+CPU Memory used: 0.55 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 15, size: 0.14 GB
+CPU Memory used: 0.65 GB
+GPU Memory used: 0.00 GB
+Time taken to pad and normalise files: 0.22 seconds
+Cleaned data/banjara/embeddings/queries/9/half_lr_1e-5_tmp_0.07_epoch_0_3_9
+Time taken to load queries: 0.78 seconds
+Time taken to load files: 11.23 seconds
+Creating batch of length: 49, size: 0.05 GB
+CPU Memory used: 1.33 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 41, size: 0.05 GB
+CPU Memory used: 1.38 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 34, size: 0.05 GB
+CPU Memory used: 1.43 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 29, size: 0.05 GB
+CPU Memory used: 1.49 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 24, size: 0.05 GB
+CPU Memory used: 1.54 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 19, size: 0.06 GB
+CPU Memory used: 1.59 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 15, size: 0.05 GB
+CPU Memory used: 1.65 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 13, size: 0.05 GB
+CPU Memory used: 1.70 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 12, size: 0.05 GB
+CPU Memory used: 1.75 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 11, size: 0.05 GB
+CPU Memory used: 1.81 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 10, size: 0.05 GB
+CPU Memory used: 1.86 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 9, size: 0.05 GB
+CPU Memory used: 1.91 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 8, size: 0.05 GB
+CPU Memory used: 1.96 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 7, size: 0.06 GB
+CPU Memory used: 1.96 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 6, size: 0.07 GB
+CPU Memory used: 1.95 GB
+GPU Memory used: 0.00 GB
+Creating batch of length: 1, size: 0.01 GB
+CPU Memory used: 1.91 GB
+GPU Memory used: 0.00 GB
+Time taken to pad and normalise files: 0.19 seconds
+Cleaned data/banjara/embeddings/documents/9/half_lr_1e-5_tmp_0.07_epoch_0_3_9
+Time taken to load documents: 11.93 seconds
+Number of batches for queries: 3
+Number of batches for documents: 16
+CPU Memory used: 1.90 GB
+GPU Memory used: 0.00 GB
+Computing query batch 0
+Time taken to compute product for document batch 0: 0.54 s
+CPU Memory used: 3.30 GB
+GPU Memory used: 5.32 GB
+Time taken to compute product for document batch 1: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.37 GB
+Time taken to compute product for document batch 2: 0.30 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.46 GB
+Time taken to compute product for document batch 3: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.47 GB
+Time taken to compute product for document batch 4: 0.29 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.64 GB
+Time taken to compute product for document batch 5: 0.01 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.95 GB
+Time taken to compute product for document batch 6: 0.16 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.70 GB
+Time taken to compute product for document batch 7: 0.16 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.55 GB
+Time taken to compute product for document batch 8: 0.16 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.57 GB
+Time taken to compute product for document batch 9: 0.15 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.49 GB
+Time taken to compute product for document batch 10: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.49 GB
+Time taken to compute product for document batch 11: 0.30 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.59 GB
+Time taken to compute product for document batch 12: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.71 GB
+Time taken to compute product for document batch 13: 0.30 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.96 GB
+Time taken to compute product for document batch 14: 0.01 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.12 GB
+Time taken to compute product for document batch 15: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 1.29 GB
+Computing query batch 1
+Time taken to compute product for document batch 0: 0.16 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.61 GB
+Time taken to compute product for document batch 1: 0.20 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.66 GB
+Time taken to compute product for document batch 2: 0.30 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.75 GB
+Time taken to compute product for document batch 3: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.77 GB
+Time taken to compute product for document batch 4: 0.31 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.95 GB
+Time taken to compute product for document batch 5: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 6.27 GB
+Time taken to compute product for document batch 6: 0.17 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 6.01 GB
+Time taken to compute product for document batch 7: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.85 GB
+Time taken to compute product for document batch 8: 0.17 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.87 GB
+Time taken to compute product for document batch 9: 0.16 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.79 GB
+Time taken to compute product for document batch 10: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.79 GB
+Time taken to compute product for document batch 11: 0.31 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 5.89 GB
+Time taken to compute product for document batch 12: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 6.02 GB
+Time taken to compute product for document batch 13: 0.32 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 6.28 GB
+Time taken to compute product for document batch 14: 0.22 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.50 GB
+Time taken to compute product for document batch 15: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 1.36 GB
+Computing query batch 2
+Time taken to compute product for document batch 0: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.20 GB
+Time taken to compute product for document batch 1: 0.23 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.26 GB
+Time taken to compute product for document batch 2: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.39 GB
+Time taken to compute product for document batch 3: 0.39 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.41 GB
+Time taken to compute product for document batch 4: 0.20 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.64 GB
+Time taken to compute product for document batch 5: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 8.05 GB
+Time taken to compute product for document batch 6: 0.22 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.72 GB
+Time taken to compute product for document batch 7: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.51 GB
+Time taken to compute product for document batch 8: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.54 GB
+Time taken to compute product for document batch 9: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.43 GB
+Time taken to compute product for document batch 10: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.43 GB
+Time taken to compute product for document batch 11: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.56 GB
+Time taken to compute product for document batch 12: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 7.73 GB
+Time taken to compute product for document batch 13: 0.21 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 8.07 GB
+Time taken to compute product for document batch 14: 0.23 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 9.63 GB
+Time taken to compute product for document batch 15: 0.00 s
+CPU Memory used: 3.31 GB
+GPU Memory used: 1.74 GB
+Total time taken to compute result: 16.83 s

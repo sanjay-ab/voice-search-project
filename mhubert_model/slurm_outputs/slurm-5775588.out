@@ -1,0 +1,26 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+STAGE:2024-06-30 00:08:14 1849791:1849791 ActivityProfilerController.cpp:294] Completed Stage: Warm Up
+STAGE:2024-06-30 00:08:47 1849791:1849791 ActivityProfilerController.cpp:300] Completed Stage: Collection
+Ranking documents for layer 9
+Document embedded states dir: data/tamil/embeddings/documents/9/raw
+Query embedded states dir: data/tamil/embeddings/queries/9/raw
+Loading all document embeddings from all_document_embeddings.pkl
+CPU Memory used: 42.55 GB
+GPU Memory used: 0.00 GB
+Time taken to load documents: 32.64 seconds
+--------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg       CPU Mem  Self CPU Mem    # of Calls  
+--------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+            [memory]         0.00%       0.000us         0.00%       0.000us       0.000us      21.07 Gb      21.07 Gb         28321  
+         aten::empty        37.86%      48.566ms        37.86%      48.566ms       1.715us           0 b           0 b         28321  
+            aten::to         0.04%      56.000us         0.04%      56.000us       0.002us           0 b           0 b         28321  
+    aten::lift_fresh         0.08%     106.000us         0.08%     106.000us       0.004us           0 b           0 b         28321  
+       aten::detach_        24.34%      31.228ms        25.11%      32.218ms       1.138us           0 b           0 b         28321  
+             detach_         0.90%       1.153ms         0.90%       1.153ms       0.041us           0 b           0 b         28321  
+          aten::set_        36.77%      47.176ms        36.77%      47.176ms       1.666us           0 b           0 b         28321  
+--------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 128.285ms
+

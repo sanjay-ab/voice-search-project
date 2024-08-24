@@ -1,0 +1,5961 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+START TIME: 2024-07-08_13:01:51
+Training model for tamil with inputs from mHuBERT layer 8
+Number of epochs: 1, patience: 3, learning rate: 0.0001
+clip norm: 4, temperature: 0.15, num pairs per batch: 300
+time limit to create dataset: 20
+Time taken: 0.00 s
+Number of classes: 10945
+Time taken: 0.04 s
+Number of classes: 10944
+Time taken: 0.07 s
+Number of classes: 10941
+Time taken: 0.09 s
+Number of classes: 10929
+Time taken: 0.11 s
+Number of classes: 10924
+Time taken: 0.13 s
+Number of classes: 10909
+Time taken: 0.15 s
+Number of classes: 10900
+Time taken: 0.18 s
+Number of classes: 10880
+Time taken: 0.20 s
+Number of classes: 10860
+Time taken: 0.22 s
+Number of classes: 10839
+Time taken: 0.24 s
+Number of classes: 10821
+Time taken: 0.26 s
+Number of classes: 10791
+Time taken: 0.28 s
+Number of classes: 10763
+Time taken: 0.30 s
+Number of classes: 10732
+Time taken: 0.32 s
+Number of classes: 10703
+Time taken: 0.34 s
+Number of classes: 10670
+Time taken: 0.37 s
+Number of classes: 10640
+Time taken: 0.39 s
+Number of classes: 10601
+Time taken: 0.41 s
+Number of classes: 10564
+Time taken: 0.43 s
+Number of classes: 10527
+Time taken: 0.45 s
+Number of classes: 10489
+Time taken: 0.47 s
+Number of classes: 10453
+Time taken: 0.49 s
+Number of classes: 10413
+Time taken: 0.51 s
+Number of classes: 10366
+Time taken: 0.53 s
+Number of classes: 10324
+Time taken: 0.55 s
+Number of classes: 10285
+Time taken: 0.57 s
+Number of classes: 10244
+Time taken: 0.59 s
+Number of classes: 10200
+Time taken: 0.61 s
+Number of classes: 10170
+Time taken: 0.64 s
+Number of classes: 10124
+Time taken: 0.66 s
+Number of classes: 10070
+Time taken: 0.68 s
+Number of classes: 10035
+Time taken: 0.70 s
+Number of classes: 9997
+Time taken: 0.72 s
+Number of classes: 9961
+Time taken: 0.74 s
+Number of classes: 9921
+Time taken: 0.76 s
+Number of classes: 9880
+Time taken: 0.78 s
+Number of classes: 9822
+Time taken: 0.80 s
+Number of classes: 9788
+Time taken: 0.82 s
+Number of classes: 9740
+Time taken: 0.84 s
+Number of classes: 9704
+Time taken: 0.86 s
+Number of classes: 9669
+Time taken: 0.88 s
+Number of classes: 9630
+Time taken: 0.89 s
+Number of classes: 9578
+Time taken: 0.91 s
+Number of classes: 9537
+Time taken: 0.93 s
+Number of classes: 9480
+Time taken: 0.95 s
+Number of classes: 9434
+Time taken: 0.97 s
+Number of classes: 9399
+Time taken: 0.99 s
+Number of classes: 9347
+Time taken: 1.01 s
+Number of classes: 9302
+Time taken: 1.03 s
+Number of classes: 9264
+Time taken: 1.04 s
+Number of classes: 9219
+Time taken: 1.06 s
+Number of classes: 9183
+Time taken: 1.08 s
+Number of classes: 9153
+Time taken: 1.10 s
+Number of classes: 9107
+Time taken: 1.12 s
+Number of classes: 9060
+Time taken: 1.14 s
+Number of classes: 9018
+Time taken: 1.16 s
+Number of classes: 8981
+Time taken: 1.17 s
+Number of classes: 8933
+Time taken: 1.19 s
+Number of classes: 8881
+Time taken: 1.21 s
+Number of classes: 8843
+Time taken: 1.23 s
+Number of classes: 8796
+Time taken: 1.25 s
+Number of classes: 8755
+Time taken: 1.26 s
+Number of classes: 8717
+Time taken: 1.28 s
+Number of classes: 8666
+Time taken: 1.30 s
+Number of classes: 8628
+Time taken: 1.31 s
+Number of classes: 8582
+Time taken: 1.33 s
+Number of classes: 8544
+Time taken: 1.35 s
+Number of classes: 8504
+Time taken: 1.37 s
+Number of classes: 8467
+Time taken: 1.38 s
+Number of classes: 8428
+Time taken: 1.40 s
+Number of classes: 8391
+Time taken: 1.42 s
+Number of classes: 8348
+Time taken: 1.44 s
+Number of classes: 8311
+Time taken: 1.45 s
+Number of classes: 8275
+Time taken: 1.47 s
+Number of classes: 8241
+Time taken: 1.49 s
+Number of classes: 8216
+Time taken: 1.50 s
+Number of classes: 8187
+Time taken: 1.52 s
+Number of classes: 8161
+Time taken: 1.53 s
+Number of classes: 8119
+Time taken: 1.55 s
+Number of classes: 8085
+Time taken: 1.57 s
+Number of classes: 8055
+Time taken: 1.59 s
+Number of classes: 8025
+Time taken: 1.60 s
+Number of classes: 7994
+Time taken: 1.62 s
+Number of classes: 7961
+Time taken: 1.63 s
+Number of classes: 7931
+Time taken: 1.65 s
+Number of classes: 7899
+Time taken: 1.67 s
+Number of classes: 7866
+Time taken: 1.68 s
+Number of classes: 7836
+Time taken: 1.70 s
+Number of classes: 7798
+Time taken: 1.71 s
+Number of classes: 7769
+Time taken: 1.73 s
+Number of classes: 7738
+Time taken: 1.75 s
+Number of classes: 7704
+Time taken: 1.76 s
+Number of classes: 7677
+Time taken: 1.78 s
+Number of classes: 7648
+Time taken: 1.79 s
+Number of classes: 7618
+Time taken: 1.81 s
+Number of classes: 7589
+Time taken: 1.83 s
+Number of classes: 7559
+Time taken: 1.84 s
+Number of classes: 7520
+Time taken: 1.86 s
+Number of classes: 7488
+Time taken: 1.87 s
+Number of classes: 7456
+Time taken: 1.89 s
+Number of classes: 7428
+Time taken: 1.90 s
+Number of classes: 7399
+Time taken: 1.92 s
+Number of classes: 7366
+Time taken: 1.93 s
+Number of classes: 7338
+Time taken: 1.95 s
+Number of classes: 7308
+Time taken: 1.96 s
+Number of classes: 7277
+Time taken: 1.98 s
+Number of classes: 7253
+Time taken: 1.99 s
+Number of classes: 7219
+Time taken: 2.01 s
+Number of classes: 7193
+Time taken: 2.03 s
+Number of classes: 7169
+Time taken: 2.04 s
+Number of classes: 7142
+Time taken: 2.05 s
+Number of classes: 7120
+Time taken: 2.07 s
+Number of classes: 7098
+Time taken: 2.08 s
+Number of classes: 7075
+Time taken: 2.10 s
+Number of classes: 7054
+Time taken: 2.11 s
+Number of classes: 7034
+Time taken: 2.13 s
+Number of classes: 7011
+Time taken: 2.14 s
+Number of classes: 6994
+Time taken: 2.16 s
+Number of classes: 6974
+Time taken: 2.17 s
+Number of classes: 6946
+Time taken: 2.18 s
+Number of classes: 6928
+Time taken: 2.20 s
+Number of classes: 6905
+Time taken: 2.21 s
+Number of classes: 6885
+Time taken: 2.23 s
+Number of classes: 6864
+Time taken: 2.24 s
+Number of classes: 6847
+Time taken: 2.26 s
+Number of classes: 6821
+Time taken: 2.28 s
+Number of classes: 6802
+Time taken: 2.29 s
+Number of classes: 6786
+Time taken: 2.30 s
+Number of classes: 6760
+Time taken: 2.32 s
+Number of classes: 6744
+Time taken: 2.33 s
+Number of classes: 6720
+Time taken: 2.34 s
+Number of classes: 6701
+Time taken: 2.36 s
+Number of classes: 6686
+Time taken: 2.37 s
+Number of classes: 6673
+Time taken: 2.38 s
+Number of classes: 6652
+Time taken: 2.40 s
+Number of classes: 6618
+Time taken: 2.41 s
+Number of classes: 6602
+Time taken: 2.43 s
+Number of classes: 6574
+Time taken: 2.44 s
+Number of classes: 6557
+Time taken: 2.45 s
+Number of classes: 6536
+Time taken: 2.47 s
+Number of classes: 6517
+Time taken: 2.48 s
+Number of classes: 6498
+Time taken: 2.50 s
+Number of classes: 6474
+Time taken: 2.51 s
+Number of classes: 6457
+Time taken: 2.52 s
+Number of classes: 6441
+Time taken: 2.54 s
+Number of classes: 6418
+Time taken: 2.55 s
+Number of classes: 6399
+Time taken: 2.56 s
+Number of classes: 6381
+Time taken: 2.58 s
+Number of classes: 6359
+Time taken: 2.59 s
+Number of classes: 6340
+Time taken: 2.61 s
+Number of classes: 6320
+Time taken: 2.62 s
+Number of classes: 6301
+Time taken: 2.63 s
+Number of classes: 6286
+Time taken: 2.65 s
+Number of classes: 6266
+Time taken: 2.66 s
+Number of classes: 6255
+Time taken: 2.67 s
+Number of classes: 6241
+Time taken: 2.69 s
+Number of classes: 6228
+Time taken: 2.70 s
+Number of classes: 6212
+Time taken: 2.71 s
+Number of classes: 6192
+Time taken: 2.72 s
+Number of classes: 6174
+Time taken: 2.74 s
+Number of classes: 6153
+Time taken: 2.75 s
+Number of classes: 6143
+Time taken: 2.76 s
+Number of classes: 6132
+Time taken: 2.78 s
+Number of classes: 6113
+Time taken: 2.79 s
+Number of classes: 6093
+Time taken: 2.81 s
+Number of classes: 6079
+Time taken: 2.82 s
+Number of classes: 6062
+Time taken: 2.83 s
+Number of classes: 6048
+Time taken: 2.84 s
+Number of classes: 6029
+Time taken: 2.86 s
+Number of classes: 6013
+Time taken: 2.87 s
+Number of classes: 5998
+Time taken: 2.88 s
+Number of classes: 5987
+Time taken: 2.89 s
+Number of classes: 5970
+Time taken: 2.91 s
+Number of classes: 5961
+Time taken: 2.92 s
+Number of classes: 5947
+Time taken: 2.93 s
+Number of classes: 5932
+Time taken: 2.94 s
+Number of classes: 5921
+Time taken: 2.96 s
+Number of classes: 5900
+Time taken: 2.97 s
+Number of classes: 5884
+Time taken: 2.98 s
+Number of classes: 5872
+Time taken: 2.99 s
+Number of classes: 5858
+Time taken: 3.01 s
+Number of classes: 5845
+Time taken: 3.02 s
+Number of classes: 5835
+Time taken: 3.03 s
+Number of classes: 5826
+Time taken: 3.04 s
+Number of classes: 5801
+Time taken: 3.05 s
+Number of classes: 5784
+Time taken: 3.07 s
+Number of classes: 5770
+Time taken: 3.08 s
+Number of classes: 5748
+Time taken: 3.09 s
+Number of classes: 5734
+Time taken: 3.10 s
+Number of classes: 5718
+Time taken: 3.11 s
+Number of classes: 5699
+Time taken: 3.13 s
+Number of classes: 5686
+Time taken: 3.14 s
+Number of classes: 5676
+Time taken: 3.15 s
+Number of classes: 5665
+Time taken: 3.16 s
+Number of classes: 5653
+Time taken: 3.17 s
+Number of classes: 5641
+Time taken: 3.19 s
+Number of classes: 5626
+Time taken: 3.20 s
+Number of classes: 5610
+Time taken: 3.21 s
+Number of classes: 5598
+Time taken: 3.22 s
+Number of classes: 5584
+Time taken: 3.24 s
+Number of classes: 5578
+Time taken: 3.25 s
+Number of classes: 5569
+Time taken: 3.26 s
+Number of classes: 5558
+Time taken: 3.27 s
+Number of classes: 5544
+Time taken: 3.28 s
+Number of classes: 5526
+Time taken: 3.29 s
+Number of classes: 5515
+Time taken: 3.31 s
+Number of classes: 5506
+Time taken: 3.32 s
+Number of classes: 5489
+Time taken: 3.33 s
+Number of classes: 5480
+Time taken: 3.34 s
+Number of classes: 5471
+Time taken: 3.35 s
+Number of classes: 5453
+Time taken: 3.37 s
+Number of classes: 5441
+Time taken: 3.38 s
+Number of classes: 5429
+Time taken: 3.39 s
+Number of classes: 5418
+Time taken: 3.40 s
+Number of classes: 5399
+Time taken: 3.41 s
+Number of classes: 5392
+Time taken: 3.42 s
+Number of classes: 5383
+Time taken: 3.44 s
+Number of classes: 5373
+Time taken: 3.45 s
+Number of classes: 5362
+Time taken: 3.46 s
+Number of classes: 5352
+Time taken: 3.47 s
+Number of classes: 5337
+Time taken: 3.48 s
+Number of classes: 5329
+Time taken: 3.49 s
+Number of classes: 5315
+Time taken: 3.50 s
+Number of classes: 5304
+Time taken: 3.51 s
+Number of classes: 5295
+Time taken: 3.53 s
+Number of classes: 5275
+Time taken: 3.54 s
+Number of classes: 5264
+Time taken: 3.55 s
+Number of classes: 5256
+Time taken: 3.56 s
+Number of classes: 5246
+Time taken: 3.57 s
+Number of classes: 5230
+Time taken: 3.58 s
+Number of classes: 5217
+Time taken: 3.59 s
+Number of classes: 5209
+Time taken: 3.60 s
+Number of classes: 5200
+Time taken: 3.62 s
+Number of classes: 5190
+Time taken: 3.63 s
+Number of classes: 5180
+Time taken: 3.64 s
+Number of classes: 5167
+Time taken: 3.65 s
+Number of classes: 5157
+Time taken: 3.66 s
+Number of classes: 5148
+Time taken: 3.67 s
+Number of classes: 5141
+Time taken: 3.69 s
+Number of classes: 5132
+Time taken: 3.70 s
+Number of classes: 5125
+Time taken: 3.71 s
+Number of classes: 5118
+Time taken: 3.72 s
+Number of classes: 5106
+Time taken: 3.73 s
+Number of classes: 5100
+Time taken: 3.74 s
+Number of classes: 5093
+Time taken: 3.76 s
+Number of classes: 5078
+Time taken: 3.77 s
+Number of classes: 5073
+Time taken: 3.78 s
+Number of classes: 5059
+Time taken: 3.79 s
+Number of classes: 5047
+Time taken: 3.80 s
+Number of classes: 5035
+Time taken: 3.81 s
+Number of classes: 5027
+Time taken: 3.82 s
+Number of classes: 5018
+Time taken: 3.83 s
+Number of classes: 5009
+Time taken: 3.84 s
+Number of classes: 4996
+Time taken: 3.85 s
+Number of classes: 4990
+Time taken: 3.87 s
+Number of classes: 4983
+Time taken: 3.88 s
+Number of classes: 4972
+Time taken: 3.89 s
+Number of classes: 4962
+Time taken: 3.90 s
+Number of classes: 4950
+Time taken: 3.91 s
+Number of classes: 4938
+Time taken: 3.92 s
+Number of classes: 4929
+Time taken: 3.93 s
+Number of classes: 4923
+Time taken: 3.94 s
+Number of classes: 4910
+Time taken: 3.95 s
+Number of classes: 4900
+Time taken: 3.96 s
+Number of classes: 4889
+Time taken: 3.97 s
+Number of classes: 4880
+Time taken: 3.99 s
+Number of classes: 4870
+Time taken: 4.00 s
+Number of classes: 4854
+Time taken: 4.01 s
+Number of classes: 4844
+Time taken: 4.02 s
+Number of classes: 4837
+Time taken: 4.03 s
+Number of classes: 4825
+Time taken: 4.04 s
+Number of classes: 4815
+Time taken: 4.05 s
+Number of classes: 4805
+Time taken: 4.06 s
+Number of classes: 4797
+Time taken: 4.07 s
+Number of classes: 4787
+Time taken: 4.08 s
+Number of classes: 4784
+Time taken: 4.10 s
+Number of classes: 4775
+Time taken: 4.11 s
+Number of classes: 4766
+Time taken: 4.12 s
+Number of classes: 4759
+Time taken: 4.13 s
+Number of classes: 4752
+Time taken: 4.14 s
+Number of classes: 4745
+Time taken: 4.15 s
+Number of classes: 4740
+Time taken: 4.16 s
+Number of classes: 4726
+Time taken: 4.17 s
+Number of classes: 4718
+Time taken: 4.18 s
+Number of classes: 4712
+Time taken: 4.19 s
+Number of classes: 4705
+Time taken: 4.20 s
+Number of classes: 4697
+Time taken: 4.21 s
+Number of classes: 4683
+Time taken: 4.22 s
+Number of classes: 4676
+Time taken: 4.24 s
+Number of classes: 4671
+Time taken: 4.25 s
+Number of classes: 4662
+Time taken: 4.26 s
+Number of classes: 4654
+Time taken: 4.27 s
+Number of classes: 4646
+Time taken: 4.28 s
+Number of classes: 4640
+Time taken: 4.29 s
+Number of classes: 4635
+Time taken: 4.30 s
+Number of classes: 4623
+Time taken: 4.31 s
+Number of classes: 4612
+Time taken: 4.32 s
+Number of classes: 4604
+Time taken: 4.33 s
+Number of classes: 4596
+Time taken: 4.34 s
+Number of classes: 4588
+Time taken: 4.35 s
+Number of classes: 4580
+Time taken: 4.36 s
+Number of classes: 4574
+Time taken: 4.37 s
+Number of classes: 4562
+Time taken: 4.38 s
+Number of classes: 4555
+Time taken: 4.39 s
+Number of classes: 4546
+Time taken: 4.40 s
+Number of classes: 4540
+Time taken: 4.41 s
+Number of classes: 4531
+Time taken: 4.42 s
+Number of classes: 4520
+Time taken: 4.43 s
+Number of classes: 4519
+Time taken: 4.44 s
+Number of classes: 4513
+Time taken: 4.45 s
+Number of classes: 4505
+Time taken: 4.46 s
+Number of classes: 4497
+Time taken: 4.47 s
+Number of classes: 4485
+Time taken: 4.48 s
+Number of classes: 4479
+Time taken: 4.49 s
+Number of classes: 4474
+Time taken: 4.50 s
+Number of classes: 4467
+Time taken: 4.51 s
+Number of classes: 4459
+Time taken: 4.52 s
+Number of classes: 4450
+Time taken: 4.53 s
+Number of classes: 4442
+Time taken: 4.54 s
+Number of classes: 4434
+Time taken: 4.55 s
+Number of classes: 4428
+Time taken: 4.56 s
+Number of classes: 4421
+Time taken: 4.57 s
+Number of classes: 4414
+Time taken: 4.58 s
+Number of classes: 4407
+Time taken: 4.59 s
+Number of classes: 4400
+Time taken: 4.60 s
+Number of classes: 4396
+Time taken: 4.61 s
+Number of classes: 4393
+Time taken: 4.62 s
+Number of classes: 4388
+Time taken: 4.63 s
+Number of classes: 4386
+Time taken: 4.64 s
+Number of classes: 4376
+Time taken: 4.65 s
+Number of classes: 4369
+Time taken: 4.66 s
+Number of classes: 4361
+Time taken: 4.67 s
+Number of classes: 4357
+Time taken: 4.68 s
+Number of classes: 4348
+Time taken: 4.69 s
+Number of classes: 4341
+Time taken: 4.70 s
+Number of classes: 4338
+Time taken: 4.71 s
+Number of classes: 4334
+Time taken: 4.72 s
+Number of classes: 4327
+Time taken: 4.73 s
+Number of classes: 4320
+Time taken: 4.74 s
+Number of classes: 4316
+Time taken: 4.75 s
+Number of classes: 4312
+Time taken: 4.76 s
+Number of classes: 4308
+Time taken: 4.77 s
+Number of classes: 4306
+Time taken: 4.78 s
+Number of classes: 4299
+Time taken: 4.79 s
+Number of classes: 4297
+Time taken: 4.80 s
+Number of classes: 4289
+Time taken: 4.81 s
+Number of classes: 4285
+Time taken: 4.82 s
+Number of classes: 4282
+Time taken: 4.83 s
+Number of classes: 4278
+Time taken: 4.84 s
+Number of classes: 4272
+Time taken: 4.85 s
+Number of classes: 4266
+Time taken: 4.86 s
+Number of classes: 4260
+Time taken: 4.87 s
+Number of classes: 4250
+Time taken: 4.88 s
+Number of classes: 4245
+Time taken: 4.88 s
+Number of classes: 4238
+Time taken: 4.89 s
+Number of classes: 4230
+Time taken: 4.90 s
+Number of classes: 4222
+Time taken: 4.91 s
+Number of classes: 4218
+Time taken: 4.92 s
+Number of classes: 4210
+Time taken: 4.93 s
+Number of classes: 4203
+Time taken: 4.94 s
+Number of classes: 4195
+Time taken: 4.95 s
+Number of classes: 4188
+Time taken: 4.96 s
+Number of classes: 4186
+Time taken: 4.97 s
+Number of classes: 4181
+Time taken: 4.98 s
+Number of classes: 4174
+Time taken: 4.99 s
+Number of classes: 4169
+Time taken: 5.00 s
+Number of classes: 4163
+Time taken: 5.01 s
+Number of classes: 4159
+Time taken: 5.02 s
+Number of classes: 4156
+Time taken: 5.03 s
+Number of classes: 4152
+Time taken: 5.04 s
+Number of classes: 4149
+Time taken: 5.05 s
+Number of classes: 4144
+Time taken: 5.06 s
+Number of classes: 4138
+Time taken: 5.07 s
+Number of classes: 4131
+Time taken: 5.08 s
+Number of classes: 4129
+Time taken: 5.09 s
+Number of classes: 4126
+Time taken: 5.10 s
+Number of classes: 4119
+Time taken: 5.11 s
+Number of classes: 4113
+Time taken: 5.12 s
+Number of classes: 4102
+Time taken: 5.13 s
+Number of classes: 4100
+Time taken: 5.14 s
+Number of classes: 4094
+Time taken: 5.15 s
+Number of classes: 4085
+Time taken: 5.16 s
+Number of classes: 4077
+Time taken: 5.16 s
+Number of classes: 4068
+Time taken: 5.17 s
+Number of classes: 4066
+Time taken: 5.18 s
+Number of classes: 4059
+Time taken: 5.19 s
+Number of classes: 4056
+Time taken: 5.20 s
+Number of classes: 4053
+Time taken: 5.21 s
+Number of classes: 4048
+Time taken: 5.22 s
+Number of classes: 4040
+Time taken: 5.23 s
+Number of classes: 4033
+Time taken: 5.24 s
+Number of classes: 4028
+Time taken: 5.25 s
+Number of classes: 4024
+Time taken: 5.26 s
+Number of classes: 4018
+Time taken: 5.27 s
+Number of classes: 4007
+Time taken: 5.28 s
+Number of classes: 4000
+Time taken: 5.30 s
+Number of classes: 3997
+Time taken: 5.31 s
+Number of classes: 3993
+Time taken: 5.31 s
+Number of classes: 3988
+Time taken: 5.32 s
+Number of classes: 3981
+Time taken: 5.33 s
+Number of classes: 3970
+Time taken: 5.34 s
+Number of classes: 3967
+Time taken: 5.35 s
+Number of classes: 3958
+Time taken: 5.36 s
+Number of classes: 3954
+Time taken: 5.37 s
+Number of classes: 3948
+Time taken: 5.38 s
+Number of classes: 3942
+Time taken: 5.39 s
+Number of classes: 3939
+Time taken: 5.40 s
+Number of classes: 3935
+Time taken: 5.41 s
+Number of classes: 3929
+Time taken: 5.42 s
+Number of classes: 3925
+Time taken: 5.43 s
+Number of classes: 3916
+Time taken: 5.44 s
+Number of classes: 3910
+Time taken: 5.45 s
+Number of classes: 3905
+Time taken: 5.45 s
+Number of classes: 3897
+Time taken: 5.46 s
+Number of classes: 3892
+Time taken: 5.47 s
+Number of classes: 3880
+Time taken: 5.48 s
+Number of classes: 3877
+Time taken: 5.49 s
+Number of classes: 3871
+Time taken: 5.50 s
+Number of classes: 3864
+Time taken: 5.51 s
+Number of classes: 3858
+Time taken: 5.52 s
+Number of classes: 3854
+Time taken: 5.52 s
+Number of classes: 3851
+Time taken: 5.53 s
+Number of classes: 3844
+Time taken: 5.54 s
+Number of classes: 3839
+Time taken: 5.55 s
+Number of classes: 3836
+Time taken: 5.56 s
+Number of classes: 3833
+Time taken: 5.57 s
+Number of classes: 3829
+Time taken: 5.58 s
+Number of classes: 3825
+Time taken: 5.59 s
+Number of classes: 3819
+Time taken: 5.60 s
+Number of classes: 3813
+Time taken: 5.61 s
+Number of classes: 3804
+Time taken: 5.61 s
+Number of classes: 3798
+Time taken: 5.62 s
+Number of classes: 3789
+Time taken: 5.63 s
+Number of classes: 3784
+Time taken: 5.64 s
+Number of classes: 3780
+Time taken: 5.65 s
+Number of classes: 3769
+Time taken: 5.66 s
+Number of classes: 3764
+Time taken: 5.67 s
+Number of classes: 3763
+Time taken: 5.67 s
+Number of classes: 3760
+Time taken: 5.68 s
+Number of classes: 3755
+Time taken: 5.69 s
+Number of classes: 3750
+Time taken: 5.70 s
+Number of classes: 3746
+Time taken: 5.71 s
+Number of classes: 3742
+Time taken: 5.72 s
+Number of classes: 3736
+Time taken: 5.73 s
+Number of classes: 3733
+Time taken: 5.74 s
+Number of classes: 3731
+Time taken: 5.75 s
+Number of classes: 3727
+Time taken: 5.77 s
+Number of classes: 3722
+Time taken: 5.78 s
+Number of classes: 3720
+Time taken: 5.79 s
+Number of classes: 3714
+Time taken: 5.80 s
+Number of classes: 3705
+Time taken: 5.81 s
+Number of classes: 3702
+Time taken: 5.82 s
+Number of classes: 3697
+Time taken: 5.83 s
+Number of classes: 3694
+Time taken: 5.84 s
+Number of classes: 3692
+Time taken: 5.85 s
+Number of classes: 3690
+Time taken: 5.86 s
+Number of classes: 3685
+Time taken: 5.86 s
+Number of classes: 3682
+Time taken: 5.87 s
+Number of classes: 3677
+Time taken: 5.88 s
+Number of classes: 3674
+Time taken: 5.90 s
+Number of classes: 3670
+Time taken: 5.91 s
+Number of classes: 3667
+Time taken: 5.92 s
+Number of classes: 3666
+Time taken: 5.93 s
+Number of classes: 3664
+Time taken: 5.93 s
+Number of classes: 3661
+Time taken: 5.95 s
+Number of classes: 3655
+Time taken: 5.96 s
+Number of classes: 3652
+Time taken: 5.96 s
+Number of classes: 3645
+Time taken: 5.97 s
+Number of classes: 3641
+Time taken: 5.98 s
+Number of classes: 3637
+Time taken: 5.99 s
+Number of classes: 3635
+Time taken: 6.00 s
+Number of classes: 3632
+Time taken: 6.01 s
+Number of classes: 3625
+Time taken: 6.02 s
+Number of classes: 3624
+Time taken: 6.02 s
+Number of classes: 3620
+Time taken: 6.03 s
+Number of classes: 3613
+Time taken: 6.04 s
+Number of classes: 3612
+Time taken: 6.05 s
+Number of classes: 3608
+Time taken: 6.06 s
+Number of classes: 3600
+Time taken: 6.07 s
+Number of classes: 3594
+Time taken: 6.07 s
+Number of classes: 3586
+Time taken: 6.08 s
+Number of classes: 3581
+Time taken: 6.09 s
+Number of classes: 3580
+Time taken: 6.10 s
+Number of classes: 3573
+Time taken: 6.11 s
+Number of classes: 3566
+Time taken: 6.12 s
+Number of classes: 3560
+Time taken: 6.12 s
+Number of classes: 3556
+Time taken: 6.13 s
+Number of classes: 3554
+Time taken: 6.14 s
+Number of classes: 3549
+Time taken: 6.15 s
+Number of classes: 3545
+Time taken: 6.16 s
+Number of classes: 3541
+Time taken: 6.17 s
+Number of classes: 3537
+Time taken: 6.18 s
+Number of classes: 3531
+Time taken: 6.18 s
+Number of classes: 3527
+Time taken: 6.19 s
+Number of classes: 3524
+Time taken: 6.21 s
+Number of classes: 3521
+Time taken: 6.22 s
+Number of classes: 3518
+Time taken: 6.22 s
+Number of classes: 3513
+Time taken: 6.23 s
+Number of classes: 3508
+Time taken: 6.24 s
+Number of classes: 3502
+Time taken: 6.25 s
+Number of classes: 3498
+Time taken: 6.26 s
+Number of classes: 3490
+Time taken: 6.27 s
+Number of classes: 3483
+Time taken: 6.28 s
+Number of classes: 3481
+Time taken: 6.28 s
+Number of classes: 3478
+Time taken: 6.29 s
+Number of classes: 3471
+Time taken: 6.30 s
+Number of classes: 3464
+Time taken: 6.31 s
+Number of classes: 3460
+Time taken: 6.32 s
+Number of classes: 3456
+Time taken: 6.33 s
+Number of classes: 3449
+Time taken: 6.34 s
+Number of classes: 3442
+Time taken: 6.35 s
+Number of classes: 3441
+Time taken: 6.35 s
+Number of classes: 3435
+Time taken: 6.36 s
+Number of classes: 3431
+Time taken: 6.37 s
+Number of classes: 3430
+Time taken: 6.38 s
+Number of classes: 3426
+Time taken: 6.39 s
+Number of classes: 3422
+Time taken: 6.40 s
+Number of classes: 3418
+Time taken: 6.41 s
+Number of classes: 3414
+Time taken: 6.42 s
+Number of classes: 3409
+Time taken: 6.43 s
+Number of classes: 3407
+Time taken: 6.44 s
+Number of classes: 3401
+Time taken: 6.45 s
+Number of classes: 3396
+Time taken: 6.46 s
+Number of classes: 3391
+Time taken: 6.46 s
+Number of classes: 3388
+Time taken: 6.47 s
+Number of classes: 3385
+Time taken: 6.48 s
+Number of classes: 3383
+Time taken: 6.49 s
+Number of classes: 3380
+Time taken: 6.50 s
+Number of classes: 3376
+Time taken: 6.52 s
+Number of classes: 3371
+Time taken: 6.52 s
+Number of classes: 3367
+Time taken: 6.53 s
+Number of classes: 3366
+Time taken: 6.54 s
+Number of classes: 3363
+Time taken: 6.55 s
+Number of classes: 3360
+Time taken: 6.56 s
+Number of classes: 3351
+Time taken: 6.57 s
+Number of classes: 3346
+Time taken: 6.57 s
+Number of classes: 3342
+Time taken: 6.58 s
+Number of classes: 3339
+Time taken: 6.59 s
+Number of classes: 3337
+Time taken: 6.60 s
+Number of classes: 3329
+Time taken: 6.61 s
+Number of classes: 3328
+Time taken: 6.61 s
+Number of classes: 3323
+Time taken: 6.62 s
+Number of classes: 3320
+Time taken: 6.63 s
+Number of classes: 3317
+Time taken: 6.64 s
+Number of classes: 3315
+Time taken: 6.65 s
+Number of classes: 3310
+Time taken: 6.65 s
+Number of classes: 3305
+Time taken: 6.66 s
+Number of classes: 3303
+Time taken: 6.67 s
+Number of classes: 3296
+Time taken: 6.68 s
+Number of classes: 3293
+Time taken: 6.69 s
+Number of classes: 3289
+Time taken: 6.69 s
+Number of classes: 3287
+Time taken: 6.70 s
+Number of classes: 3283
+Time taken: 6.71 s
+Number of classes: 3277
+Time taken: 6.72 s
+Number of classes: 3273
+Time taken: 6.73 s
+Number of classes: 3269
+Time taken: 6.74 s
+Number of classes: 3263
+Time taken: 6.74 s
+Number of classes: 3261
+Time taken: 6.75 s
+Number of classes: 3255
+Time taken: 6.76 s
+Number of classes: 3251
+Time taken: 6.77 s
+Number of classes: 3248
+Time taken: 6.78 s
+Number of classes: 3243
+Time taken: 6.79 s
+Number of classes: 3240
+Time taken: 6.80 s
+Number of classes: 3235
+Time taken: 6.80 s
+Number of classes: 3232
+Time taken: 6.81 s
+Number of classes: 3228
+Time taken: 6.82 s
+Number of classes: 3225
+Time taken: 6.83 s
+Number of classes: 3221
+Time taken: 6.83 s
+Number of classes: 3218
+Time taken: 6.84 s
+Number of classes: 3216
+Time taken: 6.85 s
+Number of classes: 3215
+Time taken: 6.86 s
+Number of classes: 3211
+Time taken: 6.87 s
+Number of classes: 3207
+Time taken: 6.87 s
+Number of classes: 3203
+Time taken: 6.88 s
+Number of classes: 3199
+Time taken: 6.89 s
+Number of classes: 3195
+Time taken: 6.90 s
+Number of classes: 3194
+Time taken: 6.91 s
+Number of classes: 3192
+Time taken: 6.91 s
+Number of classes: 3185
+Time taken: 6.92 s
+Number of classes: 3183
+Time taken: 6.93 s
+Number of classes: 3182
+Time taken: 6.94 s
+Number of classes: 3180
+Time taken: 6.95 s
+Number of classes: 3173
+Time taken: 6.96 s
+Number of classes: 3168
+Time taken: 6.96 s
+Number of classes: 3166
+Time taken: 6.97 s
+Number of classes: 3161
+Time taken: 6.98 s
+Number of classes: 3160
+Time taken: 6.99 s
+Number of classes: 3159
+Time taken: 7.00 s
+Number of classes: 3157
+Time taken: 7.00 s
+Number of classes: 3155
+Time taken: 7.01 s
+Number of classes: 3153
+Time taken: 7.02 s
+Number of classes: 3150
+Time taken: 7.03 s
+Number of classes: 3146
+Time taken: 7.03 s
+Number of classes: 3143
+Time taken: 7.04 s
+Number of classes: 3141
+Time taken: 7.05 s
+Number of classes: 3138
+Time taken: 7.06 s
+Number of classes: 3133
+Time taken: 7.07 s
+Number of classes: 3132
+Time taken: 7.07 s
+Number of classes: 3128
+Time taken: 7.08 s
+Number of classes: 3126
+Time taken: 7.09 s
+Number of classes: 3122
+Time taken: 7.10 s
+Number of classes: 3114
+Time taken: 7.11 s
+Number of classes: 3108
+Time taken: 7.12 s
+Number of classes: 3106
+Time taken: 7.12 s
+Number of classes: 3101
+Time taken: 7.13 s
+Number of classes: 3096
+Time taken: 7.14 s
+Number of classes: 3094
+Time taken: 7.15 s
+Number of classes: 3091
+Time taken: 7.16 s
+Number of classes: 3089
+Time taken: 7.16 s
+Number of classes: 3087
+Time taken: 7.17 s
+Number of classes: 3085
+Time taken: 7.18 s
+Number of classes: 3083
+Time taken: 7.19 s
+Number of classes: 3077
+Time taken: 7.20 s
+Number of classes: 3076
+Time taken: 7.20 s
+Number of classes: 3073
+Time taken: 7.21 s
+Number of classes: 3069
+Time taken: 7.22 s
+Number of classes: 3065
+Time taken: 7.23 s
+Number of classes: 3063
+Time taken: 7.23 s
+Number of classes: 3061
+Time taken: 7.24 s
+Number of classes: 3059
+Time taken: 7.25 s
+Number of classes: 3057
+Time taken: 7.26 s
+Number of classes: 3056
+Time taken: 7.27 s
+Number of classes: 3052
+Time taken: 7.27 s
+Number of classes: 3046
+Time taken: 7.28 s
+Number of classes: 3044
+Time taken: 7.29 s
+Number of classes: 3042
+Time taken: 7.30 s
+Number of classes: 3038
+Time taken: 7.30 s
+Number of classes: 3036
+Time taken: 7.31 s
+Number of classes: 3034
+Time taken: 7.32 s
+Number of classes: 3029
+Time taken: 7.33 s
+Number of classes: 3025
+Time taken: 7.33 s
+Number of classes: 3024
+Time taken: 7.34 s
+Number of classes: 3021
+Time taken: 7.35 s
+Number of classes: 3020
+Time taken: 7.36 s
+Number of classes: 3018
+Time taken: 7.36 s
+Number of classes: 3015
+Time taken: 7.37 s
+Number of classes: 3010
+Time taken: 7.38 s
+Number of classes: 3007
+Time taken: 7.39 s
+Number of classes: 3004
+Time taken: 7.39 s
+Number of classes: 3000
+Time taken: 7.40 s
+Number of classes: 2996
+Time taken: 7.41 s
+Number of classes: 2993
+Time taken: 7.42 s
+Number of classes: 2988
+Time taken: 7.43 s
+Number of classes: 2983
+Time taken: 7.44 s
+Number of classes: 2978
+Time taken: 7.45 s
+Number of classes: 2975
+Time taken: 7.46 s
+Number of classes: 2972
+Time taken: 7.46 s
+Number of classes: 2966
+Time taken: 7.47 s
+Number of classes: 2964
+Time taken: 7.49 s
+Number of classes: 2962
+Time taken: 7.50 s
+Number of classes: 2961
+Time taken: 7.51 s
+Number of classes: 2956
+Time taken: 7.52 s
+Number of classes: 2954
+Time taken: 7.52 s
+Number of classes: 2951
+Time taken: 7.53 s
+Number of classes: 2948
+Time taken: 7.54 s
+Number of classes: 2945
+Time taken: 7.55 s
+Number of classes: 2944
+Time taken: 7.55 s
+Number of classes: 2943
+Time taken: 7.56 s
+Number of classes: 2940
+Time taken: 7.57 s
+Number of classes: 2937
+Time taken: 7.58 s
+Number of classes: 2933
+Time taken: 7.59 s
+Number of classes: 2932
+Time taken: 7.60 s
+Number of classes: 2930
+Time taken: 7.61 s
+Number of classes: 2929
+Time taken: 7.62 s
+Number of classes: 2926
+Time taken: 7.62 s
+Number of classes: 2923
+Time taken: 7.63 s
+Number of classes: 2921
+Time taken: 7.64 s
+Number of classes: 2916
+Time taken: 7.64 s
+Number of classes: 2913
+Time taken: 7.65 s
+Number of classes: 2908
+Time taken: 7.66 s
+Number of classes: 2905
+Time taken: 7.67 s
+Number of classes: 2904
+Time taken: 7.68 s
+Number of classes: 2901
+Time taken: 7.68 s
+Number of classes: 2899
+Time taken: 7.69 s
+Number of classes: 2894
+Time taken: 7.70 s
+Number of classes: 2892
+Time taken: 7.72 s
+Number of classes: 2888
+Time taken: 7.73 s
+Number of classes: 2885
+Time taken: 7.73 s
+Number of classes: 2884
+Time taken: 7.74 s
+Number of classes: 2882
+Time taken: 7.75 s
+Number of classes: 2880
+Time taken: 7.76 s
+Number of classes: 2875
+Time taken: 7.76 s
+Number of classes: 2869
+Time taken: 7.77 s
+Number of classes: 2864
+Time taken: 7.78 s
+Number of classes: 2859
+Time taken: 7.79 s
+Number of classes: 2855
+Time taken: 7.80 s
+Number of classes: 2851
+Time taken: 7.80 s
+Number of classes: 2847
+Time taken: 7.81 s
+Number of classes: 2845
+Time taken: 7.82 s
+Number of classes: 2843
+Time taken: 7.83 s
+Number of classes: 2841
+Time taken: 7.83 s
+Number of classes: 2839
+Time taken: 7.84 s
+Number of classes: 2837
+Time taken: 7.85 s
+Number of classes: 2836
+Time taken: 7.86 s
+Number of classes: 2832
+Time taken: 7.87 s
+Number of classes: 2827
+Time taken: 7.87 s
+Number of classes: 2824
+Time taken: 7.88 s
+Number of classes: 2823
+Time taken: 7.89 s
+Number of classes: 2819
+Time taken: 7.90 s
+Number of classes: 2816
+Time taken: 7.90 s
+Number of classes: 2810
+Time taken: 7.91 s
+Number of classes: 2808
+Time taken: 7.93 s
+Number of classes: 2802
+Time taken: 7.93 s
+Number of classes: 2799
+Time taken: 7.94 s
+Number of classes: 2798
+Time taken: 7.95 s
+Number of classes: 2796
+Time taken: 7.96 s
+Number of classes: 2795
+Time taken: 7.97 s
+Number of classes: 2790
+Time taken: 7.97 s
+Number of classes: 2784
+Time taken: 7.99 s
+Number of classes: 2783
+Time taken: 7.99 s
+Number of classes: 2782
+Time taken: 8.00 s
+Number of classes: 2778
+Time taken: 8.01 s
+Number of classes: 2776
+Time taken: 8.02 s
+Number of classes: 2773
+Time taken: 8.02 s
+Number of classes: 2768
+Time taken: 8.03 s
+Number of classes: 2767
+Time taken: 8.04 s
+Number of classes: 2765
+Time taken: 8.05 s
+Number of classes: 2763
+Time taken: 8.05 s
+Number of classes: 2759
+Time taken: 8.06 s
+Number of classes: 2756
+Time taken: 8.07 s
+Number of classes: 2752
+Time taken: 8.07 s
+Number of classes: 2748
+Time taken: 8.08 s
+Number of classes: 2745
+Time taken: 8.09 s
+Number of classes: 2744
+Time taken: 8.10 s
+Number of classes: 2741
+Time taken: 8.10 s
+Number of classes: 2737
+Time taken: 8.11 s
+Number of classes: 2736
+Time taken: 8.12 s
+Number of classes: 2732
+Time taken: 8.13 s
+Number of classes: 2730
+Time taken: 8.14 s
+Number of classes: 2727
+Time taken: 8.14 s
+Number of classes: 2726
+Time taken: 8.15 s
+Number of classes: 2723
+Time taken: 8.16 s
+Number of classes: 2721
+Time taken: 8.16 s
+Number of classes: 2719
+Time taken: 8.17 s
+Number of classes: 2717
+Time taken: 8.18 s
+Number of classes: 2714
+Time taken: 8.18 s
+Number of classes: 2711
+Time taken: 8.19 s
+Number of classes: 2708
+Time taken: 8.20 s
+Number of classes: 2705
+Time taken: 8.21 s
+Number of classes: 2700
+Time taken: 8.22 s
+Number of classes: 2697
+Time taken: 8.23 s
+Number of classes: 2695
+Time taken: 8.23 s
+Number of classes: 2690
+Time taken: 8.24 s
+Number of classes: 2685
+Time taken: 8.25 s
+Number of classes: 2683
+Time taken: 8.26 s
+Number of classes: 2679
+Time taken: 8.27 s
+Number of classes: 2677
+Time taken: 8.27 s
+Number of classes: 2676
+Time taken: 8.28 s
+Number of classes: 2673
+Time taken: 8.29 s
+Number of classes: 2672
+Time taken: 8.30 s
+Number of classes: 2670
+Time taken: 8.31 s
+Number of classes: 2669
+Time taken: 8.32 s
+Number of classes: 2666
+Time taken: 8.33 s
+Number of classes: 2665
+Time taken: 8.34 s
+Number of classes: 2659
+Time taken: 8.35 s
+Number of classes: 2656
+Time taken: 8.35 s
+Number of classes: 2654
+Time taken: 8.36 s
+Number of classes: 2650
+Time taken: 8.37 s
+Number of classes: 2649
+Time taken: 8.37 s
+Number of classes: 2648
+Time taken: 8.38 s
+Number of classes: 2646
+Time taken: 8.40 s
+Number of classes: 2642
+Time taken: 8.41 s
+Number of classes: 2638
+Time taken: 8.42 s
+Number of classes: 2636
+Time taken: 8.42 s
+Number of classes: 2634
+Time taken: 8.43 s
+Number of classes: 2631
+Time taken: 8.44 s
+Number of classes: 2628
+Time taken: 8.45 s
+Number of classes: 2626
+Time taken: 8.46 s
+Number of classes: 2624
+Time taken: 8.47 s
+Number of classes: 2621
+Time taken: 8.47 s
+Number of classes: 2620
+Time taken: 8.48 s
+Number of classes: 2617
+Time taken: 8.49 s
+Number of classes: 2614
+Time taken: 8.50 s
+Number of classes: 2611
+Time taken: 8.52 s
+Number of classes: 2609
+Time taken: 8.52 s
+Number of classes: 2605
+Time taken: 8.53 s
+Number of classes: 2603
+Time taken: 8.54 s
+Number of classes: 2602
+Time taken: 8.55 s
+Number of classes: 2601
+Time taken: 8.56 s
+Number of classes: 2600
+Time taken: 8.56 s
+Number of classes: 2598
+Time taken: 8.57 s
+Number of classes: 2596
+Time taken: 8.58 s
+Number of classes: 2593
+Time taken: 8.59 s
+Number of classes: 2592
+Time taken: 8.60 s
+Number of classes: 2590
+Time taken: 8.61 s
+Number of classes: 2586
+Time taken: 8.62 s
+Number of classes: 2583
+Time taken: 8.62 s
+Number of classes: 2581
+Time taken: 8.63 s
+Number of classes: 2575
+Time taken: 8.64 s
+Number of classes: 2573
+Time taken: 8.64 s
+Number of classes: 2569
+Time taken: 8.66 s
+Number of classes: 2566
+Time taken: 8.67 s
+Number of classes: 2565
+Time taken: 8.67 s
+Number of classes: 2564
+Time taken: 8.68 s
+Number of classes: 2563
+Time taken: 8.69 s
+Number of classes: 2562
+Time taken: 8.70 s
+Number of classes: 2561
+Time taken: 8.70 s
+Number of classes: 2559
+Time taken: 8.71 s
+Number of classes: 2555
+Time taken: 8.72 s
+Number of classes: 2554
+Time taken: 8.72 s
+Number of classes: 2551
+Time taken: 8.73 s
+Number of classes: 2549
+Time taken: 8.74 s
+Number of classes: 2547
+Time taken: 8.75 s
+Number of classes: 2544
+Time taken: 8.77 s
+Number of classes: 2542
+Time taken: 8.79 s
+Number of classes: 2540
+Time taken: 8.80 s
+Number of classes: 2535
+Time taken: 8.81 s
+Number of classes: 2533
+Time taken: 8.81 s
+Number of classes: 2530
+Time taken: 8.82 s
+Number of classes: 2528
+Time taken: 8.83 s
+Number of classes: 2526
+Time taken: 8.84 s
+Number of classes: 2525
+Time taken: 8.84 s
+Number of classes: 2523
+Time taken: 8.85 s
+Number of classes: 2518
+Time taken: 8.86 s
+Number of classes: 2516
+Time taken: 8.88 s
+Number of classes: 2514
+Time taken: 8.88 s
+Number of classes: 2512
+Time taken: 8.89 s
+Number of classes: 2509
+Time taken: 8.90 s
+Number of classes: 2507
+Time taken: 8.90 s
+Number of classes: 2505
+Time taken: 8.91 s
+Number of classes: 2504
+Time taken: 8.92 s
+Number of classes: 2502
+Time taken: 8.92 s
+Number of classes: 2500
+Time taken: 8.93 s
+Number of classes: 2495
+Time taken: 8.94 s
+Number of classes: 2491
+Time taken: 8.95 s
+Number of classes: 2488
+Time taken: 8.96 s
+Number of classes: 2484
+Time taken: 8.96 s
+Number of classes: 2482
+Time taken: 8.97 s
+Number of classes: 2480
+Time taken: 8.98 s
+Number of classes: 2476
+Time taken: 8.99 s
+Number of classes: 2475
+Time taken: 9.00 s
+Number of classes: 2473
+Time taken: 9.01 s
+Number of classes: 2471
+Time taken: 9.02 s
+Number of classes: 2469
+Time taken: 9.03 s
+Number of classes: 2468
+Time taken: 9.04 s
+Number of classes: 2467
+Time taken: 9.04 s
+Number of classes: 2465
+Time taken: 9.05 s
+Number of classes: 2463
+Time taken: 9.06 s
+Number of classes: 2460
+Time taken: 9.07 s
+Number of classes: 2457
+Time taken: 9.08 s
+Number of classes: 2454
+Time taken: 9.09 s
+Number of classes: 2453
+Time taken: 9.09 s
+Number of classes: 2452
+Time taken: 9.10 s
+Number of classes: 2450
+Time taken: 9.11 s
+Number of classes: 2448
+Time taken: 9.12 s
+Number of classes: 2446
+Time taken: 9.14 s
+Number of classes: 2445
+Time taken: 9.15 s
+Number of classes: 2442
+Time taken: 9.15 s
+Number of classes: 2439
+Time taken: 9.17 s
+Number of classes: 2437
+Time taken: 9.18 s
+Number of classes: 2435
+Time taken: 9.18 s
+Number of classes: 2434
+Time taken: 9.19 s
+Number of classes: 2433
+Time taken: 9.20 s
+Number of classes: 2430
+Time taken: 9.20 s
+Number of classes: 2427
+Time taken: 9.22 s
+Number of classes: 2424
+Time taken: 9.22 s
+Number of classes: 2422
+Time taken: 9.24 s
+Number of classes: 2420
+Time taken: 9.24 s
+Number of classes: 2418
+Time taken: 9.25 s
+Number of classes: 2416
+Time taken: 9.26 s
+Number of classes: 2415
+Time taken: 9.26 s
+Number of classes: 2413
+Time taken: 9.28 s
+Number of classes: 2412
+Time taken: 9.29 s
+Number of classes: 2411
+Time taken: 9.29 s
+Number of classes: 2409
+Time taken: 9.30 s
+Number of classes: 2407
+Time taken: 9.31 s
+Number of classes: 2405
+Time taken: 9.31 s
+Number of classes: 2404
+Time taken: 9.32 s
+Number of classes: 2402
+Time taken: 9.33 s
+Number of classes: 2401
+Time taken: 9.33 s
+Number of classes: 2398
+Time taken: 9.34 s
+Number of classes: 2397
+Time taken: 9.35 s
+Number of classes: 2394
+Time taken: 9.36 s
+Number of classes: 2392
+Time taken: 9.36 s
+Number of classes: 2390
+Time taken: 9.39 s
+Number of classes: 2388
+Time taken: 9.40 s
+Number of classes: 2384
+Time taken: 9.41 s
+Number of classes: 2383
+Time taken: 9.42 s
+Number of classes: 2382
+Time taken: 9.43 s
+Number of classes: 2380
+Time taken: 9.43 s
+Number of classes: 2379
+Time taken: 9.44 s
+Number of classes: 2375
+Time taken: 9.45 s
+Number of classes: 2374
+Time taken: 9.45 s
+Number of classes: 2370
+Time taken: 9.46 s
+Number of classes: 2366
+Time taken: 9.47 s
+Number of classes: 2362
+Time taken: 9.47 s
+Number of classes: 2361
+Time taken: 9.49 s
+Number of classes: 2355
+Time taken: 9.49 s
+Number of classes: 2352
+Time taken: 9.50 s
+Number of classes: 2349
+Time taken: 9.51 s
+Number of classes: 2346
+Time taken: 9.52 s
+Number of classes: 2342
+Time taken: 9.53 s
+Number of classes: 2339
+Time taken: 9.54 s
+Number of classes: 2335
+Time taken: 9.54 s
+Number of classes: 2331
+Time taken: 9.55 s
+Number of classes: 2329
+Time taken: 9.56 s
+Number of classes: 2326
+Time taken: 9.57 s
+Number of classes: 2324
+Time taken: 9.57 s
+Number of classes: 2321
+Time taken: 9.58 s
+Number of classes: 2320
+Time taken: 9.59 s
+Number of classes: 2319
+Time taken: 9.59 s
+Number of classes: 2316
+Time taken: 9.61 s
+Number of classes: 2315
+Time taken: 9.62 s
+Number of classes: 2312
+Time taken: 9.62 s
+Number of classes: 2310
+Time taken: 9.63 s
+Number of classes: 2307
+Time taken: 9.64 s
+Number of classes: 2306
+Time taken: 9.64 s
+Number of classes: 2304
+Time taken: 9.65 s
+Number of classes: 2303
+Time taken: 9.66 s
+Number of classes: 2302
+Time taken: 9.67 s
+Number of classes: 2300
+Time taken: 9.68 s
+Number of classes: 2298
+Time taken: 9.68 s
+Number of classes: 2296
+Time taken: 9.70 s
+Number of classes: 2294
+Time taken: 9.71 s
+Number of classes: 2291
+Time taken: 9.71 s
+Number of classes: 2289
+Time taken: 9.72 s
+Number of classes: 2288
+Time taken: 9.73 s
+Number of classes: 2287
+Time taken: 9.74 s
+Number of classes: 2284
+Time taken: 9.74 s
+Number of classes: 2283
+Time taken: 9.75 s
+Number of classes: 2281
+Time taken: 9.75 s
+Number of classes: 2280
+Time taken: 9.76 s
+Number of classes: 2278
+Time taken: 9.77 s
+Number of classes: 2274
+Time taken: 9.78 s
+Number of classes: 2273
+Time taken: 9.79 s
+Number of classes: 2271
+Time taken: 9.80 s
+Number of classes: 2268
+Time taken: 9.81 s
+Number of classes: 2267
+Time taken: 9.83 s
+Number of classes: 2266
+Time taken: 9.84 s
+Number of classes: 2262
+Time taken: 9.85 s
+Number of classes: 2258
+Time taken: 9.85 s
+Number of classes: 2256
+Time taken: 9.86 s
+Number of classes: 2254
+Time taken: 9.87 s
+Number of classes: 2252
+Time taken: 9.87 s
+Number of classes: 2249
+Time taken: 9.88 s
+Number of classes: 2247
+Time taken: 9.88 s
+Number of classes: 2245
+Time taken: 9.89 s
+Number of classes: 2243
+Time taken: 9.90 s
+Number of classes: 2242
+Time taken: 9.90 s
+Number of classes: 2241
+Time taken: 9.92 s
+Number of classes: 2240
+Time taken: 9.94 s
+Number of classes: 2238
+Time taken: 9.95 s
+Number of classes: 2237
+Time taken: 9.95 s
+Number of classes: 2236
+Time taken: 9.96 s
+Number of classes: 2234
+Time taken: 9.97 s
+Number of classes: 2232
+Time taken: 9.98 s
+Number of classes: 2228
+Time taken: 10.00 s
+Number of classes: 2227
+Time taken: 10.00 s
+Number of classes: 2226
+Time taken: 10.01 s
+Number of classes: 2225
+Time taken: 10.02 s
+Number of classes: 2223
+Time taken: 10.02 s
+Number of classes: 2222
+Time taken: 10.04 s
+Number of classes: 2217
+Time taken: 10.04 s
+Number of classes: 2215
+Time taken: 10.06 s
+Number of classes: 2214
+Time taken: 10.07 s
+Number of classes: 2213
+Time taken: 10.08 s
+Number of classes: 2211
+Time taken: 10.09 s
+Number of classes: 2208
+Time taken: 10.10 s
+Number of classes: 2206
+Time taken: 10.12 s
+Number of classes: 2205
+Time taken: 10.13 s
+Number of classes: 2204
+Time taken: 10.13 s
+Number of classes: 2201
+Time taken: 10.15 s
+Number of classes: 2200
+Time taken: 10.16 s
+Number of classes: 2199
+Time taken: 10.16 s
+Number of classes: 2198
+Time taken: 10.17 s
+Number of classes: 2197
+Time taken: 10.19 s
+Number of classes: 2196
+Time taken: 10.19 s
+Number of classes: 2194
+Time taken: 10.20 s
+Number of classes: 2193
+Time taken: 10.21 s
+Number of classes: 2192
+Time taken: 10.22 s
+Number of classes: 2190
+Time taken: 10.23 s
+Number of classes: 2187
+Time taken: 10.24 s
+Number of classes: 2186
+Time taken: 10.25 s
+Number of classes: 2185
+Time taken: 10.27 s
+Number of classes: 2182
+Time taken: 10.27 s
+Number of classes: 2180
+Time taken: 10.29 s
+Number of classes: 2179
+Time taken: 10.29 s
+Number of classes: 2178
+Time taken: 10.30 s
+Number of classes: 2175
+Time taken: 10.32 s
+Number of classes: 2170
+Time taken: 10.33 s
+Number of classes: 2168
+Time taken: 10.33 s
+Number of classes: 2167
+Time taken: 10.34 s
+Number of classes: 2166
+Time taken: 10.35 s
+Number of classes: 2164
+Time taken: 10.35 s
+Number of classes: 2163
+Time taken: 10.36 s
+Number of classes: 2161
+Time taken: 10.37 s
+Number of classes: 2159
+Time taken: 10.39 s
+Number of classes: 2158
+Time taken: 10.39 s
+Number of classes: 2156
+Time taken: 10.40 s
+Number of classes: 2154
+Time taken: 10.43 s
+Number of classes: 2152
+Time taken: 10.45 s
+Number of classes: 2147
+Time taken: 10.46 s
+Number of classes: 2145
+Time taken: 10.46 s
+Number of classes: 2142
+Time taken: 10.47 s
+Number of classes: 2140
+Time taken: 10.48 s
+Number of classes: 2138
+Time taken: 10.49 s
+Number of classes: 2135
+Time taken: 10.49 s
+Number of classes: 2134
+Time taken: 10.50 s
+Number of classes: 2132
+Time taken: 10.51 s
+Number of classes: 2131
+Time taken: 10.51 s
+Number of classes: 2130
+Time taken: 10.52 s
+Number of classes: 2128
+Time taken: 10.54 s
+Number of classes: 2127
+Time taken: 10.54 s
+Number of classes: 2125
+Time taken: 10.55 s
+Number of classes: 2124
+Time taken: 10.56 s
+Number of classes: 2122
+Time taken: 10.56 s
+Number of classes: 2121
+Time taken: 10.58 s
+Number of classes: 2120
+Time taken: 10.58 s
+Number of classes: 2118
+Time taken: 10.59 s
+Number of classes: 2117
+Time taken: 10.60 s
+Number of classes: 2115
+Time taken: 10.61 s
+Number of classes: 2113
+Time taken: 10.62 s
+Number of classes: 2112
+Time taken: 10.64 s
+Number of classes: 2110
+Time taken: 10.65 s
+Number of classes: 2109
+Time taken: 10.65 s
+Number of classes: 2107
+Time taken: 10.66 s
+Number of classes: 2104
+Time taken: 10.69 s
+Number of classes: 2103
+Time taken: 10.71 s
+Number of classes: 2102
+Time taken: 10.71 s
+Number of classes: 2101
+Time taken: 10.72 s
+Number of classes: 2099
+Time taken: 10.73 s
+Number of classes: 2097
+Time taken: 10.74 s
+Number of classes: 2096
+Time taken: 10.75 s
+Number of classes: 2094
+Time taken: 10.76 s
+Number of classes: 2093
+Time taken: 10.76 s
+Number of classes: 2091
+Time taken: 10.79 s
+Number of classes: 2089
+Time taken: 10.82 s
+Number of classes: 2088
+Time taken: 10.83 s
+Number of classes: 2086
+Time taken: 10.84 s
+Number of classes: 2085
+Time taken: 10.85 s
+Number of classes: 2084
+Time taken: 10.85 s
+Number of classes: 2083
+Time taken: 10.86 s
+Number of classes: 2082
+Time taken: 10.89 s
+Number of classes: 2081
+Time taken: 10.90 s
+Number of classes: 2080
+Time taken: 10.91 s
+Number of classes: 2078
+Time taken: 10.91 s
+Number of classes: 2075
+Time taken: 10.93 s
+Number of classes: 2073
+Time taken: 10.95 s
+Number of classes: 2072
+Time taken: 10.95 s
+Number of classes: 2070
+Time taken: 10.96 s
+Number of classes: 2067
+Time taken: 10.97 s
+Number of classes: 2066
+Time taken: 10.98 s
+Number of classes: 2065
+Time taken: 10.98 s
+Number of classes: 2063
+Time taken: 10.99 s
+Number of classes: 2061
+Time taken: 11.00 s
+Number of classes: 2060
+Time taken: 11.01 s
+Number of classes: 2059
+Time taken: 11.01 s
+Number of classes: 2058
+Time taken: 11.02 s
+Number of classes: 2057
+Time taken: 11.03 s
+Number of classes: 2056
+Time taken: 11.04 s
+Number of classes: 2055
+Time taken: 11.04 s
+Number of classes: 2054
+Time taken: 11.06 s
+Number of classes: 2053
+Time taken: 11.06 s
+Number of classes: 2052
+Time taken: 11.07 s
+Number of classes: 2051
+Time taken: 11.07 s
+Number of classes: 2050
+Time taken: 11.08 s
+Number of classes: 2047
+Time taken: 11.10 s
+Number of classes: 2046
+Time taken: 11.11 s
+Number of classes: 2044
+Time taken: 11.12 s
+Number of classes: 2042
+Time taken: 11.12 s
+Number of classes: 2040
+Time taken: 11.13 s
+Number of classes: 2039
+Time taken: 11.14 s
+Number of classes: 2038
+Time taken: 11.14 s
+Number of classes: 2036
+Time taken: 11.16 s
+Number of classes: 2034
+Time taken: 11.18 s
+Number of classes: 2033
+Time taken: 11.19 s
+Number of classes: 2030
+Time taken: 11.20 s
+Number of classes: 2028
+Time taken: 11.21 s
+Number of classes: 2026
+Time taken: 11.22 s
+Number of classes: 2025
+Time taken: 11.23 s
+Number of classes: 2024
+Time taken: 11.24 s
+Number of classes: 2022
+Time taken: 11.25 s
+Number of classes: 2021
+Time taken: 11.26 s
+Number of classes: 2020
+Time taken: 11.27 s
+Number of classes: 2019
+Time taken: 11.28 s
+Number of classes: 2017
+Time taken: 11.28 s
+Number of classes: 2015
+Time taken: 11.29 s
+Number of classes: 2012
+Time taken: 11.31 s
+Number of classes: 2011
+Time taken: 11.33 s
+Number of classes: 2007
+Time taken: 11.34 s
+Number of classes: 2006
+Time taken: 11.34 s
+Number of classes: 2005
+Time taken: 11.35 s
+Number of classes: 2004
+Time taken: 11.36 s
+Number of classes: 2003
+Time taken: 11.37 s
+Number of classes: 2002
+Time taken: 11.39 s
+Number of classes: 2001
+Time taken: 11.40 s
+Number of classes: 2000
+Time taken: 11.40 s
+Number of classes: 1999
+Time taken: 11.41 s
+Number of classes: 1998
+Time taken: 11.42 s
+Number of classes: 1996
+Time taken: 11.43 s
+Number of classes: 1995
+Time taken: 11.44 s
+Number of classes: 1991
+Time taken: 11.47 s
+Number of classes: 1990
+Time taken: 11.48 s
+Number of classes: 1989
+Time taken: 11.48 s
+Number of classes: 1988
+Time taken: 11.49 s
+Number of classes: 1986
+Time taken: 11.51 s
+Number of classes: 1985
+Time taken: 11.52 s
+Number of classes: 1983
+Time taken: 11.52 s
+Number of classes: 1982
+Time taken: 11.53 s
+Number of classes: 1981
+Time taken: 11.54 s
+Number of classes: 1980
+Time taken: 11.55 s
+Number of classes: 1979
+Time taken: 11.55 s
+Number of classes: 1977
+Time taken: 11.58 s
+Number of classes: 1976
+Time taken: 11.59 s
+Number of classes: 1973
+Time taken: 11.61 s
+Number of classes: 1972
+Time taken: 11.63 s
+Number of classes: 1971
+Time taken: 11.63 s
+Number of classes: 1970
+Time taken: 11.64 s
+Number of classes: 1968
+Time taken: 11.65 s
+Number of classes: 1967
+Time taken: 11.66 s
+Number of classes: 1966
+Time taken: 11.67 s
+Number of classes: 1965
+Time taken: 11.67 s
+Number of classes: 1964
+Time taken: 11.69 s
+Number of classes: 1963
+Time taken: 11.70 s
+Number of classes: 1962
+Time taken: 11.71 s
+Number of classes: 1960
+Time taken: 11.72 s
+Number of classes: 1959
+Time taken: 11.72 s
+Number of classes: 1958
+Time taken: 11.73 s
+Number of classes: 1957
+Time taken: 11.74 s
+Number of classes: 1956
+Time taken: 11.75 s
+Number of classes: 1952
+Time taken: 11.75 s
+Number of classes: 1951
+Time taken: 11.76 s
+Number of classes: 1950
+Time taken: 11.76 s
+Number of classes: 1949
+Time taken: 11.77 s
+Number of classes: 1946
+Time taken: 11.79 s
+Number of classes: 1941
+Time taken: 11.79 s
+Number of classes: 1938
+Time taken: 11.80 s
+Number of classes: 1935
+Time taken: 11.80 s
+Number of classes: 1933
+Time taken: 11.82 s
+Number of classes: 1932
+Time taken: 11.82 s
+Number of classes: 1930
+Time taken: 11.83 s
+Number of classes: 1929
+Time taken: 11.84 s
+Number of classes: 1928
+Time taken: 11.87 s
+Number of classes: 1927
+Time taken: 11.88 s
+Number of classes: 1924
+Time taken: 11.89 s
+Number of classes: 1922
+Time taken: 11.90 s
+Number of classes: 1919
+Time taken: 11.91 s
+Number of classes: 1918
+Time taken: 11.92 s
+Number of classes: 1916
+Time taken: 11.93 s
+Number of classes: 1915
+Time taken: 11.93 s
+Number of classes: 1911
+Time taken: 11.94 s
+Number of classes: 1910
+Time taken: 11.95 s
+Number of classes: 1908
+Time taken: 11.96 s
+Number of classes: 1904
+Time taken: 11.96 s
+Number of classes: 1903
+Time taken: 11.97 s
+Number of classes: 1902
+Time taken: 11.97 s
+Number of classes: 1900
+Time taken: 11.98 s
+Number of classes: 1897
+Time taken: 11.99 s
+Number of classes: 1895
+Time taken: 12.00 s
+Number of classes: 1893
+Time taken: 12.01 s
+Number of classes: 1890
+Time taken: 12.02 s
+Number of classes: 1887
+Time taken: 12.03 s
+Number of classes: 1886
+Time taken: 12.04 s
+Number of classes: 1885
+Time taken: 12.05 s
+Number of classes: 1884
+Time taken: 12.05 s
+Number of classes: 1883
+Time taken: 12.06 s
+Number of classes: 1881
+Time taken: 12.07 s
+Number of classes: 1880
+Time taken: 12.09 s
+Number of classes: 1879
+Time taken: 12.09 s
+Number of classes: 1878
+Time taken: 12.11 s
+Number of classes: 1875
+Time taken: 12.11 s
+Number of classes: 1874
+Time taken: 12.12 s
+Number of classes: 1872
+Time taken: 12.13 s
+Number of classes: 1870
+Time taken: 12.15 s
+Number of classes: 1868
+Time taken: 12.16 s
+Number of classes: 1867
+Time taken: 12.17 s
+Number of classes: 1865
+Time taken: 12.18 s
+Number of classes: 1864
+Time taken: 12.19 s
+Number of classes: 1862
+Time taken: 12.19 s
+Number of classes: 1861
+Time taken: 12.20 s
+Number of classes: 1860
+Time taken: 12.22 s
+Number of classes: 1859
+Time taken: 12.24 s
+Number of classes: 1858
+Time taken: 12.24 s
+Number of classes: 1855
+Time taken: 12.25 s
+Number of classes: 1854
+Time taken: 12.26 s
+Number of classes: 1851
+Time taken: 12.29 s
+Number of classes: 1849
+Time taken: 12.30 s
+Number of classes: 1848
+Time taken: 12.31 s
+Number of classes: 1847
+Time taken: 12.32 s
+Number of classes: 1845
+Time taken: 12.33 s
+Number of classes: 1843
+Time taken: 12.34 s
+Number of classes: 1841
+Time taken: 12.36 s
+Number of classes: 1840
+Time taken: 12.37 s
+Number of classes: 1837
+Time taken: 12.38 s
+Number of classes: 1836
+Time taken: 12.39 s
+Number of classes: 1835
+Time taken: 12.39 s
+Number of classes: 1833
+Time taken: 12.41 s
+Number of classes: 1832
+Time taken: 12.42 s
+Number of classes: 1831
+Time taken: 12.42 s
+Number of classes: 1830
+Time taken: 12.46 s
+Number of classes: 1828
+Time taken: 12.49 s
+Number of classes: 1826
+Time taken: 12.50 s
+Number of classes: 1824
+Time taken: 12.51 s
+Number of classes: 1823
+Time taken: 12.52 s
+Number of classes: 1822
+Time taken: 12.53 s
+Number of classes: 1821
+Time taken: 12.54 s
+Number of classes: 1820
+Time taken: 12.56 s
+Number of classes: 1818
+Time taken: 12.56 s
+Number of classes: 1816
+Time taken: 12.58 s
+Number of classes: 1815
+Time taken: 12.58 s
+Number of classes: 1814
+Time taken: 12.61 s
+Number of classes: 1812
+Time taken: 12.62 s
+Number of classes: 1811
+Time taken: 12.63 s
+Number of classes: 1809
+Time taken: 12.63 s
+Number of classes: 1808
+Time taken: 12.64 s
+Number of classes: 1807
+Time taken: 12.65 s
+Number of classes: 1806
+Time taken: 12.65 s
+Number of classes: 1804
+Time taken: 12.66 s
+Number of classes: 1803
+Time taken: 12.67 s
+Number of classes: 1802
+Time taken: 12.68 s
+Number of classes: 1801
+Time taken: 12.68 s
+Number of classes: 1799
+Time taken: 12.69 s
+Number of classes: 1798
+Time taken: 12.70 s
+Number of classes: 1797
+Time taken: 12.71 s
+Number of classes: 1795
+Time taken: 12.73 s
+Number of classes: 1791
+Time taken: 12.75 s
+Number of classes: 1789
+Time taken: 12.76 s
+Number of classes: 1788
+Time taken: 12.79 s
+Number of classes: 1787
+Time taken: 12.79 s
+Number of classes: 1786
+Time taken: 12.81 s
+Number of classes: 1785
+Time taken: 12.82 s
+Number of classes: 1784
+Time taken: 12.82 s
+Number of classes: 1782
+Time taken: 12.83 s
+Number of classes: 1779
+Time taken: 12.84 s
+Number of classes: 1777
+Time taken: 12.85 s
+Number of classes: 1776
+Time taken: 12.87 s
+Number of classes: 1773
+Time taken: 12.87 s
+Number of classes: 1772
+Time taken: 12.89 s
+Number of classes: 1769
+Time taken: 12.89 s
+Number of classes: 1768
+Time taken: 12.90 s
+Number of classes: 1767
+Time taken: 12.91 s
+Number of classes: 1766
+Time taken: 12.91 s
+Number of classes: 1765
+Time taken: 12.93 s
+Number of classes: 1763
+Time taken: 12.93 s
+Number of classes: 1760
+Time taken: 12.94 s
+Number of classes: 1758
+Time taken: 12.95 s
+Number of classes: 1757
+Time taken: 12.96 s
+Number of classes: 1753
+Time taken: 12.97 s
+Number of classes: 1752
+Time taken: 12.98 s
+Number of classes: 1750
+Time taken: 12.99 s
+Number of classes: 1749
+Time taken: 13.00 s
+Number of classes: 1747
+Time taken: 13.01 s
+Number of classes: 1746
+Time taken: 13.02 s
+Number of classes: 1745
+Time taken: 13.03 s
+Number of classes: 1743
+Time taken: 13.04 s
+Number of classes: 1741
+Time taken: 13.07 s
+Number of classes: 1740
+Time taken: 13.08 s
+Number of classes: 1739
+Time taken: 13.09 s
+Number of classes: 1738
+Time taken: 13.09 s
+Number of classes: 1737
+Time taken: 13.11 s
+Number of classes: 1736
+Time taken: 13.11 s
+Number of classes: 1735
+Time taken: 13.12 s
+Number of classes: 1733
+Time taken: 13.14 s
+Number of classes: 1731
+Time taken: 13.15 s
+Number of classes: 1730
+Time taken: 13.16 s
+Number of classes: 1728
+Time taken: 13.17 s
+Number of classes: 1727
+Time taken: 13.18 s
+Number of classes: 1725
+Time taken: 13.19 s
+Number of classes: 1724
+Time taken: 13.20 s
+Number of classes: 1723
+Time taken: 13.22 s
+Number of classes: 1721
+Time taken: 13.24 s
+Number of classes: 1720
+Time taken: 13.24 s
+Number of classes: 1719
+Time taken: 13.27 s
+Number of classes: 1718
+Time taken: 13.29 s
+Number of classes: 1717
+Time taken: 13.31 s
+Number of classes: 1716
+Time taken: 13.31 s
+Number of classes: 1715
+Time taken: 13.33 s
+Number of classes: 1713
+Time taken: 13.35 s
+Number of classes: 1711
+Time taken: 13.38 s
+Number of classes: 1710
+Time taken: 13.39 s
+Number of classes: 1709
+Time taken: 13.41 s
+Number of classes: 1707
+Time taken: 13.41 s
+Number of classes: 1706
+Time taken: 13.45 s
+Number of classes: 1704
+Time taken: 13.47 s
+Number of classes: 1703
+Time taken: 13.51 s
+Number of classes: 1701
+Time taken: 13.51 s
+Number of classes: 1699
+Time taken: 13.52 s
+Number of classes: 1698
+Time taken: 13.55 s
+Number of classes: 1695
+Time taken: 13.55 s
+Number of classes: 1694
+Time taken: 13.60 s
+Number of classes: 1692
+Time taken: 13.62 s
+Number of classes: 1690
+Time taken: 13.62 s
+Number of classes: 1689
+Time taken: 13.63 s
+Number of classes: 1687
+Time taken: 13.64 s
+Number of classes: 1686
+Time taken: 13.64 s
+Number of classes: 1685
+Time taken: 13.67 s
+Number of classes: 1684
+Time taken: 13.67 s
+Number of classes: 1683
+Time taken: 13.69 s
+Number of classes: 1682
+Time taken: 13.70 s
+Number of classes: 1681
+Time taken: 13.71 s
+Number of classes: 1679
+Time taken: 13.72 s
+Number of classes: 1675
+Time taken: 13.73 s
+Number of classes: 1673
+Time taken: 13.74 s
+Number of classes: 1672
+Time taken: 13.75 s
+Number of classes: 1671
+Time taken: 13.76 s
+Number of classes: 1669
+Time taken: 13.76 s
+Number of classes: 1668
+Time taken: 13.77 s
+Number of classes: 1667
+Time taken: 13.78 s
+Number of classes: 1666
+Time taken: 13.79 s
+Number of classes: 1665
+Time taken: 13.80 s
+Number of classes: 1664
+Time taken: 13.81 s
+Number of classes: 1663
+Time taken: 13.82 s
+Number of classes: 1662
+Time taken: 13.82 s
+Number of classes: 1660
+Time taken: 13.84 s
+Number of classes: 1659
+Time taken: 13.85 s
+Number of classes: 1658
+Time taken: 13.86 s
+Number of classes: 1655
+Time taken: 13.87 s
+Number of classes: 1653
+Time taken: 13.87 s
+Number of classes: 1652
+Time taken: 13.88 s
+Number of classes: 1649
+Time taken: 13.89 s
+Number of classes: 1648
+Time taken: 13.90 s
+Number of classes: 1647
+Time taken: 13.91 s
+Number of classes: 1646
+Time taken: 13.92 s
+Number of classes: 1645
+Time taken: 13.93 s
+Number of classes: 1642
+Time taken: 13.94 s
+Number of classes: 1641
+Time taken: 13.94 s
+Number of classes: 1640
+Time taken: 13.95 s
+Number of classes: 1639
+Time taken: 13.97 s
+Number of classes: 1637
+Time taken: 13.98 s
+Number of classes: 1636
+Time taken: 13.99 s
+Number of classes: 1635
+Time taken: 13.99 s
+Number of classes: 1634
+Time taken: 14.01 s
+Number of classes: 1632
+Time taken: 14.02 s
+Number of classes: 1631
+Time taken: 14.02 s
+Number of classes: 1630
+Time taken: 14.03 s
+Number of classes: 1628
+Time taken: 14.03 s
+Number of classes: 1627
+Time taken: 14.04 s
+Number of classes: 1626
+Time taken: 14.05 s
+Number of classes: 1624
+Time taken: 14.05 s
+Number of classes: 1623
+Time taken: 14.07 s
+Number of classes: 1622
+Time taken: 14.08 s
+Number of classes: 1620
+Time taken: 14.09 s
+Number of classes: 1619
+Time taken: 14.10 s
+Number of classes: 1618
+Time taken: 14.10 s
+Number of classes: 1617
+Time taken: 14.11 s
+Number of classes: 1616
+Time taken: 14.12 s
+Number of classes: 1614
+Time taken: 14.13 s
+Number of classes: 1612
+Time taken: 14.14 s
+Number of classes: 1610
+Time taken: 14.15 s
+Number of classes: 1609
+Time taken: 14.16 s
+Number of classes: 1608
+Time taken: 14.17 s
+Number of classes: 1606
+Time taken: 14.17 s
+Number of classes: 1605
+Time taken: 14.19 s
+Number of classes: 1604
+Time taken: 14.19 s
+Number of classes: 1603
+Time taken: 14.20 s
+Number of classes: 1601
+Time taken: 14.20 s
+Number of classes: 1598
+Time taken: 14.21 s
+Number of classes: 1595
+Time taken: 14.22 s
+Number of classes: 1594
+Time taken: 14.22 s
+Number of classes: 1593
+Time taken: 14.27 s
+Number of classes: 1592
+Time taken: 14.29 s
+Number of classes: 1591
+Time taken: 14.30 s
+Number of classes: 1590
+Time taken: 14.31 s
+Number of classes: 1589
+Time taken: 14.32 s
+Number of classes: 1588
+Time taken: 14.34 s
+Number of classes: 1587
+Time taken: 14.35 s
+Number of classes: 1586
+Time taken: 14.35 s
+Number of classes: 1585
+Time taken: 14.37 s
+Number of classes: 1584
+Time taken: 14.38 s
+Number of classes: 1583
+Time taken: 14.39 s
+Number of classes: 1582
+Time taken: 14.40 s
+Number of classes: 1581
+Time taken: 14.41 s
+Number of classes: 1580
+Time taken: 14.43 s
+Number of classes: 1578
+Time taken: 14.44 s
+Number of classes: 1577
+Time taken: 14.45 s
+Number of classes: 1575
+Time taken: 14.46 s
+Number of classes: 1574
+Time taken: 14.47 s
+Number of classes: 1573
+Time taken: 14.47 s
+Number of classes: 1572
+Time taken: 14.48 s
+Number of classes: 1570
+Time taken: 14.48 s
+Number of classes: 1569
+Time taken: 14.49 s
+Number of classes: 1567
+Time taken: 14.51 s
+Number of classes: 1564
+Time taken: 14.51 s
+Number of classes: 1563
+Time taken: 14.53 s
+Number of classes: 1562
+Time taken: 14.53 s
+Number of classes: 1561
+Time taken: 14.54 s
+Number of classes: 1560
+Time taken: 14.54 s
+Number of classes: 1559
+Time taken: 14.55 s
+Number of classes: 1558
+Time taken: 14.56 s
+Number of classes: 1557
+Time taken: 14.57 s
+Number of classes: 1556
+Time taken: 14.57 s
+Number of classes: 1555
+Time taken: 14.58 s
+Number of classes: 1552
+Time taken: 14.59 s
+Number of classes: 1551
+Time taken: 14.60 s
+Number of classes: 1550
+Time taken: 14.61 s
+Number of classes: 1546
+Time taken: 14.63 s
+Number of classes: 1545
+Time taken: 14.63 s
+Number of classes: 1544
+Time taken: 14.65 s
+Number of classes: 1543
+Time taken: 14.67 s
+Number of classes: 1542
+Time taken: 14.67 s
+Number of classes: 1541
+Time taken: 14.68 s
+Number of classes: 1540
+Time taken: 14.68 s
+Number of classes: 1539
+Time taken: 14.69 s
+Number of classes: 1538
+Time taken: 14.70 s
+Number of classes: 1537
+Time taken: 14.73 s
+Number of classes: 1536
+Time taken: 14.74 s
+Number of classes: 1535
+Time taken: 14.74 s
+Number of classes: 1534
+Time taken: 14.75 s
+Number of classes: 1533
+Time taken: 14.75 s
+Number of classes: 1532
+Time taken: 14.77 s
+Number of classes: 1531
+Time taken: 14.79 s
+Number of classes: 1530
+Time taken: 14.79 s
+Number of classes: 1529
+Time taken: 14.83 s
+Number of classes: 1528
+Time taken: 14.85 s
+Number of classes: 1527
+Time taken: 14.85 s
+Number of classes: 1526
+Time taken: 14.86 s
+Number of classes: 1525
+Time taken: 14.90 s
+Number of classes: 1524
+Time taken: 14.90 s
+Number of classes: 1523
+Time taken: 14.93 s
+Number of classes: 1522
+Time taken: 14.93 s
+Number of classes: 1521
+Time taken: 14.95 s
+Number of classes: 1519
+Time taken: 14.96 s
+Number of classes: 1518
+Time taken: 14.97 s
+Number of classes: 1517
+Time taken: 14.99 s
+Number of classes: 1516
+Time taken: 15.00 s
+Number of classes: 1515
+Time taken: 15.02 s
+Number of classes: 1512
+Time taken: 15.03 s
+Number of classes: 1511
+Time taken: 15.05 s
+Number of classes: 1510
+Time taken: 15.06 s
+Number of classes: 1509
+Time taken: 15.07 s
+Number of classes: 1508
+Time taken: 15.07 s
+Number of classes: 1507
+Time taken: 15.08 s
+Number of classes: 1506
+Time taken: 15.10 s
+Number of classes: 1505
+Time taken: 15.11 s
+Number of classes: 1502
+Time taken: 15.13 s
+Number of classes: 1501
+Time taken: 15.13 s
+Number of classes: 1499
+Time taken: 15.14 s
+Number of classes: 1498
+Time taken: 15.14 s
+Number of classes: 1497
+Time taken: 15.16 s
+Number of classes: 1496
+Time taken: 15.18 s
+Number of classes: 1495
+Time taken: 15.20 s
+Number of classes: 1493
+Time taken: 15.20 s
+Number of classes: 1492
+Time taken: 15.21 s
+Number of classes: 1490
+Time taken: 15.21 s
+Number of classes: 1489
+Time taken: 15.22 s
+Number of classes: 1488
+Time taken: 15.24 s
+Number of classes: 1487
+Time taken: 15.25 s
+Number of classes: 1486
+Time taken: 15.26 s
+Number of classes: 1485
+Time taken: 15.31 s
+Number of classes: 1483
+Time taken: 15.32 s
+Number of classes: 1481
+Time taken: 15.33 s
+Number of classes: 1480
+Time taken: 15.34 s
+Number of classes: 1479
+Time taken: 15.35 s
+Number of classes: 1478
+Time taken: 15.39 s
+Number of classes: 1477
+Time taken: 15.40 s
+Number of classes: 1476
+Time taken: 15.41 s
+Number of classes: 1473
+Time taken: 15.42 s
+Number of classes: 1472
+Time taken: 15.44 s
+Number of classes: 1471
+Time taken: 15.44 s
+Number of classes: 1470
+Time taken: 15.46 s
+Number of classes: 1469
+Time taken: 15.48 s
+Number of classes: 1468
+Time taken: 15.49 s
+Number of classes: 1467
+Time taken: 15.50 s
+Number of classes: 1465
+Time taken: 15.51 s
+Number of classes: 1463
+Time taken: 15.53 s
+Number of classes: 1462
+Time taken: 15.56 s
+Number of classes: 1461
+Time taken: 15.59 s
+Number of classes: 1459
+Time taken: 15.60 s
+Number of classes: 1458
+Time taken: 15.62 s
+Number of classes: 1456
+Time taken: 15.63 s
+Number of classes: 1455
+Time taken: 15.66 s
+Number of classes: 1454
+Time taken: 15.68 s
+Number of classes: 1453
+Time taken: 15.69 s
+Number of classes: 1451
+Time taken: 15.70 s
+Number of classes: 1450
+Time taken: 15.71 s
+Number of classes: 1449
+Time taken: 15.73 s
+Number of classes: 1448
+Time taken: 15.77 s
+Number of classes: 1447
+Time taken: 15.78 s
+Number of classes: 1446
+Time taken: 15.80 s
+Number of classes: 1444
+Time taken: 15.81 s
+Number of classes: 1441
+Time taken: 15.81 s
+Number of classes: 1440
+Time taken: 15.86 s
+Number of classes: 1437
+Time taken: 15.86 s
+Number of classes: 1436
+Time taken: 15.87 s
+Number of classes: 1435
+Time taken: 15.88 s
+Number of classes: 1433
+Time taken: 15.89 s
+Number of classes: 1432
+Time taken: 15.90 s
+Number of classes: 1429
+Time taken: 15.91 s
+Number of classes: 1428
+Time taken: 15.94 s
+Number of classes: 1427
+Time taken: 15.94 s
+Number of classes: 1426
+Time taken: 15.95 s
+Number of classes: 1425
+Time taken: 15.96 s
+Number of classes: 1424
+Time taken: 15.97 s
+Number of classes: 1423
+Time taken: 15.99 s
+Number of classes: 1422
+Time taken: 16.00 s
+Number of classes: 1420
+Time taken: 16.01 s
+Number of classes: 1419
+Time taken: 16.02 s
+Number of classes: 1418
+Time taken: 16.05 s
+Number of classes: 1417
+Time taken: 16.06 s
+Number of classes: 1416
+Time taken: 16.09 s
+Number of classes: 1414
+Time taken: 16.11 s
+Number of classes: 1412
+Time taken: 16.13 s
+Number of classes: 1410
+Time taken: 16.14 s
+Number of classes: 1408
+Time taken: 16.15 s
+Number of classes: 1407
+Time taken: 16.15 s
+Number of classes: 1406
+Time taken: 16.17 s
+Number of classes: 1405
+Time taken: 16.17 s
+Number of classes: 1403
+Time taken: 16.18 s
+Number of classes: 1402
+Time taken: 16.20 s
+Number of classes: 1400
+Time taken: 16.20 s
+Number of classes: 1399
+Time taken: 16.23 s
+Number of classes: 1398
+Time taken: 16.24 s
+Number of classes: 1396
+Time taken: 16.25 s
+Number of classes: 1395
+Time taken: 16.28 s
+Number of classes: 1394
+Time taken: 16.29 s
+Number of classes: 1393
+Time taken: 16.30 s
+Number of classes: 1391
+Time taken: 16.31 s
+Number of classes: 1390
+Time taken: 16.31 s
+Number of classes: 1389
+Time taken: 16.33 s
+Number of classes: 1388
+Time taken: 16.34 s
+Number of classes: 1386
+Time taken: 16.35 s
+Number of classes: 1384
+Time taken: 16.39 s
+Number of classes: 1382
+Time taken: 16.40 s
+Number of classes: 1381
+Time taken: 16.41 s
+Number of classes: 1378
+Time taken: 16.42 s
+Number of classes: 1377
+Time taken: 16.43 s
+Number of classes: 1376
+Time taken: 16.44 s
+Number of classes: 1375
+Time taken: 16.45 s
+Number of classes: 1373
+Time taken: 16.47 s
+Number of classes: 1372
+Time taken: 16.49 s
+Number of classes: 1370
+Time taken: 16.53 s
+Number of classes: 1369
+Time taken: 16.56 s
+Number of classes: 1368
+Time taken: 16.57 s
+Number of classes: 1367
+Time taken: 16.57 s
+Number of classes: 1366
+Time taken: 16.60 s
+Number of classes: 1365
+Time taken: 16.62 s
+Number of classes: 1363
+Time taken: 16.62 s
+Number of classes: 1362
+Time taken: 16.66 s
+Number of classes: 1361
+Time taken: 16.67 s
+Number of classes: 1360
+Time taken: 16.68 s
+Number of classes: 1359
+Time taken: 16.75 s
+Number of classes: 1358
+Time taken: 16.77 s
+Number of classes: 1357
+Time taken: 16.79 s
+Number of classes: 1355
+Time taken: 16.81 s
+Number of classes: 1354
+Time taken: 16.82 s
+Number of classes: 1353
+Time taken: 16.83 s
+Number of classes: 1352
+Time taken: 16.84 s
+Number of classes: 1350
+Time taken: 16.84 s
+Number of classes: 1349
+Time taken: 16.89 s
+Number of classes: 1347
+Time taken: 16.91 s
+Number of classes: 1346
+Time taken: 16.91 s
+Number of classes: 1345
+Time taken: 16.94 s
+Number of classes: 1344
+Time taken: 16.96 s
+Number of classes: 1343
+Time taken: 16.97 s
+Number of classes: 1342
+Time taken: 16.97 s
+Number of classes: 1340
+Time taken: 16.98 s
+Number of classes: 1339
+Time taken: 17.00 s
+Number of classes: 1338
+Time taken: 17.01 s
+Number of classes: 1337
+Time taken: 17.01 s
+Number of classes: 1336
+Time taken: 17.02 s
+Number of classes: 1335
+Time taken: 17.03 s
+Number of classes: 1334
+Time taken: 17.04 s
+Number of classes: 1333
+Time taken: 17.06 s
+Number of classes: 1332
+Time taken: 17.10 s
+Number of classes: 1331
+Time taken: 17.15 s
+Number of classes: 1330
+Time taken: 17.19 s
+Number of classes: 1329
+Time taken: 17.25 s
+Number of classes: 1328
+Time taken: 17.26 s
+Number of classes: 1327
+Time taken: 17.28 s
+Number of classes: 1326
+Time taken: 17.32 s
+Number of classes: 1325
+Time taken: 17.33 s
+Number of classes: 1324
+Time taken: 17.38 s
+Number of classes: 1323
+Time taken: 17.42 s
+Number of classes: 1322
+Time taken: 17.42 s
+Number of classes: 1321
+Time taken: 17.45 s
+Number of classes: 1320
+Time taken: 17.45 s
+Number of classes: 1319
+Time taken: 17.46 s
+Number of classes: 1318
+Time taken: 17.49 s
+Number of classes: 1317
+Time taken: 17.51 s
+Number of classes: 1316
+Time taken: 17.54 s
+Number of classes: 1315
+Time taken: 17.56 s
+Number of classes: 1313
+Time taken: 17.57 s
+Number of classes: 1312
+Time taken: 17.58 s
+Number of classes: 1310
+Time taken: 17.61 s
+Number of classes: 1309
+Time taken: 17.62 s
+Number of classes: 1308
+Time taken: 17.65 s
+Number of classes: 1306
+Time taken: 17.66 s
+Number of classes: 1304
+Time taken: 17.74 s
+Number of classes: 1302
+Time taken: 17.77 s
+Number of classes: 1301
+Time taken: 17.77 s
+Number of classes: 1300
+Time taken: 17.78 s
+Number of classes: 1299
+Time taken: 17.78 s
+Number of classes: 1297
+Time taken: 17.80 s
+Number of classes: 1295
+Time taken: 17.81 s
+Number of classes: 1294
+Time taken: 17.82 s
+Number of classes: 1293
+Time taken: 17.83 s
+Number of classes: 1291
+Time taken: 17.84 s
+Number of classes: 1290
+Time taken: 17.89 s
+Number of classes: 1289
+Time taken: 17.90 s
+Number of classes: 1288
+Time taken: 17.92 s
+Number of classes: 1287
+Time taken: 17.94 s
+Number of classes: 1285
+Time taken: 17.97 s
+Number of classes: 1284
+Time taken: 17.97 s
+Number of classes: 1283
+Time taken: 17.99 s
+Number of classes: 1282
+Time taken: 17.99 s
+Number of classes: 1280
+Time taken: 18.01 s
+Number of classes: 1277
+Time taken: 18.01 s
+Number of classes: 1275
+Time taken: 18.03 s
+Number of classes: 1274
+Time taken: 18.08 s
+Number of classes: 1273
+Time taken: 18.13 s
+Number of classes: 1271
+Time taken: 18.18 s
+Number of classes: 1269
+Time taken: 18.20 s
+Number of classes: 1268
+Time taken: 18.21 s
+Number of classes: 1266
+Time taken: 18.22 s
+Number of classes: 1265
+Time taken: 18.24 s
+Number of classes: 1264
+Time taken: 18.26 s
+Number of classes: 1263
+Time taken: 18.27 s
+Number of classes: 1262
+Time taken: 18.29 s
+Number of classes: 1261
+Time taken: 18.31 s
+Number of classes: 1260
+Time taken: 18.34 s
+Number of classes: 1259
+Time taken: 18.35 s
+Number of classes: 1258
+Time taken: 18.44 s
+Number of classes: 1257
+Time taken: 18.44 s
+Number of classes: 1256
+Time taken: 18.45 s
+Number of classes: 1255
+Time taken: 18.47 s
+Number of classes: 1253
+Time taken: 18.52 s
+Number of classes: 1251
+Time taken: 18.54 s
+Number of classes: 1250
+Time taken: 18.55 s
+Number of classes: 1249
+Time taken: 18.58 s
+Number of classes: 1248
+Time taken: 18.60 s
+Number of classes: 1246
+Time taken: 18.61 s
+Number of classes: 1245
+Time taken: 18.62 s
+Number of classes: 1243
+Time taken: 18.66 s
+Number of classes: 1241
+Time taken: 18.69 s
+Number of classes: 1240
+Time taken: 18.72 s
+Number of classes: 1237
+Time taken: 18.73 s
+Number of classes: 1236
+Time taken: 18.77 s
+Number of classes: 1235
+Time taken: 18.78 s
+Number of classes: 1234
+Time taken: 18.87 s
+Number of classes: 1233
+Time taken: 18.87 s
+Number of classes: 1232
+Time taken: 18.88 s
+Number of classes: 1230
+Time taken: 18.93 s
+Number of classes: 1229
+Time taken: 18.94 s
+Number of classes: 1228
+Time taken: 18.97 s
+Number of classes: 1227
+Time taken: 18.99 s
+Number of classes: 1226
+Time taken: 19.02 s
+Number of classes: 1225
+Time taken: 19.02 s
+Number of classes: 1224
+Time taken: 19.03 s
+Number of classes: 1223
+Time taken: 19.03 s
+Number of classes: 1222
+Time taken: 19.04 s
+Number of classes: 1220
+Time taken: 19.06 s
+Number of classes: 1219
+Time taken: 19.08 s
+Number of classes: 1218
+Time taken: 19.15 s
+Number of classes: 1217
+Time taken: 19.15 s
+Number of classes: 1216
+Time taken: 19.16 s
+Number of classes: 1215
+Time taken: 19.17 s
+Number of classes: 1214
+Time taken: 19.19 s
+Number of classes: 1213
+Time taken: 19.20 s
+Number of classes: 1212
+Time taken: 19.21 s
+Number of classes: 1211
+Time taken: 19.22 s
+Number of classes: 1210
+Time taken: 19.24 s
+Number of classes: 1209
+Time taken: 19.28 s
+Number of classes: 1207
+Time taken: 19.30 s
+Number of classes: 1206
+Time taken: 19.34 s
+Number of classes: 1205
+Time taken: 19.40 s
+Number of classes: 1204
+Time taken: 19.46 s
+Number of classes: 1203
+Time taken: 19.47 s
+Number of classes: 1202
+Time taken: 19.49 s
+Number of classes: 1201
+Time taken: 19.51 s
+Number of classes: 1199
+Time taken: 19.55 s
+Number of classes: 1197
+Time taken: 19.56 s
+Number of classes: 1196
+Time taken: 19.57 s
+Number of classes: 1195
+Time taken: 19.63 s
+Number of classes: 1194
+Time taken: 19.65 s
+Number of classes: 1193
+Time taken: 19.67 s
+Number of classes: 1192
+Time taken: 19.71 s
+Number of classes: 1191
+Time taken: 19.71 s
+Number of classes: 1190
+Time taken: 19.73 s
+Number of classes: 1189
+Time taken: 19.76 s
+Number of classes: 1188
+Time taken: 19.77 s
+Number of classes: 1187
+Time taken: 19.77 s
+Number of classes: 1186
+Time taken: 19.79 s
+Number of classes: 1185
+Time taken: 19.84 s
+Number of classes: 1184
+Time taken: 19.86 s
+Number of classes: 1183
+Time taken: 19.93 s
+Number of classes: 1181
+Time taken: 19.96 s
+Number of classes: 1180
+Time taken: 20.01 s
+Number of classes: 1178
+Dataset generation time limit reached: 20 s.
+Number of classes remaining: 1178.
+Time taken: 0.00 s
+Number of classes: 3840
+Time taken: 0.02 s
+Number of classes: 3832
+Time taken: 0.02 s
+Number of classes: 3807
+Time taken: 0.03 s
+Number of classes: 3791
+Time taken: 0.04 s
+Number of classes: 3762
+Time taken: 0.05 s
+Number of classes: 3728
+Time taken: 0.06 s
+Number of classes: 3693
+Time taken: 0.07 s
+Number of classes: 3649
+Time taken: 0.07 s
+Number of classes: 3607
+Time taken: 0.08 s
+Number of classes: 3562
+Time taken: 0.09 s
+Number of classes: 3512
+Time taken: 0.10 s
+Number of classes: 3460
+Time taken: 0.10 s
+Number of classes: 3400
+Time taken: 0.11 s
+Number of classes: 3353
+Time taken: 0.12 s
+Number of classes: 3322
+Time taken: 0.13 s
+Number of classes: 3270
+Time taken: 0.13 s
+Number of classes: 3214
+Time taken: 0.14 s
+Number of classes: 3174
+Time taken: 0.15 s
+Number of classes: 3118
+Time taken: 0.15 s
+Number of classes: 3062
+Time taken: 0.16 s
+Number of classes: 3009
+Time taken: 0.17 s
+Number of classes: 2960
+Time taken: 0.17 s
+Number of classes: 2919
+Time taken: 0.18 s
+Number of classes: 2882
+Time taken: 0.18 s
+Number of classes: 2845
+Time taken: 0.19 s
+Number of classes: 2802
+Time taken: 0.20 s
+Number of classes: 2763
+Time taken: 0.20 s
+Number of classes: 2730
+Time taken: 0.21 s
+Number of classes: 2702
+Time taken: 0.22 s
+Number of classes: 2658
+Time taken: 0.22 s
+Number of classes: 2617
+Time taken: 0.23 s
+Number of classes: 2582
+Time taken: 0.23 s
+Number of classes: 2548
+Time taken: 0.24 s
+Number of classes: 2509
+Time taken: 0.24 s
+Number of classes: 2477
+Time taken: 0.25 s
+Number of classes: 2438
+Time taken: 0.26 s
+Number of classes: 2404
+Time taken: 0.26 s
+Number of classes: 2368
+Time taken: 0.27 s
+Number of classes: 2332
+Time taken: 0.27 s
+Number of classes: 2299
+Time taken: 0.28 s
+Number of classes: 2262
+Time taken: 0.28 s
+Number of classes: 2243
+Time taken: 0.29 s
+Number of classes: 2218
+Time taken: 0.29 s
+Number of classes: 2190
+Time taken: 0.30 s
+Number of classes: 2156
+Time taken: 0.30 s
+Number of classes: 2125
+Time taken: 0.31 s
+Number of classes: 2104
+Time taken: 0.31 s
+Number of classes: 2077
+Time taken: 0.32 s
+Number of classes: 2059
+Time taken: 0.32 s
+Number of classes: 2036
+Time taken: 0.32 s
+Number of classes: 2012
+Time taken: 0.33 s
+Number of classes: 1993
+Time taken: 0.33 s
+Number of classes: 1972
+Time taken: 0.34 s
+Number of classes: 1954
+Time taken: 0.34 s
+Number of classes: 1928
+Time taken: 0.35 s
+Number of classes: 1916
+Time taken: 0.35 s
+Number of classes: 1897
+Time taken: 0.36 s
+Number of classes: 1883
+Time taken: 0.36 s
+Number of classes: 1865
+Time taken: 0.37 s
+Number of classes: 1853
+Time taken: 0.37 s
+Number of classes: 1842
+Time taken: 0.37 s
+Number of classes: 1827
+Time taken: 0.38 s
+Number of classes: 1808
+Time taken: 0.38 s
+Number of classes: 1798
+Time taken: 0.39 s
+Number of classes: 1786
+Time taken: 0.39 s
+Number of classes: 1769
+Time taken: 0.40 s
+Number of classes: 1759
+Time taken: 0.40 s
+Number of classes: 1744
+Time taken: 0.40 s
+Number of classes: 1732
+Time taken: 0.41 s
+Number of classes: 1722
+Time taken: 0.41 s
+Number of classes: 1711
+Time taken: 0.42 s
+Number of classes: 1700
+Time taken: 0.42 s
+Number of classes: 1680
+Time taken: 0.42 s
+Number of classes: 1667
+Time taken: 0.43 s
+Number of classes: 1655
+Time taken: 0.43 s
+Number of classes: 1636
+Time taken: 0.44 s
+Number of classes: 1616
+Time taken: 0.44 s
+Number of classes: 1605
+Time taken: 0.44 s
+Number of classes: 1594
+Time taken: 0.45 s
+Number of classes: 1587
+Time taken: 0.45 s
+Number of classes: 1569
+Time taken: 0.46 s
+Number of classes: 1556
+Time taken: 0.46 s
+Number of classes: 1542
+Time taken: 0.46 s
+Number of classes: 1529
+Time taken: 0.47 s
+Number of classes: 1521
+Time taken: 0.47 s
+Number of classes: 1510
+Time taken: 0.47 s
+Number of classes: 1497
+Time taken: 0.48 s
+Number of classes: 1484
+Time taken: 0.48 s
+Number of classes: 1477
+Time taken: 0.48 s
+Number of classes: 1465
+Time taken: 0.49 s
+Number of classes: 1453
+Time taken: 0.49 s
+Number of classes: 1441
+Time taken: 0.50 s
+Number of classes: 1429
+Time taken: 0.50 s
+Number of classes: 1422
+Time taken: 0.50 s
+Number of classes: 1410
+Time taken: 0.51 s
+Number of classes: 1396
+Time taken: 0.51 s
+Number of classes: 1386
+Time taken: 0.51 s
+Number of classes: 1374
+Time taken: 0.52 s
+Number of classes: 1365
+Time taken: 0.52 s
+Number of classes: 1354
+Time taken: 0.52 s
+Number of classes: 1346
+Time taken: 0.53 s
+Number of classes: 1339
+Time taken: 0.53 s
+Number of classes: 1327
+Time taken: 0.53 s
+Number of classes: 1318
+Time taken: 0.54 s
+Number of classes: 1312
+Time taken: 0.54 s
+Number of classes: 1306
+Time taken: 0.54 s
+Number of classes: 1299
+Time taken: 0.55 s
+Number of classes: 1287
+Time taken: 0.55 s
+Number of classes: 1278
+Time taken: 0.55 s
+Number of classes: 1272
+Time taken: 0.56 s
+Number of classes: 1265
+Time taken: 0.56 s
+Number of classes: 1259
+Time taken: 0.56 s
+Number of classes: 1250
+Time taken: 0.57 s
+Number of classes: 1242
+Time taken: 0.57 s
+Number of classes: 1238
+Time taken: 0.57 s
+Number of classes: 1231
+Time taken: 0.58 s
+Number of classes: 1228
+Time taken: 0.58 s
+Number of classes: 1222
+Time taken: 0.58 s
+Number of classes: 1217
+Time taken: 0.59 s
+Number of classes: 1212
+Time taken: 0.59 s
+Number of classes: 1207
+Time taken: 0.59 s
+Number of classes: 1206
+Time taken: 0.60 s
+Number of classes: 1197
+Time taken: 0.60 s
+Number of classes: 1185
+Time taken: 0.60 s
+Number of classes: 1183
+Time taken: 0.60 s
+Number of classes: 1176
+Time taken: 0.61 s
+Number of classes: 1174
+Time taken: 0.61 s
+Number of classes: 1171
+Time taken: 0.61 s
+Number of classes: 1167
+Time taken: 0.62 s
+Number of classes: 1160
+Time taken: 0.62 s
+Number of classes: 1152
+Time taken: 0.62 s
+Number of classes: 1149
+Time taken: 0.63 s
+Number of classes: 1141
+Time taken: 0.63 s
+Number of classes: 1139
+Time taken: 0.63 s
+Number of classes: 1135
+Time taken: 0.64 s
+Number of classes: 1128
+Time taken: 0.64 s
+Number of classes: 1123
+Time taken: 0.64 s
+Number of classes: 1116
+Time taken: 0.64 s
+Number of classes: 1111
+Time taken: 0.65 s
+Number of classes: 1107
+Time taken: 0.65 s
+Number of classes: 1104
+Time taken: 0.65 s
+Number of classes: 1102
+Time taken: 0.66 s
+Number of classes: 1100
+Time taken: 0.66 s
+Number of classes: 1091
+Time taken: 0.66 s
+Number of classes: 1088
+Time taken: 0.67 s
+Number of classes: 1082
+Time taken: 0.67 s
+Number of classes: 1078
+Time taken: 0.67 s
+Number of classes: 1073
+Time taken: 0.67 s
+Number of classes: 1071
+Time taken: 0.68 s
+Number of classes: 1068
+Time taken: 0.68 s
+Number of classes: 1067
+Time taken: 0.68 s
+Number of classes: 1064
+Time taken: 0.69 s
+Number of classes: 1056
+Time taken: 0.69 s
+Number of classes: 1049
+Time taken: 0.69 s
+Number of classes: 1044
+Time taken: 0.70 s
+Number of classes: 1039
+Time taken: 0.70 s
+Number of classes: 1036
+Time taken: 0.70 s
+Number of classes: 1027
+Time taken: 0.71 s
+Number of classes: 1021
+Time taken: 0.71 s
+Number of classes: 1018
+Time taken: 0.71 s
+Number of classes: 1013
+Time taken: 0.71 s
+Number of classes: 1010
+Time taken: 0.72 s
+Number of classes: 1005
+Time taken: 0.72 s
+Number of classes: 1002
+Time taken: 0.72 s
+Number of classes: 996
+Time taken: 0.73 s
+Number of classes: 993
+Time taken: 0.73 s
+Number of classes: 987
+Time taken: 0.73 s
+Number of classes: 983
+Time taken: 0.73 s
+Number of classes: 975
+Time taken: 0.74 s
+Number of classes: 974
+Time taken: 0.74 s
+Number of classes: 967
+Time taken: 0.74 s
+Number of classes: 961
+Time taken: 0.75 s
+Number of classes: 956
+Time taken: 0.75 s
+Number of classes: 952
+Time taken: 0.75 s
+Number of classes: 947
+Time taken: 0.75 s
+Number of classes: 942
+Time taken: 0.76 s
+Number of classes: 938
+Time taken: 0.76 s
+Number of classes: 934
+Time taken: 0.76 s
+Number of classes: 929
+Time taken: 0.76 s
+Number of classes: 927
+Time taken: 0.77 s
+Number of classes: 922
+Time taken: 0.77 s
+Number of classes: 916
+Time taken: 0.77 s
+Number of classes: 914
+Time taken: 0.77 s
+Number of classes: 912
+Time taken: 0.78 s
+Number of classes: 902
+Time taken: 0.78 s
+Number of classes: 899
+Time taken: 0.78 s
+Number of classes: 897
+Time taken: 0.79 s
+Number of classes: 895
+Time taken: 0.79 s
+Number of classes: 892
+Time taken: 0.79 s
+Number of classes: 889
+Time taken: 0.79 s
+Number of classes: 886
+Time taken: 0.80 s
+Number of classes: 881
+Time taken: 0.80 s
+Number of classes: 879
+Time taken: 0.80 s
+Number of classes: 876
+Time taken: 0.80 s
+Number of classes: 871
+Time taken: 0.81 s
+Number of classes: 870
+Time taken: 0.81 s
+Number of classes: 868
+Time taken: 0.81 s
+Number of classes: 866
+Time taken: 0.81 s
+Number of classes: 862
+Time taken: 0.82 s
+Number of classes: 860
+Time taken: 0.82 s
+Number of classes: 858
+Time taken: 0.82 s
+Number of classes: 856
+Time taken: 0.82 s
+Number of classes: 855
+Time taken: 0.83 s
+Number of classes: 853
+Time taken: 0.83 s
+Number of classes: 850
+Time taken: 0.83 s
+Number of classes: 848
+Time taken: 0.84 s
+Number of classes: 847
+Time taken: 0.84 s
+Number of classes: 846
+Time taken: 0.84 s
+Number of classes: 841
+Time taken: 0.85 s
+Number of classes: 839
+Time taken: 0.85 s
+Number of classes: 837
+Time taken: 0.85 s
+Number of classes: 835
+Time taken: 0.85 s
+Number of classes: 833
+Time taken: 0.86 s
+Number of classes: 830
+Time taken: 0.86 s
+Number of classes: 826
+Time taken: 0.86 s
+Number of classes: 824
+Time taken: 0.86 s
+Number of classes: 822
+Time taken: 0.87 s
+Number of classes: 818
+Time taken: 0.87 s
+Number of classes: 817
+Time taken: 0.87 s
+Number of classes: 810
+Time taken: 0.88 s
+Number of classes: 807
+Time taken: 0.88 s
+Number of classes: 805
+Time taken: 0.88 s
+Number of classes: 804
+Time taken: 0.88 s
+Number of classes: 803
+Time taken: 0.88 s
+Number of classes: 802
+Time taken: 0.89 s
+Number of classes: 798
+Time taken: 0.89 s
+Number of classes: 797
+Time taken: 0.89 s
+Number of classes: 796
+Time taken: 0.89 s
+Number of classes: 792
+Time taken: 0.90 s
+Number of classes: 789
+Time taken: 0.90 s
+Number of classes: 787
+Time taken: 0.90 s
+Number of classes: 786
+Time taken: 0.90 s
+Number of classes: 784
+Time taken: 0.91 s
+Number of classes: 778
+Time taken: 0.91 s
+Number of classes: 775
+Time taken: 0.91 s
+Number of classes: 773
+Time taken: 0.92 s
+Number of classes: 772
+Time taken: 0.92 s
+Number of classes: 770
+Time taken: 0.92 s
+Number of classes: 767
+Time taken: 0.92 s
+Number of classes: 762
+Time taken: 0.93 s
+Number of classes: 760
+Time taken: 0.93 s
+Number of classes: 759
+Time taken: 0.93 s
+Number of classes: 758
+Time taken: 0.94 s
+Number of classes: 756
+Time taken: 0.94 s
+Number of classes: 754
+Time taken: 0.94 s
+Number of classes: 752
+Time taken: 0.94 s
+Number of classes: 751
+Time taken: 0.95 s
+Number of classes: 749
+Time taken: 0.95 s
+Number of classes: 747
+Time taken: 0.95 s
+Number of classes: 743
+Time taken: 0.96 s
+Number of classes: 741
+Time taken: 0.96 s
+Number of classes: 739
+Time taken: 0.96 s
+Number of classes: 737
+Time taken: 0.97 s
+Number of classes: 735
+Time taken: 0.97 s
+Number of classes: 734
+Time taken: 0.97 s
+Number of classes: 732
+Time taken: 0.97 s
+Number of classes: 726
+Time taken: 0.98 s
+Number of classes: 723
+Time taken: 0.98 s
+Number of classes: 722
+Time taken: 0.98 s
+Number of classes: 720
+Time taken: 0.99 s
+Number of classes: 717
+Time taken: 0.99 s
+Number of classes: 716
+Time taken: 0.99 s
+Number of classes: 713
+Time taken: 0.99 s
+Number of classes: 709
+Time taken: 1.00 s
+Number of classes: 707
+Time taken: 1.00 s
+Number of classes: 706
+Time taken: 1.00 s
+Number of classes: 703
+Time taken: 1.00 s
+Number of classes: 698
+Time taken: 1.00 s
+Number of classes: 697
+Time taken: 1.01 s
+Number of classes: 696
+Time taken: 1.01 s
+Number of classes: 693
+Time taken: 1.01 s
+Number of classes: 691
+Time taken: 1.01 s
+Number of classes: 689
+Time taken: 1.02 s
+Number of classes: 687
+Time taken: 1.02 s
+Number of classes: 684
+Time taken: 1.02 s
+Number of classes: 683
+Time taken: 1.02 s
+Number of classes: 682
+Time taken: 1.03 s
+Number of classes: 681
+Time taken: 1.03 s
+Number of classes: 679
+Time taken: 1.03 s
+Number of classes: 675
+Time taken: 1.04 s
+Number of classes: 673
+Time taken: 1.04 s
+Number of classes: 672
+Time taken: 1.04 s
+Number of classes: 671
+Time taken: 1.04 s
+Number of classes: 670
+Time taken: 1.05 s
+Number of classes: 669
+Time taken: 1.05 s
+Number of classes: 668
+Time taken: 1.05 s
+Number of classes: 667
+Time taken: 1.05 s
+Number of classes: 666
+Time taken: 1.06 s
+Number of classes: 662
+Time taken: 1.06 s
+Number of classes: 661
+Time taken: 1.06 s
+Number of classes: 657
+Time taken: 1.06 s
+Number of classes: 656
+Time taken: 1.07 s
+Number of classes: 655
+Time taken: 1.07 s
+Number of classes: 652
+Time taken: 1.07 s
+Number of classes: 650
+Time taken: 1.07 s
+Number of classes: 648
+Time taken: 1.07 s
+Number of classes: 647
+Time taken: 1.08 s
+Number of classes: 646
+Time taken: 1.08 s
+Number of classes: 643
+Time taken: 1.08 s
+Number of classes: 639
+Time taken: 1.09 s
+Number of classes: 636
+Time taken: 1.09 s
+Number of classes: 634
+Time taken: 1.09 s
+Number of classes: 632
+Time taken: 1.09 s
+Number of classes: 630
+Time taken: 1.10 s
+Number of classes: 629
+Time taken: 1.10 s
+Number of classes: 627
+Time taken: 1.10 s
+Number of classes: 626
+Time taken: 1.10 s
+Number of classes: 625
+Time taken: 1.10 s
+Number of classes: 624
+Time taken: 1.11 s
+Number of classes: 623
+Time taken: 1.11 s
+Number of classes: 621
+Time taken: 1.12 s
+Number of classes: 619
+Time taken: 1.12 s
+Number of classes: 617
+Time taken: 1.12 s
+Number of classes: 616
+Time taken: 1.12 s
+Number of classes: 615
+Time taken: 1.13 s
+Number of classes: 610
+Time taken: 1.13 s
+Number of classes: 607
+Time taken: 1.13 s
+Number of classes: 606
+Time taken: 1.13 s
+Number of classes: 604
+Time taken: 1.14 s
+Number of classes: 601
+Time taken: 1.15 s
+Number of classes: 598
+Time taken: 1.15 s
+Number of classes: 596
+Time taken: 1.15 s
+Number of classes: 594
+Time taken: 1.15 s
+Number of classes: 591
+Time taken: 1.15 s
+Number of classes: 590
+Time taken: 1.16 s
+Number of classes: 588
+Time taken: 1.16 s
+Number of classes: 585
+Time taken: 1.16 s
+Number of classes: 584
+Time taken: 1.17 s
+Number of classes: 583
+Time taken: 1.17 s
+Number of classes: 581
+Time taken: 1.17 s
+Number of classes: 578
+Time taken: 1.17 s
+Number of classes: 577
+Time taken: 1.18 s
+Number of classes: 576
+Time taken: 1.18 s
+Number of classes: 574
+Time taken: 1.18 s
+Number of classes: 573
+Time taken: 1.18 s
+Number of classes: 572
+Time taken: 1.19 s
+Number of classes: 568
+Time taken: 1.19 s
+Number of classes: 567
+Time taken: 1.19 s
+Number of classes: 566
+Time taken: 1.20 s
+Number of classes: 565
+Time taken: 1.20 s
+Number of classes: 564
+Time taken: 1.20 s
+Number of classes: 563
+Time taken: 1.20 s
+Number of classes: 561
+Time taken: 1.20 s
+Number of classes: 556
+Time taken: 1.20 s
+Number of classes: 554
+Time taken: 1.21 s
+Number of classes: 552
+Time taken: 1.21 s
+Number of classes: 551
+Time taken: 1.22 s
+Number of classes: 550
+Time taken: 1.22 s
+Number of classes: 549
+Time taken: 1.22 s
+Number of classes: 548
+Time taken: 1.22 s
+Number of classes: 546
+Time taken: 1.22 s
+Number of classes: 545
+Time taken: 1.23 s
+Number of classes: 544
+Time taken: 1.24 s
+Number of classes: 542
+Time taken: 1.24 s
+Number of classes: 540
+Time taken: 1.24 s
+Number of classes: 539
+Time taken: 1.24 s
+Number of classes: 537
+Time taken: 1.25 s
+Number of classes: 536
+Time taken: 1.25 s
+Number of classes: 535
+Time taken: 1.25 s
+Number of classes: 534
+Time taken: 1.26 s
+Number of classes: 532
+Time taken: 1.26 s
+Number of classes: 531
+Time taken: 1.26 s
+Number of classes: 528
+Time taken: 1.27 s
+Number of classes: 527
+Time taken: 1.27 s
+Number of classes: 525
+Time taken: 1.27 s
+Number of classes: 524
+Time taken: 1.27 s
+Number of classes: 523
+Time taken: 1.27 s
+Number of classes: 519
+Time taken: 1.28 s
+Number of classes: 517
+Time taken: 1.28 s
+Number of classes: 516
+Time taken: 1.28 s
+Number of classes: 515
+Time taken: 1.28 s
+Number of classes: 514
+Time taken: 1.29 s
+Number of classes: 513
+Time taken: 1.29 s
+Number of classes: 512
+Time taken: 1.30 s
+Number of classes: 511
+Time taken: 1.30 s
+Number of classes: 510
+Time taken: 1.30 s
+Number of classes: 509
+Time taken: 1.31 s
+Number of classes: 508
+Time taken: 1.31 s
+Number of classes: 507
+Time taken: 1.31 s
+Number of classes: 505
+Time taken: 1.32 s
+Number of classes: 504
+Time taken: 1.32 s
+Number of classes: 503
+Time taken: 1.32 s
+Number of classes: 502
+Time taken: 1.32 s
+Number of classes: 500
+Time taken: 1.33 s
+Number of classes: 498
+Time taken: 1.33 s
+Number of classes: 497
+Time taken: 1.33 s
+Number of classes: 496
+Time taken: 1.33 s
+Number of classes: 494
+Time taken: 1.33 s
+Number of classes: 493
+Time taken: 1.34 s
+Number of classes: 492
+Time taken: 1.34 s
+Number of classes: 491
+Time taken: 1.34 s
+Number of classes: 489
+Time taken: 1.35 s
+Number of classes: 488
+Time taken: 1.35 s
+Number of classes: 486
+Time taken: 1.35 s
+Number of classes: 485
+Time taken: 1.35 s
+Number of classes: 484
+Time taken: 1.36 s
+Number of classes: 482
+Time taken: 1.36 s
+Number of classes: 481
+Time taken: 1.37 s
+Number of classes: 480
+Time taken: 1.37 s
+Number of classes: 479
+Time taken: 1.37 s
+Number of classes: 478
+Time taken: 1.38 s
+Number of classes: 476
+Time taken: 1.39 s
+Number of classes: 475
+Time taken: 1.39 s
+Number of classes: 474
+Time taken: 1.39 s
+Number of classes: 473
+Time taken: 1.40 s
+Number of classes: 472
+Time taken: 1.40 s
+Number of classes: 471
+Time taken: 1.40 s
+Number of classes: 470
+Time taken: 1.41 s
+Number of classes: 469
+Time taken: 1.41 s
+Number of classes: 468
+Time taken: 1.41 s
+Number of classes: 467
+Time taken: 1.42 s
+Number of classes: 465
+Time taken: 1.43 s
+Number of classes: 464
+Time taken: 1.44 s
+Number of classes: 462
+Time taken: 1.44 s
+Number of classes: 461
+Time taken: 1.45 s
+Number of classes: 460
+Time taken: 1.45 s
+Number of classes: 459
+Time taken: 1.45 s
+Number of classes: 457
+Time taken: 1.46 s
+Number of classes: 456
+Time taken: 1.46 s
+Number of classes: 454
+Time taken: 1.46 s
+Number of classes: 452
+Time taken: 1.46 s
+Number of classes: 451
+Time taken: 1.46 s
+Number of classes: 450
+Time taken: 1.47 s
+Number of classes: 448
+Time taken: 1.47 s
+Number of classes: 447
+Time taken: 1.48 s
+Number of classes: 445
+Time taken: 1.48 s
+Number of classes: 444
+Time taken: 1.49 s
+Number of classes: 442
+Time taken: 1.50 s
+Number of classes: 441
+Time taken: 1.50 s
+Number of classes: 440
+Time taken: 1.50 s
+Number of classes: 439
+Time taken: 1.51 s
+Number of classes: 438
+Time taken: 1.51 s
+Number of classes: 437
+Time taken: 1.52 s
+Number of classes: 435
+Time taken: 1.52 s
+Number of classes: 434
+Time taken: 1.52 s
+Number of classes: 433
+Time taken: 1.52 s
+Number of classes: 432
+Time taken: 1.53 s
+Number of classes: 431
+Time taken: 1.53 s
+Number of classes: 430
+Time taken: 1.53 s
+Number of classes: 429
+Time taken: 1.54 s
+Number of classes: 428
+Time taken: 1.54 s
+Number of classes: 427
+Time taken: 1.54 s
+Number of classes: 425
+Time taken: 1.54 s
+Number of classes: 424
+Time taken: 1.55 s
+Number of classes: 423
+Time taken: 1.55 s
+Number of classes: 422
+Time taken: 1.56 s
+Number of classes: 421
+Time taken: 1.56 s
+Number of classes: 419
+Time taken: 1.56 s
+Number of classes: 418
+Time taken: 1.57 s
+Number of classes: 416
+Time taken: 1.57 s
+Number of classes: 415
+Time taken: 1.57 s
+Number of classes: 414
+Time taken: 1.57 s
+Number of classes: 413
+Time taken: 1.58 s
+Number of classes: 410
+Time taken: 1.58 s
+Number of classes: 408
+Time taken: 1.58 s
+Number of classes: 407
+Time taken: 1.59 s
+Number of classes: 406
+Time taken: 1.60 s
+Number of classes: 405
+Time taken: 1.60 s
+Number of classes: 403
+Time taken: 1.61 s
+Number of classes: 401
+Time taken: 1.61 s
+Number of classes: 398
+Time taken: 1.62 s
+Number of classes: 397
+Time taken: 1.62 s
+Number of classes: 396
+Time taken: 1.62 s
+Number of classes: 394
+Time taken: 1.63 s
+Number of classes: 393
+Time taken: 1.63 s
+Number of classes: 392
+Time taken: 1.63 s
+Number of classes: 391
+Time taken: 1.64 s
+Number of classes: 390
+Time taken: 1.64 s
+Number of classes: 389
+Time taken: 1.64 s
+Number of classes: 388
+Time taken: 1.64 s
+Number of classes: 387
+Time taken: 1.65 s
+Number of classes: 386
+Time taken: 1.65 s
+Number of classes: 385
+Time taken: 1.65 s
+Number of classes: 384
+Time taken: 1.66 s
+Number of classes: 382
+Time taken: 1.66 s
+Number of classes: 381
+Time taken: 1.67 s
+Number of classes: 380
+Time taken: 1.68 s
+Number of classes: 379
+Time taken: 1.68 s
+Number of classes: 376
+Time taken: 1.68 s
+Number of classes: 374
+Time taken: 1.68 s
+Number of classes: 371
+Time taken: 1.69 s
+Number of classes: 369
+Time taken: 1.69 s
+Number of classes: 367
+Time taken: 1.70 s
+Number of classes: 366
+Time taken: 1.70 s
+Number of classes: 365
+Time taken: 1.71 s
+Number of classes: 364
+Time taken: 1.71 s
+Number of classes: 363
+Time taken: 1.71 s
+Number of classes: 362
+Time taken: 1.71 s
+Number of classes: 361
+Time taken: 1.72 s
+Number of classes: 360
+Time taken: 1.72 s
+Number of classes: 359
+Time taken: 1.72 s
+Number of classes: 358
+Time taken: 1.72 s
+Number of classes: 357
+Time taken: 1.72 s
+Number of classes: 356
+Time taken: 1.73 s
+Number of classes: 354
+Time taken: 1.73 s
+Number of classes: 353
+Time taken: 1.74 s
+Number of classes: 352
+Time taken: 1.74 s
+Number of classes: 351
+Time taken: 1.75 s
+Number of classes: 350
+Time taken: 1.76 s
+Number of classes: 349
+Time taken: 1.76 s
+Number of classes: 348
+Time taken: 1.76 s
+Number of classes: 347
+Time taken: 1.76 s
+Number of classes: 346
+Time taken: 1.77 s
+Number of classes: 345
+Time taken: 1.78 s
+Number of classes: 344
+Time taken: 1.78 s
+Number of classes: 343
+Time taken: 1.78 s
+Number of classes: 341
+Time taken: 1.78 s
+Number of classes: 340
+Time taken: 1.79 s
+Number of classes: 339
+Time taken: 1.79 s
+Number of classes: 336
+Time taken: 1.79 s
+Number of classes: 335
+Time taken: 1.80 s
+Number of classes: 333
+Time taken: 1.80 s
+Number of classes: 332
+Time taken: 1.80 s
+Number of classes: 331
+Time taken: 1.80 s
+Number of classes: 330
+Time taken: 1.81 s
+Number of classes: 329
+Time taken: 1.82 s
+Number of classes: 328
+Time taken: 1.82 s
+Number of classes: 327
+Time taken: 1.82 s
+Number of classes: 326
+Time taken: 1.83 s
+Number of classes: 325
+Time taken: 1.83 s
+Number of classes: 324
+Time taken: 1.84 s
+Number of classes: 323
+Time taken: 1.84 s
+Number of classes: 322
+Time taken: 1.85 s
+Number of classes: 321
+Time taken: 1.85 s
+Number of classes: 320
+Time taken: 1.86 s
+Number of classes: 318
+Time taken: 1.86 s
+Number of classes: 317
+Time taken: 1.86 s
+Number of classes: 316
+Time taken: 1.86 s
+Number of classes: 314
+Time taken: 1.87 s
+Number of classes: 312
+Time taken: 1.88 s
+Number of classes: 311
+Time taken: 1.89 s
+Number of classes: 310
+Time taken: 1.91 s
+Number of classes: 309
+Time taken: 1.91 s
+Number of classes: 307
+Time taken: 1.91 s
+Number of classes: 306
+Time taken: 1.92 s
+Number of classes: 305
+Time taken: 1.93 s
+Number of classes: 303
+Time taken: 1.94 s
+Number of classes: 302
+Time taken: 1.96 s
+Number of classes: 301
+Time taken: 1.96 s
+Number of classes: 300
+Time taken: 1.97 s
+Number of classes: 299
+Time taken: 1.97 s
+Number of classes: 298
+Time taken: 1.98 s
+Number of classes: 297
+Time taken: 1.98 s
+Number of classes: 296
+Time taken: 1.99 s
+Number of classes: 295
+Time taken: 1.99 s
+Number of classes: 293
+Time taken: 1.99 s
+Number of classes: 292
+Time taken: 2.00 s
+Number of classes: 290
+Time taken: 2.00 s
+Number of classes: 289
+Time taken: 2.05 s
+Number of classes: 287
+Time taken: 2.06 s
+Number of classes: 286
+Time taken: 2.07 s
+Number of classes: 285
+Time taken: 2.07 s
+Number of classes: 284
+Time taken: 2.07 s
+Number of classes: 283
+Time taken: 2.10 s
+Number of classes: 282
+Time taken: 2.10 s
+Number of classes: 281
+Time taken: 2.11 s
+Number of classes: 279
+Time taken: 2.11 s
+Number of classes: 278
+Time taken: 2.12 s
+Number of classes: 277
+Time taken: 2.13 s
+Number of classes: 276
+Time taken: 2.13 s
+Number of classes: 274
+Time taken: 2.13 s
+Number of classes: 273
+Time taken: 2.14 s
+Number of classes: 272
+Time taken: 2.15 s
+Number of classes: 271
+Time taken: 2.16 s
+Number of classes: 270
+Time taken: 2.16 s
+Number of classes: 269
+Time taken: 2.19 s
+Number of classes: 268
+Time taken: 2.19 s
+Number of classes: 267
+Time taken: 2.19 s
+Number of classes: 266
+Time taken: 2.20 s
+Number of classes: 265
+Time taken: 2.21 s
+Number of classes: 264
+Time taken: 2.22 s
+Number of classes: 263
+Time taken: 2.22 s
+Number of classes: 262
+Time taken: 2.22 s
+Number of classes: 261
+Time taken: 2.22 s
+Number of classes: 260
+Time taken: 2.24 s
+Number of classes: 259
+Time taken: 2.25 s
+Number of classes: 258
+Time taken: 2.26 s
+Number of classes: 256
+Time taken: 2.26 s
+Number of classes: 255
+Time taken: 2.27 s
+Number of classes: 254
+Time taken: 2.31 s
+Number of classes: 253
+Time taken: 2.33 s
+Number of classes: 252
+Time taken: 2.33 s
+Number of classes: 251
+Time taken: 2.34 s
+Number of classes: 250
+Time taken: 2.34 s
+Number of classes: 249
+Time taken: 2.34 s
+Number of classes: 248
+Time taken: 2.35 s
+Number of classes: 247
+Time taken: 2.36 s
+Number of classes: 246
+Time taken: 2.38 s
+Number of classes: 245
+Time taken: 2.38 s
+Number of classes: 244
+Time taken: 2.39 s
+Number of classes: 243
+Time taken: 2.40 s
+Number of classes: 242
+Time taken: 2.40 s
+Number of classes: 241
+Time taken: 2.40 s
+Number of classes: 239
+Time taken: 2.40 s
+Number of classes: 238
+Time taken: 2.41 s
+Number of classes: 237
+Time taken: 2.41 s
+Number of classes: 236
+Time taken: 2.42 s
+Number of classes: 235
+Time taken: 2.43 s
+Number of classes: 234
+Time taken: 2.44 s
+Number of classes: 233
+Time taken: 2.45 s
+Number of classes: 232
+Time taken: 2.47 s
+Number of classes: 231
+Time taken: 2.47 s
+Number of classes: 230
+Time taken: 2.49 s
+Number of classes: 229
+Time taken: 2.50 s
+Number of classes: 228
+Time taken: 2.53 s
+Number of classes: 227
+Time taken: 2.54 s
+Number of classes: 225
+Time taken: 2.55 s
+Number of classes: 224
+Time taken: 2.56 s
+Number of classes: 223
+Time taken: 2.56 s
+Number of classes: 222
+Time taken: 2.56 s
+Number of classes: 221
+Time taken: 2.57 s
+Number of classes: 220
+Time taken: 2.59 s
+Number of classes: 219
+Time taken: 2.61 s
+Number of classes: 218
+Time taken: 2.61 s
+Number of classes: 217
+Time taken: 2.62 s
+Number of classes: 216
+Time taken: 2.62 s
+Number of classes: 214
+Time taken: 2.63 s
+Number of classes: 213
+Time taken: 2.67 s
+Number of classes: 212
+Time taken: 2.68 s
+Number of classes: 211
+Time taken: 2.68 s
+Number of classes: 210
+Time taken: 2.69 s
+Number of classes: 209
+Time taken: 2.69 s
+Number of classes: 208
+Time taken: 2.70 s
+Number of classes: 207
+Time taken: 2.70 s
+Number of classes: 206
+Time taken: 2.70 s
+Number of classes: 205
+Time taken: 2.74 s
+Number of classes: 204
+Time taken: 2.76 s
+Number of classes: 203
+Time taken: 2.77 s
+Number of classes: 201
+Time taken: 2.77 s
+Number of classes: 200
+Time taken: 2.77 s
+Number of classes: 199
+Time taken: 2.78 s
+Number of classes: 197
+Time taken: 2.80 s
+Number of classes: 196
+Time taken: 2.82 s
+Number of classes: 195
+Time taken: 2.83 s
+Number of classes: 194
+Time taken: 2.83 s
+Number of classes: 193
+Time taken: 2.84 s
+Number of classes: 192
+Time taken: 2.84 s
+Number of classes: 191
+Time taken: 2.85 s
+Number of classes: 190
+Time taken: 2.87 s
+Number of classes: 189
+Time taken: 2.87 s
+Number of classes: 188
+Time taken: 2.90 s
+Number of classes: 187
+Time taken: 2.90 s
+Number of classes: 186
+Time taken: 2.90 s
+Number of classes: 184
+Time taken: 2.91 s
+Number of classes: 183
+Time taken: 2.91 s
+Number of classes: 182
+Time taken: 2.96 s
+Number of classes: 181
+Time taken: 2.97 s
+Number of classes: 180
+Time taken: 2.97 s
+Number of classes: 179
+Time taken: 2.98 s
+Number of classes: 178
+Time taken: 2.99 s
+Number of classes: 177
+Time taken: 3.04 s
+Number of classes: 176
+Time taken: 3.04 s
+Number of classes: 175
+Time taken: 3.04 s
+Number of classes: 174
+Time taken: 3.05 s
+Number of classes: 173
+Time taken: 3.05 s
+Number of classes: 172
+Time taken: 3.05 s
+Number of classes: 171
+Time taken: 3.06 s
+Number of classes: 170
+Time taken: 3.10 s
+Number of classes: 169
+Time taken: 3.11 s
+Number of classes: 168
+Time taken: 3.11 s
+Number of classes: 167
+Time taken: 3.18 s
+Number of classes: 166
+Time taken: 3.19 s
+Number of classes: 165
+Time taken: 3.19 s
+Number of classes: 164
+Time taken: 3.20 s
+Number of classes: 163
+Time taken: 3.25 s
+Number of classes: 162
+Time taken: 3.26 s
+Number of classes: 161
+Time taken: 3.26 s
+Number of classes: 160
+Time taken: 3.26 s
+Number of classes: 159
+Time taken: 3.27 s
+Number of classes: 158
+Time taken: 3.34 s
+Number of classes: 157
+Time taken: 3.34 s
+Number of classes: 156
+Time taken: 3.39 s
+Number of classes: 155
+Time taken: 3.47 s
+Number of classes: 154
+Time taken: 3.47 s
+Number of classes: 153
+Time taken: 3.48 s
+Number of classes: 152
+Time taken: 3.48 s
+Number of classes: 151
+Time taken: 3.49 s
+Number of classes: 150
+Time taken: 3.50 s
+Number of classes: 149
+Time taken: 3.54 s
+Number of classes: 148
+Time taken: 3.56 s
+Number of classes: 147
+Time taken: 3.56 s
+Number of classes: 146
+Time taken: 3.63 s
+Number of classes: 145
+Time taken: 3.64 s
+Number of classes: 144
+Time taken: 3.70 s
+Number of classes: 143
+Time taken: 3.77 s
+Number of classes: 142
+Time taken: 3.79 s
+Number of classes: 141
+Time taken: 3.85 s
+Number of classes: 140
+Time taken: 3.86 s
+Number of classes: 139
+Time taken: 3.86 s
+Number of classes: 138
+Time taken: 3.86 s
+Number of classes: 137
+Time taken: 3.92 s
+Number of classes: 135
+Time taken: 3.92 s
+Number of classes: 134
+Time taken: 3.94 s
+Number of classes: 133
+Time taken: 3.94 s
+Number of classes: 132
+Time taken: 3.94 s
+Number of classes: 131
+Time taken: 4.00 s
+Number of classes: 130
+Time taken: 4.00 s
+Number of classes: 129
+Time taken: 4.00 s
+Number of classes: 128
+Time taken: 4.01 s
+Number of classes: 127
+Time taken: 4.02 s
+Number of classes: 126
+Time taken: 4.02 s
+Number of classes: 125
+Time taken: 4.03 s
+Number of classes: 124
+Time taken: 4.10 s
+Number of classes: 123
+Time taken: 4.15 s
+Number of classes: 122
+Time taken: 4.16 s
+Number of classes: 121
+Time taken: 4.16 s
+Number of classes: 120
+Time taken: 4.16 s
+Number of classes: 119
+Time taken: 4.23 s
+Number of classes: 118
+Time taken: 4.23 s
+Number of classes: 116
+Time taken: 4.23 s
+Number of classes: 115
+Time taken: 4.23 s
+Number of classes: 114
+Time taken: 4.24 s
+Number of classes: 113
+Time taken: 4.24 s
+Number of classes: 112
+Time taken: 4.24 s
+Number of classes: 111
+Time taken: 4.24 s
+Number of classes: 110
+Time taken: 4.25 s
+Number of classes: 109
+Time taken: 4.30 s
+Number of classes: 108
+Time taken: 4.31 s
+Number of classes: 107
+Time taken: 4.31 s
+Number of classes: 106
+Time taken: 4.31 s
+Number of classes: 105
+Time taken: 4.45 s
+Number of classes: 104
+Time taken: 4.45 s
+Number of classes: 103
+Time taken: 4.46 s
+Number of classes: 102
+Time taken: 4.46 s
+Number of classes: 101
+Time taken: 4.52 s
+Number of classes: 100
+Time taken: 4.52 s
+Number of classes: 99
+Time taken: 4.58 s
+Number of classes: 98
+Time taken: 4.59 s
+Number of classes: 97
+Time taken: 4.59 s
+Number of classes: 96
+Time taken: 4.60 s
+Number of classes: 95
+Time taken: 4.67 s
+Number of classes: 94
+Time taken: 4.73 s
+Number of classes: 93
+Time taken: 4.73 s
+Number of classes: 92
+Time taken: 4.81 s
+Number of classes: 90
+Time taken: 4.81 s
+Number of classes: 88
+Time taken: 4.82 s
+Number of classes: 87
+Time taken: 4.83 s
+Number of classes: 86
+Time taken: 5.02 s
+Number of classes: 85
+Time taken: 5.03 s
+Number of classes: 84
+Time taken: 5.04 s
+Number of classes: 83
+Time taken: 5.10 s
+Number of classes: 82
+Time taken: 5.16 s
+Number of classes: 81
+Time taken: 5.18 s
+Number of classes: 80
+Time taken: 5.24 s
+Number of classes: 79
+Time taken: 5.25 s
+Number of classes: 78
+Time taken: 5.31 s
+Number of classes: 77
+Time taken: 5.46 s
+Number of classes: 76
+Time taken: 5.54 s
+Number of classes: 75
+Time taken: 5.55 s
+Number of classes: 74
+Time taken: 5.61 s
+Number of classes: 73
+Time taken: 5.61 s
+Number of classes: 72
+Time taken: 5.61 s
+Number of classes: 71
+Time taken: 5.62 s
+Number of classes: 70
+Time taken: 5.68 s
+Number of classes: 69
+Time taken: 5.69 s
+Number of classes: 68
+Time taken: 5.75 s
+Number of classes: 67
+Time taken: 5.76 s
+Number of classes: 66
+Time taken: 5.83 s
+Number of classes: 65
+Time taken: 5.84 s
+Number of classes: 64
+Time taken: 5.89 s
+Number of classes: 63
+Time taken: 5.90 s
+Number of classes: 62
+Time taken: 5.90 s
+Number of classes: 61
+Time taken: 5.97 s
+Number of classes: 60
+Time taken: 5.97 s
+Number of classes: 59
+Time taken: 5.97 s
+Number of classes: 58
+Time taken: 5.98 s
+Number of classes: 57
+Time taken: 5.98 s
+Number of classes: 56
+Time taken: 6.04 s
+Number of classes: 55
+Time taken: 6.04 s
+Number of classes: 54
+Time taken: 6.17 s
+Number of classes: 53
+Time taken: 6.32 s
+Number of classes: 52
+Time taken: 6.60 s
+Number of classes: 51
+Time taken: 6.67 s
+Number of classes: 50
+Time taken: 6.67 s
+Number of classes: 49
+Time taken: 6.67 s
+Number of classes: 48
+Time taken: 6.67 s
+Number of classes: 47
+Time taken: 6.74 s
+Number of classes: 46
+Time taken: 6.74 s
+Number of classes: 45
+Time taken: 6.82 s
+Number of classes: 44
+Time taken: 6.95 s
+Number of classes: 43
+Time taken: 7.03 s
+Number of classes: 42
+Time taken: 7.09 s
+Number of classes: 41
+Time taken: 7.52 s
+Number of classes: 40
+Time taken: 7.74 s
+Number of classes: 39
+Time taken: 7.80 s
+Number of classes: 38
+Time taken: 7.95 s
+Number of classes: 37
+Time taken: 8.24 s
+Number of classes: 36
+Time taken: 8.47 s
+Number of classes: 35
+Time taken: 8.69 s
+Number of classes: 34
+Time taken: 8.69 s
+Number of classes: 33
+Time taken: 8.76 s
+Number of classes: 32
+Time taken: 8.84 s
+Number of classes: 31
+Time taken: 8.85 s
+Number of classes: 30
+Time taken: 9.43 s
+Number of classes: 29
+Time taken: 9.50 s
+Number of classes: 28
+Time taken: 9.72 s
+Number of classes: 27
+Time taken: 9.93 s
+Number of classes: 26
+Time taken: 9.94 s
+Number of classes: 25
+Time taken: 10.01 s
+Number of classes: 24
+Time taken: 10.08 s
+Number of classes: 23
+Time taken: 10.52 s
+Number of classes: 22
+Time taken: 11.16 s
+Number of classes: 21
+Time taken: 11.32 s
+Number of classes: 20
+Time taken: 11.68 s
+Number of classes: 19
+Time taken: 11.97 s
+Number of classes: 18
+Time taken: 12.05 s
+Number of classes: 17
+Time taken: 12.05 s
+Number of classes: 16
+Time taken: 12.48 s
+Number of classes: 15
+Time taken: 12.55 s
+Number of classes: 14
+Time taken: 12.55 s
+Number of classes: 13
+Time taken: 12.75 s
+Number of classes: 12
+Time taken: 13.43 s
+Number of classes: 11
+Time taken: 13.72 s
+Number of classes: 10
+Time taken: 15.25 s
+Number of classes: 9
+Time taken: 15.73 s
+Number of classes: 8
+Time taken: 18.99 s
+Number of classes: 7
+Time taken: 19.39 s
+Number of classes: 6
+Dataset generation time limit reached: 20 s.
+Number of classes remaining: 6.
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Loss for batch 0: 6.316238880157471
+Epoch 0: 0.04% done
+Time taken for epoch: 22.31 s
+Loss for batch 1: 6.263843536376953
+Epoch 0: 0.08% done
+Time taken for epoch: 24.39 s
+Loss for batch 2: 6.207070827484131
+Epoch 0: 0.12% done
+Time taken for epoch: 26.45 s
+Loss for batch 3: 6.162291049957275
+Epoch 0: 0.16% done
+Time taken for epoch: 28.47 s
+Loss for batch 4: 6.09807825088501
+Epoch 0: 0.20% done
+Time taken for epoch: 32.21 s
+Loss for batch 5: 6.012310981750488
+Epoch 0: 0.24% done
+Time taken for epoch: 34.01 s
+Loss for batch 6: 6.034768104553223
+Epoch 0: 0.27% done
+Time taken for epoch: 35.84 s
+Loss for batch 7: 5.9288177490234375
+Epoch 0: 0.31% done
+Time taken for epoch: 37.82 s
+Loss for batch 8: 5.841979026794434
+Epoch 0: 0.35% done
+Time taken for epoch: 39.64 s
+Loss for batch 9: 5.760385513305664
+Epoch 0: 0.39% done
+Time taken for epoch: 41.46 s
+Loss for batch 10: 5.670658588409424
+Epoch 0: 0.43% done
+Time taken for epoch: 43.60 s
+Loss for batch 11: 5.663201332092285
+Epoch 0: 0.47% done
+Time taken for epoch: 45.54 s
+Loss for batch 12: 5.593332767486572
+Epoch 0: 0.51% done
+Time taken for epoch: 47.48 s
+Loss for batch 13: 5.466061592102051
+Epoch 0: 0.55% done
+Time taken for epoch: 49.48 s
+Loss for batch 14: 5.333563327789307
+Epoch 0: 0.59% done
+Time taken for epoch: 51.51 s
+Loss for batch 15: 5.374160289764404
+Epoch 0: 0.63% done
+Time taken for epoch: 53.56 s
+Loss for batch 16: 5.150800704956055
+Epoch 0: 0.67% done
+Time taken for epoch: 55.62 s
+Loss for batch 17: 5.184060573577881
+Epoch 0: 0.71% done
+Time taken for epoch: 57.65 s
+Loss for batch 18: 5.117260456085205
+Epoch 0: 0.75% done
+Time taken for epoch: 59.68 s
+Loss for batch 19: 5.117359161376953
+Epoch 0: 0.78% done
+Time taken for epoch: 61.87 s
+Loss for batch 20: 4.949952602386475
+Epoch 0: 0.82% done
+Time taken for epoch: 63.98 s
+Loss for batch 21: 5.026027202606201
+Epoch 0: 0.86% done
+Time taken for epoch: 66.13 s
+Loss for batch 22: 4.9417219161987305
+Epoch 0: 0.90% done
+Time taken for epoch: 68.18 s
+Loss for batch 23: 5.017665386199951
+Epoch 0: 0.94% done
+Time taken for epoch: 70.24 s
+Loss for batch 24: 4.964042663574219
+Epoch 0: 0.98% done
+Time taken for epoch: 72.31 s
+Loss for batch 25: 4.7892656326293945
+Epoch 0: 1.02% done
+Time taken for epoch: 74.39 s
+Loss for batch 26: 4.795821666717529
+Epoch 0: 1.06% done
+Time taken for epoch: 76.46 s
+Loss for batch 27: 4.897392272949219
+Epoch 0: 1.10% done
+Time taken for epoch: 78.51 s
+Loss for batch 28: 4.86346960067749
+Epoch 0: 1.14% done
+Time taken for epoch: 80.47 s
+Loss for batch 29: 4.702540397644043
+Epoch 0: 1.18% done
+Time taken for epoch: 82.35 s
+Loss for batch 30: 4.786128044128418
+Epoch 0: 1.22% done
+Time taken for epoch: 86.06 s
+Gradient norm is 4.1352362632751465, clipping to 4
+Loss for batch 31: 4.507358074188232
+Epoch 0: 1.26% done
+Time taken for epoch: 87.85 s
+Loss for batch 32: 4.527493476867676
+Epoch 0: 1.29% done
+Time taken for epoch: 89.65 s
+Loss for batch 33: 4.656656265258789
+Epoch 0: 1.33% done
+Time taken for epoch: 91.50 s
+Loss for batch 34: 4.470327854156494
+Epoch 0: 1.37% done
+Time taken for epoch: 93.29 s
+Loss for batch 35: 4.480842590332031
+Epoch 0: 1.41% done
+Time taken for epoch: 95.08 s
+Loss for batch 36: 4.4639434814453125
+Epoch 0: 1.45% done
+Time taken for epoch: 96.93 s
+Loss for batch 37: 4.316625595092773
+Epoch 0: 1.49% done
+Time taken for epoch: 98.72 s
+Loss for batch 38: 4.340397357940674
+Epoch 0: 1.53% done
+Time taken for epoch: 100.57 s
+Loss for batch 39: 4.46174430847168
+Epoch 0: 1.57% done
+Time taken for epoch: 102.36 s
+Loss for batch 40: 4.288745403289795
+Epoch 0: 1.61% done
+Time taken for epoch: 104.19 s
+Loss for batch 41: 4.345981121063232
+Epoch 0: 1.65% done
+Time taken for epoch: 105.98 s
+Loss for batch 42: 4.2109551429748535
+Epoch 0: 1.69% done
+Time taken for epoch: 107.78 s
+Loss for batch 43: 4.336101531982422
+Epoch 0: 1.73% done
+Time taken for epoch: 109.62 s
+Loss for batch 44: 4.299440860748291
+Epoch 0: 1.77% done
+Time taken for epoch: 111.40 s
+Loss for batch 45: 4.277271747589111
+Epoch 0: 1.80% done
+Time taken for epoch: 113.24 s
+Loss for batch 46: 4.339428901672363
+Epoch 0: 1.84% done
+Time taken for epoch: 115.07 s
+Loss for batch 47: 4.123358249664307
+Epoch 0: 1.88% done
+Time taken for epoch: 116.91 s
+Loss for batch 48: 4.289658546447754
+Epoch 0: 1.92% done
+Time taken for epoch: 118.70 s
+Loss for batch 49: 4.349431037902832
+Epoch 0: 1.96% done
+Time taken for epoch: 120.48 s
+Loss for batch 50: 4.1764349937438965
+Epoch 0: 2.00% done
+Time taken for epoch: 122.28 s
+Loss for batch 51: 4.210912704467773
+Epoch 0: 2.04% done
+Time taken for epoch: 124.12 s
+Loss for batch 52: 4.203298091888428
+Epoch 0: 2.08% done
+Time taken for epoch: 126.01 s
+Loss for batch 53: 4.1899261474609375
+Epoch 0: 2.12% done
+Time taken for epoch: 127.81 s
+Loss for batch 54: 4.056039333343506
+Epoch 0: 2.16% done
+Time taken for epoch: 129.60 s
+Loss for batch 55: 4.239558696746826
+Epoch 0: 2.20% done
+Time taken for epoch: 133.30 s
+Loss for batch 56: 4.128323078155518
+Epoch 0: 2.24% done
+Time taken for epoch: 135.15 s
+Loss for batch 57: 4.206435680389404
+Epoch 0: 2.28% done
+Time taken for epoch: 136.93 s
+Loss for batch 58: 3.821920156478882
+Epoch 0: 2.31% done
+Time taken for epoch: 138.73 s
+Loss for batch 59: 4.14715051651001
+Epoch 0: 2.35% done
+Time taken for epoch: 140.57 s
+Loss for batch 60: 4.1994147300720215
+Epoch 0: 2.39% done
+Time taken for epoch: 142.35 s
+Loss for batch 61: 4.119926929473877
+Epoch 0: 2.43% done
+Time taken for epoch: 144.14 s
+Loss for batch 62: 3.8836889266967773
+Epoch 0: 2.47% done
+Time taken for epoch: 145.99 s
+Loss for batch 63: 4.036272048950195
+Epoch 0: 2.51% done
+Time taken for epoch: 147.82 s
+Loss for batch 64: 4.125819206237793
+Epoch 0: 2.55% done
+Time taken for epoch: 149.67 s
+Loss for batch 65: 4.008404731750488
+Epoch 0: 2.59% done
+Time taken for epoch: 151.51 s
+Loss for batch 66: 4.081500053405762
+Epoch 0: 2.63% done
+Time taken for epoch: 153.17 s
+Loss for batch 67: 4.219581127166748
+Epoch 0: 2.67% done
+Time taken for epoch: 154.93 s
+Loss for batch 68: 3.9932971000671387
+Epoch 0: 2.71% done
+Time taken for epoch: 156.69 s
+Loss for batch 69: 4.1550750732421875
+Epoch 0: 2.75% done
+Time taken for epoch: 158.46 s
+Loss for batch 70: 3.9507687091827393
+Epoch 0: 2.79% done
+Time taken for epoch: 160.22 s
+Loss for batch 71: 4.024264335632324
+Epoch 0: 2.82% done
+Time taken for epoch: 162.00 s
+Loss for batch 72: 3.876110792160034
+Epoch 0: 2.86% done
+Time taken for epoch: 163.77 s
+Loss for batch 73: 4.045487880706787
+Epoch 0: 2.90% done
+Time taken for epoch: 165.53 s
+Loss for batch 74: 4.172892093658447
+Epoch 0: 2.94% done
+Time taken for epoch: 167.30 s
+Loss for batch 75: 3.9076180458068848
+Epoch 0: 2.98% done
+Time taken for epoch: 169.08 s
+Loss for batch 76: 4.106228828430176
+Epoch 0: 3.02% done
+Time taken for epoch: 170.87 s
+Loss for batch 77: 3.894991397857666
+Epoch 0: 3.06% done
+Time taken for epoch: 172.64 s
+Loss for batch 78: 3.8664987087249756
+Epoch 0: 3.10% done
+Time taken for epoch: 174.32 s
+Loss for batch 79: 3.975506544113159
+Epoch 0: 3.14% done
+Time taken for epoch: 176.06 s
+Loss for batch 80: 4.003329753875732
+Epoch 0: 3.18% done
+Time taken for epoch: 177.93 s
+Loss for batch 81: 4.031323432922363
+Epoch 0: 3.22% done
+Time taken for epoch: 179.71 s
+Loss for batch 82: 4.038559436798096
+Epoch 0: 3.26% done
+Time taken for epoch: 181.49 s
+Loss for batch 83: 4.192516803741455
+Epoch 0: 3.30% done
+Time taken for epoch: 183.30 s
+Loss for batch 84: 3.9549243450164795
+Epoch 0: 3.33% done
+Time taken for epoch: 185.12 s
+Loss for batch 85: 4.024409770965576
+Epoch 0: 3.37% done
+Time taken for epoch: 188.42 s
+Loss for batch 86: 3.885010242462158
+Epoch 0: 3.41% done
+Time taken for epoch: 190.24 s
+Loss for batch 87: 4.217333793640137
+Epoch 0: 3.45% done
+Time taken for epoch: 192.03 s
+Loss for batch 88: 3.804609775543213
+Epoch 0: 3.49% done
+Time taken for epoch: 193.86 s
+Loss for batch 89: 3.9248242378234863
+Epoch 0: 3.53% done
+Time taken for epoch: 195.70 s
+Loss for batch 90: 3.776993751525879
+Epoch 0: 3.57% done
+Time taken for epoch: 197.54 s
+Loss for batch 91: 3.8091235160827637
+Epoch 0: 3.61% done
+Time taken for epoch: 199.40 s
+Loss for batch 92: 3.8071000576019287
+Epoch 0: 3.65% done
+Time taken for epoch: 201.26 s
+Loss for batch 93: 3.9735586643218994
+Epoch 0: 3.69% done
+Time taken for epoch: 203.12 s
+Loss for batch 94: 3.9275081157684326
+Epoch 0: 3.73% done
+Time taken for epoch: 205.13 s
+Loss for batch 95: 4.04709005355835
+Epoch 0: 3.77% done
+Time taken for epoch: 207.08 s
+Loss for batch 96: 3.792429208755493
+Epoch 0: 3.81% done
+Time taken for epoch: 208.93 s
+Loss for batch 97: 3.7344677448272705
+Epoch 0: 3.84% done
+Time taken for epoch: 210.63 s
+Loss for batch 98: 3.7018799781799316
+Epoch 0: 3.88% done
+Time taken for epoch: 212.52 s
+Loss for batch 99: 3.899689197540283
+Epoch 0: 3.92% done
+Time taken for epoch: 214.32 s
+Loss for batch 100: 3.800461769104004
+Epoch 0: 3.96% done
+Time taken for epoch: 216.15 s
+Loss for batch 101: 3.733482599258423
+Epoch 0: 4.00% done
+Time taken for epoch: 217.94 s
+Loss for batch 102: 3.853623151779175
+Epoch 0: 4.04% done
+Time taken for epoch: 219.73 s
+Loss for batch 103: 4.059479236602783
+Epoch 0: 4.08% done
+Time taken for epoch: 221.42 s
+Loss for batch 104: 3.8131661415100098
+Epoch 0: 4.12% done
+Time taken for epoch: 223.09 s
+Loss for batch 105: 3.7806034088134766
+Epoch 0: 4.16% done
+Time taken for epoch: 224.76 s
+Loss for batch 106: 3.739698886871338
+Epoch 0: 4.20% done
+Time taken for epoch: 226.43 s
+Loss for batch 107: 4.030971050262451
+Epoch 0: 4.24% done
+Time taken for epoch: 228.10 s
+Loss for batch 108: 3.880441188812256
+Epoch 0: 4.28% done
+Time taken for epoch: 229.77 s
+Loss for batch 109: 3.7612674236297607
+Epoch 0: 4.32% done
+Time taken for epoch: 231.45 s
+Loss for batch 110: 3.704049587249756
+Epoch 0: 4.35% done
+Time taken for epoch: 233.13 s
+Loss for batch 111: 3.9824137687683105
+Epoch 0: 4.39% done
+Time taken for epoch: 234.80 s
+Loss for batch 112: 3.8269994258880615
+Epoch 0: 4.43% done
+Time taken for epoch: 236.57 s
+Loss for batch 113: 3.8325581550598145
+Epoch 0: 4.47% done
+Time taken for epoch: 239.49 s
+Loss for batch 114: 3.890847682952881
+Epoch 0: 4.51% done
+Time taken for epoch: 241.28 s
+Loss for batch 115: 3.7289929389953613
+Epoch 0: 4.55% done
+Time taken for epoch: 243.07 s
+Loss for batch 116: 3.7844865322113037
+Epoch 0: 4.59% done
+Time taken for epoch: 244.77 s
+Loss for batch 117: 3.881347179412842
+Epoch 0: 4.63% done
+Time taken for epoch: 246.46 s
+Loss for batch 118: 3.875408411026001
+Epoch 0: 4.67% done
+Time taken for epoch: 248.23 s
+Loss for batch 119: 3.6052355766296387
+Epoch 0: 4.71% done
+Time taken for epoch: 249.93 s
+Loss for batch 120: 3.6651103496551514
+Epoch 0: 4.75% done
+Time taken for epoch: 251.61 s
+Loss for batch 121: 4.03213357925415
+Epoch 0: 4.79% done
+Time taken for epoch: 253.39 s
+Loss for batch 122: 3.8365070819854736
+Epoch 0: 4.83% done
+Time taken for epoch: 255.17 s
+Loss for batch 123: 3.921231985092163
+Epoch 0: 4.86% done
+Time taken for epoch: 256.96 s
+Loss for batch 124: 3.739509344100952
+Epoch 0: 4.90% done
+Time taken for epoch: 258.65 s
+Loss for batch 125: 3.6887214183807373
+Epoch 0: 4.94% done
+Time taken for epoch: 260.33 s
+Loss for batch 126: 3.7173731327056885
+Epoch 0: 4.98% done
+Time taken for epoch: 262.22 s
+Loss for batch 127: 3.7653121948242188
+Epoch 0: 5.02% done
+Time taken for epoch: 264.02 s
+Loss for batch 128: 3.8175923824310303
+Epoch 0: 5.06% done
+Time taken for epoch: 265.84 s
+Loss for batch 129: 3.796208143234253
+Epoch 0: 5.10% done
+Time taken for epoch: 267.64 s
+Loss for batch 130: 3.8192672729492188
+Epoch 0: 5.14% done
+Time taken for epoch: 269.43 s
+Loss for batch 131: 3.7917582988739014
+Epoch 0: 5.18% done
+Time taken for epoch: 271.23 s
+Loss for batch 132: 3.8436689376831055
+Epoch 0: 5.22% done
+Time taken for epoch: 273.08 s
+Loss for batch 133: 3.6493120193481445
+Epoch 0: 5.26% done
+Time taken for epoch: 274.96 s
+Loss for batch 134: 3.6642825603485107
+Epoch 0: 5.30% done
+Time taken for epoch: 276.82 s
+Loss for batch 135: 3.7320051193237305
+Epoch 0: 5.34% done
+Time taken for epoch: 278.65 s
+Loss for batch 136: 3.8673839569091797
+Epoch 0: 5.37% done
+Time taken for epoch: 280.49 s
+Loss for batch 137: 3.659364938735962
+Epoch 0: 5.41% done
+Time taken for epoch: 282.32 s
+Loss for batch 138: 3.851938486099243
+Epoch 0: 5.45% done
+Time taken for epoch: 284.17 s
+Loss for batch 139: 3.8988749980926514
+Epoch 0: 5.49% done
+Time taken for epoch: 287.84 s
+Loss for batch 140: 3.6536428928375244
+Epoch 0: 5.53% done
+Time taken for epoch: 289.69 s
+Loss for batch 141: 3.8243868350982666
+Epoch 0: 5.57% done
+Time taken for epoch: 291.50 s
+Loss for batch 142: 3.937573194503784
+Epoch 0: 5.61% done
+Time taken for epoch: 293.29 s
+Loss for batch 143: 3.686267852783203
+Epoch 0: 5.65% done
+Time taken for epoch: 295.09 s
+Loss for batch 144: 3.826774835586548
+Epoch 0: 5.69% done
+Time taken for epoch: 296.89 s
+Loss for batch 145: 3.6262686252593994
+Epoch 0: 5.73% done
+Time taken for epoch: 298.68 s
+Loss for batch 146: 3.6401541233062744
+Epoch 0: 5.77% done
+Time taken for epoch: 300.48 s
+Loss for batch 147: 3.5478971004486084
+Epoch 0: 5.81% done
+Time taken for epoch: 302.30 s
+Loss for batch 148: 3.461115837097168
+Epoch 0: 5.85% done
+Time taken for epoch: 304.17 s
+Loss for batch 149: 3.7455952167510986
+Epoch 0: 5.88% done
+Time taken for epoch: 306.03 s
+Loss for batch 150: 3.821908712387085
+Epoch 0: 5.92% done
+Time taken for epoch: 307.83 s
+Loss for batch 151: 3.7096316814422607
+Epoch 0: 5.96% done
+Time taken for epoch: 309.63 s
+Loss for batch 152: 3.638887643814087
+Epoch 0: 6.00% done
+Time taken for epoch: 311.48 s
+Loss for batch 153: 3.795351982116699
+Epoch 0: 6.04% done
+Time taken for epoch: 313.28 s
+Loss for batch 154: 3.7550947666168213
+Epoch 0: 6.08% done
+Time taken for epoch: 315.07 s
+Loss for batch 155: 3.764441728591919
+Epoch 0: 6.12% done
+Time taken for epoch: 316.86 s
+Loss for batch 156: 3.699037790298462
+Epoch 0: 6.16% done
+Time taken for epoch: 318.66 s
+Loss for batch 157: 3.857077121734619
+Epoch 0: 6.20% done
+Time taken for epoch: 320.45 s
+Loss for batch 158: 3.6573872566223145
+Epoch 0: 6.24% done
+Time taken for epoch: 322.25 s
+Loss for batch 159: 3.562074899673462
+Epoch 0: 6.28% done
+Time taken for epoch: 324.10 s
+Loss for batch 160: 3.6620213985443115
+Epoch 0: 6.32% done
+Time taken for epoch: 325.90 s
+Loss for batch 161: 3.6963508129119873
+Epoch 0: 6.36% done
+Time taken for epoch: 327.75 s
+Loss for batch 162: 3.7151753902435303
+Epoch 0: 6.39% done
+Time taken for epoch: 329.54 s
+Loss for batch 163: 3.650023937225342
+Epoch 0: 6.43% done
+Time taken for epoch: 331.33 s
+Loss for batch 164: 3.670363664627075
+Epoch 0: 6.47% done
+Time taken for epoch: 335.06 s
+Loss for batch 165: 3.333754777908325
+Epoch 0: 6.51% done
+Time taken for epoch: 336.86 s
+Loss for batch 166: 3.591019630432129
+Epoch 0: 6.55% done
+Time taken for epoch: 338.65 s
+Loss for batch 167: 3.654268503189087
+Epoch 0: 6.59% done
+Time taken for epoch: 340.50 s
+Loss for batch 168: 3.8500125408172607
+Epoch 0: 6.63% done
+Time taken for epoch: 342.30 s
+Loss for batch 169: 3.744555711746216
+Epoch 0: 6.67% done
+Time taken for epoch: 344.09 s
+Loss for batch 170: 3.6126973628997803
+Epoch 0: 6.71% done
+Time taken for epoch: 345.92 s
+Loss for batch 171: 3.597026824951172
+Epoch 0: 6.75% done
+Time taken for epoch: 347.99 s
+Loss for batch 172: 3.6391429901123047
+Epoch 0: 6.79% done
+Time taken for epoch: 349.87 s
+Loss for batch 173: 3.5662028789520264
+Epoch 0: 6.83% done
+Time taken for epoch: 351.67 s
+Loss for batch 174: 3.706474542617798
+Epoch 0: 6.87% done
+Time taken for epoch: 353.46 s
+Loss for batch 175: 3.7376387119293213
+Epoch 0: 6.90% done
+Time taken for epoch: 355.25 s
+Loss for batch 176: 3.6596741676330566
+Epoch 0: 6.94% done
+Time taken for epoch: 357.05 s
+Loss for batch 177: 3.456610918045044
+Epoch 0: 6.98% done
+Time taken for epoch: 358.85 s
+Loss for batch 178: 3.5290839672088623
+Epoch 0: 7.02% done
+Time taken for epoch: 360.81 s
+Loss for batch 179: 3.498476266860962
+Epoch 0: 7.06% done
+Time taken for epoch: 362.64 s
+Loss for batch 180: 3.583926200866699
+Epoch 0: 7.10% done
+Time taken for epoch: 364.45 s
+Loss for batch 181: 3.827007532119751
+Epoch 0: 7.14% done
+Time taken for epoch: 366.46 s
+Loss for batch 182: 3.6387808322906494
+Epoch 0: 7.18% done
+Time taken for epoch: 368.54 s
+Loss for batch 183: 3.458361864089966
+Epoch 0: 7.22% done
+Time taken for epoch: 370.64 s
+Loss for batch 184: 3.575619697570801
+Epoch 0: 7.26% done
+Time taken for epoch: 372.75 s
+Loss for batch 185: 3.5896520614624023
+Epoch 0: 7.30% done
+Time taken for epoch: 374.82 s
+Loss for batch 186: 3.6676225662231445
+Epoch 0: 7.34% done
+Time taken for epoch: 376.89 s
+Loss for batch 187: 3.649502754211426
+Epoch 0: 7.38% done
+Time taken for epoch: 378.98 s
+Loss for batch 188: 3.469125986099243
+Epoch 0: 7.41% done
+Time taken for epoch: 381.05 s
+Loss for batch 189: 3.594707727432251
+Epoch 0: 7.45% done
+Time taken for epoch: 383.12 s
+Loss for batch 190: 3.5339648723602295
+Epoch 0: 7.49% done
+Time taken for epoch: 385.28 s
+Loss for batch 191: 3.7217354774475098
+Epoch 0: 7.53% done
+Time taken for epoch: 387.42 s
+Loss for batch 192: 3.4744906425476074
+Epoch 0: 7.57% done
+Time taken for epoch: 389.50 s
+Loss for batch 193: 3.4622159004211426
+Epoch 0: 7.61% done
+Time taken for epoch: 391.53 s
+Loss for batch 194: 3.57285475730896
+Epoch 0: 7.65% done
+Time taken for epoch: 395.40 s
+Loss for batch 195: 3.7691242694854736
+Epoch 0: 7.69% done
+Time taken for epoch: 397.42 s
+Loss for batch 196: 3.663642168045044
+Epoch 0: 7.73% done
+Time taken for epoch: 399.41 s
+Loss for batch 197: 3.5094950199127197
+Epoch 0: 7.77% done
+Time taken for epoch: 401.38 s
+Loss for batch 198: 3.604529619216919
+Epoch 0: 7.81% done
+Time taken for epoch: 403.23 s
+Loss for batch 199: 3.583483934402466
+Epoch 0: 7.85% done
+Time taken for epoch: 405.10 s
+Loss for batch 200: 3.772498369216919
+Epoch 0: 7.89% done
+Time taken for epoch: 406.88 s
+Loss for batch 201: 3.5407633781433105
+Epoch 0: 7.92% done
+Time taken for epoch: 408.71 s
+Loss for batch 202: 3.537249803543091
+Epoch 0: 7.96% done
+Time taken for epoch: 410.50 s
+Loss for batch 203: 3.5594396591186523
+Epoch 0: 8.00% done
+Time taken for epoch: 412.30 s
+Loss for batch 204: 3.7486982345581055
+Epoch 0: 8.04% done
+Time taken for epoch: 414.13 s
+Loss for batch 205: 3.552316904067993
+Epoch 0: 8.08% done
+Time taken for epoch: 415.91 s
+Loss for batch 206: 3.585108995437622
+Epoch 0: 8.12% done
+Time taken for epoch: 417.70 s
+Loss for batch 207: 3.490039110183716
+Epoch 0: 8.16% done
+Time taken for epoch: 419.53 s
+Loss for batch 208: 3.558669328689575
+Epoch 0: 8.20% done
+Time taken for epoch: 421.37 s
+Loss for batch 209: 3.728823661804199
+Epoch 0: 8.24% done
+Time taken for epoch: 423.20 s
+Loss for batch 210: 3.450173854827881
+Epoch 0: 8.28% done
+Time taken for epoch: 425.02 s
+Loss for batch 211: 3.430331230163574
+Epoch 0: 8.32% done
+Time taken for epoch: 426.89 s
+Loss for batch 212: 3.5081140995025635
+Epoch 0: 8.36% done
+Time taken for epoch: 428.68 s
+Loss for batch 213: 3.597557783126831
+Epoch 0: 8.40% done
+Time taken for epoch: 430.48 s
+Loss for batch 214: 3.3607380390167236
+Epoch 0: 8.43% done
+Time taken for epoch: 432.27 s
+Loss for batch 215: 3.404808759689331
+Epoch 0: 8.47% done
+Time taken for epoch: 434.06 s
+Loss for batch 216: 3.573678493499756
+Epoch 0: 8.51% done
+Time taken for epoch: 435.83 s
+Loss for batch 217: 3.6750195026397705
+Epoch 0: 8.55% done
+Time taken for epoch: 437.63 s
+Loss for batch 218: 3.7577812671661377
+Epoch 0: 8.59% done
+Time taken for epoch: 439.43 s
+Loss for batch 219: 3.827756643295288
+Epoch 0: 8.63% done
+Time taken for epoch: 441.21 s
+Loss for batch 220: 3.533336639404297
+Epoch 0: 8.67% done
+Time taken for epoch: 443.04 s
+Loss for batch 221: 3.482363224029541
+Epoch 0: 8.71% done
+Time taken for epoch: 444.82 s
+Loss for batch 222: 3.6006436347961426
+Epoch 0: 8.75% done
+Time taken for epoch: 448.53 s
+Loss for batch 223: 3.691154718399048
+Epoch 0: 8.79% done
+Time taken for epoch: 450.31 s
+Loss for batch 224: 3.581468105316162
+Epoch 0: 8.83% done
+Time taken for epoch: 452.09 s
+Loss for batch 225: 3.564739227294922
+Epoch 0: 8.87% done
+Time taken for epoch: 453.87 s
+Loss for batch 226: 3.6133525371551514
+Epoch 0: 8.91% done
+Time taken for epoch: 455.64 s
+Loss for batch 227: 3.553793430328369
+Epoch 0: 8.94% done
+Time taken for epoch: 457.41 s
+Loss for batch 228: 3.661046028137207
+Epoch 0: 8.98% done
+Time taken for epoch: 459.24 s
+Loss for batch 229: 3.305924415588379
+Epoch 0: 9.02% done
+Time taken for epoch: 461.02 s
+Loss for batch 230: 3.4812581539154053
+Epoch 0: 9.06% done
+Time taken for epoch: 462.78 s
+Loss for batch 231: 3.475598096847534
+Epoch 0: 9.10% done
+Time taken for epoch: 464.55 s
+Loss for batch 232: 3.489417314529419
+Epoch 0: 9.14% done
+Time taken for epoch: 466.33 s
+Loss for batch 233: 3.642686367034912
+Epoch 0: 9.18% done
+Time taken for epoch: 468.11 s
+Loss for batch 234: 3.5270144939422607
+Epoch 0: 9.22% done
+Time taken for epoch: 469.89 s
+Loss for batch 235: 3.573735237121582
+Epoch 0: 9.26% done
+Time taken for epoch: 471.67 s
+Loss for batch 236: 3.5629305839538574
+Epoch 0: 9.30% done
+Time taken for epoch: 473.45 s
+Loss for batch 237: 3.441133737564087
+Epoch 0: 9.34% done
+Time taken for epoch: 475.23 s
+Loss for batch 238: 3.4227912425994873
+Epoch 0: 9.38% done
+Time taken for epoch: 477.01 s
+Loss for batch 239: 3.5458829402923584
+Epoch 0: 9.42% done
+Time taken for epoch: 478.79 s
+Loss for batch 240: 3.4540843963623047
+Epoch 0: 9.45% done
+Time taken for epoch: 480.56 s
+Loss for batch 241: 3.4195730686187744
+Epoch 0: 9.49% done
+Time taken for epoch: 482.35 s
+Loss for batch 242: 3.6454362869262695
+Epoch 0: 9.53% done
+Time taken for epoch: 484.13 s
+Loss for batch 243: 3.619016408920288
+Epoch 0: 9.57% done
+Time taken for epoch: 486.01 s
+Loss for batch 244: 3.630642890930176
+Epoch 0: 9.61% done
+Time taken for epoch: 487.84 s
+Loss for batch 245: 3.485748767852783
+Epoch 0: 9.65% done
+Time taken for epoch: 489.68 s
+Loss for batch 246: 3.630675792694092
+Epoch 0: 9.69% done
+Time taken for epoch: 491.47 s
+Loss for batch 247: 3.5193653106689453
+Epoch 0: 9.73% done
+Time taken for epoch: 493.24 s
+Loss for batch 248: 3.6842103004455566
+Epoch 0: 9.77% done
+Time taken for epoch: 496.91 s
+Loss for batch 249: 3.4687976837158203
+Epoch 0: 9.81% done
+Time taken for epoch: 498.69 s
+Loss for batch 250: 3.521298408508301
+Epoch 0: 9.85% done
+Time taken for epoch: 500.47 s
+Loss for batch 251: 3.4898014068603516
+Epoch 0: 9.89% done
+Time taken for epoch: 502.26 s
+Loss for batch 252: 3.4518110752105713
+Epoch 0: 9.93% done
+Time taken for epoch: 504.03 s
+Loss for batch 253: 3.373000383377075
+Epoch 0: 9.96% done
+Time taken for epoch: 505.82 s
+Loss for batch 254: 3.5429584980010986
+Epoch 0: 10.00% done
+Time taken for epoch: 507.60 s
+Loss for batch 255: 3.3875577449798584
+Epoch 0: 10.04% done
+Time taken for epoch: 509.37 s
+Loss for batch 256: 3.535733938217163
+Epoch 0: 10.08% done
+Time taken for epoch: 511.20 s
+Loss for batch 257: 3.5741376876831055
+Epoch 0: 10.12% done
+Time taken for epoch: 513.02 s
+Loss for batch 258: 3.556161642074585
+Epoch 0: 10.16% done
+Time taken for epoch: 514.85 s
+Loss for batch 259: 3.5236430168151855
+Epoch 0: 10.20% done
+Time taken for epoch: 516.68 s
+Loss for batch 260: 3.551281690597534
+Epoch 0: 10.24% done
+Time taken for epoch: 518.45 s
+Loss for batch 261: 3.3943846225738525
+Epoch 0: 10.28% done
+Time taken for epoch: 520.23 s
+Loss for batch 262: 3.563034772872925
+Epoch 0: 10.32% done
+Time taken for epoch: 522.00 s
+Loss for batch 263: 3.466907262802124
+Epoch 0: 10.36% done
+Time taken for epoch: 523.77 s
+Loss for batch 264: 3.5646586418151855
+Epoch 0: 10.40% done
+Time taken for epoch: 525.54 s
+Loss for batch 265: 3.559842109680176
+Epoch 0: 10.44% done
+Time taken for epoch: 527.31 s
+Loss for batch 266: 3.478008270263672
+Epoch 0: 10.47% done
+Time taken for epoch: 529.09 s
+Loss for batch 267: 3.450119972229004
+Epoch 0: 10.51% done
+Time taken for epoch: 530.88 s
+Loss for batch 268: 3.4874491691589355
+Epoch 0: 10.55% done
+Time taken for epoch: 532.66 s
+Loss for batch 269: 3.472886085510254
+Epoch 0: 10.59% done
+Time taken for epoch: 534.44 s
+Loss for batch 270: 3.5557243824005127
+Epoch 0: 10.63% done
+Time taken for epoch: 536.21 s
+Loss for batch 271: 3.590203046798706
+Epoch 0: 10.67% done
+Time taken for epoch: 538.00 s
+Loss for batch 272: 3.447551727294922
+Epoch 0: 10.71% done
+Time taken for epoch: 539.79 s
+Loss for batch 273: 3.6037967205047607
+Epoch 0: 10.75% done
+Time taken for epoch: 543.48 s
+Loss for batch 274: 3.3743960857391357
+Epoch 0: 10.79% done
+Time taken for epoch: 545.26 s
+Loss for batch 275: 3.584641456604004
+Epoch 0: 10.83% done
+Time taken for epoch: 547.07 s
+Loss for batch 276: 3.485450029373169
+Epoch 0: 10.87% done
+Time taken for epoch: 548.91 s
+Loss for batch 277: 3.6129047870635986
+Epoch 0: 10.91% done
+Time taken for epoch: 550.74 s
+Loss for batch 278: 3.4867732524871826
+Epoch 0: 10.95% done
+Time taken for epoch: 552.59 s
+Loss for batch 279: 3.3397321701049805
+Epoch 0: 10.98% done
+Time taken for epoch: 554.35 s
+Loss for batch 280: 3.7234933376312256
+Epoch 0: 11.02% done
+Time taken for epoch: 556.03 s
+Loss for batch 281: 3.46409010887146
+Epoch 0: 11.06% done
+Time taken for epoch: 557.71 s
+Loss for batch 282: 3.34013295173645
+Epoch 0: 11.10% done
+Time taken for epoch: 559.37 s
+Loss for batch 283: 3.447920799255371
+Epoch 0: 11.14% done
+Time taken for epoch: 561.13 s
+Loss for batch 284: 3.4876022338867188
+Epoch 0: 11.18% done
+Time taken for epoch: 562.80 s
+Loss for batch 285: 3.4807941913604736
+Epoch 0: 11.22% done
+Time taken for epoch: 564.47 s
+Loss for batch 286: 3.4333128929138184
+Epoch 0: 11.26% done
+Time taken for epoch: 566.23 s
+Loss for batch 287: 3.4103052616119385
+Epoch 0: 11.30% done
+Time taken for epoch: 568.22 s
+Loss for batch 288: 3.36759877204895
+Epoch 0: 11.34% done
+Time taken for epoch: 570.09 s
+Loss for batch 289: 3.485337734222412
+Epoch 0: 11.38% done
+Time taken for epoch: 571.95 s
+Loss for batch 290: 3.406916618347168
+Epoch 0: 11.42% done
+Time taken for epoch: 573.85 s
+Loss for batch 291: 3.4599788188934326
+Epoch 0: 11.46% done
+Time taken for epoch: 575.81 s
+Loss for batch 292: 3.5103836059570312
+Epoch 0: 11.49% done
+Time taken for epoch: 577.83 s
+Loss for batch 293: 3.5190141201019287
+Epoch 0: 11.53% done
+Time taken for epoch: 579.82 s
+Loss for batch 294: 3.3194479942321777
+Epoch 0: 11.57% done
+Time taken for epoch: 581.84 s
+Loss for batch 295: 3.343453884124756
+Epoch 0: 11.61% done
+Time taken for epoch: 583.92 s
+Loss for batch 296: 3.422396659851074
+Epoch 0: 11.65% done
+Time taken for epoch: 585.97 s
+Loss for batch 297: 3.2678699493408203
+Epoch 0: 11.69% done
+Time taken for epoch: 588.03 s
+Loss for batch 298: 3.3182151317596436
+Epoch 0: 11.73% done
+Time taken for epoch: 590.08 s
+Loss for batch 299: 3.22739315032959
+Epoch 0: 11.77% done
+Time taken for epoch: 592.12 s
+Loss for batch 300: 3.479743242263794
+Epoch 0: 11.81% done
+Time taken for epoch: 594.17 s
+Loss for batch 301: 3.3915905952453613
+Epoch 0: 11.85% done
+Time taken for epoch: 596.01 s
+Loss for batch 302: 3.350043535232544
+Epoch 0: 11.89% done
+Time taken for epoch: 597.69 s
+Loss for batch 303: 3.222052574157715
+Epoch 0: 11.93% done
+Time taken for epoch: 600.84 s
+Loss for batch 304: 3.464749336242676
+Epoch 0: 11.97% done
+Time taken for epoch: 602.51 s
+Loss for batch 305: 3.4889965057373047
+Epoch 0: 12.00% done
+Time taken for epoch: 604.18 s
+Loss for batch 306: 3.3562800884246826
+Epoch 0: 12.04% done
+Time taken for epoch: 605.97 s
+Loss for batch 307: 3.296802043914795
+Epoch 0: 12.08% done
+Time taken for epoch: 607.65 s
+Loss for batch 308: 3.223745584487915
+Epoch 0: 12.12% done
+Time taken for epoch: 609.32 s
+Loss for batch 309: 3.510012149810791
+Epoch 0: 12.16% done
+Time taken for epoch: 611.09 s
+Loss for batch 310: 3.3155593872070312
+Epoch 0: 12.20% done
+Time taken for epoch: 612.79 s
+Loss for batch 311: 3.5738704204559326
+Epoch 0: 12.24% done
+Time taken for epoch: 614.46 s
+Loss for batch 312: 3.4651150703430176
+Epoch 0: 12.28% done
+Time taken for epoch: 616.13 s
+Loss for batch 313: 3.275460720062256
+Epoch 0: 12.32% done
+Time taken for epoch: 617.80 s
+Loss for batch 314: 3.480133056640625
+Epoch 0: 12.36% done
+Time taken for epoch: 619.55 s
+Loss for batch 315: 3.3037421703338623
+Epoch 0: 12.40% done
+Time taken for epoch: 621.33 s
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 5793370.0 ON r2i3n0 CANCELLED AT 2024-07-08T13:13:27 ***
+slurmstepd: error: *** JOB 5793370 ON r2i3n0 CANCELLED AT 2024-07-08T13:13:27 ***

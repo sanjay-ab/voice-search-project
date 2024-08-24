@@ -1,0 +1,193 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data_half/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-20_01:20:53
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 0.0001
+clip norm: 20, temperature: 0.07, num pairs per batch: 700
+time limit to create dataset: 240
+temperature: 0.07
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/tamil/embeddings/training_data_half/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data_half/9/raw
+Time taken: 62.12 s
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 19.43 s
+Created paired data
+Time taken to create datasets: 189.20 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 390.3092861175537
+Time: 12.18 s
+Epoch 0: 10.00% done
+Loss: 1.4407817014329076
+Time: 342.83 s
+Epoch 0: 20.00% done
+Loss: 0.1431168507781425
+Time: 667.49 s
+Epoch 0: 30.00% done
+Loss: 0.14975231077991116
+Time: 1000.82 s
+Epoch 0: 40.00% done
+Loss: 0.030615571507273755
+Time: 1339.41 s
+Epoch 0: 50.00% done
+Loss: 0.019492367657465228
+Time: 1680.73 s
+Epoch 0: 60.00% done
+Loss: 0.029249380833772914
+Time: 2016.72 s
+Epoch 0: 70.00% done
+Loss: 0.022575071244104537
+Time: 2348.60 s
+Epoch 0: 80.00% done
+Loss: 0.015178142020441921
+Time: 2674.85 s
+Epoch 0: 90.00% done
+Loss: 0.01803558745958811
+Time: 2993.44 s
+
+Epoch 0 done
+Epoch loss: 0.19094410977855383
+
+Time taken for epoch: 3313.05 s
+Number of gradients clipped: 67
+
+Calculating validation loss: 0.00% done
+Time: 0.01 s
+Calculating validation loss: 20.00% done
+Time: 43.80 s
+Calculating validation loss: 40.00% done
+Time: 91.98 s
+Calculating validation loss: 60.00% done
+Time: 138.77 s
+Calculating validation loss: 80.00% done
+Time: 190.48 s
+
+Validation loss: 16.0497956094975
+
+Time taken: 235.47 s
+Saving model to data/tamil/models/9/half_lr_1e-4_tmp_0.07_3_9/2024-07-20_01:20:53_checkpoint_epoch_0.pt
+
+Regenerated paired data
+Epoch 1: 0.00% done
+Loss: 0.0
+Time: 0.03 s
+Epoch 1: 10.00% done
+Loss: 0.017929902234814554
+Time: 309.82 s
+Epoch 1: 20.00% done
+Loss: 0.010455422331768735
+Time: 622.99 s
+Epoch 1: 30.00% done
+Loss: 0.04817056248506852
+Time: 947.22 s
+Epoch 1: 40.00% done
+Loss: 0.012204124390833841
+Time: 1266.31 s
+Epoch 1: 50.00% done
+Loss: 0.004114651144629972
+Time: 1578.92 s
+Epoch 1: 60.00% done
+Loss: 0.022030303193586686
+Time: 1902.34 s
+Epoch 1: 70.00% done
+Loss: 0.012720693469587813
+Time: 2225.18 s
+Epoch 1: 80.00% done
+Loss: 0.015794272194702346
+Time: 2529.98 s
+Epoch 1: 90.00% done
+Loss: 0.00899971212927707
+Time: 2849.48 s
+
+Epoch 1 done
+Epoch loss: 0.017094641431896155
+
+Time taken for epoch: 3167.02 s
+Number of gradients clipped: 23
+
+Calculating validation loss: 0.00% done
+Time: 0.01 s
+Calculating validation loss: 20.00% done
+Time: 47.30 s
+Calculating validation loss: 40.00% done
+Time: 96.34 s
+Calculating validation loss: 60.00% done
+Time: 139.34 s
+Calculating validation loss: 80.00% done
+Time: 183.64 s
+
+Validation loss: 21.49775981826694
+
+Time taken: 227.80 s
+Saving model to data/tamil/models/9/half_lr_1e-4_tmp_0.07_3_9/2024-07-20_01:20:53_checkpoint_epoch_1.pt
+
+Regenerated paired data
+Epoch 2: 0.00% done
+Loss: 0.0
+Time: 0.03 s
+Epoch 2: 10.00% done
+Loss: 0.007617277085002338
+Time: 318.38 s
+Epoch 2: 20.00% done
+Loss: 0.01913066487953106
+Time: 627.84 s
+Epoch 2: 30.00% done
+Loss: 0.008281725617390927
+Time: 949.94 s
+Epoch 2: 40.00% done
+Loss: 0.018845142253618555
+Time: 1259.15 s
+Epoch 2: 50.00% done
+Loss: 0.00850704073598666
+Time: 1571.29 s
+Epoch 2: 60.00% done
+Loss: 0.01361240974973599
+Time: 1880.53 s
+Epoch 2: 70.00% done
+Loss: 0.01644441225129358
+Time: 2207.99 s
+Epoch 2: 80.00% done
+Loss: 0.007953230438693724
+Time: 2525.01 s
+Epoch 2: 90.00% done
+Loss: 0.011261553458295258
+Time: 2840.95 s
+
+Epoch 2 done
+Epoch loss: 0.01242987660397178
+
+Time taken for epoch: 3158.59 s
+Number of gradients clipped: 24
+
+Calculating validation loss: 0.00% done
+Time: 0.01 s
+Calculating validation loss: 20.00% done
+Time: 47.47 s
+Calculating validation loss: 40.00% done
+Time: 89.47 s
+Calculating validation loss: 60.00% done
+Time: 135.63 s
+Calculating validation loss: 80.00% done
+Time: 179.80 s
+
+Validation loss: 20.912782649510106
+
+Time taken: 225.50 s
+Saving model to data/tamil/models/9/half_lr_1e-4_tmp_0.07_3_9/2024-07-20_01:20:53_checkpoint_epoch_2.pt
+
+Regenerated paired data
+Validation loss has not improved for 2 epochs. Stopping training.
+BEST VALIDATION LOSS: 16.0497956094975 at epoch 0
+

@@ -1,0 +1,203 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-23_12:35:35
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 0.0001
+clip norm: 40, temperature: 0.07, num pairs per batch: 150
+num batch pairs to accumulate gradients over: 1000
+time limit to create dataset: 600
+temperature: 0.07
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Model save directory: data/tamil/models/awe/9/lr_0.0001_tmp_0.07_acc_1000_bs_150_3_9
+
+Loading embedded data from directory: data/tamil/embeddings/training_data/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data/9/raw
+Time taken: 108.16 s
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 2.
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 23.10 s
+Created paired data
+Time taken to create datasets: 764.27 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 150.2366015785619
+Time: 0.78 s
+Epoch 0: 10.00% done
+Loss: 7.862031959374164
+Time: 539.87 s
+Epoch 0: 20.00% done
+Loss: 0.4594978170227284
+Time: 1091.68 s
+Epoch 0: 30.00% done
+Loss: 0.2203687302473696
+Time: 1630.01 s
+Epoch 0: 40.00% done
+Loss: 0.14035165743494463
+Time: 2160.31 s
+Epoch 0: 50.00% done
+Loss: 0.14691402284942628
+Time: 2696.57 s
+Epoch 0: 60.00% done
+Loss: 0.09924999592328801
+Time: 3231.77 s
+Epoch 0: 70.00% done
+Loss: 0.05462696002290391
+Time: 3759.63 s
+Epoch 0: 80.00% done
+Loss: 0.0975064219683817
+Time: 4296.74 s
+Epoch 0: 90.00% done
+Loss: 0.036750988265127765
+Time: 4832.74 s
+
+Epoch 0 done
+Epoch loss: 0.9155186539947926
+
+Time taken for epoch: 5363.95 s
+Number of gradients clipped: 203
+
+Calculating validation loss: 0.00% done
+Time: 0.01 s
+Calculating validation loss: 20.00% done
+Time: 40.99 s
+Calculating validation loss: 40.00% done
+Time: 83.64 s
+Calculating validation loss: 60.00% done
+Time: 124.99 s
+Calculating validation loss: 80.00% done
+Time: 166.88 s
+
+Validation loss: 39.92726193756462
+
+Time taken: 209.65 s
+Saving model to data/tamil/models/awe/9/lr_0.0001_tmp_0.07_acc_1000_bs_150_3_9/2024-07-23_12:35:35_checkpoint_epoch_0.pt
+
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 4.
+Regenerated paired data
+Epoch 1: 0.00% done
+Loss: 0.32513227065404254
+Time: 0.15 s
+Epoch 1: 10.00% done
+Loss: 0.051213335954417565
+Time: 495.75 s
+Epoch 1: 20.00% done
+Loss: 0.09370995490502067
+Time: 993.99 s
+Epoch 1: 30.00% done
+Loss: 0.030911380237667332
+Time: 1490.84 s
+Epoch 1: 40.00% done
+Loss: 0.03131039459845254
+Time: 1993.63 s
+Epoch 1: 50.00% done
+Loss: 0.029488206493260238
+Time: 2477.68 s
+Epoch 1: 60.00% done
+Loss: 0.033470799460420524
+Time: 2971.67 s
+Epoch 1: 70.00% done
+Loss: 0.034724546249572254
+Time: 3462.07 s
+Epoch 1: 80.00% done
+Loss: 0.03263833647530538
+Time: 3942.25 s
+Epoch 1: 90.00% done
+Loss: 0.08712674756747808
+Time: 4429.89 s
+
+Epoch 1 done
+Epoch loss: 0.044180155767670634
+
+Time taken for epoch: 4923.25 s
+Number of gradients clipped: 4
+
+Calculating validation loss: 0.00% done
+Time: 0.01 s
+Calculating validation loss: 20.00% done
+Time: 42.25 s
+Calculating validation loss: 40.00% done
+Time: 84.18 s
+Calculating validation loss: 60.00% done
+Time: 126.64 s
+Calculating validation loss: 80.00% done
+Time: 169.41 s
+
+Validation loss: 36.20878859236573
+
+Time taken: 211.83 s
+Saving model to data/tamil/models/awe/9/lr_0.0001_tmp_0.07_acc_1000_bs_150_3_9/2024-07-23_12:35:35_checkpoint_epoch_1.pt
+
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 4.
+Regenerated paired data
+Epoch 2: 0.00% done
+Loss: 0.024303215156708444
+Time: 0.03 s
+Epoch 2: 10.00% done
+Loss: 0.01515097001202731
+Time: 503.16 s
+Epoch 2: 20.00% done
+Loss: 0.026547351938054933
+Time: 993.43 s
+Epoch 2: 30.00% done
+Loss: 0.016756186707552457
+Time: 1478.95 s
+Epoch 2: 40.00% done
+Loss: 0.030960520867450995
+Time: 1970.67 s
+Epoch 2: 50.00% done
+Loss: 0.014412552487382671
+Time: 2474.82 s
+Epoch 2: 60.00% done
+Loss: 0.014979275512270636
+Time: 2979.50 s
+Epoch 2: 70.00% done
+Loss: 0.03807369982988517
+Time: 3474.42 s
+Epoch 2: 80.00% done
+Loss: 0.020382975744504584
+Time: 3965.12 s
+Epoch 2: 90.00% done
+Loss: 0.012572726984328474
+Time: 4458.46 s
+
+Epoch 2 done
+Epoch loss: 0.020012989231101553
+
+Time taken for epoch: 4955.12 s
+Number of gradients clipped: 0
+
+Calculating validation loss: 0.00% done
+Time: 0.01 s
+Calculating validation loss: 20.00% done
+Time: 41.79 s
+Calculating validation loss: 40.00% done
+Time: 83.02 s
+Calculating validation loss: 60.00% done
+Time: 124.55 s
+Calculating validation loss: 80.00% done
+Time: 164.95 s
+
+Validation loss: 23.759400498983343
+
+Time taken: 205.45 s
+Saving model to data/tamil/models/awe/9/lr_0.0001_tmp_0.07_acc_1000_bs_150_3_9/2024-07-23_12:35:35_checkpoint_epoch_2.pt
+
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 4.
+Regenerated paired data
+BEST VALIDATION LOSS: 23.759400498983343 at epoch 2
+

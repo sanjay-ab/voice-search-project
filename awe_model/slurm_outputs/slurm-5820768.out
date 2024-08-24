@@ -1,0 +1,210 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/perturbed_0.1_phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-20_01:14:47
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 0.0001
+clip norm: 20, temperature: 0.3, num pairs per batch: 700
+time limit to create dataset: 240
+temperature: 0.3
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: True, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/tamil/embeddings/training_data/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data/9/raw
+Time taken: 45.02 s
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 39.
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/perturbed_0.1_phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/perturbed_0.1_phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 22.84 s
+Created paired data
+Time taken to create datasets: 345.34 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 55.059051513671875
+Time: 6.34 s
+Epoch 0: 10.00% done
+Loss: 22.3214006579298
+Time: 434.72 s
+Epoch 0: 20.00% done
+Loss: 20.232758047375672
+Time: 847.30 s
+Epoch 0: 30.00% done
+Loss: 19.627849652873326
+Time: 1270.86 s
+Epoch 0: 40.00% done
+Loss: 19.376539884183778
+Time: 1690.70 s
+Epoch 0: 50.00% done
+Loss: 18.976036048320598
+Time: 2111.90 s
+Epoch 0: 60.00% done
+Loss: 18.910340155211472
+Time: 2517.95 s
+Epoch 0: 70.00% done
+Loss: 18.661349170052635
+Time: 2926.95 s
+Epoch 0: 80.00% done
+Loss: 18.519848040943906
+Time: 3346.52 s
+Epoch 0: 90.00% done
+Loss: 18.582575753008054
+Time: 3768.84 s
+
+Epoch 0 done
+Epoch loss: 19.364806429179552
+
+Time taken for epoch: 4181.84 s
+Number of gradients clipped: 4
+
+Calculating validation loss: 0.00% done
+Time: 0.43 s
+Calculating validation loss: 20.00% done
+Time: 49.32 s
+Calculating validation loss: 40.00% done
+Time: 97.81 s
+Calculating validation loss: 60.00% done
+Time: 146.51 s
+Calculating validation loss: 80.00% done
+Time: 193.07 s
+
+Validation loss: 134.04437536137635
+
+Time taken: 237.58 s
+Saving model to data/tamil/models/9/perturbed_0.1_lr_1e-4_tmp_0.3_3_9/2024-07-20_01:14:47_checkpoint_epoch_0.pt
+
+Regenerating perturbed paired data...
+Reloaded embedded data from data/tamil/embeddings/training_data/9/raw
+Time taken: 111.86 s
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 50.
+Regenerated paired data
+Epoch 1: 0.00% done
+Loss: 26.734256744384766
+Time: 0.11 s
+Epoch 1: 10.00% done
+Loss: 17.885672861663256
+Time: 381.67 s
+Epoch 1: 20.00% done
+Loss: 17.395495838802958
+Time: 773.20 s
+Epoch 1: 30.00% done
+Loss: 17.02663990629305
+Time: 1165.61 s
+Epoch 1: 40.00% done
+Loss: 16.83342602491783
+Time: 1565.02 s
+Epoch 1: 50.00% done
+Loss: 16.79554497577423
+Time: 1963.03 s
+Epoch 1: 60.00% done
+Loss: 16.69283228155454
+Time: 2350.72 s
+Epoch 1: 70.00% done
+Loss: 16.682323325352325
+Time: 2732.59 s
+Epoch 1: 80.00% done
+Loss: 16.49117317141958
+Time: 3133.15 s
+Epoch 1: 90.00% done
+Loss: 16.48907308893889
+Time: 3530.71 s
+
+Epoch 1 done
+Epoch loss: 16.875240735888198
+
+Time taken for epoch: 3939.25 s
+Number of gradients clipped: 19
+
+Calculating validation loss: 0.00% done
+Time: 0.17 s
+Calculating validation loss: 20.00% done
+Time: 49.30 s
+Calculating validation loss: 40.00% done
+Time: 97.53 s
+Calculating validation loss: 60.00% done
+Time: 142.61 s
+Calculating validation loss: 80.00% done
+Time: 189.95 s
+
+Validation loss: 145.46827101722448
+
+Time taken: 236.09 s
+Saving model to data/tamil/models/9/perturbed_0.1_lr_1e-4_tmp_0.3_3_9/2024-07-20_01:14:47_checkpoint_epoch_1.pt
+
+Regenerating perturbed paired data...
+Reloaded embedded data from data/tamil/embeddings/training_data/9/raw
+Time taken: 115.32 s
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 72.
+Regenerated paired data
+Epoch 2: 0.00% done
+Loss: 23.953060621625923
+Time: 0.06 s
+Epoch 2: 10.00% done
+Loss: 16.36371471855354
+Time: 373.48 s
+Epoch 2: 20.00% done
+Loss: 16.081128660671126
+Time: 730.23 s
+Epoch 2: 30.00% done
+Loss: 15.748652662205421
+Time: 1097.32 s
+Epoch 2: 40.00% done
+Loss: 15.580461575864701
+Time: 1477.69 s
+Epoch 2: 50.00% done
+Loss: 15.630100623799704
+Time: 1844.92 s
+Epoch 2: 60.00% done
+Loss: 15.51254770253241
+Time: 2219.52 s
+Epoch 2: 70.00% done
+Loss: 15.161233571440672
+Time: 2612.54 s
+Epoch 2: 80.00% done
+Loss: 15.438453072937168
+Time: 2987.43 s
+Epoch 2: 90.00% done
+Loss: 15.410407531639871
+Time: 3358.71 s
+
+Epoch 2 done
+Epoch loss: 15.620780768213823
+
+Time taken for epoch: 3728.99 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.00% done
+Time: 0.02 s
+Calculating validation loss: 20.00% done
+Time: 47.08 s
+Calculating validation loss: 40.00% done
+Time: 96.77 s
+Calculating validation loss: 60.00% done
+Time: 145.26 s
+Calculating validation loss: 80.00% done
+Time: 192.51 s
+
+Validation loss: 137.48974663231522
+
+Time taken: 239.50 s
+Saving model to data/tamil/models/9/perturbed_0.1_lr_1e-4_tmp_0.3_3_9/2024-07-20_01:14:47_checkpoint_epoch_2.pt
+
+Regenerating perturbed paired data...
+Reloaded embedded data from data/tamil/embeddings/training_data/9/raw
+Time taken: 116.71 s
+Dataset generation time limit reached: 240 s.
+Number of classes remaining: 73.
+Regenerated paired data
+Validation loss has not improved for 2 epochs. Stopping training.
+BEST VALIDATION LOSS: 134.04437536137635 at epoch 0
+

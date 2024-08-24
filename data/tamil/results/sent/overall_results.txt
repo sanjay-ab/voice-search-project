@@ -1,0 +1,14 @@
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/sent/9/awe2_512_proj_lr_0.001_linear_weight_decay_0.01/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 8; 1.0 %
+Number of queries whose own document is in the top 10 matches: 25; 3.0 %
+Number of queries with at least one correct result in the top 5 matches: 75; 8.0 %
+Number of queries with at least one correct result in the top 10 matches: 109; 11.0 %
+Mean Average Precision at 5: 0.041
+Mean Average Precision Overall: 0.041

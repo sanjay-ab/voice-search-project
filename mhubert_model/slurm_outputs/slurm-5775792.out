@@ -1,0 +1,38 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Ranking documents for layer 9
+Query Limit: 1
+Document embedded states dir: data/tamil/embeddings/documents/9/raw
+Query embedded states dir: data/tamil/embeddings/queries/9/raw
+Results file: tamil_results/9/raw_multiple_q_vecs/results_all_limit_1.txt
+Time taken to load queries: 0.34 seconds
+Time taken to load documents: 29.70 seconds
+starting
+CPU Memory used: 34.78 GB
+GPU Memory used: 0.00 GB
+Number of batches for documents: 4
+CPU Memory used: 34.78 GB
+GPU Memory used: 0.00 GB
+CPU Memory used: 34.78 GB
+GPU Memory used: 0.00 GB
+Time taken to compute product for batch 0: 0.48830803530290723 s
+CPU Memory used: 35.47 GB
+GPU Memory used: 0.00 GB
+CPU Memory used: 35.47 GB
+GPU Memory used: 0.00 GB
+Time taken to compute product for batch 1: 0.5971935843117535 s
+CPU Memory used: 35.67 GB
+GPU Memory used: 0.00 GB
+CPU Memory used: 35.68 GB
+GPU Memory used: 0.00 GB
+Time taken to compute product for batch 2: 0.746797114610672 s
+CPU Memory used: 35.92 GB
+GPU Memory used: 0.00 GB
+CPU Memory used: 35.92 GB
+GPU Memory used: 0.00 GB
+Time taken to compute product for batch 3: 2.1304416959173977 s
+CPU Memory used: 38.08 GB
+GPU Memory used: 0.00 GB
+Total time taken to compute result: 4.089080770965666 s

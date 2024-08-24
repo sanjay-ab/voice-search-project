@@ -1,0 +1,147 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/banjara/embeddings/training_data/9/raw
+Validation embeddings file: data/banjara/embeddings/validation_data/9/perturbed_0.1_phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-19_12:58:54
+Training model for banjara with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 1e-06
+clip norm: 20, temperature: 0.07, num pairs per batch: 700
+time limit to create dataset: 240
+temperature: 0.07
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/banjara/embeddings/training_data/9/raw
+Loaded embedded data from data/banjara/embeddings/training_data/9/raw
+Time taken: 1.17 s
+Created paired data
+Time taken to create datasets: 1.85 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.03% done
+Loss: 414.79517618815106
+Time: 6.39 s
+Epoch 0: 10.02% done
+Loss: 287.8129140303309
+Time: 13.97 s
+Epoch 0: 20.02% done
+Loss: 277.2200362155667
+Time: 19.59 s
+Epoch 0: 30.01% done
+Loss: 269.6784413477723
+Time: 24.19 s
+Epoch 0: 40.01% done
+Loss: 220.9778072819387
+Time: 28.97 s
+Epoch 0: 50.03% done
+Loss: 210.06698213283173
+Time: 33.97 s
+Epoch 0: 60.02% done
+Loss: 192.13914222911285
+Time: 39.54 s
+Epoch 0: 70.02% done
+Loss: 174.18368558454245
+Time: 44.71 s
+Epoch 0: 80.01% done
+Loss: 166.1791554661482
+Time: 49.70 s
+Epoch 0: 90.01% done
+Loss: 166.0263312041519
+Time: 54.82 s
+
+Epoch 0 done
+Epoch loss: 211.44373195590853
+
+Time taken for epoch: 59.83 s
+Number of gradients clipped: 800
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_3_9/2024-07-19_12:58:54_checkpoint_epoch_0.pt
+
+Regenerated paired data
+Epoch 1: 0.03% done
+Loss: 120.47233581542969
+Time: 0.01 s
+Epoch 1: 10.02% done
+Loss: 157.5484772840541
+Time: 4.92 s
+Epoch 1: 20.02% done
+Loss: 151.8779761717414
+Time: 10.03 s
+Epoch 1: 30.02% done
+Loss: 145.9421708859709
+Time: 14.40 s
+Epoch 1: 40.02% done
+Loss: 143.0230731627926
+Time: 19.16 s
+Epoch 1: 50.01% done
+Loss: 148.7518121781901
+Time: 23.98 s
+Epoch 1: 60.01% done
+Loss: 134.62950021605664
+Time: 28.80 s
+Epoch 1: 70.01% done
+Loss: 129.34254991536167
+Time: 34.18 s
+Epoch 1: 80.01% done
+Loss: 120.99202037378029
+Time: 40.39 s
+Epoch 1: 90.00% done
+Loss: 123.40656342349781
+Time: 45.08 s
+
+Epoch 1 done
+Epoch loss: 137.26736812569646
+
+Time taken for epoch: 50.90 s
+Number of gradients clipped: 1734
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_3_9/2024-07-19_12:58:54_checkpoint_epoch_1.pt
+
+Regenerated paired data
+Epoch 2: 0.03% done
+Loss: 119.0128231048584
+Time: 0.01 s
+Epoch 2: 10.01% done
+Loss: 117.96759579598921
+Time: 5.60 s
+Epoch 2: 20.03% done
+Loss: 102.50768383793543
+Time: 10.59 s
+Epoch 2: 30.01% done
+Loss: 109.4964862280621
+Time: 16.26 s
+Epoch 2: 40.03% done
+Loss: 101.23026089052703
+Time: 21.38 s
+Epoch 2: 50.01% done
+Loss: 107.16303575983387
+Time: 26.14 s
+Epoch 2: 60.03% done
+Loss: 102.72617420962187
+Time: 31.68 s
+Epoch 2: 70.01% done
+Loss: 97.32324280278733
+Time: 36.35 s
+Epoch 2: 80.03% done
+Loss: 97.3272435971584
+Time: 41.08 s
+Epoch 2: 90.01% done
+Loss: 88.04025373033537
+Time: 46.04 s
+
+Epoch 2 done
+Epoch loss: 102.12107337072715
+
+Time taken for epoch: 51.19 s
+Number of gradients clipped: 1840
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_3_9/2024-07-19_12:58:54_checkpoint_epoch_2.pt
+
+Regenerated paired data
+Validation loss has not improved for 2 epochs. Stopping training.
+BEST VALIDATION LOSS: 0 at epoch 0
+

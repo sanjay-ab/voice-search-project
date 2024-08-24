@@ -1,0 +1,9 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Ranking documents for layer 9
+Time taken to load queries: 0.00 seconds
+Time taken to load documents: 4.82 seconds
+CPU Memory used: 2.01 GB
+GPU Memory used: 0.00 GB

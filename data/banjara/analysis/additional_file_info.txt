@@ -1,0 +1,103 @@
+QUERY: com-phone-5548847f-1-0, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.007874015748031496, Label: vagon, Duration: 5.24775 s, Num of possible matching docs: 1
+
+-> short, initial and final background noise
+
+ALL GOLD DOCUMENTS::
+Document: com-phone-5ed2a571-1-0, Label: vagon, Duration: 21.176625 s, Similarity: 0.8510807156562805
+-> longer, lots of background noise
+
+
+
+QUERY: com-phone-721a0eec-1-0, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.0035087719298245615, Label: field2, Duration: 7.94125 s, Num of possible matching docs: 1
+
+-> sounds fine, small amount of background noise
+
+ALL GOLD DOCUMENTS::
+Document: com-phone-ea3811a9-1-0, Label: field2, Duration: 2.4149375 s, Similarity: 0.7744835615158081
+
+-> very short, first second or so silence
+
+
+
+QUERY: com-phone-29524b152-2f344d7f-3415-4226-a3d0-99599c3e54ef-0, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.04521577451550775, Label: sorghum, Duration: 16.06825 s, Num of possible matching docs: 7
+
+-> sounds fine, small amount of background noise
+
+Document: com-phone-29524b152-125037d7-e210-4236-96b5-854e0387d5b4-0, Label: sorghum, Duration: 8.73075 s, Similarity: 0.8234959840774536
+-> sounds fine, fast talking, some background
+Document: com-phone-29524b152-6f7e976c-cef3-407d-85c0-447c48981424-0, Label: sorghum, Duration: 22.4305 s, Similarity: 0.8472397923469543
+-> sounds fine, quite a bit of background
+Document: com-phone-29524b152-a9f9491b-02e7-421f-8626-3598144b3fd4-0, Label: sorghum, Duration: 12.306625 s, Similarity: 0.8607919216156006
+-> sounds fine, quite a bit of background
+Document: com-phone-29524b152-b97245da-5cf9-4998-bdbf-2ae67bd47fb3-0, Label: sorghum, Duration: 23.312875 s, Similarity: 0.848473072052002
+Document: com-phone-29524b152-b97602b6-91d0-4880-9d48-3e523f99fefa-0, Label: sorghum, Duration: 42.8640625 s, Similarity: 0.8548401594161987
+Document: com-phone-29524b152-baa0662f-b332-461b-9e1a-1c754fdff3c1-0, Label: sorghum, Duration: 8.545 s, Similarity: 0.8226815462112427
+Document: com-phone-29524b152-fb860824-aaec-420d-a0d7-739c4ad27a7e-0, Label: sorghum, Duration: 9.5201875 s, Similarity: 0.8502813577651978
+
+
+
+QUERY: com-phone-69457eeb2-19337050-0e5b-4968-98a3-78c875018c8b-1, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.028222338905259266, Label: goat, Duration: 18.39025 s, Num of possible matching docs: 6
+
+-> sounds fine, windy background noise
+
+Document: com-phone-69457eeb2-374a3202-c53b-48a8-bcbe-5a79b1dfcfcf-1, Label: goat, Duration: 7.56975 s, Similarity: 0.8280627727508545
+-> sounds fine, some background noise
+Document: com-phone-69457eeb2-44f20552-7d45-41fa-b918-6d6594cb02b8-0, Label: goat, Duration: 6.8266875 s, Similarity: 0.8472004532814026
+-> sounds fine, little background noise
+Document: com-phone-69457eeb2-745ee396-73a5-45c0-8650-6eb549fb053e-1, Label: goat, Duration: 12.863875 s, Similarity: 0.8609631657600403
+-> sounds fine
+Document: com-phone-69457eeb2-745ee396-73a5-45c0-8650-6eb549fb053e-2, Label: goat, Duration: 19.8763125 s, Similarity: 0.8572899699211121
+Document: com-phone-69457eeb2-850dc52c-3196-417f-87cf-25b3db469226-0, Label: goat, Duration: 15.185875 s, Similarity: 0.8572704792022705
+Document: com-phone-69457eeb2-bc5fe160-a8ab-4d53-90ed-615a77e06726-0, Label: goat, Duration: 29.860875 s, Similarity: 0.8650752902030945
+
+
+
+QUERY: com-phone-5ed2a571-2-0, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.0038022813688212928, Label: cow, Duration: 28.305125 s, Num of possible matching docs: 1
+-> sounds fine, lots of background noise
+
+ALL GOLD DOCUMENTS::
+Document: com-phone-fc8cca9d-2-0, Label: cow, Duration: 11.42425 s, Similarity: 0.8264884352684021
+-> sounds fine, although, there is a second speaker at the end
+
+
+
+QUERY: com-phone-833baed0-15-0, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.07339145834577199, Label: field, Duration: 40.5885 s, Num of possible matching docs: 10
+-> sounds fine
+
+ALL GOLD DOCUMENTS::
+Document: com-phone-158a34b9-10-0, Label: field, Duration: 43.1426875 s, Similarity: 0.8504015207290649
+-> sounds quiet, very little background noise
+Document: com-phone-1db43849-14-0, Label: field, Duration: 25.10075 s, Similarity: 0.8422976136207581
+-> quiet, sometimes mumbling
+Document: com-phone-275be431-1-0, Label: field, Duration: 14.6750625 s, Similarity: 0.8338985443115234
+Document: com-phone-3a02fa5d-10-0, Label: field, Duration: 78.2048125 s, Similarity: 0.8634999394416809
+Document: com-phone-41f985a8-10-0, Label: field, Duration: 35.1318125 s, Similarity: 0.8563697338104248
+Document: com-phone-7355b68d-6c783481-65bf-4998-90be-9617f1bb9152-0, Label: field, Duration: 23.77725 s, Similarity: 0.8421458601951599
+Document: com-phone-a73b3e4e-45791cfe-a363-421a-9057-00b72c066e02-0, Label: field, Duration: 89.2575625 s, Similarity: 0.8659533858299255
+Document: com-phone-abe37893-10-0, Label: field, Duration: 37.6628125 s, Similarity: 0.8507340550422668
+Document: com-phone-aeb4cfa5-10-0, Label: field, Duration: 104.257625 s, Similarity: 0.8665632009506226
+Document: com-phone-b2702a5f-12-0, Label: field, Duration: 25.634875 s, Similarity: 0.8426738381385803
+
+
+
+QUERY: com-phone-a73b3e4e-30fe8065-35bf-428a-898e-9e55e6aff901-0, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.0584196632282106, Label: taro, Duration: 42.8640625 s, Num of possible matching docs: 11
+-> very quiet
+
+Document: com-phone-1db43849-16-0, Label: taro, Duration: 14.3035 s, Similarity: 0.8486724495887756
+-> sounds fine, some background noise, different speaker interruping mid-utterance. 
+Document: com-phone-250d4c03-18-0, Label: taro, Duration: 14.3035 s, Similarity: 0.8453025221824646
+-> sounds ok, lots of background noise
+Document: com-phone-3a02fa5d-16-0, Label: taro, Duration: 63.0654375 s, Similarity: 0.8781976103782654
+Document: com-phone-41f985a8-16-0, Label: taro, Duration: 14.814375 s, Similarity: 0.8408315181732178
+Document: com-phone-4e4ac427-16-0, Label: taro, Duration: 16.6255 s, Similarity: 0.8441974520683289
+Document: com-phone-7355b68d-2885a819-e758-4914-80df-15751bfd0535-0, Label: taro, Duration: 15.6038125 s, Similarity: 0.8430113792419434
+Document: com-phone-833baed0-12-0, Label: taro, Duration: 47.4848125 s, Similarity: 0.8540361523628235
+Document: com-phone-bd16d0bb-33-0, Label: taro, Duration: 24.473875 s, Similarity: 0.8489255309104919
+Document: com-phone-c4eea63f-1d0c8e5e-bae2-471f-9bd3-4d3730e51e07-0, Label: taro, Duration: 19.3655 s, Similarity: 0.8468510508537292
+Document: com-phone-f34a98a1-18-0, Label: taro, Duration: 15.1394375 s, Similarity: 0.8440132141113281
+Document: com-phone-fc8cca9d-5-0, Label: taro, Duration: 66.31625 s, Similarity: 0.8645346164703369
+
+
+
+QUERY: com-phone-56bc5657-6-0, Number of matches in top 5: 0, Average Precision at 5: 0, Average Precision Overall: 0.03420604875206093, Label: papaya, Duration: 49.760375 s, Num of possible matching docs: 8
+-> sounds fine

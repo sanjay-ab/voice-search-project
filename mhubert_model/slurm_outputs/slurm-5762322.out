@@ -1,0 +1,98 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+DEVICE: cuda
+TIME TO LOAD HUBERT: 67.06 s
+NUMBER OF CPU CORES: 80
+Generating embeddings for documents
+CPU Memory used: 2.25 GB
+GPU Memory used: 0.38 GB
+CPU Memory used: 2.25 GB
+GPU Memory used: 0.37 GB
+0.00% done
+Time: 2.61 s
+SAVING BATCH
+CPU Memory used: 2.25 GB
+GPU Memory used: 0.38 GB
+CPU Memory used: 2.25 GB
+GPU Memory used: 0.37 GB
+0.01% done
+Time: 2.71 s
+SAVING BATCH
+CPU Memory used: 2.25 GB
+GPU Memory used: 0.40 GB
+CPU Memory used: 2.26 GB
+GPU Memory used: 0.37 GB
+0.01% done
+Time: 2.91 s
+SAVING BATCH
+CPU Memory used: 2.26 GB
+GPU Memory used: 0.38 GB
+CPU Memory used: 2.27 GB
+GPU Memory used: 0.37 GB
+0.02% done
+Time: 3.04 s
+SAVING BATCH
+CPU Memory used: 2.27 GB
+GPU Memory used: 0.38 GB
+CPU Memory used: 2.27 GB
+GPU Memory used: 0.37 GB
+0.02% done
+Time: 3.13 s
+SAVING BATCH
+CPU Memory used: 2.27 GB
+GPU Memory used: 0.38 GB
+CPU Memory used: 2.27 GB
+GPU Memory used: 0.37 GB
+0.02% done
+Time: 3.21 s
+SAVING BATCH
+SAVING BATCH
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+99.49% done
+Time: 2248.02 s
+SAVING BATCH
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+99.59% done
+Time: 2248.07 s
+SAVING BATCH
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+99.69% done
+Time: 2248.11 s
+SAVING BATCH
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+99.80% done
+Time: 2248.16 s
+SAVING BATCH
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+99.90% done
+Time: 2248.20 s
+SAVING BATCH
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+CPU Memory used: 2.41 GB
+GPU Memory used: 0.37 GB
+100.00% done
+Time: 2248.25 s
+SAVING BATCH
+TIME TO EXTRACT EMBEDDINGS: 2248.28 s
+RUN FINISHED
+SAVING FINAL EMBEDDINGS

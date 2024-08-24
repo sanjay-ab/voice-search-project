@@ -1,0 +1,429 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/banjara/embeddings/training_data/9/raw
+Validation embeddings file: data/banjara/embeddings/validation_data/9/perturbed_0.1_phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-19_15:23:26
+Training model for banjara with inputs from mHuBERT layer 9
+Number of epochs: 10, patience: 2, learning rate: 1e-06
+clip norm: 20, temperature: 0.4, num pairs per batch: 700
+time limit to create dataset: 240
+temperature: 0.4
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/banjara/embeddings/training_data/9/raw
+Loaded embedded data from data/banjara/embeddings/training_data/9/raw
+Time taken: 0.56 s
+Created paired data
+Time taken to create datasets: 1.43 s
+
+Loading model from data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.5_3_9/2024-07-19_14:27:11_checkpoint_epoch_9.pt
+
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.03% done
+Loss: 28.438297907511394
+Time: 17.29 s
+Epoch 0: 10.02% done
+Loss: 66.55097054099383
+Time: 26.88 s
+Epoch 0: 20.02% done
+Loss: 65.96225471047795
+Time: 33.56 s
+Epoch 0: 30.01% done
+Loss: 64.79760273015893
+Time: 39.86 s
+Epoch 0: 40.01% done
+Loss: 66.60541170234582
+Time: 45.86 s
+Epoch 0: 50.03% done
+Loss: 62.03350117603592
+Time: 52.21 s
+Epoch 0: 60.02% done
+Loss: 66.95926995459163
+Time: 59.16 s
+Epoch 0: 70.02% done
+Loss: 62.52809895179359
+Time: 64.81 s
+Epoch 0: 80.01% done
+Loss: 67.62475602087443
+Time: 70.66 s
+Epoch 0: 90.01% done
+Loss: 63.53399121190426
+Time: 76.87 s
+
+Epoch 0 done
+Epoch loss: 65.22375496460394
+
+Time taken for epoch: 83.24 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_0.pt
+
+Regenerated paired data
+Epoch 1: 0.03% done
+Loss: 93.39555501937866
+Time: 0.02 s
+Epoch 1: 10.02% done
+Loss: 64.93573634569623
+Time: 5.83 s
+Epoch 1: 20.02% done
+Loss: 64.71716232198308
+Time: 11.92 s
+Epoch 1: 30.02% done
+Loss: 66.28455352109147
+Time: 17.58 s
+Epoch 1: 40.02% done
+Loss: 64.06927369361962
+Time: 24.16 s
+Epoch 1: 50.01% done
+Loss: 63.15718120065205
+Time: 30.34 s
+Epoch 1: 60.01% done
+Loss: 65.53644173108262
+Time: 36.47 s
+Epoch 1: 70.01% done
+Loss: 60.93901887239083
+Time: 42.93 s
+Epoch 1: 80.01% done
+Loss: 65.07783433792137
+Time: 50.34 s
+Epoch 1: 90.00% done
+Loss: 63.70400388127756
+Time: 56.68 s
+
+Epoch 1 done
+Epoch loss: 64.30083497383681
+
+Time taken for epoch: 63.74 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_1.pt
+
+Regenerated paired data
+Epoch 2: 0.03% done
+Loss: 82.34399795532227
+Time: 0.01 s
+Epoch 2: 10.01% done
+Loss: 64.79944042091417
+Time: 6.50 s
+Epoch 2: 20.03% done
+Loss: 63.357432244484365
+Time: 12.82 s
+Epoch 2: 30.01% done
+Loss: 61.49990511129501
+Time: 19.70 s
+Epoch 2: 40.03% done
+Loss: 62.0914422708617
+Time: 25.87 s
+Epoch 2: 50.01% done
+Loss: 61.21465096679091
+Time: 31.46 s
+Epoch 2: 60.03% done
+Loss: 64.59078168141748
+Time: 37.75 s
+Epoch 2: 70.01% done
+Loss: 62.763955170322326
+Time: 43.81 s
+Epoch 2: 80.03% done
+Loss: 62.51611336004287
+Time: 49.45 s
+Epoch 2: 90.01% done
+Loss: 63.22924510851415
+Time: 55.85 s
+
+Epoch 2 done
+Epoch loss: 63.0891497314572
+
+Time taken for epoch: 62.28 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_2.pt
+
+Regenerated paired data
+Epoch 3: 0.03% done
+Loss: 41.02044291310496
+Time: 0.03 s
+Epoch 3: 10.02% done
+Loss: 63.20316017564983
+Time: 6.54 s
+Epoch 3: 20.02% done
+Loss: 59.631096452760715
+Time: 14.33 s
+Epoch 3: 30.01% done
+Loss: 63.50034855633495
+Time: 20.10 s
+Epoch 3: 40.01% done
+Loss: 61.73439350707571
+Time: 25.90 s
+Epoch 3: 50.03% done
+Loss: 63.89209457616253
+Time: 32.25 s
+Epoch 3: 60.02% done
+Loss: 62.751528003917244
+Time: 38.34 s
+Epoch 3: 70.02% done
+Loss: 62.79714394572359
+Time: 44.08 s
+Epoch 3: 80.01% done
+Loss: 61.25101792572754
+Time: 51.48 s
+Epoch 3: 90.01% done
+Loss: 62.07370160572705
+Time: 58.52 s
+
+Epoch 3 done
+Epoch loss: 62.15614963405549
+
+Time taken for epoch: 64.46 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_3.pt
+
+Regenerated paired data
+Epoch 4: 0.03% done
+Loss: 32.57685303688049
+Time: 0.02 s
+Epoch 4: 10.01% done
+Loss: 61.893740493817724
+Time: 7.14 s
+Epoch 4: 20.02% done
+Loss: 60.09111293749962
+Time: 14.91 s
+Epoch 4: 30.01% done
+Loss: 62.52545782576112
+Time: 21.18 s
+Epoch 4: 40.02% done
+Loss: 60.47970881700555
+Time: 27.12 s
+Epoch 4: 50.03% done
+Loss: 61.26638412316109
+Time: 33.04 s
+Epoch 4: 60.01% done
+Loss: 62.23283391267014
+Time: 38.72 s
+Epoch 4: 70.02% done
+Loss: 61.02420434137476
+Time: 45.92 s
+Epoch 4: 80.01% done
+Loss: 60.33744272582928
+Time: 51.05 s
+Epoch 4: 90.02% done
+Loss: 60.85320630449534
+Time: 56.95 s
+
+Epoch 4 done
+Epoch loss: 61.121248675241745
+
+Time taken for epoch: 63.00 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_4.pt
+
+Regenerated paired data
+Epoch 5: 0.03% done
+Loss: 96.62446975708008
+Time: 0.02 s
+Epoch 5: 10.02% done
+Loss: 61.975615283431026
+Time: 6.70 s
+Epoch 5: 20.01% done
+Loss: 60.4034500007867
+Time: 12.91 s
+Epoch 5: 30.00% done
+Loss: 62.06133222217827
+Time: 19.74 s
+Epoch 5: 40.02% done
+Loss: 59.24444988988034
+Time: 25.12 s
+Epoch 5: 50.01% done
+Loss: 59.96555654162688
+Time: 31.66 s
+Epoch 5: 60.01% done
+Loss: 60.08754934985367
+Time: 37.79 s
+Epoch 5: 70.02% done
+Loss: 58.824377058983366
+Time: 44.70 s
+Epoch 5: 80.02% done
+Loss: 58.838624465848675
+Time: 50.97 s
+Epoch 5: 90.01% done
+Loss: 58.51204347820413
+Time: 57.39 s
+
+Epoch 5 done
+Epoch loss: 60.17750877319136
+
+Time taken for epoch: 63.75 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_5.pt
+
+Regenerated paired data
+Epoch 6: 0.03% done
+Loss: 32.57080713907878
+Time: 0.03 s
+Epoch 6: 10.01% done
+Loss: 57.127803468626865
+Time: 5.81 s
+Epoch 6: 20.03% done
+Loss: 58.50733213044592
+Time: 12.75 s
+Epoch 6: 30.01% done
+Loss: 59.04485537544218
+Time: 19.21 s
+Epoch 6: 40.03% done
+Loss: 61.201511884088006
+Time: 25.90 s
+Epoch 6: 50.01% done
+Loss: 58.153588362432515
+Time: 31.99 s
+Epoch 6: 60.03% done
+Loss: 57.916499633346966
+Time: 39.41 s
+Epoch 6: 70.01% done
+Loss: 59.585346271789945
+Time: 45.12 s
+Epoch 6: 80.03% done
+Loss: 57.9548506849305
+Time: 51.39 s
+Epoch 6: 90.01% done
+Loss: 61.36202066110548
+Time: 57.67 s
+
+Epoch 6 done
+Epoch loss: 58.985830622267756
+
+Time taken for epoch: 63.87 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_6.pt
+
+Regenerated paired data
+Epoch 7: 0.03% done
+Loss: 31.25357826550802
+Time: 0.01 s
+Epoch 7: 10.02% done
+Loss: 60.46179451129148
+Time: 6.58 s
+Epoch 7: 20.01% done
+Loss: 55.84419478395811
+Time: 13.62 s
+Epoch 7: 30.00% done
+Loss: 58.13268181901193
+Time: 19.56 s
+Epoch 7: 40.02% done
+Loss: 57.477849553798016
+Time: 25.77 s
+Epoch 7: 50.01% done
+Loss: 57.50628214634361
+Time: 32.94 s
+Epoch 7: 60.01% done
+Loss: 58.240718625213376
+Time: 38.82 s
+Epoch 7: 70.02% done
+Loss: 57.6687559932655
+Time: 45.69 s
+Epoch 7: 80.02% done
+Loss: 58.55417098108272
+Time: 52.06 s
+Epoch 7: 90.01% done
+Loss: 57.368877048248216
+Time: 57.99 s
+
+Epoch 7 done
+Epoch loss: 57.72892903224073
+
+Time taken for epoch: 65.14 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_7.pt
+
+Regenerated paired data
+Epoch 8: 0.03% done
+Loss: 88.56793403625488
+Time: 0.03 s
+Epoch 8: 10.02% done
+Loss: 58.30321936915644
+Time: 5.65 s
+Epoch 8: 20.01% done
+Loss: 59.0160118796887
+Time: 11.39 s
+Epoch 8: 30.00% done
+Loss: 55.52784425089901
+Time: 17.89 s
+Epoch 8: 40.02% done
+Loss: 56.9225410504536
+Time: 25.72 s
+Epoch 8: 50.01% done
+Loss: 56.33672993536414
+Time: 31.93 s
+Epoch 8: 60.01% done
+Loss: 57.64058796841288
+Time: 37.87 s
+Epoch 8: 70.02% done
+Loss: 56.950387390324394
+Time: 44.66 s
+Epoch 8: 80.02% done
+Loss: 56.22123458495465
+Time: 50.50 s
+Epoch 8: 90.01% done
+Loss: 54.8224072029989
+Time: 57.09 s
+
+Epoch 8 done
+Epoch loss: 56.520810968341
+
+Time taken for epoch: 62.97 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_8.pt
+
+Regenerated paired data
+Epoch 9: 0.03% done
+Loss: 65.47915594918388
+Time: 0.02 s
+Epoch 9: 10.02% done
+Loss: 54.46375904992627
+Time: 5.41 s
+Epoch 9: 20.01% done
+Loss: 55.912966085983605
+Time: 11.30 s
+Epoch 9: 30.02% done
+Loss: 57.92348498400564
+Time: 17.77 s
+Epoch 9: 40.01% done
+Loss: 56.33062914534101
+Time: 24.70 s
+Epoch 9: 50.03% done
+Loss: 55.35770316852479
+Time: 32.15 s
+Epoch 9: 60.02% done
+Loss: 55.21267359837008
+Time: 38.53 s
+Epoch 9: 70.01% done
+Loss: 56.441966462796394
+Time: 44.74 s
+Epoch 9: 80.02% done
+Loss: 56.8718364592311
+Time: 51.38 s
+Epoch 9: 90.01% done
+Loss: 53.798319665899555
+Time: 57.59 s
+
+Epoch 9 done
+Epoch loss: 55.63857559798485
+
+Time taken for epoch: 63.58 s
+Number of gradients clipped: 0
+
+Saving model to data/banjara/models/9/tamil_lr_1e-4_tmp_0.07_banj_lr_1e-6_tmp_0.4_3_9/2024-07-19_15:23:26_checkpoint_epoch_9.pt
+
+Regenerated paired data
+BEST VALIDATION LOSS: 0 at epoch 0
+

@@ -1,0 +1,8 @@
+No individual load
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Ranking documents for layer 9
+Ranking documents for query q_000020022.pkl
+Time taken to rank documents: 2.52 seconds

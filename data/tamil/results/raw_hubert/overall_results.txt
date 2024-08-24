@@ -1,0 +1,221 @@
+Results For:
+Layer 9
+Pooling method mean
+Window size 240 ms 
+Stride 80 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 593; 60 %
+Number of queries whose own document is in the top 10 matches: 747; 76 %
+Number of queries with at least one correct result in the top 5 matches: 156; 16 %
+Number of queries with at least one correct result in the top 10 matches: 190; 19 %
+
+Results For:
+Layer 10
+Pooling method mean
+Window size 240 ms 
+Stride 80 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 446; 45 %
+Number of queries whose own document is in the top 10 matches: 653; 66 %
+Number of queries with at least one correct result in the top 5 matches: 66; 7 %
+Number of queries with at least one correct result in the top 10 matches: 85; 9 %
+
+Results For:
+Layer 11
+Pooling method mean
+Window size 240 ms 
+Stride 80 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 316; 32 %
+Number of queries whose own document is in the top 10 matches: 489; 50 %
+Number of queries with at least one correct result in the top 5 matches: 28; 3 %
+Number of queries with at least one correct result in the top 10 matches: 40; 4 %
+
+Results For:
+Layer 9
+Pooling method mean
+Window size 600 ms 
+Stride 300 ms
+Query multiple vectors False 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 33; 3 %
+Number of queries whose own document is in the top 10 matches: 86; 9 %
+Number of queries with at least one correct result in the top 5 matches: 6; 1 %
+Number of queries with at least one correct result in the top 10 matches: 12; 1 %
+
+Results For:
+Layer 10
+Pooling method mean
+Window size 600 ms 
+Stride 300 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 35; 4 %
+Number of queries whose own document is in the top 10 matches: 80; 8 %
+Number of queries with at least one correct result in the top 5 matches: 5; 1 %
+Number of queries with at least one correct result in the top 10 matches: 8; 1 %
+
+Results For:
+Layer 11
+Pooling method mean
+Window size 600 ms 
+Stride 300 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 20; 2 %
+Number of queries whose own document is in the top 10 matches: 45; 5 %
+Number of queries with at least one correct result in the top 5 matches: 0; 0 %
+Number of queries with at least one correct result in the top 10 matches: 2; 0 %
+
+Results For:
+Layer 8
+Pooling method mean
+Window size 600 ms 
+Stride 300 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 93; 9 %
+Number of queries whose own document is in the top 10 matches: 198; 20 %
+Number of queries with at least one correct result in the top 5 matches: 10; 1 %
+Number of queries with at least one correct result in the top 10 matches: 16; 2 %
+
+Results For:
+Layer 9
+Pooling method mean
+Window size 120 ms 
+Stride 40 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms.
+Total number of queries: 983
+Number of queries whose best match is its own document: 793; 81 %
+Number of queries whose own document is in the top 10 matches: 872; 89 %
+Number of queries with at least one correct result in the top 5 matches: 305; 31 %
+Number of queries with at least one correct result in the top 10 matches: 349; 36 %
+
+Results For:
+Layer 9
+Pooling method mean
+Window size 120 ms 
+Stride 40 ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms
+Limit 100
+Total number of queries: 100
+Number of queries whose best match is its own document: 84; 84 %
+Number of queries whose own document is in the top 10 matches: 89; 89 %
+Number of queries with at least one correct result in the top 5 matches: 44; 44 %
+Number of queries with at least one correct result in the top 10 matches: 50; 50 %
+
+Results For:
+Layer 9
+Pooling method mean
+Window size None ms 
+Stride None ms
+Query multiple vectors True 
+Query window size None ms
+Query stride None ms
+Limit 100
+Total number of queries: 100
+Number of queries whose best match is its own document: 89; 89 %
+Number of queries whose own document is in the top 10 matches: 94; 94 %
+Number of queries with at least one correct result in the top 5 matches: 51; 51 %
+Number of queries with at least one correct result in the top 10 matches: 61; 61 %
+
+Results For:
+tamil
+Layer 7
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 983
+Number of queries whose best match is its own document: 917; 93 %
+Number of queries whose own document is in the top 10 matches: 948; 96 %
+Number of queries with at least one correct result in the top 5 matches: 318; 32 %
+Number of queries with at least one correct result in the top 10 matches: 387; 39 %
+Mean Average Precision at 5: 0.220
+Mean Average Precision Overall: 0.214
+
+Results For:
+tamil
+Layer 8
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 983
+Number of queries whose best match is its own document: 892; 91 %
+Number of queries whose own document is in the top 10 matches: 948; 96 %
+Number of queries with at least one correct result in the top 5 matches: 353; 36 %
+Number of queries with at least one correct result in the top 10 matches: 422; 43 %
+Mean Average Precision at 5: 0.251
+Mean Average Precision Overall: 0.243
+
+Results For:
+tamil
+Layer 9
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 983
+Number of queries whose best match is its own document: 871; 89 %
+Number of queries whose own document is in the top 10 matches: 948; 96 %
+Number of queries with at least one correct result in the top 5 matches: 365; 37 %
+Number of queries with at least one correct result in the top 10 matches: 441; 45 %
+Mean Average Precision at 5: 0.260
+Mean Average Precision Overall: 0.250
+
+Results For:
+tamil
+Layer 10
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 983
+Number of queries whose best match is its own document: 837; 85 %
+Number of queries whose own document is in the top 10 matches: 948; 96 %
+Number of queries with at least one correct result in the top 5 matches: 268; 27 %
+Number of queries with at least one correct result in the top 10 matches: 323; 33 %
+Mean Average Precision at 5: 0.183
+Mean Average Precision Overall: 0.175
+
+Results For:
+tamil
+Layer 11
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 983
+Number of queries whose best match is its own document: 724; 74 %
+Number of queries whose own document is in the top 10 matches: 948; 96 %
+Number of queries with at least one correct result in the top 5 matches: 138; 14 %
+Number of queries with at least one correct result in the top 10 matches: 180; 18 %
+Mean Average Precision at 5: 0.093
+Mean Average Precision Overall: 0.091

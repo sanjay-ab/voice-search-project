@@ -1,0 +1,124 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data_half/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/perturbed_phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-18_14:28:52
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 10, patience: 2, learning rate: 1e-05
+clip norm: 20, temperature: 0.15, num pairs per batch: 800
+time limit to create dataset: 240
+temperature: 0.15
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: True, max one sided perturb amount: 0.2
+
+Loading embedded data from directory: data/tamil/embeddings/training_data_half/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data_half/9/raw
+Time taken: 12.48 s
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/perturbed_phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/perturbed_phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 26.01 s
+Created paired data
+Time taken to create datasets: 141.33 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 318.9138730367025
+Time: 0.73 s
+Epoch 0: 10.00% done
+Loss: 10.124606458531703
+Time: 315.06 s
+Epoch 0: 20.00% done
+Loss: 3.0658594162363655
+Time: 634.30 s
+Epoch 0: 30.00% done
+Loss: 2.2902884317172068
+Time: 950.27 s
+Epoch 0: 40.00% done
+Loss: 1.9033188532850693
+Time: 1266.01 s
+Epoch 0: 50.00% done
+Loss: 1.5928628498624176
+Time: 1584.43 s
+Epoch 0: 60.00% done
+Loss: 1.3848632531912912
+Time: 1911.36 s
+Epoch 0: 70.00% done
+Loss: 1.2588195621995526
+Time: 2238.47 s
+Epoch 0: 80.00% done
+Loss: 1.0903625407124906
+Time: 2556.82 s
+Epoch 0: 90.00% done
+Loss: 1.0393434063612441
+Time: 2876.14 s
+
+Epoch 0 done
+Epoch loss: 2.4711697684744545
+
+Time taken for epoch: 3189.39 s
+Number of gradients clipped: 256
+
+Calculating validation loss: 0.00% done
+Time: 0.01 s
+Calculating validation loss: 20.00% done
+Time: 53.23 s
+Calculating validation loss: 40.00% done
+Time: 106.04 s
+Calculating validation loss: 60.00% done
+Time: 155.69 s
+Calculating validation loss: 80.00% done
+Time: 205.45 s
+
+Validation loss: 171.4542630013996
+
+Time taken: 252.59 s
+Saving model to data/tamil/models/9/half_perturbed_3_9/2024-07-18_14:28:52_checkpoint_epoch_0.pt
+
+Regenerating perturbed paired data...
+Reloaded embedded data from data/tamil/embeddings/training_data_half/9/raw
+Time taken: 10.92 s
+Regenerated paired data
+Epoch 1: 0.00% done
+Loss: 0.1947062904946506
+Time: 0.03 s
+Epoch 1: 10.00% done
+Loss: 2.862141868824403
+Time: 314.44 s
+Epoch 1: 20.00% done
+Loss: 1.672471568984124
+Time: 637.06 s
+Epoch 1: 30.00% done
+Loss: 1.1757724220926462
+Time: 958.89 s
+Epoch 1: 40.00% done
+Loss: 1.0743359454281876
+Time: 1283.85 s
+Epoch 1: 50.00% done
+Loss: 0.9680399657406341
+Time: 1604.45 s
+Epoch 1: 60.00% done
+Loss: 0.8815262388079348
+Time: 1911.50 s
+Epoch 1: 70.00% done
+Loss: 0.7926473852722221
+Time: 2234.44 s
+Epoch 1: 80.00% done
+Loss: 0.8043988698183184
+Time: 2558.18 s
+Traceback (most recent call last):
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/awe_model/train_model.py", line 278, in <module>
+    train_one_epoch(model, train_dataloader, loss_function, optimizer,  
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/awe_model/train_model.py", line 123, in train_one_epoch
+    accumulated_loss.backward()
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 80.00 MiB (GPU 0; 15.77 GiB total capacity; 14.54 GiB already allocated; 704.00 KiB free; 14.77 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: r2i4n5: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=5815339.0

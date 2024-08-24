@@ -1,0 +1,91 @@
+Layer 0
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.32102263967196154
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.31273440519968665
+Window size 240 ms, stride 80 ms
+top 2 matches: 7, difference in similarity: 0.12241669495900476
+Layer 1
+Window size 1000 ms, stride 500 ms
+top 2 matches: 7, difference in similarity: 0.15810811519622792
+Window size 600 ms, stride 300 ms
+top 2 matches: 7, difference in similarity: 0.1678520838419596
+Window size 240 ms, stride 80 ms
+top 2 matches: 6, difference in similarity: 0
+Layer 2
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.2466383079687754
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.25902281204859423
+Window size 240 ms, stride 80 ms
+top 2 matches: 6, difference in similarity: 0
+Layer 3
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.27914569775263465
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.29143884778022766
+Window size 240 ms, stride 80 ms
+top 2 matches: 7, difference in similarity: 0
+Layer 4
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.33889667193094886
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.35118812322616577
+Window size 240 ms, stride 80 ms
+top 2 matches: 7, difference in similarity: 0
+Layer 5
+Window size 1000 ms, stride 500 ms
+top 2 matches: 7, difference in similarity: 0.3132185538609823
+Window size 600 ms, stride 300 ms
+top 2 matches: 7, difference in similarity: 0.32337681452433265
+Window size 240 ms, stride 80 ms
+top 2 matches: 7, difference in similarity: 0.17893060048421228
+Layer 6
+Window size 1000 ms, stride 500 ms
+top 2 matches: 7, difference in similarity: 0.32938436667124427
+Window size 600 ms, stride 300 ms
+top 2 matches: 7, difference in similarity: 0.3371732930342357
+Window size 240 ms, stride 80 ms
+top 2 matches: 7, difference in similarity: 0.2234603762626648
+Layer 7
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.3697599867979685
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.3742317954699199
+Window size 240 ms, stride 80 ms
+top 2 matches: 7, difference in similarity: 0.23327195644378662
+Layer 8
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.35133485992749536
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.35630140701929736
+Window size 240 ms, stride 80 ms
+top 2 matches: 8, difference in similarity: 0.2729701300462086
+Layer 9
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.42161632577578223
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.42383520801862085
+Window size 240 ms, stride 80 ms
+top 2 matches: 8, difference in similarity: 0.32837368051211036
+Layer 10
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.35646007458368945
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.3609826068083446
+Window size 240 ms, stride 80 ms
+top 2 matches: 8, difference in similarity: 0.2637807826201122
+Layer 11
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.3333715697129568
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.3375640710194905
+Window size 240 ms, stride 80 ms
+top 2 matches: 8, difference in similarity: 0.21204440792401635
+Layer 12
+Window size 1000 ms, stride 500 ms
+top 2 matches: 8, difference in similarity: 0.33421194553375244
+Window size 600 ms, stride 300 ms
+top 2 matches: 8, difference in similarity: 0.34294402599334717
+Window size 240 ms, stride 80 ms
+top 2 matches: 8, difference in similarity: 0.24162477254867554

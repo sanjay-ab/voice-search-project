@@ -1,0 +1,108 @@
+Results For:
+banjara
+Layer 9
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 26
+Number of queries whose best match is its own document: 26; 100 %
+Number of queries whose own document is in the top 10 matches: 26; 100 %
+Number of queries with at least one correct result in the top 5 matches: 15; 58 %
+Number of queries with at least one correct result in the top 10 matches: 18; 69 %
+
+Results For:
+banjara
+Layer 8
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 26
+Number of queries whose best match is its own document: 26; 100 %
+Number of queries whose own document is in the top 10 matches: 26; 100 %
+Number of queries with at least one correct result in the top 5 matches: 15; 58 %
+Number of queries with at least one correct result in the top 10 matches: 18; 69 %
+
+
+Results For:
+banjara
+Layer 7
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100 %
+Number of queries whose own document is in the top 10 matches: 99; 100 %
+Number of queries with at least one correct result in the top 5 matches: 65; 66 %
+Number of queries with at least one correct result in the top 10 matches: 75; 76 %
+Mean Average Precision at 5: 0.459
+Mean Average Precision Overall: 0.208
+
+Results For:
+banjara
+Layer 8
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100 %
+Number of queries whose own document is in the top 10 matches: 99; 100 %
+Number of queries with at least one correct result in the top 5 matches: 67; 68 %
+Number of queries with at least one correct result in the top 10 matches: 80; 81 %
+Mean Average Precision at 5: 0.516
+Mean Average Precision Overall: 0.230
+
+Results For:
+banjara
+Layer 9
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100 %
+Number of queries whose own document is in the top 10 matches: 99; 100 %
+Number of queries with at least one correct result in the top 5 matches: 68; 69 %
+Number of queries with at least one correct result in the top 10 matches: 78; 79 %
+Mean Average Precision at 5: 0.496
+Mean Average Precision Overall: 0.228
+
+Results For:
+banjara
+Layer 10
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100 %
+Number of queries whose own document is in the top 10 matches: 99; 100 %
+Number of queries with at least one correct result in the top 5 matches: 62; 63 %
+Number of queries with at least one correct result in the top 10 matches: 74; 75 %
+Mean Average Precision at 5: 0.449
+Mean Average Precision Overall: 0.202
+
+Results For:
+banjara
+Layer 11
+Pooling method none
+Window size None ms 
+Stride None ms
+Query multiple vectors True
+Limit None
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100 %
+Number of queries whose own document is in the top 10 matches: 99; 100 %
+Number of queries with at least one correct result in the top 5 matches: 63; 64 %
+Number of queries with at least one correct result in the top 10 matches: 76; 77 %
+Mean Average Precision at 5: 0.430
+Mean Average Precision Overall: 0.174

@@ -1,0 +1,10 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+LOADING PADDED NORMALISED DOCUMENTS for layer 9
+Document embedded states dir: data/tamil/embeddings/documents/9/raw
+Query embedded states dir: data/tamil/embeddings/queries/9/raw
+Time taken to load documents: 49.58 seconds
+CPU Memory used: 34.41 GB
+GPU Memory used: 0.00 GB

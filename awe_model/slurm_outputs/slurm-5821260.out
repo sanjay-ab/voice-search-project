@@ -1,0 +1,831 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data_half/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-20_18:21:51
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 0.0001
+clip norm: 20, temperature: 0.07, num pairs per batch: 700
+time limit to create dataset: 120
+temperature: 0.07
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/tamil/embeddings/training_data_half/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data_half/9/raw
+Time taken: 8.25 s
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 18.87 s
+Created paired data
+Time taken to create datasets: 134.05 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 390.3092861175537
+Time: 0.53 s
+1200.0
+accumulated loss: 115.7760009765625
+1016.0
+accumulated loss: 151.42446899414062
+1628.0
+accumulated loss: 75.03475189208984
+1574.0
+accumulated loss: 132.30816650390625
+1055.0
+accumulated loss: 75.73851013183594
+1079.0
+accumulated loss: 76.47434997558594
+1000.0
+accumulated loss: 125.43878936767578
+1050.0
+accumulated loss: 56.5366325378418
+1536.0
+accumulated loss: 58.893436431884766
+1005.0
+accumulated loss: 63.316192626953125
+1093.0
+accumulated loss: 54.91884994506836
+1000.0
+accumulated loss: 70.43616485595703
+1112.0
+accumulated loss: 85.76848602294922
+1054.0
+accumulated loss: 86.0512924194336
+1002.0
+accumulated loss: 83.50578308105469
+1288.0
+accumulated loss: 40.63785934448242
+1132.0
+accumulated loss: 57.29499053955078
+1011.0
+accumulated loss: 60.08089828491211
+1213.0
+accumulated loss: 49.95891571044922
+1019.0
+accumulated loss: 26.451101303100586
+1013.0
+accumulated loss: 54.777259826660156
+1100.0
+accumulated loss: 36.382144927978516
+1026.0
+accumulated loss: 49.60371017456055
+1000.0
+accumulated loss: 49.59773635864258
+1064.0
+accumulated loss: 41.1698112487793
+1336.0
+accumulated loss: 31.91021156311035
+1001.0
+accumulated loss: 36.450523376464844
+1004.0
+accumulated loss: 29.02799415588379
+1037.0
+accumulated loss: 34.13918685913086
+1013.0
+accumulated loss: 25.08674430847168
+1563.0
+accumulated loss: 35.09125900268555
+1035.0
+accumulated loss: 35.53878402709961
+1000.0
+accumulated loss: 35.019866943359375
+1006.0
+accumulated loss: 29.526473999023438
+1039.0
+accumulated loss: 35.32429504394531
+1017.0
+accumulated loss: 28.80858612060547
+1079.0
+accumulated loss: 31.221641540527344
+1067.0
+accumulated loss: 25.998817443847656
+1001.0
+accumulated loss: 15.301908493041992
+1093.0
+accumulated loss: 30.779151916503906
+1063.0
+accumulated loss: 27.88825225830078
+1003.0
+accumulated loss: 32.81890106201172
+1079.0
+accumulated loss: 33.009620666503906
+1001.0
+accumulated loss: 11.432345390319824
+1013.0
+accumulated loss: 18.6251277923584
+1008.0
+accumulated loss: 25.047130584716797
+1013.0
+accumulated loss: 25.113170623779297
+1024.0
+accumulated loss: 24.955490112304688
+1199.0
+accumulated loss: 21.191162109375
+1001.0
+accumulated loss: 21.93581199645996
+1019.0
+accumulated loss: 24.24073600769043
+1197.0
+accumulated loss: 27.204971313476562
+1000.0
+accumulated loss: 26.193132400512695
+1002.0
+accumulated loss: 24.823287963867188
+1154.0
+accumulated loss: 24.185352325439453
+1089.0
+accumulated loss: 20.228256225585938
+1179.0
+accumulated loss: 14.477567672729492
+1104.0
+accumulated loss: 24.26970672607422
+1047.0
+accumulated loss: 21.55997657775879
+1011.0
+accumulated loss: 10.876233100891113
+1000.0
+accumulated loss: 22.083003997802734
+1035.0
+accumulated loss: 16.4376220703125
+1044.0
+accumulated loss: 13.72446060180664
+1001.0
+accumulated loss: 17.470075607299805
+1074.0
+accumulated loss: 18.419082641601562
+1001.0
+accumulated loss: 10.655349731445312
+1037.0
+accumulated loss: 21.973644256591797
+1007.0
+accumulated loss: 15.391034126281738
+1438.0
+accumulated loss: 18.080902099609375
+1628.0
+accumulated loss: 21.25470542907715
+1073.0
+accumulated loss: 20.70328140258789
+1045.0
+accumulated loss: 16.97784996032715
+1022.0
+accumulated loss: 9.84949016571045
+1032.0
+accumulated loss: 19.247507095336914
+1000.0
+accumulated loss: 12.023391723632812
+1471.0
+accumulated loss: 15.574833869934082
+1022.0
+accumulated loss: 15.299455642700195
+1000.0
+accumulated loss: 8.274123191833496
+1000.0
+accumulated loss: 17.747777938842773
+1061.0
+accumulated loss: 17.382360458374023
+1096.0
+accumulated loss: 12.693941116333008
+1127.0
+accumulated loss: 8.978368759155273
+1076.0
+accumulated loss: 17.04766845703125
+1002.0
+accumulated loss: 11.825916290283203
+1001.0
+accumulated loss: 15.78730297088623
+1341.0
+accumulated loss: 17.84955596923828
+1115.0
+accumulated loss: 17.884382247924805
+1105.0
+accumulated loss: 11.880337715148926
+1001.0
+accumulated loss: 14.426409721374512
+1000.0
+accumulated loss: 13.678924560546875
+1289.0
+accumulated loss: 15.667157173156738
+1015.0
+accumulated loss: 12.59865951538086
+1447.0
+accumulated loss: 14.317483901977539
+1012.0
+accumulated loss: 11.573302268981934
+1002.0
+accumulated loss: 14.970708847045898
+1403.0
+accumulated loss: 11.712081909179688
+1002.0
+accumulated loss: 10.790424346923828
+1090.0
+accumulated loss: 8.586353302001953
+1070.0
+accumulated loss: 12.970645904541016
+1203.0
+accumulated loss: 15.309612274169922
+1219.0
+accumulated loss: 9.765361785888672
+1011.0
+accumulated loss: 8.191901206970215
+1000.0
+accumulated loss: 12.10497760772705
+1000.0
+accumulated loss: 11.83847713470459
+1005.0
+accumulated loss: 10.83936882019043
+1024.0
+accumulated loss: 11.933905601501465
+1000.0
+accumulated loss: 15.113512992858887
+1095.0
+accumulated loss: 10.6774320602417
+1001.0
+accumulated loss: 12.339578628540039
+1105.0
+accumulated loss: 7.888510227203369
+1000.0
+accumulated loss: 13.248382568359375
+1055.0
+accumulated loss: 14.633275032043457
+1037.0
+accumulated loss: 12.584236145019531
+1001.0
+accumulated loss: 12.337334632873535
+1022.0
+accumulated loss: 13.235355377197266
+1080.0
+accumulated loss: 12.038692474365234
+1002.0
+accumulated loss: 10.6647310256958
+1003.0
+accumulated loss: 10.87060832977295
+1014.0
+accumulated loss: 7.656671524047852
+1033.0
+accumulated loss: 6.330832481384277
+1001.0
+accumulated loss: 11.975262641906738
+1001.0
+accumulated loss: 12.799748420715332
+1087.0
+accumulated loss: 13.283563613891602
+1098.0
+accumulated loss: 13.308976173400879
+1070.0
+accumulated loss: 10.903368949890137
+1057.0
+accumulated loss: 12.145442008972168
+1015.0
+accumulated loss: 6.726706027984619
+1122.0
+accumulated loss: 13.701807022094727
+1052.0
+accumulated loss: 10.561773300170898
+1150.0
+accumulated loss: 11.626399040222168
+1001.0
+accumulated loss: 9.46970272064209
+1135.0
+accumulated loss: 10.307353019714355
+1176.0
+accumulated loss: 9.76512622833252
+1215.0
+accumulated loss: 9.050780296325684
+1210.0
+accumulated loss: 9.405269622802734
+1010.0
+accumulated loss: 10.37928295135498
+1151.0
+accumulated loss: 11.6367826461792
+1001.0
+accumulated loss: 10.419944763183594
+1025.0
+accumulated loss: 8.379602432250977
+1231.0
+accumulated loss: 9.304140090942383
+1020.0
+accumulated loss: 11.315401077270508
+1003.0
+accumulated loss: 10.38962459564209
+1137.0
+accumulated loss: 8.220199584960938
+1138.0
+accumulated loss: 6.3053388595581055
+1030.0
+accumulated loss: 8.909271240234375
+1000.0
+accumulated loss: 6.214003562927246
+1064.0
+accumulated loss: 9.139986038208008
+1000.0
+accumulated loss: 10.637251853942871
+1096.0
+accumulated loss: 11.619294166564941
+1115.0
+accumulated loss: 9.827468872070312
+1055.0
+accumulated loss: 9.087665557861328
+1075.0
+accumulated loss: 11.354838371276855
+1066.0
+accumulated loss: 10.408332824707031
+1001.0
+accumulated loss: 7.40799617767334
+1082.0
+accumulated loss: 10.170149803161621
+1001.0
+accumulated loss: 11.458294868469238
+1159.0
+accumulated loss: 7.8493146896362305
+1585.0
+accumulated loss: 10.36355972290039
+1150.0
+accumulated loss: 10.034625053405762
+1002.0
+accumulated loss: 8.053887367248535
+1001.0
+accumulated loss: 9.680793762207031
+1142.0
+accumulated loss: 8.83081340789795
+1000.0
+accumulated loss: 8.714686393737793
+1193.0
+accumulated loss: 10.727177619934082
+1000.0
+accumulated loss: 6.261770248413086
+1020.0
+accumulated loss: 5.109328746795654
+1097.0
+accumulated loss: 10.383237838745117
+1193.0
+accumulated loss: 10.2988862991333
+1628.0
+accumulated loss: 8.354560852050781
+1002.0
+accumulated loss: 5.877336502075195
+1123.0
+accumulated loss: 8.01893424987793
+1009.0
+accumulated loss: 7.753204345703125
+1507.0
+accumulated loss: 10.384082794189453
+1053.0
+accumulated loss: 6.704411506652832
+1212.0
+accumulated loss: 8.318755149841309
+1008.0
+accumulated loss: 7.0069169998168945
+1023.0
+accumulated loss: 7.329066276550293
+1054.0
+accumulated loss: 8.147787094116211
+1009.0
+accumulated loss: 4.581313133239746
+1007.0
+accumulated loss: 7.430541038513184
+1217.0
+accumulated loss: 6.272298336029053
+1001.0
+accumulated loss: 6.508790969848633
+1000.0
+accumulated loss: 8.726131439208984
+1001.0
+accumulated loss: 7.5363450050354
+1217.0
+accumulated loss: 9.161733627319336
+1016.0
+accumulated loss: 8.110688209533691
+1005.0
+accumulated loss: 6.356636047363281
+1002.0
+accumulated loss: 4.370912075042725
+1289.0
+accumulated loss: 6.484614372253418
+1003.0
+accumulated loss: 4.467453956604004
+1080.0
+accumulated loss: 7.3461222648620605
+1001.0
+accumulated loss: 7.340977668762207
+1029.0
+accumulated loss: 7.249496936798096
+1063.0
+accumulated loss: 6.995039939880371
+1001.0
+accumulated loss: 4.944178581237793
+1134.0
+accumulated loss: 5.5559587478637695
+1039.0
+accumulated loss: 7.227089881896973
+1069.0
+accumulated loss: 5.418186187744141
+1221.0
+accumulated loss: 6.796891212463379
+1107.0
+accumulated loss: 8.920334815979004
+1037.0
+accumulated loss: 7.04386568069458
+1423.0
+accumulated loss: 6.185837745666504
+1040.0
+accumulated loss: 7.681285381317139
+1073.0
+accumulated loss: 4.457151412963867
+1035.0
+accumulated loss: 8.895379066467285
+1132.0
+accumulated loss: 7.821224212646484
+1011.0
+accumulated loss: 6.0421462059021
+1001.0
+accumulated loss: 6.4533257484436035
+1006.0
+accumulated loss: 5.980831146240234
+1001.0
+accumulated loss: 5.74643611907959
+1342.0
+accumulated loss: 8.127490043640137
+1002.0
+accumulated loss: 5.504515171051025
+1011.0
+accumulated loss: 7.028635025024414
+1001.0
+accumulated loss: 5.9788079261779785
+1019.0
+accumulated loss: 7.4750471115112305
+1000.0
+accumulated loss: 6.783048629760742
+1146.0
+accumulated loss: 6.605672836303711
+1016.0
+accumulated loss: 4.072781085968018
+1080.0
+accumulated loss: 4.30087947845459
+1008.0
+accumulated loss: 4.119983673095703
+1017.0
+accumulated loss: 7.194920063018799
+1004.0
+accumulated loss: 6.964995384216309
+1145.0
+accumulated loss: 7.2386956214904785
+1010.0
+accumulated loss: 7.254267692565918
+1001.0
+accumulated loss: 6.141974449157715
+1035.0
+accumulated loss: 4.6972856521606445
+1089.0
+accumulated loss: 6.17692232131958
+1000.0
+accumulated loss: 4.936970233917236
+1021.0
+accumulated loss: 5.949173927307129
+1088.0
+accumulated loss: 6.300927639007568
+1030.0
+accumulated loss: 7.215527534484863
+1001.0
+accumulated loss: 5.0612287521362305
+1503.0
+accumulated loss: 6.201183319091797
+1008.0
+accumulated loss: 4.847068786621094
+1022.0
+accumulated loss: 6.128759384155273
+1363.0
+accumulated loss: 6.603681564331055
+1002.0
+accumulated loss: 5.76236629486084
+1320.0
+accumulated loss: 6.121457099914551
+1001.0
+accumulated loss: 6.696316719055176
+1028.0
+accumulated loss: 5.2032365798950195
+1244.0
+accumulated loss: 5.1150641441345215
+1001.0
+accumulated loss: 5.1884002685546875
+1496.0
+accumulated loss: 7.247951507568359
+1017.0
+accumulated loss: 6.566483020782471
+1001.0
+accumulated loss: 4.837209224700928
+1100.0
+accumulated loss: 4.850743293762207
+1017.0
+accumulated loss: 5.24668025970459
+1063.0
+accumulated loss: 6.098179817199707
+1005.0
+accumulated loss: 3.9840078353881836
+1108.0
+accumulated loss: 5.172453880310059
+1000.0
+accumulated loss: 5.031323432922363
+1005.0
+accumulated loss: 4.252228260040283
+1000.0
+accumulated loss: 5.958284378051758
+1000.0
+accumulated loss: 5.021250247955322
+1016.0
+accumulated loss: 4.959152698516846
+1001.0
+accumulated loss: 5.241309642791748
+Epoch 0: 10.00% done
+Loss: 9.30947185498424
+Time: 221.43 s
+1000.0
+accumulated loss: 5.7578630447387695
+1000.0
+accumulated loss: 3.6311423778533936
+1154.0
+accumulated loss: 6.218905448913574
+1601.0
+accumulated loss: 5.618504524230957
+1285.0
+accumulated loss: 5.390262126922607
+1034.0
+accumulated loss: 6.259581565856934
+1129.0
+accumulated loss: 5.246145248413086
+1006.0
+accumulated loss: 4.035567760467529
+1000.0
+accumulated loss: 5.302260398864746
+1640.0
+accumulated loss: 7.318233013153076
+1137.0
+accumulated loss: 3.8470842838287354
+1005.0
+accumulated loss: 6.258851528167725
+1000.0
+accumulated loss: 4.913975715637207
+1057.0
+accumulated loss: 5.259936332702637
+1127.0
+accumulated loss: 5.03120231628418
+1012.0
+accumulated loss: 4.978954315185547
+1091.0
+accumulated loss: 5.449833869934082
+1084.0
+accumulated loss: 5.153677463531494
+1006.0
+accumulated loss: 3.3644604682922363
+1001.0
+accumulated loss: 3.6268460750579834
+1444.0
+accumulated loss: 6.376603603363037
+1065.0
+accumulated loss: 5.891364097595215
+1059.0
+accumulated loss: 5.471776008605957
+1001.0
+accumulated loss: 3.4491536617279053
+1040.0
+accumulated loss: 4.925212860107422
+1006.0
+accumulated loss: 4.288370132446289
+1103.0
+accumulated loss: 4.573633670806885
+1003.0
+accumulated loss: 4.628452777862549
+1024.0
+accumulated loss: 3.8301467895507812
+1094.0
+accumulated loss: 5.672236919403076
+1084.0
+accumulated loss: 3.7250752449035645
+1000.0
+accumulated loss: 3.9408023357391357
+1001.0
+accumulated loss: 3.571631669998169
+1109.0
+accumulated loss: 5.008100986480713
+1009.0
+accumulated loss: 5.3590545654296875
+1051.0
+accumulated loss: 3.3834168910980225
+1174.0
+accumulated loss: 5.415191173553467
+1089.0
+accumulated loss: 5.711564064025879
+1014.0
+accumulated loss: 3.742327928543091
+1021.0
+accumulated loss: 3.4474010467529297
+1390.0
+accumulated loss: 5.810248851776123
+1016.0
+accumulated loss: 4.1282267570495605
+1054.0
+accumulated loss: 6.171387672424316
+1180.0
+accumulated loss: 4.761141777038574
+1046.0
+accumulated loss: 5.006536960601807
+1000.0
+accumulated loss: 5.46624755859375
+1013.0
+accumulated loss: 4.559524059295654
+1001.0
+accumulated loss: 2.7757744789123535
+1033.0
+accumulated loss: 3.7917556762695312
+1001.0
+accumulated loss: 3.516221761703491
+1001.0
+accumulated loss: 4.945211887359619
+1210.0
+accumulated loss: 4.807794570922852
+1087.0
+accumulated loss: 5.1800408363342285
+1000.0
+accumulated loss: 5.286083221435547
+1000.0
+accumulated loss: 3.182577133178711
+1018.0
+accumulated loss: 2.7082040309906006
+1004.0
+accumulated loss: 3.6541054248809814
+1055.0
+accumulated loss: 4.725161552429199
+1018.0
+accumulated loss: 4.43506383895874
+1003.0
+accumulated loss: 3.8342201709747314
+1069.0
+accumulated loss: 3.997742176055908
+1021.0
+accumulated loss: 4.731797218322754
+1069.0
+accumulated loss: 4.355095386505127
+1593.0
+accumulated loss: 5.718589782714844
+1389.0
+accumulated loss: 5.046018123626709
+1001.0
+accumulated loss: 4.84645414352417
+1000.0
+accumulated loss: 1.9725896120071411
+1033.0
+accumulated loss: 4.897278785705566
+1000.0
+accumulated loss: 3.5791618824005127
+1001.0
+accumulated loss: 3.5038063526153564
+1000.0
+accumulated loss: 3.942167043685913
+1002.0
+accumulated loss: 4.0478739738464355
+1062.0
+accumulated loss: 3.8944876194000244
+1048.0
+accumulated loss: 3.457648277282715
+1030.0
+accumulated loss: 3.681100368499756
+1082.0
+accumulated loss: 4.736713886260986
+1126.0
+accumulated loss: 6.151342391967773
+1003.0
+accumulated loss: 4.506509780883789
+1016.0
+accumulated loss: 4.1337151527404785
+1275.0
+accumulated loss: 4.855361461639404
+1109.0
+accumulated loss: 3.7966971397399902
+1005.0
+accumulated loss: 3.559375047683716
+1066.0
+accumulated loss: 3.4427623748779297
+1134.0
+accumulated loss: 4.297368049621582
+1004.0
+accumulated loss: 4.290888786315918
+1023.0
+accumulated loss: 2.779902935028076
+1000.0
+accumulated loss: 3.8252170085906982
+1054.0
+accumulated loss: 3.896249294281006
+1042.0
+accumulated loss: 4.123305320739746
+1107.0
+accumulated loss: 4.5384955406188965
+1017.0
+accumulated loss: 3.027811050415039
+1000.0
+accumulated loss: 3.74310564994812
+1161.0
+accumulated loss: 3.7813639640808105
+1084.0
+accumulated loss: 4.193687915802002
+1026.0
+accumulated loss: 3.2842845916748047
+1052.0
+accumulated loss: 3.8844199180603027
+1000.0
+accumulated loss: 2.870415687561035
+1001.0
+accumulated loss: 3.6314189434051514
+1001.0
+accumulated loss: 2.92769193649292
+1039.0
+accumulated loss: 3.4773802757263184
+1000.0
+accumulated loss: 4.552356243133545
+1015.0
+accumulated loss: 4.486424446105957
+1037.0
+accumulated loss: 2.9539456367492676
+1000.0
+accumulated loss: 3.6854097843170166
+1068.0
+accumulated loss: 2.8593087196350098
+1004.0
+accumulated loss: 3.452977180480957
+1003.0
+accumulated loss: 3.4982593059539795
+1021.0
+accumulated loss: 3.157738208770752
+1005.0
+accumulated loss: 4.134589672088623
+1034.0
+accumulated loss: 3.1098382472991943
+1072.0
+accumulated loss: 3.9030094146728516
+1001.0
+accumulated loss: 4.34553861618042
+1116.0
+accumulated loss: 3.1985831260681152
+1000.0
+accumulated loss: 3.0056540966033936
+1291.0
+accumulated loss: 4.016146659851074
+1429.0
+accumulated loss: 4.332917213439941
+1476.0
+accumulated loss: 5.323802947998047
+1005.0
+accumulated loss: 2.7609126567840576
+1316.0
+accumulated loss: 4.545525550842285
+1356.0
+accumulated loss: 4.427060127258301
+1000.0
+accumulated loss: 3.442215919494629
+1017.0
+accumulated loss: 4.25329065322876
+1001.0
+accumulated loss: 2.788027286529541
+1081.0
+accumulated loss: 4.298997402191162
+1000.0
+accumulated loss: 3.0191197395324707
+1003.0
+accumulated loss: 3.194261312484741
+1008.0
+accumulated loss: 4.143015384674072
+1223.0
+accumulated loss: 5.045026779174805
+1003.0
+accumulated loss: 3.404153347015381
+1204.0
+accumulated loss: 4.928634166717529
+1016.0
+accumulated loss: 3.6492209434509277
+1100.0
+accumulated loss: 2.8509418964385986
+1063.0
+accumulated loss: 3.229644775390625
+1154.0
+accumulated loss: 4.5073018074035645
+1220.0
+accumulated loss: 3.306344985961914
+1000.0
+accumulated loss: 3.4772987365722656
+1041.0
+accumulated loss: 4.143795013427734
+1048.0
+accumulated loss: 3.10867977142334
+1000.0
+accumulated loss: 2.683245897293091
+1082.0
+accumulated loss: 3.477729320526123
+1000.0
+accumulated loss: 3.651707410812378
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 5821260 ON r2i5n6 CANCELLED AT 2024-07-20T18:29:51 ***
+slurmstepd: error: *** STEP 5821260.0 ON r2i5n6 CANCELLED AT 2024-07-20T18:29:51 ***

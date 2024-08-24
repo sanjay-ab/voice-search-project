@@ -1,0 +1,157 @@
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9 - Trained on tamil (1hr, lower lr)
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 71; 72.0 %
+Number of queries with at least one correct result in the top 10 matches: 78; 79.0 %
+Mean Average Precision at 5: 0.535
+Mean Average Precision Overall: 0.244
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9 - Trained on tamil (2hr, standard)
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 64; 65.0 %
+Number of queries with at least one correct result in the top 10 matches: 73; 74.0 %
+Mean Average Precision at 5: 0.476
+Mean Average Precision Overall: 0.214
+
+Results For:
+banjara
+Layer 8
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9 - Trained on tamil (2hr, standard)
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 58; 59.0 %
+Number of queries with at least one correct result in the top 10 matches: 70; 71.0 %
+Mean Average Precision at 5: 0.427
+Mean Average Precision Overall: 0.190
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9 - using windowed method
+Training phone seq lengths: 3-9 - Trained on tamil (1hr, lower lr)
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 80; 81.0 %
+Number of queries with at least one correct result in the top 10 matches: 89; 90.0 %
+Mean Average Precision at 5: 0.637
+Mean Average Precision Overall: 0.307
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe//9/tamil_train_3_9/window_lr_1e-4_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 79; 80.0 %
+Number of queries with at least one correct result in the top 10 matches: 87; 88.0 %
+Mean Average Precision at 5: 0.643
+Mean Average Precision Overall: 0.303
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe//9/tamil_train_3_9/lr_1e-4_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 68; 69.0 %
+Number of queries with at least one correct result in the top 10 matches: 74; 75.0 %
+Mean Average Precision at 5: 0.527
+Mean Average Precision Overall: 0.244
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe//9/tamil_train_3_9/half_lr_1e-5_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 79; 80.0 %
+Number of queries with at least one correct result in the top 10 matches: 90; 91.0 %
+Mean Average Precision at 5: 0.630
+Mean Average Precision Overall: 0.315
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe//9/tamil_train_3_9_acc/lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 80; 81.0 %
+Number of queries with at least one correct result in the top 10 matches: 90; 91.0 %
+Mean Average Precision at 5: 0.652
+Mean Average Precision Overall: 0.320
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe//9/tamil_train_3_9_acc/quarter_lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 80; 81.0 %
+Number of queries with at least one correct result in the top 10 matches: 88; 89.0 %
+Mean Average Precision at 5: 0.648
+Mean Average Precision Overall: 0.314
+
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe//9/tamil_train_3_9_acc/quarter_lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9_epoch_2/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 81; 82.0 %
+Number of queries with at least one correct result in the top 10 matches: 89; 90.0 %
+Mean Average Precision at 5: 0.653
+Mean Average Precision Overall: 0.318
+
+Results For:
+banjara
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe/9/tamil_train_3_9_acc/perturbed_finetuned_lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 70; 71.0 %
+Number of queries with at least one correct result in the top 10 matches: 76; 77.0 %
+Mean Average Precision at 5: 0.553
+Mean Average Precision Overall: 0.257

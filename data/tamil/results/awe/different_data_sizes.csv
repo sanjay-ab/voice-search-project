@@ -1,0 +1,3 @@
+Parameters: lr=1e-4,tmp=0.07,acc=1000,bs=5,min_phone_seq_length=3,max_phone_seq_length=9
+
+data_size,%_top_5,%_top_10,map_at_5,map_all,num_top_5,num_top_10

@@ -1,0 +1,188 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/tamil/embeddings/training_data/9/raw
+Validation embeddings file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-07-20_22:55:08
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 3, patience: 2, learning rate: 0.0001
+clip norm: 40, temperature: 0.07, num pairs per batch: 600
+num batch pairs to accumulate gradients over: 1000
+time limit to create dataset: 600
+temperature: 0.07
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Loading embedded data from directory: data/tamil/embeddings/training_data/9/raw
+Loaded embedded data from data/tamil/embeddings/training_data/9/raw
+Time taken: 120.28 s
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 3.
+Created paired data
+Loading embedded data from file: data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/tamil/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 23.12 s
+Created paired data
+Time taken to create datasets: 777.36 s
+
+Loading model from data/tamil/models/awe/9/lr_1e-4_tmp_0.07_acc_1000_3_9/2024-07-20_19:13:27_checkpoint_epoch_0.pt
+
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 0.018217087460634038
+Time: 1.56 s
+Epoch 0: 10.00% done
+Loss: 0.015594400963800768
+Time: 555.75 s
+Epoch 0: 20.00% done
+Loss: 0.13200956776081238
+Time: 1099.70 s
+Epoch 0: 30.00% done
+Loss: 0.010226195112100123
+Time: 1638.11 s
+Epoch 0: 40.00% done
+Loss: 0.008334382908064819
+Time: 2178.69 s
+Epoch 0: 50.00% done
+Loss: 0.028176546759574254
+Time: 2727.10 s
+Epoch 0: 60.00% done
+Loss: 0.007277559353857817
+Time: 3275.28 s
+Epoch 0: 70.00% done
+Loss: 0.012819742371940142
+Time: 3804.30 s
+Epoch 0: 80.00% done
+Loss: 0.0077277447658774595
+Time: 4354.83 s
+Epoch 0: 90.00% done
+Loss: 0.0076646719952876315
+Time: 4898.00 s
+
+Epoch 0 done
+Epoch loss: 0.0237653397138548
+
+Time taken for epoch: 5439.34 s
+Number of gradients clipped: 10
+
+Calculating validation loss: 0.00% done
+Time: 0.15 s
+Calculating validation loss: 20.00% done
+Time: 46.34 s
+Calculating validation loss: 40.00% done
+Time: 93.61 s
+Calculating validation loss: 60.00% done
+Time: 138.51 s
+Calculating validation loss: 80.00% done
+Time: 186.07 s
+
+Validation loss: 40.320210838315546
+
+Time taken: 232.95 s
+Saving model to data/tamil/models/awe/9/lr_1e-4_tmp_0.07_acc_1000_3_9/2024-07-20_22:55:08_checkpoint_epoch_0.pt
+
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 3.
+Regenerated paired data
+Epoch 1: 0.00% done
+Loss: 0.00016954204511421267
+Time: 0.02 s
+Epoch 1: 10.00% done
+Loss: 0.11214252794823851
+Time: 550.89 s
+Epoch 1: 20.00% done
+Loss: 0.005454230414148535
+Time: 1099.19 s
+Epoch 1: 30.00% done
+Loss: 0.004809147824440433
+Time: 1642.00 s
+Epoch 1: 40.00% done
+Loss: 0.003994625868965135
+Time: 2196.24 s
+Epoch 1: 50.00% done
+Loss: 0.005375558794412396
+Time: 2755.26 s
+Epoch 1: 60.00% done
+Loss: 0.008069735053456515
+Time: 3307.28 s
+Epoch 1: 70.00% done
+Loss: 0.005572272189195881
+Time: 3843.65 s
+Epoch 1: 80.00% done
+Loss: 0.004107440595467596
+Time: 4390.72 s
+Epoch 1: 90.00% done
+Loss: 0.004683824721334969
+Time: 4933.82 s
+
+Epoch 1 done
+Epoch loss: 0.022486266180044026
+
+Time taken for epoch: 5469.99 s
+Number of gradients clipped: 10
+
+Calculating validation loss: 0.00% done
+Time: 0.02 s
+Calculating validation loss: 20.00% done
+Time: 45.71 s
+Calculating validation loss: 40.00% done
+Time: 91.86 s
+Calculating validation loss: 60.00% done
+Time: 136.52 s
+Calculating validation loss: 80.00% done
+Time: 180.82 s
+
+Validation loss: 36.19436776876263
+
+Time taken: 227.04 s
+Saving model to data/tamil/models/awe/9/lr_1e-4_tmp_0.07_acc_1000_3_9/2024-07-20_22:55:08_checkpoint_epoch_1.pt
+
+Dataset generation time limit reached: 600 s.
+Number of classes remaining: 2.
+Regenerated paired data
+Epoch 2: 0.00% done
+Loss: 0.0007025871127552819
+Time: 0.26 s
+Epoch 2: 10.00% done
+Loss: 0.0032666929053374516
+Time: 555.13 s
+Epoch 2: 20.00% done
+Loss: 0.0025376923378856555
+Time: 1113.68 s
+Epoch 2: 30.00% done
+Loss: 0.03679611898332777
+Time: 1660.88 s
+Epoch 2: 40.00% done
+Loss: 0.009411683871603252
+Time: 2213.08 s
+Epoch 2: 50.00% done
+Loss: 0.004003067308658154
+Time: 2762.22 s
+Epoch 2: 60.00% done
+Loss: 0.002719811034522007
+Time: 3303.65 s
+Epoch 2: 70.00% done
+Loss: 0.0050260599165276925
+Time: 3842.59 s
+Epoch 2: 80.00% done
+Loss: 0.0025813097227769853
+Time: 4408.49 s
+Epoch 2: 90.00% done
+Loss: 0.05429065814125457
+Time: 4949.22 s
+Traceback (most recent call last):
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/awe_model/train_model.py", line 291, in <module>
+    train_one_epoch(model, train_dataloader, loss_function, optimizer,  
+  File "/mnt/lustre/e1000/home/tc062/tc062/sanjayb/dissertation/awe_model/train_model.py", line 128, in train_one_epoch
+    accumulated_loss.backward()
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.28 GiB (GPU 0; 15.77 GiB total capacity; 11.95 GiB already allocated; 1.24 GiB free; 13.53 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: r2i4n1: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=5821738.0

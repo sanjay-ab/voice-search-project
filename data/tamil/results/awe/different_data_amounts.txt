@@ -1,0 +1,60 @@
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/train_3_9/lr_1e-4_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 833; 85.0 %
+Number of queries whose own document is in the top 10 matches: 910; 93.0 %
+Number of queries with at least one correct result in the top 5 matches: 552; 56.0 %
+Number of queries with at least one correct result in the top 10 matches: 615; 63.0 %
+Mean Average Precision at 5: 0.433
+Mean Average Precision Overall: 0.426
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/tamil_train_3_9/half_lr_1e-4_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 701; 71.0 %
+Number of queries whose own document is in the top 10 matches: 809; 82.0 %
+Number of queries with at least one correct result in the top 5 matches: 474; 48.0 %
+Number of queries with at least one correct result in the top 10 matches: 530; 54.0 %
+Mean Average Precision at 5: 0.362
+Mean Average Precision Overall: 0.358
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/tamil_train_3_9/quarter_lr_1e-4_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 762; 78.0 %
+Number of queries whose own document is in the top 10 matches: 885; 90.0 %
+Number of queries with at least one correct result in the top 5 matches: 504; 51.0 %
+Number of queries with at least one correct result in the top 10 matches: 578; 59.0 %
+Mean Average Precision at 5: 0.386
+Mean Average Precision Overall: 0.378
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe//9/tamil_train_3_9/half_lr_1e-5_tmp_0.07_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 864; 88.0 %
+Number of queries whose own document is in the top 10 matches: 933; 95.0 %
+Number of queries with at least one correct result in the top 5 matches: 569; 58.0 %
+Number of queries with at least one correct result in the top 10 matches: 635; 65.0 %
+Mean Average Precision at 5: 0.448
+Mean Average Precision Overall: 0.440
+
