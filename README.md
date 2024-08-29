@@ -17,8 +17,8 @@ This system uses a learned pooling model (adapted from https://gitlab.cognitive-
 This model is trained on segments of Tamil speech. It is trained contrastively, to embed segments with the same phonetic transcription similarly and segments with different transcriptions differently.
 Whole recordings (queries and documents) are embedded using a sliding window approach - a window is slid across the recording and each window is embedded.
 This collection of embeddings is the AWE representation of the recording.
-Note that windows can be specified either in time (e.g., 240 ms) or in phones (e.g., 3 phones) if the recordings have phone transcriptions.
+Note that windows can be specified either in time (e.g., 240 ms) or in phones (e.g., 3 phones), if the recordings have phone transcriptions.
 
 ### Recording Embedding System
-This system uses the same (or a slightly modified) learned pooling layer as the AWE model to take a recording and convert it into a single vector embedding. 
+This system uses a learned pooling layer adapted from the AWE model to take a recording and convert it into a single vector embedding. 
 This model is trained contrastively on Tamil, to embed recordings containing the same keyword similarly and different keywords differently. 
