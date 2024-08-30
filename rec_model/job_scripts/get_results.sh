@@ -20,9 +20,9 @@ RESULTS_PATH="${LAYER}/finetune_awe_grad_lr_${LR}_tmp_${TEMPERATURE}_${EPOCH}"
 MODEL_TYPE=sent
 USE_AWES=False
 
-query_sent_job_id=$(sbatch --parsable sent_model/job_scripts/extract_query_sent_embeddings_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM)
-doc_sent_job_id=$(sbatch --parsable sent_model/job_scripts/extract_doc_sent_embeddings_parallel_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM)
+query_sent_job_id=$(sbatch --parsable rec_model/job_scripts/extract_query_sent_embeddings_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM)
+doc_sent_job_id=$(sbatch --parsable rec_model/job_scripts/extract_doc_sent_embeddings_parallel_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM)
 
-ranking_job_id=$(sbatch --parsable --dependency=afterok:$query_sent_job_id --dependency=afterok:$doc_sent_job_id sent_model/job_scripts/ranking_vectorised_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $RESULTS_PATH)
+ranking_job_id=$(sbatch --parsable --dependency=afterok:$query_sent_job_id --dependency=afterok:$doc_sent_job_id rec_model/job_scripts/ranking_vectorised_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $RESULTS_PATH)
 
 sbatch --dependency=afterok:$ranking_job_id utils/job_scripts/calculate_results_extra_args.slurm $LANGUAGE $LAYER 0 0 $RESULTS_PATH $MODEL_TYPE

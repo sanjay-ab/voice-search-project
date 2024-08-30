@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH --job-name=train_sent_model
+#SBATCH --job-name=train_rec_model
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
 #SBATCH --account=tc062-pool3
@@ -22,4 +22,4 @@ LR=0.0001
 OUTPUT_DIM=8192
 NO_GRAD_ON_AWE_MODEL=False
 
-srun python -u sent_model/train_model.py $TEMPERATURE $LR $OUTPUT_DIM $NO_GRAD_ON_AWE_MODEL
+srun python -u rec_model/train_model.py $TEMPERATURE $LR $OUTPUT_DIM $NO_GRAD_ON_AWE_MODEL

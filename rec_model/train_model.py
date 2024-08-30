@@ -6,9 +6,9 @@ import sys
 import numpy as np
 from torch.utils.data import DataLoader
 from awe_model.train_model import train_one_epoch, calculate_validation_loss, save_model, load_model, NTXentLoss
-from sent_model.extra_linear_layer_model import SSEmodel
-# from sent_model.model import SSEmodel
-from sent_model.document_classes_dataset import DocumentClassesDataset, collate_as_list, collate_as_tensor_and_pad
+from rec_model.extra_linear_layer_model import SSEmodel
+# from rec_model.model import SSEmodel
+from rec_model.document_classes_dataset import DocumentClassesDataset, collate_as_list, collate_as_tensor_and_pad
 from utils.common_functions import make_dir, parse_boolean_input
 
 if __name__== "__main__":

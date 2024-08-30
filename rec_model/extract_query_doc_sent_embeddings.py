@@ -4,8 +4,8 @@ import sys
 import pickle as pkl
 import torch
 from torch.nn.utils.rnn import pad_sequence
-from sent_model.extra_linear_layer_model import SSEmodel
-# from sent_model.model import SSEmodel
+from rec_model.extra_linear_layer_model import SSEmodel
+# from rec_model.model import SSEmodel
 from utils.common_functions import make_dir, split_list_into_n_parts_and_get_part, parse_boolean_input
 
 if __name__ == "__main__":

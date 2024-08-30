@@ -26,4 +26,4 @@ USE_AWES=$6
 MIDDLE_DIM=$7
 OUTPUT_DIM=$8
 
-srun python -u sent_model/extract_query_doc_sent_embeddings.py queries 1 0 $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM
+srun python -u rec_model/extract_query_doc_sent_embeddings.py queries 1 0 $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM
