@@ -1,16 +1,27 @@
 #!/bin/bash
 
+TEMPERATURE=0.07
+# LR=0.0001
+LR=1e-05
+MIDDLE_DIM=512
+OUTPUT_DIM=2048
+NO_GRAD_STRING="grad"
+
 LANGUAGE=banjara
 LAYER=9
-SAVE_EMBEDDING_FOLDER="hubert_lr_0.001_linear_weight_decay_0.1"
-MODEL_SAVE_DIR="data/tamil/models/sent/${LAYER}/hubert_lr_0.001_linear_weight_decay_0.1"
-MODEL_NAME=2024-07-26_11:40:59_checkpoint_epoch_10.pt
-RESULTS_PATH="${LAYER}/hubert_lr_0.001_linear_weight_decay_0.1"
+EPOCH=3
+# SAVE_EMBEDDING_FOLDER="finetune_awe_${NO_GRAD_STRING}_1_layer_middle_dim_512_output_dim_${OUTPUT_DIM}_lr_${LR}_tmp_${TEMPERATURE}_weight_decay_0.0_${EPOCH}"
+SAVE_EMBEDDING_FOLDER="finetune_awe_lr_${LR}_tmp_${TEMPERATURE}_${EPOCH}"
+# MODEL_SAVE_DIR="data/tamil/models/sent/${LAYER}/finetune_awe_${NO_GRAD_STRING}_1_layer_middle_dim_512_output_dim_${OUTPUT_DIM}_lr_${LR}_tmp_${TEMPERATURE}_weight_decay_0.0"
+MODEL_SAVE_DIR="data/tamil/models/sent/${LAYER}/finetune_awe_grad_lr_${LR}_tmp_${TEMPERATURE}"
+MODEL_NAME=2024-08-06_22:19:10_checkpoint_epoch_${EPOCH}.pt
+# RESULTS_PATH="${LAYER}/finetune_awe_${NO_GRAD_STRING}_1_layer_middle_dim_512_output_dim_${OUTPUT_DIM}_lr_${LR}_tmp_${TEMPERATURE}_weight_decay_0.0_${EPOCH}"
+RESULTS_PATH="${LAYER}/finetune_awe_grad_lr_${LR}_tmp_${TEMPERATURE}_${EPOCH}"
 MODEL_TYPE=sent
 USE_AWES=False
 
-query_sent_job_id=$(sbatch --parsable sent_model/job_scripts/extract_query_sent_embeddings_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES)
-doc_sent_job_id=$(sbatch --parsable sent_model/job_scripts/extract_doc_sent_embeddings_parallel_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES)
+query_sent_job_id=$(sbatch --parsable sent_model/job_scripts/extract_query_sent_embeddings_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM)
+doc_sent_job_id=$(sbatch --parsable sent_model/job_scripts/extract_doc_sent_embeddings_parallel_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM)
 
 ranking_job_id=$(sbatch --parsable --dependency=afterok:$query_sent_job_id --dependency=afterok:$doc_sent_job_id sent_model/job_scripts/ranking_vectorised_extra_args.slurm $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $RESULTS_PATH)
 

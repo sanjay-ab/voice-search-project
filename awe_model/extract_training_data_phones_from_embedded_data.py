@@ -43,12 +43,12 @@ if __name__ == "__main__":
     layer = 9
     min_phone_seq_length = 3
     max_phone_seq_length = 9
-    perturb_sequences = True
+    perturb_sequences = False
     max_one_sided_perturb_amount = 0.1
 
     embedding_dir = f"{top_level_embedding_dir}/{layer}/raw"
     save_embedding_dir = \
-        f"{top_level_embedding_dir}/{layer}/perturbed_0.1_phonetized_{min_phone_seq_length}_{max_phone_seq_length}"
+        f"{top_level_embedding_dir}/{layer}/phonetized_{min_phone_seq_length}_{max_phone_seq_length}"
 
     print(f"Extracting phonetized embeddings from {embedding_dir}...")
     print((f"Using: phone timings file: {phone_timings_file}\nMin phone seq length: {min_phone_seq_length}"

@@ -2,9 +2,9 @@
 #
 #SBATCH --job-name=train_sent_model
 #SBATCH --partition=gpu
-#SBATCH --qos=short
+#SBATCH --qos=gpu
 #SBATCH --account=tc062-pool3
-#SBATCH --time=00:20:00
+#SBATCH --time=00:45:00
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
 
@@ -17,4 +17,9 @@ module load python/3.10.8-gpu
 module load pytorch/1.13.1-gpu
 source /work/tc062/tc062/sanjayb/dissertation/mhubert_model/hubert_env_gpu/bin/activate
 
-srun python -u sent_model/train_model.py 
+TEMPERATURE=0.15
+LR=0.0001
+OUTPUT_DIM=8192
+NO_GRAD_ON_AWE_MODEL=False
+
+srun python -u sent_model/train_model.py $TEMPERATURE $LR $OUTPUT_DIM $NO_GRAD_ON_AWE_MODEL

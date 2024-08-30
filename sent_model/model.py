@@ -85,6 +85,8 @@ class SSEmodel(nn.Module):
         n_heads=4,
         n_transformer_layers=1,
         device='cuda:0',
+        *args,
+        **kwargs,
     ):
 
         super(SSEmodel, self).__init__()

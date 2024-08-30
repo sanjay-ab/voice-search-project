@@ -2,18 +2,22 @@ from datetime import datetime as dt
 import torch
 import time
 import random
+import sys
 import numpy as np
 from torch.utils.data import DataLoader
 from awe_model.train_model import train_one_epoch, calculate_validation_loss, save_model, load_model, NTXentLoss
-from sent_model.hubert_model import SSEmodel
+from sent_model.extra_linear_layer_model import SSEmodel
+# from sent_model.model import SSEmodel
 from sent_model.document_classes_dataset import DocumentClassesDataset, collate_as_list, collate_as_tensor_and_pad
-from utils.common_functions import make_dir
+from utils.common_functions import make_dir, parse_boolean_input
 
 if __name__== "__main__":
     seed = 3456542
     torch.manual_seed(seed)
     np.random.seed(seed)
     random.seed(seed)
+
+    args = sys.argv
 
     language = "tamil"
     layer = 9
@@ -30,23 +34,42 @@ if __name__== "__main__":
 
     load_model_from_checkpoint = False
     model_load_dir = \
-        f"data/{language}/models/sent/{layer}/awe2_1024_proj_lr_0.0005_linear_weight_decay_0.05"
-    checkpoint_path = f"{model_load_dir}/2024-07-22_20:15:01_checkpoint_epoch_3.pt"
+        f"data/{language}/models/awe/{layer}/lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9"
+    checkpoint_path = f"{model_load_dir}/2024-07-20_23:47:58_checkpoint_epoch_0.pt"
 
     device = "cuda"
-    temperature = 0.15
-    learning_rate = 0.001
-    weight_decay = 0.1
+
+    if len(args) > 1:
+        temperature = float(args[1])
+        learning_rate = float(args[2])
+        output_dim = int(args[3])
+        no_grad_on_awe_model = parse_boolean_input(args[4])
+    else:
+        temperature = 0.07
+        learning_rate = 0.001
+        output_dim = 512
+        no_grad_on_awe_model = True
+
     clip_norm = 10
-    num_epochs = 100
-    patience = 10
-    num_pairs_per_batch = 2
+    weight_decay = 0.00
+    num_epochs = 500
+    patience = 5
+    num_pairs_per_batch = 5
     num_batch_pairs_to_accumulate_gradients_over = 200  # set to 1 if you don't want gradient accumulation
     time_limit_to_create_dataset = 600
     batch_as_list = False
+    middle_dim = 512
+    awe_lr = 1e-5
+
+    if no_grad_on_awe_model:
+        no_grad_str = "no_grad"
+    else:
+        no_grad_str = "grad"
 
     model_save_dir = \
-        f"data/{language}/models/sent/{layer}/hubert_mid_2048_lr_{learning_rate}_linear_weight_decay_{weight_decay}"
+        f"data/{language}/models/sent/{layer}/finetune_awe_{no_grad_str}_1_layer_middle_dim_{middle_dim}_output_dim_{output_dim}_lr_{learning_rate}_tmp_{temperature}_weight_decay_{weight_decay}"
+    # model_save_dir = \
+    #     f"data/{language}/models/sent/{layer}/finetune_awe_grad_lr_{learning_rate}_tmp_{temperature}"
     datetime_string = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
     model_file_basename = f"{datetime_string}"
 
@@ -61,6 +84,7 @@ if __name__== "__main__":
            f"clip norm: {clip_norm}, temperature: {temperature}, num pairs per batch: {num_pairs_per_batch}\n"
            f"time limit to create dataset: {time_limit_to_create_dataset}\n"
            f"weight decay: {weight_decay}\n"
+           f"awe_lr: {awe_lr}\n"
            f"temperature: {temperature}\n"))
 
     make_dir(model_save_dir)
@@ -78,12 +102,27 @@ if __name__== "__main__":
                                         collate_fn=collate_fn)
     print(f"Time taken to create datasets: {time.perf_counter() - t1:.2f} s")
 
-    model = SSEmodel(device=device)
+    model = SSEmodel(device=device, middle_dim=middle_dim, output_dim=output_dim, no_grad_on_awe_model=no_grad_on_awe_model)
     params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Number of parameters in model: {params}")
     model.to(device)
     model_output_size = 512
-    optimizer = torch.optim.Adam(model.parameters(), learning_rate, weight_decay=weight_decay)
+
+
+    # Set different learning rates
+    if no_grad_on_awe_model:
+        optimizer = torch.optim.Adam(model.parameters(), learning_rate, weight_decay=weight_decay)
+    else:
+        awe_model_params = list(model.awe_model.parameters())
+        other_params = [param for name, param in model.named_parameters() if 'awe_model' not in name]
+        print(f"Number of parameters in AWE model: {sum(p.numel() for p in awe_model_params)}")
+        print(f"Number of parameters in other model: {sum(p.numel() for p in other_params)}")
+        optimizer = torch.optim.Adam([
+            {'params': awe_model_params, 'lr': awe_lr, "weight_decay": 0},
+            {'params': other_params, 'lr': learning_rate, "weight_decay": weight_decay}
+        ])
+
+
     if load_model_from_checkpoint:
         state_dict = load_model(checkpoint_path, model, device, optimizer)
     loss_function = NTXentLoss(temperature)

@@ -94,6 +94,38 @@ Number of queries with at least one correct result in the top 10 matches: 502; 5
 Mean Average Precision at 5: 0.315
 Mean Average Precision Overall: 0.311
 
+MPR TRAINING WITH GOLD LABEL INFERENCE
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/mpr_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9_3_9_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 875; 89.0 %
+Number of queries whose own document is in the top 10 matches: 935; 95.0 %
+Number of queries with at least one correct result in the top 5 matches: 515; 52.0 %
+Number of queries with at least one correct result in the top 10 matches: 582; 59.0 %
+Mean Average Precision at 5: 0.385
+Mean Average Precision Overall: 0.380
+
+MPR TRAINING WITH TIME WINDOW INFERENCE
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/mpr_window_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9_3_9_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 703; 72.0 %
+Number of queries whose own document is in the top 10 matches: 851; 87.0 %
+Number of queries with at least one correct result in the top 5 matches: 410; 42.0 %
+Number of queries with at least one correct result in the top 10 matches: 484; 49.0 %
+Mean Average Precision at 5: 0.305
+Mean Average Precision Overall: 0.297
+
 FINETUNE PERTURBED:
 Results For:
 tamil

@@ -5,6 +5,10 @@ import sys
 import csv
 import soundfile as sf
 from collections import defaultdict
+import matplotlib.pyplot as plt
+import mhubert_model.query_document_search as qds
+from utils.split_banjara_queries_documents import banjara_get_data_dicts
+from utils.graph_banjara_data import banjara_graph_count_order_bar_chart
 
 def clean_string(string):
     string = string.replace(".pkl", "")
@@ -224,6 +228,46 @@ def calculate_mean_average_precision(query_results_dict, gold_documents_for_quer
 
     return sum(average_precisions.values())/len(average_precisions), average_precisions
 
+def calculate_stats_per_label(data_dir, document_file, query_files, query_results_dict, 
+                            gold_documents_for_queries_dict, language):
+    if language == "tamil":
+        raise NotImplementedError("This function is not implemented for Tamil.")
+    labels_fnames, _ = banjara_get_data_dicts(data_dir, 0, 10000, query_files, document_file)
+    labels_query_results_dict = {}
+
+    for label, fnames in labels_fnames.items():
+        query_results_dict_for_label = {}
+        for fname in fnames:
+            if fname.endswith(".wav"):
+                fname = fname.replace(".wav", "")
+                if fname in query_results_dict.keys():
+                    query_results_dict_for_label[fname] = query_results_dict[fname]
+        labels_query_results_dict[label] = query_results_dict_for_label
+
+    labels_top_5 = {}
+    labels_top_5_percent = {}
+    labels_top_10 = {}
+    labels_top_10_percent = {}
+    labels_top_5_map = {}
+    labels_all_map = {}
+
+    for label, query_results_dict_for_label in labels_query_results_dict.items():
+        num_queries_top_5, num_queries_top_10 = \
+            calculate_correct_results(query_results_dict_for_label, gold_documents_for_queries_dict)
+        map_at_5, _ = calculate_mean_average_precision(
+            query_results_dict_for_label, gold_documents_for_queries_dict, num_results_to_consider=5)
+        map_all, _ = calculate_mean_average_precision(
+            query_results_dict_for_label, gold_documents_for_queries_dict, num_results_to_consider=None)
+
+        labels_top_5[label] = num_queries_top_5
+        labels_top_5_percent[label] = round(num_queries_top_5/len(query_results_dict_for_label),3) * 100
+        labels_top_10[label] = num_queries_top_10
+        labels_top_10_percent[label] = round(num_queries_top_10/len(query_results_dict_for_label),3) * 100
+        labels_top_5_map[label] = round(map_at_5, 3)
+        labels_all_map[label] = round(map_all, 3)
+    
+    return labels_top_5, labels_top_5_percent, labels_top_10, labels_top_10_percent, labels_top_5_map, labels_all_map
+
     
 if __name__ == "__main__":
 
@@ -236,19 +280,29 @@ if __name__ == "__main__":
         max_phone_seq_length = int(args[4])
         results_dir_folder = args[5]
         model_type = args[6]
+        if len(args) > 7:
+            window_size_ms = args[7]  # in milliseconds
+            stride_ms = args[8]  # in milliseconds
+        else:
+            window_size_ms = None  # in milliseconds
+            stride_ms = None  # in milliseconds
     else:
-        language = "tamil"
+        language = "banjara"
         layer = 9
-        min_phone_seq_length = 4
-        max_phone_seq_length = 9
-        results_dir_folder = f"{layer}/tamil_train_3_9/again_{min_phone_seq_length}_{max_phone_seq_length}"
+        min_phone_seq_length = 5
+        max_phone_seq_length = 14
+        results_dir_folder = f"{layer}/tamil_train_3_9_acc/lr_1e-4_tmp_0.07_acc_1000_bs_5_5_14_epoch_0"
         model_type = "awe"
+        window_size_ms = None  # in milliseconds
+        stride_ms = None  # in milliseconds
 
     training_seq_lengths = "3-9"
     results_dir_prefix = f"data/{language}/results/{model_type}"
-    layer = 9
+    # layer = 9
     limit = None  # limit the number of queries to consider
     results_limit = None  # limit used when saving the results, set to None if no limit used
+    graph_results = False
+    save_figures = False
 
     if results_limit is None:
         results_limit = "all"
@@ -258,6 +312,9 @@ if __name__ == "__main__":
         reference_file = f"data/{language}/analysis/ref_of_queries_in_docs.txt"
     elif language == "banjara":
         reference_file = f"data/{language}/analysis/ref_of_queries_in_docs_nq_99_nd_288.txt"
+        documents_file = f"data/{language}/analysis/all_documents.txt"
+        queries_file = f"data/{language}/analysis/all_queries.txt"
+        all_data_dir = f"data/{language}/banjara_data"
 
     write_to_file = False
     overall_output_csv_file = f"data/{language}/results/overall_results.csv"
@@ -273,7 +330,12 @@ if __name__ == "__main__":
             f"\nTraining phone seq lengths: {training_seq_lengths}"))
 
     if "raw_hubert" in results_dir_prefix:
-        results_dir = f"{results_dir_prefix}/{layer}/raw_multiple_q_vecs" 
+        if window_size_ms is None:
+            results_dir = f"{results_dir_prefix}/{layer}/raw_multiple_q_vecs" 
+        else:
+            _, _, results_dir = \
+            qds.get_embedding_and_results_dir("", "", results_dir_prefix, "mean", 
+                                            layer, window_size_ms, stride_ms, True)
     elif "awe" or "sent" in results_dir_prefix:
         results_dir = \
             f"{results_dir_prefix}/{results_dir_folder}" 
@@ -299,6 +361,30 @@ if __name__ == "__main__":
     map_all, avg_precision_dict_all = calculate_mean_average_precision(
                                     query_results_dict, gold_documents_for_queries_dict,
                                       num_results_to_consider=None)
+
+    if language == "banjara":
+        labels_top5, labels_top5_percent, labels_top10, labels_top10_percent, labels_map_at_5, labels_map_all = \
+            calculate_stats_per_label(all_data_dir, documents_file, queries_file, query_results_dict, 
+                                    gold_documents_for_queries_dict, language)
+        if graph_results:
+            banjara_graph_count_order_bar_chart(labels_top5, "Label", "Number of queries with a top 5 match",
+                                                all_data_dir, queries_file, documents_file,
+                                                 f"figures/labels_top5.png", save_figures)
+
+            banjara_graph_count_order_bar_chart(labels_top5_percent, "Label", 
+                                                "Percent of queries with a top 5 match",
+                                                all_data_dir, queries_file, documents_file,
+                                                 f"figures/labels_top5_percent.png", save_figures)
+
+            banjara_graph_count_order_bar_chart(labels_map_at_5, "Label", 
+                                                "MAP at 5",
+                                                all_data_dir, queries_file, documents_file,
+                                                 f"figures/labels_map_5.png", save_figures)
+
+            banjara_graph_count_order_bar_chart(labels_map_all, "Label", 
+                                                "MAP all",
+                                                all_data_dir, queries_file, documents_file,
+                                                 f"figures/labels_map_all.png", save_figures)
     
     if create_analysis_file:
         analysis_file = f"{results_dir}/results_analysis.txt"

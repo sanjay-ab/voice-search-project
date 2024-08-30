@@ -18,9 +18,9 @@ if __name__ == "__main__":
         document_query_suffix = args[3]
         results_path = args[4]
     else:
-        language = "tamil"
+        language = "banjara"
         layer = 9
-        document_query_suffix = f"test"
+        document_query_suffix = f"5_14_test_sent_one_query"
         results_path = f"train_tamil/{layer}/test"
 
     scratch_prefix = f"/scratch/space1/tc062/sanjayb"

@@ -224,8 +224,8 @@ if __name__== "__main__":
 
     load_model_from_checkpoint = False
     model_load_dir = \
-        f"data/{language}/models/awe/{layer}/lr_1e-4_tmp_0.07_acc_1000_{min_phone_seq_length}_{max_phone_seq_length}"
-    checkpoint_path = f"{model_load_dir}/2024-07-20_19:13:27_checkpoint_epoch_0.pt"
+        f"data/{language}/models/awe/{layer}/half_lr_1e-4_tmp_0.07_acc_1000_bs_5_{min_phone_seq_length}_{max_phone_seq_length}"
+    checkpoint_path = f"{model_load_dir}/2024-07-21_12:25:45_checkpoint_epoch_2.pt"
 
     device = "cuda"
     perturb_sequences = False

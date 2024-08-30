@@ -155,3 +155,18 @@ Number of queries with at least one correct result in the top 5 matches: 70; 71.
 Number of queries with at least one correct result in the top 10 matches: 76; 77.0 %
 Mean Average Precision at 5: 0.553
 Mean Average Precision Overall: 0.257
+
+Results For:
+banjara
+Layer 10
+Num results to consider: all
+Inference phone seq lengths: 5-14
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe/10/tamil_train_3_9_acc/lr_0.0001_tmp_0.07_acc_1000_bs_5_5_14_epoch_0/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 80; 81.0 %
+Number of queries with at least one correct result in the top 10 matches: 89; 90.0 %
+Mean Average Precision at 5: 0.646
+Mean Average Precision Overall: 0.314

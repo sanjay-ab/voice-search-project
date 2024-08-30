@@ -43,6 +43,13 @@ class DocumentClassesDataset(Dataset):
     
     def _load_embedded_data(self, document_embedding_dir, queries_embedding_dir):
         self.embedded_data_dict = defaultdict(list)
+        # total_length = 0
+        # for query, document_list in self.documents_for_queries_dict.items():
+        #     total_length += len(document_list)
+        # print(f"Total num documents: {total_length}")
+        # print(f"Total num queries: {len(self.documents_for_queries_dict.keys())}")
+        # print(f"Total num queries + documents: {total_length + len(self.documents_for_queries_dict.keys())}")
+
         for query, document_list in self.documents_for_queries_dict.items():
             label = self.queries_to_labels_dict[query]
             if self.language == "tamil":

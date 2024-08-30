@@ -1,0 +1,74 @@
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/raw_hubert/9/mean_pooled_win_240ms_stride_120ms_multiple_q_vecs/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 576; 59.0 %
+Number of queries whose own document is in the top 10 matches: 745; 76.0 %
+Number of queries with at least one correct result in the top 5 matches: 136; 14.0 %
+Number of queries with at least one correct result in the top 10 matches: 171; 17.0 %
+Mean Average Precision at 5: 0.086
+Mean Average Precision Overall: 0.086
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/raw_hubert/9/mean_pooled_win_500ms_stride_250ms_multiple_q_vecs/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 164; 17.0 %
+Number of queries whose own document is in the top 10 matches: 322; 33.0 %
+Number of queries with at least one correct result in the top 5 matches: 22; 2.0 %
+Number of queries with at least one correct result in the top 10 matches: 41; 4.0 %
+Mean Average Precision at 5: 0.012
+Mean Average Precision Overall: 0.013
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/raw_hubert/9/mean_pooled_win_120ms_stride_60ms_multiple_q_vecs/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 818; 83.0 %
+Number of queries whose own document is in the top 10 matches: 897; 91.0 %
+Number of queries with at least one correct result in the top 5 matches: 286; 29.0 %
+Number of queries with at least one correct result in the top 10 matches: 349; 36.0 %
+Mean Average Precision at 5: 0.205
+Mean Average Precision Overall: 0.200
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/raw_hubert/9/mean_pooled_win_60ms_stride_30ms_multiple_q_vecs/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 904; 92.0 %
+Number of queries whose own document is in the top 10 matches: 964; 98.0 %
+Number of queries with at least one correct result in the top 5 matches: 366; 37.0 %
+Number of queries with at least one correct result in the top 10 matches: 435; 44.0 %
+Mean Average Precision at 5: 0.263
+Mean Average Precision Overall: 0.254
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/raw_hubert/9/mean_pooled_win_80ms_stride_40ms_multiple_q_vecs/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 862; 88.0 %
+Number of queries whose own document is in the top 10 matches: 939; 96.0 %
+Number of queries with at least one correct result in the top 5 matches: 334; 34.0 %
+Number of queries with at least one correct result in the top 10 matches: 402; 41.0 %
+Mean Average Precision at 5: 0.244
+Mean Average Precision Overall: 0.237

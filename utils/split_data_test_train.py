@@ -136,8 +136,8 @@ def get_voice_activity_duration_of_docs(document_set, files_phones_dict, sil_pho
 
 if __name__ == "__main__":
     # dir where all the data is stored, including data that was filtered out after preprocessing
-    language = "banjara"
-    all_data_dir = f"data/{language}/banjara_data"
+    language = "tamil"
+    all_data_dir = f"data/{language}/all_data"
     queries_dir = f"data/{language}/queries"
     analysis_dir = f"data/{language}/analysis"
 
@@ -176,14 +176,22 @@ if __name__ == "__main__":
 
     # not_in_search_corpus_duration = get_duration_of_docs(docs_not_in_search_corpus_set, all_data_dir)
 
-    not_in_search_corpus_voice_activity_duration = \
-        get_voice_activity_duration_of_docs(docs_not_in_search_corpus_set, files_phones_dict)
+    # not_in_search_corpus_voice_activity_duration = \
+    #     get_voice_activity_duration_of_docs(docs_not_in_search_corpus_set, files_phones_dict)
 
-    query_files_set = get_all_data_files(queries_dir)
-    duration = get_duration_of_docs(query_files_set, queries_dir)
-    print(f"Duration of queries: {duration:.0f} s, {duration/60:.1f} m, {duration/3600:.2f} h")
-    average_duration = duration / len(query_files_set)
-    print(f"Average duration of queries: {average_duration:.0f} s, {average_duration/60:.1f} m, {average_duration/3600:.2f} h")
+    # query_files_set = get_all_data_files(queries_dir)
+    # duration = get_duration_of_docs(query_files_set, queries_dir)
+    # print(f"Duration of queries: {duration:.0f} s, {duration/60:.1f} m, {duration/3600:.2f} h")
+    # average_duration = duration / len(query_files_set)
+    # print(f"Average duration of queries: {average_duration:.0f} s, {average_duration/60:.1f} m, {average_duration/3600:.2f} h")
+
+    # all_length = get_duration_of_docs(all_data_files_set, all_data_dir)
+    # print(f"Duration of all data: {all_length:.0f} s, {all_length/60:.1f} m, {all_length/3600:.2f} h")
+    # print(f"Length of all data set: {len(all_data_files_set)}")
+
+    search_duration = get_duration_of_docs(all_docs_in_search_corpus_set, all_data_dir)
+    print(f"Duration of search corpus: {search_duration:.0f} s, {search_duration/60:.1f} m, {search_duration/3600:.2f} h")
+    print(f"Length of search corpus set: {len(all_docs_in_search_corpus_set)}")
 
     # training_files = read_documents_file(training_data_save_file)
     # silent_training_files = training_files & silence_docs
@@ -209,9 +217,9 @@ if __name__ == "__main__":
     #        f"{not_in_search_corpus_duration:.0f} s, {not_in_search_corpus_duration/60:.1f} m, "
     #        f"{not_in_search_corpus_duration/3600:.2f} h"))
 
-    print((f"Duration of voice activity of documents that are not in search corpus: "
-           f"{not_in_search_corpus_voice_activity_duration:.0f} s, {not_in_search_corpus_voice_activity_duration/60:.1f} m, "
-           f"{not_in_search_corpus_voice_activity_duration/3600:.2f} h"))
+    # print((f"Duration of voice activity of documents that are not in search corpus: "
+    #        f"{not_in_search_corpus_voice_activity_duration:.0f} s, {not_in_search_corpus_voice_activity_duration/60:.1f} m, "
+    #        f"{not_in_search_corpus_voice_activity_duration/3600:.2f} h"))
 
     # print((f"Duration of training documents: "
     #        f"{training_duration:.0f} s, {training_duration/60:.1f} m, "

@@ -29,17 +29,18 @@ def link_files(fname_with_list, source_dirs, target_dir):
                 print(f"File {fname_basename}.wav not found in source directories: {source_dirs}")
 
 if __name__ == "__main__":
-    top_level_dir = "data/tamil/"
-    test_data_dir = f"{top_level_dir}/test/audio"
-    train_data_dir = f"{top_level_dir}/train/audio"
-    # train_data_dir = test_data_dir
+    top_level_dir = "data/banjara/"
+    test_data_dir = f"{top_level_dir}/banjara_data"
+    # test_data_dir = f"{top_level_dir}/test/audio"
+    # train_data_dir = f"{top_level_dir}/train/audio"
+    train_data_dir = test_data_dir
     queries_fname = f"{top_level_dir}/analysis/all_queries.txt"
     documents_fname = f"{top_level_dir}/analysis/all_documents.txt"
-    training_data_fname = f"{top_level_dir}/analysis/training_data_mpr.txt"
+    training_data_fname = f"{top_level_dir}/analysis/training_data.txt"
     validation_data_fname = f"{top_level_dir}/analysis/validation_data.txt"
     output_query_dir = f"{top_level_dir}/queries"
     output_document_dir = f"{top_level_dir}/documents"
-    output_training_dir = f"{top_level_dir}/training_data_mpr"
+    output_training_dir = f"{top_level_dir}/training_data"
     output_validation_dir = f"{top_level_dir}/validation_data"
 
     # only link queries for banjara data - for tamil, queries are separately cut out of documents

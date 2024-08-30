@@ -27,16 +27,17 @@ Mean Average Precision Overall: 0.001
 Results For:
 tamil
 Layer 8
-With splitting into phones after embedding
+Num results to consider: all
 Inference phone seq lengths: 2-5
-Training phone seq lengths: 2-5
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/8/tamil_train_init_2_5/2_5_2_5/results_all.txt
 Total number of queries: 983
-Number of queries whose best match is its own document: 73; 7 %
-Number of queries whose own document is in the top 10 matches: 99; 10 %
-Number of queries with at least one correct result in the top 5 matches: 82; 8 %
-Number of queries with at least one correct result in the top 10 matches: 103; 10 %
-Mean Average Precision at 5: 0.051
-Mean Average Precision Overall: 0.043
+Number of queries whose best match is its own document: 564; 57.0 %
+Number of queries whose own document is in the top 10 matches: 746; 76.0 %
+Number of queries with at least one correct result in the top 5 matches: 414; 42.0 %
+Number of queries with at least one correct result in the top 10 matches: 482; 49.0 %
+Mean Average Precision at 5: 0.313
+Mean Average Precision Overall: 0.304
 
 Results For:
 tamil
@@ -537,3 +538,18 @@ Number of queries with at least one correct result in the top 5 matches: 574; 58
 Number of queries with at least one correct result in the top 10 matches: 646; 66.0 %
 Mean Average Precision at 5: 0.444
 Mean Average Precision Overall: 0.435
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_3_9_acc/lr_0.0001_tmp_0.15_acc_1000_bs_150_3_9_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 798; 81.0 %
+Number of queries whose own document is in the top 10 matches: 898; 91.0 %
+Number of queries with at least one correct result in the top 5 matches: 522; 53.0 %
+Number of queries with at least one correct result in the top 10 matches: 596; 61.0 %
+Mean Average Precision at 5: 0.396
+Mean Average Precision Overall: 0.391

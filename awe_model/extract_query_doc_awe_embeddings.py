@@ -209,11 +209,11 @@ if __name__ == "__main__":
     else:
         language = "banjara"
         phone_timings_fname = "phone_all_mpr.ctm"
-        min_phone_seq_length = 3
-        max_phone_seq_length = 9
+        min_phone_seq_length = 5
+        max_phone_seq_length = 14
         use_window_splitter_instead_of_phone_splitter = True
         layer = 9
-        save_embedding_folder = f"{min_phone_seq_length}_{max_phone_seq_length}"
+        save_embedding_folder = f"{min_phone_seq_length}_{max_phone_seq_length}_again"
         model_save_dir = \
             f"data/tamil/models/awe/{layer}/lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9"
         model_name = "2024-07-20_23:47:58_checkpoint_epoch_0.pt"

@@ -1,0 +1,19 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Matplotlib created a temporary cache directory at /dev/shm/sanjayb_5863046/matplotlib-zyj2ulhn because the default path (/home/tc062/tc062/sanjayb/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Results For:
+banjara
+Layer 10
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/banjara/results/awe/10/tamil_train_3_9/3_9_epoch_3/results_all.txt
+Total number of queries: 99
+Number of queries whose best match is its own document: 99; 100.0 %
+Number of queries whose own document is in the top 10 matches: 99; 100.0 %
+Number of queries with at least one correct result in the top 5 matches: 68; 69.0 %
+Number of queries with at least one correct result in the top 10 matches: 79; 80.0 %
+Mean Average Precision at 5: 0.514
+Mean Average Precision Overall: 0.225

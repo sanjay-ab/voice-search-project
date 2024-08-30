@@ -23,5 +23,7 @@ SAVE_EMBEDDING_FOLDER=$3
 MODEL_SAVE_DIR=$4
 MODEL_NAME=$5
 USE_AWES=$6
+MIDDLE_DIM=$7
+OUTPUT_DIM=$8
 
-srun python -u sent_model/extract_query_doc_sent_embeddings.py queries 1 0 $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES
+srun python -u sent_model/extract_query_doc_sent_embeddings.py queries 1 0 $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM

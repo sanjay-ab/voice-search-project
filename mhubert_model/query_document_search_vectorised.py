@@ -1,5 +1,6 @@
 import torch
 import time
+import sys
 import pickle as pkl
 import mhubert_model.query_document_search as qds
 from utils.common_functions_pytorch import print_memory_usage
@@ -8,6 +9,9 @@ def compute_ranking(query_embeddings_batched, query_names_batched, document_embe
                     document_names_batched, results_file, device, num_results_to_save=None):
 
     with torch.no_grad():
+        t1 = time.perf_counter()
+        _ = torch.einsum("ij,jk->ik", torch.ones((1, 1)), torch.ones((1, 1)))
+        print(f"Time taken to compute einsum: {time.perf_counter() - t1:.2f} s")
 
         num_doc_batches = len(document_names_batched)
         num_query_batches = len(query_embeddings_batched)
@@ -81,15 +85,25 @@ def load_queries(fname, limit=None):
     return queries_embedded_states, query_names
 
 if __name__ == "__main__":
-    folder = "banjara"
+    args = sys.argv
+    if len(args) > 1:
+        window_size_ms = int(args[1])  # in milliseconds
+        stride_ms = int(args[2])  # in milliseconds
+        layer = int(args[3])
+    else:
+        window_size_ms = None  # in milliseconds
+        stride_ms = None  # in milliseconds
+        layer = 9
+
+    folder = "tamil"
     embedding_dir = f"data/{folder}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
     query_prefix = f"{embedding_dir}/queries"
     results_dir_prefix = f"data/{folder}/results/raw_hubert"
-    layer = 9
-    pooling_method = "none"
-    window_size_ms = None  # in milliseconds
-    stride_ms = None  # in milliseconds
+    if window_size_ms is not None:
+        pooling_method = "mean"
+    else:
+        pooling_method = "none"
     query_multiple_vectors = True
     query_batched = True
     query_limit = None
@@ -108,6 +122,8 @@ if __name__ == "__main__":
     document_embedded_states_dir, query_embedded_states_dir, results_dir = \
         qds.get_embedding_and_results_dir(document_prefix, query_prefix, results_dir_prefix, pooling_method, 
                                         layer, window_size_ms, stride_ms, query_multiple_vectors)
+
+    # query_embedded_states_dir = f"{query_embedded_states_dir}_one_query"
 
     qds.check_if_dir_exists(document_embedded_states_dir)
     qds.check_if_dir_exists(query_embedded_states_dir)

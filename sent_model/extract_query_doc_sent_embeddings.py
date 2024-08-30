@@ -4,7 +4,8 @@ import sys
 import pickle as pkl
 import torch
 from torch.nn.utils.rnn import pad_sequence
-from sent_model.hubert_model import SSEmodel
+from sent_model.extra_linear_layer_model import SSEmodel
+# from sent_model.model import SSEmodel
 from utils.common_functions import make_dir, split_list_into_n_parts_and_get_part, parse_boolean_input
 
 if __name__ == "__main__":
@@ -20,14 +21,18 @@ if __name__ == "__main__":
         model_save_dir = args[7]
         model_name = args[8]
         use_awes = parse_boolean_input(args[9])
+        middle_dim = int(args[10])
+        output_dim = int(args[11])
     else:
-        language = "tamil"
+        language = "banjara"
         layer = 9
-        save_embedding_folder = f"test_sent"
+        save_embedding_folder = f"5_14_test_sent"
         model_save_dir = \
-            f"data/tamil/models/sent/{layer}/test_sent_model"
-        model_name = "2024-07-22_16:39:45_checkpoint_epoch_10.pt"
-        use_awes = False
+            f"data/tamil/models/sent/9/mid_2048_dropout_layernorm_lr_0.0005_linear_weight_decay_0.01"
+        model_name = "2024-07-27_14:25:30_checkpoint_epoch_12.pt"
+        use_awes = True
+        middle_dim = 2048
+        output_dim = 512
 
     scratch_prefix = f"/scratch/space1/tc062/sanjayb"
     top_level_embedding_dir = f"data/{language}/embeddings"
@@ -49,9 +54,15 @@ if __name__ == "__main__":
         part = 0
 
     if use_awes:
-        embedding_dir = f"{scratch_prefix}/{top_level_embedding_dir}/{folder}/{layer}/3_9"
+        if language == "tamil":
+            embedding_dir = f"{scratch_prefix}/{top_level_embedding_dir}/{folder}/{layer}/3_9"
+        elif language == "banjara":
+            embedding_dir = f"{scratch_prefix}/{top_level_embedding_dir}/{folder}/{layer}/5_14"
     else:
-        embedding_dir = f"{top_level_embedding_dir}/{folder}/{layer}/raw"
+        if language == "tamil":
+            embedding_dir = f"{top_level_embedding_dir}/{folder}/{layer}/raw_valid"
+        elif language == "banjara":
+            embedding_dir = f"{top_level_embedding_dir}/{folder}/{layer}/raw"
 
     save_embedding_dir = \
         f"{scratch_prefix}/{top_level_embedding_dir}/{folder}/{layer}/{save_embedding_folder}"
@@ -63,7 +74,8 @@ if __name__ == "__main__":
     else:
         model_path = f"{model_save_dir}/{model_name}"
 
-    model = SSEmodel(device=device)
+    model = SSEmodel(device=device, middle_dim=middle_dim, output_dim=output_dim)
+    # model = SSEmodel(device=device)
     model.to(device)
     model.eval()
     state_dict = load_model(model_path, model, device)

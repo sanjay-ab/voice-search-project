@@ -12,3 +12,18 @@ Number of queries with at least one correct result in the top 5 matches: 75; 8.0
 Number of queries with at least one correct result in the top 10 matches: 109; 11.0 %
 Mean Average Precision at 5: 0.041
 Mean Average Precision Overall: 0.041
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 0-0
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/sent/9/finetune_awe_nograd_1_layer_middle_dim_512_output_dim_512_lr_0.001_weight_decay_0.0_3/results_all.txt
+Total number of queries: 90
+Number of queries whose best match is its own document: 0; 0.0 %
+Number of queries whose own document is in the top 10 matches: 2; 2.0 %
+Number of queries with at least one correct result in the top 5 matches: 42; 47.0 %
+Number of queries with at least one correct result in the top 10 matches: 51; 57.0 %
+Mean Average Precision at 5: 0.293
+Mean Average Precision Overall: 0.281

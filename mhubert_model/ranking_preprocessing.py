@@ -1,9 +1,11 @@
 import torch
 from torch.nn.utils.rnn import pad_sequence
 import time
+import sys
 import pickle as pkl
 import mhubert_model.query_document_search as qds
 from utils.common_functions_pytorch import print_memory_usage
+from utils.common_functions import parse_boolean_input
 
 def pad_normalise_from_list(tensor_list):
     """Take a list of tensors, pads them to the same length, then normalises them.
@@ -122,28 +124,45 @@ def pad_normalise_from_dict_with_size_order_batch(dictionary, size_order_file, m
     return output_list, names_batched
 
 if __name__ == "__main__":
-    folder = "banjara"
+    args = sys.argv
+    if len(args) > 1:
+        window_size_ms = int(args[1])  # in milliseconds
+        stride_ms = int(args[2])  # in milliseconds
+        layer = int(args[3])
+        run_for_queries = parse_boolean_input(args[4])
+        run_for_documents = parse_boolean_input(args[5])
+    else:
+        window_size_ms = None  # in milliseconds
+        stride_ms = None  # in milliseconds
+        layer = 9
+        run_for_queries = True
+        run_for_documents = True
+
+    folder = "tamil"
     embedding_dir = f"data/{folder}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
     query_prefix = f"{embedding_dir}/queries"
-    doc_size_order_file = f"data/{folder}/analysis/document_lengths_288.txt"
-    query_size_order_file = f"data/{folder}/analysis/queries_lengths_nq_99_nd_288.txt"
-    layer = 9
-    pooling_method = "none"
-    window_size_ms = None  # in milliseconds
-    stride_ms = None  # in milliseconds
+    doc_size_order_file = f"data/{folder}/analysis/document_lengths.txt"
+    # doc_size_order_file = f"data/{folder}/analysis/document_lengths_288.txt"
+    query_size_order_file = f"data/{folder}/analysis/queries_lengths.txt"
+    # query_size_order_file = f"data/{folder}/analysis/queries_lengths_nq_99_nd_288.txt"
+    if window_size_ms is None or window_size_ms=="none":
+        pooling_method = "none"
+    else:
+        pooling_method = "mean"
+
     query_multiple_vectors = True
     max_document_batch_size_gb = 0.1
     batch_query = True
     max_query_batch_size_gb = 0.1
     # set which types of files you want to run the script for
-    run_for_queries = True
-    run_for_documents = True
 
     print(f"Preprocessing files for layer {layer}")
     document_embedded_states_dir, query_embedded_states_dir, _ = \
         qds.get_embedding_and_results_dir(document_prefix, query_prefix, "", pooling_method, 
                                         layer, window_size_ms, stride_ms, query_multiple_vectors)
+
+    # query_embedded_states_dir = f"{query_embedded_states_dir}_one_query"
 
     qds.check_if_dir_exists(document_embedded_states_dir)
     qds.check_if_dir_exists(query_embedded_states_dir)

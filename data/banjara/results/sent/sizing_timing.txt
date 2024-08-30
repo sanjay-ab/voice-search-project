@@ -1,0 +1,7 @@
+For all documents/queries:
+3.62 seconds to compute ranking result
+Uses 0G of GPU memory and 2G of CPU memory.
+
+For 1 34 s query and all documents:
+3.09 seconds to compute result
+Uses 0G of GPU memory and 2G of CPU memory. 

@@ -49,8 +49,8 @@ class HubertEmbedder:
         return hidden_states
 
 if __name__ == "__main__":
-    layers = [9]
-    device = "cpu"
+    layers = [7]
+    device = "cuda"
     batch_size = 1  # don't change - resulting IR system is much poorer for batch_size>1
     top_level_dir = "data/tamil/"
     top_level_embedding_dir = f"{top_level_dir}/embeddings"
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     print(f"NUMBER OF CPU CORES: {os.cpu_count()}")
 
     t1 = time.perf_counter()
-    for folder in ["documents"]:
+    for folder in ["validation_data", "training_data"]:
         print(f"Generating embeddings for {folder}")
         audio_directory = f"{top_level_dir}/{folder}"
         dataset = AudioDataset(audio_directory)

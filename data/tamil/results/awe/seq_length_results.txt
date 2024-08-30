@@ -1,0 +1,134 @@
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 1-5
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_1_5_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 831; 85.0 %
+Number of queries whose own document is in the top 10 matches: 910; 93.0 %
+Number of queries with at least one correct result in the top 5 matches: 524; 53.0 %
+Number of queries with at least one correct result in the top 10 matches: 593; 60.0 %
+Mean Average Precision at 5: 0.402
+Mean Average Precision Overall: 0.390
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 2-5
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_2_5_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 825; 84.0 %
+Number of queries whose own document is in the top 10 matches: 909; 92.0 %
+Number of queries with at least one correct result in the top 5 matches: 536; 55.0 %
+Number of queries with at least one correct result in the top 10 matches: 587; 60.0 %
+Mean Average Precision at 5: 0.409
+Mean Average Precision Overall: 0.397
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-5
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_3_5_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 823; 84.0 %
+Number of queries whose own document is in the top 10 matches: 907; 92.0 %
+Number of queries with at least one correct result in the top 5 matches: 546; 56.0 %
+Number of queries with at least one correct result in the top 10 matches: 616; 63.0 %
+Mean Average Precision at 5: 0.424
+Mean Average Precision Overall: 0.416
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 4-5
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_4_5_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 819; 83.0 %
+Number of queries whose own document is in the top 10 matches: 904; 92.0 %
+Number of queries with at least one correct result in the top 5 matches: 559; 57.0 %
+Number of queries with at least one correct result in the top 10 matches: 622; 63.0 %
+Mean Average Precision at 5: 0.430
+Mean Average Precision Overall: 0.424
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-8
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_3_8_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 820; 83.0 %
+Number of queries whose own document is in the top 10 matches: 906; 92.0 %
+Number of queries with at least one correct result in the top 5 matches: 544; 55.0 %
+Number of queries with at least one correct result in the top 10 matches: 619; 63.0 %
+Mean Average Precision at 5: 0.417
+Mean Average Precision Overall: 0.412
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_3_9_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 819; 83.0 %
+Number of queries whose own document is in the top 10 matches: 907; 92.0 %
+Number of queries with at least one correct result in the top 5 matches: 549; 56.0 %
+Number of queries with at least one correct result in the top 10 matches: 612; 62.0 %
+Mean Average Precision at 5: 0.417
+Mean Average Precision Overall: 0.410
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 4-9
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_4_9_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 820; 83.0 %
+Number of queries whose own document is in the top 10 matches: 899; 91.0 %
+Number of queries with at least one correct result in the top 5 matches: 538; 55.0 %
+Number of queries with at least one correct result in the top 10 matches: 615; 63.0 %
+Mean Average Precision at 5: 0.408
+Mean Average Precision Overall: 0.405
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-10
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_3_10_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 822; 84.0 %
+Number of queries whose own document is in the top 10 matches: 908; 92.0 %
+Number of queries with at least one correct result in the top 5 matches: 541; 55.0 %
+Number of queries with at least one correct result in the top 10 matches: 615; 63.0 %
+Mean Average Precision at 5: 0.414
+Mean Average Precision Overall: 0.408
+
+Results For:
+tamil
+Layer 9
+Num results to consider: all
+Inference phone seq lengths: 3-11
+Training phone seq lengths: 3-9
+Results for: data/tamil/results/awe/9/tamil_train_init_3_9/initial_model_lr_0.0001_tmp_0.15_acc_1000_bs_5_3_11_2_5_epoch_0/results_all.txt
+Total number of queries: 983
+Number of queries whose best match is its own document: 820; 83.0 %
+Number of queries whose own document is in the top 10 matches: 909; 92.0 %
+Number of queries with at least one correct result in the top 5 matches: 545; 55.0 %
+Number of queries with at least one correct result in the top 10 matches: 617; 63.0 %
+Mean Average Precision at 5: 0.414
+Mean Average Precision Overall: 0.407

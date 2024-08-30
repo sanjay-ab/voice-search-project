@@ -1,0 +1,1055 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training reference file: data/tamil/analysis/ref_of_queries_in_docs_train.txt
+Validation reference file: data/tamil/analysis/ref_of_queries_in_docs_valid.txt
+START TIME: 2024-08-05_19:04:33
+Training model for tamil with inputs from mHuBERT layer 9
+Number of epochs: 50, patience: 15, learning rate: 5e-05
+clip norm: 10, temperature: 0.15, num pairs per batch: 2
+time limit to create dataset: 600
+weight decay: 0.01
+awe_lr_division: 10
+temperature: 0.15
+
+Created paired data
+Created paired data
+Time taken to create datasets: 57.87 s
+Number of parameters in model: 6825984
+
+Loading model from data/tamil/models/awe/9/lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9/2024-07-20_23:47:58_checkpoint_epoch_0.pt
+
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.05% done
+Loss: 458.8846206665039
+Time: 19.40 s
+Epoch 0: 10.03% done
+Loss: 730.6198281170142
+Time: 23.31 s
+Epoch 0: 20.05% done
+Loss: 686.7084838637155
+Time: 24.94 s
+Epoch 0: 30.03% done
+Loss: 539.8630621156307
+Time: 26.66 s
+Epoch 0: 40.05% done
+Loss: 446.08378739812264
+Time: 28.37 s
+Epoch 0: 50.03% done
+Loss: 397.93292795768895
+Time: 30.05 s
+Epoch 0: 60.05% done
+Loss: 381.8801046316348
+Time: 32.21 s
+Epoch 0: 70.03% done
+Loss: 395.99454264448144
+Time: 33.93 s
+Epoch 0: 80.05% done
+Loss: 360.8147936849738
+Time: 35.62 s
+Epoch 0: 90.03% done
+Loss: 379.3263745428336
+Time: 37.30 s
+
+Epoch 0 done
+Epoch loss: 469.87198777703253
+
+Time taken for epoch: 39.41 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.23 s
+Calculating validation loss: 60.09% done
+Time: 0.35 s
+Calculating validation loss: 80.28% done
+Time: 0.47 s
+
+Validation loss: 414.64248655039233
+
+Time taken: 0.57 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_0.pt
+
+Regenerated paired data
+Epoch 1: 0.05% done
+Loss: 266.3281440734863
+Time: 0.01 s
+Epoch 1: 10.04% done
+Loss: 342.57158700263864
+Time: 1.21 s
+Epoch 1: 20.03% done
+Loss: 340.6366548754952
+Time: 2.88 s
+Epoch 1: 30.02% done
+Loss: 340.9008321211194
+Time: 4.68 s
+Epoch 1: 40.01% done
+Loss: 330.67497322053623
+Time: 6.31 s
+Epoch 1: 50.05% done
+Loss: 336.10089163684364
+Time: 7.96 s
+Epoch 1: 60.04% done
+Loss: 320.87864589811574
+Time: 9.64 s
+Epoch 1: 70.03% done
+Loss: 325.67968914906186
+Time: 11.30 s
+Epoch 1: 80.02% done
+Loss: 302.26969569921494
+Time: 12.97 s
+Epoch 1: 90.01% done
+Loss: 328.1435930969739
+Time: 14.72 s
+
+Epoch 1 done
+Epoch loss: 326.82596241414365
+
+Time taken for epoch: 16.81 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.11 s
+Calculating validation loss: 40.37% done
+Time: 0.23 s
+Calculating validation loss: 60.09% done
+Time: 0.35 s
+Calculating validation loss: 80.28% done
+Time: 0.47 s
+
+Validation loss: 412.2053633042432
+
+Time taken: 0.58 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_1.pt
+
+Regenerated paired data
+Epoch 2: 0.05% done
+Loss: 84.62152481079102
+Time: 0.00 s
+Epoch 2: 10.04% done
+Loss: 287.4439488908257
+Time: 1.22 s
+Epoch 2: 20.02% done
+Loss: 297.27008086864396
+Time: 2.95 s
+Epoch 2: 30.01% done
+Loss: 289.2254613565676
+Time: 4.63 s
+Epoch 2: 40.04% done
+Loss: 278.019920276038
+Time: 6.31 s
+Epoch 2: 50.03% done
+Loss: 270.9154994123512
+Time: 8.03 s
+Epoch 2: 60.01% done
+Loss: 262.18368617272137
+Time: 9.70 s
+Epoch 2: 70.05% done
+Loss: 261.1759339632401
+Time: 11.36 s
+Epoch 2: 80.03% done
+Loss: 264.85837910964034
+Time: 13.02 s
+Epoch 2: 90.02% done
+Loss: 239.60934658017425
+Time: 14.73 s
+
+Epoch 2 done
+Epoch loss: 270.9705498075161
+
+Time taken for epoch: 16.81 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.11 s
+Calculating validation loss: 40.37% done
+Time: 0.23 s
+Calculating validation loss: 60.09% done
+Time: 0.33 s
+Calculating validation loss: 80.28% done
+Time: 0.45 s
+
+Validation loss: 411.4327061066934
+
+Time taken: 0.57 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_2.pt
+
+Regenerated paired data
+Epoch 3: 0.05% done
+Loss: 312.3469829559326
+Time: 0.00 s
+Epoch 3: 10.03% done
+Loss: 238.54996225599086
+Time: 1.23 s
+Epoch 3: 20.01% done
+Loss: 245.7441418234146
+Time: 2.89 s
+Epoch 3: 30.04% done
+Loss: 225.16688369027335
+Time: 4.55 s
+Epoch 3: 40.02% done
+Loss: 241.46070371222015
+Time: 6.27 s
+Epoch 3: 50.05% done
+Loss: 208.67402830427915
+Time: 8.02 s
+Epoch 3: 60.03% done
+Loss: 230.89598678052425
+Time: 9.73 s
+Epoch 3: 70.01% done
+Loss: 214.44864379938204
+Time: 11.44 s
+Epoch 3: 80.04% done
+Loss: 201.07851922699254
+Time: 13.18 s
+Epoch 3: 90.02% done
+Loss: 219.86322530893364
+Time: 14.87 s
+
+Epoch 3 done
+Epoch loss: 223.59189878747378
+
+Time taken for epoch: 16.94 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.11 s
+Calculating validation loss: 40.37% done
+Time: 0.22 s
+Calculating validation loss: 60.09% done
+Time: 0.33 s
+Calculating validation loss: 80.28% done
+Time: 0.46 s
+
+Validation loss: 411.1369456719915
+
+Time taken: 0.57 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_3.pt
+
+Regenerated paired data
+Epoch 4: 0.05% done
+Loss: 88.24741840362549
+Time: 0.01 s
+Epoch 4: 10.03% done
+Loss: 189.88626997616856
+Time: 1.25 s
+Epoch 4: 20.05% done
+Loss: 190.9653123561761
+Time: 2.97 s
+Epoch 4: 30.03% done
+Loss: 197.1941699734842
+Time: 4.68 s
+Epoch 4: 40.05% done
+Loss: 189.64298289250488
+Time: 6.34 s
+Epoch 4: 50.03% done
+Loss: 192.66448336644004
+Time: 7.95 s
+Epoch 4: 60.05% done
+Loss: 168.97036199780865
+Time: 9.70 s
+Epoch 4: 70.03% done
+Loss: 187.035208052457
+Time: 11.39 s
+Epoch 4: 80.05% done
+Loss: 194.02066136724386
+Time: 13.05 s
+Epoch 4: 90.03% done
+Loss: 182.62068288344327
+Time: 14.78 s
+
+Epoch 4 done
+Epoch loss: 186.8906973426228
+
+Time taken for epoch: 16.92 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.25 s
+Calculating validation loss: 60.09% done
+Time: 0.37 s
+Calculating validation loss: 80.28% done
+Time: 0.49 s
+
+Validation loss: 411.38037246301633
+
+Time taken: 0.60 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_4.pt
+
+Regenerated paired data
+Epoch 5: 0.05% done
+Loss: 240.16106128692627
+Time: 0.00 s
+Epoch 5: 10.04% done
+Loss: 155.52757469880763
+Time: 1.23 s
+Epoch 5: 20.03% done
+Loss: 182.5800550809939
+Time: 2.87 s
+Epoch 5: 30.02% done
+Loss: 177.06707914858455
+Time: 4.61 s
+Epoch 5: 40.01% done
+Loss: 144.0659562464465
+Time: 6.28 s
+Epoch 5: 50.05% done
+Loss: 153.49377210453227
+Time: 8.02 s
+Epoch 5: 60.04% done
+Loss: 149.97796064920047
+Time: 9.67 s
+Epoch 5: 70.03% done
+Loss: 143.3769237325348
+Time: 11.35 s
+Epoch 5: 80.02% done
+Loss: 156.44861443363357
+Time: 13.01 s
+Epoch 5: 90.01% done
+Loss: 150.43725437400016
+Time: 14.65 s
+
+Epoch 5 done
+Epoch loss: 156.51143717962034
+
+Time taken for epoch: 16.76 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.25 s
+Calculating validation loss: 60.09% done
+Time: 0.37 s
+Calculating validation loss: 80.28% done
+Time: 0.49 s
+
+Validation loss: 411.5864660761772
+
+Time taken: 0.61 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_5.pt
+
+Regenerated paired data
+Epoch 6: 0.05% done
+Loss: 425.81348419189453
+Time: 0.00 s
+Epoch 6: 10.03% done
+Loss: 125.46357238627594
+Time: 1.27 s
+Epoch 6: 20.01% done
+Loss: 145.25527735664085
+Time: 3.02 s
+Epoch 6: 30.04% done
+Loss: 122.99357669605831
+Time: 4.76 s
+Epoch 6: 40.02% done
+Loss: 145.8153395715988
+Time: 6.50 s
+Epoch 6: 50.05% done
+Loss: 128.80694177095316
+Time: 8.24 s
+Epoch 6: 60.03% done
+Loss: 125.69410589739981
+Time: 9.91 s
+Epoch 6: 70.01% done
+Loss: 112.15042934348487
+Time: 11.61 s
+Epoch 6: 80.04% done
+Loss: 117.7257887710204
+Time: 13.27 s
+Epoch 6: 90.02% done
+Loss: 110.73144086862378
+Time: 14.94 s
+
+Epoch 6 done
+Epoch loss: 124.38959895981468
+
+Time taken for epoch: 17.08 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.24 s
+Calculating validation loss: 60.09% done
+Time: 0.36 s
+Calculating validation loss: 80.28% done
+Time: 0.48 s
+
+Validation loss: 412.0556268123312
+
+Time taken: 0.61 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_6.pt
+
+Regenerated paired data
+Epoch 7: 0.05% done
+Loss: 56.25985860824585
+Time: 0.00 s
+Epoch 7: 10.03% done
+Loss: 117.2984984486994
+Time: 1.29 s
+Epoch 7: 20.01% done
+Loss: 124.7541079415253
+Time: 3.04 s
+Epoch 7: 30.04% done
+Loss: 119.47824819359798
+Time: 4.75 s
+Epoch 7: 40.02% done
+Loss: 119.35290144662363
+Time: 6.40 s
+Epoch 7: 50.05% done
+Loss: 122.15245094468546
+Time: 8.09 s
+Epoch 7: 60.03% done
+Loss: 109.49424599965263
+Time: 9.76 s
+Epoch 7: 70.01% done
+Loss: 118.39952354008953
+Time: 11.45 s
+Epoch 7: 80.04% done
+Loss: 102.58336526589777
+Time: 13.17 s
+Epoch 7: 90.02% done
+Loss: 109.14792897358461
+Time: 14.90 s
+
+Epoch 7 done
+Epoch loss: 114.43592067066234
+
+Time taken for epoch: 16.97 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.13 s
+Calculating validation loss: 40.37% done
+Time: 0.25 s
+Calculating validation loss: 60.09% done
+Time: 0.37 s
+Calculating validation loss: 80.28% done
+Time: 0.48 s
+
+Validation loss: 412.6087929130694
+
+Time taken: 0.61 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_7.pt
+
+Regenerated paired data
+Epoch 8: 0.05% done
+Loss: 42.916303873062134
+Time: 0.00 s
+Epoch 8: 10.04% done
+Loss: 100.23446676857543
+Time: 1.26 s
+Epoch 8: 20.03% done
+Loss: 99.29824873729788
+Time: 2.89 s
+Epoch 8: 30.02% done
+Loss: 104.84740967025058
+Time: 4.62 s
+Epoch 8: 40.01% done
+Loss: 87.32660636917284
+Time: 6.29 s
+Epoch 8: 50.05% done
+Loss: 103.65585206104583
+Time: 7.98 s
+Epoch 8: 60.04% done
+Loss: 96.00987080296483
+Time: 9.69 s
+Epoch 8: 70.03% done
+Loss: 105.88203349875079
+Time: 11.40 s
+Epoch 8: 80.02% done
+Loss: 83.07838925546167
+Time: 13.12 s
+Epoch 8: 90.01% done
+Loss: 100.13535993851043
+Time: 14.80 s
+
+Epoch 8 done
+Epoch loss: 97.07559371615199
+
+Time taken for epoch: 16.81 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.11 s
+Calculating validation loss: 40.37% done
+Time: 0.23 s
+Calculating validation loss: 60.09% done
+Time: 0.34 s
+Calculating validation loss: 80.28% done
+Time: 0.45 s
+
+Validation loss: 412.6456226777593
+
+Time taken: 0.57 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_8.pt
+
+Regenerated paired data
+Epoch 9: 0.05% done
+Loss: 96.8130350112915
+Time: 0.01 s
+Epoch 9: 10.03% done
+Loss: 83.312429404921
+Time: 1.26 s
+Epoch 9: 20.05% done
+Loss: 75.92635609153378
+Time: 2.94 s
+Epoch 9: 30.03% done
+Loss: 93.70436220138211
+Time: 4.62 s
+Epoch 9: 40.05% done
+Loss: 80.18577417836117
+Time: 6.30 s
+Epoch 9: 50.03% done
+Loss: 84.63092662130643
+Time: 7.95 s
+Epoch 9: 60.05% done
+Loss: 85.57649170184256
+Time: 9.67 s
+Epoch 9: 70.03% done
+Loss: 73.79661182675397
+Time: 11.36 s
+Epoch 9: 80.05% done
+Loss: 84.60815257799985
+Time: 13.07 s
+Epoch 9: 90.03% done
+Loss: 81.21815266797903
+Time: 14.75 s
+
+Epoch 9 done
+Epoch loss: 82.4744811707812
+
+Time taken for epoch: 16.86 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.01 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.24 s
+Calculating validation loss: 60.09% done
+Time: 0.37 s
+Calculating validation loss: 80.28% done
+Time: 0.48 s
+
+Validation loss: 413.20680018958694
+
+Time taken: 0.59 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_9.pt
+
+Regenerated paired data
+Epoch 10: 0.05% done
+Loss: 4.561672732234001
+Time: 0.00 s
+Epoch 10: 10.03% done
+Loss: 74.69827443445948
+Time: 1.17 s
+Epoch 10: 20.01% done
+Loss: 64.91532682704579
+Time: 2.91 s
+Epoch 10: 30.04% done
+Loss: 70.74816340121941
+Time: 4.62 s
+Epoch 10: 40.02% done
+Loss: 70.23628285469844
+Time: 6.32 s
+Epoch 10: 50.05% done
+Loss: 75.63092963273951
+Time: 8.04 s
+Epoch 10: 60.03% done
+Loss: 70.58594440288766
+Time: 9.76 s
+Epoch 10: 70.01% done
+Loss: 68.58912728976158
+Time: 11.47 s
+Epoch 10: 80.04% done
+Loss: 60.45648717232535
+Time: 13.18 s
+Epoch 10: 90.02% done
+Loss: 70.5524827090252
+Time: 14.89 s
+
+Epoch 10 done
+Epoch loss: 69.5947571400827
+
+Time taken for epoch: 17.02 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.13 s
+Calculating validation loss: 40.37% done
+Time: 0.25 s
+Calculating validation loss: 60.09% done
+Time: 0.37 s
+Calculating validation loss: 80.28% done
+Time: 0.50 s
+
+Validation loss: 413.6095816935968
+
+Time taken: 0.62 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_10.pt
+
+Regenerated paired data
+Epoch 11: 0.05% done
+Loss: 278.90424728393555
+Time: 0.01 s
+Epoch 11: 10.03% done
+Loss: 64.08200705038251
+Time: 1.24 s
+Epoch 11: 20.05% done
+Loss: 58.634323542516434
+Time: 2.96 s
+Epoch 11: 30.03% done
+Loss: 60.73189678677179
+Time: 4.66 s
+Epoch 11: 40.05% done
+Loss: 67.79433966289045
+Time: 6.36 s
+Epoch 11: 50.03% done
+Loss: 61.63532083637711
+Time: 8.14 s
+Epoch 11: 60.05% done
+Loss: 58.06976086530254
+Time: 9.88 s
+Epoch 11: 70.03% done
+Loss: 73.37385038233766
+Time: 11.64 s
+Epoch 11: 80.05% done
+Loss: 66.2522281309468
+Time: 13.30 s
+Epoch 11: 90.03% done
+Loss: 61.8962052823844
+Time: 14.99 s
+
+Epoch 11 done
+Epoch loss: 64.05722046701439
+
+Time taken for epoch: 17.14 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.23 s
+Calculating validation loss: 60.09% done
+Time: 0.34 s
+Calculating validation loss: 80.28% done
+Time: 0.46 s
+
+Validation loss: 414.0608677076637
+
+Time taken: 0.57 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_11.pt
+
+Regenerated paired data
+Epoch 12: 0.05% done
+Loss: 31.49453103542328
+Time: 0.00 s
+Epoch 12: 10.03% done
+Loss: 62.21963920738698
+Time: 1.19 s
+Epoch 12: 20.05% done
+Loss: 56.9502213352065
+Time: 2.99 s
+Epoch 12: 30.03% done
+Loss: 48.434729350617886
+Time: 4.71 s
+Epoch 12: 40.05% done
+Loss: 62.33090520859813
+Time: 6.42 s
+Epoch 12: 50.03% done
+Loss: 54.8329232124179
+Time: 8.13 s
+Epoch 12: 60.05% done
+Loss: 55.57929066445061
+Time: 9.87 s
+Epoch 12: 70.03% done
+Loss: 66.21663557139762
+Time: 11.61 s
+Epoch 12: 80.05% done
+Loss: 49.73980946929648
+Time: 13.36 s
+Epoch 12: 90.03% done
+Loss: 58.578127586621456
+Time: 15.04 s
+
+Epoch 12 done
+Epoch loss: 57.4204387135982
+
+Time taken for epoch: 17.17 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.24 s
+Calculating validation loss: 60.09% done
+Time: 0.37 s
+Calculating validation loss: 80.28% done
+Time: 0.49 s
+
+Validation loss: 414.2159642429527
+
+Time taken: 0.62 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_12.pt
+
+Regenerated paired data
+Epoch 13: 0.05% done
+Loss: 27.367424964904785
+Time: 0.01 s
+Epoch 13: 10.04% done
+Loss: 51.971067747952546
+Time: 1.30 s
+Epoch 13: 20.02% done
+Loss: 47.83398039460258
+Time: 3.01 s
+Epoch 13: 30.01% done
+Loss: 52.315966650900066
+Time: 4.76 s
+Epoch 13: 40.04% done
+Loss: 45.245888887263426
+Time: 6.47 s
+Epoch 13: 50.03% done
+Loss: 47.89088289723779
+Time: 8.13 s
+Epoch 13: 60.01% done
+Loss: 55.904707908536295
+Time: 9.81 s
+Epoch 13: 70.05% done
+Loss: 49.22091279473699
+Time: 11.52 s
+Epoch 13: 80.03% done
+Loss: 50.07784356118528
+Time: 13.22 s
+Epoch 13: 90.02% done
+Loss: 54.274527319340095
+Time: 14.93 s
+
+Epoch 13 done
+Epoch loss: 51.055429565820766
+
+Time taken for epoch: 17.08 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.13 s
+Calculating validation loss: 40.37% done
+Time: 0.26 s
+Calculating validation loss: 60.09% done
+Time: 0.38 s
+Calculating validation loss: 80.28% done
+Time: 0.50 s
+
+Validation loss: 414.58493121173404
+
+Time taken: 0.62 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_13.pt
+
+Regenerated paired data
+Epoch 14: 0.05% done
+Loss: 8.293099701404572
+Time: 0.01 s
+Epoch 14: 10.03% done
+Loss: 46.79251240726297
+Time: 1.27 s
+Epoch 14: 20.01% done
+Loss: 45.56129601774643
+Time: 3.01 s
+Epoch 14: 30.04% done
+Loss: 51.46745826122375
+Time: 4.66 s
+Epoch 14: 40.02% done
+Loss: 45.872912594032556
+Time: 6.32 s
+Epoch 14: 50.05% done
+Loss: 46.13748663643272
+Time: 8.11 s
+Epoch 14: 60.03% done
+Loss: 46.32207275829231
+Time: 9.83 s
+Epoch 14: 70.01% done
+Loss: 40.93540985645218
+Time: 11.51 s
+Epoch 14: 80.04% done
+Loss: 53.59684079955683
+Time: 13.29 s
+Epoch 14: 90.02% done
+Loss: 53.308395407341344
+Time: 15.03 s
+
+Epoch 14 done
+Epoch loss: 47.41702352140208
+
+Time taken for epoch: 17.11 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.11 s
+Calculating validation loss: 40.37% done
+Time: 0.23 s
+Calculating validation loss: 60.09% done
+Time: 0.35 s
+Calculating validation loss: 80.28% done
+Time: 0.47 s
+
+Validation loss: 414.75345552514455
+
+Time taken: 0.58 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_14.pt
+
+Regenerated paired data
+Epoch 15: 0.05% done
+Loss: 11.750216782093048
+Time: 0.01 s
+Epoch 15: 10.03% done
+Loss: 42.71699208578076
+Time: 1.31 s
+Epoch 15: 20.05% done
+Loss: 35.618805250705186
+Time: 3.05 s
+Epoch 15: 30.03% done
+Loss: 39.94914057542278
+Time: 4.80 s
+Epoch 15: 40.05% done
+Loss: 40.756932492999724
+Time: 6.54 s
+Epoch 15: 50.03% done
+Loss: 39.90933662327477
+Time: 8.26 s
+Epoch 15: 60.05% done
+Loss: 42.27136802770684
+Time: 9.96 s
+Epoch 15: 70.03% done
+Loss: 42.646552628433014
+Time: 11.61 s
+Epoch 15: 80.05% done
+Loss: 37.2072790740011
+Time: 13.32 s
+Epoch 15: 90.03% done
+Loss: 37.25641697475856
+Time: 15.01 s
+
+Epoch 15 done
+Epoch loss: 39.93034030035753
+
+Time taken for epoch: 17.12 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.11 s
+Calculating validation loss: 40.37% done
+Time: 0.22 s
+Calculating validation loss: 60.09% done
+Time: 0.34 s
+Calculating validation loss: 80.28% done
+Time: 0.45 s
+
+Validation loss: 414.98120148247534
+
+Time taken: 0.57 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_15.pt
+
+Regenerated paired data
+Epoch 16: 0.05% done
+Loss: 3.1384482979774475
+Time: 0.00 s
+Epoch 16: 10.03% done
+Loss: 39.72865483403733
+Time: 1.17 s
+Epoch 16: 20.01% done
+Loss: 41.85787484783566
+Time: 2.92 s
+Epoch 16: 30.04% done
+Loss: 40.388118711665236
+Time: 4.68 s
+Epoch 16: 40.02% done
+Loss: 35.19991989473276
+Time: 6.44 s
+Epoch 16: 50.05% done
+Loss: 43.80221910442427
+Time: 8.20 s
+Epoch 16: 60.03% done
+Loss: 40.07678038976861
+Time: 9.94 s
+Epoch 16: 70.01% done
+Loss: 40.16040914358025
+Time: 11.67 s
+Epoch 16: 80.04% done
+Loss: 38.831018514921844
+Time: 13.37 s
+Epoch 16: 90.02% done
+Loss: 48.22794371801946
+Time: 15.03 s
+
+Epoch 16 done
+Epoch loss: 40.50834114620351
+
+Time taken for epoch: 17.15 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.24 s
+Calculating validation loss: 60.09% done
+Time: 0.34 s
+Calculating validation loss: 80.28% done
+Time: 0.46 s
+
+Validation loss: 415.35696994274036
+
+Time taken: 0.57 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_16.pt
+
+Regenerated paired data
+Epoch 17: 0.05% done
+Loss: 99.7779130935669
+Time: 0.01 s
+Epoch 17: 10.04% done
+Loss: 35.35791945789536
+Time: 1.25 s
+Epoch 17: 20.03% done
+Loss: 32.12055630859627
+Time: 2.93 s
+Epoch 17: 30.02% done
+Loss: 38.03370288112248
+Time: 4.65 s
+Epoch 17: 40.01% done
+Loss: 38.928885372694246
+Time: 6.39 s
+Epoch 17: 50.05% done
+Loss: 31.56855663860301
+Time: 8.15 s
+Epoch 17: 60.04% done
+Loss: 36.349042357566454
+Time: 9.83 s
+Epoch 17: 70.03% done
+Loss: 36.40979465139522
+Time: 11.54 s
+Epoch 17: 80.02% done
+Loss: 28.238298763483385
+Time: 13.21 s
+Epoch 17: 90.01% done
+Loss: 35.28985318826568
+Time: 14.87 s
+
+Epoch 17 done
+Epoch loss: 34.31814461746784
+
+Time taken for epoch: 16.97 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.00 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.25 s
+Calculating validation loss: 60.09% done
+Time: 0.36 s
+Calculating validation loss: 80.28% done
+Time: 0.49 s
+
+Validation loss: 415.6098140489071
+
+Time taken: 0.61 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_17.pt
+
+Regenerated paired data
+Epoch 18: 0.05% done
+Loss: 86.46334409713745
+Time: 0.00 s
+Epoch 18: 10.03% done
+Loss: 29.920359485726237
+Time: 1.27 s
+Epoch 18: 20.05% done
+Loss: 35.05875843801728
+Time: 3.06 s
+Epoch 18: 30.03% done
+Loss: 37.820110264271875
+Time: 4.76 s
+Epoch 18: 40.05% done
+Loss: 31.248939654967707
+Time: 6.40 s
+Epoch 18: 50.03% done
+Loss: 35.37336437365586
+Time: 8.15 s
+Epoch 18: 60.05% done
+Loss: 30.88631380867709
+Time: 9.91 s
+Epoch 18: 70.03% done
+Loss: 32.791801128357726
+Time: 11.63 s
+Epoch 18: 80.05% done
+Loss: 32.51530379899333
+Time: 13.40 s
+Epoch 18: 90.03% done
+Loss: 36.376292759792484
+Time: 15.08 s
+
+Epoch 18 done
+Epoch loss: 33.283512604719625
+
+Time taken for epoch: 17.15 s
+Number of gradients clipped: 20
+
+Calculating validation loss: 0.46% done
+Time: 0.01 s
+Calculating validation loss: 20.18% done
+Time: 0.12 s
+Calculating validation loss: 40.37% done
+Time: 0.24 s
+Calculating validation loss: 60.09% done
+Time: 0.36 s
+Calculating validation loss: 80.28% done
+Time: 0.48 s
+
+Validation loss: 415.79701561446586
+
+Time taken: 0.59 s
+Saving model to data/tamil/models/sent/9/finetune_awe_grad_lr_5e-05/2024-08-05_19:04:33_checkpoint_epoch_18.pt
+
+Regenerated paired data
+Validation loss has not improved for 15 epochs. Stopping training.
+BEST VALIDATION LOSS: 411.1369456719915 at epoch 3
+

@@ -85,20 +85,28 @@ class SSEmodel(nn.Module):
         n_heads=4,
         n_transformer_layers=1,
         device='cuda:0',
+        middle_dim=2048,
     ):
 
         super(SSEmodel, self).__init__()
+        # print(f"CNN with proj head size = 512")
         # Make sure the nb of channels of the last conv layer is 2 x transformer_dim
-        up_proj_dim = 512
-        output_dim = 512
+        # up_proj_dim = 512
+        up_proj_dim = transformer_dim
+        output_dim = transformer_dim
+        print(f"middle dim: {middle_dim}")
+        print(f"output dim: {output_dim}")
+        print(f"transformer dim: {transformer_dim}")
         self.n_transformer_layers=n_transformer_layers
         self.n_conv_layers=n_conv_layers
         kernel_size=(4,1)
-        list_conv_layers = [ConvLayer(input_size=input_size, channels=2 * transformer_dim,kernel_size=kernel_size,stride=(1,1))]
-        self.conv_layers = nn.ModuleList(list_conv_layers)
-        self.transformer_layers = nn.ModuleList([nn.TransformerEncoderLayer(transformer_dim, n_heads, n_heads * transformer_dim, 0.3) for _ in range(n_transformer_layers)])
+        # list_conv_layers = [ConvLayer(input_size=input_size, channels=2 * transformer_dim,kernel_size=kernel_size,stride=(1,1))]
+        # self.conv_layers = nn.ModuleList(list_conv_layers)
+        # self.transformer_layers = nn.ModuleList([nn.TransformerEncoderLayer(transformer_dim, n_heads, n_heads * transformer_dim, 0.3) for _ in range(n_transformer_layers)])
         # output_dim=transformer_dim
-        self.linear_layer = nn.Linear(input_size, transformer_dim)
+        self.layer_norm = nn.LayerNorm(input_size)
+        self.linear_layer1 = nn.Linear(input_size, middle_dim)
+        self.linear_layer2 = nn.Linear(middle_dim, transformer_dim)
         # self.linear_layer_2 = nn.Linear(768, transformer_dim)
         self.relu = nn.ReLU()
         self.project_head=nn.ModuleList([nn.Linear(transformer_dim,up_proj_dim),nn.ReLU(),nn.Linear(up_proj_dim,output_dim)])
@@ -106,15 +114,18 @@ class SSEmodel(nn.Module):
         self.init_weight()
 
     def init_weight(self):
-        for layer in self.transformer_layers:
-            nn.init.xavier_uniform_(layer.self_attn.in_proj_weight)
-            layer.self_attn.in_proj_bias.data.fill_(0)
-            nn.init.xavier_uniform_(layer.self_attn.out_proj.weight)
-            layer.self_attn.out_proj.bias.data.fill_(0)
-            init_layer(layer.linear1)
-            init_layer(layer.linear2)
-            init_bn(layer.norm1)
-            init_bn(layer.norm2)
+        init_bn(self.layer_norm)
+        init_layer(self.linear_layer1)
+        init_layer(self.linear_layer2)
+        # for layer in self.transformer_layers:
+        #     nn.init.xavier_uniform_(layer.self_attn.in_proj_weight)
+        #     layer.self_attn.in_proj_bias.data.fill_(0)
+        #     nn.init.xavier_uniform_(layer.self_attn.out_proj.weight)
+        #     layer.self_attn.out_proj.bias.data.fill_(0)
+        #     init_layer(layer.linear1)
+        #     init_layer(layer.linear2)
+        #     init_bn(layer.norm1)
+        #     init_bn(layer.norm2)
         for layer in self.project_head:
             init_layer(layer)
 
@@ -129,15 +140,22 @@ class SSEmodel(nn.Module):
         # x = x.permute(1, 0, 2, 3)  # (time_steps, batch_size, transformer_dim, 1)
         # x = x.squeeze(dim=3)  # (time_steps, batch_size, transformer_dim)
         # x+= self.pos_emb(x)
+        x = self.layer_norm(x)
+
         x = x.permute(1, 0, 2)
 
-        x = self.linear_layer(x)
+        x = self.linear_layer1(x)
+        x = F.dropout(x, p=0.3, training=self.training)
+        x = self.relu(x)
         # for layer in self.transformer_layers:
         #     x = layer(x)
         x=x.transpose(0,1)
         
         # TIME POOLING
-        x = torch.max(x, dim=1).values # (batch_size, transformer_dim)
+        x = torch.mean(x, dim=1) # (batch_size, transformer_dim)
+        x = self.linear_layer2(x)
+        x = F.dropout(x, p=0.3, training=self.training)
+        # x = self.relu(x)
         # PROJECTION HEAD
         for layer in self.project_head:
             x=layer(x)

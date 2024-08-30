@@ -5,3 +5,7 @@ Uses 13G of GPU memory and 3G of CPU memory.
 For 1 34 s query and all documents:
 3.64 seconds to compute result
 Uses 8.5G of GPU memory and 5G of CPU memory. 
+
+Time to extract AWE embedding for single query:
+Time to split: 0.00 s
+Time to batch inference: 0.11 s

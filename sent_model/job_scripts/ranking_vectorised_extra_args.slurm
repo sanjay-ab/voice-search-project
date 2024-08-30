@@ -4,7 +4,7 @@
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
 #SBATCH --account=tc062-pool3
-#SBATCH --time=02:00:00
+#SBATCH --time=00:20:00
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
 

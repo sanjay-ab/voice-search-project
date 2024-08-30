@@ -104,10 +104,10 @@ if __name__ == "__main__":
 
     load_doc_embeddings_from_file = False
     load_query_embeddings_from_file = False
-    clean_files = False
+    clean_files = True
     doc_size_order_file = f"data/{language}/analysis/document_lengths.txt"
     query_size_order_file = f"data/{language}/analysis/queries_lengths.txt"
-    max_document_batch_size_gb = 0.12
+    max_document_batch_size_gb = 0.05
     max_query_batch_size_gb = 0.1
 
     num_results_to_save = None  # set to None to save all results
