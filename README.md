@@ -9,6 +9,8 @@ This code was written as part of an MSc dissertation.
 All work is my own, except that found in the folders: voice_search_server and speechseqembeddings, which are slightly modified from their originals: https://github.com/unmute-tech/voice-search-server and https://gitlab.cognitive-ml.fr/ralgayres/speechseqembeddings, respectively.
 
 ## Description of each system
+Each system converts queries and documents into vector representations and compares them using a method based on cosine similarity.
+This section describes the representations used by each of the systems.
 ### mHuBERT System
 This system converts queries and documents into mHuBERT vectors using a pretrained mHuBERT model (https://huggingface.co/utter-project/mHuBERT-147).
 
@@ -21,4 +23,4 @@ Note that windows can be specified either in time (e.g., 240 ms) or in phones (e
 
 ### Recording Embedding System
 This system uses a learned pooling layer adapted from the AWE model to take a recording and convert it into a single vector embedding. 
-This model is trained contrastively on Tamil, to embed recordings containing the same keyword similarly and different keywords differently. 
+This model is trained contrastively on Tamil, to embed recordings containing the same keyword similarly and recordings containing different keywords differently. 
