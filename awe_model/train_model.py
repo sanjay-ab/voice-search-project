@@ -5,7 +5,7 @@ import random
 import numpy as np
 from torch.utils.data import DataLoader
 from awe_model.model import SSEmodel
-from awe_model.phone_pairs_dataset import PhonePairsDataset, collate_as_list, collate_as_tensor_and_pad
+from awe_model.phone_pairs_dataset import PhonePairsDataset, collate_as_tensor_and_pad
 from utils.common_functions import make_dir
 
 class NTXentLoss:
@@ -45,34 +45,19 @@ class NTXentLoss:
     def __call__(self, x):
         return self._nt_xent_loss(x) 
 
-def get_loss_for_one_batch(model, hubert_embeddings, loss_function, device, model_output_size=None, batch_as_list=False):
-        if batch_as_list:
-            if model_output_size is None:
-                raise ValueError("model_output_size must be provided when batch_as_list is True")   
-            model_outputs_cpu = torch.zeros((len(hubert_embeddings), model_output_size))
-
-            for i, hubert_embedding in enumerate(hubert_embeddings):
-                hubert_embedding = hubert_embedding.unsqueeze(0)
-                hubert_embedding = hubert_embedding.to(device)
-                model_embedding = model(hubert_embedding)
-                del hubert_embedding
-                model_embedding_cpu = model_embedding.to("cpu")
-                del model_embedding
-                model_outputs_cpu[i] = model_embedding_cpu
-
-        else:
-            model_inputs = hubert_embeddings.to(device)
-            model_outputs = model(model_inputs)
-            del model_inputs
-            model_outputs_cpu = model_outputs.to("cpu")
-            del model_outputs
+def get_loss_for_one_batch(model, hubert_embeddings, loss_function, device):
+        model_inputs = hubert_embeddings.to(device)
+        model_outputs = model(model_inputs)
+        del model_inputs
+        model_outputs_cpu = model_outputs.to("cpu")
+        del model_outputs
         
         loss = loss_function(model_outputs_cpu)
         return loss
 
 def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_norm, epoch_num,
                      num_batch_pairs_to_accumulate_gradients_over = 1,
-                     num_pairs_to_calc_loss_with=800, model_output_size=None, batch_as_list=False):
+                     num_pairs_to_calc_loss_with=800):
     """train model for one epoch
 
     Args:
@@ -92,10 +77,6 @@ def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_no
         num_pairs_to_calc_loss_with (int): number of phone pairs to calculate loss with. 
             Loss per batch is simply multiplied by a factor so it produces a value comparable 
             to if the batch size was num_pairs_to_calc_loss_with. Defaults to 800.
-        model_output_size (int, None): size of model output vectors. Defaults to None. Required when
-            batch_as_list is True.
-        batch_as_list (bool): if True, dataloader returns a list of phone pairs in each batch. 
-            Defaults to False.
     """
     start_time = time.perf_counter()
     dataloader_length = len(dataloader)
@@ -117,7 +98,7 @@ def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_no
 
         loss_multiply_factor = num_pairs_to_calc_loss_with / num_pairs_per_batch
 
-        loss = get_loss_for_one_batch(model, hubert_embeddings, loss_function, device, model_output_size, batch_as_list)
+        loss = get_loss_for_one_batch(model, hubert_embeddings, loss_function, device)
 
         total_loss += loss.item() * loss_multiply_factor
         loss_per_increment += loss.item() * loss_multiply_factor
@@ -149,8 +130,7 @@ def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_no
     print(f"Number of gradients clipped: {total_gradients_clipped}\n")
 
 def calculate_validation_loss(model, dataloader, loss_function, device,
-                               num_pairs_to_calc_loss_with=800, model_output_size=None,
-                                 batch_as_list=False):
+                               num_pairs_to_calc_loss_with=800):
     with torch.no_grad():
         start_time = time.perf_counter()
         model.eval()
@@ -164,7 +144,7 @@ def calculate_validation_loss(model, dataloader, loss_function, device,
             num_pairs_per_batch = hubert_embeddings.shape[0]/2
             loss_multiply_factor = num_pairs_to_calc_loss_with / num_pairs_per_batch
 
-            loss = get_loss_for_one_batch(model, hubert_embeddings, loss_function, device, model_output_size, batch_as_list)
+            loss = get_loss_for_one_batch(model, hubert_embeddings, loss_function, device)
             
             total_loss += loss.item() * loss_multiply_factor
 
@@ -238,7 +218,6 @@ if __name__== "__main__":
     num_pairs_per_batch = 5
     num_batch_pairs_to_accumulate_gradients_over = 1000  # set to 1 if you don't want gradient accumulation
     time_limit_to_create_dataset = 600
-    batch_as_list = False
 
     model_save_dir = \
         (f"data/{language}/models/awe/{layer}/lr_{learning_rate}"
@@ -247,10 +226,7 @@ if __name__== "__main__":
     datetime_string = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
     model_file_basename = f"{datetime_string}"
 
-    if batch_as_list:
-        collate_fn = collate_as_list
-    else:
-        collate_fn = collate_as_tensor_and_pad
+    collate_fn = collate_as_tensor_and_pad
 
     print(f"START TIME: {datetime_string}")
     print(f"Training model for {language} with inputs from mHuBERT layer {layer}")
@@ -282,7 +258,6 @@ if __name__== "__main__":
 
     model = SSEmodel(device=device)
     model.to(device)
-    model_output_size = 512
     optimizer = torch.optim.Adam(model.parameters(), learning_rate)
     if load_model_from_checkpoint:
         state_dict = load_model(checkpoint_path, model, device, optimizer)
@@ -294,12 +269,8 @@ if __name__== "__main__":
     for epoch_num in range(num_epochs):
         train_one_epoch(model, train_dataloader, loss_function, optimizer,  
                         device, clip_norm, epoch_num, 
-                        num_batch_pairs_to_accumulate_gradients_over=num_batch_pairs_to_accumulate_gradients_over,
-                        model_output_size=model_output_size, batch_as_list=batch_as_list)
-        valid_loss = calculate_validation_loss(model, validation_dataloader, loss_function, 
-                                               device, 
-                                               model_output_size=model_output_size, 
-                                               batch_as_list=batch_as_list)
+                        num_batch_pairs_to_accumulate_gradients_over=num_batch_pairs_to_accumulate_gradients_over)
+        valid_loss = calculate_validation_loss(model, validation_dataloader, loss_function, device)
         save_model(model, optimizer, epoch_num, model_save_dir, model_file_basename, valid_loss)
         train_dataset.regenerate_paired_data()
 

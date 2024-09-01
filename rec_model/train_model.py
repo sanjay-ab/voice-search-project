@@ -6,7 +6,7 @@ import sys
 import numpy as np
 from torch.utils.data import DataLoader
 from awe_model.train_model import train_one_epoch, calculate_validation_loss, save_model, load_model, NTXentLoss
-from rec_model.document_classes_dataset import DocumentClassesDataset, collate_as_list, collate_as_tensor_and_pad
+from rec_model.document_classes_dataset import DocumentClassesDataset, collate_as_tensor_and_pad
 from utils.common_functions import make_dir, parse_boolean_input
 
 if __name__== "__main__":
@@ -66,7 +66,6 @@ if __name__== "__main__":
     num_pairs_per_batch = 5
     num_batch_pairs_to_accumulate_gradients_over = 200  # set to 1 if you don't want gradient accumulation
     time_limit_to_create_dataset = 600
-    batch_as_list = False
     awe_lr = 1e-5
 
     if no_grad_on_awe_model:
@@ -79,10 +78,7 @@ if __name__== "__main__":
     datetime_string = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
     model_file_basename = f"{datetime_string}"
 
-    if batch_as_list:
-        collate_fn = collate_as_list
-    else:
-        collate_fn = collate_as_tensor_and_pad
+    collate_fn = collate_as_tensor_and_pad
 
     print(f"START TIME: {datetime_string}")
     print(f"Training model for {language} with inputs from mHuBERT layer {layer}")
@@ -112,8 +108,6 @@ if __name__== "__main__":
     params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Number of parameters in model: {params}")
     model.to(device)
-    model_output_size = 512
-
 
     # Set different learning rates
     if no_grad_on_awe_model:
@@ -139,12 +133,8 @@ if __name__== "__main__":
     for epoch_num in range(num_epochs):
         train_one_epoch(model, train_dataloader, loss_function, optimizer,  
                         device, clip_norm, epoch_num, 
-                        num_batch_pairs_to_accumulate_gradients_over=num_batch_pairs_to_accumulate_gradients_over,
-                        model_output_size=model_output_size, batch_as_list=batch_as_list)
-        valid_loss = calculate_validation_loss(model, validation_dataloader, loss_function, 
-                                               device, 
-                                               model_output_size=model_output_size, 
-                                               batch_as_list=batch_as_list)
+                        num_batch_pairs_to_accumulate_gradients_over=num_batch_pairs_to_accumulate_gradients_over)
+        valid_loss = calculate_validation_loss(model, validation_dataloader, loss_function, device)
         save_model(model, optimizer, epoch_num, model_save_dir, model_file_basename, valid_loss)
         train_dataset.regenerate_paired_data()
 

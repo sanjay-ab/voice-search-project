@@ -124,12 +124,6 @@ class DocumentClassesDataset(Dataset):
         self._create_paired_data()
         print(f"Regenerated paired data")
 
-def collate_as_list(batch):
-    if len(batch) != 1:
-        raise ValueError((f"Batch size of dataloader is {len(batch)}, expected 1. "
-        f"If you want to change the batch size, please change it during creation of the dataset."))
-    return batch[0]
-
 def collate_as_tensor_and_pad(batch):
     if len(batch) != 1:
         raise ValueError((f"Batch size of dataloader is {len(batch)}, expected 1. "
