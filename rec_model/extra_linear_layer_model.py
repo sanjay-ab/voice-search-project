@@ -24,11 +24,7 @@ class SSEmodel(nn.Module):
 
     def __init__(
         self,
-        input_size=768,
-        n_conv_layers=1,
         transformer_dim=512,
-        n_heads=4,
-        n_transformer_layers=1,
         middle_dim=512,
         output_dim=512,
         device='cuda:0',

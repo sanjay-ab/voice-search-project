@@ -20,7 +20,7 @@ if __name__ == "__main__":
     else:
         language = "banjara"
         layer = 9
-        document_query_suffix = f"5_14_test_sent_one_query"
+        document_query_suffix = f"5_14_test_rec_one_query"
         results_path = f"train_tamil/{layer}/test"
 
     scratch_prefix = f"/scratch/space1/tc062/sanjayb"
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     document_prefix = f"{embedding_dir}/documents"
     query_prefix = f"{embedding_dir}/queries"
     results_dir_prefix = \
-        f"data/{language}/results/sent/"
+        f"data/{language}/results/rec/"
 
     load_query_embeddings_from_file = False
     load_doc_embeddings_from_file = False

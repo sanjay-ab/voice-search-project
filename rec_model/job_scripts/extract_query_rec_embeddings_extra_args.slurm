@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH --job-name=extract_query_sent_embeddings
+#SBATCH --job-name=extract_query_rec_embeddings
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
 #SBATCH --account=tc062-pool3
@@ -22,8 +22,7 @@ LAYER=$2
 SAVE_EMBEDDING_FOLDER=$3
 MODEL_SAVE_DIR=$4
 MODEL_NAME=$5
-USE_AWES=$6
-MIDDLE_DIM=$7
-OUTPUT_DIM=$8
+OUTPUT_DIM=$6
+MODEL_TYPE=$7
 
-srun python -u rec_model/extract_query_doc_sent_embeddings.py queries 1 0 $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $USE_AWES $MIDDLE_DIM $OUTPUT_DIM
+srun python -u rec_model/extract_query_doc_rec_embeddings.py queries 1 0 $LANGUAGE $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME $OUTPUT_DIM $MODEL_TYPE

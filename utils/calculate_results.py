@@ -336,7 +336,7 @@ if __name__ == "__main__":
             _, _, results_dir = \
             qds.get_embedding_and_results_dir("", "", results_dir_prefix, "mean", 
                                             layer, window_size_ms, stride_ms, True)
-    elif "awe" or "sent" in results_dir_prefix:
+    elif "awe" or "rec" in results_dir_prefix:
         results_dir = \
             f"{results_dir_prefix}/{results_dir_folder}" 
 

@@ -6,8 +6,6 @@ import sys
 import numpy as np
 from torch.utils.data import DataLoader
 from awe_model.train_model import train_one_epoch, calculate_validation_loss, save_model, load_model, NTXentLoss
-from rec_model.extra_linear_layer_model import SSEmodel
-# from rec_model.model import SSEmodel
 from rec_model.document_classes_dataset import DocumentClassesDataset, collate_as_list, collate_as_tensor_and_pad
 from utils.common_functions import make_dir, parse_boolean_input
 
@@ -44,11 +42,22 @@ if __name__== "__main__":
         learning_rate = float(args[2])
         output_dim = int(args[3])
         no_grad_on_awe_model = parse_boolean_input(args[4])
+        model_type = args[5]
     else:
         temperature = 0.07
         learning_rate = 0.001
         output_dim = 512
         no_grad_on_awe_model = True
+        model_type = "standard"  # "extra_linear" or "standard"
+    
+    if model_type == "standard":
+        from rec_model.model import SSEmodel
+        center_save_string = ""
+    elif model_type == "extra_linear":
+        from rec_model.extra_linear_layer_model import SSEmodel
+        center_save_string = f"1_layer_output_dim_{output_dim}_"
+    else:
+        raise ValueError(f"Model type {model_type} not recognized.")
 
     clip_norm = 10
     weight_decay = 0.00
@@ -58,7 +67,6 @@ if __name__== "__main__":
     num_batch_pairs_to_accumulate_gradients_over = 200  # set to 1 if you don't want gradient accumulation
     time_limit_to_create_dataset = 600
     batch_as_list = False
-    middle_dim = 512
     awe_lr = 1e-5
 
     if no_grad_on_awe_model:
@@ -67,9 +75,7 @@ if __name__== "__main__":
         no_grad_str = "grad"
 
     model_save_dir = \
-        f"data/{language}/models/sent/{layer}/finetune_awe_{no_grad_str}_1_layer_middle_dim_{middle_dim}_output_dim_{output_dim}_lr_{learning_rate}_tmp_{temperature}_weight_decay_{weight_decay}"
-    # model_save_dir = \
-    #     f"data/{language}/models/sent/{layer}/finetune_awe_grad_lr_{learning_rate}_tmp_{temperature}"
+        f"data/{language}/models/rec/{layer}/finetune_awe_{no_grad_str}_{center_save_string}lr_{learning_rate}_tmp_{temperature}"
     datetime_string = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
     model_file_basename = f"{datetime_string}"
 
@@ -102,7 +108,7 @@ if __name__== "__main__":
                                         collate_fn=collate_fn)
     print(f"Time taken to create datasets: {time.perf_counter() - t1:.2f} s")
 
-    model = SSEmodel(device=device, middle_dim=middle_dim, output_dim=output_dim, no_grad_on_awe_model=no_grad_on_awe_model)
+    model = SSEmodel(device=device, output_dim=output_dim, no_grad_on_awe_model=no_grad_on_awe_model)
     params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print(f"Number of parameters in model: {params}")
     model.to(device)
