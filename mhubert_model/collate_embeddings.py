@@ -1,4 +1,6 @@
+"""Collates all document embeddings in the document directory into a single file."""
 import os
+
 from mhubert_model.query_document_search import Ranker
 from utils.common_functions_pytorch import print_memory_usage
 

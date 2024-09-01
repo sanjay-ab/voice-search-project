@@ -2,7 +2,7 @@ import time
 import pickle as pkl
 from torch.nn.utils.rnn import pad_sequence
 import mhubert_model.query_document_search as qds
-from mhubert_model.ranking_preprocessing import pad_normalise_from_dict_with_size_order_batch
+from mhubert_model.ranking_preprocessing import pad_normalise_batch_from_dict_with_size_order
 from utils.common_functions_pytorch import print_memory_usage
 
 def batch_normalise_files(embedded_states_dir, size_order_file, max_batch_size_gb):
@@ -12,7 +12,7 @@ def batch_normalise_files(embedded_states_dir, size_order_file, max_batch_size_g
     print(f"Time taken to load files: {t2 - t1:.2f} seconds")
 
     t1 = time.perf_counter()
-    batch_padded_normalised, batch_names = pad_normalise_from_dict_with_size_order_batch(
+    batch_padded_normalised, batch_names = pad_normalise_batch_from_dict_with_size_order(
         embedded_states, size_order_file, max_batch_size_gb)
     t2 = time.perf_counter() 
     print(f"Time taken to pad and normalise files: {t2 - t1:.2f} seconds")

@@ -1,4 +1,6 @@
+"""If results are saved over multiple files, this script collates them into a single file."""
 import os
+
 from mhubert_model.query_document_search import get_embedding_and_results_dir
 
 if __name__ == "__main__":

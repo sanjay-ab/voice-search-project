@@ -1,13 +1,17 @@
+"""Extract mHuBERT embeddings from wav files."""
+import os
+import time
+import pickle as pkl
+
 from transformers import HubertModel, AutoFeatureExtractor
 import torch
-import os
-import pickle as pkl
-import time
-from mhubert_model.mHuBERT_dataloader import AudioDataset, collate_fn
 from torch.utils.data import DataLoader
+
+from mhubert_model.mHuBERT_dataset import AudioDataset, collate_fn
 from utils.common_functions import make_dir
 
 class HubertEmbedder:
+    """Extracts mHuBERT embeddings from wav files."""
     def __init__(self, device, hidden_layers = [-1], model_name="utter-project/mHuBERT-147", sampling_rate=16000):
         self.feature_extractor = AutoFeatureExtractor.from_pretrained(model_name, do_normalize=True)
         self.model = HubertModel.from_pretrained(model_name, output_hidden_states=True)
@@ -23,14 +27,16 @@ class HubertEmbedder:
         """extract hubert vectors for speech
 
         Args:
-            speech (list[list[float]]): a list of extracted speech - extracted directly from the wav file
+            speech (list[list[float]]): a batch of speech data, where each entry in the batch is a list of floats representing the speech signal
+                for a single audio file.
 
         Returns:
-            list[tensor]: a list of tensors holding the requested hidden states of the model. 
+            list[tensor]: a list of tensors holding the requested embeddings. Each entry in the list is a tensor of shape [batch_size, time, hidden_size].
+                Each entry represents the embeddings for a specified layer in the model.
         """
-        normalised_inputs = self.feature_extractor(speech, sampling_rate=self.sampling_rate,
-                                                   padding="longest", return_tensors="pt")
         with torch.no_grad():
+            normalised_inputs = self.feature_extractor(speech, sampling_rate=self.sampling_rate,
+                                                    padding="longest", return_tensors="pt")
             formatted_inputs = normalised_inputs["input_values"]
             if self.device == "cuda":
                 formatted_inputs = formatted_inputs.to("cuda")
@@ -49,16 +55,17 @@ class HubertEmbedder:
         return hidden_states
 
 if __name__ == "__main__":
-    layers = [7]
+    layers = [7]  # from which mHuBERT layers to extract embeddings
     device = "cuda"
     batch_size = 1  # don't change - resulting IR system is much poorer for batch_size>1
+    # this is likely since mHuBERT is not trained to embed padded sequences
+
     top_level_dir = "data/tamil/"
     top_level_embedding_dir = f"{top_level_dir}/embeddings"
     t1 = time.perf_counter()
     hubert = HubertEmbedder(device, hidden_layers=layers)
     t2 = time.perf_counter()
     print(f"TIME TO LOAD HUBERT: {t2-t1:.2f} s")
-    print(f"NUMBER OF CPU CORES: {os.cpu_count()}")
 
     t1 = time.perf_counter()
     for folder in ["validation_data", "training_data"]:
@@ -67,6 +74,7 @@ if __name__ == "__main__":
         dataset = AudioDataset(audio_directory)
         dataloader = DataLoader(dataset, batch_size=batch_size, collate_fn=collate_fn)
 
+        # save dirs for embeddings
         embedding_dirs = []
         for lay in layers:
             embedding_directory = f"{top_level_embedding_dir}/{folder}/{lay}/raw"
@@ -97,4 +105,3 @@ if __name__ == "__main__":
         t2 = time.perf_counter()
         print(f"TIME TO EXTRACT EMBEDDINGS: {t2-t1:.2f} s")
         print("RUN FINISHED")
-        print("SAVING FINAL EMBEDDINGS")

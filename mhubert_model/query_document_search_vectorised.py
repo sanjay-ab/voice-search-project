@@ -1,18 +1,29 @@
-import torch
+"""Perform query-document search using vectorised operations."""
 import time
 import sys
 import pickle as pkl
+
+import torch
+
 import mhubert_model.query_document_search as qds
 from utils.common_functions_pytorch import print_memory_usage
 
 def compute_ranking(query_embeddings_batched, query_names_batched, document_embeddings_batched, 
                     document_names_batched, results_file, device, num_results_to_save=None):
+    """Compute rankings of each query with respect to all documents.
+
+    Args:
+        query_embeddings_batched (tensor): batched query embeddings, shape [num_batches, num_queries, time, embedding_dim]
+        query_names_batched (list[list[string]]): query names corresponding to each query in query_embeddings_batched
+        document_embeddings_batched (tensor): batched document embeddings, shape [num_batches, num_documents, time, embedding_dim]
+        document_names_batched (list[list[string]]): document names corresponding to each document in document_embeddings_batched
+        results_file (string): path of file to save results to
+        device (string): device to use for computation
+        num_results_to_save (int, optional): choose the number of results to save for each query, set to None to save
+            all results. Defaults to None.
+    """
 
     with torch.no_grad():
-        t1 = time.perf_counter()
-        _ = torch.einsum("ij,jk->ik", torch.ones((1, 1)), torch.ones((1, 1)))
-        print(f"Time taken to compute einsum: {time.perf_counter() - t1:.2f} s")
-
         num_doc_batches = len(document_names_batched)
         num_query_batches = len(query_embeddings_batched)
         print(f"Number of batches for queries: {num_query_batches}")
@@ -27,7 +38,7 @@ def compute_ranking(query_embeddings_batched, query_names_batched, document_embe
             query_embeddings = query_embeddings_batched[query_batch_num]
             query_names_combined.extend(query_names_batched[query_batch_num])
             query_embeddings = query_embeddings.to(device)
-            similarity_combined_query_batch = torch.empty(query_embeddings.shape[0], 0, 
+            similarities_for_query_batch = torch.empty(query_embeddings.shape[0], 0, 
                                                           dtype=torch.float32)
 
             print(f"Computing query batch {query_batch_num}")
@@ -53,9 +64,9 @@ def compute_ranking(query_embeddings_batched, query_names_batched, document_embe
                 num_non_zero = torch.count_nonzero(maxes, dim=2)
                 similarity = torch.sum(maxes, dim=2) / num_non_zero
                 similarity = similarity.to("cpu")
-                similarity_combined_query_batch = torch.cat((similarity_combined_query_batch, 
+                similarities_for_query_batch = torch.cat((similarities_for_query_batch, 
                                                              similarity), dim=1)
-            similarity_combined.append(similarity_combined_query_batch)
+            similarity_combined.append(similarities_for_query_batch)
             del query_embeddings
 
         similarity_combined = torch.cat(similarity_combined, dim=0)
@@ -76,7 +87,20 @@ def compute_ranking(query_embeddings_batched, query_names_batched, document_embe
                 f.write(f"{doc_names_combined[top_indices[i][j]]}: {value}\n")
 
 def load_queries(fname, limit=None):
+    """Load queries from file containing all query embeddings.
+
+    Args:
+        fname (string): path of file containing all query embeddings
+        limit (int, optional): limit the number of queries to load. Defaults to None.
+
+    Returns:
+        tensor: all query embeddings up to the specified limit
+        tensor: query names corresponding to each query in the tensor
+    """
     queries_embedded_states, query_names = pkl.load(open(fname, "rb"))
+
+    if limit > len(queries_embedded_states):
+        raise ValueError(f"Limit {limit} is greater than the number of queries {len(queries_embedded_states)}")
 
     if limit is not None:
         queries_embedded_states = queries_embedded_states[:limit]
@@ -86,13 +110,14 @@ def load_queries(fname, limit=None):
 
 if __name__ == "__main__":
     args = sys.argv
+
     if len(args) > 1:
-        window_size_ms = int(args[1])  # in milliseconds
-        stride_ms = int(args[2])  # in milliseconds
+        window_size_ms = int(args[1])
+        stride_ms = int(args[2])
         layer = int(args[3])
     else:
-        window_size_ms = None  # in milliseconds
-        stride_ms = None  # in milliseconds
+        window_size_ms = None
+        stride_ms = None
         layer = 9
 
     folder = "tamil"
@@ -100,22 +125,17 @@ if __name__ == "__main__":
     document_prefix = f"{embedding_dir}/documents"
     query_prefix = f"{embedding_dir}/queries"
     results_dir_prefix = f"data/{folder}/results/raw_hubert"
+
     if window_size_ms is not None:
         pooling_method = "mean"
     else:
         pooling_method = "none"
+
     query_multiple_vectors = True
-    query_batched = True
-    query_limit = None
+    query_batched = True  # set to True if queries have been saved into batches
+    query_limit = None  # limit the nuber of queries to consider. Set to None to consider all queries
     num_results_to_save = None  # set to None to save all results
     device = "cuda"
-
-    n_parts = 1
-    # part = sys.argv[1]
-    part = 0
-
-    if n_parts == 1:
-        part = "all"
 
     print(f"Ranking documents for layer {layer}")
     print(f"Query limit: {query_limit}")
@@ -130,9 +150,9 @@ if __name__ == "__main__":
     qds.make_dir(results_dir)
 
     if query_limit is not None:
-        results_file = f"{results_dir}/results_{part}_limit_{query_limit}.txt"
+        results_file = f"{results_dir}/results_all_limit_{query_limit}.txt"
     else:
-        results_file = f"{results_dir}/results_{part}.txt"
+        results_file = f"{results_dir}/results_all.txt"
 
     print(f"Document embedded states dir: {document_embedded_states_dir}")
     print(f"Query embedded states dir: {query_embedded_states_dir}")
@@ -148,7 +168,7 @@ if __name__ == "__main__":
     if query_batched:
         queries_embedded_states_batched, query_names_batched = pkl.load(open(queries_fname, "rb"))
         if query_limit is not None:
-            print(f"Note: query limit is not implemented with batched queries.")
+            raise ValueError(f"Query limit is not implemented with batched queries.")
     else:
         queries_embedded_states, query_names = load_queries(queries_fname, query_limit)
         queries_embedded_states_batched = [queries_embedded_states]

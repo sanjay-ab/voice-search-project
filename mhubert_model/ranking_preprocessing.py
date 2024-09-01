@@ -1,22 +1,25 @@
-import torch
-from torch.nn.utils.rnn import pad_sequence
+"""Preprocesses the embeddings for the ranking model."""
 import time
 import sys
 import pickle as pkl
+
+import torch
+from torch.nn.utils.rnn import pad_sequence
+
 import mhubert_model.query_document_search as qds
 from utils.common_functions_pytorch import print_memory_usage
 from utils.common_functions import parse_boolean_input
 
 def pad_normalise_from_list(tensor_list):
-    """Take a list of tensors, pads them to the same length, then normalises them.
+    """Takes a list of tensors, pads them to the same length, then normalises them.
         Expected input is a list of 2d tensors of shape [rows, embedding_dimension].
 
     Args:
-        list (list[tensor]): list of tensors
+        list[tensor]: list of tensors
 
     Returns:
         tensor: tensor of normalised and padded tensors of shape [number_of_input_tensors,
-        max_rows_of_input_tensors, embedding_dimension]
+            max_num_rows_of_input_tensors, embedding_dimension]
     """
     output_tensor = pad_sequence(tensor_list, batch_first=True)
     output_tensor_norms = output_tensor.norm(dim=2, p=2).unsqueeze(2)
@@ -25,27 +28,36 @@ def pad_normalise_from_list(tensor_list):
 
     return output_tensor
 
-def pad_normalise_from_dict(dict):
-    """Take a dictionary of filenames:tensors, combines the tensors and pads them to the same length, 
+def pad_normalise_from_dict(input_dict):
+    """Takes a dictionary of filenames:tensors, combines the tensors and pads them to the same length, 
         then normalises them.
 
     Args:
-        dict (dictionary(str:tensor)): dictionary of filenames:tensors
+        input_dict (dict): dictionary of filenames:tensors
 
     Returns:
-        tensor, list[string]: tensor of normalised and padded tensors of shape [number_of_input_tensors,
-        max_rows_of_input_tensors, embedding_dimension], list of filenames
+        tensor: tensor of normalised and padded tensors of shape [number_of_input_tensors,
+            max_num_rows_of_input_tensors, embedding_dimension]
+        list[string]: list of filenames corresponding to the tensors
     """
     list_of_tensors = []
-    names = list(dict.keys())
+    names = list(input_dict.keys())
     for name in names:
-        tensor = dict.pop(name)
+        tensor = input_dict.pop(name)
         list_of_tensors.append(tensor)
     output_tensor = pad_normalise_from_list(list_of_tensors)
 
     return output_tensor, names
 
 def read_size_order_file(size_order_file):
+    """Read size order file and return list of filenames
+
+    Args:
+        size_order_file (str): path of size order file
+
+    Returns:
+        list[str]: list of filenames in ascending order of size
+    """
     names = []
     with open(size_order_file, "r") as f:
         for line in f:
@@ -56,7 +68,7 @@ def read_size_order_file(size_order_file):
     return names
 
 def calculate_mem_usage_of_tensor_list_gb(tensor_list, padded_length):
-    """calculate memory usage of a list of tensors in GB. Assumes tensors
+    """Calculate memory usage of a list of tensors in GB. Assumes tensors
         are padded to the same length and that they are 2d with
         the 0th axis the padded dimension. Assumes all tensors have the same
         size 1st axis.
@@ -72,24 +84,23 @@ def calculate_mem_usage_of_tensor_list_gb(tensor_list, padded_length):
     exp_memory = (padded_length * axis_1_size * 4 * len(tensor_list)) / (1024**3)
     return exp_memory
 
-def pad_normalise_from_dict_with_size_order_batch(dictionary, size_order_file, max_mem_usage_per_batch_gb):
+def pad_normalise_batch_from_dict_with_size_order(dictionary, size_order_file, max_mem_usage_per_batch_gb):
     """Takes a dictionary of filenames:tensors, combines the tensors and pads them to the same length,
-        then normalises them. Also takes a file containing the size order of the tensors, and
-        a max size per batch in gb. Tensors are padded and normalised in batches 
-        according to the size order. 
+        then normalises them. Tensors are padded and normalised in batches according to their size. 
 
     Args:
-        dict (dictionary(str:tensor)): dictionary of filenames:tensors
-        size_order_file (string): filename of the file containing the size order of the tensors,
-        file must be formatted <filename>: <size> per line and should be in ascending order of size
-        from top to bottom.
+        dictionary (dict{str:tensor}): dictionary of filenames:tensors
+        size_order_file (string): path of the file containing the size order of the tensors,
+            file must be formatted: "<filename>: <size>" per line and should be in ascending order of size
+            from top to bottom.
         max_mem_usage_per_batch_gb (float): max memory usage per batch in gb.
 
     Returns:
-        list[tensor], list[list[string]]: list of tensor of normalised and padded tensors of shape 
-        [number_of_input_tensors_in_batch, max_rows_of_input_tensors_in_batch, embedding_dimension]
-        each element in tuple contains elements for one batch, list of lists of filenames, each list
-        containing the filenames of the tensors in that batch.
+        list[tensor]: list of normalised and padded tensors of shape 
+            [number_of_tensors_in_batch, max_num_rows_of_input_tensors_in_batch, embedding_dimension]
+            each element in the list is one batch.
+        list[list[string]]: list of lists of filenames - each list
+            containing the filenames of the tensors in that batch.
     """
 
     names = read_size_order_file(size_order_file)
@@ -125,15 +136,16 @@ def pad_normalise_from_dict_with_size_order_batch(dictionary, size_order_file, m
 
 if __name__ == "__main__":
     args = sys.argv
+
     if len(args) > 1:
-        window_size_ms = int(args[1])  # in milliseconds
-        stride_ms = int(args[2])  # in milliseconds
+        window_size_ms = int(args[1])
+        stride_ms = int(args[2])
         layer = int(args[3])
         run_for_queries = parse_boolean_input(args[4])
         run_for_documents = parse_boolean_input(args[5])
     else:
-        window_size_ms = None  # in milliseconds
-        stride_ms = None  # in milliseconds
+        window_size_ms = None
+        stride_ms = None
         layer = 9
         run_for_queries = True
         run_for_documents = True
@@ -142,20 +154,20 @@ if __name__ == "__main__":
     embedding_dir = f"data/{folder}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
     query_prefix = f"{embedding_dir}/queries"
+    
+    # files contain the lengths of the documents and queries in the dataset, in ascending order
     doc_size_order_file = f"data/{folder}/analysis/document_lengths.txt"
-    # doc_size_order_file = f"data/{folder}/analysis/document_lengths_288.txt"
     query_size_order_file = f"data/{folder}/analysis/queries_lengths.txt"
-    # query_size_order_file = f"data/{folder}/analysis/queries_lengths_nq_99_nd_288.txt"
+
     if window_size_ms is None or window_size_ms=="none":
         pooling_method = "none"
     else:
         pooling_method = "mean"
 
-    query_multiple_vectors = True
+    query_multiple_vectors = True  # set to True if query embeddings are made up of multiple vectors
     max_document_batch_size_gb = 0.1
-    batch_query = True
+    batch_query = True  # set to True if you want to batch the queries, otherwise all queries are put into a single batch
     max_query_batch_size_gb = 0.1
-    # set which types of files you want to run the script for
 
     print(f"Preprocessing files for layer {layer}")
     document_embedded_states_dir, query_embedded_states_dir, _ = \
@@ -178,7 +190,7 @@ if __name__ == "__main__":
 
         t1 = time.perf_counter()
         if batch_query:
-            batch_queries_padded_normalised, batch_names = pad_normalise_from_dict_with_size_order_batch(
+            batch_queries_padded_normalised, batch_names = pad_normalise_batch_from_dict_with_size_order(
                 queries_embedded_states, query_size_order_file, max_query_batch_size_gb)
         else:
             queries_padded_normalised, names = pad_normalise_from_dict(queries_embedded_states)
@@ -204,7 +216,7 @@ if __name__ == "__main__":
         print_memory_usage()
 
         t1 = time.perf_counter()
-        batch_documents_padded_normalised, batch_names = pad_normalise_from_dict_with_size_order_batch(
+        batch_documents_padded_normalised, batch_names = pad_normalise_batch_from_dict_with_size_order(
             document_embeddings, doc_size_order_file, max_document_batch_size_gb)
         t2 = time.perf_counter() 
         print(f"Time taken to pad and normalise documents: {t2 - t1:.2f} seconds")
