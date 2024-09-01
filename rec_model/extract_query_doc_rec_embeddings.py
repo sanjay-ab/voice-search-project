@@ -19,18 +19,20 @@ if __name__ == "__main__":
             part = int(sys.argv[3])
         else:
             part = 0
-        if len(args)>4:
-            language = args[4]
-            layer = int(args[5])
-            save_embedding_folder = args[6]
-            model_save_dir = args[7]
-            model_name = args[8]
-            output_dim = int(args[9])
-            model_type = args[10]
     else:
         folder = f"documents"
         n_parts = 1
         part = 0
+
+    if len(args)>4:
+        language = args[4]
+        layer = int(args[5])
+        save_embedding_folder = args[6]
+        model_save_dir = args[7]
+        model_name = args[8]
+        output_dim = int(args[9])
+        model_type = args[10]
+    else:
         language = "banjara"
         layer = 9
         save_embedding_folder = f"5_14_test_rec"

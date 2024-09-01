@@ -1,3 +1,5 @@
+"""Combine phone embeddings from all the files in a layer into a single file.
+Deprecated, no longer used."""
 import pickle as pkl
 import os
 

@@ -94,8 +94,8 @@ def load_queries(fname, limit=None):
         limit (int, optional): limit the number of queries to load. Defaults to None.
 
     Returns:
-        tensor: all query embeddings up to the specified limit
-        tensor: query names corresponding to each query in the tensor
+        tuple(tensor, tensor): first tensor is all query embeddings up to the specified limit,
+            second tensor is query names corresponding to each query in the first tensor
     """
     queries_embedded_states, query_names = pkl.load(open(fname, "rb"))
 

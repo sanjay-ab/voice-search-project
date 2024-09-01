@@ -102,8 +102,8 @@ def pool_and_save_queries(raw_query_embedded_states_dir, new_query_embedded_stat
 
 def get_window_size_and_stride_in_frames_from_ms(window_size_ms, stride_ms, sample_rate):
     """Return the window size and stride in hubert frames, given the 
-        window size and stride in milliseconds. The hubert CNN compresses
-        the input by a factor of 320, so one hubert frame is 320 samples.
+    window size and stride in milliseconds. The hubert CNN compresses
+    the input by a factor of 320, so one hubert frame is 320 samples.
 
     Args:
         window_size_ms (int): size of window in milliseconds
@@ -111,8 +111,7 @@ def get_window_size_and_stride_in_frames_from_ms(window_size_ms, stride_ms, samp
         sample_rate (int): sample rate of data
 
     Returns:
-        int: window size in hubert frames,
-        int: stride in hubert frames
+        tuple(int, int): window size in hubert frames, stride in hubert frames
     """
     window_size = int((window_size_ms * sample_rate) / (1000 * 320))
     stride = int((stride_ms * sample_rate) / (1000 * 320))

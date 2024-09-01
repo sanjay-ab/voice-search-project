@@ -71,7 +71,7 @@ class Ranker:
 
     def open_results_file(self, results_file_name, method="w"):
         """Open results file using the specified method. If a results file is already open, close it
-            before opening the new one.
+        before opening the new one.
 
         Args:
             results_file_name (str): path of file to save results
@@ -88,7 +88,7 @@ class Ranker:
         self.results_file.close()
 
     def calculate_similarity(self, query_embedding, single_document_embeddings):
-        """Calculates similarities (defafult cosine sim) between a query and all documents 
+        """Calculates similarities (defafult cosine sim) between a query and all documents. 
 
         Args:
             query_embedding (tensor): single vector embedding for one query, does not support 
@@ -105,8 +105,8 @@ class Ranker:
 
     def calculate_similarity_for_graphing(self, query_embedding, single_document_fname=None):
         """Returns similarities between a query and a document. Uses embeddings of specific document
-            if a filename is passed in, otherwise uses the document embeddings of the document
-              that matches best with the query.
+        if a filename is passed in, otherwise uses the document embeddings of the document
+        that matches best with the query.
 
         Args:
             query_embedding (tensor): tensor of the single vector query embedding, doesn't support 
@@ -114,8 +114,8 @@ class Ranker:
             single_document_fname (string, optional): filename of a document to match against. Defaults to None.
 
         Returns:
-            tensor, str: similarities of query against specified document or against best matching document,
-                name of the best matching document - None if single_document_fname is passed in.
+            tuple(tensor, str): tensor is the similarities of query against specified document or against best matching document,
+                string is the name of the best matching document - None if single_document_fname is passed in.
         """
         query_embedding = query_embedding.unsqueeze(1)
 
@@ -146,7 +146,7 @@ class Ranker:
                 multi-vector query embeddings, shape [1, embedding_size]
 
         Returns:
-            dict{str;float}: dictionary of document names and their similarity to the query. 
+            dict{str \: float}: dictionary of document names and their similarity to the query. 
         """
         document_similarities = {}
         for document in self.document_files:
@@ -166,7 +166,7 @@ class Ranker:
             query_embedding (tensor): shape [time, embedding_size]
 
         Returns:
-            dict{str;float}: dictionary of document names and their similarity to the query. 
+            dict{str \: float}: dictionary of document names and their similarity to the query. 
         """
         document_similarities = {}
         for document in self.document_files:
@@ -222,7 +222,7 @@ def load_embeddings_from_dir(directory, limit=None, all_embeddings_fname="all_em
             directory collated together. Defaults to "all_embeddings.pkl".
 
     Returns:
-        dict{str;tensor}: dictionary of file names and their embeddings
+        dict{str \: tensor}: dictionary of file names and their embeddings
     """
     files = sorted(os.listdir(directory))
     if all_embeddings_fname in files:

@@ -4,18 +4,33 @@ import sys
 import pickle as pkl
 import re
 import math
+
 import torch
 import torch.nn.functional as F
 from torch.nn.utils.rnn import pad_sequence
+
 from awe_model.model import SSEmodel
 from awe_model.extract_query_doc_phone_hubert_embeddings import read_query_times_file
 from utils.common_functions import make_dir, split_list_into_n_parts_and_get_part, split_list_into_n_parts, parse_boolean_input
 from utils.split_data_test_train import read_phone_timings_file
 
 class PhoneSplitter:
+    """Splits embedded recordings into phone sequences."""
+
     def __init__(self, phone_timings_file, query_times_file=None,
-                  min_phone_seq_length = 2, max_phone_seq_length = 5,
+                  min_phone_seq_length = 3, max_phone_seq_length = 9,
                     silence_phones = ["sil", "sp", "spn"]):
+        """Initialise the PhoneSplitter class.
+
+        Args:
+            phone_timings_file (str): path of phone timings file - .ctm file containing phone timings for each recording.
+            query_times_file (str, optional): path of query times file. This is only used if the queries were made by cutting
+                segments out of longer recordings, then this file holds timings of where the query is located inside the
+                larger recording. Defaults to None.
+            min_phone_seq_length (int, optional): min segment length to extract, in phones. Defaults to 2.
+            max_phone_seq_length (int, optional): max segment legnth to extract, in phones. Defaults to 5.
+            silence_phones (list, optional): silence/junk phones to ignore. Defaults to ["sil", "sp", "spn"].
+        """
 
         self.files_phones_dict = read_phone_timings_file(phone_timings_file)
 
@@ -24,12 +39,21 @@ class PhoneSplitter:
         else:
             self.query_times_dict = None
         
-        self.hubert_sampling_rate = 50  # each vector is 20 ms
+        self.hubert_sampling_rate = 50  # each hubert vector is 20 ms
         self.min_phone_seq_length = min_phone_seq_length
         self.max_phone_seq_length = max_phone_seq_length
         self.silence_phones = silence_phones
 
     def get_start_duration_phones_for_file(self, file):    
+        """Get the start times, durations and phones for a file.
+
+        Args:
+            file (str): file name of the specified recording.
+
+        Returns:
+            tuple(list[str], list[float], list[float]): list of phones in the recording,
+            list of start times for each phone, list of durations for each phone.
+        """
         file = file.replace(".pkl", "")
         file = file.replace(".wav", "")
         file = file.replace("q_", "")
@@ -56,6 +80,16 @@ class PhoneSplitter:
         return phones, starts, durations
 
     def split_embedded_data_into_phones_list(self, embedded_speech, file):
+        """From mhubert embedded speech, split into segments corresponding to 
+        sequences of phones and return them as a list.
+
+        Args:
+            embedded_speech (tensor): tensor of embedded speech - shape [time, embedding_size]
+            file (str): file name of the recording from which the embedded speech was extracted.
+
+        Returns:
+            list[tensor]: list of each of the embedded speech segments corresponding to phone sequences.
+        """
 
         phones, starts, durations = self.get_start_duration_phones_for_file(file)
         
@@ -76,6 +110,7 @@ class PhoneSplitter:
             print(f"No phone sequences found for {file}")
             speech_length = embedded_speech.shape[0]
             if speech_length > 1000:
+                # 1000 is maximum allowed length for the learned pooling model
                 n = math.ceil(speech_length / 1000)
                 output_embedding_list = split_list_into_n_parts(embedded_speech, n)
             else:
@@ -84,25 +119,37 @@ class PhoneSplitter:
         return output_embedding_list
     
     def split_embedded_data_into_list(self, embedded_speech, file):
+        """Wrapper for split_embedded_data_into_phones_list, to match implementation 
+        in WindowSplitter class: From mhubert embedded speech, split into segments
+        corresponding to sequences of phones and return them as a list.
+
+        Args:
+            embedded_speech (tensor): tensor of embedded speech - shape [time, embedding_size]
+            file (str): file name of the recording from which the embedded speech was extracted.
+
+        Returns:
+            list[tensor]: list of each of the embedded speech segments corresponding to phone sequences.
+        """
         return self.split_embedded_data_into_phones_list(embedded_speech, file)
 
     def split_embedded_data_into_phones_and_append_to_dict(self, embedded_speech, file, phone_dict,
                                                            perturb_sequences=False, 
-                                                           max_one_sided_perturb_amount=0.2):
-        """split embedded speech into segments of 2 to 5 phones and append to phone_dict. phone_dict
-            is a defaultdict(list) where the key is a string of the phones and the value is a list of the
-            embedded speech segments.
+                                                           max_one_sided_perturb_amount=0.1):
+        """Split mhubert embedded speech into segments corresponding to sequences of phones and
+        append to input phone_dict. phone_dict is a defaultdict(list) where keys are strings of
+        phones and values are lists of the embedded speech segments that match the keys.
 
         Args:
-            embedded_speech (tensor): the embedded speech tensor for the file of shape [num_hubert_frames, 768]
-            file (string): filename of the embedded file either .pkl or .wav
-            phone_dict (defaultdict(list)): defaultdict of list of embedded speech segments for 
-                each phone sequence
-            perturb_sequences (bool, optional): whether to perturb the sequences. Defaults to False.
-                if true, edges of phone sequences are perturbed by a random amount.
+            embedded_speech (tensor): the embedded speech of shape [time, embedding_size]
+            file (str): filename of the embedded file, can be either .pkl or .wav
+            phone_dict (defaultdict(list)): defaultdict where keys are a string representing
+                each phone sequence and values are lists of embedded speech segments for each phone sequence.
+            perturb_sequences (bool, optional): whether to perturb the sequences. If true, this randomly
+                shifts the start and end boundaries of the phone sequences up to a specified amount.
+                Defaults to False.
             max_one_sided_perturb_amount (float, optional): maximum amount to perturb 
-                the edges of the phone sequences. Is measured as a fraction of the phone sequence length.
-                Defaults to 0.2.
+                the edges of the phone sequences. Measured as a fraction of the phone sequence length.
+                Defaults to 0.1.
         """
 
         phones, starts, durations = self.get_start_duration_phones_for_file(file)
@@ -138,9 +185,14 @@ class PhoneSplitter:
                 phone_dict[phone_seq].append(speech_segment)
 
 class WindowSplitter:
+    """Splits embedded recordings into segments using a standard sliding window in time.
+    Length of the window is specified in phones, as with the PhoneSplitter class, but by
+    assuming an average phone length, the window length is converted to seconds.
+    """
+
     def __init__(self, phone_length_secs=0.08, overlap_fraction=0.5, min_phone_seq_length=3, 
                  max_phone_seq_length=9):
-        """initialise the WindowSplitter class
+        """Initialise the WindowSplitter class.
 
         Args:
             phone_length_secs (float, optional): Average length of a phone, in seconds. Defaults to 0.08.
@@ -152,9 +204,18 @@ class WindowSplitter:
         self.overlap_fraction = overlap_fraction
         self.min_phone_seq_length = min_phone_seq_length
         self.max_phone_seq_length = max_phone_seq_length
-        self.hubert_sampling_rate = 50  # each vector is 20 ms
+        self.hubert_sampling_rate = 50  # each hubert vector is 20 ms
 
     def split_embedded_data_into_windows_list(self, embedded_speech):
+        """Split embedded speech using a sliding window approach. Returns a list 
+        of windowed segments.
+
+        Args:
+            embedded_speech (tensor): embedded speech tensor - shape [time, embedding_size]
+
+        Returns:
+            list[tensor]: list of windowed segments
+        """
         speech_length = embedded_speech.shape[0]
         windows = []
 
@@ -178,10 +239,11 @@ class WindowSplitter:
         return windows
     
     def split_embedded_data_into_list(self, embedded_speech, _=None):
-        """Wrapper to match implementation in PhoneSplitter class
+        """Wrapper to match implementation in PhoneSplitter class: Split embedded
+        speech using a sliding window approach. Returns a list of windowed segments.
 
         Args:
-            embedded_speech (tensor): tensor with embedded speech - shape [num_hubert_frames, 768]
+            embedded_speech (tensor): tensor with embedded speech - shape [time, embedding_size]
             _ (None): unused argument to match PhoneSplitter implementation
 
         Returns:
@@ -195,6 +257,18 @@ if __name__ == "__main__":
     from awe_model.train_model import load_model
 
     args = sys.argv
+
+    if len(args)>1:
+        folder = str(sys.argv[1])  # documents or queries
+        n_parts = int(sys.argv[2])
+        if n_parts > 1:
+            part = int(sys.argv[3])
+        else:
+            part = 0
+    else:
+        folder = f"documents"
+        n_parts = 1
+        part = 0
 
     if len(args)>4:
         language = args[4]
@@ -221,8 +295,6 @@ if __name__ == "__main__":
     scratch_prefix = f"/scratch/space1/tc062/sanjayb"
     top_level_embedding_dir = f"data/{language}/embeddings"
     phone_timings_file = f"data/{language}/analysis/{phone_timings_fname}"
-    # folder = f"documents"
-    folder = str(sys.argv[1])  # documents or queries
     skip_existing_files = False
     batched_inference = True
 
@@ -231,14 +303,6 @@ if __name__ == "__main__":
     else:
         device = "cpu"
 
-    # n_parts = 1
-    n_parts = int(sys.argv[2])
-    if n_parts > 1:
-        part = int(sys.argv[3])
-    else:
-        part = 0
-
-    # set to none if queries are not cut out of longer documents
     if folder == "queries" and language == "tamil":
         query_times_file = f"data/{language}/analysis/queries_times.txt"
         print(f"Using query times file: {query_times_file}")
@@ -252,16 +316,11 @@ if __name__ == "__main__":
         splitter = PhoneSplitter(phone_timings_file, query_times_file, 
                             min_phone_seq_length, max_phone_seq_length)
 
-    embedding_dir = f"{top_level_embedding_dir}/{folder}/{layer}/raw"
+    embedding_dir = f"{top_level_embedding_dir}/{folder}/{layer}/raw"  # directory with embeddings to process
     save_embedding_dir = \
         f"{scratch_prefix}/{top_level_embedding_dir}/{folder}/{layer}/{save_embedding_folder}"
 
-
-    model_files = [file for file in os.listdir(model_save_dir) if file.endswith(".pt")]
-    if len(model_files) == 1:
-        model_path = f"{model_save_dir}/{model_files[0]}"
-    else:
-        model_path = f"{model_save_dir}/{model_name}"
+    model_path = f"{model_save_dir}/{model_name}"
 
     model = SSEmodel(device=device)
     model.to(device)
@@ -312,7 +371,7 @@ if __name__ == "__main__":
             
             else:
                 if model_output_size is None:
-                    raise ValueError("model_output_size must be provided when batched_inference is True")   
+                    raise ValueError("model_output_size must be provided when batched_inference is False")   
 
                 model_outputs_cpu = torch.zeros((len(hubert_embeddings), model_output_size))
                 for i, hubert_embedding in enumerate(hubert_embeddings):

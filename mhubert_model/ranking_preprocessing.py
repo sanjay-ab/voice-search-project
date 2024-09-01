@@ -12,7 +12,7 @@ from utils.common_functions import parse_boolean_input
 
 def pad_normalise_from_list(tensor_list):
     """Takes a list of tensors, pads them to the same length, then normalises them.
-        Expected input is a list of 2d tensors of shape [rows, embedding_dimension].
+    Expected input is a list of 2d tensors of shape [rows, embedding_dimension].
 
     Args:
         list[tensor]: list of tensors
@@ -30,15 +30,14 @@ def pad_normalise_from_list(tensor_list):
 
 def pad_normalise_from_dict(input_dict):
     """Takes a dictionary of filenames:tensors, combines the tensors and pads them to the same length, 
-        then normalises them.
+    then normalises them.
 
     Args:
         input_dict (dict): dictionary of filenames:tensors
 
     Returns:
-        tensor: tensor of normalised and padded tensors of shape [number_of_input_tensors,
-            max_num_rows_of_input_tensors, embedding_dimension]
-        list[string]: list of filenames corresponding to the tensors
+        tuple(tensor, list[string]): tensor of normalised and padded tensors of shape [number_of_input_tensors,
+            max_num_rows_of_input_tensors, embedding_dimension], list of filenames corresponding to the tensors
     """
     list_of_tensors = []
     names = list(input_dict.keys())
@@ -69,9 +68,9 @@ def read_size_order_file(size_order_file):
 
 def calculate_mem_usage_of_tensor_list_gb(tensor_list, padded_length):
     """Calculate memory usage of a list of tensors in GB. Assumes tensors
-        are padded to the same length and that they are 2d with
-        the 0th axis the padded dimension. Assumes all tensors have the same
-        size 1st axis.
+    are padded to the same length and that they are 2d with
+    the 0th axis the padded dimension. Assumes all tensors have the same
+    size 1st axis.
 
     Args:
         tensor_list (list[tensor]): list of tensors
@@ -86,7 +85,7 @@ def calculate_mem_usage_of_tensor_list_gb(tensor_list, padded_length):
 
 def pad_normalise_batch_from_dict_with_size_order(dictionary, size_order_file, max_mem_usage_per_batch_gb):
     """Takes a dictionary of filenames:tensors, combines the tensors and pads them to the same length,
-        then normalises them. Tensors are padded and normalised in batches according to their size. 
+    then normalises them. Tensors are padded and normalised in batches according to their size. 
 
     Args:
         dictionary (dict{str:tensor}): dictionary of filenames:tensors
@@ -96,10 +95,10 @@ def pad_normalise_batch_from_dict_with_size_order(dictionary, size_order_file, m
         max_mem_usage_per_batch_gb (float): max memory usage per batch in gb.
 
     Returns:
-        list[tensor]: list of normalised and padded tensors of shape 
-            [number_of_tensors_in_batch, max_num_rows_of_input_tensors_in_batch, embedding_dimension]
-            each element in the list is one batch.
-        list[list[string]]: list of lists of filenames - each list
+        tuple(list[tensor], list[list[string]]): first element of the tuple is list of normalised 
+            and padded tensors of shape [number_of_tensors_in_batch, 
+            max_num_rows_of_input_tensors_in_batch, embedding_dimension] each element in the list is
+            one batch. Second element of the tuple is list of lists of filenames - each list
             containing the filenames of the tensors in that batch.
     """
 

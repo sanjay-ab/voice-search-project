@@ -7,7 +7,8 @@ from utils.common_functions import read_wav_file
 
 class AudioDataset(Dataset):
     """Extracts speech signal from all the wav files in a specified directory and combines them together
-        into a pytorch dataset."""
+    into a pytorch dataset.
+    """
     def __init__(self, audio_directory):
         self.audio_files = sorted(os.listdir(audio_directory))
         self.audio_directory = audio_directory
@@ -24,7 +25,8 @@ class AudioDataset(Dataset):
 
 def collate_fn(batch):
     """Collate function for the dataloader. 
-        This function is used to pad the speech signals in the batch to the same length."""
+    This function is used to pad the speech signals in the batch to the same length.
+    """
 
     max_length = 0
     fnames = [0] * len(batch)

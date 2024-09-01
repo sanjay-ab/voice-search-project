@@ -1,5 +1,5 @@
 """This file calculates a coarse measure of the quality of the matches for a test case.
-    This measure was useful during development but is no longer used.
+This measure was useful during development but is no longer used.
 """
 MATCHES_FOR_Q1 = set(["s2556413_test26.pkl", "s2556413_test30.pkl"])
 MATCHES_FOR_Q2 = set(["s2556413_test03.pkl", "s2556413_test06.pkl"])
