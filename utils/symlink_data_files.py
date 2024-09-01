@@ -9,9 +9,9 @@ def link_files(fname_with_list, source_dirs, target_dir):
     File fname_with_list should contain a list of filename basenames, one per line.
 
     Args:
-        fname_with_list (string): file name of file with a list of filenames to link
-        source_dirs (string): list of source directories that contain the files to link
-        target_dir (string): target directory to link files to
+        fname_with_list (str): file name of file with a list of filenames to link
+        source_dirs (str): list of source directories that contain the files to link
+        target_dir (str): target directory to link files to
     """
     directory_files_dict = {}
     for directory in source_dirs:

@@ -30,9 +30,9 @@ def get_file_phone_segments_dict(audio_directory, phone_timings_file, query_time
     """create a dictionary mapping file names to phone segments in the files.
 
     Args:
-        audio_directory (string): directory containing audio files.
-        phone_timings_file (string): file containing phone timings.
-        query_times_file (string, optional): Use if queries are audio segments that are cut out of 
+        audio_directory (str): directory containing audio files.
+        phone_timings_file (str): file containing phone timings.
+        query_times_file (str, optional): Use if queries are audio segments that are cut out of 
             longer documents, file specifies start/end times of query in whole document.
             Defaults to None.
         sample_rate (int, optional): sample rate of audio. Defaults to 16000.
@@ -43,7 +43,7 @@ def get_file_phone_segments_dict(audio_directory, phone_timings_file, query_time
         silence_phones (list, optional): list of phones to ignore. Defaults to ["sil", "sp", "spn"].
 
     Returns:
-        dict{string:list[list[float]]}: dictionary mapping file names to phone segments. Phone segments
+        dict{str:list[list[float]]}: dictionary mapping file names to phone segments. Phone segments
             are cut out of the speech signal.
     """
     files_phones_dict = read_phone_timings_file(phone_timings_file)

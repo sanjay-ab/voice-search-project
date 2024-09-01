@@ -66,7 +66,7 @@ def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_no
             in each batch
         loss_function (NTXentLoss): class with ntxent loss function
         optimizer (Pytorch Optmiser): Pytorch optimiser, e.g. Adam
-        device (string): cuda or cpu
+        device (str): cuda or cpu
         clip_norm (float): value to clip gradients to - clips gradients of all parameters together to
             this specified norm. 
         epoch_num (int): current epoch number

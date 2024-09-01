@@ -15,7 +15,7 @@ def pool_embeddings(embedded_states, pooling_method):
 
     Args:
         embedded_states (tensor): tensor with shape [1, num_frames, embedding_size]
-        pooling_method (string): e.g. mean pooling
+        pooling_method (str): e.g. mean pooling
 
     Raises:
         ValueError: unrecognised pooling method
@@ -39,7 +39,7 @@ def pool_document_embeddings(embedded_states, window_size_ms, stride_ms, pooling
         embedded_states (tensor): tensor of shape [1, num_frames, embedding_size]
         window_size_ms (int): size of window in milliseconds
         stride_ms (int): size of stride in milliseconds
-        pooling_method (string): e.g. mean pooling
+        pooling_method (str): e.g. mean pooling
 
     Returns:
         tensor: tensor with the pooled embeddings
@@ -64,11 +64,11 @@ def pool_and_save_documents(raw_document_embedded_states_dir, new_document_embed
     """For each document pool embeddings using a sliding window and save the new embeddings.
 
     Args:
-        raw_document_embedded_states_dir (string): directory containing raw document embeddings
-        new_document_embedded_states_dir (string): directory to save the pooled document embeddings
+        raw_document_embedded_states_dir (str): directory containing raw document embeddings
+        new_document_embedded_states_dir (str): directory to save the pooled document embeddings
         window_size_ms (int): size of window in milliseconds
         stride_ms (int): size of stride in milliseconds
-        pooling_method (string): e.g. mean pooling
+        pooling_method (str): e.g. mean pooling
         n_parts (int): number of parts to split the list of files into - for parallel processing
             so that each part (subset of files) can be run in parallel. Defaults to 1.
         part (int): part to run. Defaults to 0.
@@ -89,9 +89,9 @@ def pool_and_save_queries(raw_query_embedded_states_dir, new_query_embedded_stat
     """For each query, pool the raw embeddings and save the new embeddings.
 
     Args:
-        raw_query_embedded_states_dir (string): directory containing raw query embeddings
-        new_query_embedded_states_dir (string): directory to save the new query embeddings
-        pooling_method (string): e.g. mean pooling
+        raw_query_embedded_states_dir (str): directory containing raw query embeddings
+        new_query_embedded_states_dir (str): directory to save the new query embeddings
+        pooling_method (str): e.g. mean pooling
     """
     files = sorted(os.listdir(raw_query_embedded_states_dir))
     for query_fname in files:
@@ -130,10 +130,10 @@ def run(lay, window_size_ms, stride_ms, embedding_dir,
         lay (int): the mHuBERT layer to pool embeddings for
         window_size_ms (int): window size in milliseconds
         stride_ms (int): stride in milliseconds
-        embedding_dir (string): top level embedding directory, containing documents and queries subdirectories
+        embedding_dir (str): top level embedding directory, containing documents and queries subdirectories
         run_for_queries (bool): whether to pool query embeddings
         run_for_documents (bool): whether to pool document embeddings
-        pooling_method (string, optional): pooling method. Defaults to "mean".
+        pooling_method (str, optional): pooling method. Defaults to "mean".
         multiple_query_vectors (bool, optional): this flag determines whether to window a query into multiple pooled 
             vectors if True, or to pool the whole query into a single vector, if False. Defaults to False.
         n_parts (int, optional): number of parts to split the list of files into - for parallel processing

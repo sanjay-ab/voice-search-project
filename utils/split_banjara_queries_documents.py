@@ -14,12 +14,12 @@ def filter_data_dict(files, documents_file=None, queries_file=None):
     a list of file names.
 
     Args:
-        files (list[string]): list of file names
-        documents_file (string): path of file containing document file names
-        queries_file (string): path of file containing query file names
+        files (list[str]): list of file names
+        documents_file (str): path of file containing document file names
+        queries_file (str): path of file containing query file names
 
     Returns:
-        list[string]: list of file names that are in documents_file or queries_file, includes label
+        list[str]: list of file names that are in documents_file or queries_file, includes label
             files and wav files
     """
     if documents_file is None and queries_file is None:
@@ -48,14 +48,14 @@ def banjara_get_data_dicts(all_data_dir, duration_min, duration_max, queries_fil
         Optionally filters out files that are not in queries_file or documents_file.
 
     Args:
-        all_data_dir (string): directory of wav and label files
+        all_data_dir (str): directory of wav and label files
         duration_min (float): minimum duration of audio file
         duration_max (float): maximum duration of audio file
-        queries_file (string): path of file containing query file names
-        documents_file (string): path of file containing document file names
+        queries_file (str): path of file containing query file names
+        documents_file (str): path of file containing document file names
 
     Returns:
-        dict{string:list[string]}, dict{string:float}: two data dictionaries for banjara dataset
+        dict{str:list[str]}, dict{str:float}: two data dictionaries for banjara dataset
     """
     files = sorted(os.listdir(all_data_dir))
     files = filter_data_dict(files, documents_file, queries_file)

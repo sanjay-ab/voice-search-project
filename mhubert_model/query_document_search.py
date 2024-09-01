@@ -17,10 +17,10 @@ class Ranker:
         """Initialise ranker with document embeddings and similarity metric
 
         Args:
-            document_embedded_states_dir (string): directory of document embeddings
+            document_embedded_states_dir (str): directory of document embeddings
             similarity_metric (str, optional): similarity metric to use. Defaults to "cosine".
-            results_file_name (string, optional): path of file to save results. Defaults to None.
-            method (string, optional): method of how to open results file e.g w or a+. Defaults to "w".
+            results_file_name (str, optional): path of file to save results. Defaults to None.
+            method (str, optional): method of how to open results file e.g w or a+. Defaults to "w".
             force_dont_use_all_embeddings_file (bool, optional): force ranker to not use file containing 
                 all embeddings.
 
@@ -111,11 +111,11 @@ class Ranker:
         Args:
             query_embedding (tensor): tensor of the single vector query embedding, doesn't support 
                 multiple vectors per query - shape [1, embedding_size]
-            single_document_fname (string, optional): filename of a document to match against. Defaults to None.
+            single_document_fname (str, optional): filename of a document to match against. Defaults to None.
 
         Returns:
             tuple(tensor, str): tensor is the similarities of query against specified document or against best matching document,
-                string is the name of the best matching document - None if single_document_fname is passed in.
+                str is the name of the best matching document - None if single_document_fname is passed in.
         """
         query_embedding = query_embedding.unsqueeze(1)
 

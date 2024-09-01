@@ -191,10 +191,10 @@ def calculate_mean_average_precision(query_results_dict, gold_documents_for_quer
     """calculates the mean average precision for the given query results
 
     Args:
-        query_results_dict (dict{string:tuple(list[string], list[float])}): dictionary with query basenames
+        query_results_dict (dict{str:tuple(list[str], list[float])}): dictionary with query basenames
           as keys and tuples with 2 lists: a list of document basenames and a list of corresponding document 
           similarities, as values. The documents are those that are returned by the search for the query.
-        gold_documents_for_queries_dict (dict{string:list[string]}): dictionary with query basenames as keys
+        gold_documents_for_queries_dict (dict{str:list[str]}): dictionary with query basenames as keys
             and list of document basenames as values. The documents are those that are correct matches 
             for the query.
         num_results_to_consider (int, optional): specifies the number of results to consider for the MAP

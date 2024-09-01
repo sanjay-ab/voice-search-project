@@ -16,10 +16,10 @@ class PhonePairsDataset(Dataset):
         """initialise variables for class
 
         Args:
-            embedding_dir_or_file (string): directory or file path containing the embedded data 
+            embedding_dir_or_file (str): directory or file path containing the embedded data 
                 uses phone_seq as keys and list of embeddings as values
             num_pairs_per_batch (int): the number of pairs to be created for each batch
-            phone_timings_file (string): path to the phone timings file
+            phone_timings_file (str): path to the phone timings file
             time_limit (float, optional): the time limit in second for creating the dataset.
               Defaults to 240.
             min_phone_seq_length (int, optional): minimum phone sequence length. Defaults to 3.

@@ -36,7 +36,7 @@ def pad_normalise_from_dict(input_dict):
         input_dict (dict): dictionary of filenames:tensors
 
     Returns:
-        tuple(tensor, list[string]): tensor of normalised and padded tensors of shape [number_of_input_tensors,
+        tuple(tensor, list[str]): tensor of normalised and padded tensors of shape [number_of_input_tensors,
             max_num_rows_of_input_tensors, embedding_dimension], list of filenames corresponding to the tensors
     """
     list_of_tensors = []
@@ -89,13 +89,13 @@ def pad_normalise_batch_from_dict_with_size_order(dictionary, size_order_file, m
 
     Args:
         dictionary (dict{str:tensor}): dictionary of filenames:tensors
-        size_order_file (string): path of the file containing the size order of the tensors,
+        size_order_file (str): path of the file containing the size order of the tensors,
             file must be formatted: "<filename>: <size>" per line and should be in ascending order of size
             from top to bottom.
         max_mem_usage_per_batch_gb (float): max memory usage per batch in gb.
 
     Returns:
-        tuple(list[tensor], list[list[string]]): first element of the tuple is list of normalised 
+        tuple(list[tensor], list[list[str]]): first element of the tuple is list of normalised 
             and padded tensors of shape [number_of_tensors_in_batch, 
             max_num_rows_of_input_tensors_in_batch, embedding_dimension] each element in the list is
             one batch. Second element of the tuple is list of lists of filenames - each list

@@ -14,11 +14,11 @@ def compute_ranking(query_embeddings_batched, query_names_batched, document_embe
 
     Args:
         query_embeddings_batched (tensor): batched query embeddings, shape [num_batches, num_queries, time, embedding_dim]
-        query_names_batched (list[list[string]]): query names corresponding to each query in query_embeddings_batched
+        query_names_batched (list[list[str]]): query names corresponding to each query in query_embeddings_batched
         document_embeddings_batched (tensor): batched document embeddings, shape [num_batches, num_documents, time, embedding_dim]
-        document_names_batched (list[list[string]]): document names corresponding to each document in document_embeddings_batched
-        results_file (string): path of file to save results to
-        device (string): device to use for computation
+        document_names_batched (list[list[str]]): document names corresponding to each document in document_embeddings_batched
+        results_file (str): path of file to save results to
+        device (str): device to use for computation
         num_results_to_save (int, optional): choose the number of results to save for each query, set to None to save
             all results. Defaults to None.
     """
@@ -90,7 +90,7 @@ def load_queries(fname, limit=None):
     """Load queries from file containing all query embeddings.
 
     Args:
-        fname (string): path of file containing all query embeddings
+        fname (str): path of file containing all query embeddings
         limit (int, optional): limit the number of queries to load. Defaults to None.
 
     Returns:

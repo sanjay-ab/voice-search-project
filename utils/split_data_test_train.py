@@ -69,11 +69,11 @@ def read_phone_timings_file(file_path):
         phone timings file. Silent documents not in the phone timings file are not considered.
 
     Args:
-        file_path (string): path of the phone timings file
+        file_path (str): path of the phone timings file
 
     Returns:
-        defaultdict{string:{phones:list[string], start_times:list[float], durations:list[float]}},
-        set{string}:
+        defaultdict{str:{phones:list[str], start_times:list[float], durations:list[float]}},
+        set{str}:
             output dictionary with file basenames as keys and a dictionary with phones, start times
             and durations as values. Also a set of document names that only have silence phones.
     """
