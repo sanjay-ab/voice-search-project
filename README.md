@@ -36,7 +36,11 @@ To convert this into a search task, queries were simply randomly selected from e
 
 ## References
 [1] https://github.com/unmute-tech/voice-search-server
+
 [2] https://gitlab.cognitive-ml.fr/ralgayres/speechseqembeddings
+
 [3] https://huggingface.co/utter-project/mHuBERT-147
+
 [4] Diwan, A., Vaideeswaran, R., Shah, S., Singh, A., Raghavan, S., Khare, S., Unni, V., Vyas, S., Rajpuria, A., Yarra, C., Mittal, A., Ghosh, P.K., Jyothi, P., Bali, K., Seshadri, V., Sitaram, S., Bharadwaj, S., Nanavati, J., Nanavati, R., Sankaranarayanan, K. (2021) MUCS 2021: Multilingual and Code-Switching ASR Challenges for Low Resource Indian Languages. Proc. Interspeech 2021, 2446-2450, doi: 10.21437/Interspeech.2021-1339
+
 [5] Reitmaier, T, Kalarikalayil Raju, D, Klejch, O, Wallington, E, Markl, N, Pearson, J, Jones, M, Bell, P & Robinson, S 2024, Cultivating Spoken Language Technologies for Unwritten Languages. in CHI '24: Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems. ACM, pp. 1-17, ACM CHI Conference on Human Factors in Computing Systems 2024, Honolulu, Hawaii, United States, 11/05/24.
