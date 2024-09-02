@@ -13,7 +13,7 @@ from torch.nn.utils.rnn import pad_sequence
 from awe_model.model import SSEmodel
 from awe_model.extract_query_doc_phone_hubert_embeddings import read_query_times_file
 from utils.common_functions import make_dir, split_list_into_n_parts_and_get_part, split_list_into_n_parts, parse_boolean_input
-from utils.split_data_test_train import read_phone_timings_file
+from utils.examine_datasets import read_phone_timings_file
 
 class PhoneSplitter:
     """Splits embedded recordings into phone sequences."""

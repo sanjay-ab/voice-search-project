@@ -11,7 +11,7 @@ from collections import defaultdict
 
 from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
-from utils.split_data_test_train import extract_gold_labels_for_queries_tamil
+from utils.examine_datasets import extract_gold_labels_for_queries_tamil
 
 class DocumentClassesDataset(Dataset):
     """Dataset class for training the learned pooling model on the recording embedding task.

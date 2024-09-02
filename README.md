@@ -26,14 +26,19 @@ This system uses a learned pooling layer adapted from the AWE model to take a re
 This model is trained contrastively on Tamil, to embed recordings containing the same keyword similarly and recordings containing different keywords differently. 
 
 ## Data
-The tamil data was taken from the Indic ASR challenge dataset. Recordings with fewer than 3 words were removed, since they were mainly simple conversational responses, and the remaining were split into queries and documents.
-This split was done by extracting keyword queries. The keywords to use were found through tf-idf, they were chosen such that each query had between 1 and 5 relevant documents. 
+Tamil data was used for debugging and training since it had existing gold transcriptions and was higher resource than the target unwritten Gormati data.
+This data was taken from the Indic ASR challenge dataset (https://arxiv.org/pdf/2104.00235). 
+Recordings with fewer than 3 words were removed, since they were mainly simple conversational responses. 
+The remaining recordings were split into queries and documents.
+This split was done by extracting keyword queries.
+The keywords were found through tf-idf, they were chosen such that each query had between 1 and 5 relevant documents. 
 The documents from which the queries were extracted from were left in the search collection but were ignored in the rankings for the related query.
-The Tamil data was used for debugging and training since it had existing gold transcriptions and was higher resource than the unwritten Gormati data.
 
-The Gormati data, collected from a Banjara farming community in India, was also split into queries and documents.
-First, any classes with only 1 file were removed. Then queries were randomly selected from the classes.
-Here, the queries are simply the whole uncut recordings. Queries were randomly sampled, so that the number of queries in each class was proportional to the number of documents in that class.
-It was also ensured that each class had at least one query.   
+The target data was collected from a Banjara farming community in India, who speak Gormati, a language with no written form (https://dl.acm.org/doi/pdf/10.1145/3613904.3642026). 
+This data was also split into queries and documents.
+To do this, first, any classes with only 1 file were removed, then queries were randomly selected from the classes.
+Here, the queries are simply whole uncut recordings.
+Queries were randomly sampled, so that the number of queries in each class was proportional to the number of documents in that class.
+Additionally, it was ensured that each class had at least one query.   
 Queries and documents were left in the search collection and a match of a query with itself was ignored during ranking.
-This is data was very low-resource (around 300 files and <4 hours of data), so it was only used for testing.
+This data was very low-resource (around 300 files and <4 hours of data), so it was only used for testing, not training.

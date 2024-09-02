@@ -1,9 +1,12 @@
+"""Examine various aspects of the datasets, including the duration of the data, the duration of voice activity,
+and the number of documents in the search corpus."""
 import os
 from collections import defaultdict
 
 from utils.get_document_lengths import get_wav_file_length
 
 def clean_string(string):
+    """Removes unwanted characters from string."""
     string = string.replace(".pkl", "")
     string = string.replace(".wav", "")
     string = string.replace("q_", "")
@@ -12,6 +15,22 @@ def clean_string(string):
     return string
 
 def extract_gold_labels_for_queries_tamil(reference_file):
+    """Given a reference file with queries, their corresponding labels and correct documents,
+    return two dictionaries: one with queries as keys and a list of their corresponding correct
+    documents as values, another with queries as keys and their corresponding labels as values.
+    The reference file is assumed to have the following format: 
+    "[query] [tab] [label] [tab] [correct_document_1] [tab] [correct_document_2]..."
+    where the spaces are just for readability and [tab] is a tab character.
+    Note that this function is specific to our setup with the tamil dataset.
+
+    Args:
+        reference_file (str): path to reference file
+
+    Returns:
+        tuple(dict{str \: list[str]}, dict{str \: str}): first dictionary has queries as keys and
+            lists of correct documents as values, second dictionary has queries as keys and their
+            corresponding labels as values.
+    """
     gold_documents_for_queries_dict = {}
     query_labels = {}
 
@@ -27,6 +46,20 @@ def extract_gold_labels_for_queries_tamil(reference_file):
     return gold_documents_for_queries_dict, query_labels
 
 def extract_gold_labels_for_queries_banjara(reference_file):
+    """Given a reference file with queries and their corresponding correct documents,
+    return a dictionary with queries as keys and a list of their corresponding correct
+    documents as values. The reference file is assumed to have the following format:
+    "[query] [tab] [correct_document_1] [tab] [correct_document_2]..."
+    where the spaces are just for readability and [tab] is a tab character.
+    This function is specific to our setup with the banjara dataset.
+
+    Args:
+        reference_file (str): path to the reference file
+
+    Returns:
+        dict{str \: list[str]}: dictionary with queries as keys and a list of their 
+            corresponding correct documents as values
+    """
     gold_documents_for_queries_dict = {}
 
     with open(reference_file, "r") as f:
@@ -40,6 +73,15 @@ def extract_gold_labels_for_queries_banjara(reference_file):
     return gold_documents_for_queries_dict
 
 def get_all_data_files(all_data_dir):
+    """Given a directory, return a set of all the files
+    in the directory that end with ".wav".
+
+    Args:
+        all_data_dir (str): path to directory
+
+    Returns:
+        set{str}: set of basenames of all files in the directory that end with ".wav"
+    """
     files = os.listdir(all_data_dir)
     files_to_remove = []
 
@@ -55,6 +97,15 @@ def get_all_data_files(all_data_dir):
     return set(files)
 
 def read_documents_file(file_path):
+    """Given a documents file, return a set of basenames of all documents
+    in the file. This file should be formatted with one document basename per line.
+
+    Args:
+        file_path (str): path to the documents file
+
+    Returns:
+        set{str}: set of basenames of all documents in the file
+    """
     all_docs = set()
     with open(file_path) as f:
         for row in f:
@@ -62,20 +113,19 @@ def read_documents_file(file_path):
     return all_docs
 
 def read_phone_timings_file(file_path):
-    """reads phone timings file and produces a defaultdict with file basenames as keys and 
-        a dictionary with phones, start times and durations of the respective phones as values.
-        The dictionary only holds files that have non-silence phones. Also returns a set of
-        document names that only have silence phones, these are only documents that are in the
-        phone timings file. Silent documents not in the phone timings file are not considered.
-
+    """Reads phone timings file and produces a defaultdict with file basenames as keys and 
+    a dictionary with the corresponding phones in the file and their corresponding start times
+    and durations as values. Files that only contain silence are ignored and are not included
+    in the output dictionary. The phone timings file is assumed to have the following format:
+    "[doc_basename] 1 [start_time] [duration] [phone]", where the spaces are just for readability.
+    
     Args:
         file_path (str): path of the phone timings file
 
     Returns:
-        defaultdict{str:{phones:list[str], start_times:list[float], durations:list[float]}},
-        set{str}:
-            output dictionary with file basenames as keys and a dictionary with phones, start times
-            and durations as values. Also a set of document names that only have silence phones.
+        dict{str \: dict{"phones" \: list[str], "start_times" \: list[float], "durations" \: list[float]}},
+            default dictionary with file basenames as keys and a dictionary with the corresponding phones in the file,
+            and their corresponding start times and durations as values. 
     """
     files_phones_dict = defaultdict(lambda: {"phones": [], "start_times": [], "durations": []})
 
@@ -114,6 +164,16 @@ def read_phone_timings_file(file_path):
     return files_phones_dict
 
 def get_duration_of_docs(document_set, document_dir):
+    """Calculate the duration of all the documents in the document set,
+    given the directory where the documents are stored.
+
+    Args:
+        document_set (set{str}): set of document basenames
+        document_dir (str): path of the directory where the documents are stored
+
+    Returns:
+        float: duration of all the documents in the document set
+    """
     duration = 0
     for document in document_set:
         doc_duration = get_wav_file_length(f"{document_dir}/{document}.wav")
@@ -122,6 +182,19 @@ def get_duration_of_docs(document_set, document_dir):
     return duration
 
 def get_voice_activity_duration_of_docs(document_set, files_phones_dict, sil_phones=["sil", "sp", "spn"]):
+    """Calculate the duration of voice activity in all the documents in the document set,
+    given the dictionary with the phones in the documents and their corresponding start times and durations.
+
+    Args:
+        document_set (set{str}): set of document basenames
+        files_phones_dict (dict{str \: dict{"phones" \: list[str], "start_times" \: list[float], "durations" \: list[float]}}):
+            dictionary with document basenames as keys and a dictionary with the corresponding phones in the document,
+            and their corresponding start times and durations as values.
+        sil_phones (list, optional): list of silence phones to ignore. Defaults to ["sil", "sp", "spn"].
+
+    Returns:
+        float: voice activity duration of all the documents in the document set.
+    """
     duration = 0
     for document in document_set:
         phones = files_phones_dict[document]["phones"]

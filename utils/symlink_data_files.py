@@ -1,3 +1,4 @@
+"""Use to symlink files from source directories to target directories, based on a list of filenames."""
 import os
 
 def make_dir(path):
@@ -5,12 +6,12 @@ def make_dir(path):
         os.makedirs(f"{path}")
 
 def link_files(fname_with_list, source_dirs, target_dir):
-    """link files specified in file "fname_with_list" from dir in source_dirs to target_dir.
+    """Link files specified in file "fname_with_list" from dir in source_dirs to target_dir.
     File fname_with_list should contain a list of filename basenames, one per line.
 
     Args:
-        fname_with_list (str): file name of file with a list of filenames to link
-        source_dirs (str): list of source directories that contain the files to link
+        fname_with_list (str): path of file with a list of filenames to link
+        source_dirs (list[str]): list of source directories that contain the files to link
         target_dir (str): target directory to link files to
     """
     directory_files_dict = {}

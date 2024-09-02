@@ -11,7 +11,7 @@ import pickle as pkl
 
 from mhubert_model.extract_mHuBERT_embeddings import HubertEmbedder 
 from utils.common_functions import split_list_into_n_parts_and_get_part, make_dir, read_wav_file
-from utils.split_data_test_train import read_phone_timings_file
+from utils.examine_datasets import read_phone_timings_file
 
 
 def get_matching_phone_segments_dict(audio_directory, phone_timings_file, sample_rate = 16000, 

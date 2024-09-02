@@ -1,15 +1,17 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
+"""Use TfidfVectorizer to compute the TF-IDF scores of words in a corpus. This can be
+used to identify the most important words in the corpus, and hence determine
+possible keywords for the corpus."""
 import numpy as np
-import sys
 import re
 
-line_re = re.compile(r"(?P<filename>.*)\t(?P<text>.*)")
+from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 if __name__ == "__main__":
 
-    # fname = sys.argv[1]
+    line_re = re.compile(r"(?P<filename>.*)\t(?P<text>.*)")
+
     fname = "data_misc/tamil_pruned_cleaned.txt"
-    # outfile = sys.argv[2]
     outfile = "output_words.txt"
 
     corpus = []
@@ -31,7 +33,7 @@ if __name__ == "__main__":
     word_tfidf = {}
     for word in names:
         # word_tfidf[word] = np.sum(X[:, vocab[word]])
-        word_tfidf[word] = np.max(X[:, vocab[word]])  # try max/mean instead of summing
+        word_tfidf[word] = np.max(X[:, vocab[word]])
     word_tfidf = dict(sorted(word_tfidf.items(), key=lambda x: x[1], reverse=True))
 
     with open(outfile, "w") as f:

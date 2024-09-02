@@ -4,7 +4,7 @@ import random
 from collections import defaultdict
 
 from utils.common_functions import get_wav_file_length
-from utils.split_data_test_train import read_documents_file
+from utils.examine_datasets import read_documents_file
 
 def read_label(label_fname):
     """Read label from label file.
