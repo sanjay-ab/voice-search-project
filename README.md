@@ -26,7 +26,7 @@ This system uses a learned pooling layer adapted from the AWE model to take a re
 This model was trained contrastively on Tamil, to embed recordings containing the same keyword similarly and recordings containing different keywords differently. 
 
 ## Data
-Tamil data was used for debugging and training the models since it had existing gold transcriptions and was higher resource than the target unwritten Gormati data.
+The Tamil data was used for debugging and training the models since it had existing gold transcriptions and was higher resource than the target unwritten Gormati data.
 The Tamil data was taken from the Indic ASR challenge dataset (https://arxiv.org/pdf/2104.00235) and converted into a keyword search task for our project. 
 
 The target data was collected from a Banjara farming community in India, who speak Gormati, a language with no written form (https://dl.acm.org/doi/pdf/10.1145/3613904.3642026). 
