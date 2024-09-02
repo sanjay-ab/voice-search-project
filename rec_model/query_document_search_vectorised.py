@@ -55,6 +55,6 @@ if __name__ == "__main__":
                    query_size_order_file,
                    max_document_batch_size_gb,
                    max_query_batch_size_gb,
-                   num_results_to_save,
                    device,
-                   clean_files)
+                   clean_files,
+                   num_results_to_save)

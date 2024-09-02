@@ -1,32 +1,51 @@
+"""Dataset used for training the learned pooling model. Formats data into batches, where 
+each batch is made up of a group of positive pairs, that can be used with an
+NTXent contrastive loss."""
 import random
 import time
 import copy
 import itertools
 import pickle as pkl
 from collections import defaultdict
+
 from torch.utils.data import Dataset, DataLoader
 from torch.nn.utils.rnn import pad_sequence
+
 from awe_model.extract_training_data_phones_from_embedded_data import get_embedded_phones_dict
 
-
 class PhonePairsDataset(Dataset):
+    """Dataset class for training the learned pooling model. Formats data into batches, where
+    each batch is made up of a group of positive pairs, that can be used with an NTXent contrastive loss.
+    Each pair consists of two different embeddings, which are from the same phone sequence. Other pairs
+    in the same batch are from different phone sequences."""
+
     def __init__(self, embedding_dir_or_file, num_pairs_per_batch, phone_timings_file, time_limit=240,
                   min_phone_seq_length=3, max_phone_seq_length=9,
-                  perturb_sequences=False, max_one_sided_perturb_amount=0.2):
-        """initialise variables for class
+                  perturb_sequences=False, max_one_sided_perturb_amount=0.1):
+        """Initialise PhonePairsDataset class.
 
         Args:
-            embedding_dir_or_file (str): directory or file path containing the embedded data 
-                uses phone_seq as keys and list of embeddings as values
-            num_pairs_per_batch (int): the number of pairs to be created for each batch
-            phone_timings_file (str): path to the phone timings file
-            time_limit (float, optional): the time limit in second for creating the dataset.
-              Defaults to 240.
-            min_phone_seq_length (int, optional): minimum phone sequence length. Defaults to 3.
-            max_phone_seq_length (int, optional): maximum phone sequence length. Defaults to 9.
-            perturb_sequences (bool, optional): whether to perturb the sequences. Defaults to False.
-            max_one_sided_perturb_amount (float, optional): maximum one sided perturb amount. 
-                Defaults to 0.2.
+            embedding_dir_or_file (str): path of directory or file containing the embedded data.
+                If using a file, when unpickled it must be a dictionary that uses phone sequences
+                as keys and a list of embeddings as values.
+            num_pairs_per_batch (int): the max number of pairs to be created for each batch.
+            phone_timings_file (str): path to the .ctm phone timings file.
+            time_limit (int, optional): the time limit (in seconds) for creating the dataset.
+                Defaults to 240.
+            min_phone_seq_length (int, optional): minimum phone sequence length (in phones). 
+                Defaults to 3.
+            max_phone_seq_length (int, optional): maximum phone sequence length (in phones). 
+                Defaults to 9.
+            perturb_sequences (bool, optional): define whether to perturb the boundaries of sequences.
+                If true, the edges of extracted sequences are randomly moved, up to some specified
+                amount. Defaults to False.
+            max_one_sided_perturb_amount (float, optional): Maximum amount to perturb sequences to.
+                Defined as a percentage of the length of the whole phone sequence. I.e., 0.1 means edges
+                of the phone sequences can be shifted by up to 10% of the length of the whole phone 
+                sequence. Defaults to 0.1.
+
+        Raises:
+            ValueError: Perturbing sequences is not supported when also loading from a file.
         """
         self.perturb_sequences = perturb_sequences
         self.max_one_sided_perturb_amount = max_one_sided_perturb_amount
@@ -120,6 +139,8 @@ class PhonePairsDataset(Dataset):
             self.paired_data_labels.append(paired_data_labels_to_add)
 
     def regenerate_paired_data(self):
+        """Regenerate paired data, to change which pairs are used in each batch."""
+
         if self.perturb_sequences:
             t1 = time.perf_counter()
             print(f"Regenerating perturbed paired data...")

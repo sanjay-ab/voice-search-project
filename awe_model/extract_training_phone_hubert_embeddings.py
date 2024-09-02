@@ -1,9 +1,14 @@
+"""Extract training data from audio files. The audio signal is split into phone segments and then these are 
+embedded using mHuBERT. This script is DEPRECATED and should not be used. Splitting recordings into speech signal
+segments produces much worse performance than first embedding the whole recording using mHuBERT and then
+splitting into segments. This could be since mHuBERT may struggle with the unnatural discontinuities at
+the edges of cut out segments of the signal."""
 import sys
 import os
 from collections import defaultdict
 import time
 import pickle as pkl
-import soundfile as sf
+
 from mhubert_model.extract_mHuBERT_embeddings import HubertEmbedder 
 from utils.common_functions import split_list_into_n_parts_and_get_part, make_dir, read_wav_file
 from utils.split_data_test_train import read_phone_timings_file

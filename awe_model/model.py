@@ -1,9 +1,10 @@
-import torch
+"""Learned Pooling model, from https://gitlab.cognitive-ml.fr/ralgayres/speechseqembeddings"""
 import math
+
+import torch
 from torch import nn
-from torch.autograd import Variable
 import torch.nn.functional as F
-import numpy as np
+
 class PositionalEmbedding(nn.Module):
     """
     Code from https://github.com/wesbz/audioset_tagging_cnn/blob/master/pytorch/models.py

@@ -1,3 +1,8 @@
+"""Get AWE representation for queries and documents through splitting the speech signal into phone segments 
+and extracting embeddings for each segment. This script is DEPRECATED and should not be used. Splitting 
+recordings into speech signal segments produces much worse performance than first embedding the whole
+recording using mHuBERT and then splitting into segments. This could be since mHuBERT may struggle with the 
+unnatural discontinuities at the edges of cut out segments of the signal."""
 import sys
 import os
 from collections import defaultdict
@@ -5,11 +10,23 @@ import time
 import pickle as pkl
 import csv
 import re
+
 from mhubert_model.extract_mHuBERT_embeddings import HubertEmbedder 
 from utils.common_functions import read_wav_file, split_list_into_n_parts_and_get_part, make_dir
 from utils.split_data_test_train import read_phone_timings_file
 
 def read_query_times_file(query_times_file):
+    """Read query times file. Useful if queries were cut out of longer recordings.
+
+    Args:
+        query_times_file (str): path of the file containing the times of queries
+            in their original recordings. Should be formatted as: 
+            "<original_file_basename> <tab> <query_keyword> <tab> <start_time> <tab> <end_time>"
+            where the spaces are just for readability and start_time and end_time are in seconds.
+
+    Returns:
+        dict{str \: tuple(float, float)}: dictionary mapping file names to start and end times
+    """
     query_times_dict = {}
     with open(query_times_file, "r") as f:
         reader = csv.reader(f, delimiter="\t")
@@ -25,26 +42,26 @@ def read_query_times_file(query_times_file):
 
 
 def get_file_phone_segments_dict(audio_directory, phone_timings_file, query_times_file=None,
-                                 sample_rate = 16000, min_phone_seq_length = 2, 
-                                 max_phone_seq_length = 5, silence_phones = ["sil", "sp", "spn"]):
-    """create a dictionary mapping file names to phone segments in the files.
+                                 sample_rate = 16000, min_phone_seq_length = 3, 
+                                 max_phone_seq_length = 9, silence_phones = ["sil", "sp", "spn"]):
+    """Create a dictionary mapping file names to phone segments in the files.
 
     Args:
         audio_directory (str): directory containing audio files.
-        phone_timings_file (str): file containing phone timings.
-        query_times_file (str, optional): Use if queries are audio segments that are cut out of 
-            longer documents, file specifies start/end times of query in whole document.
-            Defaults to None.
+        phone_timings_file (str): file containing phone timings for all recordings.
+        query_times_file (str, optional): File path of query times file. Use if queries were
+            cut out of longer recordings, file specifies start/end times of query in original 
+            recording. Defaults to None.
         sample_rate (int, optional): sample rate of audio. Defaults to 16000.
-        min_phone_seq_length (int, optional): min length of phone sequence (in phones) to consider.
-            Defaults to 2.
-        max_phone_seq_length (int, optional): max length of phone sequence (in phones) to consider.
-            Defaults to 5.
+        min_phone_seq_length (int, optional): min length (in phones) of phone sequence to consider.
+            Defaults to 3.
+        max_phone_seq_length (int, optional): max length (in phones) of phone sequence to consider.
+            Defaults to 9.
         silence_phones (list, optional): list of phones to ignore. Defaults to ["sil", "sp", "spn"].
 
     Returns:
-        dict{str:list[list[float]]}: dictionary mapping file names to phone segments. Phone segments
-            are cut out of the speech signal.
+        dict{str \: list[list[float]]}: defaultdict(list) mapping file names to a list of phone segments. 
+        Phone segments are cut directly out of the speech signal.
     """
     files_phones_dict = read_phone_timings_file(phone_timings_file)
     if query_times_file is not None:

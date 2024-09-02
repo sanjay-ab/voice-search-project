@@ -1,9 +1,12 @@
-from datetime import datetime as dt
-import torch
+"""Train learned pooling model contrastively using NTXent loss."""
 import time
 import random
+from datetime import datetime as dt
+
 import numpy as np
+import torch
 from torch.utils.data import DataLoader
+
 from awe_model.model import SSEmodel
 from awe_model.phone_pairs_dataset import PhonePairsDataset, collate_as_tensor_and_pad
 from utils.common_functions import make_dir
@@ -14,13 +17,13 @@ class NTXentLoss:
         self.ce_loss = torch.nn.CrossEntropyLoss(reduction=reduction)
 
     def _nt_xent_loss(self, x):
-        """calculates normalised temperature-scaled cross-entropy loss for input x. x must be a tensor
-        of shape (2N, embedding_size). N pairs of positive samples are in x, and are assumed to be 
+        """Calculates normalised temperature-scaled cross-entropy loss for input x. x must be a tensor
+        of shape, [2N, embedding_size], where N pairs of positive samples are in x, and are assumed to be 
         adjacent. I.e., the first two rows are a pair, the next two rows are a pair, etc.
 
         Args:
-            x (tensor): tensor of shape (2N, embedding_size) containing N pairs of positive samples to
-            calculate the loss for.
+            x (tensor): tensor of shape [2N, embedding_size], containing N pairs of positive samples to
+                calculate the loss for.
 
         Returns:
             tensor: a scalar tensor containing the loss value.
@@ -46,37 +49,50 @@ class NTXentLoss:
         return self._nt_xent_loss(x) 
 
 def get_loss_for_one_batch(model, hubert_embeddings, loss_function, device):
-        model_inputs = hubert_embeddings.to(device)
-        model_outputs = model(model_inputs)
-        del model_inputs
-        model_outputs_cpu = model_outputs.to("cpu")
-        del model_outputs
-        
-        loss = loss_function(model_outputs_cpu)
-        return loss
+    """Get the loss for one batch.
+
+    Args:
+        model (SSEmodel): model to get loss for
+        hubert_embeddings (tensor): input batch of mHuBERT embeddings
+        loss_function (NTXentLoss): loss function to use. 
+        device (str): compute device
+
+    Returns:
+        tensor: scalar tensor containing the loss value.
+    """
+    model_inputs = hubert_embeddings.to(device)
+    model_outputs = model(model_inputs)
+    del model_inputs
+    model_outputs_cpu = model_outputs.to("cpu")
+    del model_outputs
+    
+    loss = loss_function(model_outputs_cpu)
+    return loss
 
 def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_norm, epoch_num,
                      num_batch_pairs_to_accumulate_gradients_over = 1,
                      num_pairs_to_calc_loss_with=800):
-    """train model for one epoch
+    """Train model for one epoch
 
     Args:
-        model (SSEModel): self supervised model to train
+        model (SSEmodel): self supervised model to train
         dataloader (Dataloader): pytorch dataloader - must be batch size 1, contains a list of phone pairs 
             in each batch
-        loss_function (NTXentLoss): class with ntxent loss function
-        optimizer (Pytorch Optmiser): Pytorch optimiser, e.g. Adam
-        device (str): cuda or cpu
+        loss_function (NTXentLoss): instance of loss function
+        optimizer (torch.optim): Pytorch optimiser, e.g. Adam
+        device (str): compute device
         clip_norm (float): value to clip gradients to - clips gradients of all parameters together to
-            this specified norm. 
+            this specified norm, as if all gradients were put into a single vector and normalised.
+            Uses clip_grad_norm. 
         epoch_num (int): current epoch number
-        num_batch_pairs_to_accumulate_gradients_over (int): number batche pairs to accumulate gradients over, 
-            e.g. 1000 would mean summing gradients after at least 1000 pairs have passed through the system
-            and performing the gradient update on the sum. Defaults to 1, where 
-            update is done after each batch, no matter the size.
+        num_batch_pairs_to_accumulate_gradients_over (int): number of batch pairs to accumulate gradients over.
+            E.g., 1000 means summing gradients over at least 1000 pairs before performing the gradient
+            update - if a batch consists of 200 pairs then updates would be done over 5 batches. Defaults to 1,
+            where updates are always done after each batch.
         num_pairs_to_calc_loss_with (int): number of phone pairs to calculate loss with. 
             Loss per batch is simply multiplied by a factor so it produces a value comparable 
-            to if the batch size was num_pairs_to_calc_loss_with. Defaults to 800.
+            to if the batch size was num_pairs_to_calc_loss_with. This is done in an attempt to make it easier to 
+            compare losses between two models using different batch sizes. Defaults to 800.
     """
     start_time = time.perf_counter()
     dataloader_length = len(dataloader)
@@ -87,7 +103,6 @@ def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_no
     model.train()
     loss_per_increment = 0
     counter_for_increment_loss = 0
-    accumulated_loss = 0
     num_accumulated_batch_pairs = 0
 
     # assume dataloader has batch size of 1
@@ -99,20 +114,18 @@ def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_no
         loss_multiply_factor = num_pairs_to_calc_loss_with / num_pairs_per_batch
 
         loss = get_loss_for_one_batch(model, hubert_embeddings, loss_function, device)
+        loss.backward()
 
         total_loss += loss.item() * loss_multiply_factor
         loss_per_increment += loss.item() * loss_multiply_factor
         counter_for_increment_loss += 1
 
-        accumulated_loss += loss
         if (num_accumulated_batch_pairs >= num_batch_pairs_to_accumulate_gradients_over) or (i == dataloader_length - 1):
-            accumulated_loss.backward()
             grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), clip_norm)
             if grad_norm > clip_norm:
                 total_gradients_clipped += 1
             optimizer.step()
             optimizer.zero_grad()
-            accumulated_loss = 0
             num_accumulated_batch_pairs = 0
 
         percentage = (i+1)/dataloader_length * 100
@@ -131,6 +144,22 @@ def train_one_epoch(model, dataloader, loss_function, optimizer, device, clip_no
 
 def calculate_validation_loss(model, dataloader, loss_function, device,
                                num_pairs_to_calc_loss_with=800):
+    """Calculate the validation loss for the model.
+
+    Args:
+        model (SSEmodel): model to calculate validation loss for
+        dataloader (Dataloader): pytorch dataloader - must be batch size 1, contains a list of phone pairs 
+            in each batch
+        loss_function (NTXentLoss): instance of loss function to use
+        device (str): compute device
+        num_pairs_to_calc_loss_with (int, optional): number of phone pairs to calculate loss with. 
+            Loss per batch is simply multiplied by a factor so it produces a value comparable 
+            to if the batch size was num_pairs_to_calc_loss_with. This is done in an attempt to make it easier to 
+            compare losses between two models using different batch sizes. Defaults to 800.
+
+    Returns:
+        float: average loss over the validation set
+    """
     with torch.no_grad():
         start_time = time.perf_counter()
         model.eval()
@@ -161,6 +190,17 @@ def calculate_validation_loss(model, dataloader, loss_function, device,
         return average_loss
 
 def save_model(model, optimizer, epoch, save_dir, model_file_basename, valid_loss):
+    """Save model to disk.
+
+    Args:
+        model (SSEmodel): model to save.
+        optimizer (torch.optim): optimiser used for model training (e.g., Adam).
+        epoch (int): last epoch number.
+        save_dir (str): path of save directory.
+        model_file_basename (str): basename of model file.
+        valid_loss (float): validation loss at last epoch.
+    """
+
     save_fname = f"{save_dir}/{model_file_basename}_checkpoint_epoch_{epoch}.pt"
     print(f"Saving model to {save_fname}\n")
     state_dict = {
@@ -172,6 +212,18 @@ def save_model(model, optimizer, epoch, save_dir, model_file_basename, valid_los
     torch.save(state_dict, save_fname)
 
 def load_model(checkpoint_path, model, device, optimizer=None):
+    """Load model from checkpoint.
+
+    Args:
+        checkpoint_path (str): path of checkpoint file.
+        model (SSEmodel): model variable to load checkpoint into.
+        device (str): compute device.
+        optimizer (torch.optim, optional): pytorch optimiser used with model.
+            Defaults to None.
+
+    Returns:
+        dict: state dictionary of model.
+    """
     print(f"\nLoading model from {checkpoint_path}\n")
     state_dict = torch.load(checkpoint_path, map_location=device)
     model.load_state_dict(state_dict['model'])
@@ -180,6 +232,7 @@ def load_model(checkpoint_path, model, device, optimizer=None):
     return state_dict
 
 if __name__== "__main__":
+    # Set seed for reproducibility
     seed = 3456542
     torch.manual_seed(seed)
     np.random.seed(seed)

@@ -1,3 +1,4 @@
+"""Extract AWE representation for documents and queries from mHuBERT embedded representation."""
 import time
 import os
 import sys
@@ -27,8 +28,8 @@ class PhoneSplitter:
             query_times_file (str, optional): path of query times file. This is only used if the queries were made by cutting
                 segments out of longer recordings, then this file holds timings of where the query is located inside the
                 larger recording. Defaults to None.
-            min_phone_seq_length (int, optional): min segment length to extract, in phones. Defaults to 2.
-            max_phone_seq_length (int, optional): max segment legnth to extract, in phones. Defaults to 5.
+            min_phone_seq_length (int, optional): min segment length to extract, in phones. Defaults to 3.
+            max_phone_seq_length (int, optional): max segment legnth to extract, in phones. Defaults to 9.
             silence_phones (list, optional): silence/junk phones to ignore. Defaults to ["sil", "sp", "spn"].
         """
 
@@ -142,7 +143,7 @@ class PhoneSplitter:
         Args:
             embedded_speech (tensor): the embedded speech of shape [time, embedding_size]
             file (str): filename of the embedded file, can be either .pkl or .wav
-            phone_dict (defaultdict(list)): defaultdict where keys are a string representing
+            phone_dict (dict{str:list[tensor]}): defaultdict(list) where keys are a string representing
                 each phone sequence and values are lists of embedded speech segments for each phone sequence.
             perturb_sequences (bool, optional): whether to perturb the sequences. If true, this randomly
                 shifts the start and end boundaries of the phone sequences up to a specified amount.

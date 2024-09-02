@@ -1,11 +1,25 @@
+"""Preprocesses the queries and documents, embedded using the AWE model, for the ranking model."""
 import time
 import pickle as pkl
-from torch.nn.utils.rnn import pad_sequence
+
 import mhubert_model.query_document_search as qds
 from mhubert_model.ranking_preprocessing import pad_normalise_batch_from_dict_with_size_order
-from utils.common_functions_pytorch import print_memory_usage
 
 def batch_normalise_files(embedded_states_dir, size_order_file, max_batch_size_gb):
+    """Batch normalise AWE embedded files from a directory.
+
+    Args:
+        embedded_states_dir (str): directory containing AWE embedded files.
+        size_order_file (str): path of file containing list of files in size order.
+        max_batch_size_gb (float): maximum size of batch in GB.
+
+    Returns:
+        tuple(list[tensor], list[list[str]]): first element of the tuple is list of normalised 
+            and padded tensors of shape [number_of_tensors_in_batch, 
+            max_num_rows_of_input_tensors_in_batch, embedding_dimension] each element in the list is
+            one batch. Second element of the tuple is list of lists of filenames - each list
+            containing the filenames of the tensors in that batch.
+    """
     t1 = time.perf_counter()
     embedded_states = qds.load_embeddings_from_dir(embedded_states_dir)
     t2 = time.perf_counter() 
@@ -49,7 +63,7 @@ if __name__ == "__main__":
     print(f"Query embedded states dir: {query_embedded_states_dir}")
 
     if run_for_queries:
-        print(f"QUERIES:")
+        print(f"Preprocessing queries...")
         batch_queries_padded_normalised, batch_names = batch_normalise_files(
             query_embedded_states_dir, query_size_order_file, max_query_batch_size_gb)
 
@@ -60,7 +74,7 @@ if __name__ == "__main__":
         print(f"Time taken to save queries: {t2 - t1:.2f} seconds")
 
     if run_for_documents:
-        print(f"DOCUMENTS:")
+        print(f"Preprocessing documents...")
         batch_documents_padded_normalised, batch_names = batch_normalise_files(
             document_embedded_states_dir, doc_size_order_file, max_document_batch_size_gb)
 

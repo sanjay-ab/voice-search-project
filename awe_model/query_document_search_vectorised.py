@@ -1,12 +1,20 @@
+"""Compute ranking of documents for a given query using vectorised operations."""
 import time
 import sys
 import os
 import pickle as pkl
+
 import mhubert_model.query_document_search as qds
 from mhubert_model.query_document_search_vectorised import compute_ranking 
 from awe_model.ranking_preprocessing import batch_normalise_files
 
 def clean_pkl_files(directory, exceptions):
+    """Remove all .pkl files in a directory, except for those in the exceptions list.
+
+    Args:
+        directory (str): path of directory to clean.
+        exceptions (list[str]): list of filenames to exclude from deletion.
+    """
     for filename in os.listdir(directory):
         if filename.endswith(".pkl") and filename not in exceptions:
             os.remove(f"{directory}/{filename}")
@@ -25,9 +33,37 @@ def perform_search(document_prefix,
                     query_size_order_file,
                     max_document_batch_size_gb,
                     max_query_batch_size_gb,
-                    num_results_to_save,
                     device,
-                    clean_files):
+                    clean_files,
+                    num_results_to_save=None):
+    """Perform ranking of documents for all queries, assuming they have been embedded
+    using the AWE model.
+
+    Args:
+        document_prefix (str): top level prefix for the directory containing document embeddings.
+            Path is: {document_prefix}/{layer}/{document_query_suffix}.
+        query_prefix (str): top level prefix for the directory containing query embeddings.
+            Path is: {query_prefix}/{layer}/{document_query_suffix}.
+        results_dir_prefix (str): top level prefix for the directory to save results.
+            Path is: {results_dir_prefix}/{results_path}.
+        layer (int): layer of mHuBERT model used to produce embeddings.
+        document_query_suffix (str): suffix of directories containing document and query embeddings.
+            Path is: {document_prefix}/{layer}/{document_query_suffix}. 
+        results_path (str): path to results directory.
+            Path is: {results_dir_prefix}/{results_path}.
+        load_query_embeddings_from_file (bool): if true, system will try to load query embeddings from file,
+            named "all_embeddings_padded_normalised_batched.pkl".
+        load_doc_embeddings_from_file (bool): if true, system will try to load document embeddings from file,
+            named "all_embeddings_padded_normalised_batched.pkl".
+        doc_size_order_file (str): path to file containing list of documents in size order.
+        query_size_order_file (str): path to file containing list of queries in size order.
+        max_document_batch_size_gb (float): maximum size of document batch in GB.
+        max_query_batch_size_gb (float): maximum size of query batch in GB.
+        device (str): device to use for computations.
+        clean_files (bool): set to true to clean any intermediate files.
+        num_results_to_save (int, optional): limit on number of results to save, set to None to save all results.
+            Defaults to None.
+    """
 
     document_embedded_states_dir = \
         f"{document_prefix}/{layer}/{document_query_suffix}"
@@ -127,6 +163,6 @@ if __name__ == "__main__":
                     query_size_order_file,
                     max_document_batch_size_gb,
                     max_query_batch_size_gb,
-                    num_results_to_save,
                     device,
-                    clean_files)
+                    clean_files,
+                    num_results_to_save)
