@@ -6,7 +6,7 @@ The search task is formulated as a spoken Query-by-Example task.
 Models are trained/tested on Tamil and then tested directly on Gormati, an unwritten Indic language, without finetuning.
 Each system uses different speech representations and uses cosine similarity matching to match queries and documents.
 This code was written as part of an MSc dissertation.
-All work is my own, except that found in the folders: voice_search_server and speechseqembeddings, which are slightly modified from their originals:  [1] and [2], respectively.
+All work is my own, except that found in the folders: voice_search_server and speechseqembeddings, which are slightly modified from their originals:  [[1]](#1) and [2], respectively.
 
 ## Description of each system
 Each system converts queries and documents into vector representations and compares them using a method based on cosine similarity.
@@ -35,7 +35,8 @@ The data was already formatted into classes, with each recording being a natural
 To convert this into a search task, queries were simply randomly selected from each class.
 
 ## References
-[1] https://github.com/unmute-tech/voice-search-server
+<a id="1">[1]</a>
+https://github.com/unmute-tech/voice-search-server
 
 [2] https://gitlab.cognitive-ml.fr/ralgayres/speechseqembeddings
 
