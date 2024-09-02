@@ -1,3 +1,5 @@
+"""Learned Pooling model, from https://gitlab.cognitive-ml.fr/ralgayres/speechseqembeddings, 
+as used in awe_model. Only difference is the increased max length of the positional embedding."""
 import torch
 import math
 from torch import nn

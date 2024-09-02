@@ -287,7 +287,6 @@ if __name__== "__main__":
            f"clip norm: {clip_norm}, temperature: {temperature}, num pairs per batch: {num_pairs_per_batch}\n"
            f"num batch pairs to accumulate gradients over: {num_batch_pairs_to_accumulate_gradients_over}\n"
            f"time limit to create dataset: {time_limit_to_create_dataset}\n"
-           f"temperature: {temperature}\n"
            f"min phone seq length: {min_phone_seq_length}, max phone seq length: {max_phone_seq_length}\n"
            f"perturb sequences: {perturb_sequences}, max one sided perturb amount: {max_one_sided_perturb_amount}\n"))
     

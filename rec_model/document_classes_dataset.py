@@ -1,3 +1,6 @@
+"""Dataset used for training the learned pooling model on the recording embedding task.
+Formats data into batches, where each batch is made up of a group of positive pairs,
+that can be used with an NTXent contrastive loss."""
 import random
 import time
 import os
@@ -5,15 +8,33 @@ import copy
 import itertools
 import pickle as pkl
 from collections import defaultdict
-from torch.utils.data import Dataset, DataLoader
-from torch.nn.utils.rnn import pad_sequence
-from awe_model.extract_training_data_phones_from_embedded_data import get_embedded_phones_dict
-from utils.split_data_test_train import extract_gold_labels_for_queries_tamil, extract_gold_labels_for_queries_banjara
 
+from torch.utils.data import Dataset
+from torch.nn.utils.rnn import pad_sequence
+from utils.split_data_test_train import extract_gold_labels_for_queries_tamil
 
 class DocumentClassesDataset(Dataset):
+    """Dataset class for training the learned pooling model on the recording embedding task.
+    Formats data into batches, where each batch is made up of a group of positive pairs, that
+    can be used with an NTXent contrastive loss. Each pair consists of two different embeddings,
+    which are from two different recordings, containing the same keyword. Other pairs in the
+    same batch are from different keyword groups.
+    """
     def __init__(self, document_embedding_dir, queries_embedding_dir, 
                  num_pairs_per_batch, reference_file, time_limit=240):
+        """Initialise the DocumentClassesDataset class.
+
+        Args:
+            document_embedding_dir (str): path to the directory containing the document embeddings.
+            queries_embedding_dir (str): path to the directory containing the query embeddings.
+            num_pairs_per_batch (int): the max number of pairs to be created for each batch.
+            reference_file (str): file describing which queries are related to which documents, 
+                along with and their keyword labels.
+            time_limit (int, optional): time limit (in seconds) for creating the dataset. Defaults to 240.
+
+        Raises:
+            NotImplementedError: Class not implemented for Banjara dataset.
+        """
         
         self.num_pairs_per_batch = num_pairs_per_batch
         self.time_limit = time_limit
@@ -121,6 +142,7 @@ class DocumentClassesDataset(Dataset):
             self.paired_data_labels.append(paired_data_labels_to_add)
 
     def regenerate_paired_data(self):
+        """Regenerate paired data, to change which pairs are used in each batch."""
         self._create_paired_data()
         print(f"Regenerated paired data")
 

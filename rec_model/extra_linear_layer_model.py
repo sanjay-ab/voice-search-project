@@ -1,7 +1,6 @@
-import torch
-import math
+"""Learned pooling model with an additional output linear projection"""
 from torch import nn
-import torch.nn.functional as F
+
 import awe_model.model as awe_model
 from awe_model.train_model import load_model
 
@@ -47,9 +46,13 @@ class SSEmodel(nn.Module):
                 param.requires_grad = False
 
         self.linear_layer1 = nn.Linear(middle_dim, output_dim)
+
+        # note that linear_layer2, relu and project_head are not used.
+        # They are here for backward compatibility with previous iteration of the model. 
         self.linear_layer2 = nn.Linear(middle_dim, transformer_dim)
         self.relu = nn.ReLU()
         self.project_head=nn.ModuleList([nn.Linear(transformer_dim,up_proj_dim),nn.ReLU(),nn.Linear(up_proj_dim,output_dim)])
+
         self.init_weight()
 
     def init_weight(self):

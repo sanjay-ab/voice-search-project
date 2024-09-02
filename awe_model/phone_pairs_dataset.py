@@ -17,7 +17,8 @@ class PhonePairsDataset(Dataset):
     """Dataset class for training the learned pooling model. Formats data into batches, where
     each batch is made up of a group of positive pairs, that can be used with an NTXent contrastive loss.
     Each pair consists of two different embeddings, which are from the same phone sequence. Other pairs
-    in the same batch are from different phone sequences."""
+    in the same batch are from different phone sequences.
+    """
 
     def __init__(self, embedding_dir_or_file, num_pairs_per_batch, phone_timings_file, time_limit=240,
                   min_phone_seq_length=3, max_phone_seq_length=9,

@@ -1,15 +1,19 @@
-from datetime import datetime as dt
-import torch
+"""Train learned pooling model contrastively using NTXent loss."""
 import time
 import random
 import sys
+from datetime import datetime as dt
+
+import torch
 import numpy as np
 from torch.utils.data import DataLoader
+
 from awe_model.train_model import train_one_epoch, calculate_validation_loss, save_model, load_model, NTXentLoss
 from rec_model.document_classes_dataset import DocumentClassesDataset, collate_as_tensor_and_pad
 from utils.common_functions import make_dir, parse_boolean_input
 
 if __name__== "__main__":
+    # Set seed for reproducibility
     seed = 3456542
     torch.manual_seed(seed)
     np.random.seed(seed)
@@ -86,8 +90,7 @@ if __name__== "__main__":
            f"clip norm: {clip_norm}, temperature: {temperature}, num pairs per batch: {num_pairs_per_batch}\n"
            f"time limit to create dataset: {time_limit_to_create_dataset}\n"
            f"weight decay: {weight_decay}\n"
-           f"awe_lr: {awe_lr}\n"
-           f"temperature: {temperature}\n"))
+           f"awe_lr: {awe_lr}\n"))
 
     make_dir(model_save_dir)
 

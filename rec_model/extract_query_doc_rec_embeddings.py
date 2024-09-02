@@ -1,10 +1,11 @@
+"""Extract recording embeddings for documents and queries."""
 import time
 import os
 import sys
 import pickle as pkl
+
 import torch
-from torch.nn.utils.rnn import pad_sequence
-from utils.common_functions import make_dir, split_list_into_n_parts_and_get_part, parse_boolean_input
+from utils.common_functions import make_dir, split_list_into_n_parts_and_get_part
 
 if __name__ == "__main__":
     # import moved here to avoid circular imports

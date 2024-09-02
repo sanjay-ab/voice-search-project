@@ -1,13 +1,7 @@
+"""Compute ranking of documents for all queries using vectorised operations."""
 import sys
-import os
-from awe_model.query_document_search_vectorised import perform_search
 
-def clean_pkl_files(directory, exceptions):
-    for filename in os.listdir(directory):
-        if filename.endswith(".pkl") and filename not in exceptions:
-            os.remove(f"{directory}/{filename}")
-    
-    os.rmdir(directory)
+from awe_model.query_document_search_vectorised import perform_search
 
 if __name__ == "__main__":
     args = sys.argv

@@ -1,4 +1,4 @@
-"""Compute ranking of documents for a given query using vectorised operations."""
+"""Compute ranking of documents for all queries using vectorised operations."""
 import time
 import sys
 import os
