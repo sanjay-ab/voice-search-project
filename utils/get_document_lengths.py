@@ -1,5 +1,7 @@
-import soundfile as sf
+"""Get the lengths of all the recordings in a specified directory and save them to a 
+file in ascending order, with the format: <filename>: <length in seconds>"""
 import os
+
 from utils.common_functions import get_wav_file_length
 
 if __name__ == "__main__":

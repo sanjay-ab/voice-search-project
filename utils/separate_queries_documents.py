@@ -1,3 +1,5 @@
+"""Separate documents and queries. So document collection does not contain documents
+that queries were cut out of. This is not used anymore."""
 import csv
 
 if __name__ == "__main__":

@@ -1,4 +1,6 @@
+"""Some common functions"""
 import os
+
 import soundfile as sf
 
 def make_dir(path):
@@ -33,6 +35,7 @@ def read_wav_file(fname, expected_sample_rate=16000):
     return speech 
 
 def get_wav_file_length(file_path, expected_sr=16000):
+    """Get the wav file length in seconds"""
     data, sr = sf.read(file_path)
     if sr != expected_sr:
         raise ValueError(f"Expected sample rate of {expected_sr} Hz, but got {sr} Hz")
@@ -41,6 +44,7 @@ def get_wav_file_length(file_path, expected_sr=16000):
     return num_samples / sr
 
 def parse_boolean_input(input):
+    """Converts string input to boolean"""
     if input.lower() in ['true', '1', 't', 'y', 'yes']:
         return True
     elif input.lower() in ['false', '0', 'f', 'n', 'no']:

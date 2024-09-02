@@ -1,12 +1,24 @@
+"""Extract phone timings from audio files using an XLSR-based multilingual phone recogniser (MPR),
+from the voice_search_server project, https://github.com/unmute-tech/voice-search-server."""
 import os
 import sys
 import time
+
 from utils.common_functions import split_list_into_n_parts_and_get_part
 from kaldi.lat.functions import compact_lattice_to_word_alignment
 from voice_search_server.enroll import pcm
 from voice_search_server.lib.asr import create_asr
 
 def load_phone_symbol_table(phone_symbol_table_path):
+    """Given a path to a phone symbol table, returns a 
+    dictionary mapping phone ids to phone symbols.
+
+    Args:
+        phone_symbol_table_path (str): path to phone symbol table.
+
+    Returns:
+        dict{int \: str}: dictionary mapping phone ids to phone symbols.
+    """
     phone_id_to_symbol = {}
     with open(phone_symbol_table_path, 'r') as f:
         for line in f:
@@ -15,6 +27,16 @@ def load_phone_symbol_table(phone_symbol_table_path):
     return phone_id_to_symbol
 
 def convert_phone_ids_to_symbols(phone_ids, phone_symbol_table):
+    """Convert list of phone ids to list of phone symbols. Given a
+    phone symbol table.
+
+    Args:
+        phone_ids (list[int]): list of phone ids.
+        phone_symbol_table (dict{int \: str}): dictionary maping phone ids to phone symbols.
+
+    Returns:
+        list[str]: list of phone symbols.
+    """
     return [phone_symbol_table[phone_id] for phone_id in phone_ids]
 
 
@@ -23,6 +45,7 @@ if __name__ == "__main__":
     audio_dir = f"{top_level_dir}/all_data"
     phone_timings_output_file = f"{top_level_dir}/analysis/phone_all_mpr.ctm"
 
+    # for parallel processing
     n_parts = 64
     if n_parts > 1:
         part = sys.argv[1]

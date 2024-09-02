@@ -1,4 +1,6 @@
+"""Read validation losses from models saved in a directory."""
 import os
+
 from awe_model.train_model import load_model
 from awe_model.model import SSEmodel
 

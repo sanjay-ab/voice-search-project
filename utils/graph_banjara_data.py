@@ -1,10 +1,25 @@
+"""Use to graph the number/duration of recordings for each label in the Banjara dataset"""
+from collections import defaultdict
+
 import matplotlib.pyplot as plt
 import matplotlib.transforms
-from collections import defaultdict
+
 from utils.split_banjara_queries_documents import banjara_get_data_dicts
 
 def banjara_graph_count_order_bar_chart(labels_dict, xlabel, ylabel, all_data_dir, queries_file, documents_file,
                                   save_fname, save_fig=False):
+    """Graph values in labels_dict, in order of counts of recordings in each label.
+
+    Args:
+        labels_dict (dict{str:float}): dictionary mapping labels to values.
+        xlabel (str): x-axis label.
+        ylabel (str): y-axis label.
+        all_data_dir (str): directory containing all wav files in the dataset.
+        queries_file (str): path to file containing names of all queries.
+        documents_file (str): path to file containing names of all documents.
+        save_fname (str): file name with which to save the figure.
+        save_fig (bool, optional): whether to save the produced figure. Defaults to False.
+    """
     labels_fnames, _ = banjara_get_data_dicts(all_data_dir, 0, 10000, queries_file, documents_file)
 
     labels_counts = defaultdict(int)
