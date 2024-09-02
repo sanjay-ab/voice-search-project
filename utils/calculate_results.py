@@ -1,23 +1,35 @@
 import os
 import re
-# from mhubert_model.query_document_search import get_embedding_and_results_dir
 import sys
 import csv
-import soundfile as sf
 from collections import defaultdict
-import matplotlib.pyplot as plt
+
+import soundfile as sf
+
 import mhubert_model.query_document_search as qds
+# from mhubert_model.query_document_search import get_embedding_and_results_dir
 from utils.split_banjara_queries_documents import banjara_get_data_dicts
 from utils.graph_banjara_data import banjara_graph_count_order_bar_chart
-
-def clean_string(string):
-    string = string.replace(".pkl", "")
-    string = string.replace("q_", "")
-    string = string.replace("\n", "")
-    string = string.strip()
-    return string
+from utils.examine_datasets import clean_string
+from utils.common_functions import get_wav_file_length
 
 def get_query_results_dict(results_file, limit=None):
+    """Get query results from a results file. The results file should be in the format:
+    1st line: "Ranking for query: [query_basename]", 
+    2nd line: "Document: Similarity", 
+    following lines: "[document_basename]: [similarity]", until all documents are exhausted,
+    then this repeats for the next query, until all queries are exhausted.
+
+    Args:
+        results_file (str): path to the results file
+        limit (int, optional): limit the number of results per query to consider
+            Set to None to consider all results. Defaults to None.
+
+    Returns:
+        dict{str \: tuple(list[str], list[float])}: a dictionary with query basenames as keys, and
+            as values: a tuple with 2 lists: an ordered list of document basenames and an ordered list
+            of corresponding document similarities to the query. Both lists ordered by similarity.     
+    """
     query_results_dict = {}
     skip_next_line = False
     counter = 0
@@ -45,6 +57,19 @@ def get_query_results_dict(results_file, limit=None):
     return query_results_dict
 
 def count_if_query_matches_itself(query_results_dict):
+    """Count how many times a query matches with itself (for Banjara) or
+    with the document it was extracted from (for Tamil) in the top 1 or 10 results.
+
+    Args:
+        query_results_dict (dict{str \: tuple(list[str], list[float])}): a dictionary
+            with query basenames as keys, and as values: a tuple with 2 lists: an
+            ordered list of document basenames and an ordered list of corresponding
+            document similarities to the query. Both lists ordered by similarity.
+
+    Returns:
+        tuple(int, int): number of queries whose best match is itself, number of queries
+            who match with itself in the top 10 matches.
+    """
     num_queries_best_match_is_itself = 0
     num_queries_that_match_with_itself_in_top_10 = 0
 
@@ -59,6 +84,18 @@ def count_if_query_matches_itself(query_results_dict):
     return num_queries_best_match_is_itself, num_queries_that_match_with_itself_in_top_10
 
 def extract_gold_labels_for_queries(reference_file, language):
+    """Extract the correct documents for each query from a reference file.
+
+    Args:
+        reference_file (str): path to reference file, each line is assumed to be 
+            formatted as: "[query] [tab] [correct_document_1] [tab] [correct_document_2] ..." for banjara, 
+            and: "[query] [tab] [label] [tab] [correct_document_1] [tab] [correct_document_2] ..." for tamil.
+        language (str): language of the reference file. Either "tamil" or "banjara"
+
+    Returns:
+        dict{str \: list[str]}: dictionary with query basenames as keys and list of document basenames
+            as values. The documents are those that are correct matches for the query.
+    """
     gold_documents_for_queries_dict = {}
     if language == "tamil":
         start_idx = 2
@@ -75,6 +112,21 @@ def extract_gold_labels_for_queries(reference_file, language):
     return gold_documents_for_queries_dict
 
 def calculate_correct_results(query_result_dict, gold_documents_for_queries_dict):
+    """Given a dictionary with query results and a dictionary with correct documents for queries,
+    calculate how many queries have at least one correct result in the top 5 and top 10 results.
+
+    Args:
+        query_result_dict (dict{str \: tuple(list[str], list[float])}): a dictionary
+            with query basenames as keys, and as values: a tuple with 2 lists: an
+            ordered list of document basenames and an ordered list of corresponding
+            document similarities to the query. Both lists ordered by similarity.
+        gold_documents_for_queries_dict (dict{str \: list[str]}): dictionary with 
+            query basenames as keys and list of document basenames as values. The documents
+            are those that are correct matches for the query.
+
+    Returns:
+        int, int: number of queries with at least one correct result in the top 5 and top 10 results.
+    """
     num_queries_with_result_in_top_10 = 0
     num_queries_with_result_in_top_5 = 0
 
@@ -91,13 +143,19 @@ def calculate_correct_results(query_result_dict, gold_documents_for_queries_dict
                 break
     return num_queries_with_result_in_top_5, num_queries_with_result_in_top_10
 
-def get_duration(fname, expected_sr=16000):
-    data, sr = sf.read(fname)
-    if sr != expected_sr:
-        raise ValueError(f"Expected sample rate of {expected_sr}, got {sr}")
-    return len(data)/sr
-
 def get_label(file_basename, language, banjara_label_directory=None, tamil_label_dict=None):
+    """Get label for a file basename.
+
+    Args:
+        file_basename (str): file basename
+        language (str): language of the file basename. Either "banjara" or "tamil"
+        banjara_label_directory (str, optional): path to directory with label files. Defaults to None.
+        tamil_label_dict (dict{str:str}, optional): dictionary mapping file basenames to
+            labels for tamil. Defaults to None.
+
+    Returns:
+        str: label for the file basename
+    """
     if language == "banjara":
         label_fname = f"{banjara_label_directory}/{file_basename}.label"
         with open(label_fname, "r") as f:
@@ -106,9 +164,17 @@ def get_label(file_basename, language, banjara_label_directory=None, tamil_label
         label = tamil_label_dict[file_basename]
     return label
 
-def read_tamil_label_file(tamil_label_file):
+def read_tamil_label_file(reference_file):
+    """Read reference file and extract labels for tamil documents.
+
+    Args:
+        reference_file (str): path to reference file with labels for tamil queries and documents
+
+    Returns:
+        dict{str \: str}: defaultdict with recording basenames as keys and labels as values
+    """
     tamil_label_dict = defaultdict(lambda: "label unknown")
-    with open(tamil_label_file, "r") as f:
+    with open(reference_file, "r") as f:
         for line in f:
             split_line = line.split("\t")
             query = split_line[0]
@@ -122,9 +188,38 @@ def read_tamil_label_file(tamil_label_file):
 
 def write_analysis_file(analysis_file, query_results_dict, gold_documents_for_queries_dict, 
                         query_audio_dir, document_audio_dir, language, avg_precision_dict_at_5, 
-                        avg_precision_dict_all, banjara_label_dir=None, tamil_label_file=None):
+                        avg_precision_dict_all, banjara_label_dir=None, tamil_reference_file=None):
+    """Write an analysis file with information about the query results.
+
+    Args:
+        analysis_file (str): path to the analysis file
+        query_results_dict (dict{str \: tuple(list[str], list[float])}): a dictionary with query 
+            basenames as keys, and as values: a tuple with 2 lists: an ordered list of document
+            basenames and an ordered list of corresponding document similarities to the query.
+            Both lists ordered by similarity.
+        gold_documents_for_queries_dict (dict{str \: list[str]}): dictionary with query basenames
+            as keys and list of document basenames as values. The documents are those that are
+            correct matches for the query.
+        query_audio_dir (str): directory with query audio files
+        document_audio_dir (str): directory with document audio files
+        language (str): language of the data. Either "banjara" or "tamil"
+        avg_precision_dict_at_5 (dict{str:float}): dictionary with query basenames as keys and
+            average precision at 5 as values.
+        avg_precision_dict_all (dict{str:float}): dictionary with query basenames as keys and
+            average precision overall as values.
+        banjara_label_dir (str, optional): path to directory containing banjara labels. Defaults to None.
+        tamil_reference_file (str, optional): path to tamil reference file. Defaults to None.
+    """
+    if language not in ["banjara", "tamil"]:
+        raise ValueError("Language must be either 'banjara' or 'tamil'.")
+
+    if banjara_label_dir is None and language == "banjara":
+        raise ValueError("Banjara label directory must be provided.")
+    if tamil_reference_file is None and language == "tamil":
+        raise ValueError("Tamil reference file must be provided.")
+
     if language == "tamil":
-        tamil_label_dict = read_tamil_label_file(tamil_label_file)
+        tamil_label_dict = read_tamil_label_file(tamil_reference_file)
     else:
         tamil_label_dict = None
     
@@ -137,7 +232,8 @@ def write_analysis_file(analysis_file, query_results_dict, gold_documents_for_qu
                 query_fname = f"q_{query}.wav"
             else:
                 query_fname = f"{query}.wav"
-            query_duration = get_duration(f"{query_audio_dir}/{query_fname}")
+
+            query_duration = get_wav_file_length(f"{query_audio_dir}/{query_fname}")
 
             query_label = get_label(query, language, banjara_label_dir, tamil_label_dict)
 
@@ -163,7 +259,7 @@ def write_analysis_file(analysis_file, query_results_dict, gold_documents_for_qu
 
             f.write("MATCHED DOCUMENTS:\n")
             for i, document in enumerate(document_results):
-                document_duration = get_duration(f"{document_audio_dir}/{document}.wav")
+                document_duration = get_wav_file_length(f"{document_audio_dir}/{document}.wav")
                 document_label = get_label(document, language, banjara_label_dir, tamil_label_dict)
                 document_similarity = document_similarities[i]
                 if document == query:
@@ -175,7 +271,7 @@ def write_analysis_file(analysis_file, query_results_dict, gold_documents_for_qu
 
             f.write("ALL GOLD DOCUMENTS::\n")
             for document in gold_documents_for_queries_dict[query]:
-                document_duration = get_duration(f"{document_audio_dir}/{document}.wav")
+                document_duration = get_wav_file_length(f"{document_audio_dir}/{document}.wav")
                 document_label = get_label(document, language, banjara_label_dir, tamil_label_dict)
                 if document in document_results:
                     i = document_results.index(document)
@@ -188,20 +284,21 @@ def write_analysis_file(analysis_file, query_results_dict, gold_documents_for_qu
 
 def calculate_mean_average_precision(query_results_dict, gold_documents_for_queries_dict, 
                                      num_results_to_consider=None):
-    """calculates the mean average precision for the given query results
+    """Calculate the mean average precision for the given query results.
 
     Args:
-        query_results_dict (dict{str:tuple(list[str], list[float])}): dictionary with query basenames
-          as keys and tuples with 2 lists: a list of document basenames and a list of corresponding document 
-          similarities, as values. The documents are those that are returned by the search for the query.
+        query_results_dict (dict{str \: tuple(list[str], list[float])}): dictionary with query basenames
+            as keys and tuples with 2 lists: a list of document basenames and a list of corresponding document 
+            similarities, as values. The documents are those that are returned by the search for the query.
         gold_documents_for_queries_dict (dict{str:list[str]}): dictionary with query basenames as keys
             and list of document basenames as values. The documents are those that are correct matches 
             for the query.
         num_results_to_consider (int, optional): specifies the number of results to consider for the MAP
-        calculation. If set to None then all results are included. Defaults to None.
+            calculation. If set to None then all results are included. Defaults to None.
 
     Returns:
-        float: the MAP score
+        tuple(float, dict{str \: float}): the MAP score, dictionary mapping query basenames to their
+            average precision scores.
     """
     average_precisions = {}
 
@@ -230,6 +327,32 @@ def calculate_mean_average_precision(query_results_dict, gold_documents_for_quer
 
 def calculate_stats_per_label(data_dir, document_file, query_files, query_results_dict, 
                             gold_documents_for_queries_dict, language):
+    """Calculate statistics per label for the given query results. Useful for graphing 
+    and analysis.
+
+    Args:
+        data_dir (str): directory with all data files
+        document_file (str): file with all documents listed
+        query_files (str): file with all queries listed
+        query_results_dict (dict{str \: tuple(list[str], list[float])}): a dictionary with query 
+            basenames as keys, and as values: a tuple with 2 lists: an ordered list of document
+            basenames and an ordered list of corresponding document similarities to the query.
+            Both lists ordered by similarity.
+        gold_documents_for_queries_dict (dict{str \: list[str]}): dictionary with query basenames
+            as keys and list of document basenames as values. The documents are those that are
+            correct matches for the query.
+        language (str): language of the data. Either "banjara" or "tamil"
+
+    Raises:
+        NotImplementedError: function is not implemented for Tamil
+
+    Returns:
+        tuple(dict{str \: int}, dict{str \: float}, dict{str \: int}, dict{str \: float}
+            , dict{str \: float}, dict{str \: float}): tuple of dictionaries with labels as keys and
+            the following as values: number of queries with a top 5 match, percent of queries with
+            a top 5 match, number of queries with a top 10 match, percent of queries with a top 10 match,
+            MAP at 5, MAP overall.
+    """
     if language == "tamil":
         raise NotImplementedError("This function is not implemented for Tamil.")
     labels_fnames, _ = banjara_get_data_dicts(data_dir, 0, 10000, query_files, document_file)
@@ -298,9 +421,9 @@ if __name__ == "__main__":
 
     training_seq_lengths = "3-9"
     results_dir_prefix = f"data/{language}/results/{model_type}"
-    # layer = 9
     limit = None  # limit the number of queries to consider
-    results_limit = None  # limit used when saving the results, set to None if no limit used
+    results_limit = None  # results limit that was used when saving the results, set to None if no limit was used
+
     graph_results = False
     save_figures = False
 
@@ -362,29 +485,29 @@ if __name__ == "__main__":
                                     query_results_dict, gold_documents_for_queries_dict,
                                       num_results_to_consider=None)
 
-    if language == "banjara":
+    if language == "banjara" and graph_results:
         labels_top5, labels_top5_percent, labels_top10, labels_top10_percent, labels_map_at_5, labels_map_all = \
             calculate_stats_per_label(all_data_dir, documents_file, queries_file, query_results_dict, 
                                     gold_documents_for_queries_dict, language)
-        if graph_results:
-            banjara_graph_count_order_bar_chart(labels_top5, "Label", "Number of queries with a top 5 match",
-                                                all_data_dir, queries_file, documents_file,
-                                                 f"figures/labels_top5.png", save_figures)
 
-            banjara_graph_count_order_bar_chart(labels_top5_percent, "Label", 
-                                                "Percent of queries with a top 5 match",
-                                                all_data_dir, queries_file, documents_file,
-                                                 f"figures/labels_top5_percent.png", save_figures)
+        banjara_graph_count_order_bar_chart(labels_top5, "Label", "Number of queries with a top 5 match",
+                                            all_data_dir, queries_file, documents_file,
+                                                f"figures/labels_top5.png", save_figures)
 
-            banjara_graph_count_order_bar_chart(labels_map_at_5, "Label", 
-                                                "MAP at 5",
-                                                all_data_dir, queries_file, documents_file,
-                                                 f"figures/labels_map_5.png", save_figures)
+        banjara_graph_count_order_bar_chart(labels_top5_percent, "Label", 
+                                            "Percent of queries with a top 5 match",
+                                            all_data_dir, queries_file, documents_file,
+                                                f"figures/labels_top5_percent.png", save_figures)
 
-            banjara_graph_count_order_bar_chart(labels_map_all, "Label", 
-                                                "MAP all",
-                                                all_data_dir, queries_file, documents_file,
-                                                 f"figures/labels_map_all.png", save_figures)
+        banjara_graph_count_order_bar_chart(labels_map_at_5, "Label", 
+                                            "MAP at 5",
+                                            all_data_dir, queries_file, documents_file,
+                                                f"figures/labels_map_5.png", save_figures)
+
+        banjara_graph_count_order_bar_chart(labels_map_all, "Label", 
+                                            "MAP all",
+                                            all_data_dir, queries_file, documents_file,
+                                                f"figures/labels_map_all.png", save_figures)
     
     if create_analysis_file:
         analysis_file = f"{results_dir}/results_analysis.txt"

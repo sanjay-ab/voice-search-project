@@ -18,9 +18,9 @@ def extract_gold_labels_for_queries_tamil(reference_file):
     """Given a reference file with queries, their corresponding labels and correct documents,
     return two dictionaries: one with queries as keys and a list of their corresponding correct
     documents as values, another with queries as keys and their corresponding labels as values.
-    The reference file is assumed to have the following format: 
+    Each line in the reference file is assumed to have the following format: 
     "[query] [tab] [label] [tab] [correct_document_1] [tab] [correct_document_2]..."
-    where the spaces are just for readability and [tab] is a tab character.
+    where the spaces are just for readability and [tab] is a tab character. 
     Note that this function is specific to our setup with the tamil dataset.
 
     Args:
@@ -48,7 +48,7 @@ def extract_gold_labels_for_queries_tamil(reference_file):
 def extract_gold_labels_for_queries_banjara(reference_file):
     """Given a reference file with queries and their corresponding correct documents,
     return a dictionary with queries as keys and a list of their corresponding correct
-    documents as values. The reference file is assumed to have the following format:
+    documents as values. Each line in the reference file is assumed to have the following format:
     "[query] [tab] [correct_document_1] [tab] [correct_document_2]..."
     where the spaces are just for readability and [tab] is a tab character.
     This function is specific to our setup with the banjara dataset.
@@ -116,7 +116,7 @@ def read_phone_timings_file(file_path):
     """Reads phone timings file and produces a defaultdict with file basenames as keys and 
     a dictionary with the corresponding phones in the file and their corresponding start times
     and durations as values. Files that only contain silence are ignored and are not included
-    in the output dictionary. The phone timings file is assumed to have the following format:
+    in the output dictionary. Each line in the phone timings file is assumed to have the following format:
     "[doc_basename] 1 [start_time] [duration] [phone]", where the spaces are just for readability.
     
     Args:
