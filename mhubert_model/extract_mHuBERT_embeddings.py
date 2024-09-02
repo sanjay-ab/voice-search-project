@@ -13,6 +13,15 @@ from utils.common_functions import make_dir
 class HubertEmbedder:
     """Extracts mHuBERT embeddings from wav files."""
     def __init__(self, device, hidden_layers = [-1], model_name="utter-project/mHuBERT-147", sampling_rate=16000):
+        """Initialise the HubertEmbedder.
+
+        Args:
+            device (str): compute device to use.
+            hidden_layers (list[int], optional): list of hidden layers from which to extract mHuBERT embeddings from, -1
+                mean the final layer. Defaults to [-1].
+            model_name (str, optional): hugging face model name. Defaults to "utter-project/mHuBERT-147".
+            sampling_rate (int, optional): sample rate of data. Defaults to 16000.
+        """
         self.feature_extractor = AutoFeatureExtractor.from_pretrained(model_name, do_normalize=True)
         self.model = HubertModel.from_pretrained(model_name, output_hidden_states=True)
         self.model.eval()
