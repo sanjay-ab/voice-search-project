@@ -1,6 +1,9 @@
 # Voice Search Project
 
 ## Overall Description
+Search systems are prevalent in modern digital technology, but they are primarily text-based. 
+This creates challenges for communities that speak languages without a written form, making it difficult for them to access these technologies. 
+While speech-based search systems could offer a valuable alternative, the limited resources available for unwritten languages mean that these languages are rarely supported.
 This project explores different methods of producing a voice search system for low-resource unwritten languages, using transfer learning.
 The search task is formulated as a spoken Query-by-Example task.
 Models are trained/tested on Tamil and then tested directly on Gormati, an unwritten Indic language, without finetuning.
