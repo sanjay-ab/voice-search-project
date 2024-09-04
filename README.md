@@ -26,13 +26,13 @@ Note that windows can be specified either in time (e.g., 240 ms) or in phones (e
 
 ### Recording Embedding System
 This system uses a learned pooling layer adapted from the AWE model to take a recording and convert it into a single vector embedding. 
-This model was trained contrastively on Tamil, to embed recordings containing the same keyword similarly and recordings containing different keywords differently. 
+This model was trained contrastively on Tamil, to embed recordings containing the same keyword similarly and recordings containing different keywords differently.
 
 ## Data
 The Tamil data was used for debugging and training the models since it had existing gold transcriptions and was higher resource than the target unwritten Gormati data.
-The Tamil data was taken from the Indic ASR challenge dataset [[4]](#4) and converted into a keyword search task for our project. 
+The Tamil data was taken from the Indic ASR challenge dataset [[4]](#4) and converted into a keyword search task for our project.
 
-The target data was collected from a Banjara farming community in India, who speak Gormati, a language with no written form [[5]](#5). 
+The target data was collected from a Banjara farming community in India, who speak Gormati, a language with no written form [[5]](#5).
 This data is very low-resource (around 300 files and <4 hours of data), so it was only used for testing, not training.
 The data was already formatted into classes, with each recording being a natural description of its respective class label.
 To convert this into a search task, queries were simply randomly selected from each class.
