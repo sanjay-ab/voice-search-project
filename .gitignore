@@ -20,6 +20,12 @@ data/LibriSpeech-84-121123.trans.txt
 **/results_all.txt
 **/results_analysis.txt
 
+data/gujarati/*
+data/telugu/*
+data/hindi_upsampled/*
+data/marathi_upsampled/*
+data/odia_upsampled/*
+
 speechseqembeddings/LibriSpeech
 speechseqembeddings/training_data
 speechseqembeddings/pretrained

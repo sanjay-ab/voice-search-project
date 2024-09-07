@@ -4,8 +4,6 @@ import sys
 import csv
 from collections import defaultdict
 
-import soundfile as sf
-
 import mhubert_model.query_document_search as qds
 # from mhubert_model.query_document_search import get_embedding_and_results_dir
 from utils.split_banjara_queries_documents import banjara_get_data_dicts

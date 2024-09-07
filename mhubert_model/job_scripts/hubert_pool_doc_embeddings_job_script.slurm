@@ -11,12 +11,12 @@
 echo $SLURM_ARRAY_TASK_ID
 
 export HF_HOME=/work/tc062/tc062/sanjayb/.cache/hugging_face_cache
-export PYTHONPATH=/work/tc062/tc062/sanjayb/dissertation:$PYTHONPATH
+export PYTHONPATH=/work/tc062/tc062/sanjayb/voice-search-project:$PYTHONPATH
 
 # Load the required modules 
 module load python/3.9.13
 module load pytorch/1.13.1
-source /work/tc062/tc062/sanjayb/dissertation/mhubert_model/hubert_env/bin/activate
+source /work/tc062/tc062/sanjayb/voice-search-project/mhubert_model/hubert_env/bin/activate
 
 WINDOW_SIZE_MS=$1
 STRIDE_MS=$2
