@@ -1,6 +1,7 @@
 """Extract mHuBERT embeddings from wav files."""
 import os
 import time
+import sys
 import pickle as pkl
 
 from transformers import HubertModel, AutoFeatureExtractor
@@ -64,12 +65,13 @@ class HubertEmbedder:
         return hidden_states
 
 if __name__ == "__main__":
-    layers = [7]  # from which mHuBERT layers to extract embeddings
+    layers = [9]  # from which mHuBERT layers to extract embeddings
+    language = "tamil"
     device = "cuda"
     batch_size = 1  # don't change - resulting IR system is much poorer for batch_size>1
     # this is likely since mHuBERT is not trained to embed padded sequences
 
-    top_level_dir = "data/tamil/"
+    top_level_dir = f"data/{language}/"
     top_level_embedding_dir = f"{top_level_dir}/embeddings"
     t1 = time.perf_counter()
     hubert = HubertEmbedder(device, hidden_layers=layers)
@@ -77,7 +79,7 @@ if __name__ == "__main__":
     print(f"TIME TO LOAD HUBERT: {t2-t1:.2f} s")
 
     t1 = time.perf_counter()
-    for folder in ["validation_data", "training_data"]:
+    for folder in ["documents"]:
         print(f"Generating embeddings for {folder}")
         audio_directory = f"{top_level_dir}/{folder}"
         dataset = AudioDataset(audio_directory)

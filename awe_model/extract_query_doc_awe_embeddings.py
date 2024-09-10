@@ -18,13 +18,14 @@ from utils.examine_datasets import read_phone_timings_file
 class PhoneSplitter:
     """Splits embedded recordings into phone sequences."""
 
-    def __init__(self, phone_timings_file, query_times_file=None,
+    def __init__(self, phone_timings_file, language, query_times_file=None,
                   min_phone_seq_length = 3, max_phone_seq_length = 9,
                     silence_phones = ["sil", "sp", "spn"]):
         """Initialise the PhoneSplitter class.
 
         Args:
             phone_timings_file (str): path of phone timings file - .ctm file containing phone timings for each recording.
+            language (str): language of the recordings.
             query_times_file (str, optional): path of query times file. This is only used if the queries were made by cutting
                 segments out of longer recordings, then this file holds timings of where the query is located inside the
                 larger recording. Defaults to None.
@@ -36,7 +37,7 @@ class PhoneSplitter:
         self.files_phones_dict = read_phone_timings_file(phone_timings_file)
 
         if query_times_file is not None:
-            self.query_times_dict = read_query_times_file(query_times_file)
+            self.query_times_dict = read_query_times_file(query_times_file, language)
         else:
             self.query_times_dict = None
         
@@ -293,7 +294,8 @@ if __name__ == "__main__":
             f"data/tamil/models/awe/{layer}/lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9"
         model_name = "2024-07-20_23:47:58_checkpoint_epoch_0.pt"
 
-    scratch_prefix = f"/scratch/space1/tc062/sanjayb"
+    # scratch_prefix = f"/scratch/space1/tc062/sanjayb"
+    scratch_prefix = f"."
     top_level_embedding_dir = f"data/{language}/embeddings"
     phone_timings_file = f"data/{language}/analysis/{phone_timings_fname}"
     skip_existing_files = False
@@ -304,7 +306,7 @@ if __name__ == "__main__":
     else:
         device = "cpu"
 
-    if folder == "queries" and language == "tamil":
+    if "queries" in folder and language in ["tamil", "gujarati", "hindi", "marathi", "telugu", "odia"]:
         query_times_file = f"data/{language}/analysis/queries_times.txt"
         print(f"Using query times file: {query_times_file}")
     else:
@@ -314,7 +316,7 @@ if __name__ == "__main__":
         splitter = WindowSplitter(min_phone_seq_length=min_phone_seq_length, 
                                     max_phone_seq_length=max_phone_seq_length)
     else:
-        splitter = PhoneSplitter(phone_timings_file, query_times_file, 
+        splitter = PhoneSplitter(phone_timings_file, language, query_times_file, 
                             min_phone_seq_length, max_phone_seq_length)
 
     embedding_dir = f"{top_level_embedding_dir}/{folder}/{layer}/raw"  # directory with embeddings to process

@@ -15,7 +15,7 @@ from mhubert_model.extract_mHuBERT_embeddings import HubertEmbedder
 from utils.common_functions import read_wav_file, split_list_into_n_parts_and_get_part, make_dir
 from utils.examine_datasets import read_phone_timings_file
 
-def read_query_times_file(query_times_file):
+def read_query_times_file(query_times_file, language="tamil"):
     """Read query times file. Useful if queries were cut out of longer recordings.
 
     Args:
@@ -24,6 +24,7 @@ def read_query_times_file(query_times_file):
             "<original_file_basename> <tab> <query_keyword> <tab> <start_time> <tab> <end_time>"
             where the spaces are just for readability, <tab> is a tab character and start_time 
             and end_time are in seconds.
+        language (str, optional): language of the queries. Defaults to "tamil".
 
     Returns:
         dict{str \: tuple(float, float)}: dictionary mapping file names to start and end times
@@ -35,6 +36,10 @@ def read_query_times_file(query_times_file):
             original_filename, _, start_time, end_time = line
             file = original_filename
             counter = 1
+
+            if language != "tamil":
+                file = original_filename + f"_{counter}"
+
             while file in query_times_dict.keys():
                 counter += 1
                 file = original_filename + f"_{counter}"

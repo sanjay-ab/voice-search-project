@@ -1,6 +1,7 @@
 """Examine various aspects of the datasets, including the duration of the data, the duration of voice activity,
 and the number of documents in the search corpus."""
 import os
+import re
 from collections import defaultdict
 
 from utils.get_document_lengths import get_wav_file_length
@@ -136,7 +137,8 @@ def read_phone_timings_file(file_path):
     with open(file_path) as f:
         for row in f:
             split_string = row.split(" ")
-            doc_name = split_string[0].replace("tamil_", "")
+            doc_name = re.sub(r"^[a-z]+_", "", split_string[0])
+            # doc_name = split_string[0].replace("tamil_", "")
 
             if prev_doc_name != doc_name and prev_doc_name != "":
                 if not prev_doc_has_non_sil_phones:

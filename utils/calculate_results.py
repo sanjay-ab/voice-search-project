@@ -95,7 +95,7 @@ def extract_gold_labels_for_queries(reference_file, language):
             as values. The documents are those that are correct matches for the query.
     """
     gold_documents_for_queries_dict = {}
-    if language == "tamil":
+    if language in ["tamil", "gujarati", "hindi", "marathi", "telugu", "odia"]:
         start_idx = 2
     elif language == "banjara":
         start_idx = 1
@@ -141,7 +141,7 @@ def calculate_correct_results(query_result_dict, gold_documents_for_queries_dict
                 break
     return num_queries_with_result_in_top_5, num_queries_with_result_in_top_10
 
-def get_label(file_basename, language, banjara_label_directory=None, tamil_label_dict=None):
+def get_label(file_basename, language, banjara_label_directory=None, language_label_dict=None):
     """Get label for a file basename.
 
     Args:
@@ -158,12 +158,12 @@ def get_label(file_basename, language, banjara_label_directory=None, tamil_label
         label_fname = f"{banjara_label_directory}/{file_basename}.label"
         with open(label_fname, "r") as f:
             label = f.readline().strip()
-    elif language == "tamil":
-        label = tamil_label_dict[file_basename]
+    elif language in ["tamil", "gujarati", "hindi", "marathi", "telugu", "odia"]:
+        label = language_label_dict[file_basename]
     return label
 
-def read_tamil_label_file(reference_file):
-    """Read reference file and extract labels for tamil documents.
+def read_non_banjara_label_file(reference_file):
+    """Read reference file and extract labels for documents for languages other than gormati.
 
     Args:
         reference_file (str): path to reference file with labels for tamil queries and documents
@@ -171,7 +171,7 @@ def read_tamil_label_file(reference_file):
     Returns:
         dict{str \: str}: defaultdict with recording basenames as keys and labels as values
     """
-    tamil_label_dict = defaultdict(lambda: "label unknown")
+    language_label_dict = defaultdict(lambda: "label unknown")
     with open(reference_file, "r") as f:
         for line in f:
             split_line = line.split("\t")
@@ -179,10 +179,10 @@ def read_tamil_label_file(reference_file):
             query = clean_string(query)
             label = split_line[1]
             documents = split_line[2:-1]
-            tamil_label_dict[query] = label
+            language_label_dict[query] = label
             for document in documents:
-                tamil_label_dict[document] = label
-    return tamil_label_dict
+                language_label_dict[document] = label
+    return language_label_dict
 
 def write_analysis_file(analysis_file, query_results_dict, gold_documents_for_queries_dict, 
                         query_audio_dir, document_audio_dir, language, avg_precision_dict_at_5, 
@@ -217,7 +217,7 @@ def write_analysis_file(analysis_file, query_results_dict, gold_documents_for_qu
         raise ValueError("Tamil reference file must be provided.")
 
     if language == "tamil":
-        tamil_label_dict = read_tamil_label_file(tamil_reference_file)
+        tamil_label_dict = read_non_banjara_label_file(tamil_reference_file)
     else:
         tamil_label_dict = None
     
@@ -429,7 +429,7 @@ if __name__ == "__main__":
         results_limit = "all"
 
     # reference file relating queries to their correct documents
-    if language == "tamil":
+    if language in ["tamil", "gujarati", "hindi", "marathi", "telugu", "odia"]:
         reference_file = f"data/{language}/analysis/ref_of_queries_in_docs.txt"
     elif language == "banjara":
         reference_file = f"data/{language}/analysis/ref_of_queries_in_docs_nq_99_nd_288.txt"

@@ -8,13 +8,14 @@ from collections import defaultdict
 from awe_model.extract_query_doc_awe_embeddings import PhoneSplitter
 from utils.common_functions import make_dir
 
-def get_embedded_phones_dict(phone_timings_file, embedding_dir, min_phone_seq_length, max_phone_seq_length,
+def get_embedded_phones_dict(phone_timings_file, language, embedding_dir, min_phone_seq_length, max_phone_seq_length,
                              perturb_sequences=False, max_one_sided_perturb_amount=0.1, quiet=True):
     """Extract groups of mHuBERT embeddings from a directory of embedded audio files, where each group
     matches a specific phone sequence.
 
     Args:
         phone_timings_file (str): path of .ctm file with phone timing information for all recordings.
+        language (str): language of the recordings.
         embedding_dir (str): path of directory with the embedded audio files, in .pkl format.
         min_phone_seq_length (int): minimum phone sequence length (in phones) to consider.
         max_phone_seq_length (int): maximum phone sequence length (in phones) to consider.
@@ -33,7 +34,7 @@ def get_embedded_phones_dict(phone_timings_file, embedding_dir, min_phone_seq_le
             corresponding to that phone sequence.
     """
 
-    splitter = PhoneSplitter(phone_timings_file, None, min_phone_seq_length, max_phone_seq_length)
+    splitter = PhoneSplitter(phone_timings_file, language, None, min_phone_seq_length, max_phone_seq_length)
 
     files = os.listdir(embedding_dir)
     dataset_length = len(files)
@@ -61,7 +62,8 @@ def get_embedded_phones_dict(phone_timings_file, embedding_dir, min_phone_seq_le
 
 
 if __name__ == "__main__":
-    top_level_dir = "data/tamil/"
+    language = "tamil"
+    top_level_dir = f"data/{language}/"
     folder = "validation_data"
     top_level_embedding_dir = f"{top_level_dir}/embeddings/{folder}"
     phone_timings_file = f"{top_level_dir}/analysis/phone_all.ctm"
@@ -83,7 +85,7 @@ if __name__ == "__main__":
     make_dir(save_embedding_dir)
 
     embedded_phones_dict = get_embedded_phones_dict(
-                            phone_timings_file, embedding_dir, min_phone_seq_length, max_phone_seq_length,
+                            phone_timings_file, language, embedding_dir, min_phone_seq_length, max_phone_seq_length,
                             perturb_sequences, max_one_sided_perturb_amount, False)
     
     t1 = time.perf_counter()

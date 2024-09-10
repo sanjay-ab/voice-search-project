@@ -7,6 +7,7 @@ import pickle as pkl
 import mhubert_model.query_document_search as qds
 from mhubert_model.query_document_search_vectorised import compute_ranking 
 from awe_model.ranking_preprocessing import batch_normalise_files
+from utils.common_functions import parse_boolean_input
 
 def clean_pkl_files(directory, exceptions):
     """Remove all .pkl files in a directory, except for those in the exceptions list.
@@ -121,20 +122,26 @@ if __name__ == "__main__":
         layer = int(args[2])
         min_phone_seq_length = int(args[3])
         max_phone_seq_length = int(args[4])
-        document_query_suffix = args[5]
-        results_path = args[6]
+        use_queries_cut_after_embedding = parse_boolean_input(args[5])
+        document_query_suffix = args[6]
+        results_path = args[7]
     else:
         language = "banjara"
         layer = 9
         min_phone_seq_length = 5
         max_phone_seq_length = 14
+        use_queries_cut_after_embedding = False
         document_query_suffix = f"{min_phone_seq_length}_{max_phone_seq_length}"
         results_path = f"{layer}/tamil_train_3_9/{min_phone_seq_length}_{max_phone_seq_length}"
 
-    scratch_prefix = f"/scratch/space1/tc062/sanjayb"
+    # scratch_prefix = f"/scratch/space1/tc062/sanjayb"
+    scratch_prefix = f"."
     embedding_dir = f"{scratch_prefix}/data/{language}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
-    query_prefix = f"{embedding_dir}/queries"
+    if use_queries_cut_after_embedding:
+        query_prefix = f"{embedding_dir}/queries_cut_after_embedding"
+    else:
+        query_prefix = f"{embedding_dir}/queries"
     results_dir_prefix = \
         f"data/{language}/results/awe/"
 
