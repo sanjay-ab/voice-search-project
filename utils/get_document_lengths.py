@@ -5,7 +5,7 @@ import os
 from utils.common_functions import get_wav_file_length
 
 if __name__ == "__main__":
-    language = "telugu"
+    language = "gujarati"
     documents_directory = f"data/{language}/queries"
     # queries_directory = "data/{language}/queries"
     save_file = f"data/{language}/analysis/queries_lengths.txt"

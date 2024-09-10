@@ -30,7 +30,7 @@ def link_files(fname_with_list, source_dirs, target_dir):
                 print(f"File {fname_basename}.wav not found in source directories: {source_dirs}")
 
 if __name__ == "__main__":
-    language = "telugu"
+    language = "gujarati"
     top_level_dir = f"data/{language}/"
     test_data_dir = f"{top_level_dir}/all_data"
     # test_data_dir = f"{top_level_dir}/test/audio"

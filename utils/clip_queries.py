@@ -81,4 +81,4 @@ def clip_queries_bulk(lang):
 
 if __name__ == "__main__":
     # print(get_query_word_timings("gujarati")[:10])
-    clip_queries_bulk("telugu")
+    clip_queries_bulk("gujarati")
