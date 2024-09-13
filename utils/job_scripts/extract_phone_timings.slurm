@@ -6,7 +6,7 @@
 #SBATCH --account=tc062-pool3
 #SBATCH --time=04:00:00
 #SBATCH --nodes=1
-#SBATCH --array=0-9
+#SBATCH --array=0-63
 
 echo $SLURM_ARRAY_TASK_ID
 
@@ -21,4 +21,7 @@ export CONDARC=${CONDA_ROOT}/.condarc
 eval "$(conda shell.bash hook)"
 conda activate voice-search-server
 
-srun python -u utils/extract_phone_timings.py $SLURM_ARRAY_TASK_ID 
+LANGUAGE=odia
+N_PARTS=64
+
+srun python -u utils/extract_phone_timings.py $N_PARTS $SLURM_ARRAY_TASK_ID $LANGUAGE

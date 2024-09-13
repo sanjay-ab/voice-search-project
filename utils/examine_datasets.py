@@ -15,7 +15,7 @@ def clean_string(string):
     string = string.strip()
     return string
 
-def extract_gold_labels_for_queries_tamil(reference_file):
+def extract_gold_labels_for_queries_non_banjara(reference_file, language):
     """Given a reference file with queries, their corresponding labels and correct documents,
     return two dictionaries: one with queries as keys and a list of their corresponding correct
     documents as values, another with queries as keys and their corresponding labels as values.
@@ -26,6 +26,7 @@ def extract_gold_labels_for_queries_tamil(reference_file):
 
     Args:
         reference_file (str): path to reference file
+        language (str): language of the dataset..
 
     Returns:
         tuple(dict{str \: list[str]}, dict{str \: str}): first dictionary has queries as keys and
@@ -35,13 +36,19 @@ def extract_gold_labels_for_queries_tamil(reference_file):
     gold_documents_for_queries_dict = {}
     query_labels = {}
 
+    if language == "tamil":
+        end_idx = -1
+    elif language in ["gujarati", "telugu", "hindi", "marathi", "odia"]:
+        end_idx = None
+
     with open(reference_file, "r") as f:
         for line in f:
             split_line = line.split("\t")
             query = split_line[0]
             query = clean_string(query)
             query_labels[query] = split_line[1]
-            documents = split_line[2:-1]
+            documents = split_line[2:end_idx]
+            documents[-1] = documents[-1].strip()
             gold_documents_for_queries_dict[query] = documents
     
     return gold_documents_for_queries_dict, query_labels
@@ -208,10 +215,34 @@ def get_voice_activity_duration_of_docs(document_set, files_phones_dict, sil_pho
     
     return duration
 
+def calc_num_docs_per_query(gold_documents_for_queries_dict):
+    """Calculates the distribution of the numbers of documents per query - i.e., how many
+    queries have 1 related document, how many have 2, etc.
+
+    Args:
+        gold_documents_for_queries_dict (dict{str \: list[str]}): dictionary with queries as keys and
+            lists of correct documents as values
+
+    Returns:
+        dict{str \: int}: dictionary with queries as keys and the number of correct documents as values
+    """
+    num_docs_per_query = defaultdict(int)
+    for _, docs in gold_documents_for_queries_dict.items():
+        num_docs = len(docs)
+        num_docs_per_query[num_docs] += 1
+    
+    num_docs_per_query = dict(sorted(num_docs_per_query.items()))
+    
+    num_queries = len(gold_documents_for_queries_dict)
+    percent_docs_per_query = {num_docs: round((num_docs_per_query[num_docs] / num_queries) * 100, 2) for num_docs in num_docs_per_query.keys()}
+    return num_docs_per_query, percent_docs_per_query
+
 
 if __name__ == "__main__":
     # dir where all the data is stored, including data that was filtered out after preprocessing
-    language = "tamil"
+    language = "telugu"
+    print(f"Language: {language}")
+
     all_data_dir = f"data/{language}/all_data"
     queries_dir = f"data/{language}/queries"
     analysis_dir = f"data/{language}/analysis"
@@ -231,9 +262,9 @@ if __name__ == "__main__":
 
     num_to_sample = 60
 
-    if language == "tamil":
+    if language in ["tamil", "gujarati", "telugu", "hindi", "marathi", "odia"]:
         gold_documents_for_queries_dict, tamil_labels = \
-            extract_gold_labels_for_queries_tamil(reference_file)
+            extract_gold_labels_for_queries_non_banjara(reference_file, language)
     elif language == "banjara":
         gold_documents_for_queries_dict = extract_gold_labels_for_queries_banjara(reference_file)
     
@@ -249,7 +280,12 @@ if __name__ == "__main__":
 
     silence_docs = all_data_files_set - set(files_phones_dict.keys())
 
-    # not_in_search_corpus_duration = get_duration_of_docs(docs_not_in_search_corpus_set, all_data_dir)
+    num_docs_per_query, percent_docs_per_query = calc_num_docs_per_query(gold_documents_for_queries_dict)
+
+    print(f"Distribution of number of documents per query in search corpus: {num_docs_per_query}")
+    print(f"Distribution of documents per query in search corpus: {percent_docs_per_query}")
+
+    not_in_search_corpus_duration = get_duration_of_docs(docs_not_in_search_corpus_set, all_data_dir)
 
     # not_in_search_corpus_voice_activity_duration = \
     #     get_voice_activity_duration_of_docs(docs_not_in_search_corpus_set, files_phones_dict)
@@ -264,9 +300,9 @@ if __name__ == "__main__":
     # print(f"Duration of all data: {all_length:.0f} s, {all_length/60:.1f} m, {all_length/3600:.2f} h")
     # print(f"Length of all data set: {len(all_data_files_set)}")
 
-    search_duration = get_duration_of_docs(all_docs_in_search_corpus_set, all_data_dir)
-    print(f"Duration of search corpus: {search_duration:.0f} s, {search_duration/60:.1f} m, {search_duration/3600:.2f} h")
-    print(f"Length of search corpus set: {len(all_docs_in_search_corpus_set)}")
+    # search_duration = get_duration_of_docs(all_docs_in_search_corpus_set, all_data_dir)
+    # print(f"Duration of search corpus: {search_duration:.0f} s, {search_duration/60:.1f} m, {search_duration/3600:.2f} h")
+    # print(f"Length of search corpus set: {len(all_docs_in_search_corpus_set)}")
 
     # training_files = read_documents_file(training_data_save_file)
     # silent_training_files = training_files & silence_docs

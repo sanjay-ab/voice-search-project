@@ -7,6 +7,7 @@ import torch
 
 import mhubert_model.query_document_search as qds
 from utils.common_functions_pytorch import print_memory_usage
+from utils.common_functions import parse_boolean_input
 
 def compute_ranking(query_embeddings_batched, query_names_batched, document_embeddings_batched, 
                     document_names_batched, results_file, device, num_results_to_save=None):
@@ -112,19 +113,35 @@ if __name__ == "__main__":
     args = sys.argv
 
     if len(args) > 1:
-        window_size_ms = int(args[1])
-        stride_ms = int(args[2])
+        if args[1].lower() == "none":
+            window_size_ms = None
+        else:
+            window_size_ms = int(args[1])
+
+        if args[2].lower() == "none":
+            stride_ms = None
+        else:
+            stride_ms = int(args[2])
+
         layer = int(args[3])
+        language = args[4]
+        use_queries_cut_after_embedding = parse_boolean_input(args[5])
     else:
         window_size_ms = None
         stride_ms = None
         layer = 9
+        language = "tamil"
+        use_queries_cut_after_embedding = False
 
-    folder = "tamil"
-    embedding_dir = f"data/{folder}/embeddings"
+    embedding_dir = f"data/{language}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
-    query_prefix = f"{embedding_dir}/queries"
-    results_dir_prefix = f"data/{folder}/results/raw_hubert"
+
+    if use_queries_cut_after_embedding:
+        query_prefix = f"{embedding_dir}/queries_cut_after_embedding"
+    else:
+        query_prefix = f"{embedding_dir}/queries"
+
+    results_dir_prefix = f"data/{language}/results/raw_hubert"
 
     if window_size_ms is not None:
         pooling_method = "mean"

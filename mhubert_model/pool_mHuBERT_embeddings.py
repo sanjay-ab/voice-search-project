@@ -123,7 +123,8 @@ def get_window_size_and_stride_in_frames_from_ms(window_size_ms, stride_ms, samp
 
 def run(lay, window_size_ms, stride_ms, embedding_dir, 
         run_for_queries, run_for_documents, pooling_method="mean",
-        multiple_query_vectors=False, n_parts=1, part=0):
+        multiple_query_vectors=False, n_parts=1, part=0,
+        use_queries_cut_after_embedding=False):
     """Run the pooling process for a given layer
 
     Args:
@@ -139,9 +140,15 @@ def run(lay, window_size_ms, stride_ms, embedding_dir,
         n_parts (int, optional): number of parts to split the list of files into - for parallel processing
             so that each part (subset of files) can be run in parallel. Defaults to 1.
         part (int, optional): part to run. Defaults to 0.
+        use_queries_cut_after_embedding (bool, optional): whether to use queries that have been cut after embedding. 
+            Defaults to False.
     """
     document_prefix = f"{embedding_dir}/documents"
-    query_prefix = f"{embedding_dir}/queries"
+
+    if use_queries_cut_after_embedding:
+        query_prefix = f"{embedding_dir}/queries_cut_after_embedding"
+    else:
+        query_prefix = f"{embedding_dir}/queries"
 
     print(f"Pooling embeddings for layer {lay}")
 
@@ -183,19 +190,24 @@ if __name__ == "__main__":
         run_for_documents = parse_boolean_input(args[5])
         n_parts = int(args[6])
         part = int(args[7])
+        language = args[8]
+        use_queries_cut_after_embedding = parse_boolean_input(args[9])
     else:
         window_size_ms = 700  # in milliseconds
         stride_ms = 300  # in milliseconds
         layer = 9
         run_for_queries = True
         run_for_documents = True
+        language = "tamil"
+        use_queries_cut_after_embedding = False
 
     pooling_method = "mean"
-    embedding_dir = "data/tamil/embeddings"
+    embedding_dir = f"data/{language}/embeddings"
     multiple_query_vectors = True
 
     run(layer, window_size_ms, stride_ms, embedding_dir, run_for_queries=run_for_queries,
         run_for_documents=run_for_documents, pooling_method=pooling_method, 
-        multiple_query_vectors=multiple_query_vectors, n_parts=n_parts, part=part)
+        multiple_query_vectors=multiple_query_vectors, n_parts=n_parts, part=part,
+        use_queries_cut_after_embedding=use_queries_cut_after_embedding)
     # collate_embeddings(embedding_dir, layer, window_size_ms, stride_ms, 
     #     pooling_method=pooling_method)

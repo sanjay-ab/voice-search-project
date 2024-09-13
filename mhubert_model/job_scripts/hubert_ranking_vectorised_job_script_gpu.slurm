@@ -20,5 +20,7 @@ source /work/tc062/tc062/sanjayb/voice-search-project/mhubert_model/hubert_env_g
 WINDOW_SIZE_MS=$1
 STRIDE_MS=$2
 LAYER=$3
+LANGUAGE=$4
+USE_QUERIES_CUT_AFTER_EMBEDDING=$5
 
-srun python -u mhubert_model/query_document_search_vectorised.py $WINDOW_SIZE_MS $STRIDE_MS $LAYER
+srun python -u mhubert_model/query_document_search_vectorised.py $WINDOW_SIZE_MS $STRIDE_MS $LAYER $LANGUAGE $USE_QUERIES_CUT_AFTER_EMBEDDING

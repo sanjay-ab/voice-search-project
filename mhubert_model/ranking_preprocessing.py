@@ -137,26 +137,41 @@ if __name__ == "__main__":
     args = sys.argv
 
     if len(args) > 1:
-        window_size_ms = int(args[1])
-        stride_ms = int(args[2])
+        if args[1].lower() == "none":
+            window_size_ms = None
+        else:
+            window_size_ms = int(args[1])
+
+        if args[2].lower() == "none":
+            stride_ms = None
+        else:
+            stride_ms = int(args[2])
+
         layer = int(args[3])
         run_for_queries = parse_boolean_input(args[4])
         run_for_documents = parse_boolean_input(args[5])
+        language = args[6]
+        use_queries_cut_after_embedding = parse_boolean_input(args[7])
     else:
         window_size_ms = None
         stride_ms = None
         layer = 9
         run_for_queries = True
         run_for_documents = True
+        language = "tamil"
+        use_queries_cut_after_embedding = False
 
-    folder = "tamil"
-    embedding_dir = f"data/{folder}/embeddings"
+    embedding_dir = f"data/{language}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
-    query_prefix = f"{embedding_dir}/queries"
+
+    if use_queries_cut_after_embedding:
+        query_prefix = f"{embedding_dir}/queries_cut_after_embedding"
+    else:
+        query_prefix = f"{embedding_dir}/queries"
     
     # files contain the lengths of the documents and queries in the dataset, in ascending order
-    doc_size_order_file = f"data/{folder}/analysis/document_lengths.txt"
-    query_size_order_file = f"data/{folder}/analysis/queries_lengths.txt"
+    doc_size_order_file = f"data/{language}/analysis/document_lengths.txt"
+    query_size_order_file = f"data/{language}/analysis/queries_lengths.txt"
 
     if window_size_ms is None or window_size_ms=="none":
         pooling_method = "none"

@@ -11,7 +11,7 @@ from collections import defaultdict
 
 from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
-from utils.examine_datasets import extract_gold_labels_for_queries_tamil
+from utils.examine_datasets import extract_gold_labels_for_queries_non_banjara
 
 class DocumentClassesDataset(Dataset):
     """Dataset class for training the learned pooling model on the recording embedding task.
@@ -42,7 +42,7 @@ class DocumentClassesDataset(Dataset):
         if "tamil" in document_embedding_dir:
             self.language = "tamil"
             self.documents_for_queries_dict, self.queries_to_labels_dict = \
-                extract_gold_labels_for_queries_tamil(reference_file)
+                extract_gold_labels_for_queries_non_banjara(reference_file, self.language)
         elif "banjara" in document_embedding_dir:
             raise NotImplementedError("Banjara dataset not implemented yet.")
 

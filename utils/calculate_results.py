@@ -82,32 +82,48 @@ def count_if_query_matches_itself(query_results_dict):
     return num_queries_best_match_is_itself, num_queries_that_match_with_itself_in_top_10
 
 def extract_gold_labels_for_queries(reference_file, language):
-    """Extract the correct documents for each query from a reference file.
+    """Extract the correct documents for each query from a reference file. Also returns
+    the labels for each query (except for Banjara).
 
     Args:
         reference_file (str): path to reference file, each line is assumed to be 
             formatted as: "[query] [tab] [correct_document_1] [tab] [correct_document_2] ..." for banjara, 
             and: "[query] [tab] [label] [tab] [correct_document_1] [tab] [correct_document_2] ..." for tamil.
-        language (str): language of the reference file. Either "tamil" or "banjara"
+        language (str): language of the reference file. 
 
     Returns:
-        dict{str \: list[str]}: dictionary with query basenames as keys and list of document basenames
-            as values. The documents are those that are correct matches for the query.
+        tuple(dict{str \: list[str]}, dict{str \: str}): dictionary with query basenames as keys and
+            list of document basenames as values. The documents are those that are correct matches 
+            for the query. Also returns a dictionary with query basenames as keys and labels as values
+            (except for Banjara).
     """
     gold_documents_for_queries_dict = {}
+    query_labels = {}
     if language in ["tamil", "gujarati", "hindi", "marathi", "telugu", "odia"]:
         start_idx = 2
+        if language == "tamil":
+            end_idx = -1
+        else:
+            end_idx = None
     elif language == "banjara":
         start_idx = 1
+        end_idx = -1
+    else:
+        raise ValueError("Unrecognised language.")
+
     with open(reference_file, "r") as f:
         for line in f:
             split_line = line.split("\t")
             query = split_line[0]
             query = clean_string(query)
-            documents = split_line[start_idx:-1]
+            documents = split_line[start_idx:end_idx]
+            documents[-1] = documents[-1].strip()
             gold_documents_for_queries_dict[query] = documents
+
+            if language != "banjara":
+                query_labels[query] = split_line[1]
     
-    return gold_documents_for_queries_dict
+    return gold_documents_for_queries_dict, query_labels
 
 def calculate_correct_results(query_result_dict, gold_documents_for_queries_dict):
     """Given a dictionary with query results and a dictionary with correct documents for queries,
@@ -403,7 +419,12 @@ if __name__ == "__main__":
         model_type = args[6]
         if len(args) > 7:
             window_size_ms = args[7]  # in milliseconds
+            if window_size_ms.lower() == "none":
+                window_size_ms = None
+
             stride_ms = args[8]  # in milliseconds
+            if stride_ms.lower() == "none":
+                stride_ms = None
         else:
             window_size_ms = None  # in milliseconds
             stride_ms = None  # in milliseconds
@@ -471,7 +492,7 @@ if __name__ == "__main__":
     num_queries_best_match_itself, num_queries_that_match_with_itself_in_top_10 = \
         count_if_query_matches_itself(query_results_dict)
     
-    gold_documents_for_queries_dict = extract_gold_labels_for_queries(reference_file, language)
+    gold_documents_for_queries_dict, _ = extract_gold_labels_for_queries(reference_file, language)
     num_queries_top_5, num_queries_top_10 = \
         calculate_correct_results(query_results_dict, gold_documents_for_queries_dict)
     

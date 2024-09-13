@@ -4,7 +4,7 @@ import os
 import sys
 import time
 
-from utils.common_functions import split_list_into_n_parts_and_get_part
+from utils.common_functions import split_list_into_n_parts_and_get_part, make_dir
 from kaldi.lat.functions import compact_lattice_to_word_alignment
 from voice_search_server.enroll import pcm
 from voice_search_server.lib.asr import create_asr
@@ -41,14 +41,24 @@ def convert_phone_ids_to_symbols(phone_ids, phone_symbol_table):
 
 
 if __name__ == "__main__":
-    top_level_dir = "data/tamil/"
+    args = sys.argv
+
+    if len(args) > 1:
+        n_parts = int(args[1])
+        part = int(args[2])
+        language = args[3]
+    else:
+        language = "tamil"
+        n_parts = 1
+        part = 0
+
+    top_level_dir = f"data/{language}/"
     audio_dir = f"{top_level_dir}/all_data"
     phone_timings_output_file = f"{top_level_dir}/analysis/phone_all_mpr.ctm"
 
     # for parallel processing
-    n_parts = 64
     if n_parts > 1:
-        part = sys.argv[1]
+        make_dir(f"{top_level_dir}/analysis/phone_timings")
         phone_timings_output_file = f"{top_level_dir}/analysis/phone_timings/phone_part_{part}_mpr.ctm"
     else:
         part = 0
@@ -74,31 +84,35 @@ if __name__ == "__main__":
     for fnum, file in enumerate(file_part):
         if not file.endswith(".wav"):
             continue
-        print(file)
+        print(f"Processing {file}")
         audio_path = f"{audio_dir}/{file}"
-        audio_bytes = pcm(audio_path)
-        res = model.transcribe(audio_bytes)
-        # phones = res["text"]
-        best_path = res["best_path"]
 
-        alignment = compact_lattice_to_word_alignment(best_path)
+        try:
+            audio_bytes = pcm(audio_path)
+            res = model.transcribe(audio_bytes)
+            # phones = res["text"]
+            best_path = res["best_path"]
 
-        phone_ids = alignment[0]
-        start_times_xlsr_frames = alignment[1]
-        duration_xlsr_frames = alignment[2]
+            alignment = compact_lattice_to_word_alignment(best_path)
 
-        file = file.replace(".wav", "")
+            phone_ids = alignment[0]
+            start_times_xlsr_frames = alignment[1]
+            duration_xlsr_frames = alignment[2]
 
-        phones_list = convert_phone_ids_to_symbols(phone_ids, phone_symbol_table)
-        if all(phone in silence_phones for phone in phones_list) or len(phones_list) == 0:
-            print(f"Skipping {file} because it only has silence phones")
-            print(phones_list)
-            continue
-        for i, phone in enumerate(phones_list):
-            start_time = start_times_xlsr_frames[i] * xlsr_to_sec_conversion_factor
-            duration = duration_xlsr_frames[i] * xlsr_to_sec_conversion_factor
-            fhandle.write(f"{file} 1 {start_time:.3f} {duration:.3f} {phone}\n")
+            file = file.replace(".wav", "")
+
+            phones_list = convert_phone_ids_to_symbols(phone_ids, phone_symbol_table)
+            if all(phone in silence_phones for phone in phones_list) or len(phones_list) == 0:
+                print(f"Skipping {file} because it only has silence phones")
+                print(phones_list)
+                continue
+            for i, phone in enumerate(phones_list):
+                start_time = start_times_xlsr_frames[i] * xlsr_to_sec_conversion_factor
+                duration = duration_xlsr_frames[i] * xlsr_to_sec_conversion_factor
+                fhandle.write(f"{file} 1 {start_time:.3f} {duration:.3f} {phone}\n")
         
+        except Exception as e:
+            print(f"Error processing {file}: {e}")
 
         percentage = (fnum+1)/length * 100
         print(f"{percentage:.2f}% done")

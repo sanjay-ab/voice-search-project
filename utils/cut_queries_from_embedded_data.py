@@ -7,7 +7,7 @@ from utils.common_functions import make_dir
 
 if __name__ == "__main__":
     language = "tamil"
-    layer = 9
+    layer = 11
     hubert_sampling_rate = 50
 
     document_embedding_dir = f"data/{language}/embeddings/documents/{layer}/raw"
@@ -18,9 +18,11 @@ if __name__ == "__main__":
     make_dir(query_output_embedding_dir)
 
     query_times_dict = read_query_times_file(query_times_file, language)
+
+    num_files = len(query_times_dict)
     
-    for file, (start_time, end_time) in query_times_dict.items():
-        print(f"Processing {file}")
+    for i, (file, (start_time, end_time)) in enumerate(query_times_dict.items()):
+        # print(f"Processing {file}")
 
         original_filename = re.sub(r"_\d+$", "", file)
         original_document_data = pkl.load(open(f"{document_embedding_dir}/{original_filename}.pkl", "rb"))
@@ -31,4 +33,6 @@ if __name__ == "__main__":
         query_embedding = original_document_data[start_time_frames:end_time_frames]
 
         pkl.dump(query_embedding, open(f"{query_output_embedding_dir}/q_{file}.pkl", "wb"))
+
+        print(f"Processed {((i+1)*100)/num_files:.02f}%", end="\r")
         

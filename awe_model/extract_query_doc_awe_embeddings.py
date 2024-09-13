@@ -58,8 +58,13 @@ class PhoneSplitter:
         """
         file = file.replace(".pkl", "")
         file = file.replace(".wav", "")
-        file = file.replace("q_", "")
-        file_key = re.sub(r"_\d+$", "", file)
+
+        if file.startswith("q_"):
+            file = file.replace("q_", "")
+            file_key = re.sub(r"_\d+$", "", file)
+        else:
+            file_key = file
+
         phones = self.files_phones_dict[file_key]["phones"]
         starts = self.files_phones_dict[file_key]["start_times"]
         durations = self.files_phones_dict[file_key]["durations"]
