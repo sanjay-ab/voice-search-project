@@ -20,12 +20,13 @@ class PhonePairsDataset(Dataset):
     in the same batch are from different phone sequences.
     """
 
-    def __init__(self, embedding_dir_or_file, num_pairs_per_batch, phone_timings_file, time_limit=240,
+    def __init__(self, language, embedding_dir_or_file, num_pairs_per_batch, phone_timings_file, time_limit=240,
                   min_phone_seq_length=3, max_phone_seq_length=9,
                   perturb_sequences=False, max_one_sided_perturb_amount=0.1):
         """Initialise PhonePairsDataset class.
 
         Args:
+            language (str): the language of the dataset.
             embedding_dir_or_file (str): path of directory or file containing the embedded data.
                 If using a file, when unpickled it must be a dictionary that uses phone sequences
                 as keys and a list of embeddings as values.
@@ -65,7 +66,7 @@ class PhonePairsDataset(Dataset):
         else:
             print(f"Loading embedded data from directory: {embedding_dir_or_file}")
             self.embedding_dir = embedding_dir_or_file
-            embedded_data_dict = get_embedded_phones_dict(phone_timings_file, embedding_dir_or_file, 
+            embedded_data_dict = get_embedded_phones_dict(phone_timings_file, language, embedding_dir_or_file, 
                                                         min_phone_seq_length, max_phone_seq_length,
                                                         perturb_sequences, max_one_sided_perturb_amount)
 

@@ -1,6 +1,7 @@
 """Train learned pooling model contrastively using NTXent loss."""
 import time
 import random
+import sys
 from datetime import datetime as dt
 
 import numpy as np
@@ -238,18 +239,31 @@ if __name__== "__main__":
     np.random.seed(seed)
     random.seed(seed)
 
-    language = "tamil"
-    phone_timings_file = f"data/{language}/analysis/phone_all.ctm"
+    args = sys.argv
+
+    if len(args) > 1:
+        language = args[1]
+        phone_timings_file_name = args[2]
+    else:
+        language = "tamil"
+        phone_timings_file_name = "phone_all.ctm"
+
+    phone_timings_file = f"data/{language}/analysis/{phone_timings_file_name}"
     top_embedding_dir = f"data/{language}/embeddings"
     layer = 9
     min_phone_seq_length = 3
     max_phone_seq_length = 9
 
+    if "mpr" in phone_timings_file_name:
+        mpr = "_mpr_"
+    else:
+        mpr = "_"
+
     training_embedding_dir = (f"{top_embedding_dir}/training_data/{layer}/raw")
     # training_all_embeddings_file = f"{training_embedding_dir}/all_embeddings_phonetized.pkl"
 
     validation_embedding_dir = (f"{top_embedding_dir}/validation_data/"
-                              f"{layer}/phonetized_{min_phone_seq_length}_{max_phone_seq_length}")
+                              f"{layer}/phonetized{mpr}{min_phone_seq_length}_{max_phone_seq_length}")
     validation_all_embeddings_file = f"{validation_embedding_dir}/all_embeddings_phonetized.pkl"
 
     print(f"Training embeddings directory: {training_embedding_dir}")
@@ -266,14 +280,14 @@ if __name__== "__main__":
     temperature = 0.07
     learning_rate = 0.0001
     clip_norm = 40
-    num_epochs = 3
+    num_epochs = 5
     patience = 2
     num_pairs_per_batch = 5
     num_batch_pairs_to_accumulate_gradients_over = 1000  # set to 1 if you don't want gradient accumulation
     time_limit_to_create_dataset = 600
 
     model_save_dir = \
-        (f"data/{language}/models/awe/{layer}/lr_{learning_rate}"
+        (f"data/{language}/models/awe/{layer}/{mpr[1:]}lr_{learning_rate}"
          f"_tmp_{temperature}_acc_{num_batch_pairs_to_accumulate_gradients_over}_"
          f"bs_{num_pairs_per_batch}_{min_phone_seq_length}_{max_phone_seq_length}")
     datetime_string = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
@@ -295,11 +309,11 @@ if __name__== "__main__":
     make_dir(model_save_dir)
 
     t1 = time.perf_counter()
-    train_dataset = PhonePairsDataset(training_embedding_dir, num_pairs_per_batch, phone_timings_file,
+    train_dataset = PhonePairsDataset(language, training_embedding_dir, num_pairs_per_batch, phone_timings_file,
                                         time_limit_to_create_dataset, min_phone_seq_length,
                                         max_phone_seq_length, perturb_sequences, 
                                         max_one_sided_perturb_amount)
-    valid_dataset = PhonePairsDataset(validation_all_embeddings_file, num_pairs_per_batch, phone_timings_file,
+    valid_dataset = PhonePairsDataset(language, validation_all_embeddings_file, num_pairs_per_batch, phone_timings_file,
                                        time_limit_to_create_dataset, min_phone_seq_length,
                                        max_phone_seq_length)
     # set dataloaders to batch size 1

@@ -299,8 +299,8 @@ if __name__ == "__main__":
             f"data/tamil/models/awe/{layer}/lr_1e-4_tmp_0.07_acc_1000_bs_5_3_9"
         model_name = "2024-07-20_23:47:58_checkpoint_epoch_0.pt"
 
-    # scratch_prefix = f"/scratch/space1/tc062/sanjayb"
-    scratch_prefix = f"."
+    scratch_prefix = f"/scratch/space1/tc062/sanjayb"
+    # scratch_prefix = f"."
     top_level_embedding_dir = f"data/{language}/embeddings"
     phone_timings_file = f"data/{language}/analysis/{phone_timings_fname}"
     skip_existing_files = False

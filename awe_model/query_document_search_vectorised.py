@@ -134,8 +134,8 @@ if __name__ == "__main__":
         document_query_suffix = f"{min_phone_seq_length}_{max_phone_seq_length}"
         results_path = f"{layer}/tamil_train_3_9/{min_phone_seq_length}_{max_phone_seq_length}"
 
-    # scratch_prefix = f"/scratch/space1/tc062/sanjayb"
-    scratch_prefix = f"."
+    scratch_prefix = f"/scratch/space1/tc062/sanjayb"
+    # scratch_prefix = f"."
     embedding_dir = f"{scratch_prefix}/data/{language}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
     if use_queries_cut_after_embedding:

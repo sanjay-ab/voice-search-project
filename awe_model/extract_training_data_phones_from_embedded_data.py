@@ -2,6 +2,7 @@
 mHuBERT embeddings that match specific phone sequences."""
 import os
 import time
+import sys
 import pickle as pkl
 from collections import defaultdict
 
@@ -62,20 +63,34 @@ def get_embedded_phones_dict(phone_timings_file, language, embedding_dir, min_ph
 
 
 if __name__ == "__main__":
-    language = "tamil"
+    args = sys.argv
+
+    if len(args) > 1:
+        language = args[1]
+        folder = args[2]
+        phone_timings_file_name = args[3]
+    else:
+        language = "telugu"
+        folder = "validation_data"
+        phone_timings_file_name = "phone_all.ctm"
+
     top_level_dir = f"data/{language}/"
-    folder = "validation_data"
     top_level_embedding_dir = f"{top_level_dir}/embeddings/{folder}"
-    phone_timings_file = f"{top_level_dir}/analysis/phone_all.ctm"
+    phone_timings_file = f"{top_level_dir}/analysis/{phone_timings_file_name}"
     layer = 9
     min_phone_seq_length = 3
     max_phone_seq_length = 9
     perturb_sequences = False  # define whether to perturb the boundaries of the phone sequences
     max_one_sided_perturb_amount = 0.1
 
+    if "mpr" in phone_timings_file_name:
+        mpr = "_mpr_"
+    else:
+        mpr = "_"
+
     embedding_dir = f"{top_level_embedding_dir}/{layer}/raw"
     save_embedding_dir = \
-        f"{top_level_embedding_dir}/{layer}/phonetized_{min_phone_seq_length}_{max_phone_seq_length}"
+        f"{top_level_embedding_dir}/{layer}/phonetized{mpr}{min_phone_seq_length}_{max_phone_seq_length}"
 
     print(f"Extracting phonetized embeddings from {embedding_dir}...")
     print((f"Using: phone timings file: {phone_timings_file}\nMin phone seq length: {min_phone_seq_length}"

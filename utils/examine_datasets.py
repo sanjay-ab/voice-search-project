@@ -2,6 +2,7 @@
 and the number of documents in the search corpus."""
 import os
 import re
+import random
 from collections import defaultdict
 
 from utils.get_document_lengths import get_wav_file_length
@@ -237,10 +238,53 @@ def calc_num_docs_per_query(gold_documents_for_queries_dict):
     percent_docs_per_query = {num_docs: round((num_docs_per_query[num_docs] / num_queries) * 100, 2) for num_docs in num_docs_per_query.keys()}
     return num_docs_per_query, percent_docs_per_query
 
+def read_size_order_file(size_order_file):
+    """Read size order file and return list of filenames
+
+    Args:
+        size_order_file (str): path of size order file
+
+    Returns:
+        list[str]: list of filenames in ascending order of size
+    """
+    durations = {}
+    with open(size_order_file, "r") as f:
+        for line in f:
+            filename, duration = line.split(": ")
+            filename = filename.strip()
+            filename = filename.replace(".wav", "")
+            durations[filename] = float(duration)
+    return durations
+
+def filter_docs_duration(docs_set, all_data_dir, max_duration, min_duration, size_order_file=None):
+    """Filter documents based on their duration.
+
+    Args:
+        docs_set (set{str}): set of document basenames
+        all_data_dir (str): path of the directory where the documents are stored
+        max_duration (float): maximum duration (secs) of documents to keep
+        min_duration (float): minimum duration (secs) of documents to keep
+    """
+    if size_order_file is not None:
+        durations = read_size_order_file(f"{size_order_file}")
+    docs_to_remove = set()
+    for document in docs_set:
+        if size_order_file is not None:
+            doc_duration = durations[document]
+        else:
+            doc_duration = get_wav_file_length(f"{all_data_dir}/{document}.wav")
+        if doc_duration > max_duration or doc_duration < min_duration:
+            docs_to_remove.add(document)
+    
+    for doc in docs_to_remove:
+        docs_set.remove(doc)
+
 
 if __name__ == "__main__":
+    random.seed(42)
+
     # dir where all the data is stored, including data that was filtered out after preprocessing
-    language = "telugu"
+    language = "gujarati"
     print(f"Language: {language}")
 
     all_data_dir = f"data/{language}/all_data"
@@ -257,10 +301,11 @@ if __name__ == "__main__":
 
     phone_timings_file = f"{analysis_dir}/phone_all.ctm"
 
-    training_data_save_file = f"{analysis_dir}/training_data_quarter.txt"
+    size_order_file = f"{analysis_dir}/document_lengths.txt"
+
+    training_data_save_file = f"{analysis_dir}/training_data.txt"
     validation_data_save_file = f"{analysis_dir}/validation_data.txt"
 
-    num_to_sample = 60
 
     if language in ["tamil", "gujarati", "telugu", "hindi", "marathi", "odia"]:
         gold_documents_for_queries_dict, tamil_labels = \
@@ -280,12 +325,43 @@ if __name__ == "__main__":
 
     silence_docs = all_data_files_set - set(files_phones_dict.keys())
 
-    num_docs_per_query, percent_docs_per_query = calc_num_docs_per_query(gold_documents_for_queries_dict)
+    files_related_to_queries = set()
+    for query, docs in gold_documents_for_queries_dict.items():
+        files_related_to_queries.update(docs)
+        files_related_to_queries.add(query[:-2])
 
-    print(f"Distribution of number of documents per query in search corpus: {num_docs_per_query}")
-    print(f"Distribution of documents per query in search corpus: {percent_docs_per_query}")
+    # num_docs_per_query, percent_docs_per_query = calc_num_docs_per_query(gold_documents_for_queries_dict)
 
-    not_in_search_corpus_duration = get_duration_of_docs(docs_not_in_search_corpus_set, all_data_dir)
+    # print(f"Distribution of number of documents per query in search corpus: {num_docs_per_query}")
+    # print(f"Distribution of documents per query in search corpus: {percent_docs_per_query}")
+
+    files_to_sample_from = all_docs_in_search_corpus_set - files_related_to_queries
+
+    filter_docs_duration(files_to_sample_from, all_data_dir, 5, 0, size_order_file)
+
+    num_to_sample = 1740
+    sampled_files = set(random.sample(sorted(files_to_sample_from), num_to_sample))
+
+    filter_docs_duration(docs_not_in_search_corpus_set, all_data_dir, 5, 0)
+    docs_not_in_search_corpus_set.update(sampled_files)
+
+    # not_in_search_corpus_duration = get_duration_of_docs(docs_not_in_search_corpus_set, all_data_dir)
+    # not_in_search_corpus_duration = get_voice_activity_duration_of_docs(docs_not_in_search_corpus_set, files_phones_dict)
+
+    all_docs_in_search_corpus_set = all_docs_in_search_corpus_set - sampled_files
+    files_to_sample_from = files_to_sample_from - sampled_files
+
+    num_to_sample = 445
+    sampled_files = set(random.sample(sorted(files_to_sample_from), num_to_sample))
+    # not_in_search_corpus_duration = get_duration_of_docs(sampled_files, all_data_dir)
+    # not_in_search_corpus_duration = get_voice_activity_duration_of_docs(sampled_files, files_phones_dict)
+
+    all_docs_in_search_corpus_set = all_docs_in_search_corpus_set - sampled_files
+
+    with open(f"{analysis_dir}/training_data.txt", "w") as f:
+        for file in docs_not_in_search_corpus_set:
+            f.write(f"{file}\n")
+    
 
     # not_in_search_corpus_voice_activity_duration = \
     #     get_voice_activity_duration_of_docs(docs_not_in_search_corpus_set, files_phones_dict)
@@ -324,9 +400,9 @@ if __name__ == "__main__":
     # training_voice_activity_duration = \
     #     get_voice_activity_duration_of_docs(training_corpus, files_phones_dict)
     
-    # print((f"Duration of documents that are not in search corpus and have some non silence phones: "
-    #        f"{not_in_search_corpus_duration:.0f} s, {not_in_search_corpus_duration/60:.1f} m, "
-    #        f"{not_in_search_corpus_duration/3600:.2f} h"))
+    print((f"Duration of documents that are not in search corpus and have some non silence phones: "
+           f"{not_in_search_corpus_duration:.0f} s, {not_in_search_corpus_duration/60:.1f} m, "
+           f"{not_in_search_corpus_duration/3600:.2f} h"))
 
     # print((f"Duration of voice activity of documents that are not in search corpus: "
     #        f"{not_in_search_corpus_voice_activity_duration:.0f} s, {not_in_search_corpus_voice_activity_duration/60:.1f} m, "

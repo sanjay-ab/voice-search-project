@@ -17,4 +17,8 @@ module load python/3.9.13
 module load pytorch/1.13.1
 source /work/tc062/tc062/sanjayb/voice-search-project/mhubert_model/hubert_env/bin/activate
 
-srun python -u awe_model/extract_training_data_phones_from_embedded_data.py 
+LANGUAGE=gujarati
+FOLDER=validation_data
+PHONE_FILE_NAME=phone_all_mpr.ctm
+
+srun python -u awe_model/extract_training_data_phones_from_embedded_data.py $LANGUAGE $FOLDER $PHONE_FILE_NAME

@@ -66,7 +66,7 @@ class HubertEmbedder:
 
 if __name__ == "__main__":
     layers = [9]  # from which mHuBERT layers to extract embeddings
-    language = "tamil"
+    language = "gujarati"
     device = "cuda"
     batch_size = 1  # don't change - resulting IR system is much poorer for batch_size>1
     # this is likely since mHuBERT is not trained to embed padded sequences
@@ -79,7 +79,7 @@ if __name__ == "__main__":
     print(f"TIME TO LOAD HUBERT: {t2-t1:.2f} s")
 
     t1 = time.perf_counter()
-    for folder in ["documents"]:
+    for folder in ["training_data", "validation_data"]:
         print(f"Generating embeddings for {folder}")
         audio_directory = f"{top_level_dir}/{folder}"
         dataset = AudioDataset(audio_directory)
