@@ -138,7 +138,7 @@ if __name__ == "__main__":
     # scratch_prefix = f"."
     embedding_dir = f"{scratch_prefix}/data/{language}/embeddings"
     document_prefix = f"{embedding_dir}/documents"
-    if use_queries_cut_after_embedding:
+    if use_queries_cut_after_embedding and language != "banjara":
         query_prefix = f"{embedding_dir}/queries_cut_after_embedding"
     else:
         query_prefix = f"{embedding_dir}/queries"
