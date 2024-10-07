@@ -1,0 +1,2248 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Extracting phonetized embeddings from data/gujarati//embeddings/validation_data/9/raw...
+Using: phone timings file: data/gujarati//analysis/phone_all.ctm
+Min phone seq length: 3
+Max phone seq length: 9
+Saving phonetized embeddings to data/gujarati//embeddings/validation_data/9/temp_phonetized_3_9
+001340087.pkl
+Length of phones: 34
+0.18% done
+Time: 0.02 s
+000570482.pkl
+Length of phones: 57
+0.36% done
+Time: 0.06 s
+000590488.pkl
+Length of phones: 63
+0.54% done
+Time: 0.09 s
+000920350.pkl
+Length of phones: 37
+0.72% done
+Time: 0.11 s
+000180039.pkl
+Length of phones: 39
+0.89% done
+Time: 0.14 s
+000210042.pkl
+Length of phones: 33
+1.07% done
+Time: 0.17 s
+000170262.pkl
+Length of phones: 44
+1.25% done
+Time: 0.19 s
+000680261.pkl
+Length of phones: 45
+1.43% done
+Time: 0.21 s
+000520315.pkl
+Length of phones: 46
+1.61% done
+Time: 0.24 s
+000200444.pkl
+Length of phones: 33
+1.79% done
+Time: 0.26 s
+000250064.pkl
+Length of phones: 44
+1.97% done
+Time: 0.29 s
+002070233.pkl
+Length of phones: 47
+2.15% done
+Time: 0.31 s
+000320178.pkl
+Length of phones: 49
+2.33% done
+Time: 0.33 s
+001990036.pkl
+Length of phones: 39
+2.50% done
+Time: 0.36 s
+000100419.pkl
+Length of phones: 32
+2.68% done
+Time: 0.44 s
+000260285.pkl
+Length of phones: 39
+2.86% done
+Time: 0.45 s
+000680189.pkl
+Length of phones: 39
+3.04% done
+Time: 0.48 s
+001960005.pkl
+Length of phones: 31
+3.22% done
+Time: 0.51 s
+000510040.pkl
+Length of phones: 43
+3.40% done
+Time: 0.57 s
+001270341.pkl
+Length of phones: 34
+3.58% done
+Time: 0.60 s
+000210142.pkl
+Length of phones: 42
+3.76% done
+Time: 0.63 s
+000010313.pkl
+Length of phones: 38
+3.94% done
+Time: 0.66 s
+001250459.pkl
+Length of phones: 37
+4.11% done
+Time: 0.70 s
+000910341.pkl
+Length of phones: 35
+4.29% done
+Time: 0.73 s
+000410335.pkl
+Length of phones: 38
+4.47% done
+Time: 0.81 s
+000040019.pkl
+Length of phones: 46
+4.65% done
+Time: 0.84 s
+000900459.pkl
+Length of phones: 44
+4.83% done
+Time: 0.86 s
+001910272.pkl
+Length of phones: 50
+5.01% done
+Time: 0.91 s
+001350075.pkl
+Length of phones: 42
+5.19% done
+Time: 0.93 s
+001960308.pkl
+Length of phones: 38
+5.37% done
+Time: 0.98 s
+000480116.pkl
+Length of phones: 42
+5.55% done
+Time: 1.04 s
+000610045.pkl
+Length of phones: 60
+5.72% done
+Time: 1.11 s
+000180274.pkl
+Length of phones: 33
+5.90% done
+Time: 1.12 s
+000120181.pkl
+Length of phones: 40
+6.08% done
+Time: 1.16 s
+002080156.pkl
+Length of phones: 38
+6.26% done
+Time: 1.18 s
+002060054.pkl
+Length of phones: 34
+6.44% done
+Time: 1.21 s
+000130221.pkl
+Length of phones: 52
+6.62% done
+Time: 1.24 s
+000660128.pkl
+Length of phones: 57
+6.80% done
+Time: 1.26 s
+000010310.pkl
+Length of phones: 42
+6.98% done
+Time: 1.28 s
+001950078.pkl
+Length of phones: 32
+7.16% done
+Time: 1.31 s
+000980140.pkl
+Length of phones: 50
+7.33% done
+Time: 1.34 s
+000170049.pkl
+Length of phones: 30
+7.51% done
+Time: 1.36 s
+000100463.pkl
+Length of phones: 35
+7.69% done
+Time: 1.38 s
+002050343.pkl
+Length of phones: 37
+7.87% done
+Time: 1.40 s
+000450238.pkl
+Length of phones: 48
+8.05% done
+Time: 1.43 s
+000040097.pkl
+Length of phones: 63
+8.23% done
+Time: 1.45 s
+000140463.pkl
+Length of phones: 45
+8.41% done
+Time: 1.48 s
+000130350.pkl
+Length of phones: 37
+8.59% done
+Time: 1.51 s
+001970022.pkl
+Length of phones: 41
+8.77% done
+Time: 1.53 s
+001330117.pkl
+Length of phones: 31
+8.94% done
+Time: 1.54 s
+000590086.pkl
+Length of phones: 43
+9.12% done
+Time: 1.57 s
+001980444.pkl
+Length of phones: 44
+9.30% done
+Time: 1.59 s
+000170403.pkl
+Length of phones: 42
+9.48% done
+Time: 1.62 s
+000260422.pkl
+Length of phones: 33
+9.66% done
+Time: 1.62 s
+000840058.pkl
+Length of phones: 0
+9.84% done
+Time: 1.65 s
+001340076.pkl
+Length of phones: 39
+10.02% done
+Time: 1.71 s
+000010347.pkl
+Length of phones: 37
+10.20% done
+Time: 1.72 s
+000350387.pkl
+Length of phones: 14
+10.38% done
+Time: 1.74 s
+000110327.pkl
+Length of phones: 46
+10.55% done
+Time: 1.76 s
+000580065.pkl
+Length of phones: 41
+10.73% done
+Time: 1.81 s
+000640165.pkl
+Length of phones: 17
+10.91% done
+Time: 1.83 s
+000570008.pkl
+Length of phones: 44
+11.09% done
+Time: 1.90 s
+000150397.pkl
+Length of phones: 23
+11.27% done
+Time: 1.97 s
+000650178.pkl
+Length of phones: 41
+11.45% done
+Time: 1.99 s
+000680025.pkl
+Length of phones: 51
+11.63% done
+Time: 2.01 s
+000610138.pkl
+Length of phones: 57
+11.81% done
+Time: 2.02 s
+002050129.pkl
+Length of phones: 33
+11.99% done
+Time: 2.04 s
+000120454.pkl
+Length of phones: 42
+12.16% done
+Time: 2.06 s
+001960047.pkl
+Length of phones: 54
+12.34% done
+Time: 2.09 s
+002010301.pkl
+Length of phones: 33
+12.52% done
+Time: 2.10 s
+001330243.pkl
+Length of phones: 34
+12.70% done
+Time: 2.13 s
+000010298.pkl
+Length of phones: 38
+12.88% done
+Time: 2.14 s
+001950278.pkl
+Length of phones: 34
+13.06% done
+Time: 2.16 s
+002070324.pkl
+Length of phones: 37
+13.24% done
+Time: 2.24 s
+000250007.pkl
+Length of phones: 36
+13.42% done
+Time: 2.26 s
+000040114.pkl
+Length of phones: 53
+13.60% done
+Time: 2.28 s
+000590360.pkl
+Length of phones: 42
+13.77% done
+Time: 2.30 s
+000570230.pkl
+Length of phones: 32
+13.95% done
+Time: 2.38 s
+002080062.pkl
+Length of phones: 29
+14.13% done
+Time: 2.41 s
+001230221.pkl
+Length of phones: 40
+14.31% done
+Time: 2.44 s
+000360463.pkl
+Length of phones: 48
+14.49% done
+Time: 2.45 s
+000300389.pkl
+Length of phones: 36
+14.67% done
+Time: 2.45 s
+000530274.pkl
+Length of phones: 33
+14.85% done
+Time: 2.54 s
+000200096.pkl
+Length of phones: 31
+15.03% done
+Time: 2.56 s
+000650248.pkl
+Length of phones: 40
+15.21% done
+Time: 2.58 s
+000310491.pkl
+Length of phones: 45
+15.38% done
+Time: 2.61 s
+000320045.pkl
+Length of phones: 46
+15.56% done
+Time: 2.69 s
+000150134.pkl
+Length of phones: 27
+15.74% done
+Time: 2.71 s
+002060236.pkl
+Length of phones: 44
+15.92% done
+Time: 2.72 s
+002020417.pkl
+Length of phones: 28
+16.10% done
+Time: 2.75 s
+000560370.pkl
+Length of phones: 28
+16.28% done
+Time: 2.78 s
+000150093.pkl
+Length of phones: 23
+16.46% done
+Time: 2.85 s
+001370498.pkl
+Length of phones: 38
+16.64% done
+Time: 2.90 s
+000160499.pkl
+Length of phones: 38
+16.82% done
+Time: 2.91 s
+001370139.pkl
+Length of phones: 40
+16.99% done
+Time: 2.94 s
+002010223.pkl
+Length of phones: 42
+17.17% done
+Time: 2.98 s
+001960106.pkl
+Length of phones: 34
+17.35% done
+Time: 3.00 s
+000330290.pkl
+Length of phones: 36
+17.53% done
+Time: 3.02 s
+000050015.pkl
+Length of phones: 37
+17.71% done
+Time: 3.05 s
+000060344.pkl
+Length of phones: 44
+17.89% done
+Time: 3.07 s
+002020491.pkl
+Length of phones: 46
+18.07% done
+Time: 3.15 s
+002060405.pkl
+Length of phones: 47
+18.25% done
+Time: 3.17 s
+000500469.pkl
+Length of phones: 40
+18.43% done
+Time: 3.20 s
+001120131.pkl
+Length of phones: 53
+18.60% done
+Time: 3.21 s
+001980116.pkl
+Length of phones: 40
+18.78% done
+Time: 3.24 s
+002020225.pkl
+Length of phones: 42
+18.96% done
+Time: 3.28 s
+001260189.pkl
+Length of phones: 42
+19.14% done
+Time: 3.31 s
+000620435.pkl
+Length of phones: 47
+19.32% done
+Time: 3.34 s
+000680371.pkl
+Length of phones: 52
+19.50% done
+Time: 3.37 s
+001330183.pkl
+Length of phones: 34
+19.68% done
+Time: 3.39 s
+000650035.pkl
+Length of phones: 40
+19.86% done
+Time: 3.42 s
+000040083.pkl
+Length of phones: 47
+20.04% done
+Time: 3.44 s
+001960291.pkl
+Length of phones: 47
+20.21% done
+Time: 3.46 s
+000170377.pkl
+Length of phones: 46
+20.39% done
+Time: 3.48 s
+000010382.pkl
+Length of phones: 27
+20.57% done
+Time: 3.50 s
+000040310.pkl
+Length of phones: 36
+20.75% done
+Time: 3.52 s
+000530302.pkl
+Length of phones: 35
+20.93% done
+Time: 3.55 s
+000280412.pkl
+Length of phones: 28
+21.11% done
+Time: 3.55 s
+000270203.pkl
+Length of phones: 41
+21.29% done
+Time: 3.56 s
+000190498.pkl
+Length of phones: 39
+21.47% done
+Time: 3.60 s
+001960089.pkl
+Length of phones: 43
+21.65% done
+Time: 3.61 s
+002020013.pkl
+Length of phones: 40
+21.82% done
+Time: 3.63 s
+000210243.pkl
+Length of phones: 40
+22.00% done
+Time: 3.70 s
+001910317.pkl
+Length of phones: 44
+22.18% done
+Time: 3.76 s
+000250181.pkl
+Length of phones: 37
+22.36% done
+Time: 3.84 s
+000120186.pkl
+Length of phones: 42
+22.54% done
+Time: 3.87 s
+000010341.pkl
+Length of phones: 39
+22.72% done
+Time: 3.94 s
+001120070.pkl
+Length of phones: 71
+22.90% done
+Time: 4.20 s
+001240140.pkl
+Length of phones: 39
+23.08% done
+Time: 4.21 s
+000370050.pkl
+Length of phones: 34
+23.26% done
+Time: 4.24 s
+000360445.pkl
+Length of phones: 39
+23.43% done
+Time: 4.27 s
+000380054.pkl
+Length of phones: 46
+23.61% done
+Time: 4.29 s
+001370397.pkl
+Length of phones: 38
+23.79% done
+Time: 4.34 s
+000620298.pkl
+Length of phones: 39
+23.97% done
+Time: 4.37 s
+000660153.pkl
+Length of phones: 43
+24.15% done
+Time: 4.39 s
+000680405.pkl
+Length of phones: 55
+24.33% done
+Time: 4.41 s
+000040074.pkl
+Length of phones: 44
+24.51% done
+Time: 4.43 s
+000370260.pkl
+Length of phones: 47
+24.69% done
+Time: 4.44 s
+001270221.pkl
+Length of phones: 36
+24.87% done
+Time: 4.45 s
+000200242.pkl
+Length of phones: 39
+25.04% done
+Time: 4.47 s
+000660386.pkl
+Length of phones: 46
+25.22% done
+Time: 4.50 s
+001950412.pkl
+Length of phones: 39
+25.40% done
+Time: 4.52 s
+000360444.pkl
+Length of phones: 42
+25.58% done
+Time: 4.54 s
+000060424.pkl
+Length of phones: 34
+25.76% done
+Time: 4.57 s
+001270103.pkl
+Length of phones: 35
+25.94% done
+Time: 4.60 s
+002000248.pkl
+Length of phones: 33
+26.12% done
+Time: 4.63 s
+000170327.pkl
+Length of phones: 51
+26.30% done
+Time: 4.66 s
+000590474.pkl
+Length of phones: 60
+26.48% done
+Time: 4.72 s
+001960375.pkl
+Length of phones: 25
+26.65% done
+Time: 4.72 s
+000160360.pkl
+Length of phones: 40
+26.83% done
+Time: 4.78 s
+001960275.pkl
+Length of phones: 34
+27.01% done
+Time: 4.79 s
+000310130.pkl
+Length of phones: 49
+27.19% done
+Time: 4.80 s
+000010351.pkl
+Length of phones: 43
+27.37% done
+Time: 4.85 s
+002040277.pkl
+Length of phones: 42
+27.55% done
+Time: 4.91 s
+001120166.pkl
+Length of phones: 60
+27.73% done
+Time: 4.93 s
+001990231.pkl
+Length of phones: 36
+27.91% done
+Time: 4.96 s
+002020260.pkl
+Length of phones: 23
+28.09% done
+Time: 4.97 s
+000480040.pkl
+Length of phones: 33
+28.26% done
+Time: 4.98 s
+000530256.pkl
+Length of phones: 48
+28.44% done
+Time: 5.01 s
+001950442.pkl
+Length of phones: 50
+28.62% done
+Time: 5.04 s
+000680230.pkl
+Length of phones: 60
+28.80% done
+Time: 5.07 s
+000610254.pkl
+Length of phones: 33
+28.98% done
+Time: 5.09 s
+001960131.pkl
+Length of phones: 40
+29.16% done
+Time: 5.13 s
+000500271.pkl
+Length of phones: 48
+29.34% done
+Time: 5.14 s
+000730047.pkl
+Length of phones: 36
+29.52% done
+Time: 5.17 s
+000130019.pkl
+Length of phones: 42
+29.70% done
+Time: 5.20 s
+000290473.pkl
+Length of phones: 38
+29.87% done
+Time: 5.24 s
+000160471.pkl
+Length of phones: 42
+30.05% done
+Time: 5.26 s
+000200467.pkl
+Length of phones: 50
+30.23% done
+Time: 5.27 s
+000980302.pkl
+Length of phones: 46
+30.41% done
+Time: 5.30 s
+000540019.pkl
+Length of phones: 32
+30.59% done
+Time: 5.31 s
+001930405.pkl
+Length of phones: 45
+30.77% done
+Time: 5.34 s
+002010392.pkl
+Length of phones: 38
+30.95% done
+Time: 5.37 s
+001910170.pkl
+Length of phones: 40
+31.13% done
+Time: 5.40 s
+001120476.pkl
+Length of phones: 47
+31.31% done
+Time: 5.45 s
+000050300.pkl
+Length of phones: 44
+31.48% done
+Time: 5.47 s
+000510102.pkl
+Length of phones: 47
+31.66% done
+Time: 5.48 s
+000980232.pkl
+Length of phones: 50
+31.84% done
+Time: 5.51 s
+002010461.pkl
+Length of phones: 52
+32.02% done
+Time: 5.53 s
+002010428.pkl
+Length of phones: 42
+32.20% done
+Time: 5.54 s
+000150090.pkl
+Length of phones: 24
+32.38% done
+Time: 5.59 s
+002020141.pkl
+Length of phones: 24
+32.56% done
+Time: 5.62 s
+000180156.pkl
+Length of phones: 44
+32.74% done
+Time: 5.65 s
+001120033.pkl
+Length of phones: 44
+32.92% done
+Time: 5.68 s
+000010294.pkl
+Length of phones: 28
+33.09% done
+Time: 5.72 s
+000050035.pkl
+Length of phones: 45
+33.27% done
+Time: 5.74 s
+000660421.pkl
+Length of phones: 44
+33.45% done
+Time: 5.77 s
+000520067.pkl
+Length of phones: 36
+33.63% done
+Time: 5.79 s
+001120342.pkl
+Length of phones: 48
+33.81% done
+Time: 5.82 s
+002020481.pkl
+Length of phones: 22
+33.99% done
+Time: 5.87 s
+000560107.pkl
+Length of phones: 28
+34.17% done
+Time: 5.90 s
+002070232.pkl
+Length of phones: 50
+34.35% done
+Time: 5.97 s
+002070060.pkl
+Length of phones: 44
+34.53% done
+Time: 6.00 s
+000270042.pkl
+Length of phones: 40
+34.70% done
+Time: 6.03 s
+000360184.pkl
+Length of phones: 37
+34.88% done
+Time: 6.05 s
+000050234.pkl
+Length of phones: 39
+35.06% done
+Time: 6.06 s
+000080438.pkl
+Length of phones: 35
+35.24% done
+Time: 6.09 s
+000040139.pkl
+Length of phones: 42
+35.42% done
+Time: 6.12 s
+000120311.pkl
+Length of phones: 42
+35.60% done
+Time: 6.14 s
+000510067.pkl
+Length of phones: 57
+35.78% done
+Time: 6.19 s
+000130203.pkl
+Length of phones: 36
+35.96% done
+Time: 6.22 s
+002050251.pkl
+Length of phones: 44
+36.14% done
+Time: 6.23 s
+000450115.pkl
+Length of phones: 41
+36.31% done
+Time: 6.24 s
+000570447.pkl
+Length of phones: 54
+36.49% done
+Time: 6.26 s
+000520073.pkl
+Length of phones: 36
+36.67% done
+Time: 6.29 s
+000310499.pkl
+Length of phones: 49
+36.85% done
+Time: 6.30 s
+000640414.pkl
+Length of phones: 31
+37.03% done
+Time: 6.33 s
+000660330.pkl
+Length of phones: 48
+37.21% done
+Time: 6.36 s
+000170141.pkl
+Length of phones: 52
+37.39% done
+Time: 6.40 s
+000680316.pkl
+Length of phones: 46
+37.57% done
+Time: 6.45 s
+000040285.pkl
+Length of phones: 46
+37.75% done
+Time: 6.46 s
+000580379.pkl
+Length of phones: 44
+37.92% done
+Time: 6.48 s
+001910063.pkl
+Length of phones: 38
+38.10% done
+Time: 6.51 s
+002010338.pkl
+Length of phones: 44
+38.28% done
+Time: 6.51 s
+000160442.pkl
+Length of phones: 38
+38.46% done
+Time: 6.55 s
+002070357.pkl
+Length of phones: 44
+38.64% done
+Time: 6.58 s
+001250152.pkl
+Length of phones: 26
+38.82% done
+Time: 6.59 s
+000450109.pkl
+Length of phones: 33
+39.00% done
+Time: 6.61 s
+001120432.pkl
+Length of phones: 0
+39.18% done
+Time: 6.63 s
+000300262.pkl
+Length of phones: 39
+39.36% done
+Time: 6.64 s
+001950169.pkl
+Length of phones: 35
+39.53% done
+Time: 6.70 s
+000650023.pkl
+Length of phones: 44
+39.71% done
+Time: 6.71 s
+000140195.pkl
+Length of phones: 39
+39.89% done
+Time: 6.73 s
+000370327.pkl
+Length of phones: 39
+40.07% done
+Time: 6.74 s
+000610054.pkl
+Length of phones: 65
+40.25% done
+Time: 6.76 s
+002000159.pkl
+Length of phones: 39
+40.43% done
+Time: 6.77 s
+000230345.pkl
+Length of phones: 42
+40.61% done
+Time: 6.82 s
+001960448.pkl
+Length of phones: 45
+40.79% done
+Time: 6.88 s
+000530031.pkl
+Length of phones: 43
+40.97% done
+Time: 6.93 s
+000980496.pkl
+Length of phones: 42
+41.14% done
+Time: 7.01 s
+000270053.pkl
+Length of phones: 40
+41.32% done
+Time: 7.06 s
+001320256.pkl
+Length of phones: 42
+41.50% done
+Time: 7.08 s
+000180336.pkl
+Length of phones: 49
+41.68% done
+Time: 7.15 s
+000640395.pkl
+Length of phones: 27
+41.86% done
+Time: 7.19 s
+001930170.pkl
+Length of phones: 37
+42.04% done
+Time: 7.20 s
+002010296.pkl
+Length of phones: 32
+42.22% done
+Time: 7.23 s
+002020261.pkl
+Length of phones: 28
+42.40% done
+Time: 7.29 s
+000150095.pkl
+Length of phones: 17
+42.58% done
+Time: 7.29 s
+001370484.pkl
+Length of phones: 44
+42.75% done
+Time: 7.32 s
+002050302.pkl
+Length of phones: 45
+42.93% done
+Time: 7.34 s
+001930235.pkl
+Length of phones: 36
+43.11% done
+Time: 7.36 s
+000050004.pkl
+Length of phones: 40
+43.29% done
+Time: 7.44 s
+000420325.pkl
+Length of phones: 33
+43.47% done
+Time: 7.52 s
+000310093.pkl
+Length of phones: 36
+43.65% done
+Time: 7.53 s
+000470372.pkl
+Length of phones: 31
+43.83% done
+Time: 7.57 s
+001340265.pkl
+Length of phones: 41
+44.01% done
+Time: 7.58 s
+000180277.pkl
+Length of phones: 32
+44.19% done
+Time: 7.61 s
+001270492.pkl
+Length of phones: 37
+44.36% done
+Time: 7.62 s
+000440401.pkl
+Length of phones: 30
+44.54% done
+Time: 7.63 s
+002020323.pkl
+Length of phones: 26
+44.72% done
+Time: 7.66 s
+000120489.pkl
+Length of phones: 35
+44.90% done
+Time: 7.70 s
+001370404.pkl
+Length of phones: 35
+45.08% done
+Time: 7.71 s
+000550267.pkl
+Length of phones: 40
+45.26% done
+Time: 7.73 s
+000130200.pkl
+Length of phones: 40
+45.44% done
+Time: 7.76 s
+000620020.pkl
+Length of phones: 45
+45.62% done
+Time: 7.84 s
+002000394.pkl
+Length of phones: 37
+45.80% done
+Time: 7.86 s
+000910235.pkl
+Length of phones: 20
+45.97% done
+Time: 7.89 s
+001980184.pkl
+Length of phones: 47
+46.15% done
+Time: 7.96 s
+002060035.pkl
+Length of phones: 36
+46.33% done
+Time: 7.99 s
+000840471.pkl
+Length of phones: 58
+46.51% done
+Time: 8.00 s
+000740329.pkl
+Length of phones: 39
+46.69% done
+Time: 8.06 s
+001930458.pkl
+Length of phones: 38
+46.87% done
+Time: 8.08 s
+000610407.pkl
+Length of phones: 41
+47.05% done
+Time: 8.11 s
+001320297.pkl
+Length of phones: 31
+47.23% done
+Time: 8.14 s
+000060337.pkl
+Length of phones: 34
+47.41% done
+Time: 8.16 s
+000660440.pkl
+Length of phones: 40
+47.58% done
+Time: 8.19 s
+000250161.pkl
+Length of phones: 44
+47.76% done
+Time: 8.23 s
+000980316.pkl
+Length of phones: 46
+47.94% done
+Time: 8.25 s
+001990371.pkl
+Length of phones: 37
+48.12% done
+Time: 8.26 s
+002010191.pkl
+Length of phones: 39
+48.30% done
+Time: 8.28 s
+000260181.pkl
+Length of phones: 30
+48.48% done
+Time: 8.29 s
+000660438.pkl
+Length of phones: 48
+48.66% done
+Time: 8.30 s
+000520110.pkl
+Length of phones: 31
+48.84% done
+Time: 8.32 s
+000590386.pkl
+Length of phones: 43
+49.02% done
+Time: 8.34 s
+002100027.pkl
+Length of phones: 38
+49.19% done
+Time: 8.36 s
+000370104.pkl
+Length of phones: 42
+49.37% done
+Time: 8.40 s
+001960032.pkl
+Length of phones: 38
+49.55% done
+Time: 8.43 s
+002020301.pkl
+Length of phones: 22
+49.73% done
+Time: 8.44 s
+000060185.pkl
+Length of phones: 39
+49.91% done
+Time: 8.47 s
+000400306.pkl
+Length of phones: 37
+50.09% done
+Time: 8.50 s
+000650406.pkl
+Length of phones: 31
+50.27% done
+Time: 8.53 s
+000560404.pkl
+Length of phones: 31
+50.45% done
+Time: 8.54 s
+000420327.pkl
+Length of phones: 37
+50.63% done
+Time: 8.57 s
+001370177.pkl
+Length of phones: 37
+50.81% done
+Time: 8.61 s
+001330376.pkl
+Length of phones: 41
+50.98% done
+Time: 8.69 s
+000260329.pkl
+Length of phones: 34
+51.16% done
+Time: 8.72 s
+001250485.pkl
+Length of phones: 37
+51.34% done
+Time: 8.74 s
+001120425.pkl
+Length of phones: 59
+51.52% done
+Time: 8.76 s
+000530027.pkl
+Length of phones: 33
+51.70% done
+Time: 8.79 s
+000590052.pkl
+Length of phones: 60
+51.88% done
+Time: 8.81 s
+000150181.pkl
+Length of phones: 31
+52.06% done
+Time: 8.83 s
+000650245.pkl
+Length of phones: 46
+52.24% done
+Time: 8.86 s
+000620229.pkl
+Length of phones: 48
+52.42% done
+Time: 8.88 s
+000740413.pkl
+Length of phones: 37
+52.59% done
+Time: 8.91 s
+001120259.pkl
+Length of phones: 55
+52.77% done
+Time: 8.92 s
+000540355.pkl
+Length of phones: 38
+52.95% done
+Time: 8.92 s
+000260385.pkl
+Length of phones: 39
+53.13% done
+Time: 8.93 s
+002020483.pkl
+Length of phones: 34
+53.31% done
+Time: 8.96 s
+000170382.pkl
+Length of phones: 39
+53.49% done
+Time: 8.99 s
+000010321.pkl
+Length of phones: 37
+53.67% done
+Time: 9.00 s
+000680247.pkl
+Length of phones: 48
+53.85% done
+Time: 9.01 s
+000640103.pkl
+Length of phones: 21
+54.03% done
+Time: 9.09 s
+000180450.pkl
+Length of phones: 37
+54.20% done
+Time: 9.11 s
+000620452.pkl
+Length of phones: 39
+54.38% done
+Time: 9.12 s
+000190453.pkl
+Length of phones: 35
+54.56% done
+Time: 9.15 s
+002060045.pkl
+Length of phones: 47
+54.74% done
+Time: 9.17 s
+002040034.pkl
+Length of phones: 32
+54.92% done
+Time: 9.19 s
+001930145.pkl
+Length of phones: 36
+55.10% done
+Time: 9.20 s
+000370114.pkl
+Length of phones: 43
+55.28% done
+Time: 9.26 s
+001120296.pkl
+Length of phones: 49
+55.46% done
+Time: 9.29 s
+000380135.pkl
+Length of phones: 33
+55.64% done
+Time: 9.31 s
+000660468.pkl
+Length of phones: 0
+55.81% done
+Time: 9.33 s
+000840310.pkl
+Length of phones: 48
+55.99% done
+Time: 9.35 s
+000370372.pkl
+Length of phones: 37
+56.17% done
+Time: 9.38 s
+002050422.pkl
+Length of phones: 58
+56.35% done
+Time: 9.41 s
+000370038.pkl
+Length of phones: 39
+56.53% done
+Time: 9.43 s
+001950341.pkl
+Length of phones: 41
+56.71% done
+Time: 9.46 s
+001910379.pkl
+Length of phones: 48
+56.89% done
+Time: 9.48 s
+000740092.pkl
+Length of phones: 42
+57.07% done
+Time: 9.49 s
+000500326.pkl
+Length of phones: 28
+57.25% done
+Time: 9.51 s
+000120390.pkl
+Length of phones: 40
+57.42% done
+Time: 9.53 s
+001950111.pkl
+Length of phones: 38
+57.60% done
+Time: 9.54 s
+000130208.pkl
+Length of phones: 54
+57.78% done
+Time: 9.57 s
+000380408.pkl
+Length of phones: 57
+57.96% done
+Time: 9.62 s
+000200323.pkl
+Length of phones: 24
+58.14% done
+Time: 9.64 s
+000710163.pkl
+Length of phones: 35
+58.32% done
+Time: 9.67 s
+000680126.pkl
+Length of phones: 53
+58.50% done
+Time: 9.74 s
+000040093.pkl
+Length of phones: 37
+58.68% done
+Time: 9.77 s
+000010121.pkl
+Length of phones: 35
+58.86% done
+Time: 9.81 s
+000100165.pkl
+Length of phones: 30
+59.03% done
+Time: 9.83 s
+000360369.pkl
+Length of phones: 61
+59.21% done
+Time: 9.87 s
+001200138.pkl
+Length of phones: 39
+59.39% done
+Time: 9.89 s
+001340482.pkl
+Length of phones: 36
+59.57% done
+Time: 9.89 s
+001960405.pkl
+Length of phones: 42
+59.75% done
+Time: 9.93 s
+002070035.pkl
+Length of phones: 50
+59.93% done
+Time: 9.95 s
+001350065.pkl
+Length of phones: 30
+60.11% done
+Time: 9.98 s
+000150097.pkl
+Length of phones: 27
+60.29% done
+Time: 10.04 s
+002080117.pkl
+Length of phones: 40
+60.47% done
+Time: 10.07 s
+000840217.pkl
+Length of phones: 62
+60.64% done
+Time: 10.09 s
+001370180.pkl
+Length of phones: 47
+60.82% done
+Time: 10.10 s
+000510247.pkl
+Length of phones: 55
+61.00% done
+Time: 10.14 s
+001370342.pkl
+Length of phones: 35
+61.18% done
+Time: 10.17 s
+000650113.pkl
+Length of phones: 44
+61.36% done
+Time: 10.19 s
+000550099.pkl
+Length of phones: 48
+61.54% done
+Time: 10.22 s
+002020297.pkl
+Length of phones: 39
+61.72% done
+Time: 10.23 s
+000740118.pkl
+Length of phones: 34
+61.90% done
+Time: 10.26 s
+000190327.pkl
+Length of phones: 42
+62.08% done
+Time: 10.27 s
+000550253.pkl
+Length of phones: 44
+62.25% done
+Time: 10.31 s
+000580341.pkl
+Length of phones: 40
+62.43% done
+Time: 10.32 s
+001320250.pkl
+Length of phones: 36
+62.61% done
+Time: 10.35 s
+002050245.pkl
+Length of phones: 34
+62.79% done
+Time: 10.38 s
+001390008.pkl
+Length of phones: 37
+62.97% done
+Time: 10.40 s
+000840282.pkl
+Length of phones: 0
+63.15% done
+Time: 10.42 s
+002020182.pkl
+Length of phones: 0
+63.33% done
+Time: 10.48 s
+000350353.pkl
+Length of phones: 26
+63.51% done
+Time: 10.50 s
+000190120.pkl
+Length of phones: 47
+63.69% done
+Time: 10.51 s
+000460453.pkl
+Length of phones: 38
+63.86% done
+Time: 10.52 s
+000660039.pkl
+Length of phones: 40
+64.04% done
+Time: 10.54 s
+000550044.pkl
+Length of phones: 42
+64.22% done
+Time: 10.55 s
+000370303.pkl
+Length of phones: 51
+64.40% done
+Time: 10.57 s
+000710135.pkl
+Length of phones: 30
+64.58% done
+Time: 10.60 s
+000370238.pkl
+Length of phones: 44
+64.76% done
+Time: 10.61 s
+000300319.pkl
+Length of phones: 33
+64.94% done
+Time: 10.64 s
+001310413.pkl
+Length of phones: 34
+65.12% done
+Time: 10.65 s
+002050107.pkl
+Length of phones: 40
+65.30% done
+Time: 10.65 s
+000680307.pkl
+Length of phones: 59
+65.47% done
+Time: 10.66 s
+001390492.pkl
+Length of phones: 38
+65.65% done
+Time: 10.70 s
+001970280.pkl
+Length of phones: 39
+65.83% done
+Time: 10.71 s
+001120181.pkl
+Length of phones: 55
+66.01% done
+Time: 10.75 s
+000470226.pkl
+Length of phones: 35
+66.19% done
+Time: 10.78 s
+000420440.pkl
+Length of phones: 43
+66.37% done
+Time: 10.80 s
+000480113.pkl
+Length of phones: 37
+66.55% done
+Time: 10.81 s
+002070056.pkl
+Length of phones: 35
+66.73% done
+Time: 10.82 s
+000120070.pkl
+Length of phones: 38
+66.91% done
+Time: 10.83 s
+002070128.pkl
+Length of phones: 36
+67.08% done
+Time: 10.84 s
+000550129.pkl
+Length of phones: 45
+67.26% done
+Time: 10.90 s
+000530490.pkl
+Length of phones: 43
+67.44% done
+Time: 10.92 s
+000590116.pkl
+Length of phones: 35
+67.62% done
+Time: 10.93 s
+000580327.pkl
+Length of phones: 47
+67.80% done
+Time: 10.95 s
+001330302.pkl
+Length of phones: 35
+67.98% done
+Time: 10.96 s
+001270455.pkl
+Length of phones: 49
+68.16% done
+Time: 11.01 s
+000680373.pkl
+Length of phones: 38
+68.34% done
+Time: 11.02 s
+000210414.pkl
+Length of phones: 35
+68.52% done
+Time: 11.08 s
+000420270.pkl
+Length of phones: 39
+68.69% done
+Time: 11.14 s
+000680265.pkl
+Length of phones: 49
+68.87% done
+Time: 11.44 s
+000200037.pkl
+Length of phones: 49
+69.05% done
+Time: 11.46 s
+000200418.pkl
+Length of phones: 31
+69.23% done
+Time: 11.49 s
+000140152.pkl
+Length of phones: 40
+69.41% done
+Time: 11.52 s
+001370056.pkl
+Length of phones: 33
+69.59% done
+Time: 11.53 s
+000610032.pkl
+Length of phones: 47
+69.77% done
+Time: 11.56 s
+000150474.pkl
+Length of phones: 25
+69.95% done
+Time: 11.58 s
+000740448.pkl
+Length of phones: 50
+70.13% done
+Time: 11.61 s
+000120353.pkl
+Length of phones: 35
+70.30% done
+Time: 11.64 s
+000520098.pkl
+Length of phones: 47
+70.48% done
+Time: 11.65 s
+000350310.pkl
+Length of phones: 19
+70.66% done
+Time: 11.67 s
+000010001.pkl
+Length of phones: 37
+70.84% done
+Time: 11.76 s
+001940484.pkl
+Length of phones: 43
+71.02% done
+Time: 11.77 s
+001910189.pkl
+Length of phones: 41
+71.20% done
+Time: 11.78 s
+000430007.pkl
+Length of phones: 29
+71.38% done
+Time: 11.86 s
+000470017.pkl
+Length of phones: 41
+71.56% done
+Time: 11.87 s
+000300477.pkl
+Length of phones: 56
+71.74% done
+Time: 11.89 s
+000260280.pkl
+Length of phones: 29
+71.91% done
+Time: 11.90 s
+002060255.pkl
+Length of phones: 43
+72.09% done
+Time: 11.91 s
+000010393.pkl
+Length of phones: 42
+72.27% done
+Time: 11.93 s
+000410473.pkl
+Length of phones: 33
+72.45% done
+Time: 11.94 s
+001350446.pkl
+Length of phones: 42
+72.63% done
+Time: 11.95 s
+001930404.pkl
+Length of phones: 35
+72.81% done
+Time: 12.00 s
+000620083.pkl
+Length of phones: 44
+72.99% done
+Time: 12.03 s
+000120338.pkl
+Length of phones: 44
+73.17% done
+Time: 12.08 s
+000150377.pkl
+Length of phones: 20
+73.35% done
+Time: 12.09 s
+000080036.pkl
+Length of phones: 36
+73.52% done
+Time: 12.17 s
+002050308.pkl
+Length of phones: 41
+73.70% done
+Time: 12.18 s
+000260015.pkl
+Length of phones: 46
+73.88% done
+Time: 12.19 s
+000660415.pkl
+Length of phones: 42
+74.06% done
+Time: 12.22 s
+000580126.pkl
+Length of phones: 58
+74.24% done
+Time: 12.23 s
+000380407.pkl
+Length of phones: 44
+74.42% done
+Time: 12.23 s
+000650165.pkl
+Length of phones: 66
+74.60% done
+Time: 12.26 s
+001320060.pkl
+Length of phones: 38
+74.78% done
+Time: 12.27 s
+000560452.pkl
+Length of phones: 35
+74.96% done
+Time: 12.33 s
+000250398.pkl
+Length of phones: 33
+75.13% done
+Time: 12.34 s
+000570189.pkl
+Length of phones: 57
+75.31% done
+Time: 12.36 s
+001250240.pkl
+Length of phones: 33
+75.49% done
+Time: 12.41 s
+000310269.pkl
+Length of phones: 35
+75.67% done
+Time: 12.43 s
+002000262.pkl
+Length of phones: 37
+75.85% done
+Time: 12.50 s
+002050231.pkl
+Length of phones: 48
+76.03% done
+Time: 12.57 s
+000150109.pkl
+Length of phones: 33
+76.21% done
+Time: 12.58 s
+000460304.pkl
+Length of phones: 34
+76.39% done
+Time: 12.61 s
+001970229.pkl
+Length of phones: 38
+76.57% done
+Time: 12.62 s
+000350467.pkl
+Length of phones: 32
+76.74% done
+Time: 12.64 s
+000620257.pkl
+Length of phones: 44
+76.92% done
+Time: 12.71 s
+000400318.pkl
+Length of phones: 37
+77.10% done
+Time: 12.73 s
+000050150.pkl
+Length of phones: 38
+77.28% done
+Time: 12.75 s
+000510423.pkl
+Length of phones: 45
+77.46% done
+Time: 12.76 s
+001260300.pkl
+Length of phones: 28
+77.64% done
+Time: 12.78 s
+000390004.pkl
+Length of phones: 31
+77.82% done
+Time: 12.80 s
+002070417.pkl
+Length of phones: 34
+78.00% done
+Time: 12.81 s
+000360161.pkl
+Length of phones: 37
+78.18% done
+Time: 12.82 s
+000650316.pkl
+Length of phones: 62
+78.35% done
+Time: 12.87 s
+000590060.pkl
+Length of phones: 58
+78.53% done
+Time: 12.88 s
+000510267.pkl
+Length of phones: 31
+78.71% done
+Time: 12.90 s
+002070031.pkl
+Length of phones: 37
+78.89% done
+Time: 12.98 s
+002050230.pkl
+Length of phones: 38
+79.07% done
+Time: 13.00 s
+002100011.pkl
+Length of phones: 37
+79.25% done
+Time: 13.03 s
+002060448.pkl
+Length of phones: 40
+79.43% done
+Time: 13.05 s
+000320145.pkl
+Length of phones: 39
+79.61% done
+Time: 13.06 s
+001120118.pkl
+Length of phones: 66
+79.79% done
+Time: 13.07 s
+000280171.pkl
+Length of phones: 35
+79.96% done
+Time: 13.10 s
+002060325.pkl
+Length of phones: 24
+80.14% done
+Time: 13.12 s
+001120422.pkl
+Length of phones: 58
+80.32% done
+Time: 13.14 s
+002030132.pkl
+Length of phones: 35
+80.50% done
+Time: 13.19 s
+000290329.pkl
+Length of phones: 39
+80.68% done
+Time: 13.22 s
+002040158.pkl
+Length of phones: 34
+80.86% done
+Time: 13.24 s
+001230100.pkl
+Length of phones: 36
+81.04% done
+Time: 13.25 s
+000540225.pkl
+Length of phones: 34
+81.22% done
+Time: 13.25 s
+000060250.pkl
+Length of phones: 45
+81.40% done
+Time: 13.28 s
+000330396.pkl
+Length of phones: 37
+81.57% done
+Time: 13.31 s
+000980368.pkl
+Length of phones: 36
+81.75% done
+Time: 13.34 s
+000610306.pkl
+Length of phones: 51
+81.93% done
+Time: 13.36 s
+000040196.pkl
+Length of phones: 51
+82.11% done
+Time: 13.41 s
+000570018.pkl
+Length of phones: 50
+82.29% done
+Time: 13.42 s
+000570140.pkl
+Length of phones: 36
+82.47% done
+Time: 13.44 s
+000630302.pkl
+Length of phones: 33
+82.65% done
+Time: 13.47 s
+000260246.pkl
+Length of phones: 42
+82.83% done
+Time: 13.48 s
+000510136.pkl
+Length of phones: 39
+83.01% done
+Time: 13.48 s
+000680427.pkl
+Length of phones: 43
+83.18% done
+Time: 13.52 s
+000900072.pkl
+Length of phones: 51
+83.36% done
+Time: 13.54 s
+000680218.pkl
+Length of phones: 34
+83.54% done
+Time: 13.59 s
+002000102.pkl
+Length of phones: 43
+83.72% done
+Time: 13.62 s
+001960088.pkl
+Length of phones: 44
+83.90% done
+Time: 13.64 s
+000180231.pkl
+Length of phones: 40
+84.08% done
+Time: 13.67 s
+000580449.pkl
+Length of phones: 31
+84.26% done
+Time: 13.67 s
+002100275.pkl
+Length of phones: 31
+84.44% done
+Time: 13.72 s
+000420105.pkl
+Length of phones: 27
+84.62% done
+Time: 13.74 s
+001200135.pkl
+Length of phones: 34
+84.79% done
+Time: 13.78 s
+000210174.pkl
+Length of phones: 46
+84.97% done
+Time: 13.79 s
+000300413.pkl
+Length of phones: 49
+85.15% done
+Time: 13.81 s
+000350163.pkl
+Length of phones: 25
+85.33% done
+Time: 13.83 s
+001370098.pkl
+Length of phones: 37
+85.51% done
+Time: 13.84 s
+000200422.pkl
+Length of phones: 45
+85.69% done
+Time: 13.87 s
+000540145.pkl
+Length of phones: 39
+85.87% done
+Time: 13.89 s
+000250460.pkl
+Length of phones: 39
+86.05% done
+Time: 13.91 s
+000680291.pkl
+Length of phones: 47
+86.23% done
+Time: 13.92 s
+001120158.pkl
+Length of phones: 58
+86.40% done
+Time: 13.92 s
+000190039.pkl
+Length of phones: 42
+86.58% done
+Time: 13.95 s
+000510203.pkl
+Length of phones: 53
+86.76% done
+Time: 14.00 s
+001910055.pkl
+Length of phones: 39
+86.94% done
+Time: 14.00 s
+001950497.pkl
+Length of phones: 50
+87.12% done
+Time: 14.03 s
+001960147.pkl
+Length of phones: 35
+87.30% done
+Time: 14.08 s
+000640412.pkl
+Length of phones: 34
+87.48% done
+Time: 14.08 s
+000150392.pkl
+Length of phones: 19
+87.66% done
+Time: 14.10 s
+001930104.pkl
+Length of phones: 31
+87.84% done
+Time: 14.11 s
+000290385.pkl
+Length of phones: 27
+88.01% done
+Time: 14.13 s
+000470276.pkl
+Length of phones: 41
+88.19% done
+Time: 14.15 s
+001950395.pkl
+Length of phones: 33
+88.37% done
+Time: 14.22 s
+000060183.pkl
+Length of phones: 43
+88.55% done
+Time: 14.24 s
+000310109.pkl
+Length of phones: 49
+88.73% done
+Time: 14.25 s
+000920095.pkl
+Length of phones: 35
+88.91% done
+Time: 14.26 s
+000680402.pkl
+Length of phones: 0
+89.09% done
+Time: 14.30 s
+002070343.pkl
+Length of phones: 51
+89.27% done
+Time: 14.33 s
+000550430.pkl
+Length of phones: 48
+89.45% done
+Time: 14.35 s
+000130205.pkl
+Length of phones: 37
+89.62% done
+Time: 14.37 s
+000900023.pkl
+Length of phones: 39
+89.80% done
+Time: 14.38 s
+000250382.pkl
+Length of phones: 43
+89.98% done
+Time: 14.39 s
+001930297.pkl
+Length of phones: 32
+90.16% done
+Time: 14.41 s
+000140037.pkl
+Length of phones: 35
+90.34% done
+Time: 14.42 s
+001120024.pkl
+Length of phones: 36
+90.52% done
+Time: 14.44 s
+001200177.pkl
+Length of phones: 29
+90.70% done
+Time: 14.47 s
+000610128.pkl
+Length of phones: 54
+90.88% done
+Time: 14.49 s
+000170378.pkl
+Length of phones: 40
+91.06% done
+Time: 14.51 s
+000520398.pkl
+Length of phones: 41
+91.23% done
+Time: 14.52 s
+000550172.pkl
+Length of phones: 44
+91.41% done
+Time: 14.53 s
+000360299.pkl
+Length of phones: 37
+91.59% done
+Time: 14.57 s
+000130416.pkl
+Length of phones: 38
+91.77% done
+Time: 14.60 s
+000150186.pkl
+Length of phones: 31
+91.95% done
+Time: 14.62 s
+000230292.pkl
+Length of phones: 42
+92.13% done
+Time: 14.65 s
+001960430.pkl
+Length of phones: 44
+92.31% done
+Time: 14.68 s
+000450160.pkl
+Length of phones: 38
+92.49% done
+Time: 14.70 s
+002070103.pkl
+Length of phones: 35
+92.67% done
+Time: 14.73 s
+001910258.pkl
+Length of phones: 41
+92.84% done
+Time: 14.76 s
+000590190.pkl
+Length of phones: 47
+93.02% done
+Time: 14.77 s
+000130218.pkl
+Length of phones: 26
+93.20% done
+Time: 14.79 s
+000440126.pkl
+Length of phones: 35
+93.38% done
+Time: 14.80 s
+000380216.pkl
+Length of phones: 29
+93.56% done
+Time: 14.84 s
+000680106.pkl
+Length of phones: 32
+93.74% done
+Time: 14.85 s
+000540132.pkl
+Length of phones: 42
+93.92% done
+Time: 14.86 s
+000680113.pkl
+Length of phones: 46
+94.10% done
+Time: 14.89 s
+000570132.pkl
+Length of phones: 41
+94.28% done
+Time: 14.90 s
+000030157.pkl
+Length of phones: 40
+94.45% done
+Time: 14.94 s
+002070196.pkl
+Length of phones: 50
+94.63% done
+Time: 15.02 s
+002060449.pkl
+Length of phones: 39
+94.81% done
+Time: 15.05 s
+002030069.pkl
+Length of phones: 35
+94.99% done
+Time: 15.07 s
+000680346.pkl
+Length of phones: 32
+95.17% done
+Time: 15.09 s
+000660016.pkl
+Length of phones: 46
+95.35% done
+Time: 15.10 s
+001250074.pkl
+Length of phones: 39
+95.53% done
+Time: 15.11 s
+000620068.pkl
+Length of phones: 40
+95.71% done
+Time: 15.12 s
+000660161.pkl
+Length of phones: 51
+95.89% done
+Time: 15.14 s
+000040177.pkl
+Length of phones: 38
+96.06% done
+Time: 15.17 s
+002020229.pkl
+Length of phones: 34
+96.24% done
+Time: 15.19 s
+000530428.pkl
+Length of phones: 39
+96.42% done
+Time: 15.20 s
+001230176.pkl
+Length of phones: 38
+96.60% done
+Time: 15.21 s
+002070398.pkl
+Length of phones: 42
+96.78% done
+Time: 15.24 s
+000160463.pkl
+Length of phones: 29
+96.96% done
+Time: 15.26 s
+001340334.pkl
+Length of phones: 38
+97.14% done
+Time: 15.27 s
+000620025.pkl
+Length of phones: 38
+97.32% done
+Time: 15.30 s
+000140058.pkl
+Length of phones: 33
+97.50% done
+Time: 15.33 s
+000200461.pkl
+Length of phones: 48
+97.67% done
+Time: 15.34 s
+000210078.pkl
+Length of phones: 36
+97.85% done
+Time: 15.36 s
+000200371.pkl
+Length of phones: 34
+98.03% done
+Time: 15.39 s
+002010263.pkl
+Length of phones: 36
+98.21% done
+Time: 15.42 s
+000900095.pkl
+Length of phones: 29
+98.39% done
+Time: 15.44 s
+000210135.pkl
+Length of phones: 40
+98.57% done
+Time: 15.47 s
+000130335.pkl
+Length of phones: 46
+98.75% done
+Time: 15.49 s
+000660077.pkl
+Length of phones: 54
+98.93% done
+Time: 15.50 s
+000510262.pkl
+Length of phones: 34
+99.11% done
+Time: 15.56 s
+000360421.pkl
+Length of phones: 46
+99.28% done
+Time: 15.57 s
+000590065.pkl
+Length of phones: 30
+99.46% done
+Time: 15.58 s
+000640228.pkl
+Length of phones: 27
+99.64% done
+Time: 15.60 s
+000150426.pkl
+Length of phones: 18
+99.82% done
+Time: 15.63 s
+000040089.pkl
+Length of phones: 40
+100.00% done
+Time: 15.67 s
+Number of embeddings per phone sequence length: [(3, 19222), (4, 18461), (5, 17709), (6, 16981), (7, 16270), (8, 15580), (9, 14910)]
+Time to save embeddings: 131.89 s
+Finished extracting phonetized embeddings

@@ -1,23 +1,23 @@
 #!/bin/bash
 
-LANGUAGE=telugu
-PHONE_TIMINGS_FNAME=phone_all.ctm
+LANGUAGE=banjara
+PHONE_TIMINGS_FNAME=phone_all_mpr.ctm
 MIN_PHONE_SEQ_LENGTH=3
 MAX_PHONE_SEQ_LENGTH=9
-USE_WINDOW_SPLITTER_INSTEAD_OF_PHONE_SPLITTER=False
+USE_WINDOW_SPLITTER_INSTEAD_OF_PHONE_SPLITTER=True
 USE_QUERIES_CUT_AFTER_EMBEDDING=True
 LAYER=9
 LR=0.0001
 TMP=0.07
 ACC=1000
 BS=5
-EPOCH=4
-PREFIX="mpr_"
+EPOCH=0
+PREFIX=""
 TRAIN_SEQ=3_9
 SAVE_EMBEDDING_FOLDER="${PREFIX}lr_${LR}_tmp_${TMP}_acc_${ACC}_bs_${BS}_epoch_${EPOCH}_${MIN_PHONE_SEQ_LENGTH}_${MAX_PHONE_SEQ_LENGTH}_${TRAIN_SEQ}"
-MODEL_SAVE_DIR="data/telugu/models/awe/${LAYER}/${PREFIX}lr_${LR}_tmp_${TMP}_acc_${ACC}_bs_${BS}_${TRAIN_SEQ}"
-MODEL_NAME="2024-09-13_22:42:05_checkpoint_epoch_${EPOCH}.pt"
-RESULTS_PATH="${LAYER}/telugu_train_3_9_queries_cut_after_embedding/${PREFIX}lr_${LR}_tmp_${TMP}_acc_${ACC}_bs_${BS}_${MIN_PHONE_SEQ_LENGTH}_${MAX_PHONE_SEQ_LENGTH}_${TRAIN_SEQ}_epoch_${EPOCH}"
+MODEL_SAVE_DIR="data/gujarati/models/awe/${LAYER}/${PREFIX}lr_${LR}_tmp_${TMP}_acc_${ACC}_bs_${BS}_${TRAIN_SEQ}"
+MODEL_NAME="2024-10-06_18:38:51_checkpoint_epoch_${EPOCH}.pt"
+RESULTS_PATH="${LAYER}/gujarati_train_3_9_queries_cut_after_embedding/${PREFIX}lr_${LR}_tmp_${TMP}_acc_${ACC}_bs_${BS}_${MIN_PHONE_SEQ_LENGTH}_${MAX_PHONE_SEQ_LENGTH}_${TRAIN_SEQ}_epoch_${EPOCH}"
 MODEL_TYPE="awe"
 
 query_awe_job_id=$(sbatch --parsable awe_model/job_scripts/extract_query_awe_embeddings_extra_args.slurm $LANGUAGE $PHONE_TIMINGS_FNAME $MIN_PHONE_SEQ_LENGTH $MAX_PHONE_SEQ_LENGTH $USE_WINDOW_SPLITTER_INSTEAD_OF_PHONE_SPLITTER $USE_QUERIES_CUT_AFTER_EMBEDDING $LAYER $SAVE_EMBEDDING_FOLDER $MODEL_SAVE_DIR $MODEL_NAME)

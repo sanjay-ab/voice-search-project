@@ -337,12 +337,13 @@ if __name__ == "__main__":
 
     files_to_sample_from = all_docs_in_search_corpus_set - files_related_to_queries
 
-    filter_docs_duration(files_to_sample_from, all_data_dir, 5, 0, size_order_file)
+    filter_docs_duration(files_to_sample_from, all_data_dir, 4, 0, size_order_file)
+    print(len(files_to_sample_from))
 
-    num_to_sample = 1740
+    num_to_sample = 2040
     sampled_files = set(random.sample(sorted(files_to_sample_from), num_to_sample))
 
-    filter_docs_duration(docs_not_in_search_corpus_set, all_data_dir, 5, 0)
+    filter_docs_duration(docs_not_in_search_corpus_set, all_data_dir, 4, 0)
     docs_not_in_search_corpus_set.update(sampled_files)
 
     # not_in_search_corpus_duration = get_duration_of_docs(docs_not_in_search_corpus_set, all_data_dir)
@@ -351,16 +352,17 @@ if __name__ == "__main__":
     all_docs_in_search_corpus_set = all_docs_in_search_corpus_set - sampled_files
     files_to_sample_from = files_to_sample_from - sampled_files
 
-    num_to_sample = 445
+    print(len(files_to_sample_from))
+    num_to_sample = 520
     sampled_files = set(random.sample(sorted(files_to_sample_from), num_to_sample))
-    # not_in_search_corpus_duration = get_duration_of_docs(sampled_files, all_data_dir)
+    not_in_search_corpus_duration = get_duration_of_docs(sampled_files, all_data_dir)
     # not_in_search_corpus_duration = get_voice_activity_duration_of_docs(sampled_files, files_phones_dict)
 
     all_docs_in_search_corpus_set = all_docs_in_search_corpus_set - sampled_files
 
-    with open(f"{analysis_dir}/training_data.txt", "w") as f:
-        for file in docs_not_in_search_corpus_set:
-            f.write(f"{file}\n")
+    # with open(f"{analysis_dir}/validation_data.txt", "w") as f:
+    #     for file in sampled_files:
+    #         f.write(f"{file}\n")
     
 
     # not_in_search_corpus_voice_activity_duration = \

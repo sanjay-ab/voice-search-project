@@ -102,6 +102,15 @@ if __name__ == "__main__":
     embedded_phones_dict = get_embedded_phones_dict(
                             phone_timings_file, language, embedding_dir, min_phone_seq_length, max_phone_seq_length,
                             perturb_sequences, max_one_sided_perturb_amount, False)
+
+    num_per_phone_num = defaultdict(int)
+
+    for phone_seq, embeddings in embedded_phones_dict.items():
+        num_per_phone_num[len(phone_seq.split(" "))] += len(embeddings)
+
+    num_per_phone_num = sorted(num_per_phone_num.items(), key=lambda x: x[0])
+
+    print(f"Number of embeddings per phone sequence length: {num_per_phone_num}")
     
     t1 = time.perf_counter()
     pkl.dump(embedded_phones_dict, open(f"{save_embedding_dir}/all_embeddings_phonetized.pkl", "wb"))

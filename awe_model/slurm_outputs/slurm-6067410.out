@@ -1,0 +1,1572 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Extracting phonetized embeddings from data/gujarati//embeddings/validation_data/9/raw...
+Using: phone timings file: data/gujarati//analysis/phone_all.ctm
+Min phone seq length: 3
+Max phone seq length: 9
+Saving phonetized embeddings to data/gujarati//embeddings/validation_data/9/temp_phonetized_3_9
+000380284.pkl
+0.19% done
+Time: 0.91 s
+000280048.pkl
+0.38% done
+Time: 0.94 s
+001340087.pkl
+0.58% done
+Time: 0.97 s
+000570482.pkl
+0.77% done
+Time: 1.00 s
+002020335.pkl
+0.96% done
+Time: 1.02 s
+000590488.pkl
+1.15% done
+Time: 1.05 s
+002010241.pkl
+1.35% done
+Time: 1.11 s
+000210042.pkl
+1.54% done
+Time: 1.13 s
+000040486.pkl
+1.73% done
+Time: 1.16 s
+000520315.pkl
+1.92% done
+Time: 1.19 s
+000280406.pkl
+2.12% done
+Time: 1.22 s
+000200444.pkl
+2.31% done
+Time: 1.25 s
+000250064.pkl
+2.50% done
+Time: 1.28 s
+001990036.pkl
+2.69% done
+Time: 1.31 s
+000100419.pkl
+2.88% done
+Time: 1.34 s
+000610352.pkl
+3.08% done
+Time: 1.39 s
+000680189.pkl
+3.27% done
+Time: 1.47 s
+001960005.pkl
+3.46% done
+Time: 1.49 s
+000510040.pkl
+3.65% done
+Time: 1.52 s
+001270341.pkl
+3.85% done
+Time: 1.55 s
+000210142.pkl
+4.04% done
+Time: 1.62 s
+000010313.pkl
+4.23% done
+Time: 1.69 s
+000910341.pkl
+4.42% done
+Time: 1.71 s
+002060196.pkl
+4.62% done
+Time: 1.74 s
+000730185.pkl
+4.81% done
+Time: 1.77 s
+000610103.pkl
+5.00% done
+Time: 1.82 s
+001350075.pkl
+5.19% done
+Time: 1.84 s
+000740289.pkl
+5.38% done
+Time: 1.86 s
+000180305.pkl
+5.58% done
+Time: 1.89 s
+001350058.pkl
+5.77% done
+Time: 1.92 s
+000740180.pkl
+5.96% done
+Time: 1.98 s
+000910443.pkl
+6.15% done
+Time: 2.00 s
+000100399.pkl
+6.35% done
+Time: 2.03 s
+000570228.pkl
+6.54% done
+Time: 2.07 s
+002080156.pkl
+6.73% done
+Time: 2.10 s
+001960125.pkl
+6.92% done
+Time: 2.12 s
+000980140.pkl
+7.12% done
+Time: 2.15 s
+001370476.pkl
+7.31% done
+Time: 2.18 s
+000170049.pkl
+7.50% done
+Time: 2.20 s
+002050343.pkl
+7.69% done
+Time: 2.23 s
+000450238.pkl
+7.88% done
+Time: 2.30 s
+000080211.pkl
+8.08% done
+Time: 2.34 s
+002020353.pkl
+8.27% done
+Time: 2.36 s
+000040282.pkl
+8.46% done
+Time: 2.39 s
+002010033.pkl
+8.65% done
+Time: 2.41 s
+001340076.pkl
+8.85% done
+Time: 2.46 s
+000040207.pkl
+9.04% done
+Time: 2.49 s
+000120369.pkl
+9.23% done
+Time: 2.56 s
+000110327.pkl
+9.42% done
+Time: 2.59 s
+000840452.pkl
+9.62% done
+Time: 2.60 s
+000580065.pkl
+9.81% done
+Time: 2.64 s
+000150397.pkl
+10.00% done
+Time: 2.67 s
+000150054.pkl
+10.19% done
+Time: 2.69 s
+000460406.pkl
+10.38% done
+Time: 2.72 s
+000100143.pkl
+10.58% done
+Time: 2.75 s
+000650178.pkl
+10.77% done
+Time: 2.76 s
+000650360.pkl
+10.96% done
+Time: 2.77 s
+000320428.pkl
+11.15% done
+Time: 2.80 s
+002010301.pkl
+11.35% done
+Time: 2.83 s
+000370494.pkl
+11.54% done
+Time: 2.86 s
+002010156.pkl
+11.73% done
+Time: 2.89 s
+001960168.pkl
+11.92% done
+Time: 2.93 s
+000150073.pkl
+12.12% done
+Time: 2.96 s
+000680239.pkl
+12.31% done
+Time: 2.99 s
+000040114.pkl
+12.50% done
+Time: 3.02 s
+000570230.pkl
+12.69% done
+Time: 3.05 s
+000530467.pkl
+12.88% done
+Time: 3.10 s
+002080062.pkl
+13.08% done
+Time: 3.11 s
+002000383.pkl
+13.27% done
+Time: 3.13 s
+000300226.pkl
+13.46% done
+Time: 3.20 s
+001230221.pkl
+13.65% done
+Time: 3.23 s
+000260492.pkl
+13.85% done
+Time: 3.25 s
+000300389.pkl
+14.04% done
+Time: 3.26 s
+000530274.pkl
+14.23% done
+Time: 3.30 s
+000310491.pkl
+14.42% done
+Time: 3.33 s
+000150134.pkl
+14.62% done
+Time: 3.35 s
+002060236.pkl
+14.81% done
+Time: 3.39 s
+001320292.pkl
+15.00% done
+Time: 3.41 s
+000560370.pkl
+15.19% done
+Time: 3.44 s
+000660270.pkl
+15.38% done
+Time: 3.49 s
+001370498.pkl
+15.58% done
+Time: 3.55 s
+000180212.pkl
+15.77% done
+Time: 3.57 s
+001370139.pkl
+15.96% done
+Time: 3.60 s
+001960106.pkl
+16.15% done
+Time: 3.63 s
+000610342.pkl
+16.35% done
+Time: 3.67 s
+000050015.pkl
+16.54% done
+Time: 3.70 s
+000060344.pkl
+16.73% done
+Time: 3.71 s
+000680262.pkl
+16.92% done
+Time: 3.75 s
+002020491.pkl
+17.12% done
+Time: 3.78 s
+001120131.pkl
+17.31% done
+Time: 3.84 s
+000230117.pkl
+17.50% done
+Time: 3.85 s
+001980116.pkl
+17.69% done
+Time: 3.86 s
+002050119.pkl
+17.88% done
+Time: 3.89 s
+001260189.pkl
+18.08% done
+Time: 3.90 s
+000170011.pkl
+18.27% done
+Time: 3.91 s
+000680371.pkl
+18.46% done
+Time: 3.92 s
+001330183.pkl
+18.65% done
+Time: 3.95 s
+000650094.pkl
+18.85% done
+Time: 3.98 s
+000500062.pkl
+19.04% done
+Time: 4.01 s
+000170377.pkl
+19.23% done
+Time: 4.03 s
+000010382.pkl
+19.42% done
+Time: 4.07 s
+001120463.pkl
+19.62% done
+Time: 4.08 s
+000040310.pkl
+19.81% done
+Time: 4.11 s
+000530302.pkl
+20.00% done
+Time: 4.16 s
+000030023.pkl
+20.19% done
+Time: 4.23 s
+000190115.pkl
+20.38% done
+Time: 4.26 s
+000270203.pkl
+20.58% done
+Time: 4.30 s
+000190498.pkl
+20.77% done
+Time: 4.33 s
+000570026.pkl
+20.96% done
+Time: 4.34 s
+001910317.pkl
+21.15% done
+Time: 4.38 s
+000120186.pkl
+21.35% done
+Time: 4.41 s
+001240140.pkl
+21.54% done
+Time: 4.44 s
+002010469.pkl
+21.73% done
+Time: 4.48 s
+000340461.pkl
+21.92% done
+Time: 4.51 s
+000620298.pkl
+22.12% done
+Time: 4.52 s
+000340323.pkl
+22.31% done
+Time: 4.54 s
+000260272.pkl
+22.50% done
+Time: 4.56 s
+000660386.pkl
+22.69% done
+Time: 4.58 s
+000550347.pkl
+22.88% done
+Time: 4.60 s
+001960050.pkl
+23.08% done
+Time: 4.63 s
+000200302.pkl
+23.27% done
+Time: 4.66 s
+000060424.pkl
+23.46% done
+Time: 4.71 s
+001940204.pkl
+23.65% done
+Time: 4.72 s
+001960067.pkl
+23.85% done
+Time: 4.75 s
+002030099.pkl
+24.04% done
+Time: 4.77 s
+000980295.pkl
+24.23% done
+Time: 4.99 s
+002060494.pkl
+24.42% done
+Time: 5.02 s
+002000248.pkl
+24.62% done
+Time: 5.06 s
+000170327.pkl
+24.81% done
+Time: 5.10 s
+002070104.pkl
+25.00% done
+Time: 5.12 s
+001120036.pkl
+25.19% done
+Time: 5.14 s
+000440249.pkl
+25.38% done
+Time: 5.17 s
+000590474.pkl
+25.58% done
+Time: 5.19 s
+000480318.pkl
+25.77% done
+Time: 5.27 s
+000160360.pkl
+25.96% done
+Time: 5.30 s
+000200354.pkl
+26.15% done
+Time: 5.30 s
+000010351.pkl
+26.35% done
+Time: 5.32 s
+002040277.pkl
+26.54% done
+Time: 5.35 s
+000650302.pkl
+26.73% done
+Time: 5.36 s
+002020260.pkl
+26.92% done
+Time: 5.37 s
+000190016.pkl
+27.12% done
+Time: 5.39 s
+002070143.pkl
+27.31% done
+Time: 5.42 s
+002100303.pkl
+27.50% done
+Time: 5.50 s
+001350471.pkl
+27.69% done
+Time: 5.53 s
+000270063.pkl
+27.88% done
+Time: 5.56 s
+002070360.pkl
+28.08% done
+Time: 5.58 s
+000380345.pkl
+28.27% done
+Time: 5.60 s
+000200324.pkl
+28.46% done
+Time: 5.63 s
+000680477.pkl
+28.65% done
+Time: 5.65 s
+000290473.pkl
+28.85% done
+Time: 5.68 s
+000200467.pkl
+29.04% done
+Time: 5.71 s
+000560085.pkl
+29.23% done
+Time: 5.74 s
+001350080.pkl
+29.42% done
+Time: 5.76 s
+001930405.pkl
+29.62% done
+Time: 5.77 s
+002010392.pkl
+29.81% done
+Time: 5.79 s
+001910170.pkl
+30.00% done
+Time: 5.80 s
+000040088.pkl
+30.19% done
+Time: 5.83 s
+000510102.pkl
+30.38% done
+Time: 5.84 s
+001910107.pkl
+30.58% done
+Time: 5.87 s
+000620269.pkl
+30.77% done
+Time: 5.88 s
+002010461.pkl
+30.96% done
+Time: 5.89 s
+000450211.pkl
+31.15% done
+Time: 5.92 s
+002010428.pkl
+31.35% done
+Time: 5.99 s
+000250028.pkl
+31.54% done
+Time: 6.00 s
+000420483.pkl
+31.73% done
+Time: 6.03 s
+000580463.pkl
+31.92% done
+Time: 6.06 s
+000650333.pkl
+32.12% done
+Time: 6.09 s
+000010294.pkl
+32.31% done
+Time: 6.13 s
+000190025.pkl
+32.50% done
+Time: 6.15 s
+000050035.pkl
+32.69% done
+Time: 6.18 s
+000660421.pkl
+32.88% done
+Time: 6.20 s
+000520067.pkl
+33.08% done
+Time: 6.23 s
+000550350.pkl
+33.27% done
+Time: 6.24 s
+001120342.pkl
+33.46% done
+Time: 6.28 s
+000050298.pkl
+33.65% done
+Time: 6.31 s
+000120140.pkl
+33.85% done
+Time: 6.32 s
+000630321.pkl
+34.04% done
+Time: 6.35 s
+002070232.pkl
+34.23% done
+Time: 6.37 s
+000360184.pkl
+34.42% done
+Time: 6.42 s
+000140493.pkl
+34.62% done
+Time: 6.45 s
+000680188.pkl
+34.81% done
+Time: 6.47 s
+001120133.pkl
+35.00% done
+Time: 6.50 s
+000040139.pkl
+35.19% done
+Time: 6.53 s
+000510067.pkl
+35.38% done
+Time: 6.56 s
+000130203.pkl
+35.58% done
+Time: 6.59 s
+000450150.pkl
+35.77% done
+Time: 6.60 s
+000840248.pkl
+35.96% done
+Time: 6.62 s
+000310499.pkl
+36.15% done
+Time: 6.70 s
+000660330.pkl
+36.35% done
+Time: 6.71 s
+000170141.pkl
+36.54% done
+Time: 6.74 s
+000040285.pkl
+36.73% done
+Time: 6.76 s
+001120106.pkl
+36.92% done
+Time: 6.78 s
+000570042.pkl
+37.12% done
+Time: 6.81 s
+001910063.pkl
+37.31% done
+Time: 6.82 s
+000160442.pkl
+37.50% done
+Time: 6.87 s
+001250152.pkl
+37.69% done
+Time: 6.90 s
+001120432.pkl
+37.88% done
+Time: 6.91 s
+000650023.pkl
+38.08% done
+Time: 6.94 s
+001960334.pkl
+38.27% done
+Time: 6.97 s
+000140382.pkl
+38.46% done
+Time: 7.04 s
+001340033.pkl
+38.65% done
+Time: 7.06 s
+000540340.pkl
+38.85% done
+Time: 7.10 s
+000170214.pkl
+39.04% done
+Time: 7.13 s
+000300008.pkl
+39.23% done
+Time: 7.16 s
+000610054.pkl
+39.42% done
+Time: 7.17 s
+002000159.pkl
+39.62% done
+Time: 7.18 s
+000530031.pkl
+39.81% done
+Time: 7.20 s
+000200426.pkl
+40.00% done
+Time: 7.22 s
+000180336.pkl
+40.19% done
+Time: 7.26 s
+000640395.pkl
+40.38% done
+Time: 7.28 s
+000080067.pkl
+40.58% done
+Time: 7.37 s
+001120107.pkl
+40.77% done
+Time: 7.40 s
+000190343.pkl
+40.96% done
+Time: 7.42 s
+000350188.pkl
+41.15% done
+Time: 7.46 s
+000110384.pkl
+41.35% done
+Time: 7.47 s
+001340265.pkl
+41.54% done
+Time: 7.50 s
+001120187.pkl
+41.73% done
+Time: 7.51 s
+002020209.pkl
+41.92% done
+Time: 7.59 s
+000170194.pkl
+42.12% done
+Time: 7.61 s
+000440401.pkl
+42.31% done
+Time: 7.64 s
+000610394.pkl
+42.50% done
+Time: 7.68 s
+001370404.pkl
+42.69% done
+Time: 7.77 s
+000230159.pkl
+42.88% done
+Time: 7.79 s
+000280146.pkl
+43.08% done
+Time: 7.83 s
+000620020.pkl
+43.27% done
+Time: 7.86 s
+001370168.pkl
+43.46% done
+Time: 7.87 s
+000200410.pkl
+43.65% done
+Time: 7.89 s
+000650382.pkl
+43.85% done
+Time: 7.91 s
+001970248.pkl
+44.04% done
+Time: 7.95 s
+002060035.pkl
+44.23% done
+Time: 7.96 s
+002060327.pkl
+44.42% done
+Time: 8.00 s
+000610407.pkl
+44.62% done
+Time: 8.03 s
+000270393.pkl
+44.81% done
+Time: 8.05 s
+001320297.pkl
+45.00% done
+Time: 8.07 s
+002000119.pkl
+45.19% done
+Time: 8.10 s
+000200443.pkl
+45.38% done
+Time: 8.14 s
+000070147.pkl
+45.58% done
+Time: 8.17 s
+000340236.pkl
+45.77% done
+Time: 8.18 s
+000250161.pkl
+45.96% done
+Time: 8.21 s
+002050243.pkl
+46.15% done
+Time: 8.24 s
+000650161.pkl
+46.35% done
+Time: 8.27 s
+000100069.pkl
+46.54% done
+Time: 8.28 s
+000980293.pkl
+46.73% done
+Time: 8.30 s
+002100425.pkl
+46.92% done
+Time: 8.37 s
+000590386.pkl
+47.12% done
+Time: 8.40 s
+000280492.pkl
+47.31% done
+Time: 8.41 s
+000370104.pkl
+47.50% done
+Time: 8.42 s
+002020301.pkl
+47.69% done
+Time: 8.46 s
+000360374.pkl
+47.88% done
+Time: 8.48 s
+000450457.pkl
+48.08% done
+Time: 8.50 s
+000580455.pkl
+48.27% done
+Time: 8.53 s
+000510036.pkl
+48.46% done
+Time: 8.59 s
+000560404.pkl
+48.65% done
+Time: 8.60 s
+001250194.pkl
+48.85% done
+Time: 8.61 s
+000420327.pkl
+49.04% done
+Time: 8.62 s
+000980236.pkl
+49.23% done
+Time: 8.64 s
+001330470.pkl
+49.42% done
+Time: 8.66 s
+001330376.pkl
+49.62% done
+Time: 8.66 s
+000120012.pkl
+49.81% done
+Time: 8.70 s
+000260329.pkl
+50.00% done
+Time: 8.76 s
+001120425.pkl
+50.19% done
+Time: 8.77 s
+002020306.pkl
+50.38% done
+Time: 8.78 s
+002000011.pkl
+50.58% done
+Time: 8.81 s
+000530027.pkl
+50.77% done
+Time: 8.82 s
+001120243.pkl
+50.96% done
+Time: 8.85 s
+000590052.pkl
+51.15% done
+Time: 8.91 s
+000150181.pkl
+51.35% done
+Time: 8.94 s
+000650245.pkl
+51.54% done
+Time: 8.96 s
+000660019.pkl
+51.73% done
+Time: 8.98 s
+000620229.pkl
+51.92% done
+Time: 9.02 s
+000910266.pkl
+52.12% done
+Time: 9.05 s
+001120259.pkl
+52.31% done
+Time: 9.06 s
+000260385.pkl
+52.50% done
+Time: 9.07 s
+002020483.pkl
+52.69% done
+Time: 9.11 s
+000550005.pkl
+52.88% done
+Time: 9.14 s
+000680247.pkl
+53.08% done
+Time: 9.17 s
+000640103.pkl
+53.27% done
+Time: 9.19 s
+000580407.pkl
+53.46% done
+Time: 9.22 s
+000190453.pkl
+53.65% done
+Time: 9.25 s
+001370433.pkl
+53.85% done
+Time: 9.26 s
+002060045.pkl
+54.04% done
+Time: 9.30 s
+000660365.pkl
+54.23% done
+Time: 9.31 s
+001980471.pkl
+54.42% done
+Time: 9.33 s
+000350172.pkl
+54.62% done
+Time: 9.36 s
+001120296.pkl
+54.81% done
+Time: 9.39 s
+000530294.pkl
+55.00% done
+Time: 9.43 s
+001350100.pkl
+55.19% done
+Time: 9.50 s
+001370055.pkl
+55.38% done
+Time: 9.51 s
+000920216.pkl
+55.58% done
+Time: 9.58 s
+000500326.pkl
+55.77% done
+Time: 9.61 s
+001960408.pkl
+55.96% done
+Time: 9.62 s
+001950111.pkl
+56.15% done
+Time: 9.63 s
+000200323.pkl
+56.35% done
+Time: 9.66 s
+000710163.pkl
+56.54% done
+Time: 9.67 s
+000570449.pkl
+56.73% done
+Time: 9.69 s
+000680126.pkl
+56.92% done
+Time: 9.72 s
+000740100.pkl
+57.12% done
+Time: 9.73 s
+001200138.pkl
+57.31% done
+Time: 9.74 s
+001340482.pkl
+57.50% done
+Time: 9.77 s
+000180215.pkl
+57.69% done
+Time: 9.78 s
+002070035.pkl
+57.88% done
+Time: 9.85 s
+001370273.pkl
+58.08% done
+Time: 9.86 s
+000620126.pkl
+58.27% done
+Time: 9.88 s
+001350065.pkl
+58.46% done
+Time: 9.90 s
+001980172.pkl
+58.65% done
+Time: 9.92 s
+000150097.pkl
+58.85% done
+Time: 9.95 s
+002080117.pkl
+59.04% done
+Time: 9.98 s
+001370180.pkl
+59.23% done
+Time: 10.00 s
+000510247.pkl
+59.42% done
+Time: 10.02 s
+001930062.pkl
+59.62% done
+Time: 10.05 s
+000650113.pkl
+59.81% done
+Time: 10.08 s
+000550099.pkl
+60.00% done
+Time: 10.11 s
+000050061.pkl
+60.19% done
+Time: 10.14 s
+000150063.pkl
+60.38% done
+Time: 10.17 s
+001230055.pkl
+60.58% done
+Time: 10.20 s
+000100356.pkl
+60.77% done
+Time: 10.22 s
+000580341.pkl
+60.96% done
+Time: 10.25 s
+000150133.pkl
+61.15% done
+Time: 10.28 s
+000550302.pkl
+61.35% done
+Time: 10.30 s
+000640292.pkl
+61.54% done
+Time: 10.33 s
+000640062.pkl
+61.73% done
+Time: 10.36 s
+000200177.pkl
+61.92% done
+Time: 10.39 s
+000130334.pkl
+62.12% done
+Time: 10.42 s
+000370288.pkl
+62.31% done
+Time: 10.45 s
+001320250.pkl
+62.50% done
+Time: 10.46 s
+002050245.pkl
+62.69% done
+Time: 10.49 s
+000650264.pkl
+62.88% done
+Time: 10.52 s
+001390008.pkl
+63.08% done
+Time: 10.53 s
+000840282.pkl
+63.27% done
+Time: 10.56 s
+000510043.pkl
+63.46% done
+Time: 10.58 s
+000350353.pkl
+63.65% done
+Time: 10.63 s
+002070071.pkl
+63.85% done
+Time: 10.68 s
+002050084.pkl
+64.04% done
+Time: 10.71 s
+000370303.pkl
+64.23% done
+Time: 10.73 s
+000680101.pkl
+64.42% done
+Time: 10.73 s
+001310413.pkl
+64.62% done
+Time: 10.76 s
+000150112.pkl
+64.81% done
+Time: 10.79 s
+000420434.pkl
+65.00% done
+Time: 10.82 s
+001970280.pkl
+65.19% done
+Time: 10.82 s
+000260263.pkl
+65.38% done
+Time: 10.84 s
+000420440.pkl
+65.58% done
+Time: 10.88 s
+002010483.pkl
+65.77% done
+Time: 10.89 s
+001970290.pkl
+65.96% done
+Time: 10.94 s
+000170428.pkl
+66.15% done
+Time: 10.96 s
+001340380.pkl
+66.35% done
+Time: 10.97 s
+000550129.pkl
+66.54% done
+Time: 10.98 s
+000530490.pkl
+66.73% done
+Time: 11.01 s
+000580327.pkl
+66.92% done
+Time: 11.02 s
+000060217.pkl
+67.12% done
+Time: 11.03 s
+001330302.pkl
+67.31% done
+Time: 11.04 s
+000120016.pkl
+67.50% done
+Time: 11.07 s
+000510115.pkl
+67.69% done
+Time: 11.08 s
+000530280.pkl
+67.88% done
+Time: 11.09 s
+000520445.pkl
+68.08% done
+Time: 11.11 s
+000650307.pkl
+68.27% done
+Time: 11.12 s
+000680265.pkl
+68.46% done
+Time: 11.16 s
+002030338.pkl
+68.65% done
+Time: 11.19 s
+000210446.pkl
+68.85% done
+Time: 11.22 s
+001960057.pkl
+69.04% done
+Time: 11.23 s
+000250476.pkl
+69.23% done
+Time: 11.25 s
+000140152.pkl
+69.42% done
+Time: 11.28 s
+000610032.pkl
+69.62% done
+Time: 11.29 s
+000650193.pkl
+69.81% done
+Time: 11.30 s
+001270418.pkl
+70.00% done
+Time: 11.31 s
+000740448.pkl
+70.19% done
+Time: 11.33 s
+000510399.pkl
+70.38% done
+Time: 11.34 s
+001390230.pkl
+70.58% done
+Time: 11.35 s
+000340422.pkl
+70.77% done
+Time: 11.41 s
+000040361.pkl
+70.96% done
+Time: 11.42 s
+001240253.pkl
+71.15% done
+Time: 11.43 s
+001910189.pkl
+71.35% done
+Time: 11.44 s
+000430007.pkl
+71.54% done
+Time: 11.47 s
+000980154.pkl
+71.73% done
+Time: 11.49 s
+000300477.pkl
+71.92% done
+Time: 11.51 s
+001330006.pkl
+72.12% done
+Time: 11.55 s
+000260280.pkl
+72.31% done
+Time: 11.56 s
+002060255.pkl
+72.50% done
+Time: 11.59 s
+000410473.pkl
+72.69% done
+Time: 11.60 s
+001230203.pkl
+72.88% done
+Time: 11.63 s
+001930404.pkl
+73.08% done
+Time: 11.64 s
+000180190.pkl
+73.27% done
+Time: 11.66 s
+000620083.pkl
+73.46% done
+Time: 11.68 s
+000120338.pkl
+73.65% done
+Time: 11.92 s
+000080036.pkl
+73.85% done
+Time: 11.94 s
+000660415.pkl
+74.04% done
+Time: 11.96 s
+000580126.pkl
+74.23% done
+Time: 11.99 s
+000650165.pkl
+74.42% done
+Time: 12.00 s
+000380437.pkl
+74.62% done
+Time: 12.02 s
+000590149.pkl
+74.81% done
+Time: 12.05 s
+000610007.pkl
+75.00% done
+Time: 12.07 s
+000540053.pkl
+75.19% done
+Time: 12.09 s
+000580068.pkl
+75.38% done
+Time: 12.11 s
+001250240.pkl
+75.58% done
+Time: 12.15 s
+002020456.pkl
+75.77% done
+Time: 12.16 s
+000410252.pkl
+75.96% done
+Time: 12.18 s
+000650221.pkl
+76.15% done
+Time: 12.20 s
+000210392.pkl
+76.35% done
+Time: 12.27 s
+002000262.pkl
+76.54% done
+Time: 12.28 s
+000150109.pkl
+76.73% done
+Time: 12.32 s
+000350467.pkl
+76.92% done
+Time: 12.35 s
+000570174.pkl
+77.12% done
+Time: 12.38 s
+000640371.pkl
+77.31% done
+Time: 12.40 s
+001120049.pkl
+77.50% done
+Time: 12.41 s
+000980014.pkl
+77.69% done
+Time: 12.42 s
+001960044.pkl
+77.88% done
+Time: 12.46 s
+000050150.pkl
+78.08% done
+Time: 12.52 s
+000510423.pkl
+78.27% done
+Time: 12.53 s
+001260300.pkl
+78.46% done
+Time: 12.60 s
+000390004.pkl
+78.65% done
+Time: 12.63 s
+002010361.pkl
+78.85% done
+Time: 12.66 s
+000190249.pkl
+79.04% done
+Time: 12.67 s
+000200389.pkl
+79.23% done
+Time: 12.72 s
+000040091.pkl
+79.42% done
+Time: 12.75 s
+002050230.pkl
+79.62% done
+Time: 12.78 s
+000320145.pkl
+79.81% done
+Time: 12.81 s
+001980364.pkl
+80.00% done
+Time: 12.84 s
+002060325.pkl
+80.19% done
+Time: 12.87 s
+000530237.pkl
+80.38% done
+Time: 12.90 s
+000260476.pkl
+80.58% done
+Time: 12.91 s
+000290329.pkl
+80.77% done
+Time: 12.92 s
+000540225.pkl
+80.96% done
+Time: 12.95 s
+000060250.pkl
+81.15% done
+Time: 12.97 s
+001930118.pkl
+81.35% done
+Time: 12.99 s
+000260347.pkl
+81.54% done
+Time: 13.01 s
+002000438.pkl
+81.73% done
+Time: 13.02 s
+000250484.pkl
+81.92% done
+Time: 13.03 s
+000570018.pkl
+82.12% done
+Time: 13.04 s
+000660368.pkl
+82.31% done
+Time: 13.07 s
+000260246.pkl
+82.50% done
+Time: 13.08 s
+000130069.pkl
+82.69% done
+Time: 13.10 s
+001230153.pkl
+82.88% done
+Time: 13.11 s
+000660252.pkl
+83.08% done
+Time: 13.14 s
+001960088.pkl
+83.27% done
+Time: 13.14 s
+001320187.pkl
+83.46% done
+Time: 13.17 s
+000580449.pkl
+83.65% done
+Time: 13.18 s
+000610073.pkl
+83.85% done
+Time: 13.19 s
+002100275.pkl
+84.04% done
+Time: 13.20 s
+000420105.pkl
+84.23% done
+Time: 13.22 s
+001200135.pkl
+84.42% done
+Time: 13.22 s
+000210174.pkl
+84.62% done
+Time: 13.23 s
+001370098.pkl
+84.81% done
+Time: 13.24 s
+000520006.pkl
+85.00% done
+Time: 13.27 s
+000590027.pkl
+85.19% done
+Time: 13.28 s
+000430394.pkl
+85.38% done
+Time: 13.29 s
+000540187.pkl
+85.58% done
+Time: 13.34 s
+000250460.pkl
+85.77% done
+Time: 13.35 s
+000680291.pkl
+85.96% done
+Time: 13.36 s
+001120158.pkl
+86.15% done
+Time: 13.38 s
+001120100.pkl
+86.35% done
+Time: 13.41 s
+000590136.pkl
+86.54% done
+Time: 13.47 s
+001910055.pkl
+86.73% done
+Time: 13.48 s
+000380095.pkl
+86.92% done
+Time: 13.49 s
+001950497.pkl
+87.12% done
+Time: 13.50 s
+001960147.pkl
+87.31% done
+Time: 13.52 s
+000640412.pkl
+87.50% done
+Time: 13.54 s
+001960171.pkl
+87.69% done
+Time: 13.59 s
+000170264.pkl
+87.88% done
+Time: 13.60 s
+000140281.pkl
+88.08% done
+Time: 13.63 s
+000350111.pkl
+88.27% done
+Time: 13.69 s
+000370064.pkl
+88.46% done
+Time: 13.72 s
+000920095.pkl
+88.65% done
+Time: 13.74 s
+000550430.pkl
+88.85% done
+Time: 13.77 s
+001950450.pkl
+89.04% done
+Time: 13.78 s
+000150395.pkl
+89.23% done
+Time: 13.81 s
+000140037.pkl
+89.42% done
+Time: 13.87 s
+001120024.pkl
+89.62% done
+Time: 13.88 s
+001200177.pkl
+89.81% done
+Time: 13.89 s
+000520398.pkl
+90.00% done
+Time: 13.92 s
+000650121.pkl
+90.19% done
+Time: 13.94 s
+000550172.pkl
+90.38% done
+Time: 13.95 s
+000360299.pkl
+90.58% done
+Time: 13.96 s
+001950361.pkl
+90.77% done
+Time: 14.00 s
+000580025.pkl
+90.96% done
+Time: 14.03 s
+000520362.pkl
+91.15% done
+Time: 14.06 s
+002060252.pkl
+91.35% done
+Time: 14.10 s
+000710039.pkl
+91.54% done
+Time: 14.11 s
+000590190.pkl
+91.73% done
+Time: 14.12 s
+000130218.pkl
+91.92% done
+Time: 14.13 s
+001220079.pkl
+92.12% done
+Time: 14.16 s
+000680106.pkl
+92.31% done
+Time: 14.17 s
+000160092.pkl
+92.50% done
+Time: 14.18 s
+000150058.pkl
+92.69% done
+Time: 14.20 s
+000920318.pkl
+92.88% done
+Time: 14.23 s
+000680113.pkl
+93.08% done
+Time: 14.24 s
+002070196.pkl
+93.27% done
+Time: 14.25 s
+002060449.pkl
+93.46% done
+Time: 14.26 s
+002030069.pkl
+93.65% done
+Time: 14.29 s
+000200126.pkl
+93.85% done
+Time: 14.35 s
+000620068.pkl
+94.04% done
+Time: 14.36 s
+000040177.pkl
+94.23% done
+Time: 14.39 s
+000230211.pkl
+94.42% done
+Time: 14.41 s
+001960146.pkl
+94.62% done
+Time: 14.42 s
+000740020.pkl
+94.81% done
+Time: 14.45 s
+000480455.pkl
+95.00% done
+Time: 14.50 s
+000570339.pkl
+95.19% done
+Time: 14.59 s
+000530428.pkl
+95.38% done
+Time: 14.60 s
+002020291.pkl
+95.58% done
+Time: 14.61 s
+001230176.pkl
+95.77% done
+Time: 14.62 s
+000350317.pkl
+95.96% done
+Time: 14.63 s
+001240133.pkl
+96.15% done
+Time: 14.66 s
+000420177.pkl
+96.35% done
+Time: 14.69 s
+000140058.pkl
+96.54% done
+Time: 14.72 s
+000200461.pkl
+96.73% done
+Time: 14.74 s
+000680215.pkl
+96.92% done
+Time: 14.76 s
+000200095.pkl
+97.12% done
+Time: 14.79 s
+002010263.pkl
+97.31% done
+Time: 14.80 s
+000230127.pkl
+97.50% done
+Time: 14.81 s
+001330425.pkl
+97.69% done
+Time: 14.82 s
+000130335.pkl
+97.88% done
+Time: 14.83 s
+000160239.pkl
+98.08% done
+Time: 14.86 s
+000320192.pkl
+98.27% done
+Time: 14.87 s
+000210192.pkl
+98.46% done
+Time: 14.88 s
+000520372.pkl
+98.65% done
+Time: 14.91 s
+000360421.pkl
+98.85% done
+Time: 14.95 s
+000430418.pkl
+99.04% done
+Time: 14.97 s
+000230246.pkl
+99.23% done
+Time: 14.98 s
+000570036.pkl
+99.42% done
+Time: 14.99 s
+000360453.pkl
+99.62% done
+Time: 15.01 s
+000640228.pkl
+99.81% done
+Time: 15.02 s
+000450498.pkl
+100.00% done
+Time: 15.03 s
+Number of embeddings per phone sequence length: [(3, 17921), (4, 17210), (5, 16510), (6, 15833), (7, 15176), (8, 14534), (9, 13904)]
+Time to save embeddings: 119.94 s
+Finished extracting phonetized embeddings

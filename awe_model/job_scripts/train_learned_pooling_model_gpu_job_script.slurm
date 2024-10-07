@@ -17,7 +17,7 @@ module load python/3.10.8-gpu
 module load pytorch/1.13.1-gpu
 source /work/tc062/tc062/sanjayb/voice-search-project/mhubert_model/hubert_env_gpu/bin/activate
 
-LANGUAGE=telugu
+LANGUAGE=gujarati
 PHONE_FILE_NAME=phone_all_mpr.ctm
 
 srun python -u awe_model/train_model.py $LANGUAGE $PHONE_FILE_NAME

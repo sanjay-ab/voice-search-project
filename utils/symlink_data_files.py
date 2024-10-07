@@ -5,7 +5,7 @@ def make_dir(path):
     if not os.path.exists(f"{path}"):
         os.makedirs(f"{path}")
 
-def link_files(fname_with_list, source_dirs, target_dir):
+def link_files(fname_with_list, source_dirs, target_dir, fname_extension="wav"):
     """Link files specified in file "fname_with_list" from dir in source_dirs to target_dir.
     File fname_with_list should contain a list of filename basenames, one per line.
 
@@ -22,12 +22,12 @@ def link_files(fname_with_list, source_dirs, target_dir):
         for row in f:
             fname_basename = row.strip()
             for directory in source_dirs:
-                if f"{fname_basename}.wav" in directory_files_dict[directory]:
-                    os.symlink(f"../../../{directory}/{fname_basename}.wav", 
-                        f"{target_dir}/{fname_basename}.wav")
+                if f"{fname_basename}.{fname_extension}" in directory_files_dict[directory]:
+                    os.symlink(f"../../../{directory}/{fname_basename}.{fname_extension}", 
+                        f"{target_dir}/{fname_basename}.{fname_extension}")
                     break
             else:
-                print(f"File {fname_basename}.wav not found in source directories: {source_dirs}")
+                print(f"File {fname_basename}.{fname_extension} not found in source directories: {source_dirs}")
 
 if __name__ == "__main__":
     language = "gujarati"
@@ -64,5 +64,8 @@ if __name__ == "__main__":
         link_files(training_data_fname, [test_data_dir, train_data_dir], output_training_dir)
     
     if link_validation_data:
-        make_dir(output_validation_dir)
         link_files(validation_data_fname, [test_data_dir, train_data_dir], output_validation_dir)
+        # embedding_dir = f"{top_level_dir}/embeddings/validation_data/9/raw_all"
+        # output_validation_dir = f"{top_level_dir}/embeddings/validation_data/9/raw"
+        # make_dir(output_validation_dir)
+        # # nk_files(validation_data_fname, [embedding_dir], output_validation_dir, "pkl")

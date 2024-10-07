@@ -1,0 +1,312 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Extracting phonetized embeddings from data/gujarati//embeddings/validation_data/9/raw...
+Using: phone timings file: data/gujarati//analysis/phone_all_mpr.ctm
+Min phone seq length: 3
+Max phone seq length: 9
+Saving phonetized embeddings to data/gujarati//embeddings/validation_data/9/phonetized_mpr_3_9
+001340087.pkl
+1.00% done
+Time: 0.00 s
+000570482.pkl
+2.00% done
+Time: 0.01 s
+000210042.pkl
+3.00% done
+Time: 0.01 s
+000520315.pkl
+4.00% done
+Time: 0.01 s
+000510040.pkl
+5.00% done
+Time: 0.02 s
+001270341.pkl
+6.00% done
+Time: 0.02 s
+000010313.pkl
+7.00% done
+Time: 0.02 s
+002060196.pkl
+8.00% done
+Time: 0.03 s
+002080156.pkl
+9.00% done
+Time: 0.05 s
+000980140.pkl
+10.00% done
+Time: 0.05 s
+002050343.pkl
+11.00% done
+Time: 0.06 s
+000040282.pkl
+12.00% done
+Time: 0.09 s
+000150054.pkl
+13.00% done
+Time: 0.09 s
+000650360.pkl
+14.00% done
+Time: 0.09 s
+000370494.pkl
+15.00% done
+Time: 0.09 s
+001960168.pkl
+16.00% done
+Time: 0.10 s
+000530274.pkl
+17.00% done
+Time: 0.10 s
+000180212.pkl
+18.00% done
+Time: 0.10 s
+000050015.pkl
+19.00% done
+Time: 0.10 s
+000680262.pkl
+20.00% done
+Time: 0.11 s
+000190115.pkl
+21.00% done
+Time: 0.11 s
+000270203.pkl
+22.00% done
+Time: 0.11 s
+002070104.pkl
+23.00% done
+Time: 0.12 s
+002100303.pkl
+24.00% done
+Time: 0.12 s
+000270063.pkl
+25.00% done
+Time: 0.12 s
+002070360.pkl
+26.00% done
+Time: 0.12 s
+000560085.pkl
+27.00% done
+Time: 0.13 s
+000040088.pkl
+28.00% done
+Time: 0.13 s
+002010461.pkl
+29.00% done
+Time: 0.13 s
+000250028.pkl
+30.00% done
+Time: 0.16 s
+000420483.pkl
+31.00% done
+Time: 0.16 s
+000650333.pkl
+32.00% done
+Time: 0.16 s
+000520067.pkl
+33.00% done
+Time: 0.17 s
+001120133.pkl
+34.00% done
+Time: 0.19 s
+000310499.pkl
+35.00% done
+Time: 0.20 s
+001120106.pkl
+36.00% done
+Time: 0.20 s
+001960334.pkl
+37.00% done
+Time: 0.20 s
+001340033.pkl
+38.00% done
+Time: 0.20 s
+001370404.pkl
+39.00% done
+Time: 0.21 s
+000620020.pkl
+40.00% done
+Time: 0.21 s
+000120012.pkl
+41.00% done
+Time: 0.21 s
+000260329.pkl
+42.00% done
+Time: 0.22 s
+000590052.pkl
+43.00% done
+Time: 0.22 s
+001980471.pkl
+44.00% done
+Time: 0.22 s
+000920216.pkl
+45.00% done
+Time: 0.22 s
+000500326.pkl
+46.00% done
+Time: 0.28 s
+000710163.pkl
+47.00% done
+Time: 0.28 s
+001340482.pkl
+48.00% done
+Time: 0.29 s
+001370273.pkl
+49.00% done
+Time: 0.29 s
+000620126.pkl
+50.00% done
+Time: 0.29 s
+001980172.pkl
+51.00% done
+Time: 0.29 s
+002080117.pkl
+52.00% done
+Time: 0.30 s
+000150133.pkl
+53.00% done
+Time: 0.30 s
+000640062.pkl
+54.00% done
+Time: 0.30 s
+002050245.pkl
+55.00% done
+Time: 0.30 s
+001310413.pkl
+56.00% done
+Time: 0.31 s
+000420440.pkl
+57.00% done
+Time: 0.31 s
+001970290.pkl
+58.00% done
+Time: 0.31 s
+000170428.pkl
+59.00% done
+Time: 0.31 s
+000580327.pkl
+60.00% done
+Time: 0.32 s
+000510115.pkl
+61.00% done
+Time: 0.32 s
+000210446.pkl
+62.00% done
+Time: 0.32 s
+000610032.pkl
+63.00% done
+Time: 0.33 s
+001270418.pkl
+64.00% done
+Time: 0.33 s
+000740448.pkl
+65.00% done
+Time: 0.33 s
+000510399.pkl
+66.00% done
+Time: 0.34 s
+000430007.pkl
+67.00% done
+Time: 0.34 s
+000610007.pkl
+68.00% done
+Time: 0.38 s
+000540053.pkl
+69.00% done
+Time: 0.39 s
+000150109.pkl
+70.00% done
+Time: 0.39 s
+000980014.pkl
+71.00% done
+Time: 0.39 s
+000390004.pkl
+72.00% done
+Time: 0.40 s
+002010361.pkl
+73.00% done
+Time: 0.40 s
+000040091.pkl
+74.00% done
+Time: 0.40 s
+000320145.pkl
+75.00% done
+Time: 0.40 s
+000290329.pkl
+76.00% done
+Time: 0.41 s
+001930118.pkl
+77.00% done
+Time: 0.41 s
+000250484.pkl
+78.00% done
+Time: 0.41 s
+001230153.pkl
+79.00% done
+Time: 0.42 s
+001960088.pkl
+80.00% done
+Time: 0.45 s
+001320187.pkl
+81.00% done
+Time: 0.45 s
+001200135.pkl
+82.00% done
+Time: 0.45 s
+001370098.pkl
+83.00% done
+Time: 0.45 s
+000520006.pkl
+84.00% done
+Time: 0.46 s
+000590027.pkl
+85.00% done
+Time: 0.46 s
+000680291.pkl
+86.00% done
+Time: 0.46 s
+000150395.pkl
+87.00% done
+Time: 0.46 s
+001200177.pkl
+88.00% done
+Time: 0.47 s
+000360299.pkl
+89.00% done
+Time: 0.47 s
+002060252.pkl
+90.00% done
+Time: 0.47 s
+000160092.pkl
+91.00% done
+Time: 0.47 s
+000680113.pkl
+92.00% done
+Time: 0.48 s
+000200126.pkl
+93.00% done
+Time: 0.48 s
+001960146.pkl
+94.00% done
+Time: 0.48 s
+000480455.pkl
+95.00% done
+Time: 0.49 s
+000530428.pkl
+96.00% done
+Time: 0.49 s
+001240133.pkl
+97.00% done
+Time: 0.49 s
+000140058.pkl
+98.00% done
+Time: 0.49 s
+000130335.pkl
+99.00% done
+Time: 0.50 s
+000360453.pkl
+100.00% done
+Time: 0.50 s
+Number of embeddings per phone sequence length: [(3, 2852), (4, 2709), (5, 2567), (6, 2426), (7, 2288), (8, 2153), (9, 2023)]
+Time to save embeddings: 14.88 s
+Finished extracting phonetized embeddings

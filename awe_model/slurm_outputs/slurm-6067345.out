@@ -1,0 +1,7012 @@
+Loading python/3.9.13
+  Loading requirement: gcc/10.2.0 openmpi/4.1.6
+Loading pytorch/1.13.1
+  Loading requirement: libsndfile/1.0.28
+Extracting phonetized embeddings from data/tamil//embeddings/validation_data/9/raw...
+Using: phone timings file: data/tamil//analysis/phone_all.ctm
+Min phone seq length: 3
+Max phone seq length: 9
+Saving phonetized embeddings to data/tamil//embeddings/validation_data/9/temp_phonetized_3_9
+TA0539-TA0540_1-A.202.pkl
+Length of phones: 17
+0.06% done
+Time: 0.28 s
+TA0705-TA0707_2-B.002.pkl
+Length of phones: 11
+0.11% done
+Time: 0.30 s
+TA0673-TA0675_2-B.311.pkl
+Length of phones: 18
+0.17% done
+Time: 0.33 s
+TA0441-TA0442_2-A.015.pkl
+Length of phones: 5
+0.23% done
+Time: 0.35 s
+TA0397-TA0398_2-B.047.pkl
+Length of phones: 5
+0.29% done
+Time: 0.37 s
+TA0510-TA0512_1-B.262.pkl
+Length of phones: 8
+0.34% done
+Time: 0.41 s
+TA0497-TA0499_2-A.125.pkl
+Length of phones: 11
+0.40% done
+Time: 0.43 s
+TA0617-TA0618_2-A.135.pkl
+Length of phones: 10
+0.46% done
+Time: 0.44 s
+TA0654-TA0656_1-A.207.pkl
+Length of phones: 11
+0.51% done
+Time: 0.47 s
+TA0710-TA0712_2-A.413.pkl
+Length of phones: 17
+0.57% done
+Time: 0.53 s
+TA0365-TA0366_1-A.120.pkl
+Length of phones: 5
+0.63% done
+Time: 0.55 s
+TA0718-TA0720_2-A.232.pkl
+Length of phones: 11
+0.69% done
+Time: 0.63 s
+TA0674-TA0676_2-B.100.pkl
+Length of phones: 8
+0.74% done
+Time: 0.65 s
+TA0718-TA0720_1-B.114.pkl
+Length of phones: 12
+0.80% done
+Time: 0.68 s
+TA0398-TA0400_2-B.074.pkl
+Length of phones: 19
+0.86% done
+Time: 0.70 s
+TA0503-TA0504_1-A.037.pkl
+Length of phones: 5
+0.91% done
+Time: 0.72 s
+TA0393-TA0395_1-B.318.pkl
+Length of phones: 7
+0.97% done
+Time: 0.74 s
+TA0682-TA0684_2-B.294.pkl
+Length of phones: 25
+1.03% done
+Time: 0.80 s
+TA0333-TA0334_1-B.079.pkl
+Length of phones: 5
+1.09% done
+Time: 0.82 s
+TA0573-TA0574_2-A.230.pkl
+Length of phones: 12
+1.14% done
+Time: 0.85 s
+TA0613-TA0615_2-A.173.pkl
+Length of phones: 5
+1.20% done
+Time: 0.87 s
+TA0362-TA0364_1-A.034.pkl
+Length of phones: 12
+1.26% done
+Time: 0.91 s
+TA0665-TA0666_1-A.102.pkl
+Length of phones: 14
+1.31% done
+Time: 0.95 s
+TA0501-TA0502_2-B.096.pkl
+Length of phones: 15
+1.37% done
+Time: 1.02 s
+TA0650-TA0652_1-A.174.pkl
+Length of phones: 12
+1.43% done
+Time: 1.05 s
+TA0705-TA0707_1-B.075.pkl
+Length of phones: 19
+1.49% done
+Time: 1.07 s
+TA0614-TA0616_1-B.067.pkl
+Length of phones: 5
+1.54% done
+Time: 1.10 s
+TA0653-TA0654_1-A.027.pkl
+Length of phones: 16
+1.60% done
+Time: 1.10 s
+TA0551-TA0552_1-A.033.pkl
+Length of phones: 15
+1.66% done
+Time: 1.14 s
+TA0579-TA0580_2-B.082.pkl
+Length of phones: 7
+1.71% done
+Time: 1.16 s
+TA0425-TA0426_2-A.357.pkl
+Length of phones: 5
+1.77% done
+Time: 1.18 s
+TA0365-TA0366_1-A.063.pkl
+Length of phones: 5
+1.83% done
+Time: 1.19 s
+TA0771-TA0772_1-A.074.pkl
+Length of phones: 4
+1.89% done
+Time: 1.22 s
+TA0402-TA0404_1-B.022.pkl
+Length of phones: 9
+1.94% done
+Time: 1.25 s
+TA0517-TA0518_2-B.341.pkl
+Length of phones: 18
+2.00% done
+Time: 1.27 s
+TA0637-TA0639_1-B.019.pkl
+Length of phones: 10
+2.06% done
+Time: 1.29 s
+TA0498-TA0500_2-A.079.pkl
+Length of phones: 6
+2.11% done
+Time: 1.31 s
+TA0515-TA0516_2-A.013.pkl
+Length of phones: 14
+2.17% done
+Time: 1.32 s
+TA0421-TA0423_2-A.041.pkl
+Length of phones: 8
+2.23% done
+Time: 1.35 s
+TA0583-TA0584_1-B.059.pkl
+Length of phones: 21
+2.29% done
+Time: 1.38 s
+TA0729-TA0731_2-B.156.pkl
+Length of phones: 13
+2.34% done
+Time: 1.40 s
+TA0741-TA0743_1-B.040.pkl
+Length of phones: 10
+2.40% done
+Time: 1.45 s
+TA0737-TA0738_2-A.037.pkl
+Length of phones: 10
+2.46% done
+Time: 1.48 s
+TA0609-TA0610_2-B.095.pkl
+Length of phones: 7
+2.51% done
+Time: 1.48 s
+TA0419-TA0420_1-B.056.pkl
+Length of phones: 16
+2.57% done
+Time: 1.55 s
+TA0329-TA0331_2-B.174.pkl
+Length of phones: 4
+2.63% done
+Time: 1.57 s
+TA0345-TA0346_1-B.107.pkl
+Length of phones: 6
+2.69% done
+Time: 1.64 s
+TA0579-TA0580_2-A.275.pkl
+Length of phones: 11
+2.74% done
+Time: 1.66 s
+TA0655-TA0656_1-B.149.pkl
+Length of phones: 22
+2.80% done
+Time: 1.68 s
+TA0346-TA0348_2-A.202.pkl
+Length of phones: 5
+2.86% done
+Time: 1.70 s
+TA0665-TA0666_1-B.499.pkl
+Length of phones: 6
+2.91% done
+Time: 1.71 s
+TA0615-TA0616_2-A.310.pkl
+Length of phones: 10
+2.97% done
+Time: 1.73 s
+TA0369-TA0371_2-B.221.pkl
+Length of phones: 5
+3.03% done
+Time: 1.75 s
+TA0721-TA0723_1-A.365.pkl
+Length of phones: 13
+3.09% done
+Time: 1.77 s
+TA0417-TA0418_1-B.277.pkl
+Length of phones: 8
+3.14% done
+Time: 1.79 s
+TA0459-TA0460_2-B.202.pkl
+Length of phones: 21
+3.20% done
+Time: 1.82 s
+TA0730-TA0732_1-B.011.pkl
+Length of phones: 16
+3.26% done
+Time: 1.85 s
+TA0326-TA0328_1-A.203.pkl
+Length of phones: 8
+3.31% done
+Time: 1.87 s
+TA0475-TA0476_2-A.110.pkl
+Length of phones: 16
+3.37% done
+Time: 1.89 s
+TA0413-TA0414_2-A.124.pkl
+Length of phones: 5
+3.43% done
+Time: 1.91 s
+TA0770-TA0772_1-B.016.pkl
+Length of phones: 4
+3.49% done
+Time: 1.93 s
+TA0695-TA0696_2-B.035.pkl
+Length of phones: 5
+3.54% done
+Time: 1.95 s
+TA0574-TA0576_1-A.102.pkl
+Length of phones: 5
+3.60% done
+Time: 1.97 s
+TA0621-TA0622_2-A.170.pkl
+Length of phones: 18
+3.66% done
+Time: 2.00 s
+TA0346-TA0348_1-A.059.pkl
+Length of phones: 7
+3.71% done
+Time: 2.01 s
+TA0326-TA0328_1-B.141.pkl
+Length of phones: 5
+3.77% done
+Time: 2.03 s
+TA0499-TA0500_1-B.064.pkl
+Length of phones: 4
+3.83% done
+Time: 2.04 s
+TA0609-TA0610_2-B.285.pkl
+Length of phones: 10
+3.89% done
+Time: 2.07 s
+TA0414-TA0416_1-A.040.pkl
+Length of phones: 11
+3.94% done
+Time: 2.09 s
+TA0329-TA0331_1-A.212.pkl
+Length of phones: 7
+4.00% done
+Time: 2.11 s
+TA0533-TA0534_2-A.156.pkl
+Length of phones: 5
+4.06% done
+Time: 2.13 s
+TA0390-TA0392_1-A.263.pkl
+Length of phones: 15
+4.11% done
+Time: 2.16 s
+TA0705-TA0707_1-A.200.pkl
+Length of phones: 5
+4.17% done
+Time: 2.18 s
+TA0769-TA0771_1-A.085.pkl
+Length of phones: 9
+4.23% done
+Time: 2.21 s
+TA0745-TA0747_1-A.014.pkl
+Length of phones: 8
+4.29% done
+Time: 2.23 s
+TA0611-TA0612_2-A.169.pkl
+Length of phones: 12
+4.34% done
+Time: 2.25 s
+TA0754-TA0756_1-B.280.pkl
+Length of phones: 17
+4.40% done
+Time: 2.27 s
+TA0561-TA0562_1-B.225.pkl
+Length of phones: 5
+4.46% done
+Time: 2.30 s
+TA0353-TA0355_1-A.167.pkl
+Length of phones: 5
+4.51% done
+Time: 2.31 s
+TA0557-TA0558_2-A.040.pkl
+Length of phones: 14
+4.57% done
+Time: 2.34 s
+TA0455-TA0456_2-A.035.pkl
+Length of phones: 8
+4.63% done
+Time: 2.35 s
+TA0695-TA0696_1-A.050.pkl
+Length of phones: 17
+4.69% done
+Time: 2.38 s
+TA0397-TA0398_2-A.099.pkl
+Length of phones: 5
+4.74% done
+Time: 2.40 s
+TA0438-TA0440_1-A.002.pkl
+Length of phones: 5
+4.80% done
+Time: 2.42 s
+TA0717-TA0718_2-B.072.pkl
+Length of phones: 17
+4.86% done
+Time: 2.44 s
+TA0454-TA0456_1-A.021.pkl
+Length of phones: 23
+4.91% done
+Time: 2.46 s
+TA0643-TA0644_2-A.378.pkl
+Length of phones: 11
+4.97% done
+Time: 2.48 s
+TA0771-TA0772_2-A.189.pkl
+Length of phones: 9
+5.03% done
+Time: 2.50 s
+TA0367-TA0368_2-B.294.pkl
+Length of phones: 12
+5.09% done
+Time: 2.52 s
+TA0393-TA0395_1-A.282.pkl
+Length of phones: 3
+5.14% done
+Time: 2.53 s
+TA0727-TA0728_1-B.457.pkl
+Length of phones: 6
+5.20% done
+Time: 2.55 s
+TA0526-TA0528_1-A.028.pkl
+Length of phones: 18
+5.26% done
+Time: 2.58 s
+TA0670-TA0672_1-B.203.pkl
+Length of phones: 6
+5.31% done
+Time: 2.60 s
+TA0587-TA0588_1-B.075.pkl
+Length of phones: 22
+5.37% done
+Time: 2.63 s
+TA0714-TA0716_1-A.150.pkl
+Length of phones: 12
+5.43% done
+Time: 2.65 s
+TA0402-TA0404_2-B.286.pkl
+Length of phones: 10
+5.49% done
+Time: 2.66 s
+TA0629-TA0631_2-A.069.pkl
+Length of phones: 5
+5.54% done
+Time: 2.70 s
+TA0507-TA0508_2-A.138.pkl
+Length of phones: 16
+5.60% done
+Time: 2.72 s
+TA0591-TA0592_2-B.018.pkl
+Length of phones: 15
+5.66% done
+Time: 2.75 s
+TA0615-TA0616_1-B.143.pkl
+Length of phones: 21
+5.71% done
+Time: 2.77 s
+TA0517-TA0519_2-B.417.pkl
+Length of phones: 14
+5.77% done
+Time: 2.79 s
+TA0517-TA0519_1-B.167.pkl
+Length of phones: 18
+5.83% done
+Time: 2.82 s
+TA0335-TA0336_2-A.127.pkl
+Length of phones: 13
+5.89% done
+Time: 2.84 s
+TA0401-TA0403_1-B.191.pkl
+Length of phones: 11
+5.94% done
+Time: 2.86 s
+TA0471-TA0472_1-B.225.pkl
+Length of phones: 6
+6.00% done
+Time: 2.88 s
+TA0327-TA0328_1-A.079.pkl
+Length of phones: 20
+6.06% done
+Time: 2.90 s
+TA0489-TA0490_2-B.013.pkl
+Length of phones: 8
+6.11% done
+Time: 2.92 s
+TA0549-TA0551_2-A.228.pkl
+Length of phones: 5
+6.17% done
+Time: 3.00 s
+TA0461-TA0463_2-A.181.pkl
+Length of phones: 10
+6.23% done
+Time: 3.02 s
+TA0717-TA0718_1-A.175.pkl
+Length of phones: 14
+6.29% done
+Time: 3.05 s
+TA0717-TA0718_2-A.304.pkl
+Length of phones: 9
+6.34% done
+Time: 3.07 s
+TA0537-TA0539_2-B.092.pkl
+Length of phones: 4
+6.40% done
+Time: 3.09 s
+TA0731-TA0732_2-B.248.pkl
+Length of phones: 16
+6.46% done
+Time: 3.13 s
+TA0545-TA0547_2-A.159.pkl
+Length of phones: 11
+6.51% done
+Time: 3.15 s
+TA0342-TA0344_2-A.081.pkl
+Length of phones: 13
+6.57% done
+Time: 3.17 s
+TA0625-TA0627_1-A.039.pkl
+Length of phones: 17
+6.63% done
+Time: 3.20 s
+TA0618-TA0620_2-A.216.pkl
+Length of phones: 12
+6.69% done
+Time: 3.22 s
+TA0411-TA0412_2-B.140.pkl
+Length of phones: 12
+6.74% done
+Time: 3.24 s
+TA0569-TA0570_2-B.269.pkl
+Length of phones: 5
+6.80% done
+Time: 3.26 s
+TA0401-TA0402_2-B.376.pkl
+Length of phones: 5
+6.86% done
+Time: 3.27 s
+TA0343-TA0344_2-B.054.pkl
+Length of phones: 5
+6.91% done
+Time: 3.29 s
+TA0775-TA0776_2-A.213.pkl
+Length of phones: 4
+6.97% done
+Time: 3.31 s
+TA0517-TA0519_1-B.347.pkl
+Length of phones: 5
+7.03% done
+Time: 3.34 s
+TA0438-TA0440_2-A.283.pkl
+Length of phones: 24
+7.09% done
+Time: 3.38 s
+TA0533-TA0534_2-B.253.pkl
+Length of phones: 23
+7.14% done
+Time: 3.41 s
+TA0655-TA0656_1-B.064.pkl
+Length of phones: 19
+7.20% done
+Time: 3.43 s
+TA0457-TA0459_1-B.040.pkl
+Length of phones: 5
+7.26% done
+Time: 3.45 s
+TA0442-TA0444_2-B.090.pkl
+Length of phones: 10
+7.31% done
+Time: 3.47 s
+TA0423-TA0424_2-A.013.pkl
+Length of phones: 5
+7.37% done
+Time: 3.49 s
+TA0457-TA0459_2-B.276.pkl
+Length of phones: 16
+7.43% done
+Time: 3.56 s
+TA0643-TA0644_2-A.371.pkl
+Length of phones: 10
+7.49% done
+Time: 3.58 s
+TA0373-TA0374_2-B.290.pkl
+Length of phones: 5
+7.54% done
+Time: 3.60 s
+TA0413-TA0414_1-A.134.pkl
+Length of phones: 5
+7.60% done
+Time: 3.66 s
+TA0379-TA0380_1-A.003.pkl
+Length of phones: 21
+7.66% done
+Time: 3.68 s
+TA0365-TA0367_1-A.115.pkl
+Length of phones: 5
+7.71% done
+Time: 3.70 s
+TA0717-TA0719_1-B.139.pkl
+Length of phones: 5
+7.77% done
+Time: 3.72 s
+TA0493-TA0495_1-B.119.pkl
+Length of phones: 15
+7.83% done
+Time: 3.75 s
+TA0381-TA0382_1-A.133.pkl
+Length of phones: 16
+7.89% done
+Time: 3.77 s
+TA0514-TA0516_2-B.050.pkl
+Length of phones: 9
+7.94% done
+Time: 3.79 s
+TA0493-TA0495_2-A.191.pkl
+Length of phones: 15
+8.00% done
+Time: 3.81 s
+TA0481-TA0482_2-B.321.pkl
+Length of phones: 5
+8.06% done
+Time: 3.83 s
+TA0329-TA0331_1-A.283.pkl
+Length of phones: 13
+8.11% done
+Time: 3.86 s
+TA0533-TA0535_1-A.257.pkl
+Length of phones: 8
+8.17% done
+Time: 3.89 s
+TA0326-TA0328_2-B.177.pkl
+Length of phones: 5
+8.23% done
+Time: 3.91 s
+TA0689-TA0691_2-B.203.pkl
+Length of phones: 5
+8.29% done
+Time: 3.93 s
+TA0677-TA0679_2-B.026.pkl
+Length of phones: 8
+8.34% done
+Time: 3.95 s
+TA0727-TA0728_1-B.328.pkl
+Length of phones: 17
+8.40% done
+Time: 3.98 s
+TA0429-TA0430_2-B.182.pkl
+Length of phones: 11
+8.46% done
+Time: 4.00 s
+TA0371-TA0372_1-B.175.pkl
+Length of phones: 18
+8.51% done
+Time: 4.02 s
+TA0406-TA0408_1-A.020.pkl
+Length of phones: 6
+8.57% done
+Time: 4.03 s
+TA0467-TA0468_1-A.238.pkl
+Length of phones: 9
+8.63% done
+Time: 4.07 s
+TA0605-TA0606_2-B.009.pkl
+Length of phones: 4
+8.69% done
+Time: 4.09 s
+TA0331-TA0332_1-B.177.pkl
+Length of phones: 15
+8.74% done
+Time: 4.10 s
+TA0646-TA0648_2-B.193.pkl
+Length of phones: 8
+8.80% done
+Time: 4.11 s
+TA0395-TA0396_2-B.076.pkl
+Length of phones: 17
+8.86% done
+Time: 4.17 s
+TA0657-TA0658_1-A.296.pkl
+Length of phones: 8
+8.91% done
+Time: 4.19 s
+TA0626-TA0628_1-A.023.pkl
+Length of phones: 5
+8.97% done
+Time: 4.21 s
+TA0549-TA0551_1-B.318.pkl
+Length of phones: 3
+9.03% done
+Time: 4.23 s
+TA0629-TA0631_1-A.041.pkl
+Length of phones: 18
+9.09% done
+Time: 4.25 s
+TA0463-TA0464_2-A.200.pkl
+Length of phones: 19
+9.14% done
+Time: 4.28 s
+TA0329-TA0331_1-B.038.pkl
+Length of phones: 5
+9.20% done
+Time: 4.31 s
+TA0623-TA0624_2-B.181.pkl
+Length of phones: 5
+9.26% done
+Time: 4.35 s
+TA0367-TA0368_1-A.436.pkl
+Length of phones: 5
+9.31% done
+Time: 4.37 s
+TA0614-TA0616_2-A.015.pkl
+Length of phones: 10
+9.37% done
+Time: 4.40 s
+TA0629-TA0630_2-A.082.pkl
+Length of phones: 20
+9.43% done
+Time: 4.42 s
+TA0533-TA0534_2-B.231.pkl
+Length of phones: 5
+9.49% done
+Time: 4.44 s
+TA0554-TA0556_2-B.226.pkl
+Length of phones: 9
+9.54% done
+Time: 4.45 s
+TA0386-TA0388_1-A.069.pkl
+Length of phones: 27
+9.60% done
+Time: 4.48 s
+TA0579-TA0580_1-B.150.pkl
+Length of phones: 10
+9.66% done
+Time: 4.49 s
+TA0386-TA0388_2-B.105.pkl
+Length of phones: 21
+9.71% done
+Time: 4.51 s
+TA0761-TA0763_2-A.222.pkl
+Length of phones: 17
+9.77% done
+Time: 4.59 s
+TA0375-TA0376_2-B.054.pkl
+Length of phones: 4
+9.83% done
+Time: 4.60 s
+TA0753-TA0755_1-B.249.pkl
+Length of phones: 14
+9.89% done
+Time: 4.63 s
+TA0353-TA0355_1-B.177.pkl
+Length of phones: 6
+9.94% done
+Time: 4.64 s
+TA0469-TA0471_2-A.129.pkl
+Length of phones: 14
+10.00% done
+Time: 4.66 s
+TA0413-TA0414_1-A.223.pkl
+Length of phones: 13
+10.06% done
+Time: 4.69 s
+TA0758-TA0760_2-A.066.pkl
+Length of phones: 18
+10.11% done
+Time: 4.71 s
+TA0629-TA0631_1-B.099.pkl
+Length of phones: 5
+10.17% done
+Time: 4.73 s
+TA0470-TA0472_2-B.292.pkl
+Length of phones: 16
+10.23% done
+Time: 4.76 s
+TA0498-TA0500_2-B.037.pkl
+Length of phones: 8
+10.29% done
+Time: 4.78 s
+TA0681-TA0682_2-B.152.pkl
+Length of phones: 7
+10.34% done
+Time: 4.81 s
+TA0557-TA0558_2-B.175.pkl
+Length of phones: 5
+10.40% done
+Time: 4.83 s
+TA0643-TA0644_2-A.096.pkl
+Length of phones: 16
+10.46% done
+Time: 4.86 s
+TA0689-TA0690_2-A.048.pkl
+Length of phones: 22
+10.51% done
+Time: 4.88 s
+TA0705-TA0706_2-A.359.pkl
+Length of phones: 11
+10.57% done
+Time: 4.90 s
+TA0457-TA0459_1-B.230.pkl
+Length of phones: 9
+10.63% done
+Time: 4.93 s
+TA0499-TA0500_1-B.243.pkl
+Length of phones: 21
+10.69% done
+Time: 4.95 s
+TA0365-TA0366_2-A.256.pkl
+Length of phones: 5
+10.74% done
+Time: 4.97 s
+TA0565-TA0567_2-A.085.pkl
+Length of phones: 5
+10.80% done
+Time: 5.00 s
+TA0533-TA0534_1-B.155.pkl
+Length of phones: 5
+10.86% done
+Time: 5.01 s
+TA0489-TA0491_2-B.271.pkl
+Length of phones: 21
+10.91% done
+Time: 5.03 s
+TA0641-TA0643_1-B.179.pkl
+Length of phones: 6
+10.97% done
+Time: 5.04 s
+TA0375-TA0376_1-A.125.pkl
+Length of phones: 16
+11.03% done
+Time: 5.11 s
+TA0362-TA0364_2-A.111.pkl
+Length of phones: 12
+11.09% done
+Time: 5.13 s
+TA0489-TA0491_2-B.259.pkl
+Length of phones: 5
+11.14% done
+Time: 5.15 s
+TA0730-TA0732_1-A.156.pkl
+Length of phones: 8
+11.20% done
+Time: 5.17 s
+TA0498-TA0500_2-A.225.pkl
+Length of phones: 12
+11.26% done
+Time: 5.19 s
+TA0373-TA0374_1-A.094.pkl
+Length of phones: 5
+11.31% done
+Time: 5.25 s
+TA0441-TA0442_1-A.243.pkl
+Length of phones: 12
+11.37% done
+Time: 5.28 s
+TA0321-TA0323_1-B.134.pkl
+Length of phones: 5
+11.43% done
+Time: 5.30 s
+TA0441-TA0442_2-B.019.pkl
+Length of phones: 15
+11.49% done
+Time: 5.32 s
+TA0341-TA0343_1-B.072.pkl
+Length of phones: 15
+11.54% done
+Time: 5.35 s
+TA0506-TA0508_1-A.144.pkl
+Length of phones: 5
+11.60% done
+Time: 5.37 s
+TA0333-TA0334_2-B.222.pkl
+Length of phones: 5
+11.66% done
+Time: 5.39 s
+TA0635-TA0636_2-B.064.pkl
+Length of phones: 13
+11.71% done
+Time: 5.41 s
+TA0425-TA0426_1-B.204.pkl
+Length of phones: 7
+11.77% done
+Time: 5.43 s
+TA0765-TA0767_1-A.300.pkl
+Length of phones: 6
+11.83% done
+Time: 5.44 s
+TA0507-TA0508_2-A.176.pkl
+Length of phones: 7
+11.89% done
+Time: 5.45 s
+TA0349-TA0351_1-A.161.pkl
+Length of phones: 13
+11.94% done
+Time: 5.48 s
+TA0443-TA0444_2-B.028.pkl
+Length of phones: 18
+12.00% done
+Time: 5.50 s
+TA0621-TA0622_1-B.060.pkl
+Length of phones: 10
+12.06% done
+Time: 5.53 s
+TA0434-TA0436_2-B.316.pkl
+Length of phones: 4
+12.11% done
+Time: 5.55 s
+TA0634-TA0636_1-B.250.pkl
+Length of phones: 25
+12.17% done
+Time: 5.57 s
+TA0657-TA0658_1-A.361.pkl
+Length of phones: 10
+12.23% done
+Time: 5.59 s
+TA0621-TA0623_2-B.051.pkl
+Length of phones: 4
+12.29% done
+Time: 5.61 s
+TA0713-TA0714_2-B.319.pkl
+Length of phones: 12
+12.34% done
+Time: 5.63 s
+TA0390-TA0392_2-B.354.pkl
+Length of phones: 17
+12.40% done
+Time: 5.65 s
+TA0649-TA0650_1-A.060.pkl
+Length of phones: 10
+12.46% done
+Time: 5.67 s
+TA0597-TA0599_1-A.121.pkl
+Length of phones: 5
+12.51% done
+Time: 5.69 s
+TA0714-TA0716_1-A.040.pkl
+Length of phones: 14
+12.57% done
+Time: 5.71 s
+TA0697-TA0699_2-A.202.pkl
+Length of phones: 8
+12.63% done
+Time: 5.75 s
+TA0395-TA0396_1-B.121.pkl
+Length of phones: 16
+12.69% done
+Time: 5.77 s
+TA0379-TA0380_1-A.110.pkl
+Length of phones: 19
+12.74% done
+Time: 5.79 s
+TA0351-TA0352_1-A.077.pkl
+Length of phones: 5
+12.80% done
+Time: 5.81 s
+TA0361-TA0362_1-B.116.pkl
+Length of phones: 5
+12.86% done
+Time: 5.82 s
+TA0605-TA0607_2-B.127.pkl
+Length of phones: 10
+12.91% done
+Time: 5.84 s
+TA0678-TA0680_2-A.110.pkl
+Length of phones: 16
+12.97% done
+Time: 5.86 s
+TA0715-TA0716_2-A.130.pkl
+Length of phones: 13
+13.03% done
+Time: 5.89 s
+TA0729-TA0731_2-A.030.pkl
+Length of phones: 11
+13.09% done
+Time: 5.91 s
+TA0382-TA0384_2-A.064.pkl
+Length of phones: 6
+13.14% done
+Time: 5.93 s
+TA0513-TA0514_1-A.107.pkl
+Length of phones: 21
+13.20% done
+Time: 5.96 s
+TA0679-TA0680_1-B.283.pkl
+Length of phones: 5
+13.26% done
+Time: 5.98 s
+TA0521-TA0523_1-A.109.pkl
+Length of phones: 5
+13.31% done
+Time: 6.00 s
+TA0671-TA0672_2-B.285.pkl
+Length of phones: 7
+13.37% done
+Time: 6.00 s
+TA0699-TA0700_1-B.155.pkl
+Length of phones: 16
+13.43% done
+Time: 6.03 s
+TA0713-TA0714_1-A.048.pkl
+Length of phones: 5
+13.49% done
+Time: 6.05 s
+TA0643-TA0644_1-A.050.pkl
+Length of phones: 17
+13.54% done
+Time: 6.08 s
+TA0665-TA0667_1-A.183.pkl
+Length of phones: 5
+13.60% done
+Time: 6.11 s
+TA0393-TA0395_2-A.434.pkl
+Length of phones: 16
+13.66% done
+Time: 6.13 s
+TA0714-TA0716_2-B.228.pkl
+Length of phones: 7
+13.71% done
+Time: 6.20 s
+TA0441-TA0442_2-A.068.pkl
+Length of phones: 18
+13.77% done
+Time: 6.23 s
+TA0335-TA0336_2-A.008.pkl
+Length of phones: 4
+13.83% done
+Time: 6.25 s
+TA0341-TA0343_1-A.196.pkl
+Length of phones: 8
+13.89% done
+Time: 6.28 s
+TA0506-TA0508_1-A.273.pkl
+Length of phones: 11
+13.94% done
+Time: 6.30 s
+TA0629-TA0630_2-A.088.pkl
+Length of phones: 16
+14.00% done
+Time: 6.31 s
+TA0402-TA0404_2-A.117.pkl
+Length of phones: 6
+14.06% done
+Time: 6.34 s
+TA0521-TA0522_2-B.213.pkl
+Length of phones: 5
+14.11% done
+Time: 6.36 s
+TA0510-TA0512_2-A.325.pkl
+Length of phones: 10
+14.17% done
+Time: 6.38 s
+TA0731-TA0732_2-B.119.pkl
+Length of phones: 10
+14.23% done
+Time: 6.40 s
+TA0590-TA0592_2-A.152.pkl
+Length of phones: 6
+14.29% done
+Time: 6.42 s
+TA0577-TA0579_1-A.112.pkl
+Length of phones: 5
+14.34% done
+Time: 6.44 s
+TA0517-TA0519_2-B.006.pkl
+Length of phones: 5
+14.40% done
+Time: 6.46 s
+TA0625-TA0627_2-A.067.pkl
+Length of phones: 12
+14.46% done
+Time: 6.49 s
+TA0389-TA0391_1-A.154.pkl
+Length of phones: 11
+14.51% done
+Time: 6.51 s
+TA0497-TA0498_1-B.115.pkl
+Length of phones: 6
+14.57% done
+Time: 6.53 s
+TA0671-TA0672_2-B.255.pkl
+Length of phones: 11
+14.63% done
+Time: 6.54 s
+000230128.pkl
+Length of phones: 15
+14.69% done
+Time: 6.56 s
+TA0378-TA0380_1-A.033.pkl
+Length of phones: 9
+14.74% done
+Time: 6.58 s
+TA0713-TA0715_1-B.097.pkl
+Length of phones: 11
+14.80% done
+Time: 6.60 s
+TA0638-TA0640_1-B.222.pkl
+Length of phones: 16
+14.86% done
+Time: 6.63 s
+TA0417-TA0418_1-B.084.pkl
+Length of phones: 7
+14.91% done
+Time: 6.64 s
+TA0389-TA0391_2-B.180.pkl
+Length of phones: 4
+14.97% done
+Time: 6.66 s
+TA0390-TA0392_1-A.262.pkl
+Length of phones: 13
+15.03% done
+Time: 6.70 s
+TA0493-TA0494_1-A.185.pkl
+Length of phones: 4
+15.09% done
+Time: 6.71 s
+TA0527-TA0528_2-B.146.pkl
+Length of phones: 4
+15.14% done
+Time: 6.74 s
+TA0382-TA0384_1-B.064.pkl
+Length of phones: 5
+15.20% done
+Time: 6.76 s
+TA0438-TA0440_1-B.245.pkl
+Length of phones: 6
+15.26% done
+Time: 6.83 s
+TA0395-TA0396_2-A.085.pkl
+Length of phones: 5
+15.31% done
+Time: 6.84 s
+TA0551-TA0552_1-A.134.pkl
+Length of phones: 7
+15.37% done
+Time: 6.86 s
+TA0673-TA0675_2-A.183.pkl
+Length of phones: 17
+15.43% done
+Time: 6.88 s
+TA0419-TA0420_1-A.175.pkl
+Length of phones: 22
+15.49% done
+Time: 6.90 s
+TA0650-TA0652_2-A.271.pkl
+Length of phones: 3
+15.54% done
+Time: 6.92 s
+TA0545-TA0546_1-A.016.pkl
+Length of phones: 12
+15.60% done
+Time: 6.97 s
+TA0402-TA0404_2-A.347.pkl
+Length of phones: 6
+15.66% done
+Time: 6.99 s
+TA0681-TA0682_1-A.196.pkl
+Length of phones: 6
+15.71% done
+Time: 7.01 s
+TA0454-TA0456_1-B.110.pkl
+Length of phones: 14
+15.77% done
+Time: 7.04 s
+TA0449-TA0450_1-B.153.pkl
+Length of phones: 12
+15.83% done
+Time: 7.05 s
+TA0757-TA0759_2-A.078.pkl
+Length of phones: 14
+15.89% done
+Time: 7.08 s
+TA0645-TA0647_1-A.175.pkl
+Length of phones: 10
+15.94% done
+Time: 7.11 s
+TA0541-TA0542_1-A.218.pkl
+Length of phones: 6
+16.00% done
+Time: 7.12 s
+TA0721-TA0722_2-A.282.pkl
+Length of phones: 9
+16.06% done
+Time: 7.13 s
+TA0681-TA0682_2-B.316.pkl
+Length of phones: 5
+16.11% done
+Time: 7.16 s
+TA0346-TA0348_2-A.184.pkl
+Length of phones: 5
+16.17% done
+Time: 7.18 s
+TA0689-TA0691_1-A.032.pkl
+Length of phones: 18
+16.23% done
+Time: 7.21 s
+TA0402-TA0404_2-A.076.pkl
+Length of phones: 6
+16.29% done
+Time: 7.22 s
+TA0599-TA0600_2-B.211.pkl
+Length of phones: 8
+16.34% done
+Time: 7.23 s
+TA0470-TA0472_1-B.032.pkl
+Length of phones: 15
+16.40% done
+Time: 7.25 s
+TA0533-TA0534_1-B.192.pkl
+Length of phones: 5
+16.46% done
+Time: 7.27 s
+TA0545-TA0547_1-A.232.pkl
+Length of phones: 13
+16.51% done
+Time: 7.30 s
+TA0577-TA0579_2-B.121.pkl
+Length of phones: 17
+16.57% done
+Time: 7.32 s
+TA0723-TA0724_2-A.092.pkl
+Length of phones: 5
+16.63% done
+Time: 7.34 s
+TA0469-TA0471_1-B.248.pkl
+Length of phones: 22
+16.69% done
+Time: 7.36 s
+TA0565-TA0566_2-A.154.pkl
+Length of phones: 15
+16.74% done
+Time: 7.39 s
+TA0527-TA0528_2-B.060.pkl
+Length of phones: 14
+16.80% done
+Time: 7.41 s
+TA0523-TA0524_2-B.073.pkl
+Length of phones: 14
+16.86% done
+Time: 7.43 s
+TA0678-TA0680_2-A.010.pkl
+Length of phones: 22
+16.91% done
+Time: 7.46 s
+TA0550-TA0552_2-B.130.pkl
+Length of phones: 9
+16.97% done
+Time: 7.48 s
+TA0323-TA0324_1-A.065.pkl
+Length of phones: 18
+17.03% done
+Time: 7.51 s
+TA0549-TA0551_1-B.199.pkl
+Length of phones: 17
+17.09% done
+Time: 7.53 s
+TA0329-TA0331_2-B.183.pkl
+Length of phones: 17
+17.14% done
+Time: 7.56 s
+TA0409-TA0410_2-B.044.pkl
+Length of phones: 8
+17.20% done
+Time: 7.58 s
+TA0401-TA0402_2-A.096.pkl
+Length of phones: 11
+17.26% done
+Time: 7.60 s
+TA0365-TA0366_2-A.173.pkl
+Length of phones: 5
+17.31% done
+Time: 7.62 s
+TA0558-TA0560_2-B.286.pkl
+Length of phones: 4
+17.37% done
+Time: 7.64 s
+TA0481-TA0483_1-A.304.pkl
+Length of phones: 5
+17.43% done
+Time: 7.67 s
+TA0621-TA0622_1-B.135.pkl
+Length of phones: 7
+17.49% done
+Time: 7.70 s
+TA0394-TA0396_1-B.036.pkl
+Length of phones: 5
+17.54% done
+Time: 7.72 s
+TA0325-TA0326_2-B.215.pkl
+Length of phones: 10
+17.60% done
+Time: 7.74 s
+TA0541-TA0542_2-B.281.pkl
+Length of phones: 19
+17.66% done
+Time: 7.76 s
+TA0765-TA0767_1-B.012.pkl
+Length of phones: 14
+17.71% done
+Time: 7.78 s
+TA0655-TA0656_1-B.060.pkl
+Length of phones: 15
+17.77% done
+Time: 7.79 s
+TA0367-TA0368_1-A.457.pkl
+Length of phones: 23
+17.83% done
+Time: 7.80 s
+TA0705-TA0706_1-B.259.pkl
+Length of phones: 12
+17.89% done
+Time: 7.83 s
+TA0454-TA0456_2-A.168.pkl
+Length of phones: 10
+17.94% done
+Time: 7.85 s
+TA0731-TA0732_2-B.073.pkl
+Length of phones: 11
+18.00% done
+Time: 7.88 s
+TA0673-TA0674_2-B.197.pkl
+Length of phones: 7
+18.06% done
+Time: 7.90 s
+TA0614-TA0616_1-A.378.pkl
+Length of phones: 5
+18.11% done
+Time: 7.96 s
+TA0705-TA0706_2-A.012.pkl
+Length of phones: 6
+18.17% done
+Time: 7.98 s
+TA0443-TA0444_1-B.079.pkl
+Length of phones: 13
+18.23% done
+Time: 8.00 s
+TA0414-TA0416_1-A.182.pkl
+Length of phones: 5
+18.29% done
+Time: 8.02 s
+TA0619-TA0620_2-A.095.pkl
+Length of phones: 14
+18.34% done
+Time: 8.10 s
+TA0613-TA0614_1-A.222.pkl
+Length of phones: 13
+18.40% done
+Time: 8.12 s
+TA0685-TA0687_1-B.126.pkl
+Length of phones: 6
+18.46% done
+Time: 8.14 s
+TA0670-TA0672_2-A.270.pkl
+Length of phones: 15
+18.51% done
+Time: 8.14 s
+TA0633-TA0635_1-A.015.pkl
+Length of phones: 9
+18.57% done
+Time: 8.16 s
+TA0681-TA0682_1-B.224.pkl
+Length of phones: 9
+18.63% done
+Time: 8.19 s
+TA0741-TA0742_2-B.329.pkl
+Length of phones: 23
+18.69% done
+Time: 8.20 s
+TA0462-TA0464_1-A.131.pkl
+Length of phones: 11
+18.74% done
+Time: 8.23 s
+TA0626-TA0628_1-A.034.pkl
+Length of phones: 9
+18.80% done
+Time: 8.25 s
+TA0481-TA0482_1-A.227.pkl
+Length of phones: 7
+18.86% done
+Time: 8.27 s
+TA0737-TA0739_1-A.137.pkl
+Length of phones: 10
+18.91% done
+Time: 8.30 s
+TA0729-TA0731_2-B.103.pkl
+Length of phones: 5
+18.97% done
+Time: 8.31 s
+TA0339-TA0340_1-A.035.pkl
+Length of phones: 4
+19.03% done
+Time: 8.37 s
+TA0537-TA0539_2-B.189.pkl
+Length of phones: 21
+19.09% done
+Time: 8.39 s
+TA0586-TA0588_2-A.102.pkl
+Length of phones: 9
+19.14% done
+Time: 8.47 s
+TA0367-TA0368_1-A.044.pkl
+Length of phones: 6
+19.20% done
+Time: 8.49 s
+TA0701-TA0702_2-A.023.pkl
+Length of phones: 12
+19.26% done
+Time: 8.52 s
+TA0409-TA0410_2-A.365.pkl
+Length of phones: 8
+19.31% done
+Time: 8.57 s
+TA0718-TA0720_1-B.155.pkl
+Length of phones: 8
+19.37% done
+Time: 8.59 s
+TA0755-TA0756_1-A.167.pkl
+Length of phones: 17
+19.43% done
+Time: 8.62 s
+TA0606-TA0608_1-B.099.pkl
+Length of phones: 5
+19.49% done
+Time: 8.67 s
+TA0657-TA0658_2-A.104.pkl
+Length of phones: 9
+19.54% done
+Time: 8.69 s
+TA0511-TA0512_1-A.280.pkl
+Length of phones: 6
+19.60% done
+Time: 8.71 s
+TA0653-TA0654_1-A.201.pkl
+Length of phones: 8
+19.66% done
+Time: 8.73 s
+TA0606-TA0608_1-B.105.pkl
+Length of phones: 5
+19.71% done
+Time: 8.74 s
+TA0347-TA0348_1-A.214.pkl
+Length of phones: 5
+19.77% done
+Time: 8.75 s
+TA0401-TA0402_2-A.227.pkl
+Length of phones: 10
+19.83% done
+Time: 8.77 s
+TA0714-TA0716_1-A.336.pkl
+Length of phones: 7
+19.89% done
+Time: 8.78 s
+TA0545-TA0546_1-B.037.pkl
+Length of phones: 6
+19.94% done
+Time: 8.80 s
+TA0417-TA0419_2-B.214.pkl
+Length of phones: 14
+20.00% done
+Time: 8.82 s
+TA0637-TA0638_2-A.016.pkl
+Length of phones: 5
+20.06% done
+Time: 8.84 s
+TA0481-TA0482_1-A.045.pkl
+Length of phones: 5
+20.11% done
+Time: 8.86 s
+TA0361-TA0363_1-A.171.pkl
+Length of phones: 5
+20.17% done
+Time: 8.88 s
+TA0491-TA0492_2-B.092.pkl
+Length of phones: 4
+20.23% done
+Time: 8.90 s
+TA0685-TA0686_1-A.079.pkl
+Length of phones: 5
+20.29% done
+Time: 8.93 s
+TA0641-TA0642_1-B.017.pkl
+Length of phones: 8
+20.34% done
+Time: 8.94 s
+TA0717-TA0718_2-B.269.pkl
+Length of phones: 10
+20.40% done
+Time: 8.96 s
+TA0393-TA0394_2-B.002.pkl
+Length of phones: 11
+20.46% done
+Time: 8.98 s
+TA0554-TA0556_1-B.241.pkl
+Length of phones: 10
+20.51% done
+Time: 9.01 s
+TA0426-TA0428_2-A.008.pkl
+Length of phones: 11
+20.57% done
+Time: 9.04 s
+TA0583-TA0584_1-B.027.pkl
+Length of phones: 5
+20.63% done
+Time: 9.06 s
+TA0681-TA0682_2-B.306.pkl
+Length of phones: 9
+20.69% done
+Time: 9.08 s
+TA0389-TA0391_2-B.163.pkl
+Length of phones: 5
+20.74% done
+Time: 9.11 s
+TA0366-TA0368_1-A.006.pkl
+Length of phones: 28
+20.80% done
+Time: 9.13 s
+TA0337-TA0338_1-B.162.pkl
+Length of phones: 7
+20.86% done
+Time: 9.15 s
+TA0355-TA0356_1-A.212.pkl
+Length of phones: 22
+20.91% done
+Time: 9.17 s
+TA0745-TA0747_2-B.224.pkl
+Length of phones: 22
+20.97% done
+Time: 9.21 s
+TA0521-TA0522_1-B.030.pkl
+Length of phones: 5
+21.03% done
+Time: 9.24 s
+TA0395-TA0396_2-A.131.pkl
+Length of phones: 5
+21.09% done
+Time: 9.24 s
+TA0589-TA0590_2-B.176.pkl
+Length of phones: 22
+21.14% done
+Time: 9.27 s
+TA0635-TA0636_1-A.117.pkl
+Length of phones: 12
+21.20% done
+Time: 9.33 s
+TA0541-TA0543_2-B.105.pkl
+Length of phones: 15
+21.26% done
+Time: 9.36 s
+TA0561-TA0562_1-B.088.pkl
+Length of phones: 5
+21.31% done
+Time: 9.41 s
+TA0614-TA0616_2-B.297.pkl
+Length of phones: 13
+21.37% done
+Time: 9.44 s
+TA0607-TA0608_1-A.002.pkl
+Length of phones: 5
+21.43% done
+Time: 9.46 s
+TA0431-TA0432_1-B.071.pkl
+Length of phones: 4
+21.49% done
+Time: 9.47 s
+TA0385-TA0386_1-A.014.pkl
+Length of phones: 5
+21.54% done
+Time: 9.49 s
+TA0365-TA0367_1-A.061.pkl
+Length of phones: 13
+21.60% done
+Time: 9.51 s
+TA0503-TA0504_1-B.043.pkl
+Length of phones: 5
+21.66% done
+Time: 9.53 s
+TA0735-TA0736_2-B.215.pkl
+Length of phones: 17
+21.71% done
+Time: 9.56 s
+TA0773-TA0774_2-A.117.pkl
+Length of phones: 26
+21.77% done
+Time: 9.59 s
+TA0351-TA0352_1-A.144.pkl
+Length of phones: 12
+21.83% done
+Time: 9.60 s
+TA0401-TA0403_2-A.245.pkl
+Length of phones: 5
+21.89% done
+Time: 9.62 s
+TA0489-TA0490_2-B.206.pkl
+Length of phones: 8
+21.94% done
+Time: 9.64 s
+TA0433-TA0434_2-B.100.pkl
+Length of phones: 5
+22.00% done
+Time: 9.66 s
+TA0506-TA0508_2-B.071.pkl
+Length of phones: 10
+22.06% done
+Time: 9.68 s
+TA0498-TA0500_2-B.236.pkl
+Length of phones: 16
+22.11% done
+Time: 9.71 s
+TA0674-TA0676_1-B.071.pkl
+Length of phones: 12
+22.17% done
+Time: 9.75 s
+TA0413-TA0414_1-A.034.pkl
+Length of phones: 5
+22.23% done
+Time: 9.77 s
+TA0573-TA0575_1-B.121.pkl
+Length of phones: 6
+22.29% done
+Time: 9.79 s
+TA0346-TA0348_2-A.042.pkl
+Length of phones: 5
+22.34% done
+Time: 9.81 s
+TA0345-TA0346_1-B.023.pkl
+Length of phones: 8
+22.40% done
+Time: 9.83 s
+TA0637-TA0639_2-B.105.pkl
+Length of phones: 3
+22.46% done
+Time: 9.86 s
+TA0753-TA0755_1-B.151.pkl
+Length of phones: 13
+22.51% done
+Time: 9.88 s
+TA0405-TA0407_2-A.203.pkl
+Length of phones: 13
+22.57% done
+Time: 9.90 s
+TA0429-TA0430_1-B.037.pkl
+Length of phones: 8
+22.63% done
+Time: 9.92 s
+TA0406-TA0408_2-B.208.pkl
+Length of phones: 4
+22.69% done
+Time: 9.94 s
+TA0561-TA0563_2-B.153.pkl
+Length of phones: 3
+22.74% done
+Time: 9.96 s
+TA0605-TA0606_1-A.323.pkl
+Length of phones: 6
+22.80% done
+Time: 9.97 s
+TA0602-TA0604_2-A.131.pkl
+Length of phones: 16
+22.86% done
+Time: 9.99 s
+TA0709-TA0710_2-B.034.pkl
+Length of phones: 10
+22.91% done
+Time: 10.01 s
+TA0722-TA0724_1-B.109.pkl
+Length of phones: 7
+22.97% done
+Time: 10.03 s
+TA0469-TA0470_1-B.149.pkl
+Length of phones: 5
+23.03% done
+Time: 10.05 s
+TA0579-TA0580_2-A.284.pkl
+Length of phones: 14
+23.09% done
+Time: 10.07 s
+TA0703-TA0704_2-A.019.pkl
+Length of phones: 21
+23.14% done
+Time: 10.09 s
+TA0569-TA0570_1-A.391.pkl
+Length of phones: 12
+23.20% done
+Time: 10.13 s
+TA0633-TA0635_2-B.344.pkl
+Length of phones: 4
+23.26% done
+Time: 10.14 s
+TA0473-TA0475_2-B.323.pkl
+Length of phones: 11
+23.31% done
+Time: 10.16 s
+TA0533-TA0534_2-A.306.pkl
+Length of phones: 5
+23.37% done
+Time: 10.18 s
+TA0345-TA0347_1-B.215.pkl
+Length of phones: 5
+23.43% done
+Time: 10.19 s
+TA0713-TA0714_1-A.331.pkl
+Length of phones: 5
+23.49% done
+Time: 10.22 s
+TA0629-TA0631_1-A.112.pkl
+Length of phones: 13
+23.54% done
+Time: 10.24 s
+TA0757-TA0758_2-B.037.pkl
+Length of phones: 11
+23.60% done
+Time: 10.26 s
+TA0767-TA0768_2-A.006.pkl
+Length of phones: 10
+23.66% done
+Time: 10.27 s
+TA0641-TA0642_2-B.164.pkl
+Length of phones: 8
+23.71% done
+Time: 10.29 s
+TA0617-TA0619_2-B.252.pkl
+Length of phones: 5
+23.77% done
+Time: 10.31 s
+TA0397-TA0399_1-A.176.pkl
+Length of phones: 5
+23.83% done
+Time: 10.33 s
+TA0473-TA0474_1-B.323.pkl
+Length of phones: 13
+23.89% done
+Time: 10.35 s
+TA0685-TA0687_1-B.344.pkl
+Length of phones: 23
+23.94% done
+Time: 10.36 s
+TA0323-TA0324_1-A.016.pkl
+Length of phones: 15
+24.00% done
+Time: 10.38 s
+TA0661-TA0663_2-B.021.pkl
+Length of phones: 5
+24.06% done
+Time: 10.40 s
+TA0491-TA0492_2-B.199.pkl
+Length of phones: 4
+24.11% done
+Time: 10.45 s
+TA0398-TA0400_1-B.062.pkl
+Length of phones: 19
+24.17% done
+Time: 10.51 s
+TA0431-TA0432_1-B.026.pkl
+Length of phones: 8
+24.23% done
+Time: 10.53 s
+TA0497-TA0499_1-A.352.pkl
+Length of phones: 9
+24.29% done
+Time: 10.55 s
+TA0414-TA0416_2-B.092.pkl
+Length of phones: 5
+24.34% done
+Time: 10.57 s
+TA0511-TA0512_1-A.229.pkl
+Length of phones: 27
+24.40% done
+Time: 10.59 s
+TA0425-TA0426_1-B.268.pkl
+Length of phones: 8
+24.46% done
+Time: 10.63 s
+TA0365-TA0366_1-B.191.pkl
+Length of phones: 16
+24.51% done
+Time: 10.66 s
+TA0505-TA0506_2-B.288.pkl
+Length of phones: 9
+24.57% done
+Time: 10.68 s
+TA0666-TA0668_1-A.201.pkl
+Length of phones: 4
+24.63% done
+Time: 10.69 s
+TA0395-TA0396_1-B.344.pkl
+Length of phones: 5
+24.69% done
+Time: 10.72 s
+TA0481-TA0483_1-A.169.pkl
+Length of phones: 11
+24.74% done
+Time: 10.73 s
+TA0501-TA0502_2-A.008.pkl
+Length of phones: 24
+24.80% done
+Time: 10.76 s
+TA0423-TA0424_1-A.161.pkl
+Length of phones: 12
+24.86% done
+Time: 10.77 s
+TA0597-TA0598_1-B.087.pkl
+Length of phones: 10
+24.91% done
+Time: 10.80 s
+TA0511-TA0512_2-B.009.pkl
+Length of phones: 10
+24.97% done
+Time: 10.82 s
+TA0678-TA0680_2-A.137.pkl
+Length of phones: 19
+25.03% done
+Time: 10.83 s
+TA0329-TA0331_1-B.315.pkl
+Length of phones: 5
+25.09% done
+Time: 10.89 s
+TA0681-TA0682_1-A.125.pkl
+Length of phones: 11
+25.14% done
+Time: 10.91 s
+TA0583-TA0584_1-B.143.pkl
+Length of phones: 10
+25.20% done
+Time: 10.93 s
+TA0477-TA0478_2-B.092.pkl
+Length of phones: 13
+25.26% done
+Time: 10.95 s
+TA0574-TA0576_1-B.106.pkl
+Length of phones: 17
+25.31% done
+Time: 10.97 s
+TA0365-TA0366_2-A.158.pkl
+Length of phones: 5
+25.37% done
+Time: 10.99 s
+TA0549-TA0550_2-B.102.pkl
+Length of phones: 17
+25.43% done
+Time: 11.01 s
+TA0671-TA0672_1-A.279.pkl
+Length of phones: 15
+25.49% done
+Time: 11.04 s
+TA0367-TA0368_2-B.036.pkl
+Length of phones: 16
+25.54% done
+Time: 11.06 s
+TA0357-TA0358_2-B.254.pkl
+Length of phones: 10
+25.60% done
+Time: 11.08 s
+TA0461-TA0463_2-B.220.pkl
+Length of phones: 15
+25.66% done
+Time: 11.16 s
+TA0659-TA0660_1-B.131.pkl
+Length of phones: 6
+25.71% done
+Time: 11.18 s
+TA0409-TA0411_1-A.207.pkl
+Length of phones: 10
+25.77% done
+Time: 11.21 s
+TA0493-TA0494_1-B.213.pkl
+Length of phones: 11
+25.83% done
+Time: 11.23 s
+TA0341-TA0343_2-B.227.pkl
+Length of phones: 9
+25.89% done
+Time: 11.28 s
+TA0663-TA0664_1-A.132.pkl
+Length of phones: 10
+25.94% done
+Time: 11.30 s
+TA0737-TA0739_2-A.119.pkl
+Length of phones: 16
+26.00% done
+Time: 11.32 s
+TA0349-TA0350_2-A.164.pkl
+Length of phones: 12
+26.06% done
+Time: 11.35 s
+TA0517-TA0519_2-A.029.pkl
+Length of phones: 20
+26.11% done
+Time: 11.37 s
+TA0353-TA0355_2-B.141.pkl
+Length of phones: 5
+26.17% done
+Time: 11.40 s
+TA0533-TA0534_2-B.260.pkl
+Length of phones: 5
+26.23% done
+Time: 11.41 s
+TA0433-TA0434_1-A.217.pkl
+Length of phones: 8
+26.29% done
+Time: 11.44 s
+TA0498-TA0500_1-A.394.pkl
+Length of phones: 7
+26.34% done
+Time: 11.50 s
+TA0518-TA0520_1-A.103.pkl
+Length of phones: 10
+26.40% done
+Time: 11.52 s
+TA0757-TA0759_2-A.200.pkl
+Length of phones: 17
+26.46% done
+Time: 11.57 s
+TA0597-TA0599_1-A.129.pkl
+Length of phones: 9
+26.51% done
+Time: 11.59 s
+TA0610-TA0612_1-B.059.pkl
+Length of phones: 6
+26.57% done
+Time: 11.60 s
+TA0335-TA0336_1-A.102.pkl
+Length of phones: 9
+26.63% done
+Time: 11.63 s
+TA0510-TA0512_2-B.168.pkl
+Length of phones: 8
+26.69% done
+Time: 11.65 s
+TA0474-TA0476_1-A.132.pkl
+Length of phones: 13
+26.74% done
+Time: 11.67 s
+TA0351-TA0352_1-A.075.pkl
+Length of phones: 5
+26.80% done
+Time: 11.71 s
+TA0766-TA0768_2-A.232.pkl
+Length of phones: 10
+26.86% done
+Time: 11.72 s
+TA0337-TA0339_2-B.262.pkl
+Length of phones: 8
+26.91% done
+Time: 11.74 s
+TA0709-TA0710_2-B.272.pkl
+Length of phones: 18
+26.97% done
+Time: 11.75 s
+TA0625-TA0627_2-B.022.pkl
+Length of phones: 21
+27.03% done
+Time: 11.77 s
+TA0725-TA0726_1-A.132.pkl
+Length of phones: 13
+27.09% done
+Time: 11.80 s
+TA0329-TA0330_1-B.211.pkl
+Length of phones: 17
+27.14% done
+Time: 11.83 s
+TA0518-TA0520_1-A.439.pkl
+Length of phones: 7
+27.20% done
+Time: 11.85 s
+TA0503-TA0504_2-B.073.pkl
+Length of phones: 14
+27.26% done
+Time: 11.87 s
+TA0435-TA0436_1-B.218.pkl
+Length of phones: 12
+27.31% done
+Time: 11.89 s
+TA0325-TA0326_2-A.252.pkl
+Length of phones: 5
+27.37% done
+Time: 11.94 s
+TA0765-TA0767_1-A.212.pkl
+Length of phones: 8
+27.43% done
+Time: 11.96 s
+TA0379-TA0380_1-A.184.pkl
+Length of phones: 5
+27.49% done
+Time: 12.00 s
+TA0517-TA0518_2-B.363.pkl
+Length of phones: 5
+27.54% done
+Time: 12.01 s
+TA0657-TA0659_1-A.061.pkl
+Length of phones: 10
+27.60% done
+Time: 12.03 s
+TA0610-TA0612_2-B.099.pkl
+Length of phones: 7
+27.66% done
+Time: 12.05 s
+TA0370-TA0372_2-A.008.pkl
+Length of phones: 5
+27.71% done
+Time: 12.06 s
+TA0410-TA0412_1-A.361.pkl
+Length of phones: 8
+27.77% done
+Time: 12.14 s
+TA0581-TA0582_2-B.217.pkl
+Length of phones: 18
+27.83% done
+Time: 12.16 s
+TA0603-TA0604_1-A.198.pkl
+Length of phones: 23
+27.89% done
+Time: 12.22 s
+TA0693-TA0694_2-B.211.pkl
+Length of phones: 5
+27.94% done
+Time: 12.24 s
+TA0773-TA0775_2-B.068.pkl
+Length of phones: 33
+28.00% done
+Time: 12.26 s
+TA0534-TA0536_2-A.448.pkl
+Length of phones: 10
+28.06% done
+Time: 12.27 s
+TA0685-TA0687_1-B.113.pkl
+Length of phones: 11
+28.11% done
+Time: 12.29 s
+TA0534-TA0536_1-B.161.pkl
+Length of phones: 5
+28.17% done
+Time: 12.33 s
+TA0766-TA0768_2-A.228.pkl
+Length of phones: 6
+28.23% done
+Time: 12.33 s
+TA0446-TA0448_2-B.165.pkl
+Length of phones: 23
+28.29% done
+Time: 12.34 s
+TA0551-TA0552_1-A.161.pkl
+Length of phones: 17
+28.34% done
+Time: 12.36 s
+TA0557-TA0559_1-A.254.pkl
+Length of phones: 5
+28.40% done
+Time: 12.38 s
+TA0421-TA0423_2-B.066.pkl
+Length of phones: 8
+28.46% done
+Time: 12.39 s
+TA0387-TA0388_1-B.194.pkl
+Length of phones: 8
+28.51% done
+Time: 12.41 s
+TA0497-TA0498_2-B.048.pkl
+Length of phones: 10
+28.57% done
+Time: 12.43 s
+TA0517-TA0519_2-B.141.pkl
+Length of phones: 14
+28.63% done
+Time: 12.45 s
+TA0485-TA0487_2-B.025.pkl
+Length of phones: 4
+28.69% done
+Time: 12.47 s
+TA0637-TA0638_2-A.065.pkl
+Length of phones: 5
+28.74% done
+Time: 12.52 s
+TA0619-TA0620_2-B.201.pkl
+Length of phones: 9
+28.80% done
+Time: 12.54 s
+TA0729-TA0730_2-B.127.pkl
+Length of phones: 14
+28.86% done
+Time: 12.56 s
+TA0510-TA0512_1-B.092.pkl
+Length of phones: 17
+28.91% done
+Time: 12.58 s
+TA0449-TA0451_1-A.068.pkl
+Length of phones: 5
+28.97% done
+Time: 12.59 s
+TA0549-TA0551_1-A.306.pkl
+Length of phones: 5
+29.03% done
+Time: 12.62 s
+TA0341-TA0343_1-A.420.pkl
+Length of phones: 8
+29.09% done
+Time: 12.65 s
+TA0357-TA0358_2-A.283.pkl
+Length of phones: 9
+29.14% done
+Time: 12.67 s
+TA0426-TA0428_2-A.101.pkl
+Length of phones: 13
+29.20% done
+Time: 12.69 s
+TA0505-TA0506_2-B.042.pkl
+Length of phones: 19
+29.26% done
+Time: 12.72 s
+TA0715-TA0716_2-A.065.pkl
+Length of phones: 9
+29.31% done
+Time: 12.76 s
+TA0771-TA0772_2-B.021.pkl
+Length of phones: 20
+29.37% done
+Time: 12.78 s
+TA0713-TA0714_1-A.214.pkl
+Length of phones: 10
+29.43% done
+Time: 12.79 s
+TA0517-TA0519_1-A.083.pkl
+Length of phones: 6
+29.49% done
+Time: 12.82 s
+TA0511-TA0512_2-B.307.pkl
+Length of phones: 13
+29.54% done
+Time: 12.85 s
+TA0574-TA0576_2-A.092.pkl
+Length of phones: 6
+29.60% done
+Time: 12.88 s
+TA0522-TA0524_1-B.292.pkl
+Length of phones: 5
+29.66% done
+Time: 12.90 s
+TA0707-TA0708_1-A.100.pkl
+Length of phones: 14
+29.71% done
+Time: 12.92 s
+TA0607-TA0608_1-A.274.pkl
+Length of phones: 5
+29.77% done
+Time: 12.92 s
+TA0758-TA0760_2-A.167.pkl
+Length of phones: 6
+29.83% done
+Time: 12.95 s
+TA0745-TA0747_2-A.030.pkl
+Length of phones: 5
+29.89% done
+Time: 12.96 s
+TA0513-TA0514_1-A.068.pkl
+Length of phones: 17
+29.94% done
+Time: 12.98 s
+TA0341-TA0342_2-A.245.pkl
+Length of phones: 7
+30.00% done
+Time: 13.01 s
+TA0323-TA0324_1-B.106.pkl
+Length of phones: 9
+30.06% done
+Time: 13.03 s
+TA0597-TA0599_1-B.055.pkl
+Length of phones: 7
+30.11% done
+Time: 13.05 s
+TA0510-TA0512_1-B.281.pkl
+Length of phones: 4
+30.17% done
+Time: 13.07 s
+TA0682-TA0684_2-A.117.pkl
+Length of phones: 5
+30.23% done
+Time: 13.08 s
+TA0511-TA0512_2-B.313.pkl
+Length of phones: 9
+30.29% done
+Time: 13.10 s
+TA0497-TA0499_1-B.215.pkl
+Length of phones: 6
+30.34% done
+Time: 13.14 s
+TA0574-TA0576_1-A.140.pkl
+Length of phones: 7
+30.40% done
+Time: 13.16 s
+TA0723-TA0724_2-A.036.pkl
+Length of phones: 20
+30.46% done
+Time: 13.17 s
+TA0367-TA0368_1-A.261.pkl
+Length of phones: 7
+30.51% done
+Time: 13.20 s
+TA0637-TA0639_1-A.082.pkl
+Length of phones: 8
+30.57% done
+Time: 13.20 s
+TA0669-TA0671_2-A.079.pkl
+Length of phones: 5
+30.63% done
+Time: 13.21 s
+TA0537-TA0539_2-B.109.pkl
+Length of phones: 5
+30.69% done
+Time: 13.23 s
+TA0649-TA0651_2-B.012.pkl
+Length of phones: 11
+30.74% done
+Time: 13.26 s
+TA0437-TA0438_2-B.022.pkl
+Length of phones: 5
+30.80% done
+Time: 13.28 s
+TA0466-TA0468_1-A.223.pkl
+Length of phones: 10
+30.86% done
+Time: 13.30 s
+TA0693-TA0694_2-A.071.pkl
+Length of phones: 7
+30.91% done
+Time: 13.33 s
+TA0413-TA0414_1-A.175.pkl
+Length of phones: 11
+30.97% done
+Time: 13.36 s
+TA0691-TA0692_1-A.033.pkl
+Length of phones: 5
+31.03% done
+Time: 13.36 s
+TA0435-TA0436_2-A.156.pkl
+Length of phones: 9
+31.09% done
+Time: 13.39 s
+TA0405-TA0406_1-A.220.pkl
+Length of phones: 7
+31.14% done
+Time: 13.40 s
+TA0737-TA0738_1-A.395.pkl
+Length of phones: 5
+31.20% done
+Time: 13.42 s
+TA0541-TA0542_2-A.177.pkl
+Length of phones: 15
+31.26% done
+Time: 13.44 s
+TA0641-TA0643_2-B.058.pkl
+Length of phones: 8
+31.31% done
+Time: 13.45 s
+TA0690-TA0692_2-B.262.pkl
+Length of phones: 8
+31.37% done
+Time: 13.48 s
+TA0481-TA0482_2-B.388.pkl
+Length of phones: 9
+31.43% done
+Time: 13.49 s
+TA0331-TA0332_2-B.107.pkl
+Length of phones: 8
+31.49% done
+Time: 13.51 s
+TA0565-TA0566_2-B.241.pkl
+Length of phones: 5
+31.54% done
+Time: 13.53 s
+TA0425-TA0426_1-B.457.pkl
+Length of phones: 10
+31.60% done
+Time: 13.59 s
+TA0454-TA0456_2-B.412.pkl
+Length of phones: 10
+31.66% done
+Time: 13.61 s
+TA0450-TA0452_2-A.209.pkl
+Length of phones: 10
+31.71% done
+Time: 13.63 s
+TA0725-TA0727_2-A.228.pkl
+Length of phones: 14
+31.77% done
+Time: 13.66 s
+TA0459-TA0460_2-A.025.pkl
+Length of phones: 13
+31.83% done
+Time: 13.68 s
+TA0637-TA0638_1-A.105.pkl
+Length of phones: 10
+31.89% done
+Time: 13.70 s
+TA0442-TA0444_1-B.221.pkl
+Length of phones: 7
+31.94% done
+Time: 13.72 s
+TA0771-TA0772_1-A.050.pkl
+Length of phones: 20
+32.00% done
+Time: 13.75 s
+TA0542-TA0544_2-B.032.pkl
+Length of phones: 11
+32.06% done
+Time: 13.77 s
+TA0445-TA0446_2-B.172.pkl
+Length of phones: 7
+32.11% done
+Time: 13.83 s
+TA0669-TA0671_2-B.148.pkl
+Length of phones: 11
+32.17% done
+Time: 13.86 s
+TA0434-TA0436_1-B.030.pkl
+Length of phones: 10
+32.23% done
+Time: 13.88 s
+TA0445-TA0446_1-A.334.pkl
+Length of phones: 14
+32.29% done
+Time: 13.93 s
+TA0491-TA0492_1-A.286.pkl
+Length of phones: 5
+32.34% done
+Time: 13.95 s
+TA0713-TA0714_2-A.042.pkl
+Length of phones: 5
+32.40% done
+Time: 13.97 s
+TA0701-TA0702_2-A.230.pkl
+Length of phones: 6
+32.46% done
+Time: 13.99 s
+TA0361-TA0363_1-A.151.pkl
+Length of phones: 5
+32.51% done
+Time: 14.00 s
+TA0651-TA0652_1-A.045.pkl
+Length of phones: 10
+32.57% done
+Time: 14.02 s
+TA0609-TA0610_1-B.215.pkl
+Length of phones: 5
+32.63% done
+Time: 14.04 s
+TA0679-TA0680_2-B.090.pkl
+Length of phones: 10
+32.69% done
+Time: 14.06 s
+TA0347-TA0348_1-B.028.pkl
+Length of phones: 7
+32.74% done
+Time: 14.07 s
+TA0646-TA0648_2-A.466.pkl
+Length of phones: 7
+32.80% done
+Time: 14.09 s
+TA0470-TA0472_1-B.085.pkl
+Length of phones: 13
+32.86% done
+Time: 14.11 s
+TA0478-TA0480_2-A.095.pkl
+Length of phones: 20
+32.91% done
+Time: 14.14 s
+TA0730-TA0732_1-B.039.pkl
+Length of phones: 9
+32.97% done
+Time: 14.17 s
+TA0449-TA0451_1-A.070.pkl
+Length of phones: 5
+33.03% done
+Time: 14.19 s
+TA0417-TA0418_2-B.118.pkl
+Length of phones: 5
+33.09% done
+Time: 14.23 s
+TA0686-TA0688_1-A.198.pkl
+Length of phones: 13
+33.14% done
+Time: 14.25 s
+TA0401-TA0402_2-B.309.pkl
+Length of phones: 5
+33.20% done
+Time: 14.27 s
+TA0499-TA0500_2-B.043.pkl
+Length of phones: 23
+33.26% done
+Time: 14.29 s
+TA0583-TA0584_1-B.320.pkl
+Length of phones: 8
+33.31% done
+Time: 14.32 s
+TA0489-TA0490_1-B.320.pkl
+Length of phones: 12
+33.37% done
+Time: 14.32 s
+TA0442-TA0444_2-B.385.pkl
+Length of phones: 4
+33.43% done
+Time: 14.34 s
+TA0633-TA0634_2-B.274.pkl
+Length of phones: 7
+33.49% done
+Time: 14.35 s
+TA0357-TA0359_1-A.060.pkl
+Length of phones: 12
+33.54% done
+Time: 14.37 s
+TA0626-TA0628_1-A.037.pkl
+Length of phones: 12
+33.60% done
+Time: 14.40 s
+TA0714-TA0716_1-A.104.pkl
+Length of phones: 5
+33.66% done
+Time: 14.41 s
+TA0485-TA0487_2-A.156.pkl
+Length of phones: 20
+33.71% done
+Time: 14.44 s
+TA0721-TA0723_2-A.236.pkl
+Length of phones: 8
+33.77% done
+Time: 14.46 s
+TA0494-TA0496_1-B.108.pkl
+Length of phones: 9
+33.83% done
+Time: 14.48 s
+TA0485-TA0486_1-A.198.pkl
+Length of phones: 11
+33.89% done
+Time: 14.50 s
+TA0741-TA0742_2-A.113.pkl
+Length of phones: 6
+33.94% done
+Time: 14.52 s
+TA0442-TA0444_2-B.334.pkl
+Length of phones: 8
+34.00% done
+Time: 14.55 s
+TA0665-TA0667_1-A.146.pkl
+Length of phones: 13
+34.06% done
+Time: 14.56 s
+TA0761-TA0762_2-A.101.pkl
+Length of phones: 5
+34.11% done
+Time: 14.58 s
+TA0441-TA0443_2-A.140.pkl
+Length of phones: 13
+34.17% done
+Time: 14.60 s
+TA0409-TA0410_2-A.122.pkl
+Length of phones: 5
+34.23% done
+Time: 14.63 s
+TA0638-TA0640_1-B.203.pkl
+Length of phones: 16
+34.29% done
+Time: 14.65 s
+TA0646-TA0648_2-A.595.pkl
+Length of phones: 6
+34.34% done
+Time: 14.67 s
+TA0613-TA0614_2-B.088.pkl
+Length of phones: 5
+34.40% done
+Time: 14.67 s
+TA0670-TA0672_2-B.144.pkl
+Length of phones: 10
+34.46% done
+Time: 14.69 s
+TA0457-TA0459_1-A.173.pkl
+Length of phones: 7
+34.51% done
+Time: 14.72 s
+TA0574-TA0576_2-B.193.pkl
+Length of phones: 17
+34.57% done
+Time: 14.74 s
+TA0365-TA0367_2-A.195.pkl
+Length of phones: 8
+34.63% done
+Time: 14.75 s
+TA0369-TA0371_2-A.290.pkl
+Length of phones: 12
+34.69% done
+Time: 14.77 s
+TA0645-TA0647_1-A.163.pkl
+Length of phones: 8
+34.74% done
+Time: 14.78 s
+TA0414-TA0416_2-B.174.pkl
+Length of phones: 9
+34.80% done
+Time: 14.79 s
+TA0754-TA0756_1-B.251.pkl
+Length of phones: 15
+34.86% done
+Time: 14.82 s
+TA0677-TA0679_2-B.136.pkl
+Length of phones: 7
+34.91% done
+Time: 14.90 s
+TA0325-TA0327_2-B.006.pkl
+Length of phones: 23
+34.97% done
+Time: 14.92 s
+TA0425-TA0426_2-B.384.pkl
+Length of phones: 6
+35.03% done
+Time: 14.94 s
+TA0671-TA0672_2-B.054.pkl
+Length of phones: 6
+35.09% done
+Time: 14.95 s
+TA0461-TA0463_1-B.203.pkl
+Length of phones: 4
+35.14% done
+Time: 14.97 s
+TA0354-TA0356_1-A.190.pkl
+Length of phones: 8
+35.20% done
+Time: 14.99 s
+TA0443-TA0444_1-B.246.pkl
+Length of phones: 8
+35.26% done
+Time: 15.06 s
+TA0678-TA0680_2-A.141.pkl
+Length of phones: 9
+35.31% done
+Time: 15.08 s
+TA0354-TA0356_2-A.084.pkl
+Length of phones: 15
+35.37% done
+Time: 15.10 s
+TA0590-TA0592_1-A.019.pkl
+Length of phones: 5
+35.43% done
+Time: 15.12 s
+TA0341-TA0342_1-B.220.pkl
+Length of phones: 12
+35.49% done
+Time: 15.18 s
+TA0425-TA0427_1-B.260.pkl
+Length of phones: 8
+35.54% done
+Time: 15.25 s
+TA0737-TA0739_1-A.190.pkl
+Length of phones: 8
+35.60% done
+Time: 15.27 s
+TA0773-TA0774_1-A.058.pkl
+Length of phones: 17
+35.66% done
+Time: 15.30 s
+TA0362-TA0364_2-A.358.pkl
+Length of phones: 15
+35.71% done
+Time: 15.32 s
+TA0677-TA0678_2-B.305.pkl
+Length of phones: 6
+35.77% done
+Time: 15.33 s
+TA0617-TA0618_2-A.224.pkl
+Length of phones: 14
+35.83% done
+Time: 15.35 s
+TA0538-TA0540_1-A.048.pkl
+Length of phones: 5
+35.89% done
+Time: 15.36 s
+TA0582-TA0584_2-B.217.pkl
+Length of phones: 5
+35.94% done
+Time: 15.39 s
+TA0349-TA0351_2-B.356.pkl
+Length of phones: 5
+36.00% done
+Time: 15.41 s
+TA0485-TA0487_2-A.291.pkl
+Length of phones: 16
+36.06% done
+Time: 15.43 s
+TA0537-TA0538_2-A.041.pkl
+Length of phones: 13
+36.11% done
+Time: 15.45 s
+TA0571-TA0572_2-A.111.pkl
+Length of phones: 7
+36.17% done
+Time: 15.48 s
+TA0767-TA0768_2-B.220.pkl
+Length of phones: 6
+36.23% done
+Time: 15.50 s
+TA0553-TA0554_2-B.248.pkl
+Length of phones: 21
+36.29% done
+Time: 15.52 s
+TA0331-TA0332_1-A.134.pkl
+Length of phones: 15
+36.34% done
+Time: 15.54 s
+TA0549-TA0551_1-B.044.pkl
+Length of phones: 17
+36.40% done
+Time: 15.56 s
+TA0513-TA0514_2-B.158.pkl
+Length of phones: 33
+36.46% done
+Time: 15.59 s
+TA0679-TA0680_2-B.133.pkl
+Length of phones: 5
+36.51% done
+Time: 15.61 s
+TA0357-TA0359_1-A.192.pkl
+Length of phones: 5
+36.57% done
+Time: 15.63 s
+TA0681-TA0683_1-A.300.pkl
+Length of phones: 14
+36.63% done
+Time: 15.65 s
+TA0765-TA0767_1-A.055.pkl
+Length of phones: 13
+36.69% done
+Time: 15.67 s
+TA0563-TA0564_2-A.035.pkl
+Length of phones: 5
+36.74% done
+Time: 15.70 s
+TA0402-TA0404_2-A.170.pkl
+Length of phones: 6
+36.80% done
+Time: 15.70 s
+TA0514-TA0516_2-B.251.pkl
+Length of phones: 16
+36.86% done
+Time: 15.72 s
+TA0389-TA0391_2-B.132.pkl
+Length of phones: 4
+36.91% done
+Time: 15.74 s
+TA0702-TA0704_2-B.255.pkl
+Length of phones: 8
+36.97% done
+Time: 15.76 s
+TA0707-TA0708_2-A.203.pkl
+Length of phones: 14
+37.03% done
+Time: 15.79 s
+TA0533-TA0535_1-B.157.pkl
+Length of phones: 5
+37.09% done
+Time: 15.81 s
+TA0425-TA0427_2-B.105.pkl
+Length of phones: 13
+37.14% done
+Time: 15.83 s
+TA0467-TA0468_1-A.220.pkl
+Length of phones: 5
+37.20% done
+Time: 15.84 s
+TA0679-TA0680_1-A.028.pkl
+Length of phones: 5
+37.26% done
+Time: 15.87 s
+TA0435-TA0436_2-A.085.pkl
+Length of phones: 10
+37.31% done
+Time: 15.89 s
+TA0471-TA0472_1-A.049.pkl
+Length of phones: 19
+37.37% done
+Time: 15.90 s
+TA0489-TA0491_1-B.135.pkl
+Length of phones: 4
+37.43% done
+Time: 15.92 s
+TA0491-TA0492_1-B.035.pkl
+Length of phones: 4
+37.49% done
+Time: 15.94 s
+TA0579-TA0580_2-B.071.pkl
+Length of phones: 10
+37.54% done
+Time: 15.94 s
+TA0641-TA0643_1-A.124.pkl
+Length of phones: 9
+37.60% done
+Time: 15.98 s
+TA0543-TA0544_2-B.124.pkl
+Length of phones: 22
+37.66% done
+Time: 16.00 s
+TA0366-TA0368_1-B.086.pkl
+Length of phones: 13
+37.71% done
+Time: 16.04 s
+TA0351-TA0352_1-A.113.pkl
+Length of phones: 5
+37.77% done
+Time: 16.06 s
+TA0585-TA0587_2-B.075.pkl
+Length of phones: 22
+37.83% done
+Time: 16.09 s
+TA0685-TA0687_1-A.244.pkl
+Length of phones: 12
+37.89% done
+Time: 16.09 s
+TA0707-TA0708_1-A.124.pkl
+Length of phones: 6
+37.94% done
+Time: 16.11 s
+TA0605-TA0607_2-B.022.pkl
+Length of phones: 6
+38.00% done
+Time: 16.14 s
+TA0389-TA0391_2-B.041.pkl
+Length of phones: 17
+38.06% done
+Time: 16.16 s
+TA0395-TA0396_1-B.157.pkl
+Length of phones: 9
+38.11% done
+Time: 16.19 s
+TA0517-TA0519_2-B.295.pkl
+Length of phones: 6
+38.17% done
+Time: 16.22 s
+TA0722-TA0724_1-B.287.pkl
+Length of phones: 12
+38.23% done
+Time: 16.24 s
+TA0511-TA0512_2-A.201.pkl
+Length of phones: 11
+38.29% done
+Time: 16.27 s
+TA0421-TA0423_2-B.021.pkl
+Length of phones: 8
+38.34% done
+Time: 16.30 s
+TA0429-TA0431_2-A.042.pkl
+Length of phones: 5
+38.40% done
+Time: 16.32 s
+TA0649-TA0651_2-B.036.pkl
+Length of phones: 5
+38.46% done
+Time: 16.33 s
+TA0635-TA0636_2-A.424.pkl
+Length of phones: 20
+38.51% done
+Time: 16.35 s
+TA0753-TA0754_2-A.008.pkl
+Length of phones: 5
+38.57% done
+Time: 16.36 s
+TA0581-TA0583_2-B.035.pkl
+Length of phones: 18
+38.63% done
+Time: 16.38 s
+TA0339-TA0340_2-B.109.pkl
+Length of phones: 9
+38.69% done
+Time: 16.40 s
+TA0467-TA0468_1-A.186.pkl
+Length of phones: 6
+38.74% done
+Time: 16.42 s
+TA0350-TA0352_2-B.019.pkl
+Length of phones: 5
+38.80% done
+Time: 16.44 s
+TA0365-TA0367_2-A.137.pkl
+Length of phones: 5
+38.86% done
+Time: 16.46 s
+TA0753-TA0755_2-A.070.pkl
+Length of phones: 10
+38.91% done
+Time: 16.47 s
+TA0758-TA0760_2-A.154.pkl
+Length of phones: 10
+38.97% done
+Time: 16.49 s
+TA0681-TA0682_2-B.422.pkl
+Length of phones: 5
+39.03% done
+Time: 16.50 s
+TA0463-TA0464_2-B.125.pkl
+Length of phones: 11
+39.09% done
+Time: 16.52 s
+TA0466-TA0468_1-A.097.pkl
+Length of phones: 6
+39.14% done
+Time: 16.55 s
+TA0430-TA0432_1-B.190.pkl
+Length of phones: 13
+39.20% done
+Time: 16.57 s
+TA0361-TA0362_1-A.103.pkl
+Length of phones: 5
+39.26% done
+Time: 16.63 s
+TA0717-TA0718_2-A.531.pkl
+Length of phones: 5
+39.31% done
+Time: 16.65 s
+TA0705-TA0706_2-A.341.pkl
+Length of phones: 9
+39.37% done
+Time: 16.68 s
+TA0563-TA0564_2-B.011.pkl
+Length of phones: 17
+39.43% done
+Time: 16.70 s
+TA0583-TA0584_1-B.239.pkl
+Length of phones: 8
+39.49% done
+Time: 16.72 s
+TA0569-TA0570_1-A.056.pkl
+Length of phones: 5
+39.54% done
+Time: 16.74 s
+TA0346-TA0348_1-B.202.pkl
+Length of phones: 5
+39.60% done
+Time: 16.76 s
+TA0365-TA0367_1-A.010.pkl
+Length of phones: 12
+39.66% done
+Time: 16.78 s
+TA0615-TA0616_1-A.246.pkl
+Length of phones: 5
+39.71% done
+Time: 16.80 s
+TA0401-TA0403_2-A.406.pkl
+Length of phones: 21
+39.77% done
+Time: 16.83 s
+TA0577-TA0578_2-B.236.pkl
+Length of phones: 17
+39.83% done
+Time: 16.85 s
+TA0542-TA0544_1-B.245.pkl
+Length of phones: 7
+39.89% done
+Time: 16.87 s
+TA0765-TA0767_2-A.289.pkl
+Length of phones: 14
+39.94% done
+Time: 16.90 s
+TA0502-TA0504_2-A.090.pkl
+Length of phones: 5
+40.00% done
+Time: 16.92 s
+TA0723-TA0724_1-A.017.pkl
+Length of phones: 6
+40.06% done
+Time: 16.94 s
+TA0329-TA0330_2-A.152.pkl
+Length of phones: 9
+40.11% done
+Time: 16.96 s
+TA0498-TA0500_1-B.248.pkl
+Length of phones: 5
+40.17% done
+Time: 16.97 s
+TA0650-TA0652_1-B.288.pkl
+Length of phones: 18
+40.23% done
+Time: 16.99 s
+TA0357-TA0358_1-A.073.pkl
+Length of phones: 12
+40.29% done
+Time: 17.01 s
+TA0773-TA0774_1-A.021.pkl
+Length of phones: 19
+40.34% done
+Time: 17.03 s
+TA0573-TA0574_2-A.095.pkl
+Length of phones: 11
+40.40% done
+Time: 17.05 s
+TA0721-TA0723_2-B.014.pkl
+Length of phones: 17
+40.46% done
+Time: 17.06 s
+TA0613-TA0614_1-A.047.pkl
+Length of phones: 8
+40.51% done
+Time: 17.07 s
+TA0737-TA0738_2-B.046.pkl
+Length of phones: 13
+40.57% done
+Time: 17.08 s
+TA0769-TA0771_1-B.103.pkl
+Length of phones: 10
+40.63% done
+Time: 17.12 s
+TA0487-TA0488_2-A.169.pkl
+Length of phones: 18
+40.69% done
+Time: 17.14 s
+TA0651-TA0652_2-A.072.pkl
+Length of phones: 11
+40.74% done
+Time: 17.16 s
+TA0337-TA0339_2-A.194.pkl
+Length of phones: 4
+40.80% done
+Time: 17.18 s
+TA0473-TA0475_1-A.051.pkl
+Length of phones: 7
+40.86% done
+Time: 17.20 s
+TA0593-TA0594_1-A.197.pkl
+Length of phones: 6
+40.91% done
+Time: 17.23 s
+TA0514-TA0516_2-A.391.pkl
+Length of phones: 17
+40.97% done
+Time: 17.26 s
+TA0505-TA0506_1-B.102.pkl
+Length of phones: 6
+41.03% done
+Time: 17.28 s
+TA0421-TA0423_2-A.039.pkl
+Length of phones: 8
+41.09% done
+Time: 17.28 s
+TA0507-TA0508_1-B.128.pkl
+Length of phones: 4
+41.14% done
+Time: 17.29 s
+TA0402-TA0404_2-A.304.pkl
+Length of phones: 6
+41.20% done
+Time: 17.30 s
+TA0413-TA0415_3-A.177.pkl
+Length of phones: 5
+41.26% done
+Time: 17.32 s
+TA0579-TA0580_1-B.255.pkl
+Length of phones: 18
+41.31% done
+Time: 17.34 s
+TA0686-TA0688_2-A.225.pkl
+Length of phones: 24
+41.37% done
+Time: 17.36 s
+TA0657-TA0658_2-B.192.pkl
+Length of phones: 5
+41.43% done
+Time: 17.38 s
+TA0466-TA0468_1-B.044.pkl
+Length of phones: 13
+41.49% done
+Time: 17.42 s
+TA0549-TA0550_2-B.178.pkl
+Length of phones: 5
+41.54% done
+Time: 17.46 s
+TA0617-TA0619_1-B.188.pkl
+Length of phones: 16
+41.60% done
+Time: 17.48 s
+TA0514-TA0516_2-A.412.pkl
+Length of phones: 19
+41.66% done
+Time: 17.50 s
+TA0674-TA0676_2-A.040.pkl
+Length of phones: 5
+41.71% done
+Time: 17.53 s
+TA0333-TA0334_2-B.253.pkl
+Length of phones: 5
+41.77% done
+Time: 17.56 s
+TA0715-TA0716_2-B.187.pkl
+Length of phones: 9
+41.83% done
+Time: 17.58 s
+TA0402-TA0404_2-A.159.pkl
+Length of phones: 21
+41.89% done
+Time: 17.58 s
+TA0521-TA0522_1-B.307.pkl
+Length of phones: 16
+41.94% done
+Time: 17.60 s
+TA0737-TA0739_1-A.113.pkl
+Length of phones: 14
+42.00% done
+Time: 17.62 s
+TA0767-TA0768_2-A.189.pkl
+Length of phones: 9
+42.06% done
+Time: 17.67 s
+TA0542-TA0544_2-B.208.pkl
+Length of phones: 22
+42.11% done
+Time: 17.69 s
+TA0601-TA0603_2-B.012.pkl
+Length of phones: 11
+42.17% done
+Time: 17.71 s
+TA0701-TA0702_2-A.487.pkl
+Length of phones: 6
+42.23% done
+Time: 17.73 s
+TA0497-TA0499_2-B.213.pkl
+Length of phones: 9
+42.29% done
+Time: 17.77 s
+TA0713-TA0715_1-B.276.pkl
+Length of phones: 6
+42.34% done
+Time: 17.79 s
+TA0713-TA0715_1-A.408.pkl
+Length of phones: 7
+42.40% done
+Time: 17.80 s
+TA0417-TA0418_1-B.293.pkl
+Length of phones: 12
+42.46% done
+Time: 17.82 s
+TA0341-TA0342_1-A.376.pkl
+Length of phones: 5
+42.51% done
+Time: 17.84 s
+TA0645-TA0647_1-A.070.pkl
+Length of phones: 15
+42.57% done
+Time: 17.86 s
+TA0599-TA0600_2-B.106.pkl
+Length of phones: 10
+42.63% done
+Time: 17.91 s
+TA0401-TA0402_2-A.155.pkl
+Length of phones: 10
+42.69% done
+Time: 17.94 s
+TA0457-TA0459_2-B.198.pkl
+Length of phones: 28
+42.74% done
+Time: 17.98 s
+TA0542-TA0544_2-A.319.pkl
+Length of phones: 19
+42.80% done
+Time: 18.01 s
+TA0469-TA0470_2-B.176.pkl
+Length of phones: 5
+42.86% done
+Time: 18.03 s
+TA0687-TA0688_1-A.144.pkl
+Length of phones: 10
+42.91% done
+Time: 18.06 s
+TA0347-TA0348_1-B.026.pkl
+Length of phones: 5
+42.97% done
+Time: 18.08 s
+TA0377-TA0378_2-A.157.pkl
+Length of phones: 14
+43.03% done
+Time: 18.11 s
+TA0466-TA0468_1-B.371.pkl
+Length of phones: 16
+43.09% done
+Time: 18.13 s
+TA0410-TA0412_2-A.413.pkl
+Length of phones: 6
+43.14% done
+Time: 18.15 s
+TA0506-TA0508_2-B.254.pkl
+Length of phones: 5
+43.20% done
+Time: 18.17 s
+TA0611-TA0612_2-A.145.pkl
+Length of phones: 4
+43.26% done
+Time: 18.20 s
+TA0417-TA0418_2-A.191.pkl
+Length of phones: 15
+43.31% done
+Time: 18.22 s
+TA0766-TA0768_2-A.084.pkl
+Length of phones: 9
+43.37% done
+Time: 18.24 s
+TA0357-TA0358_1-A.038.pkl
+Length of phones: 5
+43.43% done
+Time: 18.26 s
+TA0689-TA0691_2-A.068.pkl
+Length of phones: 6
+43.49% done
+Time: 18.29 s
+TA0621-TA0622_2-A.293.pkl
+Length of phones: 27
+43.54% done
+Time: 18.31 s
+TA0401-TA0403_1-A.332.pkl
+Length of phones: 13
+43.60% done
+Time: 18.32 s
+TA0411-TA0412_2-A.092.pkl
+Length of phones: 9
+43.66% done
+Time: 18.34 s
+TA0615-TA0616_2-A.018.pkl
+Length of phones: 18
+43.71% done
+Time: 18.37 s
+TA0521-TA0522_1-B.157.pkl
+Length of phones: 5
+43.77% done
+Time: 18.40 s
+TA0389-TA0391_1-B.145.pkl
+Length of phones: 15
+43.83% done
+Time: 18.40 s
+TA0461-TA0463_2-A.263.pkl
+Length of phones: 12
+43.89% done
+Time: 18.43 s
+TA0581-TA0583_1-B.200.pkl
+Length of phones: 10
+43.94% done
+Time: 18.45 s
+TA0346-TA0348_1-A.136.pkl
+Length of phones: 12
+44.00% done
+Time: 18.47 s
+TA0447-TA0448_1-B.012.pkl
+Length of phones: 6
+44.06% done
+Time: 18.48 s
+TA0442-TA0444_1-B.100.pkl
+Length of phones: 11
+44.11% done
+Time: 18.52 s
+TA0358-TA0360_1-B.003.pkl
+Length of phones: 22
+44.17% done
+Time: 18.54 s
+TA0426-TA0428_2-B.066.pkl
+Length of phones: 5
+44.23% done
+Time: 18.58 s
+TA0489-TA0491_2-B.065.pkl
+Length of phones: 18
+44.29% done
+Time: 18.60 s
+TA0501-TA0502_2-A.164.pkl
+Length of phones: 28
+44.34% done
+Time: 18.62 s
+TA0470-TA0472_1-A.259.pkl
+Length of phones: 5
+44.40% done
+Time: 18.63 s
+TA0713-TA0714_1-A.132.pkl
+Length of phones: 11
+44.46% done
+Time: 18.65 s
+TA0639-TA0640_1-B.171.pkl
+Length of phones: 5
+44.51% done
+Time: 18.66 s
+TA0334-TA0336_1-A.053.pkl
+Length of phones: 10
+44.57% done
+Time: 18.70 s
+TA0679-TA0680_2-A.160.pkl
+Length of phones: 22
+44.63% done
+Time: 18.72 s
+TA0613-TA0615_1-A.177.pkl
+Length of phones: 5
+44.69% done
+Time: 18.73 s
+TA0505-TA0507_2-B.103.pkl
+Length of phones: 9
+44.74% done
+Time: 18.75 s
+TA0469-TA0471_1-B.242.pkl
+Length of phones: 17
+44.80% done
+Time: 18.76 s
+TA0573-TA0575_2-B.195.pkl
+Length of phones: 23
+44.86% done
+Time: 18.76 s
+TA0693-TA0694_2-A.261.pkl
+Length of phones: 6
+44.91% done
+Time: 18.77 s
+TA0539-TA0540_1-A.204.pkl
+Length of phones: 16
+44.97% done
+Time: 18.79 s
+TA0678-TA0680_2-A.326.pkl
+Length of phones: 5
+45.03% done
+Time: 18.81 s
+TA0501-TA0502_1-A.232.pkl
+Length of phones: 13
+45.09% done
+Time: 18.88 s
+TA0321-TA0323_2-A.276.pkl
+Length of phones: 24
+45.14% done
+Time: 18.90 s
+TA0581-TA0583_1-B.266.pkl
+Length of phones: 8
+45.20% done
+Time: 18.92 s
+TA0573-TA0575_2-B.031.pkl
+Length of phones: 5
+45.26% done
+Time: 18.95 s
+TA0594-TA0596_2-A.278.pkl
+Length of phones: 5
+45.31% done
+Time: 18.98 s
+TA0457-TA0459_1-B.042.pkl
+Length of phones: 27
+45.37% done
+Time: 19.00 s
+TA0359-TA0360_2-B.202.pkl
+Length of phones: 10
+45.43% done
+Time: 19.02 s
+TA0481-TA0482_2-B.166.pkl
+Length of phones: 5
+45.49% done
+Time: 19.04 s
+TA0729-TA0731_2-A.421.pkl
+Length of phones: 8
+45.54% done
+Time: 19.05 s
+TA0714-TA0716_2-B.042.pkl
+Length of phones: 14
+45.60% done
+Time: 19.07 s
+TA0417-TA0418_1-B.031.pkl
+Length of phones: 16
+45.66% done
+Time: 19.09 s
+TA0754-TA0756_2-A.466.pkl
+Length of phones: 15
+45.71% done
+Time: 19.12 s
+TA0657-TA0658_2-A.008.pkl
+Length of phones: 16
+45.77% done
+Time: 19.14 s
+TA0745-TA0747_2-A.108.pkl
+Length of phones: 11
+45.83% done
+Time: 19.16 s
+TA0753-TA0754_2-A.239.pkl
+Length of phones: 5
+45.89% done
+Time: 19.16 s
+TA0670-TA0672_1-B.270.pkl
+Length of phones: 6
+45.94% done
+Time: 19.18 s
+TA0574-TA0576_1-A.136.pkl
+Length of phones: 7
+46.00% done
+Time: 19.20 s
+TA0641-TA0643_1-A.192.pkl
+Length of phones: 12
+46.06% done
+Time: 19.22 s
+TA0498-TA0500_2-A.029.pkl
+Length of phones: 8
+46.11% done
+Time: 19.24 s
+TA0679-TA0680_1-A.305.pkl
+Length of phones: 4
+46.17% done
+Time: 19.25 s
+TA0771-TA0772_1-A.124.pkl
+Length of phones: 10
+46.23% done
+Time: 19.30 s
+TA0549-TA0551_2-A.233.pkl
+Length of phones: 5
+46.29% done
+Time: 19.32 s
+TA0643-TA0644_2-B.101.pkl
+Length of phones: 24
+46.34% done
+Time: 19.36 s
+TA0579-TA0580_2-B.041.pkl
+Length of phones: 6
+46.40% done
+Time: 19.38 s
+TA0410-TA0412_2-A.198.pkl
+Length of phones: 9
+46.46% done
+Time: 19.40 s
+TA0465-TA0467_2-B.185.pkl
+Length of phones: 4
+46.51% done
+Time: 19.43 s
+TA0451-TA0452_1-A.005.pkl
+Length of phones: 20
+46.57% done
+Time: 19.44 s
+TA0346-TA0348_2-A.084.pkl
+Length of phones: 5
+46.63% done
+Time: 19.46 s
+TA0373-TA0374_2-A.091.pkl
+Length of phones: 8
+46.69% done
+Time: 19.48 s
+TA0357-TA0359_2-A.192.pkl
+Length of phones: 5
+46.74% done
+Time: 19.50 s
+TA0677-TA0678_2-B.158.pkl
+Length of phones: 12
+46.80% done
+Time: 19.52 s
+TA0759-TA0760_2-A.119.pkl
+Length of phones: 6
+46.86% done
+Time: 19.54 s
+TA0557-TA0558_1-B.141.pkl
+Length of phones: 5
+46.91% done
+Time: 19.56 s
+TA0451-TA0452_2-B.135.pkl
+Length of phones: 5
+46.97% done
+Time: 19.58 s
+TA0510-TA0512_2-A.206.pkl
+Length of phones: 21
+47.03% done
+Time: 19.60 s
+TA0439-TA0440_2-B.203.pkl
+Length of phones: 14
+47.09% done
+Time: 19.62 s
+TA0717-TA0718_2-A.503.pkl
+Length of phones: 5
+47.14% done
+Time: 19.64 s
+TA0702-TA0704_2-A.050.pkl
+Length of phones: 6
+47.20% done
+Time: 19.66 s
+TA0517-TA0518_1-B.352.pkl
+Length of phones: 17
+47.26% done
+Time: 19.67 s
+TA0625-TA0626_1-B.004.pkl
+Length of phones: 5
+47.31% done
+Time: 19.68 s
+TA0447-TA0448_2-A.151.pkl
+Length of phones: 13
+47.37% done
+Time: 19.71 s
+TA0763-TA0764_2-A.226.pkl
+Length of phones: 6
+47.43% done
+Time: 19.72 s
+TA0651-TA0652_2-A.036.pkl
+Length of phones: 4
+47.49% done
+Time: 19.73 s
+TA0398-TA0400_2-A.141.pkl
+Length of phones: 13
+47.54% done
+Time: 19.75 s
+TA0562-TA0564_2-A.480.pkl
+Length of phones: 11
+47.60% done
+Time: 19.78 s
+TA0462-TA0464_2-A.228.pkl
+Length of phones: 5
+47.66% done
+Time: 19.80 s
+TA0497-TA0499_1-B.143.pkl
+Length of phones: 3
+47.71% done
+Time: 19.81 s
+TA0435-TA0436_2-A.046.pkl
+Length of phones: 9
+47.77% done
+Time: 19.83 s
+TA0706-TA0708_2-A.119.pkl
+Length of phones: 12
+47.83% done
+Time: 19.85 s
+TA0705-TA0707_1-A.318.pkl
+Length of phones: 6
+47.89% done
+Time: 19.86 s
+TA0417-TA0419_2-B.140.pkl
+Length of phones: 8
+47.94% done
+Time: 19.89 s
+TA0461-TA0462_1-B.223.pkl
+Length of phones: 5
+48.00% done
+Time: 19.91 s
+TA0697-TA0699_2-B.190.pkl
+Length of phones: 12
+48.06% done
+Time: 19.94 s
+TA0519-TA0520_1-A.279.pkl
+Length of phones: 15
+48.11% done
+Time: 19.96 s
+TA0693-TA0694_1-B.246.pkl
+Length of phones: 6
+48.17% done
+Time: 19.97 s
+TA0327-TA0328_1-A.145.pkl
+Length of phones: 15
+48.23% done
+Time: 19.99 s
+TA0387-TA0388_2-B.201.pkl
+Length of phones: 16
+48.29% done
+Time: 20.01 s
+TA0521-TA0522_1-B.205.pkl
+Length of phones: 7
+48.34% done
+Time: 20.04 s
+TA0345-TA0346_1-A.263.pkl
+Length of phones: 10
+48.40% done
+Time: 20.06 s
+TA0434-TA0436_1-A.131.pkl
+Length of phones: 5
+48.46% done
+Time: 20.10 s
+TA0418-TA0420_2-A.118.pkl
+Length of phones: 5
+48.51% done
+Time: 20.13 s
+TA0705-TA0707_1-B.247.pkl
+Length of phones: 21
+48.57% done
+Time: 20.13 s
+TA0729-TA0730_2-A.161.pkl
+Length of phones: 6
+48.63% done
+Time: 20.15 s
+TA0669-TA0671_2-A.043.pkl
+Length of phones: 9
+48.69% done
+Time: 20.18 s
+TA0435-TA0436_2-A.191.pkl
+Length of phones: 24
+48.74% done
+Time: 20.20 s
+TA0687-TA0688_1-B.286.pkl
+Length of phones: 6
+48.80% done
+Time: 20.22 s
+TA0481-TA0483_1-A.321.pkl
+Length of phones: 24
+48.86% done
+Time: 20.24 s
+TA0485-TA0487_2-B.132.pkl
+Length of phones: 6
+48.91% done
+Time: 20.26 s
+TA0642-TA0644_1-A.132.pkl
+Length of phones: 7
+48.97% done
+Time: 20.30 s
+TA0673-TA0675_2-A.054.pkl
+Length of phones: 15
+49.03% done
+Time: 20.30 s
+TA0525-TA0527_1-A.180.pkl
+Length of phones: 10
+49.09% done
+Time: 20.32 s
+TA0375-TA0376_2-B.274.pkl
+Length of phones: 5
+49.14% done
+Time: 20.35 s
+TA0482-TA0484_2-B.029.pkl
+Length of phones: 4
+49.20% done
+Time: 20.37 s
+TA0445-TA0447_2-B.214.pkl
+Length of phones: 10
+49.26% done
+Time: 20.40 s
+TA0561-TA0562_1-B.050.pkl
+Length of phones: 5
+49.31% done
+Time: 20.42 s
+TA0341-TA0343_2-B.245.pkl
+Length of phones: 5
+49.37% done
+Time: 20.43 s
+TA0541-TA0543_1-B.089.pkl
+Length of phones: 23
+49.43% done
+Time: 20.46 s
+TA0617-TA0618_1-B.102.pkl
+Length of phones: 6
+49.49% done
+Time: 20.50 s
+TA0687-TA0688_1-A.479.pkl
+Length of phones: 6
+49.54% done
+Time: 20.52 s
+TA0549-TA0551_1-B.322.pkl
+Length of phones: 16
+49.60% done
+Time: 20.54 s
+TA0718-TA0720_2-A.330.pkl
+Length of phones: 13
+49.66% done
+Time: 20.56 s
+TA0581-TA0582_1-A.190.pkl
+Length of phones: 12
+49.71% done
+Time: 20.58 s
+TA0594-TA0596_2-B.330.pkl
+Length of phones: 6
+49.77% done
+Time: 20.60 s
+TA0454-TA0456_2-A.239.pkl
+Length of phones: 18
+49.83% done
+Time: 20.61 s
+TA0326-TA0328_1-B.059.pkl
+Length of phones: 15
+49.89% done
+Time: 20.66 s
+TA0341-TA0342_1-B.115.pkl
+Length of phones: 10
+49.94% done
+Time: 20.68 s
+TA0769-TA0771_1-B.033.pkl
+Length of phones: 8
+50.00% done
+Time: 20.75 s
+TA0443-TA0444_1-B.010.pkl
+Length of phones: 14
+50.06% done
+Time: 20.77 s
+TA0754-TA0756_1-B.209.pkl
+Length of phones: 17
+50.11% done
+Time: 20.79 s
+TA0517-TA0519_2-A.362.pkl
+Length of phones: 10
+50.17% done
+Time: 20.81 s
+TA0483-TA0484_1-B.204.pkl
+Length of phones: 14
+50.23% done
+Time: 20.84 s
+TA0626-TA0628_2-B.179.pkl
+Length of phones: 20
+50.29% done
+Time: 20.85 s
+TA0626-TA0628_2-A.142.pkl
+Length of phones: 9
+50.34% done
+Time: 20.86 s
+TA0642-TA0644_1-A.266.pkl
+Length of phones: 11
+50.40% done
+Time: 20.86 s
+TA0631-TA0632_1-B.188.pkl
+Length of phones: 6
+50.46% done
+Time: 20.87 s
+TA0566-TA0568_1-B.124.pkl
+Length of phones: 4
+50.51% done
+Time: 20.89 s
+TA0595-TA0596_2-B.260.pkl
+Length of phones: 8
+50.57% done
+Time: 20.90 s
+TA0425-TA0427_2-A.044.pkl
+Length of phones: 6
+50.63% done
+Time: 20.91 s
+TA0733-TA0735_2-A.432.pkl
+Length of phones: 12
+50.69% done
+Time: 20.93 s
+TA0557-TA0558_1-B.161.pkl
+Length of phones: 5
+50.74% done
+Time: 20.95 s
+TA0469-TA0470_1-B.353.pkl
+Length of phones: 5
+50.80% done
+Time: 20.97 s
+TA0433-TA0434_2-B.139.pkl
+Length of phones: 12
+50.86% done
+Time: 20.99 s
+TA0710-TA0712_2-A.232.pkl
+Length of phones: 21
+50.91% done
+Time: 21.01 s
+TA0341-TA0342_1-A.107.pkl
+Length of phones: 18
+50.97% done
+Time: 21.04 s
+TA0657-TA0659_2-A.364.pkl
+Length of phones: 12
+51.03% done
+Time: 21.05 s
+TA0709-TA0711_1-A.060.pkl
+Length of phones: 12
+51.09% done
+Time: 21.06 s
+TA0575-TA0576_1-B.029.pkl
+Length of phones: 4
+51.14% done
+Time: 21.08 s
+TA0358-TA0360_2-B.171.pkl
+Length of phones: 21
+51.20% done
+Time: 21.16 s
+TA0705-TA0707_2-A.327.pkl
+Length of phones: 6
+51.26% done
+Time: 21.18 s
+TA0669-TA0671_2-A.248.pkl
+Length of phones: 17
+51.31% done
+Time: 21.20 s
+TA0477-TA0479_2-B.032.pkl
+Length of phones: 13
+51.37% done
+Time: 21.22 s
+TA0539-TA0540_1-B.279.pkl
+Length of phones: 5
+51.43% done
+Time: 21.24 s
+TA0470-TA0472_1-B.070.pkl
+Length of phones: 6
+51.49% done
+Time: 21.30 s
+TA0417-TA0418_1-B.110.pkl
+Length of phones: 12
+51.54% done
+Time: 21.32 s
+TA0646-TA0648_1-B.335.pkl
+Length of phones: 19
+51.60% done
+Time: 21.34 s
+TA0361-TA0363_1-B.121.pkl
+Length of phones: 11
+51.66% done
+Time: 21.35 s
+TA0443-TA0444_2-B.130.pkl
+Length of phones: 5
+51.71% done
+Time: 21.37 s
+TA0479-TA0480_2-A.063.pkl
+Length of phones: 16
+51.77% done
+Time: 21.39 s
+TA0473-TA0475_1-A.231.pkl
+Length of phones: 16
+51.83% done
+Time: 21.42 s
+TA0773-TA0775_1-A.060.pkl
+Length of phones: 14
+51.89% done
+Time: 21.44 s
+TA0703-TA0704_1-A.242.pkl
+Length of phones: 10
+51.94% done
+Time: 21.46 s
+TA0639-TA0640_2-B.244.pkl
+Length of phones: 10
+52.00% done
+Time: 21.48 s
+TA0510-TA0512_1-A.280.pkl
+Length of phones: 5
+52.06% done
+Time: 21.50 s
+TA0389-TA0390_2-A.131.pkl
+Length of phones: 16
+52.11% done
+Time: 21.52 s
+TA0469-TA0471_1-B.194.pkl
+Length of phones: 8
+52.17% done
+Time: 21.57 s
+TA0657-TA0659_2-A.213.pkl
+Length of phones: 10
+52.23% done
+Time: 21.60 s
+TA0505-TA0506_2-B.285.pkl
+Length of phones: 17
+52.29% done
+Time: 21.61 s
+TA0605-TA0607_2-B.218.pkl
+Length of phones: 27
+52.34% done
+Time: 21.64 s
+TA0393-TA0394_1-A.017.pkl
+Length of phones: 16
+52.40% done
+Time: 21.66 s
+TA0539-TA0540_1-B.024.pkl
+Length of phones: 11
+52.46% done
+Time: 21.74 s
+TA0365-TA0367_1-A.289.pkl
+Length of phones: 5
+52.51% done
+Time: 21.76 s
+TA0521-TA0522_2-B.327.pkl
+Length of phones: 5
+52.57% done
+Time: 21.78 s
+TA0745-TA0747_2-B.070.pkl
+Length of phones: 14
+52.63% done
+Time: 21.80 s
+TA0638-TA0640_1-B.033.pkl
+Length of phones: 16
+52.69% done
+Time: 21.83 s
+TA0430-TA0432_2-A.055.pkl
+Length of phones: 25
+52.74% done
+Time: 21.89 s
+TA0699-TA0700_2-A.200.pkl
+Length of phones: 7
+52.80% done
+Time: 21.93 s
+TA0401-TA0402_2-B.437.pkl
+Length of phones: 5
+52.86% done
+Time: 21.95 s
+TA0634-TA0636_2-B.178.pkl
+Length of phones: 14
+52.91% done
+Time: 21.97 s
+TA0346-TA0348_1-A.087.pkl
+Length of phones: 5
+52.97% done
+Time: 21.99 s
+TA0597-TA0598_2-A.111.pkl
+Length of phones: 19
+53.03% done
+Time: 22.01 s
+TA0721-TA0723_2-A.279.pkl
+Length of phones: 14
+53.09% done
+Time: 22.03 s
+TA0465-TA0467_1-A.046.pkl
+Length of phones: 17
+53.14% done
+Time: 22.06 s
+TA0555-TA0556_1-B.197.pkl
+Length of phones: 9
+53.20% done
+Time: 22.08 s
+TA0633-TA0634_1-A.373.pkl
+Length of phones: 5
+53.26% done
+Time: 22.10 s
+TA0386-TA0388_1-B.035.pkl
+Length of phones: 8
+53.31% done
+Time: 22.11 s
+TA0753-TA0755_1-A.337.pkl
+Length of phones: 6
+53.37% done
+Time: 22.12 s
+TA0643-TA0644_2-A.185.pkl
+Length of phones: 12
+53.43% done
+Time: 22.14 s
+TA0609-TA0611_1-A.017.pkl
+Length of phones: 5
+53.49% done
+Time: 22.16 s
+TA0489-TA0491_1-B.078.pkl
+Length of phones: 8
+53.54% done
+Time: 22.19 s
+TA0677-TA0678_2-B.239.pkl
+Length of phones: 9
+53.60% done
+Time: 22.20 s
+TA0689-TA0691_1-B.028.pkl
+Length of phones: 7
+53.66% done
+Time: 22.21 s
+TA0510-TA0512_2-B.089.pkl
+Length of phones: 10
+53.71% done
+Time: 22.23 s
+TA0519-TA0520_1-B.205.pkl
+Length of phones: 5
+53.77% done
+Time: 22.26 s
+TA0502-TA0504_2-B.331.pkl
+Length of phones: 9
+53.83% done
+Time: 22.27 s
+TA0393-TA0394_2-A.110.pkl
+Length of phones: 8
+53.89% done
+Time: 22.29 s
+TA0467-TA0468_1-A.204.pkl
+Length of phones: 14
+53.94% done
+Time: 22.32 s
+TA0553-TA0554_2-A.190.pkl
+Length of phones: 16
+54.00% done
+Time: 22.34 s
+TA0525-TA0527_1-B.021.pkl
+Length of phones: 11
+54.06% done
+Time: 22.36 s
+TA0558-TA0560_2-B.340.pkl
+Length of phones: 4
+54.11% done
+Time: 22.38 s
+TA0718-TA0720_1-A.567.pkl
+Length of phones: 6
+54.17% done
+Time: 22.39 s
+TA0687-TA0688_1-A.320.pkl
+Length of phones: 9
+54.23% done
+Time: 22.42 s
+TA0626-TA0628_2-A.141.pkl
+Length of phones: 6
+54.29% done
+Time: 22.43 s
+TA0354-TA0356_2-B.100.pkl
+Length of phones: 13
+54.34% done
+Time: 22.45 s
+TA0470-TA0472_1-A.084.pkl
+Length of phones: 5
+54.40% done
+Time: 22.48 s
+TA0345-TA0347_2-B.003.pkl
+Length of phones: 22
+54.46% done
+Time: 22.51 s
+TA0615-TA0616_1-B.269.pkl
+Length of phones: 8
+54.51% done
+Time: 22.53 s
+TA0775-TA0776_2-A.230.pkl
+Length of phones: 13
+54.57% done
+Time: 22.55 s
+TA0734-TA0736_1-B.226.pkl
+Length of phones: 26
+54.63% done
+Time: 22.58 s
+TA0487-TA0488_1-B.196.pkl
+Length of phones: 10
+54.69% done
+Time: 22.60 s
+TA0726-TA0728_2-A.343.pkl
+Length of phones: 14
+54.74% done
+Time: 22.62 s
+TA0554-TA0556_1-B.106.pkl
+Length of phones: 15
+54.80% done
+Time: 22.64 s
+TA0681-TA0682_1-B.139.pkl
+Length of phones: 19
+54.86% done
+Time: 22.66 s
+TA0387-TA0388_1-B.287.pkl
+Length of phones: 16
+54.91% done
+Time: 22.69 s
+TA0405-TA0406_2-A.137.pkl
+Length of phones: 8
+54.97% done
+Time: 22.72 s
+TA0337-TA0338_1-B.009.pkl
+Length of phones: 5
+55.03% done
+Time: 22.74 s
+TA0707-TA0708_1-B.141.pkl
+Length of phones: 20
+55.09% done
+Time: 22.74 s
+TA0715-TA0716_2-A.215.pkl
+Length of phones: 12
+55.14% done
+Time: 22.76 s
+TA0753-TA0755_1-A.351.pkl
+Length of phones: 10
+55.20% done
+Time: 22.79 s
+TA0335-TA0336_2-B.059.pkl
+Length of phones: 5
+55.26% done
+Time: 22.81 s
+TA0655-TA0656_2-B.187.pkl
+Length of phones: 13
+55.31% done
+Time: 22.83 s
+TA0433-TA0435_1-A.402.pkl
+Length of phones: 5
+55.37% done
+Time: 22.85 s
+TA0433-TA0435_1-B.012.pkl
+Length of phones: 4
+55.43% done
+Time: 22.89 s
+TA0582-TA0584_2-B.219.pkl
+Length of phones: 8
+55.49% done
+Time: 22.91 s
+TA0414-TA0416_1-B.067.pkl
+Length of phones: 5
+55.54% done
+Time: 22.93 s
+TA0346-TA0348_2-A.415.pkl
+Length of phones: 5
+55.60% done
+Time: 22.96 s
+TA0390-TA0392_2-B.153.pkl
+Length of phones: 6
+55.66% done
+Time: 22.96 s
+TA0623-TA0624_1-A.057.pkl
+Length of phones: 5
+55.71% done
+Time: 22.97 s
+TA0491-TA0492_2-B.195.pkl
+Length of phones: 4
+55.77% done
+Time: 22.99 s
+TA0707-TA0708_2-B.019.pkl
+Length of phones: 8
+55.83% done
+Time: 23.04 s
+TA0493-TA0494_2-B.219.pkl
+Length of phones: 17
+55.89% done
+Time: 23.07 s
+TA0613-TA0615_2-A.026.pkl
+Length of phones: 5
+55.94% done
+Time: 23.10 s
+TA0645-TA0646_2-B.086.pkl
+Length of phones: 5
+56.00% done
+Time: 23.12 s
+TA0663-TA0664_1-B.045.pkl
+Length of phones: 11
+56.06% done
+Time: 23.17 s
+TA0491-TA0492_1-A.272.pkl
+Length of phones: 5
+56.11% done
+Time: 23.20 s
+TA0467-TA0468_2-A.240.pkl
+Length of phones: 8
+56.17% done
+Time: 23.23 s
+TA0563-TA0564_2-B.010.pkl
+Length of phones: 18
+56.23% done
+Time: 23.25 s
+TA0733-TA0735_1-A.374.pkl
+Length of phones: 5
+56.29% done
+Time: 23.27 s
+TA0707-TA0708_2-A.196.pkl
+Length of phones: 17
+56.34% done
+Time: 23.29 s
+TA0523-TA0524_1-A.020.pkl
+Length of phones: 10
+56.40% done
+Time: 23.32 s
+TA0641-TA0643_1-A.398.pkl
+Length of phones: 11
+56.46% done
+Time: 23.34 s
+TA0346-TA0348_2-B.268.pkl
+Length of phones: 5
+56.51% done
+Time: 23.37 s
+TA0629-TA0631_2-A.085.pkl
+Length of phones: 13
+56.57% done
+Time: 23.37 s
+TA0367-TA0368_1-A.199.pkl
+Length of phones: 21
+56.63% done
+Time: 23.39 s
+TA0474-TA0476_1-B.176.pkl
+Length of phones: 10
+56.69% done
+Time: 23.42 s
+TA0713-TA0715_2-B.227.pkl
+Length of phones: 6
+56.74% done
+Time: 23.43 s
+TA0563-TA0564_2-A.296.pkl
+Length of phones: 5
+56.80% done
+Time: 23.45 s
+TA0674-TA0676_1-B.295.pkl
+Length of phones: 14
+56.86% done
+Time: 23.48 s
+TA0729-TA0731_1-B.096.pkl
+Length of phones: 17
+56.91% done
+Time: 23.49 s
+002180474.pkl
+Length of phones: 19
+56.97% done
+Time: 23.52 s
+TA0346-TA0348_2-A.300.pkl
+Length of phones: 5
+57.03% done
+Time: 23.54 s
+TA0577-TA0578_1-B.179.pkl
+Length of phones: 5
+57.09% done
+Time: 23.56 s
+TA0377-TA0378_1-A.031.pkl
+Length of phones: 13
+57.14% done
+Time: 23.59 s
+TA0481-TA0482_2-B.418.pkl
+Length of phones: 6
+57.20% done
+Time: 23.61 s
+TA0433-TA0434_2-A.192.pkl
+Length of phones: 8
+57.26% done
+Time: 23.61 s
+TA0606-TA0608_1-B.356.pkl
+Length of phones: 5
+57.31% done
+Time: 23.63 s
+TA0674-TA0676_1-B.029.pkl
+Length of phones: 13
+57.37% done
+Time: 23.65 s
+TA0673-TA0674_2-B.084.pkl
+Length of phones: 12
+57.43% done
+Time: 23.67 s
+TA0470-TA0472_1-A.379.pkl
+Length of phones: 6
+57.49% done
+Time: 23.69 s
+TA0745-TA0747_1-B.165.pkl
+Length of phones: 12
+57.54% done
+Time: 23.71 s
+TA0421-TA0423_2-A.045.pkl
+Length of phones: 5
+57.60% done
+Time: 23.73 s
+TA0713-TA0714_2-B.012.pkl
+Length of phones: 8
+57.66% done
+Time: 23.76 s
+TA0399-TA0400_1-A.174.pkl
+Length of phones: 9
+57.71% done
+Time: 23.78 s
+TA0569-TA0571_1-A.011.pkl
+Length of phones: 8
+57.77% done
+Time: 23.80 s
+TA0693-TA0694_1-A.104.pkl
+Length of phones: 8
+57.83% done
+Time: 23.82 s
+TA0757-TA0759_2-B.006.pkl
+Length of phones: 14
+57.89% done
+Time: 23.84 s
+TA0473-TA0474_1-B.270.pkl
+Length of phones: 12
+57.94% done
+Time: 23.86 s
+TA0333-TA0335_1-A.311.pkl
+Length of phones: 12
+58.00% done
+Time: 23.88 s
+TA0549-TA0550_2-B.143.pkl
+Length of phones: 11
+58.06% done
+Time: 23.90 s
+TA0510-TA0512_1-B.038.pkl
+Length of phones: 19
+58.11% done
+Time: 23.92 s
+TA0509-TA0511_2-B.302.pkl
+Length of phones: 5
+58.17% done
+Time: 23.97 s
+TA0374-TA0376_1-B.284.pkl
+Length of phones: 6
+58.23% done
+Time: 24.00 s
+TA0358-TA0360_2-A.110.pkl
+Length of phones: 22
+58.29% done
+Time: 24.02 s
+TA0346-TA0348_2-B.130.pkl
+Length of phones: 9
+58.34% done
+Time: 24.04 s
+TA0761-TA0762_1-B.205.pkl
+Length of phones: 9
+58.40% done
+Time: 24.05 s
+TA0371-TA0372_1-A.182.pkl
+Length of phones: 22
+58.46% done
+Time: 24.08 s
+TA0354-TA0356_2-A.152.pkl
+Length of phones: 11
+58.51% done
+Time: 24.10 s
+TA0623-TA0624_2-A.175.pkl
+Length of phones: 8
+58.57% done
+Time: 24.13 s
+TA0713-TA0714_1-B.154.pkl
+Length of phones: 18
+58.63% done
+Time: 24.21 s
+TA0511-TA0512_2-A.034.pkl
+Length of phones: 5
+58.69% done
+Time: 24.24 s
+TA0331-TA0332_2-A.165.pkl
+Length of phones: 4
+58.74% done
+Time: 24.26 s
+TA0577-TA0578_1-B.185.pkl
+Length of phones: 5
+58.80% done
+Time: 24.28 s
+TA0389-TA0391_2-A.139.pkl
+Length of phones: 8
+58.86% done
+Time: 24.30 s
+TA0417-TA0419_2-B.249.pkl
+Length of phones: 17
+58.91% done
+Time: 24.32 s
+TA0341-TA0343_1-A.363.pkl
+Length of phones: 7
+58.97% done
+Time: 24.33 s
+TA0665-TA0667_2-A.493.pkl
+Length of phones: 5
+59.03% done
+Time: 24.35 s
+TA0737-TA0738_2-B.003.pkl
+Length of phones: 15
+59.09% done
+Time: 24.36 s
+TA0759-TA0760_2-A.190.pkl
+Length of phones: 6
+59.14% done
+Time: 24.39 s
+TA0637-TA0639_2-B.092.pkl
+Length of phones: 5
+59.20% done
+Time: 24.41 s
+TA0425-TA0427_2-B.128.pkl
+Length of phones: 18
+59.26% done
+Time: 24.43 s
+TA0451-TA0452_2-B.137.pkl
+Length of phones: 5
+59.31% done
+Time: 24.46 s
+TA0415-TA0416_2-B.168.pkl
+Length of phones: 17
+59.37% done
+Time: 24.46 s
+TA0505-TA0506_1-B.008.pkl
+Length of phones: 12
+59.43% done
+Time: 24.49 s
+TA0605-TA0607_2-A.078.pkl
+Length of phones: 12
+59.49% done
+Time: 24.50 s
+TA0689-TA0691_1-B.162.pkl
+Length of phones: 6
+59.54% done
+Time: 24.52 s
+TA0458-TA0460_2-B.190.pkl
+Length of phones: 24
+59.60% done
+Time: 24.54 s
+TA0565-TA0566_2-B.287.pkl
+Length of phones: 5
+59.66% done
+Time: 24.56 s
+TA0679-TA0680_2-B.182.pkl
+Length of phones: 5
+59.71% done
+Time: 24.58 s
+TA0721-TA0722_2-A.348.pkl
+Length of phones: 18
+59.77% done
+Time: 24.60 s
+TA0491-TA0492_2-B.053.pkl
+Length of phones: 13
+59.83% done
+Time: 24.62 s
+TA0499-TA0500_1-B.255.pkl
+Length of phones: 12
+59.89% done
+Time: 24.65 s
+TA0534-TA0536_1-B.195.pkl
+Length of phones: 3
+59.94% done
+Time: 24.66 s
+TA0325-TA0326_1-B.004.pkl
+Length of phones: 17
+60.00% done
+Time: 24.68 s
+TA0731-TA0732_2-A.158.pkl
+Length of phones: 5
+60.06% done
+Time: 24.70 s
+TA0489-TA0491_1-B.046.pkl
+Length of phones: 9
+60.11% done
+Time: 24.73 s
+TA0341-TA0342_2-A.258.pkl
+Length of phones: 12
+60.17% done
+Time: 24.75 s
+TA0758-TA0760_2-B.041.pkl
+Length of phones: 5
+60.23% done
+Time: 24.77 s
+TA0533-TA0535_1-A.288.pkl
+Length of phones: 5
+60.29% done
+Time: 24.78 s
+TA0641-TA0642_2-A.234.pkl
+Length of phones: 5
+60.34% done
+Time: 24.80 s
+TA0459-TA0460_2-A.007.pkl
+Length of phones: 17
+60.40% done
+Time: 24.82 s
+TA0325-TA0326_2-B.225.pkl
+Length of phones: 10
+60.46% done
+Time: 24.85 s
+TA0405-TA0407_2-B.173.pkl
+Length of phones: 5
+60.51% done
+Time: 24.92 s
+TA0566-TA0568_1-B.312.pkl
+Length of phones: 5
+60.57% done
+Time: 24.93 s
+TA0562-TA0564_2-A.074.pkl
+Length of phones: 5
+60.63% done
+Time: 24.96 s
+TA0379-TA0380_1-B.058.pkl
+Length of phones: 5
+60.69% done
+Time: 24.98 s
+TA0685-TA0687_1-A.419.pkl
+Length of phones: 9
+60.74% done
+Time: 25.00 s
+TA0433-TA0435_1-A.016.pkl
+Length of phones: 10
+60.80% done
+Time: 25.02 s
+TA0517-TA0518_2-B.396.pkl
+Length of phones: 5
+60.86% done
+Time: 25.04 s
+TA0614-TA0616_1-B.046.pkl
+Length of phones: 9
+60.91% done
+Time: 25.06 s
+TA0465-TA0466_2-B.211.pkl
+Length of phones: 5
+60.97% done
+Time: 25.08 s
+TA0622-TA0624_2-A.070.pkl
+Length of phones: 16
+61.03% done
+Time: 25.10 s
+TA0345-TA0346_2-A.001.pkl
+Length of phones: 11
+61.09% done
+Time: 25.15 s
+TA0549-TA0550_1-A.154.pkl
+Length of phones: 5
+61.14% done
+Time: 25.17 s
+TA0709-TA0710_2-A.100.pkl
+Length of phones: 5
+61.20% done
+Time: 25.18 s
+TA0421-TA0422_1-A.234.pkl
+Length of phones: 25
+61.26% done
+Time: 25.21 s
+TA0526-TA0528_1-B.080.pkl
+Length of phones: 13
+61.31% done
+Time: 25.23 s
+TA0350-TA0352_2-B.217.pkl
+Length of phones: 11
+61.37% done
+Time: 25.25 s
+TA0445-TA0446_2-A.221.pkl
+Length of phones: 12
+61.43% done
+Time: 25.28 s
+TA0613-TA0615_2-A.134.pkl
+Length of phones: 17
+61.49% done
+Time: 25.28 s
+TA0569-TA0571_1-B.107.pkl
+Length of phones: 5
+61.54% done
+Time: 25.31 s
+TA0491-TA0492_1-A.020.pkl
+Length of phones: 5
+61.60% done
+Time: 25.33 s
+TA0611-TA0612_2-A.232.pkl
+Length of phones: 6
+61.66% done
+Time: 25.39 s
+TA0761-TA0762_1-B.135.pkl
+Length of phones: 20
+61.71% done
+Time: 25.46 s
+TA0379-TA0380_2-A.349.pkl
+Length of phones: 8
+61.77% done
+Time: 25.49 s
+TA0555-TA0556_2-B.077.pkl
+Length of phones: 13
+61.83% done
+Time: 25.49 s
+TA0633-TA0635_1-A.019.pkl
+Length of phones: 13
+61.89% done
+Time: 25.53 s
+TA0539-TA0540_1-B.050.pkl
+Length of phones: 9
+61.94% done
+Time: 25.54 s
+TA0677-TA0679_1-B.033.pkl
+Length of phones: 17
+62.00% done
+Time: 25.56 s
+TA0329-TA0331_1-A.252.pkl
+Length of phones: 16
+62.06% done
+Time: 25.58 s
+TA0533-TA0534_2-B.299.pkl
+Length of phones: 5
+62.11% done
+Time: 25.59 s
+TA0589-TA0590_1-A.168.pkl
+Length of phones: 9
+62.17% done
+Time: 25.61 s
+TA0351-TA0352_1-B.220.pkl
+Length of phones: 22
+62.23% done
+Time: 25.63 s
+TA0491-TA0492_1-B.260.pkl
+Length of phones: 4
+62.29% done
+Time: 25.66 s
+TA0647-TA0648_2-A.163.pkl
+Length of phones: 14
+62.34% done
+Time: 25.70 s
+TA0773-TA0775_1-A.085.pkl
+Length of phones: 5
+62.40% done
+Time: 25.72 s
+TA0578-TA0580_1-B.272.pkl
+Length of phones: 13
+62.46% done
+Time: 25.74 s
+TA0471-TA0472_1-A.183.pkl
+Length of phones: 16
+62.51% done
+Time: 25.77 s
+TA0701-TA0703_2-B.147.pkl
+Length of phones: 10
+62.57% done
+Time: 25.79 s
+TA0597-TA0599_2-B.317.pkl
+Length of phones: 14
+62.63% done
+Time: 25.81 s
+TA0581-TA0583_2-B.237.pkl
+Length of phones: 17
+62.69% done
+Time: 25.84 s
+TA0671-TA0672_2-A.147.pkl
+Length of phones: 4
+62.74% done
+Time: 25.86 s
+TA0371-TA0372_1-A.173.pkl
+Length of phones: 9
+62.80% done
+Time: 25.88 s
+TA0515-TA0516_2-B.086.pkl
+Length of phones: 9
+62.86% done
+Time: 25.90 s
+TA0481-TA0482_1-B.052.pkl
+Length of phones: 5
+62.91% done
+Time: 25.92 s
+TA0677-TA0679_2-B.028.pkl
+Length of phones: 15
+62.97% done
+Time: 25.95 s
+TA0545-TA0547_2-A.177.pkl
+Length of phones: 5
+63.03% done
+Time: 25.97 s
+TA0679-TA0680_1-B.272.pkl
+Length of phones: 8
+63.09% done
+Time: 25.99 s
+TA0770-TA0772_1-A.173.pkl
+Length of phones: 11
+63.14% done
+Time: 26.01 s
+TA0647-TA0648_1-A.022.pkl
+Length of phones: 8
+63.20% done
+Time: 26.03 s
+TA0410-TA0412_1-A.283.pkl
+Length of phones: 5
+63.26% done
+Time: 26.10 s
+TA0726-TA0728_2-B.176.pkl
+Length of phones: 10
+63.31% done
+Time: 26.15 s
+TA0341-TA0343_2-A.371.pkl
+Length of phones: 11
+63.37% done
+Time: 26.18 s
+TA0386-TA0388_1-B.067.pkl
+Length of phones: 9
+63.43% done
+Time: 26.19 s
+TA0382-TA0384_1-B.237.pkl
+Length of phones: 14
+63.49% done
+Time: 26.22 s
+TA0461-TA0462_1-A.270.pkl
+Length of phones: 25
+63.54% done
+Time: 26.29 s
+TA0378-TA0380_1-B.082.pkl
+Length of phones: 17
+63.60% done
+Time: 26.31 s
+TA0514-TA0516_1-B.067.pkl
+Length of phones: 19
+63.66% done
+Time: 26.33 s
+TA0467-TA0468_1-A.209.pkl
+Length of phones: 10
+63.71% done
+Time: 26.35 s
+TA0437-TA0439_1-A.279.pkl
+Length of phones: 10
+63.77% done
+Time: 26.37 s
+TA0437-TA0439_1-B.044.pkl
+Length of phones: 6
+63.83% done
+Time: 26.39 s
+TA0574-TA0576_2-B.086.pkl
+Length of phones: 8
+63.89% done
+Time: 26.41 s
+TA0337-TA0338_2-B.072.pkl
+Length of phones: 14
+63.94% done
+Time: 26.42 s
+TA0391-TA0392_1-A.196.pkl
+Length of phones: 21
+64.00% done
+Time: 26.43 s
+TA0533-TA0534_1-B.074.pkl
+Length of phones: 5
+64.06% done
+Time: 26.44 s
+TA0621-TA0622_2-A.370.pkl
+Length of phones: 15
+64.11% done
+Time: 26.46 s
+TA0713-TA0715_1-B.204.pkl
+Length of phones: 14
+64.17% done
+Time: 26.49 s
+TA0689-TA0691_1-A.298.pkl
+Length of phones: 8
+64.23% done
+Time: 26.50 s
+TA0346-TA0348_2-B.109.pkl
+Length of phones: 8
+64.29% done
+Time: 26.52 s
+TA0691-TA0692_2-A.114.pkl
+Length of phones: 14
+64.34% done
+Time: 26.53 s
+TA0614-TA0616_2-A.063.pkl
+Length of phones: 9
+64.40% done
+Time: 26.54 s
+TA0661-TA0663_2-B.251.pkl
+Length of phones: 9
+64.46% done
+Time: 26.56 s
+TA0561-TA0562_2-B.267.pkl
+Length of phones: 5
+64.51% done
+Time: 26.58 s
+TA0463-TA0464_1-A.066.pkl
+Length of phones: 10
+64.57% done
+Time: 26.60 s
+TA0617-TA0619_1-B.435.pkl
+Length of phones: 11
+64.63% done
+Time: 26.62 s
+TA0649-TA0651_2-B.214.pkl
+Length of phones: 5
+64.69% done
+Time: 26.64 s
+TA0737-TA0738_2-A.339.pkl
+Length of phones: 11
+64.74% done
+Time: 26.64 s
+TA0489-TA0491_2-A.029.pkl
+Length of phones: 12
+64.80% done
+Time: 26.66 s
+TA0373-TA0374_1-B.066.pkl
+Length of phones: 11
+64.86% done
+Time: 26.69 s
+TA0365-TA0366_1-A.194.pkl
+Length of phones: 5
+64.91% done
+Time: 26.71 s
+TA0646-TA0648_2-B.248.pkl
+Length of phones: 9
+64.97% done
+Time: 26.73 s
+TA0766-TA0768_1-A.290.pkl
+Length of phones: 5
+65.03% done
+Time: 26.75 s
+TA0469-TA0470_2-A.079.pkl
+Length of phones: 10
+65.09% done
+Time: 26.79 s
+TA0761-TA0762_1-A.194.pkl
+Length of phones: 5
+65.14% done
+Time: 26.79 s
+TA0705-TA0706_2-A.095.pkl
+Length of phones: 5
+65.20% done
+Time: 26.81 s
+TA0702-TA0704_2-A.291.pkl
+Length of phones: 17
+65.26% done
+Time: 26.82 s
+TA0477-TA0478_2-A.142.pkl
+Length of phones: 6
+65.31% done
+Time: 26.85 s
+TA0741-TA0742_2-A.032.pkl
+Length of phones: 15
+65.37% done
+Time: 26.85 s
+TA0405-TA0406_2-B.041.pkl
+Length of phones: 5
+65.43% done
+Time: 26.87 s
+TA0714-TA0716_1-B.405.pkl
+Length of phones: 3
+65.49% done
+Time: 26.89 s
+TA0329-TA0331_1-B.063.pkl
+Length of phones: 5
+65.54% done
+Time: 26.91 s
+TA0338-TA0340_2-A.176.pkl
+Length of phones: 15
+65.60% done
+Time: 26.94 s
+TA0511-TA0512_1-A.253.pkl
+Length of phones: 11
+65.66% done
+Time: 26.95 s
+TA0470-TA0472_2-B.176.pkl
+Length of phones: 18
+65.71% done
+Time: 26.97 s
+TA0353-TA0355_2-A.163.pkl
+Length of phones: 9
+65.77% done
+Time: 26.99 s
+TA0391-TA0392_2-B.183.pkl
+Length of phones: 16
+65.83% done
+Time: 27.01 s
+TA0462-TA0464_2-B.353.pkl
+Length of phones: 4
+65.89% done
+Time: 27.04 s
+TA0674-TA0676_1-B.085.pkl
+Length of phones: 8
+65.94% done
+Time: 27.09 s
+TA0333-TA0335_2-A.305.pkl
+Length of phones: 5
+66.00% done
+Time: 27.11 s
+TA0450-TA0452_1-A.062.pkl
+Length of phones: 5
+66.06% done
+Time: 27.13 s
+TA0655-TA0656_2-A.063.pkl
+Length of phones: 13
+66.11% done
+Time: 27.15 s
+TA0509-TA0511_1-A.366.pkl
+Length of phones: 12
+66.17% done
+Time: 27.17 s
+TA0523-TA0524_1-B.056.pkl
+Length of phones: 5
+66.23% done
+Time: 27.19 s
+TA0377-TA0378_2-A.091.pkl
+Length of phones: 9
+66.29% done
+Time: 27.22 s
+TA0557-TA0558_1-A.088.pkl
+Length of phones: 5
+66.34% done
+Time: 27.23 s
+TA0657-TA0659_1-B.082.pkl
+Length of phones: 5
+66.40% done
+Time: 27.24 s
+TA0565-TA0567_2-A.095.pkl
+Length of phones: 7
+66.46% done
+Time: 27.26 s
+TA0702-TA0704_2-A.148.pkl
+Length of phones: 14
+66.51% done
+Time: 27.33 s
+TA0593-TA0594_2-B.338.pkl
+Length of phones: 27
+66.57% done
+Time: 27.35 s
+TA0534-TA0536_2-B.022.pkl
+Length of phones: 5
+66.63% done
+Time: 27.37 s
+TA0701-TA0702_1-A.293.pkl
+Length of phones: 10
+66.69% done
+Time: 27.40 s
+TA0391-TA0392_1-B.004.pkl
+Length of phones: 15
+66.74% done
+Time: 27.43 s
+TA0405-TA0406_2-A.146.pkl
+Length of phones: 5
+66.80% done
+Time: 27.45 s
+TA0569-TA0570_1-B.185.pkl
+Length of phones: 5
+66.86% done
+Time: 27.45 s
+TA0555-TA0556_2-B.234.pkl
+Length of phones: 13
+66.91% done
+Time: 27.49 s
+TA0625-TA0626_2-A.286.pkl
+Length of phones: 8
+66.97% done
+Time: 27.50 s
+TA0653-TA0654_2-A.059.pkl
+Length of phones: 9
+67.03% done
+Time: 27.53 s
+TA0438-TA0440_1-B.025.pkl
+Length of phones: 13
+67.09% done
+Time: 27.54 s
+TA0521-TA0522_2-B.464.pkl
+Length of phones: 5
+67.14% done
+Time: 27.56 s
+TA0346-TA0348_2-A.003.pkl
+Length of phones: 5
+67.20% done
+Time: 27.59 s
+TA0689-TA0691_2-B.217.pkl
+Length of phones: 4
+67.26% done
+Time: 27.60 s
+TA0514-TA0516_2-B.149.pkl
+Length of phones: 5
+67.31% done
+Time: 27.63 s
+TA0393-TA0395_1-B.065.pkl
+Length of phones: 12
+67.37% done
+Time: 27.64 s
+TA0719-TA0720_2-B.247.pkl
+Length of phones: 14
+67.43% done
+Time: 27.66 s
+TA0329-TA0331_1-B.136.pkl
+Length of phones: 11
+67.49% done
+Time: 27.69 s
+TA0613-TA0614_1-B.030.pkl
+Length of phones: 7
+67.54% done
+Time: 27.71 s
+TA0561-TA0562_1-A.045.pkl
+Length of phones: 5
+67.60% done
+Time: 27.73 s
+TA0341-TA0342_1-B.075.pkl
+Length of phones: 22
+67.66% done
+Time: 27.75 s
+TA0617-TA0619_1-B.129.pkl
+Length of phones: 8
+67.71% done
+Time: 27.77 s
+TA0734-TA0736_1-A.315.pkl
+Length of phones: 5
+67.77% done
+Time: 27.79 s
+TA0657-TA0659_2-B.003.pkl
+Length of phones: 10
+67.83% done
+Time: 27.80 s
+TA0321-TA0323_2-A.043.pkl
+Length of phones: 9
+67.89% done
+Time: 27.83 s
+TA0513-TA0515_2-A.257.pkl
+Length of phones: 5
+67.94% done
+Time: 27.85 s
+TA0459-TA0460_1-A.223.pkl
+Length of phones: 5
+68.00% done
+Time: 27.87 s
+TA0389-TA0391_1-A.026.pkl
+Length of phones: 9
+68.06% done
+Time: 27.88 s
+TA0634-TA0636_1-B.033.pkl
+Length of phones: 26
+68.11% done
+Time: 27.89 s
+TA0337-TA0339_1-A.134.pkl
+Length of phones: 5
+68.17% done
+Time: 27.92 s
+TA0517-TA0518_2-B.317.pkl
+Length of phones: 5
+68.23% done
+Time: 27.92 s
+TA0626-TA0628_2-B.279.pkl
+Length of phones: 17
+68.29% done
+Time: 27.96 s
+TA0615-TA0616_1-A.171.pkl
+Length of phones: 15
+68.34% done
+Time: 28.00 s
+TA0771-TA0772_1-B.003.pkl
+Length of phones: 6
+68.40% done
+Time: 28.02 s
+TA0377-TA0378_1-B.321.pkl
+Length of phones: 9
+68.46% done
+Time: 28.04 s
+TA0717-TA0718_2-B.168.pkl
+Length of phones: 7
+68.51% done
+Time: 28.06 s
+TA0645-TA0647_2-A.295.pkl
+Length of phones: 26
+68.57% done
+Time: 28.08 s
+TA0579-TA0580_2-B.069.pkl
+Length of phones: 5
+68.63% done
+Time: 28.09 s
+TA0741-TA0742_1-A.511.pkl
+Length of phones: 10
+68.69% done
+Time: 28.12 s
+TA0517-TA0518_1-B.460.pkl
+Length of phones: 15
+68.74% done
+Time: 28.17 s
+TA0367-TA0368_2-A.360.pkl
+Length of phones: 8
+68.80% done
+Time: 28.19 s
+TA0721-TA0723_2-A.172.pkl
+Length of phones: 6
+68.86% done
+Time: 28.22 s
+TA0463-TA0464_1-B.351.pkl
+Length of phones: 7
+68.91% done
+Time: 28.24 s
+TA0465-TA0466_2-A.189.pkl
+Length of phones: 16
+68.97% done
+Time: 28.27 s
+TA0510-TA0512_1-B.175.pkl
+Length of phones: 5
+69.03% done
+Time: 28.28 s
+TA0491-TA0492_1-B.074.pkl
+Length of phones: 12
+69.09% done
+Time: 28.30 s
+TA0734-TA0736_1-A.164.pkl
+Length of phones: 20
+69.14% done
+Time: 28.33 s
+TA0581-TA0583_2-B.231.pkl
+Length of phones: 17
+69.20% done
+Time: 28.33 s
+TA0777-TA0778_1-A.069.pkl
+Length of phones: 9
+69.26% done
+Time: 28.36 s
+TA0325-TA0327_1-A.048.pkl
+Length of phones: 5
+69.31% done
+Time: 28.38 s
+TA0687-TA0688_2-A.260.pkl
+Length of phones: 12
+69.37% done
+Time: 28.39 s
+TA0734-TA0736_1-A.007.pkl
+Length of phones: 17
+69.43% done
+Time: 28.43 s
+TA0645-TA0646_2-B.219.pkl
+Length of phones: 5
+69.49% done
+Time: 28.43 s
+TA0667-TA0668_2-B.078.pkl
+Length of phones: 21
+69.54% done
+Time: 28.45 s
+TA0406-TA0408_2-B.150.pkl
+Length of phones: 9
+69.60% done
+Time: 28.47 s
+TA0433-TA0434_1-A.215.pkl
+Length of phones: 5
+69.66% done
+Time: 28.50 s
+TA0671-TA0672_1-B.007.pkl
+Length of phones: 21
+69.71% done
+Time: 28.51 s
+TA0773-TA0775_1-B.114.pkl
+Length of phones: 18
+69.77% done
+Time: 28.53 s
+TA0651-TA0652_2-A.148.pkl
+Length of phones: 12
+69.83% done
+Time: 28.55 s
+TA0590-TA0592_1-A.049.pkl
+Length of phones: 11
+69.89% done
+Time: 28.57 s
+TA0411-TA0412_2-B.151.pkl
+Length of phones: 10
+69.94% done
+Time: 28.59 s
+TA0714-TA0716_1-A.036.pkl
+Length of phones: 13
+70.00% done
+Time: 28.61 s
+TA0737-TA0738_2-A.019.pkl
+Length of phones: 20
+70.06% done
+Time: 28.63 s
+TA0707-TA0708_1-A.083.pkl
+Length of phones: 5
+70.11% done
+Time: 28.65 s
+TA0737-TA0739_1-B.270.pkl
+Length of phones: 9
+70.17% done
+Time: 28.65 s
+TA0578-TA0580_2-B.052.pkl
+Length of phones: 5
+70.23% done
+Time: 28.68 s
+TA0497-TA0499_2-B.190.pkl
+Length of phones: 6
+70.29% done
+Time: 28.71 s
+TA0717-TA0718_2-B.338.pkl
+Length of phones: 9
+70.34% done
+Time: 28.72 s
+TA0361-TA0363_1-B.131.pkl
+Length of phones: 23
+70.40% done
+Time: 28.77 s
+TA0613-TA0615_2-A.004.pkl
+Length of phones: 20
+70.46% done
+Time: 28.79 s
+TA0734-TA0736_1-A.229.pkl
+Length of phones: 12
+70.51% done
+Time: 28.80 s
+TA0538-TA0540_2-B.097.pkl
+Length of phones: 5
+70.57% done
+Time: 28.82 s
+TA0737-TA0738_1-B.477.pkl
+Length of phones: 10
+70.63% done
+Time: 28.84 s
+TA0346-TA0348_2-A.210.pkl
+Length of phones: 5
+70.69% done
+Time: 28.87 s
+TA0431-TA0432_1-B.142.pkl
+Length of phones: 4
+70.74% done
+Time: 28.89 s
+TA0554-TA0556_2-B.156.pkl
+Length of phones: 10
+70.80% done
+Time: 28.91 s
+TA0709-TA0710_2-A.058.pkl
+Length of phones: 5
+70.86% done
+Time: 28.93 s
+TA0603-TA0604_2-A.152.pkl
+Length of phones: 18
+70.91% done
+Time: 28.95 s
+TA0714-TA0716_1-B.339.pkl
+Length of phones: 19
+70.97% done
+Time: 28.98 s
+TA0766-TA0768_2-A.043.pkl
+Length of phones: 13
+71.03% done
+Time: 29.00 s
+TA0622-TA0624_2-A.224.pkl
+Length of phones: 9
+71.09% done
+Time: 29.02 s
+TA0449-TA0451_2-A.242.pkl
+Length of phones: 31
+71.14% done
+Time: 29.05 s
+TA0389-TA0391_1-A.019.pkl
+Length of phones: 9
+71.20% done
+Time: 29.07 s
+TA0557-TA0558_2-A.167.pkl
+Length of phones: 19
+71.26% done
+Time: 29.10 s
+TA0606-TA0608_1-B.385.pkl
+Length of phones: 7
+71.31% done
+Time: 29.10 s
+TA0391-TA0392_1-B.245.pkl
+Length of phones: 16
+71.37% done
+Time: 29.13 s
+TA0369-TA0370_2-B.138.pkl
+Length of phones: 5
+71.43% done
+Time: 29.15 s
+TA0389-TA0390_2-A.303.pkl
+Length of phones: 9
+71.49% done
+Time: 29.18 s
+TA0693-TA0694_2-B.216.pkl
+Length of phones: 5
+71.54% done
+Time: 29.20 s
+TA0485-TA0487_2-A.177.pkl
+Length of phones: 16
+71.60% done
+Time: 29.22 s
+TA0681-TA0682_2-A.151.pkl
+Length of phones: 6
+71.66% done
+Time: 29.24 s
+TA0357-TA0359_2-B.193.pkl
+Length of phones: 12
+71.71% done
+Time: 29.26 s
+TA0761-TA0762_2-B.136.pkl
+Length of phones: 6
+71.77% done
+Time: 29.27 s
+TA0435-TA0436_2-A.167.pkl
+Length of phones: 5
+71.83% done
+Time: 29.29 s
+TA0609-TA0610_2-B.009.pkl
+Length of phones: 5
+71.89% done
+Time: 29.30 s
+TA0433-TA0434_1-B.190.pkl
+Length of phones: 22
+71.94% done
+Time: 29.32 s
+TA0726-TA0728_2-A.329.pkl
+Length of phones: 9
+72.00% done
+Time: 29.34 s
+TA0665-TA0666_1-A.472.pkl
+Length of phones: 10
+72.06% done
+Time: 29.36 s
+TA0677-TA0678_2-B.324.pkl
+Length of phones: 19
+72.11% done
+Time: 29.40 s
+TA0454-TA0456_2-B.295.pkl
+Length of phones: 10
+72.17% done
+Time: 29.40 s
+TA0367-TA0368_1-A.398.pkl
+Length of phones: 7
+72.23% done
+Time: 29.43 s
+TA0534-TA0536_2-A.259.pkl
+Length of phones: 8
+72.29% done
+Time: 29.45 s
+TA0774-TA0776_2-B.113.pkl
+Length of phones: 17
+72.34% done
+Time: 29.46 s
+TA0402-TA0404_1-B.088.pkl
+Length of phones: 12
+72.40% done
+Time: 29.50 s
+TA0471-TA0472_1-A.002.pkl
+Length of phones: 18
+72.46% done
+Time: 29.53 s
+TA0597-TA0598_2-A.233.pkl
+Length of phones: 5
+72.51% done
+Time: 29.55 s
+TA0417-TA0419_1-B.051.pkl
+Length of phones: 6
+72.57% done
+Time: 29.57 s
+TA0594-TA0596_1-A.186.pkl
+Length of phones: 17
+72.63% done
+Time: 29.64 s
+TA0390-TA0392_1-B.248.pkl
+Length of phones: 18
+72.69% done
+Time: 29.66 s
+TA0377-TA0378_2-B.417.pkl
+Length of phones: 9
+72.74% done
+Time: 29.67 s
+TA0337-TA0339_1-A.160.pkl
+Length of phones: 8
+72.80% done
+Time: 29.73 s
+TA0689-TA0690_1-B.152.pkl
+Length of phones: 13
+72.86% done
+Time: 29.76 s
+TA0617-TA0619_1-B.214.pkl
+Length of phones: 8
+72.91% done
+Time: 29.78 s
+TA0542-TA0544_2-A.086.pkl
+Length of phones: 11
+72.97% done
+Time: 29.79 s
+TA0413-TA0415_2-B.028.pkl
+Length of phones: 18
+73.03% done
+Time: 29.84 s
+TA0469-TA0471_1-B.038.pkl
+Length of phones: 19
+73.09% done
+Time: 29.86 s
+TA0721-TA0722_2-A.360.pkl
+Length of phones: 13
+73.14% done
+Time: 29.88 s
+TA0701-TA0702_1-A.375.pkl
+Length of phones: 6
+73.20% done
+Time: 29.90 s
+TA0349-TA0351_1-B.092.pkl
+Length of phones: 5
+73.26% done
+Time: 29.92 s
+TA0382-TA0384_2-A.144.pkl
+Length of phones: 14
+73.31% done
+Time: 29.94 s
+TA0373-TA0374_2-A.078.pkl
+Length of phones: 5
+73.37% done
+Time: 29.96 s
+TA0771-TA0772_1-A.026.pkl
+Length of phones: 5
+73.43% done
+Time: 29.97 s
+TA0510-TA0512_1-B.192.pkl
+Length of phones: 14
+73.49% done
+Time: 30.00 s
+TA0345-TA0347_1-B.092.pkl
+Length of phones: 5
+73.54% done
+Time: 30.02 s
+TA0333-TA0334_2-B.173.pkl
+Length of phones: 5
+73.60% done
+Time: 30.02 s
+TA0673-TA0674_2-A.347.pkl
+Length of phones: 5
+73.66% done
+Time: 30.03 s
+TA0562-TA0564_1-A.161.pkl
+Length of phones: 5
+73.71% done
+Time: 30.06 s
+TA0679-TA0680_2-B.104.pkl
+Length of phones: 21
+73.77% done
+Time: 30.09 s
+TA0326-TA0328_2-A.016.pkl
+Length of phones: 10
+73.83% done
+Time: 30.10 s
+TA0341-TA0343_1-B.149.pkl
+Length of phones: 4
+73.89% done
+Time: 30.11 s
+TA0379-TA0380_1-A.127.pkl
+Length of phones: 4
+73.94% done
+Time: 30.13 s
+TA0333-TA0334_1-A.202.pkl
+Length of phones: 5
+74.00% done
+Time: 30.14 s
+TA0657-TA0658_1-B.147.pkl
+Length of phones: 17
+74.06% done
+Time: 30.16 s
+TA0690-TA0692_1-B.303.pkl
+Length of phones: 2
+74.11% done
+Time: 30.18 s
+TA0402-TA0404_2-A.278.pkl
+Length of phones: 4
+74.17% done
+Time: 30.20 s
+TA0450-TA0452_1-B.057.pkl
+Length of phones: 16
+74.23% done
+Time: 30.22 s
+TA0565-TA0566_1-A.322.pkl
+Length of phones: 7
+74.29% done
+Time: 30.25 s
+TA0365-TA0367_2-A.152.pkl
+Length of phones: 5
+74.34% done
+Time: 30.27 s
+TA0614-TA0616_1-A.283.pkl
+Length of phones: 21
+74.40% done
+Time: 30.30 s
+TA0717-TA0718_2-A.470.pkl
+Length of phones: 15
+74.46% done
+Time: 30.32 s
+TA0525-TA0526_1-A.221.pkl
+Length of phones: 14
+74.51% done
+Time: 30.37 s
+TA0341-TA0343_1-B.062.pkl
+Length of phones: 15
+74.57% done
+Time: 30.39 s
+TA0733-TA0735_2-A.171.pkl
+Length of phones: 5
+74.63% done
+Time: 30.41 s
+TA0333-TA0335_2-B.098.pkl
+Length of phones: 5
+74.69% done
+Time: 30.44 s
+TA0706-TA0708_2-B.028.pkl
+Length of phones: 15
+74.74% done
+Time: 30.46 s
+TA0375-TA0376_2-A.217.pkl
+Length of phones: 14
+74.80% done
+Time: 30.48 s
+TA0362-TA0364_1-A.061.pkl
+Length of phones: 15
+74.86% done
+Time: 30.50 s
+TA0493-TA0494_2-B.003.pkl
+Length of phones: 5
+74.91% done
+Time: 30.52 s
+TA0455-TA0456_2-B.140.pkl
+Length of phones: 4
+74.97% done
+Time: 30.53 s
+TA0329-TA0330_2-A.336.pkl
+Length of phones: 10
+75.03% done
+Time: 30.56 s
+TA0721-TA0723_1-B.208.pkl
+Length of phones: 14
+75.09% done
+Time: 30.58 s
+TA0551-TA0552_2-B.038.pkl
+Length of phones: 12
+75.14% done
+Time: 30.58 s
+TA0382-TA0384_1-B.114.pkl
+Length of phones: 23
+75.20% done
+Time: 30.60 s
+TA0683-TA0684_2-B.131.pkl
+Length of phones: 13
+75.26% done
+Time: 30.63 s
+TA0713-TA0715_1-B.141.pkl
+Length of phones: 15
+75.31% done
+Time: 30.64 s
+TA0353-TA0355_1-A.139.pkl
+Length of phones: 5
+75.37% done
+Time: 30.67 s
+TA0705-TA0707_2-B.067.pkl
+Length of phones: 6
+75.43% done
+Time: 30.69 s
+TA0773-TA0775_2-A.222.pkl
+Length of phones: 9
+75.49% done
+Time: 30.71 s
+TA0694-TA0696_1-B.078.pkl
+Length of phones: 17
+75.54% done
+Time: 30.72 s
+TA0517-TA0519_1-A.333.pkl
+Length of phones: 11
+75.60% done
+Time: 30.74 s
+TA0766-TA0768_1-A.289.pkl
+Length of phones: 12
+75.66% done
+Time: 30.76 s
+TA0353-TA0355_2-B.151.pkl
+Length of phones: 6
+75.71% done
+Time: 30.78 s
+TA0441-TA0442_1-A.055.pkl
+Length of phones: 13
+75.77% done
+Time: 30.79 s
+TA0735-TA0736_2-B.015.pkl
+Length of phones: 5
+75.83% done
+Time: 30.80 s
+TA0719-TA0720_1-A.088.pkl
+Length of phones: 6
+75.89% done
+Time: 30.82 s
+TA0638-TA0640_1-B.128.pkl
+Length of phones: 5
+75.94% done
+Time: 30.83 s
+TA0435-TA0436_2-A.177.pkl
+Length of phones: 19
+76.00% done
+Time: 30.85 s
+TA0339-TA0340_1-A.076.pkl
+Length of phones: 6
+76.06% done
+Time: 30.87 s
+TA0385-TA0386_1-A.050.pkl
+Length of phones: 5
+76.11% done
+Time: 30.93 s
+TA0341-TA0343_1-A.069.pkl
+Length of phones: 12
+76.17% done
+Time: 30.95 s
+TA0523-TA0524_1-A.175.pkl
+Length of phones: 5
+76.23% done
+Time: 30.95 s
+TA0725-TA0727_1-A.200.pkl
+Length of phones: 13
+76.29% done
+Time: 30.97 s
+TA0405-TA0406_2-A.323.pkl
+Length of phones: 5
+76.34% done
+Time: 30.99 s
+TA0395-TA0396_2-B.062.pkl
+Length of phones: 10
+76.40% done
+Time: 31.00 s
+TA0571-TA0572_1-A.013.pkl
+Length of phones: 12
+76.46% done
+Time: 31.01 s
+TA0346-TA0348_2-A.025.pkl
+Length of phones: 18
+76.51% done
+Time: 31.03 s
+TA0382-TA0384_1-B.151.pkl
+Length of phones: 4
+76.57% done
+Time: 31.04 s
+TA0754-TA0756_1-B.042.pkl
+Length of phones: 16
+76.63% done
+Time: 31.07 s
+TA0730-TA0732_1-A.413.pkl
+Length of phones: 24
+76.69% done
+Time: 31.08 s
+TA0573-TA0574_2-A.046.pkl
+Length of phones: 16
+76.74% done
+Time: 31.10 s
+TA0454-TA0456_2-B.185.pkl
+Length of phones: 9
+76.80% done
+Time: 31.12 s
+TA0354-TA0356_1-A.081.pkl
+Length of phones: 17
+76.86% done
+Time: 31.13 s
+TA0665-TA0666_1-B.426.pkl
+Length of phones: 24
+76.91% done
+Time: 31.14 s
+TA0722-TA0724_1-B.346.pkl
+Length of phones: 5
+76.97% done
+Time: 31.15 s
+TA0621-TA0622_2-A.084.pkl
+Length of phones: 5
+77.03% done
+Time: 31.17 s
+TA0723-TA0724_2-B.096.pkl
+Length of phones: 10
+77.09% done
+Time: 31.18 s
+TA0457-TA0458_2-B.205.pkl
+Length of phones: 13
+77.14% done
+Time: 31.20 s
+TA0461-TA0463_2-A.033.pkl
+Length of phones: 15
+77.20% done
+Time: 31.22 s
+TA0405-TA0406_2-B.067.pkl
+Length of phones: 5
+77.26% done
+Time: 31.28 s
+TA0567-TA0568_2-A.210.pkl
+Length of phones: 10
+77.31% done
+Time: 31.31 s
+TA0401-TA0403_2-B.110.pkl
+Length of phones: 15
+77.37% done
+Time: 31.32 s
+TA0342-TA0344_1-A.064.pkl
+Length of phones: 11
+77.43% done
+Time: 31.34 s
+TA0763-TA0764_1-A.217.pkl
+Length of phones: 15
+77.49% done
+Time: 31.37 s
+TA0321-TA0323_1-B.166.pkl
+Length of phones: 11
+77.54% done
+Time: 31.39 s
+TA0651-TA0652_1-B.207.pkl
+Length of phones: 14
+77.60% done
+Time: 31.42 s
+TA0470-TA0472_1-A.357.pkl
+Length of phones: 5
+77.66% done
+Time: 31.42 s
+TA0506-TA0508_1-A.192.pkl
+Length of phones: 13
+77.71% done
+Time: 31.45 s
+TA0435-TA0436_2-A.106.pkl
+Length of phones: 9
+77.77% done
+Time: 31.47 s
+TA0343-TA0344_2-B.206.pkl
+Length of phones: 10
+77.83% done
+Time: 31.49 s
+TA0686-TA0688_2-A.388.pkl
+Length of phones: 10
+77.89% done
+Time: 31.51 s
+TA0755-TA0756_2-B.104.pkl
+Length of phones: 7
+77.94% done
+Time: 31.54 s
+TA0481-TA0483_2-B.138.pkl
+Length of phones: 5
+78.00% done
+Time: 31.54 s
+TA0377-TA0379_2-A.330.pkl
+Length of phones: 11
+78.06% done
+Time: 31.57 s
+TA0673-TA0675_2-A.195.pkl
+Length of phones: 12
+78.11% done
+Time: 31.60 s
+TA0626-TA0628_1-A.039.pkl
+Length of phones: 5
+78.17% done
+Time: 31.62 s
+TA0425-TA0426_1-A.099.pkl
+Length of phones: 5
+78.23% done
+Time: 31.64 s
+TA0533-TA0534_2-B.213.pkl
+Length of phones: 5
+78.29% done
+Time: 31.65 s
+TA0357-TA0358_1-A.004.pkl
+Length of phones: 5
+78.34% done
+Time: 31.68 s
+TA0405-TA0407_1-A.442.pkl
+Length of phones: 5
+78.40% done
+Time: 31.70 s
+TA0717-TA0718_2-B.139.pkl
+Length of phones: 5
+78.46% done
+Time: 31.73 s
+TA0421-TA0422_1-B.095.pkl
+Length of phones: 6
+78.51% done
+Time: 31.75 s
+TA0511-TA0512_1-B.312.pkl
+Length of phones: 10
+78.57% done
+Time: 31.78 s
+TA0351-TA0352_1-A.007.pkl
+Length of phones: 21
+78.63% done
+Time: 31.84 s
+TA0425-TA0426_1-B.332.pkl
+Length of phones: 7
+78.69% done
+Time: 31.86 s
+TA0657-TA0659_2-B.239.pkl
+Length of phones: 5
+78.74% done
+Time: 31.88 s
+TA0589-TA0591_2-A.191.pkl
+Length of phones: 24
+78.80% done
+Time: 31.91 s
+TA0430-TA0432_2-B.058.pkl
+Length of phones: 10
+78.86% done
+Time: 31.93 s
+TA0506-TA0508_1-A.330.pkl
+Length of phones: 16
+78.91% done
+Time: 31.96 s
+TA0337-TA0338_2-B.158.pkl
+Length of phones: 7
+78.97% done
+Time: 31.98 s
+TA0442-TA0444_2-B.360.pkl
+Length of phones: 4
+79.03% done
+Time: 32.01 s
+TA0421-TA0422_1-A.044.pkl
+Length of phones: 12
+79.09% done
+Time: 32.01 s
+TA0381-TA0383_2-B.107.pkl
+Length of phones: 7
+79.14% done
+Time: 32.03 s
+TA0607-TA0608_1-A.328.pkl
+Length of phones: 7
+79.20% done
+Time: 32.06 s
+TA0709-TA0711_1-A.213.pkl
+Length of phones: 16
+79.26% done
+Time: 32.09 s
+TA0625-TA0627_1-A.202.pkl
+Length of phones: 16
+79.31% done
+Time: 32.12 s
+TA0382-TA0384_2-B.110.pkl
+Length of phones: 24
+79.37% done
+Time: 32.14 s
+TA0429-TA0430_2-A.121.pkl
+Length of phones: 13
+79.43% done
+Time: 32.16 s
+TA0457-TA0459_1-B.030.pkl
+Length of phones: 5
+79.49% done
+Time: 32.18 s
+TA0325-TA0327_2-A.283.pkl
+Length of phones: 5
+79.54% done
+Time: 32.20 s
+TA0323-TA0324_1-A.044.pkl
+Length of phones: 5
+79.60% done
+Time: 32.23 s
+TA0423-TA0424_1-A.007.pkl
+Length of phones: 5
+79.66% done
+Time: 32.25 s
+TA0761-TA0762_1-A.007.pkl
+Length of phones: 9
+79.71% done
+Time: 32.28 s
+TA0557-TA0558_2-B.105.pkl
+Length of phones: 8
+79.77% done
+Time: 32.35 s
+TA0441-TA0442_2-A.237.pkl
+Length of phones: 5
+79.83% done
+Time: 32.37 s
+TA0457-TA0459_2-A.176.pkl
+Length of phones: 18
+79.89% done
+Time: 32.39 s
+TA0674-TA0676_2-B.011.pkl
+Length of phones: 7
+79.94% done
+Time: 32.42 s
+TA0493-TA0494_2-A.069.pkl
+Length of phones: 21
+80.00% done
+Time: 32.44 s
+TA0617-TA0618_2-A.404.pkl
+Length of phones: 5
+80.06% done
+Time: 32.46 s
+TA0666-TA0668_2-A.278.pkl
+Length of phones: 11
+80.11% done
+Time: 32.46 s
+TA0445-TA0446_1-A.037.pkl
+Length of phones: 26
+80.17% done
+Time: 32.49 s
+TA0357-TA0358_2-A.261.pkl
+Length of phones: 7
+80.23% done
+Time: 32.50 s
+TA0349-TA0351_2-B.029.pkl
+Length of phones: 5
+80.29% done
+Time: 32.52 s
+TA0354-TA0356_2-B.116.pkl
+Length of phones: 12
+80.34% done
+Time: 32.58 s
+TA0614-TA0616_1-A.012.pkl
+Length of phones: 6
+80.40% done
+Time: 32.61 s
+TA0578-TA0580_1-B.094.pkl
+Length of phones: 12
+80.46% done
+Time: 32.63 s
+TA0685-TA0687_1-A.484.pkl
+Length of phones: 5
+80.51% done
+Time: 32.64 s
+TA0517-TA0518_1-A.210.pkl
+Length of phones: 5
+80.57% done
+Time: 32.65 s
+TA0619-TA0620_2-B.236.pkl
+Length of phones: 9
+80.63% done
+Time: 32.67 s
+TA0461-TA0462_1-A.286.pkl
+Length of phones: 9
+80.69% done
+Time: 32.70 s
+TA0599-TA0600_2-B.096.pkl
+Length of phones: 5
+80.74% done
+Time: 32.73 s
+TA0657-TA0658_2-B.094.pkl
+Length of phones: 26
+80.80% done
+Time: 32.75 s
+TA0655-TA0656_1-A.184.pkl
+Length of phones: 5
+80.86% done
+Time: 32.76 s
+TA0517-TA0519_2-A.084.pkl
+Length of phones: 22
+80.91% done
+Time: 32.78 s
+TA0491-TA0492_1-A.118.pkl
+Length of phones: 13
+80.97% done
+Time: 32.81 s
+TA0578-TA0580_2-A.300.pkl
+Length of phones: 8
+81.03% done
+Time: 32.81 s
+TA0386-TA0388_1-B.071.pkl
+Length of phones: 15
+81.09% done
+Time: 32.84 s
+TA0491-TA0492_2-B.265.pkl
+Length of phones: 4
+81.14% done
+Time: 32.84 s
+TA0414-TA0416_2-B.179.pkl
+Length of phones: 18
+81.20% done
+Time: 32.86 s
+TA0367-TA0368_2-B.024.pkl
+Length of phones: 12
+81.26% done
+Time: 32.88 s
+TA0469-TA0470_1-A.023.pkl
+Length of phones: 16
+81.31% done
+Time: 32.91 s
+TA0413-TA0414_1-B.172.pkl
+Length of phones: 14
+81.37% done
+Time: 32.93 s
+TA0753-TA0754_1-B.200.pkl
+Length of phones: 15
+81.43% done
+Time: 32.95 s
+TA0433-TA0434_2-A.130.pkl
+Length of phones: 5
+81.49% done
+Time: 32.97 s
+TA0737-TA0739_1-B.303.pkl
+Length of phones: 18
+81.54% done
+Time: 32.98 s
+TA0693-TA0695_2-A.092.pkl
+Length of phones: 5
+81.60% done
+Time: 32.98 s
+TA0498-TA0500_2-B.306.pkl
+Length of phones: 4
+81.66% done
+Time: 32.99 s
+TA0335-TA0336_2-B.082.pkl
+Length of phones: 5
+81.71% done
+Time: 33.01 s
+TA0413-TA0414_2-A.196.pkl
+Length of phones: 5
+81.77% done
+Time: 33.03 s
+TA0721-TA0723_2-B.209.pkl
+Length of phones: 6
+81.83% done
+Time: 33.05 s
+TA0674-TA0676_2-B.162.pkl
+Length of phones: 12
+81.89% done
+Time: 33.05 s
+TA0345-TA0346_2-B.086.pkl
+Length of phones: 9
+81.94% done
+Time: 33.07 s
+TA0381-TA0382_1-A.272.pkl
+Length of phones: 5
+82.00% done
+Time: 33.10 s
+TA0434-TA0436_1-B.103.pkl
+Length of phones: 4
+82.06% done
+Time: 33.12 s
+TA0609-TA0610_1-B.186.pkl
+Length of phones: 5
+82.11% done
+Time: 33.12 s
+TA0713-TA0714_2-B.087.pkl
+Length of phones: 11
+82.17% done
+Time: 33.15 s
+TA0634-TA0636_1-A.044.pkl
+Length of phones: 5
+82.23% done
+Time: 33.16 s
+TA0423-TA0424_2-A.138.pkl
+Length of phones: 19
+82.29% done
+Time: 33.18 s
+TA0426-TA0428_2-B.219.pkl
+Length of phones: 11
+82.34% done
+Time: 33.22 s
+TA0521-TA0523_2-B.010.pkl
+Length of phones: 5
+82.40% done
+Time: 33.22 s
+TA0606-TA0608_1-B.206.pkl
+Length of phones: 5
+82.46% done
+Time: 33.25 s
+TA0485-TA0486_1-B.139.pkl
+Length of phones: 5
+82.51% done
+Time: 33.27 s
+TA0341-TA0342_2-A.235.pkl
+Length of phones: 7
+82.57% done
+Time: 33.29 s
+TA0737-TA0738_2-B.258.pkl
+Length of phones: 5
+82.63% done
+Time: 33.31 s
+TA0569-TA0570_2-A.082.pkl
+Length of phones: 15
+82.69% done
+Time: 33.34 s
+TA0542-TA0544_1-A.207.pkl
+Length of phones: 6
+82.74% done
+Time: 33.36 s
+TA0555-TA0556_2-B.080.pkl
+Length of phones: 11
+82.80% done
+Time: 33.38 s
+TA0533-TA0534_1-A.054.pkl
+Length of phones: 5
+82.86% done
+Time: 33.39 s
+TA0541-TA0542_2-A.254.pkl
+Length of phones: 13
+82.91% done
+Time: 33.41 s
+TA0349-TA0351_1-B.053.pkl
+Length of phones: 10
+82.97% done
+Time: 33.42 s
+TA0766-TA0768_2-B.055.pkl
+Length of phones: 5
+83.03% done
+Time: 33.42 s
+TA0410-TA0412_1-A.220.pkl
+Length of phones: 14
+83.09% done
+Time: 33.44 s
+TA0713-TA0714_1-A.045.pkl
+Length of phones: 6
+83.14% done
+Time: 33.46 s
+001200135.pkl
+Length of phones: 21
+83.20% done
+Time: 33.77 s
+TA0441-TA0442_2-B.044.pkl
+Length of phones: 14
+83.26% done
+Time: 33.80 s
+TA0769-TA0770_1-B.097.pkl
+Length of phones: 9
+83.31% done
+Time: 33.80 s
+TA0585-TA0586_1-B.081.pkl
+Length of phones: 14
+83.37% done
+Time: 33.82 s
+TA0513-TA0514_2-B.059.pkl
+Length of phones: 26
+83.43% done
+Time: 33.86 s
+TA0753-TA0755_2-B.007.pkl
+Length of phones: 18
+83.49% done
+Time: 33.87 s
+TA0603-TA0604_1-A.396.pkl
+Length of phones: 6
+83.54% done
+Time: 33.90 s
+TA0469-TA0470_2-B.270.pkl
+Length of phones: 17
+83.60% done
+Time: 33.91 s
+TA0574-TA0576_2-A.009.pkl
+Length of phones: 10
+83.66% done
+Time: 33.93 s
+TA0379-TA0380_1-A.007.pkl
+Length of phones: 20
+83.71% done
+Time: 33.96 s
+TA0397-TA0398_1-A.285.pkl
+Length of phones: 6
+83.77% done
+Time: 33.98 s
+TA0401-TA0403_2-A.148.pkl
+Length of phones: 16
+83.83% done
+Time: 33.99 s
+TA0675-TA0676_2-A.125.pkl
+Length of phones: 6
+83.89% done
+Time: 34.01 s
+TA0705-TA0707_2-B.271.pkl
+Length of phones: 21
+83.94% done
+Time: 34.04 s
+TA0551-TA0552_1-B.100.pkl
+Length of phones: 17
+84.00% done
+Time: 34.04 s
+TA0469-TA0471_2-A.402.pkl
+Length of phones: 13
+84.06% done
+Time: 34.05 s
+TA0609-TA0610_2-B.159.pkl
+Length of phones: 5
+84.11% done
+Time: 34.06 s
+TA0498-TA0500_2-B.113.pkl
+Length of phones: 4
+84.17% done
+Time: 34.08 s
+TA0542-TA0544_2-A.025.pkl
+Length of phones: 8
+84.23% done
+Time: 34.11 s
+TA0433-TA0435_1-A.139.pkl
+Length of phones: 5
+84.29% done
+Time: 34.17 s
+TA0549-TA0551_1-A.349.pkl
+Length of phones: 5
+84.34% done
+Time: 34.20 s
+TA0558-TA0560_2-B.132.pkl
+Length of phones: 5
+84.40% done
+Time: 34.25 s
+TA0665-TA0667_2-B.255.pkl
+Length of phones: 5
+84.46% done
+Time: 34.26 s
+TA0737-TA0738_1-A.249.pkl
+Length of phones: 22
+84.51% done
+Time: 34.28 s
+TA0701-TA0702_2-A.069.pkl
+Length of phones: 5
+84.57% done
+Time: 34.29 s
+TA0711-TA0712_2-A.145.pkl
+Length of phones: 15
+84.63% done
+Time: 34.31 s
+TA0443-TA0444_1-B.085.pkl
+Length of phones: 11
+84.69% done
+Time: 34.32 s
+TA0410-TA0412_1-A.013.pkl
+Length of phones: 13
+84.74% done
+Time: 34.37 s
+TA0545-TA0546_2-B.465.pkl
+Length of phones: 18
+84.80% done
+Time: 34.39 s
+TA0583-TA0584_1-B.029.pkl
+Length of phones: 9
+84.86% done
+Time: 34.41 s
+TA0510-TA0512_2-B.242.pkl
+Length of phones: 19
+84.91% done
+Time: 34.44 s
+TA0485-TA0486_2-B.136.pkl
+Length of phones: 5
+84.97% done
+Time: 34.47 s
+TA0510-TA0512_1-B.365.pkl
+Length of phones: 6
+85.03% done
+Time: 34.49 s
+TA0546-TA0548_2-B.068.pkl
+Length of phones: 20
+85.09% done
+Time: 34.52 s
+TA0666-TA0668_1-B.161.pkl
+Length of phones: 8
+85.14% done
+Time: 34.53 s
+TA0402-TA0404_1-B.024.pkl
+Length of phones: 9
+85.20% done
+Time: 34.55 s
+TA0385-TA0386_2-B.233.pkl
+Length of phones: 5
+85.26% done
+Time: 34.57 s
+TA0379-TA0380_1-A.038.pkl
+Length of phones: 5
+85.31% done
+Time: 34.58 s
+TA0683-TA0684_2-A.178.pkl
+Length of phones: 23
+85.37% done
+Time: 34.60 s
+TA0561-TA0562_1-B.247.pkl
+Length of phones: 5
+85.43% done
+Time: 34.60 s
+TA0753-TA0754_1-B.260.pkl
+Length of phones: 19
+85.49% done
+Time: 34.63 s
+TA0342-TA0344_2-B.040.pkl
+Length of phones: 16
+85.54% done
+Time: 34.66 s
+TA0417-TA0419_1-B.035.pkl
+Length of phones: 16
+85.60% done
+Time: 34.68 s
+TA0635-TA0636_2-B.194.pkl
+Length of phones: 20
+85.66% done
+Time: 34.69 s
+TA0493-TA0495_1-A.234.pkl
+Length of phones: 5
+85.71% done
+Time: 34.72 s
+TA0643-TA0644_1-A.404.pkl
+Length of phones: 5
+85.77% done
+Time: 34.74 s
+TA0769-TA0771_1-A.190.pkl
+Length of phones: 18
+85.83% done
+Time: 34.76 s
+TA0405-TA0406_2-A.395.pkl
+Length of phones: 4
+85.89% done
+Time: 34.77 s
+TA0389-TA0391_2-A.157.pkl
+Length of phones: 15
+85.94% done
+Time: 34.78 s
+TA0581-TA0583_2-B.196.pkl
+Length of phones: 9
+86.00% done
+Time: 34.80 s
+TA0361-TA0362_1-B.109.pkl
+Length of phones: 5
+86.06% done
+Time: 34.82 s
+TA0367-TA0368_1-A.431.pkl
+Length of phones: 9
+86.11% done
+Time: 34.84 s
+TA0534-TA0536_2-A.034.pkl
+Length of phones: 5
+86.17% done
+Time: 34.84 s
+TA0737-TA0738_1-B.227.pkl
+Length of phones: 5
+86.23% done
+Time: 34.85 s
+TA0697-TA0699_1-B.136.pkl
+Length of phones: 6
+86.29% done
+Time: 34.86 s
+TA0353-TA0354_2-A.106.pkl
+Length of phones: 19
+86.34% done
+Time: 34.89 s
+TA0545-TA0546_2-A.276.pkl
+Length of phones: 16
+86.40% done
+Time: 34.91 s
+TA0333-TA0334_1-A.330.pkl
+Length of phones: 16
+86.46% done
+Time: 34.93 s
+TA0549-TA0551_2-B.188.pkl
+Length of phones: 11
+86.51% done
+Time: 34.95 s
+TA0449-TA0451_1-A.182.pkl
+Length of phones: 8
+86.57% done
+Time: 34.98 s
+TA0521-TA0522_2-B.155.pkl
+Length of phones: 5
+86.63% done
+Time: 35.00 s
+TA0625-TA0626_1-A.023.pkl
+Length of phones: 7
+86.69% done
+Time: 35.01 s
+TA0715-TA0716_2-B.036.pkl
+Length of phones: 8
+86.74% done
+Time: 35.08 s
+TA0341-TA0343_1-B.207.pkl
+Length of phones: 12
+86.80% done
+Time: 35.10 s
+TA0463-TA0464_2-A.084.pkl
+Length of phones: 9
+86.86% done
+Time: 35.12 s
+TA0341-TA0342_1-A.152.pkl
+Length of phones: 6
+86.91% done
+Time: 35.14 s
+TA0433-TA0434_1-A.088.pkl
+Length of phones: 5
+86.97% done
+Time: 35.20 s
+TA0389-TA0391_1-B.165.pkl
+Length of phones: 5
+87.03% done
+Time: 35.21 s
+TA0533-TA0534_1-B.059.pkl
+Length of phones: 5
+87.09% done
+Time: 35.24 s
+TA0727-TA0728_1-B.495.pkl
+Length of phones: 6
+87.14% done
+Time: 35.25 s
+TA0770-TA0772_1-A.079.pkl
+Length of phones: 5
+87.20% done
+Time: 35.26 s
+TA0353-TA0354_2-B.132.pkl
+Length of phones: 11
+87.26% done
+Time: 35.28 s
+TA0678-TA0680_2-A.203.pkl
+Length of phones: 17
+87.31% done
+Time: 35.29 s
+TA0510-TA0512_2-B.228.pkl
+Length of phones: 9
+87.37% done
+Time: 35.31 s
+TA0407-TA0408_1-A.159.pkl
+Length of phones: 13
+87.43% done
+Time: 35.33 s
+TA0565-TA0567_1-B.095.pkl
+Length of phones: 8
+87.49% done
+Time: 35.36 s
+TA0562-TA0564_2-A.160.pkl
+Length of phones: 13
+87.54% done
+Time: 35.38 s
+TA0615-TA0616_2-B.171.pkl
+Length of phones: 5
+87.60% done
+Time: 35.42 s
+TA0561-TA0562_2-B.119.pkl
+Length of phones: 5
+87.66% done
+Time: 35.44 s
+TA0769-TA0771_1-B.018.pkl
+Length of phones: 4
+87.71% done
+Time: 35.46 s
+TA0646-TA0648_2-B.259.pkl
+Length of phones: 17
+87.77% done
+Time: 35.49 s
+TA0775-TA0776_2-A.169.pkl
+Length of phones: 43
+87.83% done
+Time: 35.51 s
+TA0347-TA0348_1-B.167.pkl
+Length of phones: 5
+87.89% done
+Time: 35.52 s
+TA0603-TA0604_2-B.069.pkl
+Length of phones: 6
+87.94% done
+Time: 35.53 s
+TA0702-TA0704_2-A.388.pkl
+Length of phones: 14
+88.00% done
+Time: 35.54 s
+TA0682-TA0684_2-B.164.pkl
+Length of phones: 6
+88.06% done
+Time: 35.56 s
+TA0557-TA0559_2-A.249.pkl
+Length of phones: 18
+88.11% done
+Time: 35.58 s
+TA0639-TA0640_1-B.056.pkl
+Length of phones: 13
+88.17% done
+Time: 35.61 s
+TA0379-TA0380_1-A.157.pkl
+Length of phones: 5
+88.23% done
+Time: 35.63 s
+TA0341-TA0342_2-B.190.pkl
+Length of phones: 11
+88.29% done
+Time: 35.65 s
+TA0669-TA0671_1-B.120.pkl
+Length of phones: 5
+88.34% done
+Time: 35.67 s
+TA0643-TA0644_2-B.130.pkl
+Length of phones: 15
+88.40% done
+Time: 35.68 s
+TA0371-TA0372_1-B.022.pkl
+Length of phones: 13
+88.46% done
+Time: 35.70 s
+TA0325-TA0327_2-B.237.pkl
+Length of phones: 14
+88.51% done
+Time: 35.72 s
+TA0611-TA0612_2-B.054.pkl
+Length of phones: 6
+88.57% done
+Time: 35.74 s
+TA0606-TA0608_1-B.305.pkl
+Length of phones: 8
+88.63% done
+Time: 35.75 s
+TA0450-TA0452_1-A.076.pkl
+Length of phones: 5
+88.69% done
+Time: 35.75 s
+TA0369-TA0371_2-B.264.pkl
+Length of phones: 5
+88.74% done
+Time: 35.77 s
+TA0714-TA0716_1-B.041.pkl
+Length of phones: 10
+88.80% done
+Time: 35.78 s
+TA0665-TA0667_2-A.414.pkl
+Length of phones: 8
+88.86% done
+Time: 35.80 s
+TA0377-TA0379_2-A.147.pkl
+Length of phones: 9
+88.91% done
+Time: 35.86 s
+TA0681-TA0683_1-A.250.pkl
+Length of phones: 10
+88.97% done
+Time: 35.86 s
+TA0643-TA0644_1-A.092.pkl
+Length of phones: 12
+89.03% done
+Time: 35.89 s
+TA0613-TA0614_2-A.148.pkl
+Length of phones: 5
+89.09% done
+Time: 35.92 s
+TA0405-TA0406_2-B.127.pkl
+Length of phones: 5
+89.14% done
+Time: 35.94 s
+TA0354-TA0356_2-B.229.pkl
+Length of phones: 18
+89.20% done
+Time: 35.95 s
+TA0678-TA0680_2-B.005.pkl
+Length of phones: 8
+89.26% done
+Time: 35.97 s
+TA0773-TA0775_2-B.285.pkl
+Length of phones: 12
+89.31% done
+Time: 35.99 s
+TA0633-TA0634_2-A.245.pkl
+Length of phones: 22
+89.37% done
+Time: 36.00 s
+TA0357-TA0358_2-B.013.pkl
+Length of phones: 5
+89.43% done
+Time: 36.00 s
+TA0449-TA0451_1-A.150.pkl
+Length of phones: 6
+89.49% done
+Time: 36.02 s
+TA0413-TA0415_3-A.057.pkl
+Length of phones: 5
+89.54% done
+Time: 36.04 s
+TA0753-TA0754_1-B.059.pkl
+Length of phones: 9
+89.60% done
+Time: 36.06 s
+TA0682-TA0684_2-A.003.pkl
+Length of phones: 5
+89.66% done
+Time: 36.08 s
+TA0498-TA0500_2-B.325.pkl
+Length of phones: 7
+89.71% done
+Time: 36.09 s
+TA0423-TA0424_1-A.017.pkl
+Length of phones: 4
+89.77% done
+Time: 36.11 s
+TA0677-TA0678_2-A.050.pkl
+Length of phones: 9
+89.83% done
+Time: 36.12 s
+TA0554-TA0556_2-B.149.pkl
+Length of phones: 22
+89.89% done
+Time: 36.14 s
+TA0385-TA0386_2-B.140.pkl
+Length of phones: 5
+89.94% done
+Time: 36.15 s
+TA0705-TA0707_2-B.230.pkl
+Length of phones: 5
+90.00% done
+Time: 36.16 s
+TA0677-TA0678_2-B.122.pkl
+Length of phones: 9
+90.06% done
+Time: 36.18 s
+TA0326-TA0328_2-B.164.pkl
+Length of phones: 5
+90.11% done
+Time: 36.20 s
+TA0437-TA0439_1-B.105.pkl
+Length of phones: 4
+90.17% done
+Time: 36.21 s
+TA0625-TA0626_2-B.264.pkl
+Length of phones: 9
+90.23% done
+Time: 36.23 s
+TA0497-TA0498_1-B.245.pkl
+Length of phones: 12
+90.29% done
+Time: 36.25 s
+TA0699-TA0700_1-B.292.pkl
+Length of phones: 7
+90.34% done
+Time: 36.27 s
+TA0509-TA0511_2-B.251.pkl
+Length of phones: 8
+90.40% done
+Time: 36.28 s
+TA0382-TA0384_2-B.185.pkl
+Length of phones: 6
+90.46% done
+Time: 36.28 s
+TA0619-TA0620_2-B.214.pkl
+Length of phones: 5
+90.51% done
+Time: 36.29 s
+TA0713-TA0715_2-A.221.pkl
+Length of phones: 5
+90.57% done
+Time: 36.29 s
+TA0514-TA0516_2-A.039.pkl
+Length of phones: 8
+90.63% done
+Time: 36.31 s
+TA0705-TA0707_2-B.241.pkl
+Length of phones: 13
+90.69% done
+Time: 36.32 s
+TA0423-TA0424_1-A.149.pkl
+Length of phones: 5
+90.74% done
+Time: 36.34 s
+TA0566-TA0568_1-B.244.pkl
+Length of phones: 14
+90.80% done
+Time: 36.36 s
+TA0674-TA0676_1-A.030.pkl
+Length of phones: 6
+90.86% done
+Time: 36.38 s
+TA0661-TA0663_1-B.225.pkl
+Length of phones: 5
+90.91% done
+Time: 36.45 s
+TA0773-TA0775_1-A.193.pkl
+Length of phones: 10
+90.97% done
+Time: 36.48 s
+TA0382-TA0384_2-B.164.pkl
+Length of phones: 11
+91.03% done
+Time: 36.48 s
+TA0682-TA0684_1-A.113.pkl
+Length of phones: 5
+91.09% done
+Time: 36.50 s
+TA0374-TA0376_2-A.317.pkl
+Length of phones: 5
+91.14% done
+Time: 36.52 s
+TA0557-TA0558_1-B.181.pkl
+Length of phones: 5
+91.20% done
+Time: 36.53 s
+TA0353-TA0355_2-B.208.pkl
+Length of phones: 5
+91.26% done
+Time: 36.55 s
+TA0507-TA0508_2-A.059.pkl
+Length of phones: 12
+91.31% done
+Time: 36.57 s
+TA0437-TA0439_1-B.209.pkl
+Length of phones: 15
+91.37% done
+Time: 36.59 s
+TA0451-TA0452_1-A.119.pkl
+Length of phones: 18
+91.43% done
+Time: 36.60 s
+TA0369-TA0371_1-A.234.pkl
+Length of phones: 5
+91.49% done
+Time: 36.67 s
+TA0551-TA0552_1-B.094.pkl
+Length of phones: 11
+91.54% done
+Time: 36.70 s
+TA0639-TA0640_2-B.068.pkl
+Length of phones: 7
+91.60% done
+Time: 36.72 s
+TA0737-TA0738_1-B.425.pkl
+Length of phones: 5
+91.66% done
+Time: 36.72 s
+TA0478-TA0480_1-A.055.pkl
+Length of phones: 8
+91.71% done
+Time: 36.73 s
+TA0615-TA0616_1-A.114.pkl
+Length of phones: 9
+91.77% done
+Time: 36.74 s
+TA0401-TA0402_2-B.281.pkl
+Length of phones: 8
+91.83% done
+Time: 36.77 s
+TA0577-TA0579_2-B.148.pkl
+Length of phones: 20
+91.89% done
+Time: 36.79 s
+TA0490-TA0492_2-B.153.pkl
+Length of phones: 5
+91.94% done
+Time: 36.81 s
+TA0465-TA0467_1-B.105.pkl
+Length of phones: 6
+92.00% done
+Time: 36.82 s
+TA0679-TA0680_1-B.124.pkl
+Length of phones: 5
+92.06% done
+Time: 36.84 s
+TA0366-TA0368_1-A.097.pkl
+Length of phones: 9
+92.11% done
+Time: 36.86 s
+TA0549-TA0551_2-B.131.pkl
+Length of phones: 15
+92.17% done
+Time: 36.88 s
+TA0609-TA0610_1-B.091.pkl
+Length of phones: 11
+92.23% done
+Time: 36.90 s
+TA0449-TA0450_1-A.315.pkl
+Length of phones: 5
+92.29% done
+Time: 36.92 s
+TA0619-TA0620_1-A.239.pkl
+Length of phones: 8
+92.34% done
+Time: 36.94 s
+TA0345-TA0346_1-A.064.pkl
+Length of phones: 4
+92.40% done
+Time: 36.97 s
+TA0478-TA0480_2-B.002.pkl
+Length of phones: 4
+92.46% done
+Time: 36.99 s
+TA0665-TA0667_1-A.171.pkl
+Length of phones: 6
+92.51% done
+Time: 37.02 s
+TA0446-TA0448_2-A.303.pkl
+Length of phones: 20
+92.57% done
+Time: 37.04 s
+TA0533-TA0534_2-B.361.pkl
+Length of phones: 5
+92.63% done
+Time: 37.05 s
+TA0369-TA0371_1-B.272.pkl
+Length of phones: 15
+92.69% done
+Time: 37.11 s
+TA0609-TA0610_2-A.143.pkl
+Length of phones: 15
+92.74% done
+Time: 37.13 s
+TA0421-TA0422_2-A.130.pkl
+Length of phones: 8
+92.80% done
+Time: 37.15 s
+TA0430-TA0432_1-B.133.pkl
+Length of phones: 5
+92.86% done
+Time: 37.17 s
+TA0493-TA0495_1-A.019.pkl
+Length of phones: 15
+92.91% done
+Time: 37.20 s
+TA0649-TA0650_2-A.359.pkl
+Length of phones: 27
+92.97% done
+Time: 37.22 s
+TA0635-TA0636_1-A.165.pkl
+Length of phones: 13
+93.03% done
+Time: 37.23 s
+TA0461-TA0462_1-B.294.pkl
+Length of phones: 5
+93.09% done
+Time: 37.25 s
+TA0583-TA0584_2-B.226.pkl
+Length of phones: 9
+93.14% done
+Time: 37.27 s
+TA0729-TA0730_2-B.146.pkl
+Length of phones: 15
+93.20% done
+Time: 37.28 s
+TA0773-TA0774_2-A.086.pkl
+Length of phones: 9
+93.26% done
+Time: 37.30 s
+TA0714-TA0716_1-B.015.pkl
+Length of phones: 11
+93.31% done
+Time: 37.33 s
+TA0491-TA0492_2-B.174.pkl
+Length of phones: 4
+93.37% done
+Time: 37.35 s
+TA0331-TA0332_1-A.302.pkl
+Length of phones: 11
+93.43% done
+Time: 37.39 s
+TA0455-TA0456_2-A.144.pkl
+Length of phones: 6
+93.49% done
+Time: 37.43 s
+TA0383-TA0384_2-A.172.pkl
+Length of phones: 15
+93.54% done
+Time: 37.46 s
+TA0466-TA0468_2-B.279.pkl
+Length of phones: 5
+93.60% done
+Time: 37.47 s
+TA0657-TA0658_2-A.274.pkl
+Length of phones: 10
+93.66% done
+Time: 37.48 s
+TA0677-TA0678_2-B.301.pkl
+Length of phones: 18
+93.71% done
+Time: 37.55 s
+TA0465-TA0466_1-A.169.pkl
+Length of phones: 7
+93.77% done
+Time: 37.57 s
+TA0758-TA0760_1-A.008.pkl
+Length of phones: 14
+93.83% done
+Time: 37.59 s
+TA0401-TA0403_1-A.338.pkl
+Length of phones: 13
+93.89% done
+Time: 37.61 s
+TA0689-TA0690_1-B.166.pkl
+Length of phones: 12
+93.94% done
+Time: 37.64 s
+TA0717-TA0718_2-A.104.pkl
+Length of phones: 13
+94.00% done
+Time: 37.67 s
+TA0705-TA0707_2-A.202.pkl
+Length of phones: 8
+94.06% done
+Time: 37.70 s
+TA0767-TA0768_2-A.065.pkl
+Length of phones: 15
+94.11% done
+Time: 37.73 s
+TA0486-TA0488_2-A.050.pkl
+Length of phones: 17
+94.17% done
+Time: 37.75 s
+TA0401-TA0403_1-B.271.pkl
+Length of phones: 21
+94.23% done
+Time: 37.78 s
+TA0665-TA0667_2-A.002.pkl
+Length of phones: 15
+94.29% done
+Time: 37.79 s
+TA0345-TA0347_2-B.186.pkl
+Length of phones: 10
+94.34% done
+Time: 37.86 s
+TA0493-TA0495_1-B.095.pkl
+Length of phones: 4
+94.40% done
+Time: 37.87 s
+TA0685-TA0687_1-B.027.pkl
+Length of phones: 14
+94.46% done
+Time: 37.87 s
+TA0777-TA0778_2-A.029.pkl
+Length of phones: 16
+94.51% done
+Time: 37.89 s
+TA0773-TA0775_2-A.086.pkl
+Length of phones: 5
+94.57% done
+Time: 37.91 s
+TA0386-TA0388_2-B.245.pkl
+Length of phones: 10
+94.63% done
+Time: 37.93 s
+TA0619-TA0620_2-B.403.pkl
+Length of phones: 5
+94.69% done
+Time: 37.94 s
+TA0546-TA0548_1-B.286.pkl
+Length of phones: 16
+94.74% done
+Time: 37.97 s
+TA0481-TA0482_2-B.074.pkl
+Length of phones: 5
+94.80% done
+Time: 37.98 s
+TA0745-TA0746_2-A.214.pkl
+Length of phones: 7
+94.86% done
+Time: 37.98 s
+TA0689-TA0690_2-A.236.pkl
+Length of phones: 8
+94.91% done
+Time: 38.01 s
+TA0323-TA0324_1-B.101.pkl
+Length of phones: 16
+94.97% done
+Time: 38.09 s
+TA0681-TA0683_2-B.266.pkl
+Length of phones: 11
+95.03% done
+Time: 38.11 s
+TA0610-TA0612_1-A.310.pkl
+Length of phones: 5
+95.09% done
+Time: 38.12 s
+TA0346-TA0348_1-A.103.pkl
+Length of phones: 6
+95.14% done
+Time: 38.14 s
+TA0393-TA0394_1-A.100.pkl
+Length of phones: 13
+95.20% done
+Time: 38.16 s
+TA0521-TA0522_2-B.100.pkl
+Length of phones: 11
+95.26% done
+Time: 38.18 s
+TA0609-TA0611_2-B.119.pkl
+Length of phones: 5
+95.31% done
+Time: 38.19 s
+TA0617-TA0618_2-A.265.pkl
+Length of phones: 14
+95.37% done
+Time: 38.21 s
+TA0437-TA0439_2-B.049.pkl
+Length of phones: 10
+95.43% done
+Time: 38.22 s
+TA0693-TA0694_2-A.203.pkl
+Length of phones: 5
+95.49% done
+Time: 38.25 s
+TA0431-TA0432_2-A.111.pkl
+Length of phones: 5
+95.54% done
+Time: 38.30 s
+TA0691-TA0692_1-B.179.pkl
+Length of phones: 4
+95.60% done
+Time: 38.31 s
+TA0406-TA0408_1-B.211.pkl
+Length of phones: 23
+95.66% done
+Time: 38.33 s
+TA0681-TA0683_1-B.264.pkl
+Length of phones: 16
+95.71% done
+Time: 38.33 s
+TA0678-TA0680_2-A.187.pkl
+Length of phones: 9
+95.77% done
+Time: 38.34 s
+TA0705-TA0707_1-B.210.pkl
+Length of phones: 6
+95.83% done
+Time: 38.36 s
+TA0615-TA0616_1-A.300.pkl
+Length of phones: 10
+95.89% done
+Time: 38.38 s
+TA0545-TA0546_2-A.065.pkl
+Length of phones: 14
+95.94% done
+Time: 38.41 s
+TA0735-TA0736_2-B.008.pkl
+Length of phones: 10
+96.00% done
+Time: 38.43 s
+TA0729-TA0730_2-A.021.pkl
+Length of phones: 11
+96.06% done
+Time: 38.45 s
+TA0514-TA0516_1-B.151.pkl
+Length of phones: 5
+96.11% done
+Time: 38.47 s
+TA0585-TA0586_1-B.008.pkl
+Length of phones: 8
+96.17% done
+Time: 38.50 s
+TA0693-TA0694_1-B.412.pkl
+Length of phones: 5
+96.23% done
+Time: 38.52 s
+TA0573-TA0575_2-B.140.pkl
+Length of phones: 5
+96.29% done
+Time: 38.54 s
+TA0727-TA0728_1-B.007.pkl
+Length of phones: 9
+96.34% done
+Time: 38.56 s
+TA0729-TA0730_2-B.052.pkl
+Length of phones: 6
+96.40% done
+Time: 38.57 s
+TA0715-TA0716_1-A.114.pkl
+Length of phones: 11
+96.46% done
+Time: 38.61 s
+TA0414-TA0416_1-B.100.pkl
+Length of phones: 5
+96.51% done
+Time: 38.67 s
+TA0479-TA0480_2-B.085.pkl
+Length of phones: 8
+96.57% done
+Time: 38.70 s
+TA0397-TA0398_1-A.014.pkl
+Length of phones: 11
+96.63% done
+Time: 38.73 s
+TA0677-TA0678_2-B.244.pkl
+Length of phones: 5
+96.69% done
+Time: 38.75 s
+TA0433-TA0434_2-B.071.pkl
+Length of phones: 9
+96.74% done
+Time: 38.75 s
+TA0441-TA0443_2-A.186.pkl
+Length of phones: 5
+96.80% done
+Time: 38.78 s
+TA0534-TA0536_1-B.303.pkl
+Length of phones: 14
+96.86% done
+Time: 38.80 s
+TA0425-TA0427_1-A.017.pkl
+Length of phones: 5
+96.91% done
+Time: 38.81 s
+TA0389-TA0391_1-A.165.pkl
+Length of phones: 4
+96.97% done
+Time: 38.83 s
+TA0541-TA0542_2-A.262.pkl
+Length of phones: 10
+97.03% done
+Time: 38.86 s
+TA0379-TA0380_2-A.314.pkl
+Length of phones: 4
+97.09% done
+Time: 38.87 s
+TA0514-TA0516_2-A.444.pkl
+Length of phones: 12
+97.14% done
+Time: 38.88 s
+TA0693-TA0694_1-B.426.pkl
+Length of phones: 5
+97.20% done
+Time: 38.90 s
+TA0506-TA0508_2-B.021.pkl
+Length of phones: 5
+97.26% done
+Time: 38.92 s
+TA0335-TA0336_2-B.143.pkl
+Length of phones: 4
+97.31% done
+Time: 38.94 s
+TA0695-TA0696_1-B.074.pkl
+Length of phones: 9
+97.37% done
+Time: 38.95 s
+TA0342-TA0344_1-A.115.pkl
+Length of phones: 17
+97.43% done
+Time: 38.97 s
+TA0775-TA0776_2-A.137.pkl
+Length of phones: 5
+97.49% done
+Time: 38.98 s
+TA0347-TA0348_2-B.050.pkl
+Length of phones: 5
+97.54% done
+Time: 39.00 s
+TA0579-TA0580_2-B.260.pkl
+Length of phones: 4
+97.60% done
+Time: 39.01 s
+TA0381-TA0383_1-B.278.pkl
+Length of phones: 5
+97.66% done
+Time: 39.03 s
+TA0678-TA0680_2-A.118.pkl
+Length of phones: 22
+97.71% done
+Time: 39.03 s
+TA0382-TA0384_1-A.083.pkl
+Length of phones: 10
+97.77% done
+Time: 39.05 s
+TA0714-TA0716_1-B.309.pkl
+Length of phones: 12
+97.83% done
+Time: 39.07 s
+TA0521-TA0522_2-B.452.pkl
+Length of phones: 5
+97.89% done
+Time: 39.10 s
+TA0677-TA0679_2-B.115.pkl
+Length of phones: 7
+97.94% done
+Time: 39.11 s
+TA0370-TA0372_2-B.183.pkl
+Length of phones: 9
+98.00% done
+Time: 39.14 s
+TA0325-TA0326_1-B.151.pkl
+Length of phones: 5
+98.06% done
+Time: 39.17 s
+001200332.pkl
+Length of phones: 14
+98.11% done
+Time: 39.19 s
+TA0441-TA0443_2-A.315.pkl
+Length of phones: 5
+98.17% done
+Time: 39.20 s
+TA0762-TA0764_1-B.107.pkl
+Length of phones: 5
+98.23% done
+Time: 39.22 s
+TA0438-TA0440_1-B.039.pkl
+Length of phones: 13
+98.29% done
+Time: 39.25 s
+TA0562-TA0564_1-A.076.pkl
+Length of phones: 9
+98.34% done
+Time: 39.27 s
+TA0727-TA0728_1-B.368.pkl
+Length of phones: 5
+98.40% done
+Time: 39.27 s
+TA0365-TA0367_2-B.189.pkl
+Length of phones: 5
+98.46% done
+Time: 39.29 s
+TA0654-TA0656_2-A.167.pkl
+Length of phones: 11
+98.51% done
+Time: 39.32 s
+TA0583-TA0584_1-A.411.pkl
+Length of phones: 13
+98.57% done
+Time: 39.32 s
+TA0346-TA0348_2-A.237.pkl
+Length of phones: 9
+98.63% done
+Time: 39.34 s
+TA0561-TA0562_1-B.197.pkl
+Length of phones: 5
+98.69% done
+Time: 39.36 s
+TA0461-TA0462_1-A.369.pkl
+Length of phones: 16
+98.74% done
+Time: 39.38 s
+TA0333-TA0334_2-B.175.pkl
+Length of phones: 5
+98.80% done
+Time: 39.40 s
+TA0405-TA0406_2-A.187.pkl
+Length of phones: 8
+98.86% done
+Time: 39.42 s
+TA0659-TA0660_1-B.062.pkl
+Length of phones: 8
+98.91% done
+Time: 39.44 s
+TA0457-TA0458_2-A.155.pkl
+Length of phones: 12
+98.97% done
+Time: 39.46 s
+TA0610-TA0612_1-B.286.pkl
+Length of phones: 14
+99.03% done
+Time: 39.48 s
+TA0473-TA0474_1-B.149.pkl
+Length of phones: 11
+99.09% done
+Time: 39.50 s
+TA0713-TA0715_1-B.219.pkl
+Length of phones: 5
+99.14% done
+Time: 39.52 s
+TA0649-TA0651_2-B.299.pkl
+Length of phones: 4
+99.20% done
+Time: 39.54 s
+TA0641-TA0643_1-B.147.pkl
+Length of phones: 14
+99.26% done
+Time: 39.56 s
+TA0715-TA0716_1-A.235.pkl
+Length of phones: 6
+99.31% done
+Time: 39.58 s
+TA0517-TA0518_2-B.506.pkl
+Length of phones: 5
+99.37% done
+Time: 39.61 s
+TA0715-TA0716_1-B.236.pkl
+Length of phones: 16
+99.43% done
+Time: 39.63 s
+TA0375-TA0376_2-A.090.pkl
+Length of phones: 22
+99.49% done
+Time: 39.65 s
+TA0693-TA0695_1-A.030.pkl
+Length of phones: 9
+99.54% done
+Time: 39.67 s
+TA0579-TA0580_2-B.292.pkl
+Length of phones: 9
+99.60% done
+Time: 39.68 s
+TA0721-TA0723_2-A.220.pkl
+Length of phones: 21
+99.66% done
+Time: 39.70 s
+TA0718-TA0720_1-A.610.pkl
+Length of phones: 20
+99.71% done
+Time: 39.72 s
+TA0450-TA0452_1-A.066.pkl
+Length of phones: 13
+99.77% done
+Time: 39.74 s
+TA0727-TA0728_1-B.358.pkl
+Length of phones: 7
+99.83% done
+Time: 39.82 s
+TA0507-TA0508_2-A.187.pkl
+Length of phones: 7
+99.89% done
+Time: 39.84 s
+TA0635-TA0636_1-A.141.pkl
+Length of phones: 16
+99.94% done
+Time: 39.84 s
+TA0346-TA0348_2-A.132.pkl
+Length of phones: 5
+100.00% done
+Time: 39.86 s
+Number of embeddings per phone sequence length: [(3, 11226), (4, 9369), (5, 7996), (6, 6810), (7, 5712), (8, 4753), (9, 3886)]
+Time to save embeddings: 21.07 s
+Finished extracting phonetized embeddings
