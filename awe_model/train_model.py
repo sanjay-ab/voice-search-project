@@ -281,7 +281,7 @@ if __name__== "__main__":
     learning_rate = 0.0001
     clip_norm = 40
     num_epochs = 5
-    patience = 2
+    patience = 4
     num_pairs_per_batch = 5
     num_batch_pairs_to_accumulate_gradients_over = 1000  # set to 1 if you don't want gradient accumulation
     time_limit_to_create_dataset = 600

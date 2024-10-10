@@ -1,0 +1,302 @@
+Loading python/3.10.8-gpu
+  Loading requirement: nvidia/nvhpc-nompi/22.2 gcc/10.2.0
+    openmpi/4.1.6-cuda-11.6
+Loading pytorch/1.13.1-gpu
+  Loading requirement: nvidia/cudnn/8.6.0-cuda-11.6 nvidia/tensorrt/8.4.3.1-u2
+    libsndfile/1.0.28
+Training embeddings directory: data/gujarati/embeddings/training_data_half/9/raw
+Validation embeddings file: data/gujarati/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+START TIME: 2024-10-07_22:00:51
+Training model for gujarati with inputs from mHuBERT layer 9
+Number of epochs: 5, patience: 4, learning rate: 0.0001
+clip norm: 40, temperature: 0.07, num pairs per batch: 5
+num batch pairs to accumulate gradients over: 1000
+time limit to create dataset: 600
+min phone seq length: 3, max phone seq length: 9
+perturb sequences: False, max one sided perturb amount: 0.1
+
+Model save directory: data/gujarati/models/awe/9/half_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9
+
+Loading embedded data from directory: data/gujarati/embeddings/training_data_half/9/raw
+Loaded embedded data from data/gujarati/embeddings/training_data_half/9/raw
+Time taken: 36.91 s
+Created paired data
+Loading embedded data from file: data/gujarati/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Loaded embedded data from data/gujarati/embeddings/validation_data/9/phonetized_3_9/all_embeddings_phonetized.pkl
+Time taken: 19.12 s
+Created paired data
+Time taken to create datasets: 152.47 s
+/work/y07/shared/cirrus-software/pytorch/1.13.1-gpu/python/3.10.8/lib/python3.10/site-packages/torch/nn/modules/conv.py:459: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at ../aten/src/ATen/native/Convolution.cpp:895.)
+  return F.conv2d(input, weight, bias, self.stride,
+Epoch 0: 0.00% done
+Loss: 334.0946960449219
+Time: 17.07 s
+Epoch 0: 10.00% done
+Loss: 29.383693726294325
+Time: 207.27 s
+Epoch 0: 20.00% done
+Loss: 8.13422080859036
+Time: 392.57 s
+Epoch 0: 30.00% done
+Loss: 5.485506477572587
+Time: 577.12 s
+Epoch 0: 40.00% done
+Loss: 4.211146248308046
+Time: 764.69 s
+Epoch 0: 50.00% done
+Loss: 3.411648372528053
+Time: 952.93 s
+Epoch 0: 60.00% done
+Loss: 2.9176748425056895
+Time: 1139.78 s
+Epoch 0: 70.00% done
+Loss: 2.5641502206082496
+Time: 1327.87 s
+Epoch 0: 80.00% done
+Loss: 2.116639104369965
+Time: 1514.60 s
+Epoch 0: 90.00% done
+Loss: 2.0454441636849876
+Time: 1702.54 s
+
+Epoch 0 done
+Epoch loss: 6.2110356248212275
+
+Time taken for epoch: 1890.53 s
+Number of gradients clipped: 1156
+
+Calculating validation loss: 0.02% done
+Time: 0.00 s
+Calculating validation loss: 20.02% done
+Time: 1.45 s
+Calculating validation loss: 40.02% done
+Time: 2.88 s
+Calculating validation loss: 60.02% done
+Time: 4.32 s
+Calculating validation loss: 80.02% done
+Time: 5.76 s
+
+Validation loss: 49.573709317941535
+
+Time taken: 7.20 s
+Saving model to data/gujarati/models/awe/9/half_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9/2024-10-07_22:00:51_checkpoint_epoch_0.pt
+
+Regenerated paired data
+Epoch 1: 0.00% done
+Loss: 0.020042203832417727
+Time: 0.03 s
+Epoch 1: 10.00% done
+Loss: 1.6298823995830707
+Time: 184.75 s
+Epoch 1: 20.00% done
+Loss: 1.478532710064885
+Time: 369.31 s
+Epoch 1: 30.00% done
+Loss: 1.4203430229349339
+Time: 543.50 s
+Epoch 1: 40.00% done
+Loss: 1.3416399459025221
+Time: 713.76 s
+Epoch 1: 50.00% done
+Loss: 1.210168941042087
+Time: 881.53 s
+Epoch 1: 60.00% done
+Loss: 1.16872511824202
+Time: 1048.48 s
+Epoch 1: 70.00% done
+Loss: 1.1719173586948026
+Time: 1215.93 s
+Epoch 1: 80.00% done
+Loss: 1.102726082358946
+Time: 1384.51 s
+Epoch 1: 90.00% done
+Loss: 1.104632510541825
+Time: 1555.54 s
+
+Epoch 1 done
+Epoch loss: 1.2625047569622883
+
+Time taken for epoch: 1727.25 s
+Number of gradients clipped: 17
+
+Calculating validation loss: 0.02% done
+Time: 0.01 s
+Calculating validation loss: 20.02% done
+Time: 1.36 s
+Calculating validation loss: 40.02% done
+Time: 3.52 s
+Calculating validation loss: 60.02% done
+Time: 4.90 s
+Calculating validation loss: 80.02% done
+Time: 6.26 s
+
+Validation loss: 42.32290384403058
+
+Time taken: 7.66 s
+Saving model to data/gujarati/models/awe/9/half_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9/2024-10-07_22:00:51_checkpoint_epoch_1.pt
+
+Regenerated paired data
+Epoch 2: 0.00% done
+Loss: 0.00356432719854638
+Time: 0.43 s
+Epoch 2: 10.00% done
+Loss: 0.9404379839636183
+Time: 169.94 s
+Epoch 2: 20.00% done
+Loss: 0.9146056092439725
+Time: 338.90 s
+Epoch 2: 30.00% done
+Loss: 0.8991401648207086
+Time: 507.43 s
+Epoch 2: 40.00% done
+Loss: 0.8291677733085542
+Time: 675.78 s
+Epoch 2: 50.00% done
+Loss: 0.7378674757996807
+Time: 844.27 s
+Epoch 2: 60.00% done
+Loss: 0.8118227837140591
+Time: 1013.19 s
+Epoch 2: 70.00% done
+Loss: 0.711869453327422
+Time: 1182.40 s
+Epoch 2: 80.00% done
+Loss: 0.7658323614444108
+Time: 1351.57 s
+Epoch 2: 90.00% done
+Loss: 0.6693098931740851
+Time: 1520.81 s
+
+Epoch 2 done
+Epoch loss: 0.8010715955578307
+
+Time taken for epoch: 1690.14 s
+Number of gradients clipped: 6
+
+Calculating validation loss: 0.02% done
+Time: 0.00 s
+Calculating validation loss: 20.02% done
+Time: 1.33 s
+Calculating validation loss: 40.02% done
+Time: 2.65 s
+Calculating validation loss: 60.02% done
+Time: 3.98 s
+Calculating validation loss: 80.02% done
+Time: 5.30 s
+
+Validation loss: 39.32678484422916
+
+Time taken: 6.63 s
+Saving model to data/gujarati/models/awe/9/half_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9/2024-10-07_22:00:51_checkpoint_epoch_2.pt
+
+Regenerated paired data
+Epoch 3: 0.00% done
+Loss: 0.11310460045933723
+Time: 0.03 s
+Epoch 3: 10.00% done
+Loss: 0.6891040081394151
+Time: 169.66 s
+Epoch 3: 20.00% done
+Loss: 0.6991785804468352
+Time: 338.46 s
+Epoch 3: 30.00% done
+Loss: 0.6191062802369263
+Time: 507.66 s
+Epoch 3: 40.00% done
+Loss: 0.6155764073251213
+Time: 675.62 s
+Epoch 3: 50.00% done
+Loss: 0.6093851643539128
+Time: 843.90 s
+Epoch 3: 60.00% done
+Loss: 0.621469044185581
+Time: 1019.52 s
+Epoch 3: 70.00% done
+Loss: 0.5856003067835478
+Time: 1191.06 s
+Epoch 3: 80.00% done
+Loss: 0.537291493469904
+Time: 1363.69 s
+Epoch 3: 90.00% done
+Loss: 0.5523127718837849
+Time: 1535.69 s
+
+Epoch 3 done
+Epoch loss: 0.6076819976906523
+
+Time taken for epoch: 1708.38 s
+Number of gradients clipped: 3
+
+Calculating validation loss: 0.02% done
+Time: 0.27 s
+Calculating validation loss: 20.02% done
+Time: 1.61 s
+Calculating validation loss: 40.02% done
+Time: 2.96 s
+Calculating validation loss: 60.02% done
+Time: 4.32 s
+Calculating validation loss: 80.02% done
+Time: 5.68 s
+
+Validation loss: 35.24709711895691
+
+Time taken: 7.02 s
+Saving model to data/gujarati/models/awe/9/half_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9/2024-10-07_22:00:51_checkpoint_epoch_3.pt
+
+Regenerated paired data
+Epoch 4: 0.00% done
+Loss: 0.03796701552346349
+Time: 0.03 s
+Epoch 4: 10.00% done
+Loss: 0.5310454252591639
+Time: 172.38 s
+Epoch 4: 20.00% done
+Loss: 0.5262519384335583
+Time: 348.03 s
+Epoch 4: 30.00% done
+Loss: 0.5151196413585988
+Time: 520.82 s
+Epoch 4: 40.00% done
+Loss: 0.49685193959328655
+Time: 691.55 s
+Epoch 4: 50.00% done
+Loss: 0.4737247509376056
+Time: 862.01 s
+Epoch 4: 60.00% done
+Loss: 0.4693639338148792
+Time: 1032.44 s
+Epoch 4: 70.00% done
+Loss: 0.45071679413022064
+Time: 1203.13 s
+Epoch 4: 80.00% done
+Loss: 0.5040052451025501
+Time: 1373.99 s
+Epoch 4: 90.00% done
+Loss: 0.4185205802069772
+Time: 1544.68 s
+
+Epoch 4 done
+Epoch loss: 0.4802329962723547
+
+Time taken for epoch: 1715.40 s
+Number of gradients clipped: 2
+
+Calculating validation loss: 0.02% done
+Time: 0.11 s
+Calculating validation loss: 20.02% done
+Time: 1.43 s
+Calculating validation loss: 40.02% done
+Time: 2.76 s
+Calculating validation loss: 60.02% done
+Time: 4.09 s
+Calculating validation loss: 80.02% done
+Time: 5.41 s
+
+Validation loss: 34.786532999465784
+
+Time taken: 6.73 s
+Saving model to data/gujarati/models/awe/9/half_lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9/2024-10-07_22:00:51_checkpoint_epoch_4.pt
+
+Regenerated paired data
+BEST VALIDATION LOSS: 34.786532999465784 at epoch 4
+

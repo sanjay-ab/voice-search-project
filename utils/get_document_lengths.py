@@ -6,9 +6,9 @@ from utils.common_functions import get_wav_file_length
 
 if __name__ == "__main__":
     language = "gujarati"
-    documents_directory = f"data/{language}/validation_data"
+    documents_directory = f"data/{language}/documents"
     # queries_directory = "data/{language}/queries"
-    save_file = f"data/{language}/analysis/validation_lengths.txt"
+    save_file = f"data/{language}/analysis/document_lengths.txt"
 
     min_duration = 0
     max_duration = 1e10
