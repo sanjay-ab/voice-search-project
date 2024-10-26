@@ -21,20 +21,20 @@ if __name__ == "__main__":
     args = sys.argv
     if len(args) > 1:
         top_folder_name_suffix = args[1]
-        model_languages = args[2]
+        model_languages_str = args[2]
         results_file_folder = args[3]
         model_type = args[4]
         layer = args[5]
         test_language = args[6]
     else:
         top_folder_name_suffix = "_train_3_9_queries_cut_after_embedding"
-        model_languages = ["gujarati", "telugu", "tamil"]
+        model_languages_str = "gujarati_telugu_tamil"
         results_file_folder = "lr_0.0001_tmp_0.07_acc_1000_bs_5_3_9_3_9_epoch_best"
         model_type = "awe"
         layer = 9
         test_language = "marathi"
-
-    model_languages_str = "_".join(model_languages)
+    
+    model_languages = model_languages_str.split("_")
     output_dir = f"data/{test_language}/results/{model_type}/{layer}/ensemble_{model_languages_str}{top_folder_name_suffix}/{results_file_folder}"
 
     print(f"Output directory: {output_dir}")
