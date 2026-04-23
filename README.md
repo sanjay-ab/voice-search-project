@@ -6,10 +6,13 @@ This creates challenges for communities that speak languages without a written f
 While speech-based search systems could offer a valuable alternative, the limited resources available for unwritten languages mean that they are rarely supported.
 To address this issue, this project explores different methods of producing a voice search system for low-resource unwritten languages, using transfer learning.
 The search task is formulated as a spoken Query-by-Example task.
-Models are trained/tested on Tamil and then tested directly on Gormati, an unwritten Indic language, without finetuning.
+Models are trained/tested on various indic languages, including Tamil, Telugu and Gujarati, and then tested directly on Gormati, an unwritten Indic language, without finetuning.
 Each system uses different speech representations and uses cosine similarity matching to match queries and documents.
-This code was written as part of an MSc dissertation.
 All work is my own, except that found in the folders: voice_search_server and speechseqembeddings, which are slightly modified from their originals:  [[1]](#1) and [[2]](#2), respectively.
+
+This work was published at EMNLP 2025 here: https://aclanthology.org/2025.findings-emnlp.1224/
+
+Citation: Sanjay Booshanam, Kelly Chen, Ondrej Klejch, Thomas Reitmaier, Dani Kalarikalayil Raju, Electra Wallington, Nina Markl, Jennifer Pearson, Matt Jones, Simon Robinson, and Peter Bell. 2025. Spoken Document Retrieval for an Unwritten Language: A Case Study on Gormati. In Findings of the Association for Computational Linguistics: EMNLP 2025, pages 22497–22509, Suzhou, China. Association for Computational Linguistics.
 
 ## Description of each system
 Each system converts queries and documents into vector representations and compares them using a method based on cosine similarity.
@@ -19,7 +22,7 @@ This system converts queries and documents into mHuBERT vectors using a pretrain
 
 ### Acoustic Word Embedding (AWE) System
 This system uses a learned pooling model (adapted from [[2]](#2)) which can take a segment of speech and convert it into a single vector embedding.
-This model was trained on segments of Tamil speech. It was trained contrastively, to embed segments with the same phonetic transcription similarly and segments with different transcriptions differently.
+Models were trained on segments of Tamil, Telugu and Gujarati speech. They were trained contrastively, to embed segments with the same phonetic transcription similarly and segments with different transcriptions differently.
 Whole recordings (queries and documents) were embedded using a sliding window approach - a window was slid across the recording and each window was embedded.
 This collection of embeddings is the AWE representation of the recording.
 Note that windows can be specified either in time (e.g., 240 ms) or in phones (e.g., 3 phones) if the recordings have phone transcriptions.
@@ -29,8 +32,7 @@ This system uses a learned pooling layer adapted from the AWE model to take a re
 This model was trained contrastively on Tamil, to embed recordings containing the same keyword similarly and recordings containing different keywords differently.
 
 ## Data
-The Tamil data was used for debugging and training the models since it had existing gold transcriptions and was higher resource than the target unwritten Gormati data.
-The Tamil data was taken from the Indic ASR challenge dataset [[4]](#4) and converted into a keyword search task for our project.
+Indic language data from the Indic ASR challenge dataset [[4]](#4) was converted into a keyword search task for our project and used for debugging and training the models since they had existing gold transcriptions and were higher resource than the target unwritten Gormati data.
 
 The target data was collected from a Banjara farming community in India, who speak Gormati, a language with no written form [[5]](#5).
 This data is very low-resource (around 300 files and <4 hours of data), so it was only used for testing, not training.
